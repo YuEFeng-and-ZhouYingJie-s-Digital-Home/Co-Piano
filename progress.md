@@ -1772,3 +1772,45 @@ Q: 给我一个练习建议   (2.1s) "分声部单独练 Bach Prelude,每天 15 
 **耗时**: ~8 分钟
 
 ---
+
+---
+## [2026-07-20 20:53] Phase 5.7 完成:学生长期记忆 DB(本轮)
+
+**做了什么**:
+- **scripts/student_db.py** (13K) — JSON 持久化学生数据库
+  - 路径:`~/.copiano/student_<name>.db.json`
+  - 数据结构:evaluations[] / mastered / in_progress / milestones / weak_areas / streak / weekly_goal
+  - 8 个 API:record_eval / mark_mastered / add_milestone / set_weekly_goal / get_progress_summary / get_weak_areas / get_mastered_pieces / save
+  - 自动检测里程碑(首次破 80/85/90/95)
+  - 弱项分析(错音音级频率 + 低分曲 Top 3)
+  - 连续练习 streak(跨天)
+  - 周目标 + 周进度(滚动 7 首)
+- **patch_voice_dialog_with_db()** — 注入到 voice_dialog
+  - 从 DB 重建教学引擎 history
+  - 在 system prompt 末尾注入 ## 学生长期记忆 + ## 当前弱项
+  - 让 LLM 跨会话"记住"学生
+
+**8 次评估模拟**(跨 5 天,8 首曲目):
+```
+学生 yuefeng 的进度:
+- 共弹 8 首,平均 83.9 分
+- 最近 5 首平均 86.8 分
+- 掌握 2 首(Beyer 101 No.1 / Für Elise)
+- 进行中 3 首(Minuet in G / Sonata K.545 / Bach Prelude)
+- 连续练习 1 天
+- 本周目标:5 首 / 85 分 → 实际 7 首 / 85.2 分 ✅ 超额
+- 弱项:音 4 错 4 次,音 7 错 2 次,Minuet in G 低分 75
+```
+
+**端到端实测**(DB + 教学引擎 + GPU LLM Qwen 7B):
+```
+Q: 我弹得怎么样       (9.7s) "巴赫前奏曲连续 3 场 92 分,无错音"  ← DB latest_eval
+Q: 我经常错哪里       (2.6s) "音 4 和音 7 准确性待提高"          ← DB weak_areas!
+Q: 给我看看我的进度   (3.8s) "连续多首高分,92.0 分巴赫前奏曲"     ← DB summary
+```
+
+**v2.0 进度 8/10** — 学生记忆打通,跨会话可用
+
+**耗时**: ~8 分钟
+
+---
