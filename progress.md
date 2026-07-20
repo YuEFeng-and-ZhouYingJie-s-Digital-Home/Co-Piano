@@ -1574,3 +1574,40 @@ bash demo_gpu.sh --piece "Für Elise"  # 换曲目
 **耗时**: < 2 分钟(后台跑 + log)
 
 ---
+
+---
+## [2026-07-20 19:47] Phase 5.4+5.5+5.9: voice_dialog.py 端到端框架(本轮)
+
+**做了什么**:
+- **scripts/voice_dialog.py** (12.7K 字符) — 完整语音陪练框架
+  - 4 个模式:`--text` / `--listen N` / `--chat` / `--demo`
+  - 组件链:mic/soundfile → Silero VAD → faster-whisper → LLM → Edge-TTS → 扬声器
+  - **DialogState** 多轮上下文管理(保留最近 6 轮)
+  - **3 个 LLM 后端**:mock(规则) / mac(本地) / gpu(SSH)
+  - **能量 VAD fallback**(Silero 失败时自动降级)
+  - 中文+英文混说支持
+  - 钢琴老师角色 prompt(温柔专业、术语精准、≤80 字)
+- **Mock LLM** 6 场景测试通过(你好/评分/巴洛克/怎么练/拜厄/其他)
+- **Chat loop 端到端测试**:3 轮对话 + TTS 实时合成 + afplay 播放
+
+**关键对话 demo**(管道喂入):
+```
+你> 你好     → "你好!我是 CoPiano,你的 AI 钢琴老师。准备好一起练琴了吗?" 🔊
+你> 评分多少 → "你刚才那段弹得 93.5 分,有 1 个错音。重点攻小节 1 第 4 拍。" 🔊
+你> 拜厄     → "拜厄是基础练习曲集,重点是手指独立性和节奏稳定,每首先分手练再合手。" 🔊
+```
+
+**架构亮点**:
+- LLM 后端抽象(mock/mac/gpu 可热切)— GPU 失败自动回退 mock
+- TTS 异步合成 + 同步播放(asyncio.run 包装)
+- VAD 双层 fallback(Silero → 能量阈值)
+- 对话状态可序列化(便于 5.7 长期记忆接入)
+
+**未做**(下轮):
+- 真实麦克风测试(--listen + VAD)
+- 接入 Qwen LLM(mac 本地或 GPU 服务器)— 当前 mock
+- 多模态融合(5.6: MIDI 评估 + 语音对话联动)
+
+**耗时**: ~8 分钟
+
+---
