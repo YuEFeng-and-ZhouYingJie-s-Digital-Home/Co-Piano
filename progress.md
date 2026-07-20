@@ -2156,3 +2156,37 @@ Cycle N:
 **耗时**: ~6 分钟
 
 ---
+
+---
+## [2026-07-20 23:55] Phase 6 CYCLE 3 阶段 1: 表现力评估调研(本轮)
+
+**做了什么**:
+- **web 搜索**(新角度:表现力,深一层):Goebl melody lead / Repp dynamic / SaxEx / KTH / 触键 7 维度
+- 找到 Werner Goebl (Austrian AI Institute) melody lead 30ms 经典研究
+- 找到 Repp 1996 力度差异解释 melody lead
+- 找到 KTH Rule System 6 大规则 + SaxEx case-based reasoning
+- 找到豆丁 / 触键技巧论文(7 维度中文详尽)
+- **知识库写入**:`notes/market_knowledge_cycle3.md` (4.5K, 6 章节)
+
+**表现力 7 维度清单**:
+1. 触键角度 (90°/50-70°/30° = 金石/柔和/朦胧)
+2. 触键力度 (指尖/手腕/前臂/全臂 4 发力点)
+3. 触键速度 (快=明亮,慢=悠长)
+4. 触键高度
+5. 触键深度
+6. Rubato (古典<5% / 浪漫>15%)
+7. 动态对比 (max-min velocity, 0-127)
+8. 声部平衡 (melody lead 30ms + velocity diff)
+9. 触键后放松
+
+**CoPiano 现状**:L1/L2 只覆盖 velocity 基本字段,缺 **7/9 表现力维度**
+
+**Cycle 3 选定实践目标**:`scripts/expressiveness_analyzer.py`
+- 9 维度分析 + 0-100 综合分
+- 风格匹配(巴洛克 vs 浪漫给不同建议)
+- voice_dialog 集成
+- 教学意义:从"92 分 0 错音"升级到"92 分 0 错音 + 表现力 76(动态 9/10 + rubato 8/10 + 声部 5/10,建议提升主旋律 20ms)"
+
+**耗时**: ~10 分钟
+
+---
