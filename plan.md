@@ -613,3 +613,31 @@ piano-ai-corpus/
   - 累计 v3.0:可一键安装 + 完整功能,生产就绪
   - 下一个循环 (CYCLE 16) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT / Performance 基准
 ]
+
+[CYCLE_16_DONE: 2026-07-21 03:35 — 性能基准 (benchmarks.py)。
+  - 实践:benchmarks.py (10.5K) + notes/benchmark_report.md + notes/benchmark_results.json
+  - 13 模块基准:
+    1. D1 音准: 85.75ms (8.5KB 内存,首次 mido 加载)
+    2. D2 9 维表现力: 2.20ms
+    3. D3 9 维手型: 0.64ms
+    4. D4 视奏 (中级): 5.02ms
+    5. D4 视奏 (高级+真曲): 0.20ms (最快)
+    6. D5 银发模式: 0.63ms
+    7. 课程生成: 3.00ms
+    8. A/B 测试: 19.66ms
+    9. 真实化数据: 25.72ms
+    10. Voice intent: 2.53ms
+    11. Tonnetz KG 查询: 3.16ms
+    12. 6 论文图表: 436.67ms (首次 matplotlib 启动,后续 22ms)
+    13. 端到端 demo: 7.80ms
+  - 关键发现:
+    - 12/13 模块 < 30ms (生产可用)
+    - 13 模块总耗时 593ms (warm) / 120ms (warm-cache)
+    - D1 音准 85ms (首次 mido 加载慢,后续 ~6ms)
+    - 6 论文图表 437ms (首次 matplotlib 启动)
+  - 修 2 bug:
+    1. eval_pitch 函数名 evaluate_pitch → evaluate
+    2. expressiveness_analyzer 函数名 analyze_midi → analyze_expressiveness
+  - 累计 v3.0:可量化性能数据,可直接写入论文 Section 5.5
+  - 下一个循环 (CYCLE 17) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
+]

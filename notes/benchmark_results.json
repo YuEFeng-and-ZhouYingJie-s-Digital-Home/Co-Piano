@@ -1,0 +1,115 @@
+{
+  "env": {
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "python": "3.9.6",
+    "cpu": "arm",
+    "memory_gb": 16.0
+  },
+  "results": [
+    {
+      "name": "D1 音准评估",
+      "mean_ms": 85.749,
+      "median_ms": 6.426,
+      "min_ms": 2.267,
+      "max_ms": 248.553,
+      "peak_mem_kb": 8476.4
+    },
+    {
+      "name": "D2 9 维表现力",
+      "mean_ms": 2.199,
+      "median_ms": 1.154,
+      "min_ms": 0.929,
+      "max_ms": 4.513,
+      "peak_mem_kb": 145.4
+    },
+    {
+      "name": "D3 9 维手型",
+      "mean_ms": 0.644,
+      "median_ms": 0.231,
+      "min_ms": 0.222,
+      "max_ms": 1.479,
+      "peak_mem_kb": 66.5
+    },
+    {
+      "name": "D4 视奏 (中级)",
+      "mean_ms": 5.019,
+      "median_ms": 0.287,
+      "min_ms": 0.279,
+      "max_ms": 14.492,
+      "peak_mem_kb": 205.3
+    },
+    {
+      "name": "D4 视奏 (高级+真曲)",
+      "mean_ms": 0.204,
+      "median_ms": 0.208,
+      "min_ms": 0.191,
+      "max_ms": 0.215,
+      "peak_mem_kb": 9.3
+    },
+    {
+      "name": "D5 银发模式",
+      "mean_ms": 0.626,
+      "median_ms": 0.266,
+      "min_ms": 0.263,
+      "max_ms": 1.348,
+      "peak_mem_kb": 40.8
+    },
+    {
+      "name": "5 课程生成",
+      "mean_ms": 2.999,
+      "median_ms": 0.478,
+      "min_ms": 0.458,
+      "max_ms": 8.063,
+      "peak_mem_kb": 161.5
+    },
+    {
+      "name": "A/B 测试",
+      "mean_ms": 19.661,
+      "median_ms": 17.953,
+      "min_ms": 17.376,
+      "max_ms": 23.655,
+      "peak_mem_kb": 296.5
+    },
+    {
+      "name": "真实化数据生成",
+      "mean_ms": 25.716,
+      "median_ms": 25.421,
+      "min_ms": 24.787,
+      "max_ms": 26.94,
+      "peak_mem_kb": 225.7
+    },
+    {
+      "name": "Voice intent",
+      "mean_ms": 2.528,
+      "median_ms": 0.034,
+      "min_ms": 0.028,
+      "max_ms": 7.522,
+      "peak_mem_kb": 206.5
+    },
+    {
+      "name": "Tonnetz KG 查询",
+      "mean_ms": 3.164,
+      "median_ms": 2.032,
+      "min_ms": 1.546,
+      "max_ms": 5.915,
+      "peak_mem_kb": 178.8
+    },
+    {
+      "name": "6 论文图表",
+      "mean_ms": 436.669,
+      "median_ms": 21.971,
+      "min_ms": 21.65,
+      "max_ms": 1266.387,
+      "peak_mem_kb": 22085.5
+    },
+    {
+      "name": "端到端 demo",
+      "mean_ms": 7.799,
+      "median_ms": 6.316,
+      "min_ms": 6.278,
+      "max_ms": 10.803,
+      "peak_mem_kb": 166.7
+    }
+  ],
+  "timestamp": "2026-07-21 03:32:21"
+}
