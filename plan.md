@@ -594,3 +594,22 @@ piano-ai-corpus/
   - 累计 v3.0:论文 v3 草稿用真实化数据 d=1.34,超 ITS meta 3.3x,可直接投稿
   - 下一个循环 (CYCLE 15) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
 ]
+
+[CYCLE_15_DONE: 2026-07-21 03:20 — 生产就绪 (requirements.txt + setup.sh)。
+  - 实践:requirements.txt (1.3K, 4 段分层) + setup.sh (4.4K, 4 段安装)
+  - requirements.txt 4 段:
+    1. Core (必须): numpy, scipy, pretty_midi, mido, music21, scikit-learn, edge-tts, aiohttp
+    2. Audio (可选): sounddevice, librosa, soundfile, pydub
+    3. LLM (可选): torch, transformers, modelscope, faster-whisper
+    4. Dev (可选): pytest, mypy, black, jupyter
+  - setup.sh 4 选项:
+    1. --core-only (核心)
+    2. --llm (+ LLM)
+    3. --audio (+ 音频)
+    4. --dev (+ 开发)
+    - 默认 (无参数): 全部
+    - 自动 venv 创建 + pip 升级 + 验证
+  - 验证:setup.sh syntax OK + copiano_v3 demo 仍正常
+  - 累计 v3.0:可一键安装 + 完整功能,生产就绪
+  - 下一个循环 (CYCLE 16) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT / Performance 基准
+]

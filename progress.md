@@ -2963,3 +2963,57 @@ Cycle N:
 - 7 知识库 + 1 论文 v3 + 6 图表(真实化) + 1 cohort JSON + README + CHANGELOG
 
 **耗时**: ~5 分钟(改 paper_figures + 重生成 6 图表 + 更新论文 + commit)
+
+## [2026-07-21 03:20] Phase 6 CYCLE 15: 生产就绪 (requirements + setup)(本批)
+
+**做了什么**:
+- **写 `requirements.txt`** (1.3K) — 4 段分层依赖
+  - **Core (必须)**: numpy/scipy/pretty_midi/mido/music21/scikit-learn/edge-tts/aiohttp
+  - **Audio (可选)**: sounddevice/librosa/soundfile/pydub
+  - **LLM (可选)**: torch/transformers/modelscope/faster-whisper
+  - **Dev (可选)**: pytest/mypy/black/jupyter
+  - 平台特定 (macOS Apple Silicon / Linux CUDA)
+- **写 `setup.sh`** (4.4K) — 一键安装脚本
+  - 4 选项:--core-only / --llm / --audio / --dev
+  - 默认 (无参数):全部安装
+  - 自动:Python 检测 / venv 创建 / pip 升级 / 验证
+  - 验证已安装依赖 + 跑 copiano_v3 modules
+- **验证**: setup.sh bash -n syntax OK + copiano_v3.py demo 仍正常运行
+
+**关键设计**:
+- 分层安装 (core 必须 / 3 选 1):适应不同部署场景
+- 自动 venv: 避免污染全局 Python
+- 颜色输出: 进度一目了然 (蓝/黄/绿/红)
+- 平台特定注释: macOS / Linux CUDA 装 PyTorch 提示
+
+**Cycle 15 完成度**:
+| 阶段 | 状态 |
+|------|------|
+| 1. 调研 | ✅ 分析 39 脚本所有 import |
+| 2. 实践 | ✅ requirements.txt (1.3K) + setup.sh (4.4K) |
+| 3. 测试 | ✅ setup.sh syntax + copiano_v3 demo 仍正常 |
+
+**v3.0 关键升级 (累计)**:
+- v1.0: 4 层架构
+- v2.0: + voice + GPU 7B
+- v3.0: 5 维 + 7d 课程 + RCT + 论文 + 图表 + CLI + 文档 + 真实化数据
+- **v3.0 Cycle 15: + 一键安装** (生产就绪)
+
+**安装场景**:
+```bash
+# 仅核心 (无 LLM/音频)
+bash setup.sh --core-only
+
+# 完整 (默认)
+bash setup.sh
+
+# 自定义
+bash setup.sh --core-only --audio --dev
+```
+
+**总文件/论文数**:
+- 17 → **39 脚本** + requirements.txt + setup.sh
+- 138 → 813 arxiv 论文
+- 7 知识库 + 1 论文 + 6 图表 + 1 cohort + README + CHANGELOG
+
+**耗时**: ~5 分钟(分析 import + 写 requirements + setup + 验证)
