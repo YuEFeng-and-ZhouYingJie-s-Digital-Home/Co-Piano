@@ -1,0 +1,206 @@
+{
+  "pass": 40,
+  "fail": 0,
+  "tests": [
+    {
+      "name": "5_dims",
+      "pass": true,
+      "detail": "dims: ['pitch', 'expressiveness', 'hand_pose', 'rhythm', 'sight_reading']"
+    },
+    {
+      "name": "4_curve_types",
+      "pass": true,
+      "detail": "curves: {'linear', 'asymptotic', 'sigmoid', 'plateau'}"
+    },
+    {
+      "name": "curve_sigmoid_used",
+      "pass": true,
+      "detail": "used: sigmoid"
+    },
+    {
+      "name": "curve_asymptotic_used",
+      "pass": true,
+      "detail": "used: asymptotic"
+    },
+    {
+      "name": "curve_linear_used",
+      "pass": true,
+      "detail": "used: linear"
+    },
+    {
+      "name": "curve_plateau_used",
+      "pass": true,
+      "detail": "used: plateau"
+    },
+    {
+      "name": "same_seed_same_hash",
+      "pass": true,
+      "detail": "s=563906744"
+    },
+    {
+      "name": "different_seed_different",
+      "pass": true,
+      "detail": "s1=563906744, s3=1939108345"
+    },
+    {
+      "name": "age_young_adult_in_range",
+      "pass": true,
+      "detail": "lo=50, hi=85"
+    },
+    {
+      "name": "age_middle_adult_in_range",
+      "pass": true,
+      "detail": "lo=50, hi=85"
+    },
+    {
+      "name": "age_senior_in_range",
+      "pass": true,
+      "detail": "lo=50, hi=85"
+    },
+    {
+      "name": "has_id",
+      "pass": true,
+      "detail": "id=s001"
+    },
+    {
+      "name": "has_age_group",
+      "pass": true,
+      "detail": "age_group=young_adult"
+    },
+    {
+      "name": "has_initial_5_dims",
+      "pass": true,
+      "detail": "dims: ['pitch', 'expressiveness', 'hand_pose', 'rhythm', 'sight_reading']"
+    },
+    {
+      "name": "has_8_days",
+      "pass": true,
+      "detail": "days: 8 (day 0-7)"
+    },
+    {
+      "name": "last_day_has_5_dims",
+      "pass": true,
+      "detail": "day 7: {'pitch': 95, 'expressiveness': 95, 'hand_pose': 86.6, 'rhythm': 93.1, 'sight_reading': 75.5}"
+    },
+    {
+      "name": "treatment_outperforms_control",
+      "pass": true,
+      "detail": "ctrl_gain=38.2, treat_gain=77.2"
+    },
+    {
+      "name": "treatment_pitch_higher",
+      "pass": true,
+      "detail": "d_gain: ctrl=+1.4, treat=+15.0"
+    },
+    {
+      "name": "treatment_expressiveness_higher",
+      "pass": true,
+      "detail": "d_gain: ctrl=+15.6, treat=+21.5"
+    },
+    {
+      "name": "treatment_hand_pose_higher",
+      "pass": true,
+      "detail": "d_gain: ctrl=+7.0, treat=+13.9"
+    },
+    {
+      "name": "treatment_rhythm_higher",
+      "pass": true,
+      "detail": "d_gain: ctrl=+6.0, treat=+10.6"
+    },
+    {
+      "name": "treatment_sight_reading_higher",
+      "pass": true,
+      "detail": "d_gain: ctrl=+8.2, treat=+16.2"
+    },
+    {
+      "name": "control_count",
+      "pass": true,
+      "detail": "n=30"
+    },
+    {
+      "name": "treatment_count",
+      "pass": true,
+      "detail": "n=30"
+    },
+    {
+      "name": "total_60",
+      "pass": true,
+      "detail": "total=60"
+    },
+    {
+      "name": "has_seniors",
+      "pass": true,
+      "detail": "seniors=9/60"
+    },
+    {
+      "name": "senior_slower_gain",
+      "pass": true,
+      "detail": "young=74.7, old=70.2"
+    },
+    {
+      "name": "senior_senior_mode",
+      "pass": true,
+      "detail": "senior_mode=True"
+    },
+    {
+      "name": "young_no_senior",
+      "pass": true,
+      "detail": "senior_mode=False"
+    },
+    {
+      "name": "weekend_factor_in_code",
+      "pass": true,
+      "detail": "g5=5.2, g6=3.5 (noisy, but weekend * 0.7 in code)"
+    },
+    {
+      "name": "control_count",
+      "pass": true,
+      "detail": "n=20"
+    },
+    {
+      "name": "treatment_count",
+      "pass": true,
+      "detail": "n=20"
+    },
+    {
+      "name": "control_initial_match",
+      "pass": true,
+      "detail": "match"
+    },
+    {
+      "name": "abtest_runs",
+      "pass": true,
+      "detail": "d_avg=1.304"
+    },
+    {
+      "name": "abtest_5_dims",
+      "pass": true,
+      "detail": "dims: 5"
+    },
+    {
+      "name": "60_students_fast",
+      "pass": true,
+      "detail": "7.0ms for 60 students"
+    },
+    {
+      "name": "json_serializable",
+      "pass": true,
+      "detail": "len=10502"
+    },
+    {
+      "name": "json_round_trip",
+      "pass": true,
+      "detail": "n_per_group=5"
+    },
+    {
+      "name": "treatment_pitch_positive_gain",
+      "pass": true,
+      "detail": "pitch: 68.1 → 90.7 (Δ=+22.6)"
+    },
+    {
+      "name": "treatment_rhythm_positive_gain",
+      "pass": true,
+      "detail": "rhythm: 79.3 → 91.0 (Δ=+11.7)"
+    }
+  ]
+}
