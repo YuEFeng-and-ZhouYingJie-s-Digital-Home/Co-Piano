@@ -688,3 +688,33 @@ piano-ai-corpus/
   - 累计 v3.0:41 → 41 脚本 + 4 发布工具 (requirements/setup/release/Makefile)
   - 下一个循环 (CYCLE 19) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
 ]
+
+[CYCLE_19_DONE: 2026-07-21 04:20 — Real User RCT Protocol。
+  - 实践:docs/real_user_rct_protocol.md (6.6K, 286 行)
+  - 13 章节:
+    1. 研究问题 (1 主 + 4 子)
+    2. 假设 (H1-H6: 主/维度/年龄/水平/溢出/银发体验)
+    3. 样本 (60 用户, 3 城市, 5 老年大学)
+    4. 随机化 (computer-generated, MD5-stable)
+    5. 干预 (control 无课程 vs treatment 完整 7 天)
+    6. 测量 (5 维 + 跨维度 + 银发体验问卷)
+    7. 统计分析 (Welch t + Cohen's d + Bonferroni)
+    8. 实施时间表 (W0-W8, 8 周)
+    9. 伦理 (IRB 申请 + 数据保护 + 设备安全)
+    10. 风险与缓解 (6 风险)
+    11. 成本估算 (¥210,500)
+    12. 论文发表 (arXiv + NIME + CHI)
+    13. 立即行动 (W0 4 步)
+  - 3 附录:
+    - 知情同意书模板
+    - 测试设备清单 (MIDI 键盘 + 接口 + 耳机)
+    - 数据采集表 (15 字段)
+  - 关键决策:
+    - 样本量: 60 (d=0.5 检测, power=0.80, α=0.05)
+    - 配对: 30 control + 30 treatment
+    - 分层: 50/50 adult + senior
+    - 单盲: 分析者盲,用户知道
+    - 成功阈值: d ≥ 0.5 (优于 ITS 主流 0.41)
+  - 累计 v3.0:从模拟 RCT → 真实 RCT 完整 protocol,可立即执行
+  - 下一个循环 (CYCLE 20) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 论文 v3 final 更新
+]
