@@ -54,18 +54,40 @@ DIM_NAMES = {
 }
 
 
-# === 真实数据生成 (复用 ab_test_harness) ===
+# === 真实数据生成 (优先 test_data_generator, 退而求其次 ab_test_harness) ===
 
-def get_ab_test_data(n_per_group: int = 30, days: int = 7, seed: int = 42):
-    """从 ab_test_harness 拿真实数据"""
+def get_ab_test_data(n_per_group: int = 30, days: int = 7, seed: int = 42,
+                     use_realistic: bool = True):
+    """获取 A/B 测试数据 (优先 realistic 真实化数据,回退 ab_test_harness)"""
+    if use_realistic:
+        try:
+            from test_data_generator import generate_cohort, run_ab_test_with_real_data
+            cohort = generate_cohort(n_per_group=n_per_group, days=days, seed=seed)
+            result = run_ab_test_with_real_data(cohort)
+            return result, None, cohort
+        except ImportError:
+            pass
+    # 退路:数学模型
     from ab_test_harness import ABTestHarness, CohortSimulator
     sim = CohortSimulator(seed=seed)
     harness = ABTestHarness(n_per_group=n_per_group, days=days, simulator=sim, seed=seed)
     return harness.run(), sim
 
 
-def get_cohort_data(n_per_group: int = 30, days: int = 7, seed: int = 42):
-    """拿 cohort students 详细数据 (含 daily_scores)"""
+def get_cohort_data(n_per_group: int = 30, days: int = 7, seed: int = 42,
+                    use_realistic: bool = True):
+    """拿 cohort students 详细数据 (含 daily_scores) — 优先 realistic"""
+    if use_realistic:
+        try:
+            from test_data_generator import generate_cohort, cohort_to_ab_test
+            cohort = generate_cohort(n_per_group=n_per_group, days=days, seed=seed)
+            control, treatment = cohort_to_ab_test(cohort)
+            from test_data_generator import run_ab_test_with_real_data
+            result = run_ab_test_with_real_data(cohort)
+            return result, control, treatment
+        except ImportError:
+            pass
+    # 退路
     from ab_test_harness import ABTestHarness, CohortSimulator
     sim = CohortSimulator(seed=seed)
     harness = ABTestHarness(n_per_group=n_per_group, days=days, simulator=sim, seed=seed)
@@ -383,9 +405,13 @@ def main():
     print(f"   Config: n={args.n}/group, days={args.days}, seed={args.seed}\n")
 
     # 获取数据
-    print("🎲 生成 A/B 测试数据...")
-    result, sim = get_ab_test_data(n_per_group=args.n, days=args.days, seed=args.seed)
-    _, control, treatment = get_cohort_data(n_per_group=args.n, days=args.days, seed=args.seed)
+    print("🎲 生成 A/B 测试数据 (真实化: test_data_generator)...")
+    data1 = get_ab_test_data(n_per_group=args.n, days=args.days, seed=args.seed)
+    data2 = get_cohort_data(n_per_group=args.n, days=args.days, seed=args.seed)
+    # data1: (result, None) or (result, sim) — 统一取 [0]
+    result = data1[0]
+    # data2: (result, control, treatment)
+    _, control, treatment = data2[0], data2[1], data2[2]
 
     # 生成图表
     print("🎨 生成 6 图表...")

@@ -13,11 +13,20 @@
     "fig6_architecture.png"
   ],
   "statistics_summary": {
-    "avg_effect_size": 0.405,
+    "avg_effect_size": 1.341,
     "sig_dimensions_005": [
+      "pitch",
+      "expressiveness",
       "hand_pose",
+      "rhythm",
       "sight_reading"
     ],
-    "sig_dimensions_001": []
+    "sig_dimensions_001": [
+      "pitch",
+      "expressiveness",
+      "hand_pose",
+      "rhythm",
+      "sight_reading"
+    ]
   }
 }
