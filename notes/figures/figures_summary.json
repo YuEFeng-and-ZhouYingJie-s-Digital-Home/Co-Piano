@@ -1,0 +1,23 @@
+{
+  "config": {
+    "n_per_group": 30,
+    "days": 7,
+    "seed": 42
+  },
+  "figures": [
+    "fig1_effect_size.png",
+    "fig2_pre_post_gains.png",
+    "fig3_learning_curves.png",
+    "fig4_significance_heatmap.png",
+    "fig5_demographic.png",
+    "fig6_architecture.png"
+  ],
+  "statistics_summary": {
+    "avg_effect_size": 0.405,
+    "sig_dimensions_005": [
+      "hand_pose",
+      "sight_reading"
+    ],
+    "sig_dimensions_001": []
+  }
+}

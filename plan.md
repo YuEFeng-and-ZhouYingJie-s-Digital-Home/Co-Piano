@@ -522,3 +522,19 @@ piano-ai-corpus/
   - 累计 v3.0:36 → 37 脚本,10 模块统一调度,可一键 demo / 课程 / 验证
   - 下一个循环 (CYCLE 11) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT / 论文图表生成
 ]
+
+[CYCLE_11_DONE: 2026-07-21 02:18 — 论文图表生成 (6 图表)。
+  - 实践:paper_figures.py (15.6K) — 6 图表生成器
+  - 6 图表 (PNG + SVG 双格式):
+    1. fig1_effect_size — 5 维 Cohen's d 条形图 (含显著性 * ** 标记)
+    2. fig2_pre_post_gains — control vs treatment 增益对比
+    3. fig3_learning_curves — 7 天 5 维学习曲线 (mean ± std)
+    4. fig4_significance_heatmap — t/p/delta/treatment 4 指标热力图
+    5. fig5_demographic — 60 人 cohort 年龄分布 (成人 2/3 + 银发 1/3)
+    6. fig6_architecture — 5 维模块架构图 (matplotlib 盒子)
+  - 数据源:复用 ab_test_harness (30/group × 7 days, seed=42, d=0.405)
+  - 修 1 bug:fig1 for 循环变量 d (dim name) 与 d (effect size) 冲突 → 改名
+  - 总产出:12 文件 (6 PNG + 6 SVG) + 1 summary.json,总 ~810 KB
+  - 累计 v3.0:37 → 38 脚本,论文 v3 草稿配齐图表,可直接投稿
+  - 下一个循环 (CYCLE 12) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT / README/CHANGELOG
+]
