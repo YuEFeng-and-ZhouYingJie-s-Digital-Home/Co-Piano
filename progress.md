@@ -1686,3 +1686,46 @@ A: (no direct hit) → mock LLM fallback
 **耗时**: ~10 分钟
 
 ---
+
+---
+## [2026-07-20 20:25] Phase 5 v2.0 LLM 通路打通(本轮)
+
+**做了什么**:
+- **scripts/gpu_shell.py** (4.5K) — Mac 端 SSH/SCP 封装
+  - `run_on_gpu(cmd, timeout)` 跑单条命令(expect 自动输密码)
+  - `scp_to_gpu(local, remote)` / `scp_from_gpu(remote, local)`
+  - `run_python_on_gpu(script)` 跑 Python 临时脚本
+  - `gpu_health_check()` 探活 + 显存信息
+- **scripts/llm_gpu_client.py** (4.1K) — Qwen 7B 客户端
+  - `call_qwen_gpu(messages, model_id, max_tokens)` 走 SCP + SSH 调 GPU 推理
+  - OpenAI messages → {system, user} 转换
+  - stdout 解析(`---RESPONSE---` / `---END---` 标记)
+  - `patch_voice_dialog_with_gpu()` 注入 voice_dialog
+
+**端到端测试成功**:
+```
+Q (system): 你是 CoPiano,AI 钢琴老师。简洁回复,中文为主。
+Q (user):   你好,简单介绍一下你自己。
+A (Qwen 7B, 64.6s):
+   "你好！我是CoPiano，你的AI钢琴老师。
+    我可以帮助你学习钢琴技巧、提供曲目指导和伴奏，
+    还能纠正你的演奏。让我们一起享受音乐吧！"
+```
+
+**关键 debug 历程**:
+1. 第一次失败:`/code/scripts/llm_call_ms.py` 不存在 → 实际在 `/code/`
+2. 第二次失败:`modelscope` module not found → 系统 Python 没装
+3. 第三次成功:用 `/root/autodl-tmp/conda-envs/copiano/bin/python3`(copiano conda env)
+
+**已知问题**(下轮修):
+- **每次新进程重载模型 50-60s**,对话不可用
+- 修复方案:用持久化 server(vLLM / TGI / 自建 HTTP/文件队列)
+- 优先级:高(用户要求"实时"对话,60s 不可接受)
+
+**v2.0 进度**:
+- 5.2 ASR ✅ | 5.3 TTS ✅ | 5.4 VAD ✅ | 5.5 Dialog ✅ | 5.6 教学引擎 ✅
+- 5.9 端到端框架 ✅(但 GPU LLM 60s 延迟待优化)
+
+**耗时**: ~10 分钟
+
+---
