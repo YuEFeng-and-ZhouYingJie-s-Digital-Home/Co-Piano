@@ -385,12 +385,5 @@ piano-ai-corpus/
 
 ---
 
-[PAUSE: 2026-07-20 16:15 — Phase 1+2+3 全部完结,48 轮 cron 推进,EXECUTIVE_SUMMARY.md 已写。等用户决定下一步:
-- A. 继续 Phase 4(实时反馈 + 视频 + Mac App,4-8 周)
-- B. 接 MIDI 键盘做真实数据验证(立刻可做)
-- C. 写 arxiv 投稿(草稿在 notes/arxiv_abstract.md,需真实数据补全)
-- D. 终止 cron,项目归档
-- E. 升级 LLM 到 14B(质量更佳,需 28G 显存)
-- F. 切备选(PrismScore / TabulaRasa)
-
-按 SOP §6 看到 [PAUSE] 停,只记日志。]
+[PHASE_4_STARTED: 2026-07-20 17:14 — 用户选 A,开始 Phase 4 实时+视频+Mac App]
+| 2026-07-20 17:14 | Phase 4.1 | **实时反馈引擎** | real_time_feedback.py,2s 滑窗+规则引擎,< 10ms 延迟 | 实时反馈骨架 |
