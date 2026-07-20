@@ -1193,3 +1193,44 @@
 **耗时**: ~10 分钟
 
 ---
+## [2026-07-20 17:15] Phase 4.2: Basic Pitch 音频转 MIDI 集成(本轮)
+
+**做了什么**:
+- 装 basic-pitch(Spotify 开源)+ librosa fallback
+- **写 `scripts/audio_to_midi.py`** — 音频 → MIDI 转换器
+  - 优先 Basic Pitch(精度高)
+  - Fallback:librosa pYIN(不依赖 tensorflow)
+  - 输出 JSON(n_notes / duration / processing_time / method)
+- **跑通测试**(440Hz 正弦波):
+  - Basic Pitch 检出 1 个 A4(pitch 69)
+  - 处理时间 1.09s(单声道 CPU)
+  - 输出 MIDI 验证 pretty_midi 解析正常
+
+**关键发现**:
+- Basic Pitch 自动被检测使用(可能 import tensorflow 隐式触发)
+- 处理速度 1s/秒音频,可接受(实时 2s 滑窗绰绰有余)
+- 备用 librosa pYIN 应对 tensorflow 装不上的情况
+
+**Phase 4 架构更新**:
+```
+麦克风音频流
+  ↓
+Basic Pitch(每 2s)
+  ↓
+MIDI 事件
+  ↓
+RealTimeEvaluator(scripts/real_time_feedback.py)
+  ↓
+FeedbackEngine(规则 + 冷却)
+  ↓
+即时反馈(< 10ms 延迟)
+```
+
+**下一步**(后续 cron):
+- MediaPipe Hands 视频手型
+- 实时反馈集成到 copiano.py
+- Mac App SwiftUI 外壳
+
+**耗时**: ~10 分钟
+
+---
