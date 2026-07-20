@@ -2190,3 +2190,42 @@ Cycle N:
 **耗时**: ~10 分钟
 
 ---
+
+---
+## [2026-07-21 00:05] Phase 6 CYCLE 3 阶段 2: 表现力分析器(本轮)
+
+**做了什么**:
+- **scripts/expressiveness_analyzer.py** (16.5K) — 9 维表现力分析器
+  - **9 维度**:
+    1. velocity_mean — 平均力度
+    2. velocity_std — 力度变化
+    3. dynamic_range — pp→ff 跨度(0-127)
+    4. LTV (Local Tempo Variation) — rubato 系数
+    5. voicing_balance — 旋律 vs 伴奏力度差(%)
+    6. melody_lead_ms — 旋律提前毫秒(Goebl 经典 30ms)
+    7. touch_speed — onset→peak 推算触键速度
+    8. articulation — staccato/legato/mixed
+    9. release_var — 释放变化
+  - **0-100 综合分** + 时期权重调整(巴洛克 vs 浪漫不同权重)
+  - **教学建议自动生成**(基于各维 + 时期匹配)
+  - **patch_voice_dialog_with_expressiveness()**:"分析 X.mid 表现力"自动跑
+
+**实测**:
+- 简单 MIDI(单声部力度 70):**24.1/100**(检测到无动态、无复调)
+- 复杂 MIDI(主旋律+伴奏,力度变化):**47.3/100**,建议"主旋律提前 20-30ms / 动态范围拓宽"
+- 教学建议具体可执行,符合"AI 老师"定位
+
+**关键修复**:
+- `_norm_ltv` 按时期间调整(巴洛克理想<5%,浪漫理想 8-20%)
+- `_norm_melody_lead` Goebl 经典 30ms 区间
+- 综合分时期权重:巴洛克/古典重视 voicing,浪漫重视 LTV
+
+**调研对位**:
+- Goebl 2001 melody lead 30ms → 30ms = 满分
+- Repp 1996 velocity diff → voicing_balance
+- KTH Rule System → 9 维度覆盖
+- 行业空白(多声部<70% / 表现力评估弱)→ CoPiano 填补
+
+**耗时**: ~10 分钟
+
+---
