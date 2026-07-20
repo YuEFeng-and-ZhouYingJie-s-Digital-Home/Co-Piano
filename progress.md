@@ -1318,3 +1318,40 @@ FeedbackEngine + 2s 冷却
 **耗时**: ~10 分钟
 
 ---
+## [2026-07-20 18:00] Phase 4.5: Mac App SwiftUI 外壳(本轮)
+
+**做了什么**:
+- **写 `macos/CoPianoApp.swift`** — SwiftUI Mac App 源码(7.5K 字符)
+  - 主入口 `CoPianoApp`
+  - `AppState` 全局状态
+  - `ContentView` 主界面(评分圆 + 反馈)
+  - `EvaluationView` 评估视图
+  - `AudioRecorder` / `RealtimeEvaluator` 占位
+- **写 `macos/README.md`** — 编译指南
+  - 要求:macOS 14+ / Xcode 15+ / Swift 5.9+
+  - 编译步骤:新建项目 → 替换源码 → 勾选 Microphone/Camera capability
+  - 集成方案:Process/SSH 调 GPU 端 copiano.py
+
+**关键发现**:
+- SwiftUI 7.5K 源码覆盖完整 App 骨架
+- 评分圆用 Circle().trim() 实现动画
+- Picker 选曲目 + Label 录音状态
+- 调色:≥90 绿, ≥70 黄, <70 红
+- 关键代码是 Process + SSH 调 GPU 端 Python 服务
+
+**Phase 4 完成度**(5/5):
+- ✅ 实时反馈引擎
+- ✅ Basic Pitch
+- ✅ 视频手型骨架
+- ✅ 音频→反馈链路
+- ✅ **Mac App SwiftUI 外壳**
+
+**已知限制**(SwiftUI 占位):
+- 真实录音未实现(AVAudioEngine)
+- 真实评估未集成(real_time_feedback.py)
+- 真实手型未集成(video_hand_tracker.py)
+- 真实 LLM 反馈未集成(需 HTTP/SSH 调 GPU)
+
+**耗时**: ~10 分钟
+
+---
