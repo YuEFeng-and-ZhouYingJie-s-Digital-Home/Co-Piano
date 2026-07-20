@@ -1814,3 +1814,35 @@ Q: 给我看看我的进度   (3.8s) "连续多首高分,92.0 分巴赫前奏曲
 **耗时**: ~8 分钟
 
 ---
+
+---
+## [2026-07-20 21:03] Phase 5.8 完成:自适应课程规划(本轮)
+
+**做了什么**:
+- **scripts/curriculum.py** (13.5K) — 7 天练习计划生成器
+  - 4 难度档曲库:beginner / elementary / intermediate / advanced(12 首代表曲目)
+  - 3 类学生水平检测(< 75 / < 85 / < 92 / ≥ 92)
+  - 候选选取:in_progress 优先 + 难度阶梯
+  - 7 天 schedule:新曲导入 → 技术专攻 → 巩固 → 复习 → 组合 → 表现力 → 总复习
+  - 每日结构:热身(5min)+ 主曲(18min)+ 复习(8min)+ 收尾(5min)
+  - 真用 DB 弱项:每隔 1 天热身 = 弱项专练
+  - 自动选主曲目标分:新曲 88 / 复习 92
+- **patch_voice_dialog_with_curriculum()** — 注入 voice_dialog
+  - 拦截 "7 天"/"一周计划"/"练什么"/"课程" → 直答完整 7 天计划
+- **patch_voice_dialog_with_db() 重构** — 一键 setup 全部 4 层
+  - 正确 patch 顺序:GPU LLM (内) → teaching engine (中) → DB summary → curriculum (外)
+  - 一次调用 = 4 层全注入
+
+**端到端实测**(4 层嵌套,一键 setup):
+| Q | 拦截层 | 延迟 | 关键引用 |
+|---|---|---|---|
+| 给我一个 7 天计划 | curriculum 直答 | 0.0s | 完整 7 天 Day 1-7 |
+| 我弹得怎么样 | teaching engine 直答 | 0.0s | "92.0 分,0 错音" |
+| 我现在应该重点练什么 | GPU Qwen 7B | 5.1s | "音 4 / 音 7" + G 大调 |
+| 给我点鼓励 | GPU Qwen 7B | 1.6s | 巴赫前奏曲进步 |
+
+**v2.0 进度 9/10** — 自适应课程规划打通
+
+**耗时**: ~7 分钟
+
+---

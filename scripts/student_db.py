@@ -297,12 +297,25 @@ class StudentDB:
 
 
 # ----- 集成 voice_dialog -----
-def patch_voice_dialog_with_db(db: StudentDB):
-    """注入学生 DB 到 voice_dialog"""
-    import voice_dialog
-    from teaching_engine import TeachingEngine
+def patch_voice_dialog_with_db(db: StudentDB, planner=None):
+    """注入学生 DB + 教学引擎 + 可选课程规划到 voice_dialog
 
-    # 1. 教学引擎:从 DB 的 evaluations 重建 history
+    正确 patch 顺序(从内到外):
+    1. GPU LLM (innermost, fallback)
+    2. Teaching engine (直答拦截)
+    3. DB 摘要注入 (context)
+    4. Curriculum (outermost, 拦截 "7 天计划" 等)
+
+    Args:
+        db: StudentDB 实例
+        planner: 可选 CurriculumPlanner
+    """
+    import voice_dialog
+    from teaching_engine import TeachingEngine, patch_voice_dialog
+    from llm_gpu_client import patch_voice_dialog_with_gpu
+    from curriculum import patch_voice_dialog_with_curriculum
+
+    # 1. 教学引擎:从 DB 重建 history
     engine = TeachingEngine()
     if db.data["evaluations"]:
         engine.set_history([
@@ -321,11 +334,13 @@ def patch_voice_dialog_with_db(db: StudentDB):
         last = db.data["evaluations"][-1]
         engine.set_latest_eval(last, piece_name=last["piece"], period=last["period"])
 
-    # 2. 注入教学引擎
-    from teaching_engine import patch_voice_dialog
+    # 2. 注入 GPU LLM(最内层)
+    patch_voice_dialog_with_gpu()
+
+    # 3. 注入教学引擎直答
     patch_voice_dialog(engine)
 
-    # 3. 注入进度摘要到 LLM 上下文
+    # 4. 注入 DB 摘要到 system prompt
     original_build = voice_dialog.DialogState.build_messages
 
     def patched_build(self, max_turns=6):
@@ -341,7 +356,13 @@ def patch_voice_dialog_with_db(db: StudentDB):
 
     voice_dialog.DialogState.build_messages = patched_build
 
-    return engine
+    # 5. 注入课程规划(最外层)
+    if planner is None:
+        from curriculum import CurriculumPlanner
+        planner = CurriculumPlanner(db, time_per_day_min=30, days=7)
+    patch_voice_dialog_with_curriculum(planner)
+
+    return engine, planner
 
 
 # ----- CLI -----
