@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.17181",
+  "title": "MusicSynth: An Automated Pipeline for Generating Violin Fingerboard Animations from Sheet Music Using Optical Music Recognition",
+  "summary": "Learning the violin is harder than it looks. Unlike piano keys or guitar frets, the violin neck has no markings at all, so a beginner cannot tell by looking where to place each finger. MusicSynth is an open-source web tool that tries to fix that: user uploads a photo of any violin sheet music (or a digital score file), and the system automatically produces a video showing a violin fingerboard with each note highlighted at the right moment -- no software to install, no manual note entry required. The system connects three existing open-source tools into one pipeline: an optical music recognition (OMR) library reads the notes from the uploaded image, a MusicXML parser extracts timing information from digital scores, and a video renderer draws the fingerboard frame by frame. The only part built from scratch is the lookup table that maps each musical note to a string and finger position on the violin. Tested across 110 public-domain violin scores, MusicSynth correctly identified 91.2\\,\\% of notes in clean printed music and assigned the right finger position 99.1\\,\\% of the time when given a digital score file. To the author's knowledge, no freely available tool currently turns a sheet music image into an animated violin fingerboard tutorial automatically and in a single browser-based step.",
+  "authors": [
+    "Abhimanyu Kaushik"
+  ],
+  "published": "2026-05-16T22:32:26Z",
+  "updated": "2026-05-16T22:32:26Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.17181",
+  "abs_url": "https://arxiv.org/abs/2605.17181",
+  "fetched_at": "2026-07-19T14:17:07.971036Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.21265",
+  "title": "Listen and Chant Before You Read: The Ladder of Beauty in LM Pre-Training",
+  "summary": "We show that pre-training a Transformer on music before language significantly accelerates language acquisition. Using piano performances (MAESTRO dataset), a developmental pipeline -- music $\\to$ poetry $\\to$ prose -- yields a $17.5\\%$ perplexity improvement over random initialization ($p < 0.001$, 5 seeds), with music and poetry improving orthogonal model components (internal computation and embeddings, respectively). Convergence tests confirm that this is not a transient head start: at $d\\!=\\!64$, multi-seed validation (5 seeds) shows a persistent 5.5\\% gap at plateau ($p = 0.017$), with the pipeline converging faster and to a lower loss in every run. Real music matches the transfer ceiling of synthetic patterns with one-third the data, and scaling experiments reveal that optimal pre-training data volume shifts with model capacity ($-3\\% \\to +3\\% \\to +6\\%$ advantage of larger datasets from $d\\!=\\!16$ to $d\\!=\\!64$). Across the scales we study ($d\\!\\in\\!\\{16,32,64\\}$, up to ${\\sim}400$K parameters), these results suggest a capacity-dependent data curation principle and indicate that structured human creative outputs can provide an efficient pre-training substrate for small language models; stronger conclusions at modern pre-training scale will require substantially larger experiments.",
+  "authors": [
+    "Yoshinori Nomura"
+  ],
+  "published": "2026-04-23T04:20:12Z",
+  "updated": "2026-04-23T04:20:12Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.21265",
+  "abs_url": "https://arxiv.org/abs/2604.21265",
+  "fetched_at": "2026-07-19T14:17:07.971956Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

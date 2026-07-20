@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.17442",
+  "title": "BreathAI: Transfer Learning-Based Thermal Imaging for Automated Breathing Pattern Recognition",
+  "summary": "This study presents an Adaptive Transfer Learning and Thresholding-based Deep Learning Model (ATL-TDLM) for automated breathing pattern recognition using thermal imaging. Unlike conventional methods that rely on sound-based respiratory data, our approach leverages hierarchical deep feature extraction and adaptive multi-thresholding (AMT) to enhance feature segmentation. The model integrates knowledge distillation-based fine-tuning (KD-FT) to optimize learning transfer and contrastive representation learning (CRL) to improve inter-class separability between inhalation (INH) and exhalation (EXH) phases. The ATL-TDLM framework achieves an accuracy of 98.8%, significantly outperforming state-of-the-art models while ensuring computational efficiency. This approach has potential applications in respiratory disorder detection, including sleep apnea and asthma monitoring.",
+  "authors": [
+    "Hamza Kheddar",
+    "Yassine Himeur",
+    "Abbes Amira"
+  ],
+  "published": "2026-04-19T13:44:51Z",
+  "updated": "2026-04-19T13:44:51Z",
+  "categories": [
+    "eess.IV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.17442",
+  "abs_url": "https://arxiv.org/abs/2604.17442",
+  "fetched_at": "2026-07-19T14:17:07.973534Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

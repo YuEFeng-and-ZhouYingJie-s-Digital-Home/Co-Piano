@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.01197",
+  "title": "MG-Former: A Transformer-Based Framework for Music-Driven 3D Conducting Gesture Generation",
+  "summary": "Generating expressive conducting gestures from music is a challenging cross-modal motion synthesis problem: the output must follow long-range musical structure, preserve beat-level synchronization, and remain plausible as a fine-grained 3D human performance. Existing conducting-motion studies are often limited by sparse pose representations, small-scale data, or evaluation protocols that do not directly measure whether music and gesture are mutually aligned. This paper presents TransConductor, a Transformer-based framework for music-driven conducting gesture generation. We introduce ConductorMotion, a SMPL-parameter data construction pipeline that recovers detailed body motion from conducting videos and forms a dataset targeted at professional conducting gestures. Given acoustic descriptors extracted from audio and an initial pose, TransConductor uses a Trans-Temporal Music Encoder and a Trans-Temporal Conducting Gesture Decoder to autoregressively predict SMPL pose parameters. To better assess artistic correspondence, we further build a retrieval-based evaluation model that embeds music and gestures into a shared space and yields FID, modality distance, multi-modality distance, and diversity metrics. Experiments show that TransConductor outperforms dance-generation and conducting-generation baselines, while ablations verify the benefits of the Transformer backbone and the proposed alignment loss.",
+  "authors": [
+    "Ke Qiu",
+    "Yawen Qin",
+    "Tianzhi Jia",
+    "Xiaole Yang",
+    "Kaimin Wang",
+    "Kaixing Yang"
+  ],
+  "published": "2026-05-02T02:18:29Z",
+  "updated": "2026-05-02T02:18:29Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.01197",
+  "abs_url": "https://arxiv.org/abs/2605.01197",
+  "fetched_at": "2026-07-19T14:18:41.843285Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

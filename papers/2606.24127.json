@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.24127",
+  "title": "DTT-BSR+: A Generative-Regression Cascade for Music Source Restoration",
+  "summary": "Music source restoration (MSR) requires jointly addressing source unmixing and the inversion of non-linear production effects. Current methods struggle to achieve accurate target signal reconstruction while maintaining semantic consistency. To address this limitation, we propose DTT-BSR+, a two-stage cascade MSR system that decouples distribution fitting from signal reconstruction into separate stages. A generative DTT-BSR separator in the first stage produces stems matching the prior of clean sources, and a modified Demucs network in the second stage enhances the first stage output using time-domain and multi-resolution spectral losses. DTT-BSR+ improves multi-mel signal-to-noise ratio (MMSNR) over the single-stage DTT-BSR across all stems, and surpasses the state-of-the-art X-LANCE MSR system on five stems. We also reveal through Fréchet Audio Distance (FAD) decomposition an implicit trade-off between signal reconstruction accuracy and semantic distribution fitting across stems.",
+  "authors": [
+    "Youran Ni",
+    "Shihong Tan",
+    "Yuzhu Wang",
+    "Gongping Huang"
+  ],
+  "published": "2026-06-23T04:22:20Z",
+  "updated": "2026-06-23T04:22:20Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.24127",
+  "abs_url": "https://arxiv.org/abs/2606.24127",
+  "fetched_at": "2026-07-19T14:18:41.870828Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2509.07029",
+  "title": "The Impact of Artificial Intelligence on Traditional Art Forms: A Disruption or Enhancement",
+  "summary": "The introduction of Artificial Intelligence (AI) into the domains of traditional art (visual arts, performing arts, and crafts) has sparked a complicated discussion about whether this might be an agent of disruption or an enhancement of our traditional art forms. This paper looks at the duality of AI, exploring the ways that recent technologies like Generative Adversarial Networks and Diffusion Models, and text-to-image generators are changing the fields of painting, sculpture, calligraphy, dance, music, and the arts of craft. Using examples and data, we illustrate the ways that AI can democratize creative expression, improve productivity, and preserve cultural heritage, while also examining the negative aspects, including: the threats to authenticity within art, ethical concerns around data, and issues including socio-economic factors such as job losses. While we argue for the context-dependence of the impact of AI (the potential for creative homogenization and the devaluation of human agency in artmaking), we also illustrate the potential for hybrid practices featuring AI in cuisine, etc. We advocate for the development of ethical guidelines, collaborative approaches, and inclusive technology development. In sum, we are articulating a vision of AI in which it amplifies our innate creativity while resisting the displacement of the cultural, nuanced, and emotional aspects of traditional art. The future will be determined by human choices about how to govern AI so that it becomes a mechanism for artistic evolution and not a substitute for the artist's soul.",
+  "authors": [
+    "Viswa Chaitanya Marella",
+    "Sai Teja Erukude",
+    "Suhasnadh Reddy Veluru"
+  ],
+  "published": "2025-09-07T16:37:04Z",
+  "updated": "2025-09-07T16:37:04Z",
+  "categories": [
+    "cs.CY",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.07029",
+  "abs_url": "https://arxiv.org/abs/2509.07029",
+  "fetched_at": "2026-07-19T14:18:41.868746Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

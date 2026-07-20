@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.09581",
+  "title": "Wan-Dancer: A Hierarchical Framework for Minute-scale Coherent Music-to-Dance Generation",
+  "summary": "Generating long-duration, high-definition, and rhythmically synchronized dance videos directly from music remains a significant challenge, primarily due to the temporal constraints of current diffusion models, which typically fail beyond 20 seconds. Existing approaches, whether they rely on intermediate 3D skeletons or on end-to-end video synthesis, suffer from temporal drift, identity inconsistency, and repetitive motion patterns when extended to longer horizons. To address these limitations, we propose a novel hierarchical framework for minute-scale coherent music-to-dance generation. Our method decouples the process into global keyframe planning and local temporal refinement, leveraging full-track musical context to ensure long-range coherence. Key innovations include dynamic frame rate adaptation via time-mapped RoPE embeddings for precise alignment, an optical-flow-based loss function to enhance motion continuity, and motion-speed control to preserve high-fidelity details during rapid movements. Extensive experiments demonstrate that our framework surpasses the conventional duration barrier, generating stable, 720p/30fps videos exceeding one minute with superior temporal stability. Furthermore, the model exhibits robust versatility across five distinct dance genres, conditioned on both audio and textual prompts, establishing a new state-of-the-art in coherent, long-form dance video synthesis.",
+  "authors": [
+    "Mingyang Huang",
+    "Peng Zhang",
+    "Li Hu",
+    "Guangyuan Wang",
+    "Bang Zhang"
+  ],
+  "published": "2026-07-10T16:30:29Z",
+  "updated": "2026-07-13T10:32:30Z",
+  "categories": [
+    "cs.CV",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.09581",
+  "abs_url": "https://arxiv.org/abs/2607.09581",
+  "fetched_at": "2026-07-19T14:18:41.845643Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

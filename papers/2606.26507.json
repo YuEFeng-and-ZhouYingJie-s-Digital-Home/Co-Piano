@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.26507",
+  "title": "DanceDuo: Bridging Human Movement and AI Choreography",
+  "summary": "In recent years, advancements in deep learning and generative models have revolutionized music-driven dance generation. This paper introduces a novel platform, namely DanceDuo, leveraging diffusion models to generate AI-choreographed dance sequences synchronized with a variety of music genres, to encourage dancing practice. The system allows users to interact with AI by selecting music tracks, humanoid models, and importing personal dance videos for comparison, fostering a rich and engaging user experience. DanceDuo not only offers dance generation but also integrates human pose estimation models to provide users with insightful comparisons of their own performances with AI-generated sequences. We conducted a comprehensive user study, revealing that users found the interface intuitive, with particular praise for the dance comparison feature. Our DanceDuo contributes significantly to the integration of AI in dance choreography, offering novel avenues for both recreational and professional applications.",
+  "authors": [
+    "Gia-Cat Bui-Le",
+    "Tuong-Vy Truong-Thuy",
+    "Hai-Dang Nguyen",
+    "Trung-Nghia Le"
+  ],
+  "published": "2026-06-25T01:26:36Z",
+  "updated": "2026-06-25T01:26:36Z",
+  "categories": [
+    "cs.HC",
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.26507",
+  "abs_url": "https://arxiv.org/abs/2606.26507",
+  "fetched_at": "2026-07-19T14:18:41.846378Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

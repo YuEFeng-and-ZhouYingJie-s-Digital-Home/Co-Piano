@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.13278",
+  "title": "Adapting Diffusion-Based Music Synthesis to Speech and Singing Voice Conversion",
+  "summary": "Recent diffusion-based generative models have achieved strong results in domain-specific audio generation tasks such as speech, singing, and instrumental music synthesis. However, these models are typically specialized and do not generalize well to mixed or intermediate audio types. In this work, we adapt a diffusion-based model originally designed for multi-instrument music synthesis to voice conversion, covering both speech and singing within a unified framework. Specifically, we extend musical note-based conditioning to include phonetic posteriorgrams (PPGs) and pitch contours, and reinterpret timbre conditioning as speaker or singer identity via feature-wise linear modulation. Experiments show that the adapted model matches or surpasses a dedicated voice conversion system in terms of naturalness and performer similarity, while maintaining accurate pitch control across speech and singing. At the same time, we observe limitations in phonetic fidelity and a degradation in vocal quality when incorporating instrumental training data. Furthermore, we demonstrate that off-the-shelf feature extractors provide effective conditioning signals, enabling large-scale self-supervised training without manual annotations. These results highlight the potential of cross-domain model transfer towards unified audio generation systems capable of handling speech, singing, and music. Qualitative samples can be found on our project page: https://benadar293.github.io/voice-conversion",
+  "authors": [
+    "Ben Maman",
+    "Frank Zalkow",
+    "Hans-Ulrich Berendes",
+    "Paolo Sani",
+    "Christian Dittmar",
+    "Meinard Müller"
+  ],
+  "published": "2026-07-14T21:29:17Z",
+  "updated": "2026-07-16T07:52:59Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13278",
+  "abs_url": "https://arxiv.org/abs/2607.13278",
+  "fetched_at": "2026-07-19T14:18:41.844941Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

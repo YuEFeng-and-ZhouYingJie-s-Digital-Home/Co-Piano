@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2509.10331",
+  "title": "Who Decides How Knowing Becomes Doing? Redistributing Authority in Human-AI Music Co-Creation",
+  "summary": "In the era of human-AI co-creation, the maxim \"knowing is easy, doing is hard\" is redefined. AI has the potential to ease execution, yet the essence of \"hard\" lies in who governs the translation from knowing to doing. Mainstream tools often centralize interpretive authority and homogenize expression, suppressing marginal voices. To address these challenges, we introduce the first systematic framework for redistributing authority in the knowing-doing cycle, built on three principles, namely contestability, agency, and plurality. Through interactive studies with 180 music practitioners, complemented by in-depth interviews, we demonstrate that these principles reshape human-AI authority relations and reactivate human creative expression. The findings establish a new paradigm for critical computing and human-AI co-creation that advances from critique to practice.",
+  "authors": [
+    "Zhejing Hu",
+    "Yan Liu",
+    "Zhi Zhang",
+    "Gong Chen",
+    "Bruce X. B. Yu",
+    "Jiannong Cao"
+  ],
+  "published": "2025-09-12T15:12:01Z",
+  "updated": "2025-09-12T15:12:01Z",
+  "categories": [
+    "cs.HC",
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.10331",
+  "abs_url": "https://arxiv.org/abs/2509.10331",
+  "fetched_at": "2026-07-19T14:18:41.868615Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

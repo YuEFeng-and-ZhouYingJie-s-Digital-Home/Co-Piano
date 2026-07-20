@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2511.14250",
+  "title": "Count The Notes: Histogram-Based Supervision for Automatic Music Transcription",
+  "summary": "Automatic Music Transcription (AMT) converts audio recordings into symbolic musical representations. Training deep neural networks (DNNs) for AMT typically requires strongly aligned training pairs with precise frame-level annotations. Since creating such datasets is costly and impractical for many musical contexts, weakly aligned approaches using segment-level annotations have gained traction. However, existing methods often rely on Dynamic Time Warping (DTW) or soft alignment loss functions, both of which still require local semantic correspondences, making them error-prone and computationally expensive. In this article, we introduce CountEM, a novel AMT framework that eliminates the need for explicit local alignment by leveraging note event histograms as supervision, enabling lighter computations and greater flexibility. Using an Expectation-Maximization (EM) approach, CountEM iteratively refines predictions based solely on note occurrence counts, significantly reducing annotation efforts while maintaining high transcription accuracy. Experiments on piano, guitar, and multi-instrument datasets demonstrate that CountEM matches or surpasses existing weakly supervised methods, improving AMT's robustness, scalability, and efficiency. Our project page is available at https://yoni-yaffe.github.io/count-the-notes.",
+  "authors": [
+    "Jonathan Yaffe",
+    "Ben Maman",
+    "Meinard Müller",
+    "Amit H. Bermano"
+  ],
+  "published": "2025-11-18T08:40:05Z",
+  "updated": "2025-11-18T08:40:05Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.14250",
+  "abs_url": "https://arxiv.org/abs/2511.14250",
+  "fetched_at": "2026-07-19T14:18:41.847802Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.23583",
+  "title": "Opening the Design Space: Two Years of Performance with Intelligent Musical Instruments",
+  "summary": "Machine generation of symbolic music and digital audio are hot topics but there have been relatively few digital musical instruments that integrate generative AI. Present musical AI tools are not artist centred and do not support experimentation or integrating into musical instruments or practices. This work introduces an inexpensive generative AI instrument platform based on a single board computer that connects via MIDI to other musical devices. The platform uses artist-collected datasets with models trained on a regular computer. This paper asks what the design space of intelligent musical instruments might look like when accessible and portable AI systems are available for artistic exploration. I contribute five examples of instruments created and tested through a two-year first-person artistic research process. These show that (re)mapping can replace retraining for discovering AI interaction, that fast input interleaving is a new co-creative strategy, that small-data AI models can be a transportable design resource, and that cheap hardware can lower barriers to inclusion. This work could enable artists to explore new interaction and performance schemes with intelligent musical instruments.",
+  "authors": [
+    "Charles Patrick Martin"
+  ],
+  "published": "2026-04-26T07:41:38Z",
+  "updated": "2026-04-26T07:41:38Z",
+  "categories": [
+    "cs.SD",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.23583",
+  "abs_url": "https://arxiv.org/abs/2604.23583",
+  "fetched_at": "2026-07-19T14:17:38.249177Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

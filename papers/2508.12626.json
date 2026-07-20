@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2508.12626",
+  "title": "Exploring the Feasibility of LLMs for Automated Music Emotion Annotation",
+  "summary": "Current approaches to music emotion annotation remain heavily reliant on manual labelling, a process that imposes significant resource and labour burdens, severely limiting the scale of available annotated data. This study examines the feasibility and reliability of employing a large language model (GPT-4o) for music emotion annotation. In this study, we annotated GiantMIDI-Piano, a classical MIDI piano music dataset, in a four-quadrant valence-arousal framework using GPT-4o, and compared against annotations provided by three human experts. We conducted extensive evaluations to assess the performance and reliability of GPT-generated music emotion annotations, including standard accuracy, weighted accuracy that accounts for inter-expert agreement, inter-annotator agreement metrics, and distributional similarity of the generated labels. While GPT's annotation performance fell short of human experts in overall accuracy and exhibited less nuance in categorizing specific emotional states, inter-rater reliability metrics indicate that GPT's variability remains within the range of natural disagreement among experts. These findings underscore both the limitations and potential of GPT-based annotation: despite its current shortcomings relative to human performance, its cost-effectiveness and efficiency render it a promising scalable alternative for music emotion annotation.",
+  "authors": [
+    "Meng Yang",
+    "Jon McCormack",
+    "Maria Teresa Llano",
+    "Wanchao Su"
+  ],
+  "published": "2025-08-18T04:58:15Z",
+  "updated": "2025-08-18T04:58:15Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.12626",
+  "abs_url": "https://arxiv.org/abs/2508.12626",
+  "fetched_at": "2026-07-19T14:18:41.861159Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

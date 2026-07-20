@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.25207",
+  "title": "Huí Sù: Co-constructing a Dual Feedback Apparatus",
+  "summary": "This performance presents a duet between two intelligent musical instruments, Sù (to trace back; to go upstream) and Agentier (playing on agentic clavier), and their human performers, connected through feedback loops. Rather than treating AI as a tool that responds predictably to input, both systems operate recursively, where past actions continuously influence future behaviour. The Sù operates in the audio space through latent representation. Its performer uses Make Noise 0-series synthesisers and MIDI controllers to work with a neural feedback synthesis system based on a RAVE model, with a latent feedback loop embedded within the model's internal structure. This allows the instrument to remember and reuse its own internal states, influencing ongoing sound generation through its recent sonic history. The Agentier functions in the control space. Its performer interacts with the system using a Roland S-1 synthesiser and Keith McMillen QuNeo touchpad, where control gestures are routed into a recurrent neural network that feeds back into the synthesis process. Through this feedback loop, the system actively shapes the evolution of control signals over time. Contrasting feedback in the audio and control domains, the performance explores shared agency, resistance, and negotiation between humans and intelligent musical systems. Musical phenomena are co-produced through the entangled states of interaction, rather than through pre-existing system configuration or fixed mappings.",
+  "authors": [
+    "Yichen Wang",
+    "Charles Patrick Martin"
+  ],
+  "published": "2026-04-28T04:24:29Z",
+  "updated": "2026-04-28T04:24:29Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.25207",
+  "abs_url": "https://arxiv.org/abs/2604.25207",
+  "fetched_at": "2026-07-19T14:17:38.248717Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

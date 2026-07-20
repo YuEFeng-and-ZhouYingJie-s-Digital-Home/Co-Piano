@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2512.18232",
+  "title": "AutoSchA: Automatic Hierarchical Music Representations via Multi-Relational Node Isolation",
+  "summary": "Hierarchical representations provide powerful and principled approaches for analyzing many musical genres. Such representations have been broadly studied in music theory, for instance via Schenkerian analysis (SchA). Hierarchical music analyses, however, are highly cost-intensive; the analysis of a single piece of music requires a great deal of time and effort from trained experts. The representation of hierarchical analyses in a computer-readable format is a further challenge. Given recent developments in hierarchical deep learning and increasing quantities of computer-readable data, there is great promise in extending such work for an automatic hierarchical representation framework. This paper thus introduces a novel approach, AutoSchA, which extends recent developments in graph neural networks (GNNs) for hierarchical music analysis. AutoSchA features three key contributions: 1) a new graph learning framework for hierarchical music representation, 2) a new graph pooling mechanism based on node isolation that directly optimizes learned pooling assignments, and 3) a state-of-the-art architecture that integrates such developments for automatic hierarchical music analysis. We show, in a suite of experiments, that AutoSchA performs comparably to human experts when analyzing Baroque fugue subjects.",
+  "authors": [
+    "Stephen Ni-Hahn",
+    "Rico Zhu",
+    "Jerry Yin",
+    "Yue Jiang",
+    "Cynthia Rudin",
+    "Simon Mak"
+  ],
+  "published": "2025-12-20T06:22:40Z",
+  "updated": "2025-12-20T06:22:40Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.18232",
+  "abs_url": "https://arxiv.org/abs/2512.18232",
+  "fetched_at": "2026-07-19T14:18:41.864495Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

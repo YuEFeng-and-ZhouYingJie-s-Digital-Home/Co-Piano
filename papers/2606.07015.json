@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2606.07015",
+  "title": "Towards Unified Song Generation and Singing Voice Conversion with Accompaniment Co-Generation",
+  "summary": "While song generation and singing voice conversion (SVC) have evolved significantly, they have long been developed isolated: the former lacks zero-shot speaker cloning, while the latter overlooks vocal-accompaniment synergy. To bridge this gap, we propose UniSinger, the first end-to-end framework unifying speaker cloning song generation and accompaniment co-generation SVC. Building on the multimodal diffusion transformer, we construct a unified speaker embedding space transferring speaker representation from SVC to song generation, endowing fine-grained cross-task timbre control. To mitigate multi-task optimization conflicts, we design a curriculum learning strategy using task-specific modality masking to guide the model to gradually master the generative mechanisms among semantic content, vocal timbre, and accompaniment. Experiments show state-of-the-art performance on both tasks and realizes complementary benefits, offering new possibilities for intelligent music production.",
+  "authors": [
+    "Ziyu Zhang",
+    "Chunyu Qiang",
+    "Xiaopeng Wang",
+    "Yuxin Guo",
+    "Kang Yin",
+    "Wenjie Tian",
+    "Jingbin Hu",
+    "Tianlun Zuo",
+    "Zhao Guo",
+    "Teng Ma",
+    "Yuzhe Liang",
+    "Chen Zhang",
+    "Lei Xie"
+  ],
+  "published": "2026-06-05T07:59:17Z",
+  "updated": "2026-06-14T03:42:54Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.07015",
+  "abs_url": "https://arxiv.org/abs/2606.07015",
+  "fetched_at": "2026-07-19T14:18:41.847207Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

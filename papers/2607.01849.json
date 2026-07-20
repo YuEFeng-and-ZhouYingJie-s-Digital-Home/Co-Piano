@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.01849",
+  "title": "Decomposer: Learning to Decompile Symbolic Music to Programs",
+  "summary": "Musical performance involves executing a set of high-level musical instructions, yet recovering those instructions from the performance is a challenging inverse problem. We present Decomposer, a post-training framework for symbolic music decompilation: the task of recovering executable, editable music programs from symbolic music. We instantiate the task as MIDI-to-Strudel decompilation, where the model takes symbolic MIDI as input and produces a program in Strudel, a music programming language, that reconstructs the input when executed. The task poses two challenges: Strudel is a low-resource language with little naturally paired MIDI-code data, and optimizing faithful reconstruction of MIDI alone can collapse to unreadable note-by-note transliteration. We address these challenges in two stages. First, we construct Strudel-Synth, a synthetic corpus of paired Strudel programs and rendered MIDI, and use it for supervised fine-tuning. Second, we refine the model with reinforcement learning on unpaired MIDI, optimizing rewards for both MIDI reconstruction faithfulness and code readability. Our evaluation across synthetic and real-world MIDI benchmarks shows that Decomposer achieves substantially higher MIDI reconstruction faithfulness than closed-source LLMs while producing more readable and diverse code than the heuristic converter.",
+  "authors": [
+    "Yewon Kim",
+    "Apurva Gandhi",
+    "David Chung",
+    "Graham Neubig",
+    "Chris Donahue"
+  ],
+  "published": "2026-07-02T08:09:52Z",
+  "updated": "2026-07-02T08:09:52Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.01849",
+  "abs_url": "https://arxiv.org/abs/2607.01849",
+  "fetched_at": "2026-07-19T14:17:38.246056Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

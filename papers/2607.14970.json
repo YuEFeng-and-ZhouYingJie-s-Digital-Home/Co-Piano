@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.14970",
+  "title": "Explaining Process Control Optimisation Recommendations via GradientSHAP and Implicit Differentiation",
+  "summary": "Automated optimisation is increasingly adopted in industrial processes, yet a trust gap persists between engineers who design these algorithms and operators who must act on their recommendations. Explainable AI methods like SHAP (SHapley Additive exPlanations) have transformed interpretability for machine learning predictions; optimisation outputs could benefit from similar techniques. We present an approach that integrates Implicit Function Theorem (IFT) based sensitivity analysis with SHAP attribution and narrative generation via Large Language Models (LLM), producing explanations tailored for operators. Our approach leverages IFT to compute exact parameter sensitivities $\\partial p^*/\\partial x$ from the optimality conditions, enabling efficient GradientSHAP computation. For an industrial High Pressure Grinding Roll (HPGR) control optimisation problem with 22 features, we achieve equivalent SHAP attributions (correlation $>$0.99 with KernelSHAP) with over 40$\\times$ speedup, enabling real-time natural language explanations. We validate on industrial scenarios and present feedback from domain experts on generated explanations.",
+  "authors": [
+    "Paul Darm",
+    "Cem Alpturk",
+    "Kenneth Ulrich",
+    "William Duncan",
+    "Ali Anwar",
+    "Annalisa Riccardi"
+  ],
+  "published": "2026-07-16T13:25:53Z",
+  "updated": "2026-07-16T13:25:53Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14970",
+  "abs_url": "https://arxiv.org/abs/2607.14970",
+  "fetched_at": "2026-07-19T14:17:07.977935Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

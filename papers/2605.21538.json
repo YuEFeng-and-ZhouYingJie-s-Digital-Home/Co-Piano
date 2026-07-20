@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.21538",
+  "title": "Academic Text-to-Music Grand Challenge: Datasets, Baselines, and Evaluation Methods",
+  "summary": "This paper presents an overview and the technical framework of the ICME 2026 Grand Challenge on Academic Text-to-Music Generation (ATTM). Despite the rapid progress in text-to-music generation (TTM) systems, the field is currently dominated by models trained on massive proprietary datasets with industrial-scale computational resources, creating a significant barrier for academic research. To address this, the ATTM Challenge establishes a fair-play benchmark that requires participants to train generative models strictly from scratch using a standardized, CC-licensed subset of the MTG-Jamendo dataset containing only instrumental music. The challenge is divided into two tracks: the Efficiency Track (limited to 500M parameters) and the Performance Track (no parameter limit). Submissions are evaluated through a multi-stage process involving objective metrics, including Frechet Audio Distance, CLAP score, and a novel Concept Coverage Score (CCS), followed by a subjective listening test. By providing open-source baselines, preprocessing pipelines, reference captions, and public evaluation code for computing FAD and CLAP, this challenge aims to facilitate and promote TTM research in academic contexts.",
+  "authors": [
+    "Fang-Chih Hsieh",
+    "Wei-Jaw Lee",
+    "Chun-Ping Wang",
+    "Hung-yi Lee",
+    "Hao-Wen Dong",
+    "Yi-Hsuan Yang"
+  ],
+  "published": "2026-05-20T07:18:24Z",
+  "updated": "2026-06-23T07:00:03Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.21538",
+  "abs_url": "https://arxiv.org/abs/2605.21538",
+  "fetched_at": "2026-07-19T14:18:41.851264Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

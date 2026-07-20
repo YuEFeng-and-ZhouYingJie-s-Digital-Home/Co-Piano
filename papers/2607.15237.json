@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.15237",
+  "title": "\"Goldfish'' equations for infinitely many particles",
+  "summary": "The ``goldfish'' equations, so named because of their striking beauty, are a system of $N$ nonlinear ODE's, where $N$ is an arbitrary integer. They can be solved exactly in a very simple manner, by transforming them to free motion using a transformation involving the transition from the set of {\\em coefficients\\/} of a polynomial to that of its {\\em zeroes}. This paper aims to explore the possibility of extending this solution to the case in which $N$ is infinite. The main difficulty involves the transition from polynomials to entire functions. Another approach using non-standard analysis, is left to future work.",
+  "authors": [
+    "Francois Leyvraz"
+  ],
+  "published": "2026-07-16T17:35:21Z",
+  "updated": "2026-07-16T17:35:21Z",
+  "categories": [
+    "math-ph"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15237",
+  "abs_url": "https://arxiv.org/abs/2607.15237",
+  "fetched_at": "2026-07-19T14:17:38.250523Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.21918",
+  "title": "Wave physics as a choreographic notation for partner dance",
+  "summary": "The wave is considered a paradigm in dance and connects bodily expression with nature. Although wave concepts such as propagation and phase have proven to be powerful tools for dance analysis, many aspects of bodily expression, including partner dance, have been investigated using numerical approaches and neural networks. Complementarily, compact analytical models have been especially successful for describing human motion, particularly gait. Here, we leverage wave-physics concepts to provide a comprehensive wave-based and oscillatory analytical characterization of expressive motion in partner dance. We apply this framework to Bachata Sensual, a dance style in which the wave is the leitmotif. We analyse three dance couples (Phase I) performing five movement sequences and one composite. The sequences exhibit multiple wave phenomena, from time-dependent interference to the generation-like emergence of harmonics. Within this wave-physics perspective, the formalism can be viewed as a choreographic motion notation. As an illustrative acoustic analogy, harmonic components extracted under boundary conditions can be mapped to audible frequencies, forming musical dyads. Within certain limits and not rigidly constrained by body morphology, modal response can be tuned to underpin fluid motion, adapting across musical timescales and movement patterns. Overall, this wave-physics notation highlights connections between partner-dance expressivity and harmonic nature.",
+  "authors": [
+    "Fernando Ramiro-Manzano"
+  ],
+  "published": "2026-04-23T17:58:03Z",
+  "updated": "2026-04-23T17:58:03Z",
+  "categories": [
+    "physics.bio-ph",
+    "physics.class-ph",
+    "physics.pop-ph"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.21918",
+  "abs_url": "https://arxiv.org/abs/2604.21918",
+  "fetched_at": "2026-07-19T14:18:41.843680Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

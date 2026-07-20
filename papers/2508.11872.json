@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2508.11872",
+  "title": "Designing Singing Syllabi with Virtual Avatars: AI-Assisted Syllabus Reauthoring",
+  "summary": "Traditional syllabi often function as static reference documents rather than engaging introductions to a course. In practical teaching, we observe that few students thoroughly read or fully comprehend the information provided in traditional, text-based course syllabi, which can leave essential information underused. This paper reframes syllabus communication as a design problem and documents an AI-assisted workflow for transforming a traditional syllabus into a musical, video-based, and avatar-enhanced learning artifact. The paper traces the process of lyrical adaptation, music generation, video composition, avatar synthesis, and optional browser-based interaction. And the paper contributes a reproducible workflow and a concrete example of syllabus reauthoring. The discussion in this paper positions the singing syllabus as a supplement to, not a replacement for, the formal written syllabus and identifies future directions for empirical evaluation. The complete implementation described in this paper is publicly available at https://github.com/xinxingwu-uk/SSVA",
+  "authors": [
+    "Xinxing Wu"
+  ],
+  "published": "2025-08-16T02:12:39Z",
+  "updated": "2026-05-23T02:23:15Z",
+  "categories": [
+    "cs.CY",
+    "cs.AI",
+    "cs.LG",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.11872",
+  "abs_url": "https://arxiv.org/abs/2508.11872",
+  "fetched_at": "2026-07-19T14:18:41.868875Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.15278",
+  "title": "A Manual Bar-by-Bar Tempo Measurement Protocol for Polyphonic Chamber Music Recordings: Design, Validation, and Application to Beethoven's Piano and Cello Sonatas",
+  "summary": "Empirical performance analysis depends on the accurate extraction of tempo data from recordings, yet standard computational tools, designed for monophonic audio or modern studio conditions, fail systematically when applied to historical polyphonic chamber music. This paper documents the failure of automated beat-detection software on duo recordings of Beethoven's five piano and cello sonatas (Op.~5 Nos.~1 and~2; Op.~69; Op.~102 Nos.~1 and~2), and presents a formalised manual alternative: a cumulative lap-timer protocol that yields bar-level beats-per-minute data with millisecond resolution. The protocol, developed in cross-disciplinary collaboration with an engineer specialising in VLSI design, rests on a cumulative timestamp architecture that prevents error accumulation, permits internal self-validation, and captures expressive timing phenomena (rubato, fermatas, accelerandi, ritardandi) that automated tools systematically suppress or misread. The mathematical derivation of the BPM formula, the spreadsheet data structure, and the error characterisation are presented in full. Applied to over one hundred movement-level recordings spanning 1930--2012, the protocol generated a dataset subsequently visualised through tempographs, histograms with spline-smoothed probability density functions, ridgeline plots, and combination charts. The paper argues that manual annotation is not a methodological retreat but a principled response to the intrinsic limitations of computational tools when faced with the specific challenges of polyphonic historical recordings. The complete dataset and analysis code are publicly available.",
+  "authors": [
+    "Ignasi Sole"
+  ],
+  "published": "2026-04-16T17:49:03Z",
+  "updated": "2026-04-16T17:49:03Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.15278",
+  "abs_url": "https://arxiv.org/abs/2604.15278",
+  "fetched_at": "2026-07-19T14:18:41.843805Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

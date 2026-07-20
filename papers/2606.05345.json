@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2606.05345",
+  "title": "PJ-RoPE: A Fourier-Jet-Affine Position Space for Relative Attention",
+  "summary": "We organize relative-position mechanisms in attention as a learnable Fourier-Jet-Affine position space. The starting point is lag-shift dynamics: a relative-position kernel is a response function of the lag \\(d=i-j\\), and the one-step shift \\((Ef)(d)=f(d+1)\\) gives a compact classification of finite structured responses through constant-coefficient difference modules. In this view, RoPE supplies simple Fourier roots, Jordan-RoPE thickens these roots into finite Fourier jets, and ALiBi supplies the repeated unit-root affine direction. NTK-aware RoPE scaling fits the same structure as a spectral flow of simple Fourier roots: moving the frequency grid generates first Fourier-jet tangent directions, while higher Taylor directions generate higher jets. PJ-RoPE makes these jet directions explicit and learnable, and uses the resulting space to measure task-level sector selection. The framework separates scalar PJ-bias kernels from exact PJ-rotary feature transforms, introduces sector-gate, effective-mass, functional-energy, and leave-one-order-out diagnostics, and stabilizes high-order coordinates with LC/rapidity compactification. Controlled probes recover designed sectors; synthetic teachers show trainable use; small byte-level language runs favor NTK-aware RoPE plus affine recency; symbolic music-token streams keep LC/affine variants strong with measurable high-order corrections; and LC diagnostics quantify the stability-resolution tradeoff.",
+  "authors": [
+    "Yaobo Zhang"
+  ],
+  "published": "2026-06-03T18:37:46Z",
+  "updated": "2026-06-19T19:44:08Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.05345",
+  "abs_url": "https://arxiv.org/abs/2606.05345",
+  "fetched_at": "2026-07-19T14:18:41.847321Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

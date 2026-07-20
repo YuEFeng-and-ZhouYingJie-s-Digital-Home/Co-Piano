@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2502.10426",
+  "title": "Musical Score Following using Statistical Inference",
+  "summary": "Musical score following is the real-time mapping of a performance to corresponding locations in a musical score. Score following can be used in a variety of applications including automatic page turning and real-time accompaniment. This report presents a novel approach for score following motivated by Wilson and Adams's 2013 paper, which introduces Spectral Mixture (SM) kernels for Gaussian Process (GP) regression. Since the SM kernel is derived from a Mixture of Gaussians in the frequency domain, it is particularly suitable for modelling the superposed power spectra of musical notes, in which energy is concentrated at multiples of the fundamental frequency of each note. Our score follower begins by using a GP to statistically infer the musical notes played during 800-sample 'audioframes' (~18 ms) of solo piano music. These predictions are then used in a duration-dependent Hidden Markov Model to predict the most likely score positions in real time. Our two-stage approach achieves successful score following not only on four-part hymns arranged for keyboard, but also on pieces for the violin, oboe, and flute. This showcases the powerful and flexible nature of GPs for statistical inference on musical audio signals. Given the success of this project, we contribute to the literature a first proof of concept of the application of GPs in score following, and more broadly, in online Music Information Retrieval (MIR) tasks. This project also contributes a working score follower product that renders score position in real time using an adapted open-source user interface. Areas for future work include improving accuracy on repeated notes and during heavy use of sustain pedal, adapting to minor deviations from the score, and modelling multi-instrument works.",
+  "authors": [
+    "Josephine Cowley"
+  ],
+  "published": "2025-02-06T08:24:30Z",
+  "updated": "2025-02-06T08:24:30Z",
+  "categories": [
+    "eess.AS",
+    "cs.SD",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2502.10426",
+  "abs_url": "https://arxiv.org/abs/2502.10426",
+  "fetched_at": "2026-07-19T14:18:41.853675Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

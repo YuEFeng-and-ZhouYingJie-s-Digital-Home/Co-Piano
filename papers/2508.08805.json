@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2508.08805",
+  "title": "Opening Musical Creativity? Embedded Ideologies in Generative-AI Music Systems",
+  "summary": "AI systems for music generation are increasingly common and easy to use, granting people without any musical background the ability to create music. Because of this, generative-AI has been marketed and celebrated as a means of democratizing music making. However, inclusivity often functions as marketable rhetoric rather than a genuine guiding principle in these industry settings. In this paper, we look at four generative-AI music making systems available to the public as of mid-2025 (AIVA, Stable Audio, Suno, and Udio) and track how they are rhetoricized by their developers, and received by users. Our aim is to investigate ideologies that are driving the early-stage development and adoption of generative-AI in music making, with a particular focus on democratization. A combination of autoethnography and digital ethnography is used to examine patterns and incongruities in rhetoric when positioned against product functionality. The results are then collated to develop a nuanced, contextual discussion. The shared ideology we map between producers and consumers is individualist, globalist, techno-liberal, and ethically evasive. It is a 'total ideology' which obfuscates individual responsibility, and through which the nature of music and musical practice is transfigured to suit generative outcomes.",
+  "authors": [
+    "Liam Pram",
+    "Fabio Morreale"
+  ],
+  "published": "2025-08-12T09:59:07Z",
+  "updated": "2025-08-12T09:59:07Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.08805",
+  "abs_url": "https://arxiv.org/abs/2508.08805",
+  "fetched_at": "2026-07-19T14:18:41.869126Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

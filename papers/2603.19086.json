@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2603.19086",
+  "title": "In the Margins: An Empirical Study of Ethereum Inscriptions",
+  "summary": "Ethereum Inscriptions (Ethscriptions) repurpose Ethereum calldata into a persistent inscription channel by embedding \\texttt{data:}~URI payloads. These transactions typically target externally owned accounts, allowing the payload to bypass EVM execution while remaining permanently replicated across full nodes. Although calldata was originally designed for compact smart-contract parameters, this repurposing enables structured data embedding with long-term storage consequences. We present the first large-scale empirical study of Ethscriptions, treating them as a distinct \\emph{calldata-resident workload} rather than merely a subset of general calldata usage. Our analysis focuses on the \\textit{Ethscription} operational subset, which consists of payloads that decode to JSON and conform to a token-operation grammar (e.g., \\texttt{p}, \\texttt{op}, \\texttt{tick}, \\texttt{amt}). From $6.27$ million Ethscription candidates (\\Uone), we extract $4.75$ million Ethscription operations (\\Utwo, $75.8\\%$ of \\Uone). This result shows that structured token-like activity dominates the ecosystem. Our measurements further reveal (i) a complete workload lifecycle compressed into nine months (bootstrap, expansion, saturation), (ii) proliferation of $30$+ competing protocols without convergence toward a dominant standard, (iii) a lifecycle funnel exhibiting $201\\times$ deploy-to-mint amplification and a $57.6{:}1$ mint-to-transfer collapse indicative of speculative minting, (iv) extreme participation inequality (Gini~$0.86$), and (v) a measurable permanent data footprint imposed on the Ethereum network.",
+  "authors": [
+    "Xihan Xiong",
+    "Minfeng Qi",
+    "Shiping Chen",
+    "Guangsheng Yu",
+    "Zhipeng Wang",
+    "Qin Wang"
+  ],
+  "published": "2026-03-19T16:11:34Z",
+  "updated": "2026-03-19T16:11:34Z",
+  "categories": [
+    "cs.CE"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.19086",
+  "abs_url": "https://arxiv.org/abs/2603.19086",
+  "fetched_at": "2026-07-19T14:17:07.974399Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

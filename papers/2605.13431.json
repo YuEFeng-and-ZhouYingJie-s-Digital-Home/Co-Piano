@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.13431",
+  "title": "Text2Score: Generating Sheet Music From Textual Prompts",
+  "summary": "Developing text-driven symbolic music generation models remains challenging due to the scarcity of aligned text-music datasets and the unreliability of automated captioning pipelines. While most efforts have focused on MIDI, sheet music representations are largely underexplored in text-driven generation. We present Text2Score, a two-stage framework comprising a planning stage and an execution stage for generating sheet music from natural language prompts. By deriving supervision signals directly from symbolic XML data, we propose an alternative training paradigm that bypasses noisy or scarce text-music pairs. In the planning stage, an LLM orchestrator translates a natural language prompt into a structured measure-wise plan defining musical attributes such as instruments, key, time signatures, harmony, etc. This plan is then consumed by a generative model in the execution stage to produce interleaved ABC notation conditioned on the plan's structural constraints. To assess output quality, we introduce an evaluation framework covering playability, readability, instrument utilization, structural complexity, and prompt adherence, validated by expert musicians. Text2Score consistently outperforms both a pure LLM-based agentic framework and three end-to-end baselines across objective and subjective dimensions. We open-source the dataset, code, evaluation set and LLM prompts used in this work; a demo is available on our project page (https://keshavbhandari.github.io/portfolio/text2score).",
+  "authors": [
+    "Keshav Bhandari",
+    "Sungkyun Chang",
+    "Abhinaba Roy",
+    "Francesca Ronchini",
+    "Emmanouil Benetos",
+    "Dorien Herremans",
+    "Simon Colton"
+  ],
+  "published": "2026-05-13T12:24:41Z",
+  "updated": "2026-05-13T12:24:41Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.13431",
+  "abs_url": "https://arxiv.org/abs/2605.13431",
+  "fetched_at": "2026-07-19T14:17:38.248228Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

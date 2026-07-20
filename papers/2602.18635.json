@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.18635",
+  "title": "Musical Training, but not Mere Exposure to Music, Drives the Emergence of Chroma Equivalence in Artificial Neural Networks",
+  "summary": "Pitch is a fundamental aspect of auditory perception. Pitch perception is commonly described across two perceptual dimensions: pitch height is the sense that tones with varying frequencies seem to be higher or lower, and chroma equivalence is the cyclical similarity of notes octaves, corresponding to a doubling of fundamental frequency. Existing research is divided on whether chroma equivalence is a learned percept that varies according to musical experience and culture, or is an innate percept that develops automatically. Building on a recent framework that proposes to use ANNs to ask 'why' questions about the brain, we evaluated recent auditory ANNs using representational similarity analysis to test the emergence of pitch height and chroma equivalence in their learned representations. Additionally, we fine-tuned two models, Wav2Vec 2.0 and Data2Vec, on a self-supervised learning task using speech and music, and a supervised music transcription task. We found that all models exhibited varying degrees of pitch height representation, but that only models trained on the supervised music transcription task exhibited chroma equivalence. Mere exposure to music through self-supervised learning was not sufficient for chroma equivalence to emerge. This supports the view that chroma equivalence is a higher-order cognitive computation that emerges to support the specific task of music perception, distinct from other auditory perception such as speech listening. This work also highlights the usefulness of ANNs for probing the developmental conditions that give rise to perceptual representations in humans.",
+  "authors": [
+    "Lukas Grasse",
+    "Matthew S. Tata"
+  ],
+  "published": "2026-02-20T22:07:01Z",
+  "updated": "2026-02-20T22:07:01Z",
+  "categories": [
+    "cs.SD",
+    "cs.NE"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.18635",
+  "abs_url": "https://arxiv.org/abs/2602.18635",
+  "fetched_at": "2026-07-19T14:18:41.855038Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

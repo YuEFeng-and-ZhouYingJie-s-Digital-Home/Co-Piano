@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2508.07973",
+  "title": "Joint Transcription of Acoustic Guitar Strumming Directions and Chords",
+  "summary": "Automatic transcription of guitar strumming is an underrepresented and challenging task in Music Information Retrieval (MIR), particularly for extracting both strumming directions and chord progressions from audio signals. While existing methods show promise, their effectiveness is often hindered by limited datasets. In this work, we extend a multimodal approach to guitar strumming transcription by introducing a novel dataset and a deep learning-based transcription model. We collect 90 min of real-world guitar recordings using an ESP32 smartwatch motion sensor and a structured recording protocol, complemented by a synthetic dataset of 4h of labeled strumming audio. A Convolutional Recurrent Neural Network (CRNN) model is trained to detect strumming events, classify their direction, and identify the corresponding chords using only microphone audio. Our evaluation demonstrates significant improvements over baseline onset detection algorithms, with a hybrid method combining synthetic and real-world data achieving the highest accuracy for both strumming action detection and chord classification. These results highlight the potential of deep learning for robust guitar strumming transcription and open new avenues for automatic rhythm guitar analysis.",
+  "authors": [
+    "Sebastian Murgul",
+    "Johannes Schimper",
+    "Michael Heizmann"
+  ],
+  "published": "2025-08-11T13:34:49Z",
+  "updated": "2025-08-11T13:34:49Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.07973",
+  "abs_url": "https://arxiv.org/abs/2508.07973",
+  "fetched_at": "2026-07-19T14:18:41.865677Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

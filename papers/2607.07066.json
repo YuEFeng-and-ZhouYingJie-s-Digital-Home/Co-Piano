@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.07066",
+  "title": "Multiplication Beyond Groups: Stratified Fourier Mechanisms in Transformer Circuits",
+  "summary": "Transformers have demonstrated a remarkable ability to learn algorithmic reasoning, yet mechanistic analyses have mostly focused on globally invertible operations such as cyclic addition and group composition. In this work, we investigate how small transformers learn modular integer multiplication over composite moduli, a fundamentally non-invertible operation due to the presence of zero-divisors. We propose the monoid extension: a localized generalization of Group Composition via Representation (GCR) that suggests the learned computation does not rely on a single global representation space. Instead, the model partitions the input space into local hierarchical algebraic regions, where group-like structure survives and Fourier mechanisms can be applied. In transformers trained on square-free modular multiplication, we find that embeddings organize around these regions, attention exhibits class-sensitive routing and low-rank write directions, and local character features explain a large fraction of the model's output logits. Our results suggest that representation-theoretic mechanisms previously identified for group operations can extend beyond groups to more general structures.",
+  "authors": [
+    "Zitong Andrew Chen",
+    "Junaid Hasan",
+    "Akhil Srinivasan",
+    "Hemkesh Bandi",
+    "Jarod Alper"
+  ],
+  "published": "2026-07-08T06:49:48Z",
+  "updated": "2026-07-08T06:49:48Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "math.NT",
+    "math.RT"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.07066",
+  "abs_url": "https://arxiv.org/abs/2607.07066",
+  "fetched_at": "2026-07-19T14:18:41.878978Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

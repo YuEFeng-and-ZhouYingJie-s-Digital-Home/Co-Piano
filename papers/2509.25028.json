@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2509.25028",
+  "title": "The Shape of Surprise: Structured Uncertainty and Co-Creativity in AI Music Tools",
+  "summary": "Randomness plays a pivotal yet paradoxical role in computational music creativity: it can spark novelty, but unchecked chance risks incoherence. This paper presents a thematic review of contemporary AI music systems, examining how designers incorporate randomness and uncertainty into creative practice. I draw on the concept of structured uncertainty to analyse how stochastic processes are constrained within musical and interactive frameworks. Through a comparative analysis of six systems - Musika (Pasini and Schlüter, 2022), MIDI-DDSP (Wu et al., 2021), Melody RNN (Magenta Project), RAVE (Caillon and Esling, 2021), Wekinator (Fiebrink and Cook, 2010), and Somax 2 (Borg, 2019) - we identify recurring design patterns that support musical coherence, user control, and co-creativity. To my knowledge, this is the first thematic review examining randomness in AI music through structured uncertainty, offering practical insights for designers and artists aiming to support expressive, collaborative, or improvisational interactions.",
+  "authors": [
+    "Eric Browne"
+  ],
+  "published": "2025-09-29T16:50:27Z",
+  "updated": "2025-09-29T16:50:27Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.25028",
+  "abs_url": "https://arxiv.org/abs/2509.25028",
+  "fetched_at": "2026-07-19T14:18:41.868129Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

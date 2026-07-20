@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15127",
+  "title": "On-board AI-based Channel Estimation for LEO NTNs",
+  "summary": "Artificial Intelligence(AI) methods have shown strong channel estimation performance in terrestrial networks, but they typically rely on substantial computational resources. As 6G moves toward a unified architecture that will include Non-Terrestrial Networks (NTN) from day 0, availability of large and power hungry computational resources shall not be taken for granted. At the same time, NTN propagation often exhibits high predictability, limited multipath richness and significant Doppler shifts, representing a specific channel estimation problem. In this work, we propose a lightweight convolution-based channel estimator designed specifically for NTN operation and real-time onboard inference. We evaluate its channel estimation accuracy under stringent NGSO power budgets and quantify the resulting end-to-end impact on link performance. We show the improvement in terms of Mean Squared Error (MSE) achieved by the proposed approach compared with established algorithms, demonstrating that efficient AI models can deliver robust performance even on power-constrained spaceborne nodes. In addition, the proposed design by exploiting the domain knowledge, improves parameter efficiency by $27\\%$ compared with state-of-the-art AI models and requires approximately $29\\times$ fewer floating-point operations than conventional methods while achieving superior MSE performance.",
+  "authors": [
+    "Mahdi Abdollahpour",
+    "Bruno De Filippo",
+    "Carla Amatetti",
+    "Alessandro Vanelli-Coralli"
+  ],
+  "published": "2026-07-16T15:37:07Z",
+  "updated": "2026-07-16T15:37:07Z",
+  "categories": [
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15127",
+  "abs_url": "https://arxiv.org/abs/2607.15127",
+  "fetched_at": "2026-07-19T14:17:07.976537Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

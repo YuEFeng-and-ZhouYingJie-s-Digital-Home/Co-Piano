@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15074",
+  "title": "Mirror symmetry in 3d in 3d mirror symmetry",
+  "summary": "Given a compact CY3 $Y$, its A-side (resp. B-side) universal intermediate Jacobian $X$ (resp. $X^{!}$) admits a natural hyperkahler structure. Both $X$ and $X^{!}$ determines 3d Rozansky-Witten theories, in both A-model and B-model. We describe some surprising 3d mirror symmetry phenomena between $X$ and $X^{!}$. This includes (i) a 3d SYZ construction of $X^{!}$ from $X$ via moduli of certain 3d A-branes in $X$ constructed from $D^{b}\\left( Y,Ω\\right) $ with varying stability conditions given by $\\varpi $; (ii) The 3d B-brane on $X^{!}$, constructed from varying $D^{b}\\left( Y,Ω\\right) $ with fixed $\\varpi $, is realized as the 3d SYZ transformation of a cotangent fiber 3d A-brane in $X$. Under mirror symmetry between $Y$ and $Y^{\\vee }$, the roles for $X$ and $% X^{!}$ got interchanged. We also construct 3d A- and B-branes in $X$ and $X^{!}$ via DT theory and discrete symmetries on $Y$ and $Y^{\\vee }$.",
+  "authors": [
+    "Naichung Conan Leung",
+    "Mengqi Yang"
+  ],
+  "published": "2026-07-16T14:45:58Z",
+  "updated": "2026-07-16T14:45:58Z",
+  "categories": [
+    "hep-th",
+    "math-ph",
+    "math.SG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15074",
+  "abs_url": "https://arxiv.org/abs/2607.15074",
+  "fetched_at": "2026-07-19T14:17:38.253140Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

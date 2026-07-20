@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.08286",
+  "title": "FXplorer: A Map-Based Interface for Exploratory Audio Effect Design",
+  "summary": "Audio effects (FX) shape sound in contemporary music practice. However, most interfaces present them as discrete modules and parameters that favor targeted adjustment over exploratory listening. This separation can make it difficult to build intuition about the broader space of possible transformations or to move fluidly between searching and refinement. We present FXplorer, an interface that organizes audio effects within a perceptually informed 2D space, allowing sound transformations to be browsed as a continuous landscape rather than as isolated presets. By combining established spatial interaction approaches and interpretable DAW-style controls with recent embedding-based machine learning methods for similarity and semantic search, the system brings exploration and parameter refinement into a single workspace. FXplorer supports composition, production, or performance by allowing users to edit and interpolate between effect presets interactively.",
+  "authors": [
+    "Annie Chu",
+    "Jason Brent Smith",
+    "Bryan Pardo"
+  ],
+  "published": "2026-06-06T18:14:41Z",
+  "updated": "2026-06-06T18:14:41Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.08286",
+  "abs_url": "https://arxiv.org/abs/2606.08286",
+  "fetched_at": "2026-07-19T14:18:41.863129Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2602.14107",
+  "title": "ML-ECS: A Collaborative Multimodal Learning Framework for Edge-Cloud Synergies",
+  "summary": "Edge-cloud synergies provide a promising paradigm for privacy-preserving deployment of foundation models, where lightweight on-device models adapt to domain-specific data and cloud-hosted models coordinate knowledge sharing. However, in real-world edge environments, collaborative multimodal learning is challenged by modality heterogeneity (different modality combinations across domains) and model-structure heterogeneity (different modality-specific encoders/fusion modules. To address these issues, we propose ML-ECS, a collaborative multimodal learning framework that enables joint training between a server-based model and heterogeneous edge models. This framework consists of four components: (1) cross-modal contrastive learning (CCL) to align modality representations in a shared latent space, (2) adaptive multimodal tuning (AMT) to preserve domain-specific knowledge from local datasets, (3) modality-aware model aggregation (MMA) to robustly aggregate while mitigating noise caused by missing modalities, and (4) SLM-enhanced CCL (SE-CCL) to facilitate bidirectional knowledge transfer between cloud and edge. Experimental results on various multimodal tasks show that \\pname consistently outperform state-of-the-art baselines under varying modality availability, achieving improvements of 5.44% to 12.08% in Rouge-LSum and improving both client- and server-side performance. In addition, by communicating only low-rank LoRA parameters and fused representations, ML-ECS achieves high communication efficiency, requiring only 0.65% of the total parameter volume.",
+  "authors": [
+    "Yuze Liu",
+    "Shibo Chu",
+    "Tiehua Zhang",
+    "Hao Zhou",
+    "Zhishu Shen",
+    "Jinze Wang",
+    "Jianzhong Qi",
+    "Feng Xia"
+  ],
+  "published": "2026-02-15T11:49:59Z",
+  "updated": "2026-02-15T11:49:59Z",
+  "categories": [
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.14107",
+  "abs_url": "https://arxiv.org/abs/2602.14107",
+  "fetched_at": "2026-07-19T14:17:07.974629Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

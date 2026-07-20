@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2511.03425",
+  "title": "SyMuPe: Affective and Controllable Symbolic Music Performance",
+  "summary": "Emotions are fundamental to the creation and perception of music performances. However, achieving human-like expression and emotion through machine learning models for performance rendering remains a challenging task. In this work, we present SyMuPe, a novel framework for developing and training affective and controllable symbolic piano performance models. Our flagship model, PianoFlow, uses conditional flow matching trained to solve diverse multi-mask performance inpainting tasks. By design, it supports both unconditional generation and infilling of music performance features. For training, we use a curated, cleaned dataset of 2,968 hours of aligned musical scores and expressive MIDI performances. For text and emotion control, we integrate a piano performance emotion classifier and tune PianoFlow with the emotion-weighted Flan-T5 text embeddings provided as conditional inputs. Objective and subjective evaluations against transformer-based baselines and existing models show that PianoFlow not only outperforms other approaches, but also achieves performance quality comparable to that of human-recorded and transcribed MIDI samples. For emotion control, we present and analyze samples generated under different text conditioning scenarios. The developed model can be integrated into interactive applications, contributing to the creation of more accessible and engaging music performance systems.",
+  "authors": [
+    "Ilya Borovik",
+    "Dmitrii Gavrilev",
+    "Vladimir Viro"
+  ],
+  "published": "2025-11-05T12:42:08Z",
+  "updated": "2025-11-05T12:42:08Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.03425",
+  "abs_url": "https://arxiv.org/abs/2511.03425",
+  "fetched_at": "2026-07-19T14:18:41.861044Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

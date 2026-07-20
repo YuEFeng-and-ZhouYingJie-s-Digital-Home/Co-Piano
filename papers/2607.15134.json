@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.15134",
+  "title": "Platform Choice, Trust, and Privacy in the Consumer AI Assistant Market",
+  "summary": "We study how a representative sample of United States adult AI-assistant users (n=1,999; June 2026) choose among platforms, allocate tasks across them, evaluate provider trustworthiness, and value data-handling features. Estimates are weighted to the AI-user population using external adoption benchmarks. Four patterns emerge. The market is concentrated but internally differentiated: ChatGPT is the primary assistant for 58% of users and Gemini for 25%, yet smaller platforms hold defensible task niches--Claude captures a third of coding tasks despite a 7% overall share. Task allocation is thus organized by platform far more than by user, and technical use falls steeply with age. Trust is earned through use rather than reputation: Claude is ranked most trustworthy in every head-to-head among users of both platforms, and shows by far the largest gap between how its users and non-users rate it. Finally, privacy concern is near-universal but action is gated by knowledge, not concern; in a choice experiment users pay most to keep humans--not models--out of their conversations ($11.20/month), with valuations rising in task sensitivity.",
+  "authors": [
+    "Jennifer Zou"
+  ],
+  "published": "2026-07-16T15:41:54Z",
+  "updated": "2026-07-16T15:41:54Z",
+  "categories": [
+    "cs.CY",
+    "econ.GN"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15134",
+  "abs_url": "https://arxiv.org/abs/2607.15134",
+  "fetched_at": "2026-07-19T14:17:07.976425Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

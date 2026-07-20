@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2505.04451",
+  "title": "Automatic Music Transcription using Convolutional Neural Networks and Constant-Q transform",
+  "summary": "Automatic music transcription (AMT) is the problem of analyzing an audio recording of a musical piece and detecting notes that are being played. AMT is a challenging problem, particularly when it comes to polyphonic music. The goal of AMT is to produce a score representation of a music piece, by analyzing a sound signal containing multiple notes played simultaneously. In this work, we design a processing pipeline that can transform classical piano audio files in .wav format into a music score representation. The features from the audio signals are extracted using the constant-Q transform, and the resulting coefficients are used as an input to the convolutional neural network (CNN) model.",
+  "authors": [
+    "Yohannis Telila",
+    "Tommaso Cucinotta",
+    "Davide Bacciu"
+  ],
+  "published": "2025-05-07T14:20:43Z",
+  "updated": "2025-05-07T14:20:43Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2505.04451",
+  "abs_url": "https://arxiv.org/abs/2505.04451",
+  "fetched_at": "2026-07-19T14:18:41.849291Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

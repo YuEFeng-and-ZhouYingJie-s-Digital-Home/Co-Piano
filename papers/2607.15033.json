@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.15033",
+  "title": "URVC: A Unified Real-Time Neural Video Coding Model with Temporal, Spatial, and Perceptual Adaptivity",
+  "summary": "Neural video coding has advanced rapidly, achieving competitive compression performance while also enabling real-time coding speed. Yet, existing codecs exhibit severe rigidity when deployed in dynamic environments, failing to adapt to different video content, user requirements, and quality preferences. First, to meet the real-time constraint, they discard explicit motion estimation and motion compression, thereby losing the ability to adapt temporal prediction to motion complexity and bitrate constraints. Second, their spatial bit allocation strategy is coarse and, once trained, is fixed. It cannot adapt to dynamic user requirements at test time, preventing users from freely controlling the spatial distribution of bits. Third, they cannot adapt their quality preference to varying application requirements without deploying separate models. We address all three limitations within a single real-time neural video codec--URVC, transforming a rigid system into a unified framework with temporal, spatial, and perceptual adaptivity. First, we propose a rate-aware adaptive temporal prediction method that generates diverse prediction candidates through a multi-candidate architecture and couples candidate selection directly to rate-distortion optimization. Second, we propose a decomposition-based spatial rate control method that achieves finer-grained spatial bit allocation through feature decomposition and separate quantization, and allows users to perform direct spatial rate control at test time without retraining. Third, we propose a perceptual switching method that only requires learning a secondary module bank alongside a frame generator, enabling a codec to switch between signal fidelity and perceptual quality modes.",
+  "authors": [
+    "Xihua Sheng",
+    "Chang Wen Chen"
+  ],
+  "published": "2026-07-16T14:14:41Z",
+  "updated": "2026-07-16T14:14:41Z",
+  "categories": [
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15033",
+  "abs_url": "https://arxiv.org/abs/2607.15033",
+  "fetched_at": "2026-07-19T14:17:38.253311Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

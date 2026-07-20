@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.14807",
+  "title": "TAMF-VTON: Texture-Aware Mask-Free Virtual Try-On via High-Fidelity Image Synthesis",
+  "summary": "Recent diffusion-based virtual try-on (VTON) methods remain limited by their reliance on segmentation masks, insufficient preservation of fine-grained textures, and limited support for arbitrary multi-garment compositions. Consequently, existing approaches still face significant challenges in real-world e-commerce deployment. We present TAMF-VTON, a texture-aware, mask-free framework that enables high-fidelity image synthesis under practical unconstrained conditions. Our method requires no human parsing or inpainting masks at inference time and supports diverse garment styles, categories, and quantities, enabling the simultaneous transfer of multiple items while preserving body structure and intricate texture details. This is achieved through a unified generative pipeline with three key components: (1) a lightweight Mixture-of-Experts (MoE) adaptation scheme that enables efficient fine-tuning without compromising the base model's general editing capabilities; (2) a frequency-domain supervision mechanism that explicitly optimizes high-frequency spectral consistency to preserve high-fidelity textures; and (3) a robust data curation pipeline employing an adaptive inpainting strategy to simulate the inverse VTON process for high-quality training pair generation. Extensive experiments demonstrate that our approach outperforms state-of-the-art methods in both quantitative metrics and perceptual quality. Optimized for efficiency, the model achieves inference in under 15 seconds per image on an NVIDIA RTX 4090 with INT4 quantization. By combining mask-free operation, flexible multi-garment composition, faithful texture preservation, and efficient inference on consumer hardware, TAMF-VTON demonstrates a commercially viable solution for scalable deployment in real-world digital fashion scenarios. The project is available at https://www.style3d.ai/ai-photoshoot/virtual-clothing-try-on.",
+  "authors": [
+    "Jie Wang",
+    "Qian He",
+    "Gaofeng He",
+    "Xiaogang Jin",
+    "Huamin Wang"
+  ],
+  "published": "2026-07-16T10:26:27Z",
+  "updated": "2026-07-16T10:26:27Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14807",
+  "abs_url": "https://arxiv.org/abs/2607.14807",
+  "fetched_at": "2026-07-19T14:18:41.876762Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

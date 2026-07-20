@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2510.02597",
+  "title": "TART: A Comprehensive Tool for Technique-Aware Audio-to-Tab Guitar Transcription",
+  "summary": "Automatic Music Transcription (AMT) has advanced significantly for the piano, but transcription for the guitar remains limited due to several key challenges. Existing systems fail to detect and annotate expressive techniques (e.g., slides, bends, percussive hits) and incorrectly map notes to the wrong string and fret combination in the generated tablature. Furthermore, prior models are typically trained on small, isolated datasets, limiting their generalizability to real-world guitar recordings. To overcome these limitations, we propose a four-stage end-to-end pipeline that produces detailed guitar tablature directly from audio. Our system consists of (1) Audio-to-MIDI pitch conversion through a piano transcription model adapted to guitar datasets; (2) MLP-based expressive technique classification; (3) Transformer-based string and fret assignment; and (4) LSTM-based tablature generation. To the best of our knowledge, this framework is the first to generate detailed tablature with accurate fingerings and expressive labels from guitar audio.",
+  "authors": [
+    "Akshaj Gupta",
+    "Andrea Guzman",
+    "Anagha Badriprasad",
+    "Hwi Joo Park",
+    "Upasana Puranik",
+    "Robin Netzorg",
+    "Jiachen Lian",
+    "Gopala Krishna Anumanchipalli"
+  ],
+  "published": "2025-10-02T22:12:10Z",
+  "updated": "2025-10-02T22:12:10Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.02597",
+  "abs_url": "https://arxiv.org/abs/2510.02597",
+  "fetched_at": "2026-07-19T14:18:41.848043Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

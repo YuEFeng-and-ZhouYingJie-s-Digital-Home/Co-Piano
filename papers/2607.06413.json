@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.06413",
+  "title": "An Experimental Design Approach to Evaluating Agentic AI's Autonomous Model Discovery",
+  "summary": "Large language model coding agents increasingly perform open-ended data modeling and analysis. These agents are stochastic and adaptive, and therefore their autonomous model discovery behavior cannot be adequately characterized by a single benchmark run. In this work, we propose an experimental design and analysis framework for systematically evaluating this discovery process, quantifying its variability, and identifying important factors. The proposed framework treats these agents as stochastic model-discovery operators, which map task-specific discovery data and an optimization target to a fitted model. Specifically, we investigate two such operators, Codex and Claude Code, under controlled experimental factors including agent's reasoning effort, task, optimization metric, and composition of training data. For each agent-task-metric combination, regression models and inference are conducted for multiple responses such as output quality, dollar cost, wall-clock time, and process complexity. Furthermore, we develop a utility-aligned canonical decomposition to characterize the dominant direction of the reasoning-effort effect and to assess whether that direction aligns with a performance-cost utility direction. The proposed framework is demonstrated on a testbed of networked word-forming games with insightful findings on reasoning effort with respect to cost and process complexity.",
+  "authors": [
+    "Hao He",
+    "Xueying Liu",
+    "Chris J. Kuhlman",
+    "Xinwei Deng"
+  ],
+  "published": "2026-07-07T15:43:22Z",
+  "updated": "2026-07-07T15:43:22Z",
+  "categories": [
+    "stat.ME",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.06413",
+  "abs_url": "https://arxiv.org/abs/2607.06413",
+  "fetched_at": "2026-07-19T14:18:41.879092Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

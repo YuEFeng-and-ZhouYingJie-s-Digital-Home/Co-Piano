@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.16658",
+  "title": "Coexisting Tempo Traditions in Beethoven's Piano and Cello Sonatas: A K-means Clustering Analysis of Recorded Performances, 1930-2012",
+  "summary": "Empirical studies of recorded performance have conventionally modelled tempo change as a unidirectional historical process, fitting linear regression lines to tempo data plotted against recording year. This paper argues that such approaches impose a false narrative of uniform stylistic evolution on what is, in fact, a plurality of coexisting interpretive traditions. Applying k-means clustering (k=3) to bar-level BPM data from over one hundred recordings of Beethoven's five piano and cello sonatas (Op. 5 Nos. 1 and 2; Op. 69; Op. 102 Nos. 1 and 2) spanning 1930-2012, this study reveals that every movement supports at least two, and usually three, discrete tempo traditions (slow, mid-range, and fast), whose internal regression slopes are negligible (R-squared <= 0.25 in all but one case), demonstrating that each tradition is independently stable across eight decades. The mid-range cluster dominates in all movements, typically comprising 55-70% of recordings. A slow cluster is absent from fast-character movements (Op. 5 Rondos, Op. 69 Scherzo), reflecting a shared rhetorical consensus about their character. The single case of significant intra-cluster drift (Op. 102 No. 1 Allegro con brio, R-squared=0.246, p=0.013) indicates a moderate mid-range deceleration of approximately 3.2 BPM across the study period. No correlation is found between cluster membership and performers' generational, national, or pedagogical backgrounds, suggesting that tempo tradition reflects individual interpretive choice rather than collective cultural inheritance. The paper proposes an ecological model of stylistic change - coexisting traditions shifting in relative prevalence rather than a single tradition evolving - and argues that this reframing has broad implications for how empirical performance studies interpret corpus-level tempo data.",
+  "authors": [
+    "Ignasi Sole"
+  ],
+  "published": "2026-04-17T19:25:17Z",
+  "updated": "2026-04-17T19:25:17Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.16658",
+  "abs_url": "https://arxiv.org/abs/2604.16658",
+  "fetched_at": "2026-07-19T14:18:41.871274Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

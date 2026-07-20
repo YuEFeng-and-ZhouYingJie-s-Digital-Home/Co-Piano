@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.23794",
+  "title": "Sharper Than Ever: Do Modern Observations Pin Down the Solar Radius to Converge on New Standards?",
+  "summary": "Solar radius measurements and their variations -- if any -- are a difficult problem that has vexed researchers for decades. In this paper, we have attempted to clarify the various ways of expressing the definition ''solar diameter'', from a physical point of view. The concept of diameter is taken here in its broadest sense, leaving aside the issue concerning the oblateness caused by surface and internal angular velocity variations, as deviations from sphericity are negligible in our context. Astrometric time-series observations are still needed, and we advocate strengthening long-term metrological measures to achieve greater consensus on the subject. To date, modern observations of the solar diameter provide a frame of reference, and we give a new glossary. By comparing the best values obtained to date, it is shown that the ''seismic radius'' obtained from the Solar and Heliospheric Observatory (SOHO) and the Solar Dynamics Observatory (SDO) provides the best determination, a finding supported by observations made at the Calern (F) and Pic du Midi (F) observatories. The latest results on the leptocline show that it is more important than ever to consider at which layers of the Sun radius measurements are carried out. On this basis, we hope to converge on new standards.",
+  "authors": [
+    "Jean-Pierre Rozelot",
+    "Alexander Kosovichev"
+  ],
+  "published": "2026-05-22T15:55:31Z",
+  "updated": "2026-05-22T15:55:31Z",
+  "categories": [
+    "astro-ph.SR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.23794",
+  "abs_url": "https://arxiv.org/abs/2605.23794",
+  "fetched_at": "2026-07-19T14:17:38.247802Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

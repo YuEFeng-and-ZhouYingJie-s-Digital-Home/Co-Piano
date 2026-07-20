@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15032",
+  "title": "Recent progress on liquid transport growth of quantum materials",
+  "summary": "Liquid transport growth (LTG) is a horizontal flux growth technique that is closely analogous to chemical vapor transport, with the key distinction that a molten flux rather than a vapor serves as the transport agent. Unlike conventional flux growth, LTG spatially separates charge dissolution and crystal precipitation and couples them through continuous solute transport under a deliberately imposed temperature gradient. This enables crystal growth to begin before the charge is completely dissolved, removes the equilibrium solubility constraint on the starting charge/flux ratio, and allows large yields of single crystals to be obtained from a single growth. Recent studies have further shown that by spatially separating dissolution and crystallization and maintaining crystallization at a nearly constant temperature, LTG is particularly effective for two classes of materials: compounds that crystallize only within a narrow temperature and/or composition window, and compounds whose stoichiometry, defect concentration, and thus physical properties are sensitive to the crystallization temperature. In this review, we discuss representative examples including Fe$_3$Sn$_2$, CrTe$_3$, YFe$_2$Ge$_2$, UTe$_2$, CeRh$_2$As$_2$, MoTe$_2$, WTe$_2$, and LuNb$_6$Sn$_6$ to illustrate the unique capabilities of LTG for producing high quality single crystals of diverse quantum materials. We also summarize practical considerations for LTG experimental design, including furnace selection, growth time, melt stability, and ampoule geometry, and discuss future opportunities for transforming LTG from an empirical growth method into a more predictive crystal growth technique.",
+  "authors": [
+    "Jiaqiang Yan",
+    "Brenden Ortiz"
+  ],
+  "published": "2026-07-16T14:14:31Z",
+  "updated": "2026-07-16T14:14:31Z",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "cond-mat.str-el",
+    "cond-mat.supr-con"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15032",
+  "abs_url": "https://arxiv.org/abs/2607.15032",
+  "fetched_at": "2026-07-19T14:17:38.253477Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

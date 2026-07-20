@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2406.06720",
+  "title": "Vibrotactile versus Visual Stimulation in Learning the Piano",
+  "summary": "Vibrotactile stimulation has been explored to accelerate the acquisition of motor skills involving finger movements (Gemicioglu et al. 2022, Markow et al. 2010, Seim et al. 2017). This study evaluates the effectiveness of vibrotactile stimulation compared to visual feedback in learning a 14-note one-handed tune on the piano. In the experiment, 14 subjects with no prior piano experience were exposed to both vibrotactile and visual stimulation to determine which was more effective. Subjects were randomized 1:1 in a group that first receives vibrotactile stimulation, then visual stimulation or in a group that first receives visual stimulation, then vibrotactile stimulation. Effectiveness was measured by evaluating the timing error and accuracy. Results from our study indicated that the timing error for vibrotactile stimulation was 12.1% (SD 6.0%), while the equivalent for visual stimulation was 22.3% (SD 10.3%). The accuracy for vibrotactile stimulation was 69.2% (SD 27.2%), while the equivalent for visual stimulation was 91.3% (SD 13.5%). It was observed that vibrotactile stimulation was generally more effective at minimizing the timing error at which the notes were hit compared to visual stimulation, and no statistically significant differences were found in accuracy (U = 61, p = 0.0930).",
+  "authors": [
+    "Matteo A. Coscia",
+    "Mazen Al Borno"
+  ],
+  "published": "2024-06-10T18:31:12Z",
+  "updated": "2025-03-06T19:46:56Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2406.06720",
+  "abs_url": "https://arxiv.org/abs/2406.06720",
+  "fetched_at": "2026-07-19T14:18:41.854314Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

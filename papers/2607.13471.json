@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.13471",
+  "title": "Bring Music The Horizon: Music-Driven 360$^\\circ$ Video Generation",
+  "summary": "Music visualization offers a powerful way to enhance listeners' understanding and experience of music by translating auditory signals into visual forms. However, most existing approaches either rely heavily on lyrics or generate flat, non-immersive videos similar to conventional music videos, which limits their ability to convey the emotional dynamics of music and provide an immersive listening experience. We propose Bring Music The Horizon, an emotion-aware pipeline for music-driven 360$^\\circ$ video generation. Given an input song, our work first estimates its emotional trajectory by predicting valence-arousal values at the level of every four bars. These values are then converted into emotion-aware visual guidance using EmotiCrafter, and these guidance vectors can be manipulated by the SEGA framework, which provides fine-grained semantic control for keyframe generation. Finally, image-to-video models are applied to the generated keyframes to synthesize temporally continuous 360$^\\circ$ videos for immersive music visualization. Our pipeline generates 360$^\\circ$ music visualization videos that reflect the emotional progression and temporal structure of the input song. We demonstrate its capability using songs from different genres and provide qualitative comparisons with From-Sound-To-Sight, a representative audio-to-visual generation baseline, on our project page at https://etoile-et-toi-mp3.github.io/BMTH_Project_Page/.",
+  "authors": [
+    "Kai Hsu Tsai",
+    "Yong Wei Fu",
+    "Hung I Yang",
+    "Yu-Chih Chen"
+  ],
+  "published": "2026-07-15T06:00:47Z",
+  "updated": "2026-07-15T06:00:47Z",
+  "categories": [
+    "cs.CV",
+    "cs.MM",
+    "cs.SD",
+    "eess.AS",
+    "eess.IV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13471",
+  "abs_url": "https://arxiv.org/abs/2607.13471",
+  "fetched_at": "2026-07-19T14:18:41.869251Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2606.08091",
+  "title": "VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation",
+  "summary": "Recent agent frameworks such as Claude Code, Codex, and OpenClaw are strong at tool use and orchestration, but whether they can handle long video generation, a long-horizon multimodal task, remains underexplored. Unlike earlier video agents whose pipeline is handcrafted, these frameworks can build and refine their own workflows. We introduce VideoWeaver, an agent harness and benchmark that evaluates and evolves skills for long video generation, where an agent turns a single instruction into a long video by composing foundation skills into its own workflow rather than following a predefined pipeline. The benchmark has 16 task categories and 285 cases, with references spanning text, image, audio, video, and their combinations. Because errors can arise at any stage and not just in the final video, we propose an agent-as-judge that inspects both the execution trace and the final video, grounding its scores in evidence such as metadata and intermediate files. Using this feedback, we further design a skill evolution algorithm that refines and merges the agent's skills. Across multiple frameworks and models, we find that an explicit composition skill improves the generation process over using foundation skills alone, that skill evolution further improves output quality, and that performance varies notably across harness and model choices. The proposed agent-as-judge also aligns well with human judgments, especially on process metrics. Code and dataset is available at https://github.com/JianhuiWei7/VideoWeaver",
+  "authors": [
+    "Jianhui Wei",
+    "Jie Tan",
+    "Hengchuan Zhu",
+    "Xiaotian Zhang",
+    "Yan Zhang",
+    "Ziyi Chen",
+    "Daoan Zhang",
+    "Wei Xu",
+    "Zuozhu Liu"
+  ],
+  "published": "2026-06-06T10:35:28Z",
+  "updated": "2026-06-06T10:35:28Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.08091",
+  "abs_url": "https://arxiv.org/abs/2606.08091",
+  "fetched_at": "2026-07-19T14:18:41.858193Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

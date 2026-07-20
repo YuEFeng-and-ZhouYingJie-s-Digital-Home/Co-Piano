@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.23848",
+  "title": "Enforcing Human-like Kinematics in Dexterous Piano Playing via Adversarial Posture Regularization",
+  "summary": "Reinforcement learning can train bimanual dexterous hands to play piano in physics simulation with high note accuracy, but for high-DoF dexterous hands, relying solely on task rewards or IK inversion often leads to unnatural postures and joint overextension. We propose \\textit{Adversarial Posture Regularization (APR)}. It avoids expensive, song-aligned expert demonstration data and instead uses a small amount of casual human playing data. By matching the distribution of the posture of the policy with the human prior through an adversarial objective, APR encourages more human-like hand shapes. Meanwhile, we collect and release unstructured hand motion data of piano playing using a consumer-grade Meta Quest 3, and retarget the key motion information to the Shadow Hand. Finally, we achieve significantly better performance than prior methods on all three human-likeness metrics (cPSI, BSE, and FAC) as well as in visual quality. Project repository: https://github.com/APRProject/APRPianist.",
+  "authors": [
+    "Bin Qiu",
+    "Yanming Shao",
+    "Guanyu Cai",
+    "Yao Mu"
+  ],
+  "published": "2026-06-22T18:30:36Z",
+  "updated": "2026-06-22T18:30:36Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.23848",
+  "abs_url": "https://arxiv.org/abs/2606.23848",
+  "fetched_at": "2026-07-19T14:17:07.968902Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

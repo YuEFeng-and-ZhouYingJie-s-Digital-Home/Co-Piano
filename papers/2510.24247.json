@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2510.24247",
+  "title": "Abjad AI at NADI 2025: CATT-Whisper: Multimodal Diacritic Restoration Using Text and Speech Representations",
+  "summary": "In this work, we tackle the Diacritic Restoration (DR) task for Arabic dialectal sentences using a multimodal approach that combines both textual and speech information. We propose a model that represents the text modality using an encoder extracted from our own pre-trained model named CATT. The speech component is handled by the encoder module of the OpenAI Whisper base model. Our solution is designed following two integration strategies. The former consists of fusing the speech tokens with the input at an early stage, where the 1500 frames of the audio segment are averaged over 10 consecutive frames, resulting in 150 speech tokens. To ensure embedding compatibility, these averaged tokens are processed through a linear projection layer prior to merging them with the text tokens. Contextual encoding is guaranteed by the CATT encoder module. The latter strategy relies on cross-attention, where text and speech embeddings are fused. The cross-attention output is then fed to the CATT classification head for token-level diacritic prediction. To further improve model robustness, we randomly deactivate the speech input during training, allowing the model to perform well with or without speech. Our experiments show that the proposed approach achieves a word error rate (WER) of 0.25 and a character error rate (CER) of 0.9 on the development set. On the test set, our model achieved WER and CER scores of 0.55 and 0.13, respectively.",
+  "authors": [
+    "Ahmad Ghannam",
+    "Naif Alharthi",
+    "Faris Alasmary",
+    "Kholood Al Tabash",
+    "Shouq Sadah",
+    "Lahouari Ghouti"
+  ],
+  "published": "2025-10-28T09:58:18Z",
+  "updated": "2025-10-28T09:58:18Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.24247",
+  "abs_url": "https://arxiv.org/abs/2510.24247",
+  "fetched_at": "2026-07-19T14:18:41.860388Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

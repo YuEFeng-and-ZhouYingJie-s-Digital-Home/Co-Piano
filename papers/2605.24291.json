@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.24291",
+  "title": "Rubato: Transcribing Piano Music with Timestamps",
+  "summary": "We consider the conversion of musical recordings into human-readable sheet music annotated with timestamps. Such output lets a listener clearly visualize rubato (temporally expressive playing), a learner diagnose ensemble precision and timing choices against the written music, and a musicology scholar compare performance styles across recordings of the same work. We introduce (1) a prompt-conditioned encoder-decoder model, named Rubato, trained to output (2) a new textual representation for polyphonic music, named InterMo, which we designed for compatibility with sequence-to-sequence training. Our experiments demonstrate that Rubato produces timestamped piano sheet music from audio with higher notational accuracy than the best existing approaches, which are based on cascades. We find that even if the cascade is given ground-truth MIDI instead of audio, Rubato performs better, suggesting that the ceiling of existing approaches is primarily representational, not acoustic. Further, because Rubato is trained on several related tasks (with prompts), it competes with or outperforms the best single-task systems on related but simpler tasks like MIDI note grounding and beat/downbeat detection. A demo is available at https://nctamer.github.io/rubato-transcription .",
+  "authors": [
+    "Nazif Can Tamer",
+    "Victoria Ebert",
+    "Guang Yang",
+    "Noah A. Smith"
+  ],
+  "published": "2026-05-22T23:47:21Z",
+  "updated": "2026-05-22T23:47:21Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.24291",
+  "abs_url": "https://arxiv.org/abs/2605.24291",
+  "fetched_at": "2026-07-19T14:17:07.970644Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.10537",
+  "title": "Dance to Music Generation leveraging Pre-training with Unpaired data and Contrastive Alignment",
+  "summary": "Dance-to-music generation is a promising task for applications such as choreography support and automatic accompaniment, where temporal coordination between body movement and sound is essential. In particular, using human joint positions as the motion representation is attractive because they explicitly capture body dynamics while being lightweight, privacy-preserving, and easy to integrate with motion capture and pose-estimation pipelines. A central challenge in this setting, however, is the scarcity of high-quality paired dance-music data, since collecting accurately synchronized pairs is costly and often constrained by copyright and performance rights. This makes it difficult to train end-to-end models solely from paired data. To address this issue, we propose a dance-conditioned music generation framework that efficiently exploits both unpaired and paired data. Our method combines pretrained unimodal encoders for motion and music, beat-guided contrastive pretraining to align their feature spaces, and a ControlNet-style conditioning module on top of a pretrained text-to-audio diffusion model. Experiments on AIST++ demonstrate that the proposed techniques improve both dance-music alignment and audio quality, as confirmed by quantitative and qualitative evaluations. Compared to a state-of-the-art method, our approach achieves superior dance alignment performance and competitive audio quality. Code is available at https://github.com/kmraven/AudioLDM-ControlNet .",
+  "authors": [
+    "Ryota Kimura",
+    "Sangheon Park",
+    "Natalia Polouliakh",
+    "Taketo Akama"
+  ],
+  "published": "2026-07-12T02:40:27Z",
+  "updated": "2026-07-12T02:40:27Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.10537",
+  "abs_url": "https://arxiv.org/abs/2607.10537",
+  "fetched_at": "2026-07-19T14:18:41.845525Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2603.17025",
+  "title": "Shared Representation Learning for Reference-Guided Targeted Sound Detection",
+  "summary": "Human listeners exhibit the remarkable ability to segregate a desired sound from complex acoustic scenes through selective auditory attention, motivating the study of Targeted Sound Detection (TSD). The task requires detecting and localizing a target sound in a mixture when a reference audio of that sound is provided. Prior approaches, rely on generating a sound-discriminative conditional embedding vector for the reference and pairing it with a mixture encoder, jointly optimized with a multi-task learning approach. In this work, we propose a unified encoder architecture that processes both the reference and mixture audio within a shared representation space, promoting stronger alignment while reducing architectural complexity. This design choice not only simplifies the overall framework but also enhances generalization to unseen classes. Following the multi-task training paradigm, our method achieves substantial improvements over prior approaches, surpassing existing methods and establishing a new state-of-the-art benchmark for targeted sound detection, with a segment-level F1 score of 83.15% and an overall accuracy of 95.17% on the URBAN-SED dataset.",
+  "authors": [
+    "Shubham Gupta",
+    "Adarsh Arigala",
+    "B. R. Dilleswari",
+    "Sri Rama Murty Kodukula"
+  ],
+  "published": "2026-03-17T18:05:21Z",
+  "updated": "2026-03-17T18:05:21Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.17025",
+  "abs_url": "https://arxiv.org/abs/2603.17025",
+  "fetched_at": "2026-07-19T14:18:41.859396Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

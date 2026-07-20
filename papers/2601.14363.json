@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2601.14363",
+  "title": "Chemical evolution of close massive binaries -- tidally-enhanced or tidally-suppressed mixing?",
+  "summary": "One of the largest source of uncertainties in the predictions of stellar models comes from the internal transport mechanisms. In close massive binaries, previous theoretical studies suggest that tides systematically boost chemical mixing. However, observations do not reveal any clear period-nitrogen enrichment trend, challenging these predictions. In addition, comprehensive examinations of the interplay between tidal interactions, angular momentum and chemicals transport have so far been scarce. We investigate the interplay between tidal interactions and rotational mixing, and the impact of the angular moment transport (AMT) assumptions. We examine whether tidal interactions enhance or suppress chemical mixing by computing grids of genec binary models with various AMT treatments. In order to independently assess the role of tidal interactions, we systematically compute model variations of single stars with identical initial conditions. Our investigations reveal that tides can either enhance or suppress mixing relative to single-star models, and that the outcome is highly sensitive to the AMT assumptions. We identify a key contrast between the two types of computed models: in close systems subject to tides, magnetic models predict that the mixing efficiency is mostly determined by the orbital configuration, whereas in hydrodynamic models it also depends on the assumed initial velocity. As a result, hydro models may display non-monotonic period-enrichment trends, or even period-enrichment correlations. These results highlight the importance of the AMT assumptions in modeling binaries with tidal interactions. The sensitivity of the predictions of hydro models to initial conditions extends the size of the period-enrichment parameter space they cover, allowing them to accommodate for peculiar observed systems, i.e., with mild enrichment at short periods, or high enrichment at longer periods.",
+  "authors": [
+    "Luca Sciarini",
+    "Sophie Rosu",
+    "Sylvia Ekström",
+    "Maxime Marchand",
+    "Patrick Eggenberger",
+    "Georges Meynet"
+  ],
+  "published": "2026-01-20T19:00:01Z",
+  "updated": "2026-01-20T19:00:01Z",
+  "categories": [
+    "astro-ph.SR",
+    "astro-ph.GA",
+    "astro-ph.HE"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.14363",
+  "abs_url": "https://arxiv.org/abs/2601.14363",
+  "fetched_at": "2026-07-19T14:17:07.975239Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2604.10021",
+  "title": "Masked Contrastive Pre-Training Improves Music Audio Key Detection",
+  "summary": "Self-supervised music foundation models underperform on key detection, which requires pitch-sensitive representations. In this work, we present the first systematic study showing that the design of self-supervised pretraining directly impacts pitch sensitivity, and demonstrate that masked contrastive embeddings uniquely enable state-of-the-art (SOTA) performance in key detection in the supervised setting. First, we discover that linear evaluation after masking-based contrastive pretraining on Mel spectrograms leads to competitive performance on music key detection out of the box. This leads us to train shallow but wide multi-layer perceptrons (MLPs) on features extracted from our base model, leading to SOTA performance without the need for sophisticated data augmentation policies. We further analyze robustness and show empirically that the learned representations naturally encode common augmentations. Our study establishes self-supervised pretraining as an effective approach for pitch-sensitive MIR tasks and provides insights for designing and probing music foundation models.",
+  "authors": [
+    "Ori Yonay",
+    "Tracy Hammond",
+    "Tianbao Yang"
+  ],
+  "published": "2026-04-11T04:22:17Z",
+  "updated": "2026-04-11T04:22:17Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.10021",
+  "abs_url": "https://arxiv.org/abs/2604.10021",
+  "fetched_at": "2026-07-19T14:18:41.881507Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

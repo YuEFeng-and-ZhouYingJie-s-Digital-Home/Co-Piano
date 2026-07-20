@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2604.09721",
+  "title": "Jamendo-MT-QA: A Benchmark for Multi-Track Comparative Music Question Answering",
+  "summary": "Recent work on music question answering (Music-QA) has primarily focused on single-track understanding, where models answer questions about an individual audio clip using its tags, captions, or metadata. However, listeners often describe music in comparative terms, and existing benchmarks do not systematically evaluate reasoning across multiple tracks. Building on the Jamendo-QA dataset, we introduce Jamendo-MT-QA, a dataset and benchmark for multi-track comparative question answering. From Creative Commons-licensed tracks on Jamendo, we construct 36,519 comparative QA items over 12,173 track pairs, with each pair yielding three question types: yes/no, short-answer, and sentence-level questions. We describe an LLM-assisted pipeline for generating and filtering comparative questions, and benchmark representative audio-language models using both automatic metrics and LLM-as-a-Judge evaluation.",
+  "authors": [
+    "Junyoung Koh",
+    "Jaeyun Lee",
+    "Soo Yong Kim",
+    "Gyu Hyeong Choi",
+    "Jung In Koh",
+    "Jordan Phillips",
+    "Yeonjin Lee",
+    "Min Song"
+  ],
+  "published": "2026-04-08T16:42:50Z",
+  "updated": "2026-04-08T16:42:50Z",
+  "categories": [
+    "cs.IR",
+    "cs.MM",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.09721",
+  "abs_url": "https://arxiv.org/abs/2604.09721",
+  "fetched_at": "2026-07-19T14:18:41.852120Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

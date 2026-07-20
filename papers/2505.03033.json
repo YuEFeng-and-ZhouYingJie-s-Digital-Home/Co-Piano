@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2505.03033",
+  "title": "Evaluating the Impact of AI-Powered Audiovisual Personalization on Learner Emotion, Focus, and Learning Outcomes",
+  "summary": "Independent learners often struggle with sustaining focus and emotional regulation in unstructured or distracting settings. Although some rely on ambient aids such as music, ASMR, or visual backgrounds to support concentration, these tools are rarely integrated into cohesive, learner-centered systems. Moreover, existing educational technologies focus primarily on content adaptation and feedback, overlooking the emotional and sensory context in which learning takes place. Large language models have demonstrated powerful multimodal capabilities including the ability to generate and adapt text, audio, and visual content. Educational research has yet to fully explore their potential in creating personalized audiovisual learning environments. To address this gap, we introduce an AI-powered system that uses LLMs to generate personalized multisensory study environments. Users select or generate customized visual themes (e.g., abstract vs. realistic, static vs. animated) and auditory elements (e.g., white noise, ambient ASMR, familiar vs. novel sounds) to create immersive settings aimed at reducing distraction and enhancing emotional stability. Our primary research question investigates how combinations of personalized audiovisual elements affect learner cognitive load and engagement. Using a mixed-methods design that incorporates biometric measures and performance outcomes, this study evaluates the effectiveness of LLM-driven sensory personalization. The findings aim to advance emotionally responsive educational technologies and extend the application of multimodal LLMs into the sensory dimension of self-directed learning.",
+  "authors": [
+    "George Xi Wang",
+    "Jingying Deng",
+    "Safinah Ali"
+  ],
+  "published": "2025-05-05T21:19:50Z",
+  "updated": "2025-05-05T21:19:50Z",
+  "categories": [
+    "cs.AI",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2505.03033",
+  "abs_url": "https://arxiv.org/abs/2505.03033",
+  "fetched_at": "2026-07-19T14:18:41.873785Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

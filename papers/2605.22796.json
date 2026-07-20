@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.22796",
+  "title": "Quantum Geometric Origin of Non-Adiabatic Instability in Driven Bosonic Systemss",
+  "summary": "We establish that the Adiabatic Mode Transition parameter admits a direct geometric interpretation as the instantaneous evolution speed of a driven quantum state in projective Hilbert space under the Fubini Study metric. In dimensionless local time, the corresponding squared Fubini Study speed. Equivalently, the AMT parameter defines the tt-component of the quantum geometric tensor governing the local geometric evolution rate of the instantaneous vacuum state. In contrast to conventional asymptotic approaches, the proposed framework provides a strictly local geometric criterion that allows nonadiabatic instability and its nonlinear suppression to be evaluated continuously at each stage of the driven evolution. We further show that an occupation dependent nonlinear regulator U suppresses the effective geometric evolution speed, leading to bounded low-occupancy dynamics. The resulting crossover parameter provides a compact criterion for selflimited nonadiabatic instability in driven nonlinear bosonic systems.",
+  "authors": [
+    "A. M. Tishin"
+  ],
+  "published": "2026-05-21T17:49:53Z",
+  "updated": "2026-05-22T12:02:09Z",
+  "categories": [
+    "quant-ph",
+    "cond-mat.mes-hall"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.22796",
+  "abs_url": "https://arxiv.org/abs/2605.22796",
+  "fetched_at": "2026-07-19T14:17:07.973129Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

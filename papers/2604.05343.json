@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.05343",
+  "title": "Anchored Cyclic Generation: A Novel Paradigm for Long-Sequence Symbolic Music Generation",
+  "summary": "Generating long sequences with structural coherence remains a fundamental challenge for autoregressive models across sequential generation tasks. In symbolic music generation, this challenge is particularly pronounced, as existing methods are constrained by the inherent severe error accumulation problem of autoregressive models, leading to poor performance in music quality and structural integrity. In this paper, we propose the Anchored Cyclic Generation (ACG) paradigm, which relies on anchor features from already identified music to guide subsequent generation during the autoregressive process, effectively mitigating error accumulation in autoregressive methods. Based on the ACG paradigm, we further propose the Hierarchical Anchored Cyclic Generation (Hi-ACG) framework, which employs a systematic global-to-local generation strategy and is highly compatible with our specifically designed piano token, an efficient musical representation. The experimental results demonstrate that compared to traditional autoregressive models, the ACG paradigm achieves reduces cosine distance by an average of 34.7% between predicted feature vectors and ground-truth semantic vectors. In long-sequence symbolic music generation tasks, the Hi-ACG framework significantly outperforms existing mainstream methods in both subjective and objective evaluations. Furthermore, the framework exhibits excellent task generalization capabilities, achieving superior performance in related tasks such as music completion.",
+  "authors": [
+    "Boyu Cao",
+    "Lekai Qian",
+    "Dehan Li",
+    "Haoyu Gu",
+    "Mingda Xu",
+    "Qi Liu"
+  ],
+  "published": "2026-04-07T02:29:43Z",
+  "updated": "2026-04-07T02:29:43Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.05343",
+  "abs_url": "https://arxiv.org/abs/2604.05343",
+  "fetched_at": "2026-07-19T14:18:41.871519Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

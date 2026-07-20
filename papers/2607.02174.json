@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.02174",
+  "title": "Choreographing the Way of Water: A Computational Framework for Aquatic Robotic Art",
+  "summary": "Robotic choreography in open water is governed by nonlinear fluid dynamics, which impose significant challenges due to environmental disturbances and nonlinear system dynamics. This paper presents the cyber-physical architecture of Way of Water, a vertically integrated framework that orchestrates a fleet of autonomous surface vessels as a distributed choreographic platform. Moving beyond the surface-pixel paradigm, these vessels use laminar nozzles and multi-zone lighting to extend their expressive range from the 2D water plane into the 3D volumetric domain. Our primary contribution is the Way of Water Studio, a browser-based, timeline-compositing authoring paradigm that treats the fleet as a DAW-like instrument for music-responsive choreography. The Studio encapsulates Sequential Convex Programming for trajectory generation and Model Predictive Control for disturbance rejection presented through a visual timeline, broadening access to high-performance aquatic robotics for non-programmer artists. Grounding the Studio is the full cyber-physical stack: a custom holonomic chassis, a state-estimation and control stack tuned for the aquatic domain, and an LTE/MQTT fleet link with RTK-GPS time synchronization. We report on the system's validation across two distinct deployments: an 18-vessel Swan Lake interpretation at Lake Zurich and an 8-vessel Time Space Existence 2025 Venice Biennale demonstration at Forte Marghera, establishing a foundational reference for the design and deployment of fluidic robotic swarms.",
+  "authors": [
+    "Aswin Ramachandran",
+    "Christopher Golling",
+    "Sebastian Burmester",
+    "Noa Sendlhofer",
+    "Jan Kamm",
+    "Ruiheng Jiang",
+    "Raffaello D'Andrea"
+  ],
+  "published": "2026-07-02T13:45:34Z",
+  "updated": "2026-07-02T13:45:34Z",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.02174",
+  "abs_url": "https://arxiv.org/abs/2607.02174",
+  "fetched_at": "2026-07-19T14:18:41.842210Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

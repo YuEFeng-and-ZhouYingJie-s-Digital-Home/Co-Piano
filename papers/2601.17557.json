@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2601.17557",
+  "title": "Spoofing-Aware Speaker Verification via Wavelet Prompt Tuning and Multi-Model Ensembles",
+  "summary": "This paper describes the UZH-CL system submitted to the SASV section of the WildSpoof 2026 challenge. The challenge focuses on the integrated defense against generative spoofing attacks by requiring the simultaneous verification of speaker identity and audio authenticity. We proposed a cascaded Spoofing-Aware Speaker Verification framework that integrates a Wavelet Prompt-Tuned XLSR-AASIST countermeasure with a multi-model ensemble. The ASV component utilizes the ResNet34, ResNet293, and WavLM-ECAPA-TDNN architectures, with Z-score normalization followed by score averaging. Trained on VoxCeleb2 and SpoofCeleb, the system obtained a Macro a-DCF of 0.2017 and a SASV EER of 2.08%. While the system achieved a 0.16% EER in spoof detection on the in-domain data, results on unseen datasets, such as the ASVspoof5, highlight the critical challenge of cross-domain generalization.",
+  "authors": [
+    "Aref Farhadipour",
+    "Ming Jin",
+    "Valeriia Vyshnevetska",
+    "Xiyang Li",
+    "Elisa Pellegrino",
+    "Srikanth Madikeri"
+  ],
+  "published": "2026-01-24T18:59:25Z",
+  "updated": "2026-01-24T18:59:25Z",
+  "categories": [
+    "eess.AS",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.17557",
+  "abs_url": "https://arxiv.org/abs/2601.17557",
+  "fetched_at": "2026-07-19T14:18:41.860011Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

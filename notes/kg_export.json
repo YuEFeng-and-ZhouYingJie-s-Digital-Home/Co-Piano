@@ -1,0 +1,2219 @@
+{
+  "n_nodes": 241,
+  "n_edges": 40,
+  "nodes": [
+    {
+      "id": "note:C",
+      "type": "note",
+      "attrs": {
+        "pc": 0,
+        "name": "C"
+      }
+    },
+    {
+      "id": "note:C#",
+      "type": "note",
+      "attrs": {
+        "pc": 1,
+        "name": "C#"
+      }
+    },
+    {
+      "id": "note:D",
+      "type": "note",
+      "attrs": {
+        "pc": 2,
+        "name": "D"
+      }
+    },
+    {
+      "id": "note:D#",
+      "type": "note",
+      "attrs": {
+        "pc": 3,
+        "name": "D#"
+      }
+    },
+    {
+      "id": "note:E",
+      "type": "note",
+      "attrs": {
+        "pc": 4,
+        "name": "E"
+      }
+    },
+    {
+      "id": "note:F",
+      "type": "note",
+      "attrs": {
+        "pc": 5,
+        "name": "F"
+      }
+    },
+    {
+      "id": "note:F#",
+      "type": "note",
+      "attrs": {
+        "pc": 6,
+        "name": "F#"
+      }
+    },
+    {
+      "id": "note:G",
+      "type": "note",
+      "attrs": {
+        "pc": 7,
+        "name": "G"
+      }
+    },
+    {
+      "id": "note:G#",
+      "type": "note",
+      "attrs": {
+        "pc": 8,
+        "name": "G#"
+      }
+    },
+    {
+      "id": "note:A",
+      "type": "note",
+      "attrs": {
+        "pc": 9,
+        "name": "A"
+      }
+    },
+    {
+      "id": "note:A#",
+      "type": "note",
+      "attrs": {
+        "pc": 10,
+        "name": "A#"
+      }
+    },
+    {
+      "id": "note:B",
+      "type": "note",
+      "attrs": {
+        "pc": 11,
+        "name": "B"
+      }
+    },
+    {
+      "id": "key:C",
+      "type": "key",
+      "attrs": {
+        "name": "C",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:G",
+      "type": "key",
+      "attrs": {
+        "name": "G",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:D",
+      "type": "key",
+      "attrs": {
+        "name": "D",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:A",
+      "type": "key",
+      "attrs": {
+        "name": "A",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:E",
+      "type": "key",
+      "attrs": {
+        "name": "E",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:B",
+      "type": "key",
+      "attrs": {
+        "name": "B",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:F#",
+      "type": "key",
+      "attrs": {
+        "name": "F#",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:F",
+      "type": "key",
+      "attrs": {
+        "name": "F",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:Bb",
+      "type": "key",
+      "attrs": {
+        "name": "Bb",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:Eb",
+      "type": "key",
+      "attrs": {
+        "name": "Eb",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:Ab",
+      "type": "key",
+      "attrs": {
+        "name": "Ab",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:Db",
+      "type": "key",
+      "attrs": {
+        "name": "Db",
+        "mode": "major"
+      }
+    },
+    {
+      "id": "key:Cm",
+      "type": "key",
+      "attrs": {
+        "name": "Cm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Gm",
+      "type": "key",
+      "attrs": {
+        "name": "Gm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Dm",
+      "type": "key",
+      "attrs": {
+        "name": "Dm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Am",
+      "type": "key",
+      "attrs": {
+        "name": "Am",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Em",
+      "type": "key",
+      "attrs": {
+        "name": "Em",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Bm",
+      "type": "key",
+      "attrs": {
+        "name": "Bm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:F#m",
+      "type": "key",
+      "attrs": {
+        "name": "F#m",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Fm",
+      "type": "key",
+      "attrs": {
+        "name": "Fm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Bbm",
+      "type": "key",
+      "attrs": {
+        "name": "Bbm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Ebm",
+      "type": "key",
+      "attrs": {
+        "name": "Ebm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Abm",
+      "type": "key",
+      "attrs": {
+        "name": "Abm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "key:Dbm",
+      "type": "key",
+      "attrs": {
+        "name": "Dbm",
+        "mode": "minor"
+      }
+    },
+    {
+      "id": "chord:C:I",
+      "type": "chord",
+      "attrs": {
+        "key": "C",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:C:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "C",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:C:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "C",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:C:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "C",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:C:V",
+      "type": "chord",
+      "attrs": {
+        "key": "C",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:C:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "C",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:C:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "C",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:G:I",
+      "type": "chord",
+      "attrs": {
+        "key": "G",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:G:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "G",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:G:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "G",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:G:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "G",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:G:V",
+      "type": "chord",
+      "attrs": {
+        "key": "G",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:G:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "G",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:G:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "G",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:D:I",
+      "type": "chord",
+      "attrs": {
+        "key": "D",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:D:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "D",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:D:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "D",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:D:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "D",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:D:V",
+      "type": "chord",
+      "attrs": {
+        "key": "D",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:D:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "D",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:D:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "D",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:A:I",
+      "type": "chord",
+      "attrs": {
+        "key": "A",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:A:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "A",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:A:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "A",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:A:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "A",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:A:V",
+      "type": "chord",
+      "attrs": {
+        "key": "A",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:A:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "A",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:A:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "A",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:E:I",
+      "type": "chord",
+      "attrs": {
+        "key": "E",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:E:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "E",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:E:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "E",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:E:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "E",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:E:V",
+      "type": "chord",
+      "attrs": {
+        "key": "E",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:E:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "E",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:E:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "E",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:B:I",
+      "type": "chord",
+      "attrs": {
+        "key": "B",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:B:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "B",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:B:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "B",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:B:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "B",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:B:V",
+      "type": "chord",
+      "attrs": {
+        "key": "B",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:B:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "B",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:B:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "B",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:F#:I",
+      "type": "chord",
+      "attrs": {
+        "key": "F#",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:F#:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "F#",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:F#:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "F#",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:F#:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "F#",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:F#:V",
+      "type": "chord",
+      "attrs": {
+        "key": "F#",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:F#:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "F#",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:F#:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "F#",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:F:I",
+      "type": "chord",
+      "attrs": {
+        "key": "F",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:F:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "F",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:F:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "F",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:F:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "F",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:F:V",
+      "type": "chord",
+      "attrs": {
+        "key": "F",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:F:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "F",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:F:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "F",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Bb:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Bb",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Bb:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Bb",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Bb:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Bb",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Bb:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Bb",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Bb:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Bb",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Bb:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Bb",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Bb:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Bb",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Eb:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Eb",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Eb:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Eb",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Eb:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Eb",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Eb:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Eb",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Eb:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Eb",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Eb:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Eb",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Eb:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Eb",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Ab:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Ab",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Ab:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Ab",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Ab:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Ab",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Ab:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Ab",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Ab:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Ab",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Ab:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Ab",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Ab:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Ab",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Db:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Db",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Db:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Db",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Db:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Db",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Db:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Db",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Db:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Db",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Db:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Db",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Db:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Db",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Cm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Cm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Cm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Cm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Cm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Cm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Cm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Cm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Cm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Cm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Cm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Cm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Cm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Cm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Gm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Gm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Gm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Gm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Gm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Gm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Gm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Gm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Gm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Gm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Gm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Gm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Gm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Gm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Dm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Dm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Dm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Dm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Dm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Dm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Dm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Dm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Dm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Dm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Dm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Dm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Dm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Dm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Am:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Am",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Am:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Am",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Am:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Am",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Am:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Am",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Am:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Am",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Am:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Am",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Am:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Am",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Em:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Em",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Em:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Em",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Em:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Em",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Em:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Em",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Em:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Em",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Em:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Em",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Em:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Em",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Bm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Bm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Bm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Bm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Bm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Bm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Bm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Bm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Bm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Bm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Bm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Bm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Bm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Bm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:F#m:I",
+      "type": "chord",
+      "attrs": {
+        "key": "F#m",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:F#m:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "F#m",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:F#m:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "F#m",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:F#m:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "F#m",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:F#m:V",
+      "type": "chord",
+      "attrs": {
+        "key": "F#m",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:F#m:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "F#m",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:F#m:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "F#m",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Fm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Fm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Fm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Fm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Fm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Fm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Fm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Fm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Fm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Fm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Fm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Fm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Fm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Fm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Bbm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Bbm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Bbm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Bbm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Bbm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Bbm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Bbm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Bbm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Bbm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Bbm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Bbm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Bbm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Bbm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Bbm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Ebm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Ebm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Ebm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Ebm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Ebm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Ebm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Ebm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Ebm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Ebm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Ebm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Ebm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Ebm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Ebm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Ebm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Abm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Abm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Abm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Abm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Abm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Abm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Abm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Abm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Abm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Abm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Abm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Abm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Abm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Abm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "chord:Dbm:I",
+      "type": "chord",
+      "attrs": {
+        "key": "Dbm",
+        "roman": "I"
+      }
+    },
+    {
+      "id": "chord:Dbm:ii",
+      "type": "chord",
+      "attrs": {
+        "key": "Dbm",
+        "roman": "ii"
+      }
+    },
+    {
+      "id": "chord:Dbm:iii",
+      "type": "chord",
+      "attrs": {
+        "key": "Dbm",
+        "roman": "iii"
+      }
+    },
+    {
+      "id": "chord:Dbm:IV",
+      "type": "chord",
+      "attrs": {
+        "key": "Dbm",
+        "roman": "IV"
+      }
+    },
+    {
+      "id": "chord:Dbm:V",
+      "type": "chord",
+      "attrs": {
+        "key": "Dbm",
+        "roman": "V"
+      }
+    },
+    {
+      "id": "chord:Dbm:vi",
+      "type": "chord",
+      "attrs": {
+        "key": "Dbm",
+        "roman": "vi"
+      }
+    },
+    {
+      "id": "chord:Dbm:vii°",
+      "type": "chord",
+      "attrs": {
+        "key": "Dbm",
+        "roman": "vii°"
+      }
+    },
+    {
+      "id": "period:Baroque",
+      "type": "period",
+      "attrs": {
+        "name": "Baroque"
+      }
+    },
+    {
+      "id": "period:Classical",
+      "type": "period",
+      "attrs": {
+        "name": "Classical"
+      }
+    },
+    {
+      "id": "period:Romantic",
+      "type": "period",
+      "attrs": {
+        "name": "Romantic"
+      }
+    },
+    {
+      "id": "composer:Bach",
+      "type": "composer",
+      "attrs": {
+        "name": "Bach",
+        "dates": "1685-1750"
+      }
+    },
+    {
+      "id": "composer:Handel",
+      "type": "composer",
+      "attrs": {
+        "name": "Handel",
+        "dates": "1685-1759"
+      }
+    },
+    {
+      "id": "composer:Mozart",
+      "type": "composer",
+      "attrs": {
+        "name": "Mozart",
+        "dates": "1756-1791"
+      }
+    },
+    {
+      "id": "composer:Beethoven",
+      "type": "composer",
+      "attrs": {
+        "name": "Beethoven",
+        "dates": "1760-1827"
+      }
+    },
+    {
+      "id": "composer:Chopin",
+      "type": "composer",
+      "attrs": {
+        "name": "Chopin",
+        "dates": "1810-1849"
+      }
+    },
+    {
+      "id": "composer:Liszt",
+      "type": "composer",
+      "attrs": {
+        "name": "Liszt",
+        "dates": "1811-1886"
+      }
+    },
+    {
+      "id": "composer:Schumann",
+      "type": "composer",
+      "attrs": {
+        "name": "Schumann",
+        "dates": "1810-1856"
+      }
+    },
+    {
+      "id": "piece:Prelude in C Major",
+      "type": "piece",
+      "attrs": {
+        "name": "Prelude in C Major",
+        "composer": "Bach",
+        "key": "C",
+        "period": "Baroque",
+        "difficulty": 1,
+        "form": "binary",
+        "style_notes": "全音符级进,16 小节,和声极简,要均匀触键"
+      }
+    },
+    {
+      "id": "piece:Minuet in G",
+      "type": "piece",
+      "attrs": {
+        "name": "Minuet in G",
+        "composer": "Bach",
+        "key": "G",
+        "period": "Baroque",
+        "difficulty": 2,
+        "form": "AB",
+        "style_notes": "三拍子优雅,带装饰音,弱起注意"
+      }
+    },
+    {
+      "id": "piece:Sonata K.545 1st Mvt",
+      "type": "piece",
+      "attrs": {
+        "name": "Sonata K.545 1st Mvt",
+        "composer": "Mozart",
+        "key": "C",
+        "period": "Classical",
+        "difficulty": 3,
+        "form": "sonata",
+        "style_notes": "清晰结构,主-属-主对话,触键颗粒感"
+      }
+    },
+    {
+      "id": "piece:Für Elise",
+      "type": "piece",
+      "attrs": {
+        "name": "Für Elise",
+        "composer": "Beethoven",
+        "key": "a",
+        "period": "Classical",
+        "difficulty": 4,
+        "form": "rondo",
+        "style_notes": "A 段 a 小调,带弱起小节,主题标志性"
+      }
+    },
+    {
+      "id": "piece:Nocturne Op.9 No.2",
+      "type": "piece",
+      "attrs": {
+        "name": "Nocturne Op.9 No.2",
+        "composer": "Chopin",
+        "key": "Eb",
+        "period": "Romantic",
+        "difficulty": 5,
+        "form": "ternary",
+        "style_notes": "12/8 拍,左手持续低音,右手如歌,踏板要讲究"
+      }
+    },
+    {
+      "id": "piece:Étude Op.10 No.3 'Tristesse'",
+      "type": "piece",
+      "attrs": {
+        "name": "Étude Op.10 No.3 'Tristesse'",
+        "composer": "Chopin",
+        "key": "E",
+        "period": "Romantic",
+        "difficulty": 6,
+        "form": "through-composed",
+        "style_notes": "legato 连奏,情感深沉,音阶跑动要均匀"
+      }
+    },
+    {
+      "id": "piece:Liebestraum No.3",
+      "type": "piece",
+      "attrs": {
+        "name": "Liebestraum No.3",
+        "composer": "Liszt",
+        "key": "Ab",
+        "period": "Romantic",
+        "difficulty": 6,
+        "form": "ABA",
+        "style_notes": "多声部织体,踏板频繁,主旋律在中声部"
+      }
+    },
+    {
+      "id": "piece:Träumerei",
+      "type": "piece",
+      "attrs": {
+        "name": "Träumerei",
+        "composer": "Schumann",
+        "key": "F",
+        "period": "Romantic",
+        "difficulty": 4,
+        "form": "song",
+        "style_notes": "梦幻气质,弱奏为主,和声色彩丰富"
+      }
+    },
+    {
+      "id": "progression:I-IV-V-I",
+      "type": "progression",
+      "attrs": {
+        "name": "I-IV-V-I",
+        "desc": "完美的古典终止,用于稳定段落"
+      }
+    },
+    {
+      "id": "progression:I-V-vi-IV",
+      "type": "progression",
+      "attrs": {
+        "name": "I-V-vi-IV",
+        "desc": "流行进行,19 世纪后期也常见(《Let It Be》) "
+      }
+    },
+    {
+      "id": "progression:I-vi-IV-V",
+      "type": "progression",
+      "attrs": {
+        "name": "I-vi-IV-V",
+        "desc": "50 年代进行,清新,莫扎特常用"
+      }
+    },
+    {
+      "id": "progression:ii-V-I",
+      "type": "progression",
+      "attrs": {
+        "name": "ii-V-I",
+        "desc": "爵士/古典核心进行,转调的桥梁"
+      }
+    },
+    {
+      "id": "progression:I-V/V-V",
+      "type": "progression",
+      "attrs": {
+        "name": "I-V/V-V",
+        "desc": "属七的属七,贝多芬发展段常用"
+      }
+    },
+    {
+      "id": "progression:i-iv-V-i",
+      "type": "progression",
+      "attrs": {
+        "name": "i-iv-V-i",
+        "desc": "小调终止,巴赫小调作品主结构"
+      }
+    },
+    {
+      "id": "progression:I-bVII-IV-I",
+      "type": "progression",
+      "attrs": {
+        "name": "I-bVII-IV-I",
+        "desc": "混合利底亚,浪漫时期色彩和弦"
+      }
+    },
+    {
+      "id": "progression:I-vi-ii-V",
+      "type": "progression",
+      "attrs": {
+        "name": "I-vi-ii-V",
+        "desc": "循环进行,常用作段落终止"
+      }
+    },
+    {
+      "id": "progression:vi-IV-I-V",
+      "type": "progression",
+      "attrs": {
+        "name": "vi-IV-I-V",
+        "desc": "悲伤但又上行,肖邦夜曲常用"
+      }
+    },
+    {
+      "id": "progression:bVI-bVII-I",
+      "type": "progression",
+      "attrs": {
+        "name": "bVI-bVII-I",
+        "desc": "弗里几亚,莫扎特土耳其进行常用"
+      }
+    },
+    {
+      "id": "style:Baroque",
+      "type": "style",
+      "attrs": {
+        "name": "Baroque",
+        "desc": "通奏低音主导,对位严密,装饰音即兴,常用羽管键琴音色"
+      }
+    },
+    {
+      "id": "style:Classical",
+      "type": "style",
+      "attrs": {
+        "name": "Classical",
+        "desc": "清晰句法,主-属调对话,动机发展,力度对比鲜明"
+      }
+    },
+    {
+      "id": "style:Romantic",
+      "type": "style",
+      "attrs": {
+        "name": "Romantic",
+        "desc": "情感表达自由,和声色彩丰富,踏板讲究,织体复杂"
+      }
+    },
+    {
+      "id": "err:Baroque:ornament",
+      "type": "error",
+      "attrs": {
+        "period": "Baroque",
+        "name": "装饰音不规范",
+        "desc": "巴洛克装饰音(trill/mordent)无固定时值,需依风格加装饰"
+      }
+    },
+    {
+      "id": "err:Baroque:voice",
+      "type": "error",
+      "attrs": {
+        "period": "Baroque",
+        "name": "声部独立差",
+        "desc": "对位作品各声部须独立,常被压成单层旋律"
+      }
+    },
+    {
+      "id": "err:Classical:articulation",
+      "type": "error",
+      "attrs": {
+        "period": "Classical",
+        "name": "触键不清晰",
+        "desc": "古典奏鸣曲要求颗粒触键(staccato/legato 严格)"
+      }
+    },
+    {
+      "id": "err:Classical:rhythm",
+      "type": "error",
+      "attrs": {
+        "period": "Classical",
+        "name": "节奏自由过度",
+        "desc": "古典风格不应有太多 rubato,需稳定拍感"
+      }
+    },
+    {
+      "id": "err:Romantic:pedal",
+      "type": "error",
+      "attrs": {
+        "period": "Romantic",
+        "name": "踏板滥用",
+        "desc": "浪漫作品踏板频繁,初学者常踩太长导致和声浑浊"
+      }
+    },
+    {
+      "id": "err:Romantic:dynamic",
+      "type": "error",
+      "attrs": {
+        "period": "Romantic",
+        "name": "力度无变化",
+        "desc": "浪漫派需大幅力度对比,常被弹成单一力度"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "src": "composer:Bach",
+      "dst": "period:Baroque",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "composer:Handel",
+      "dst": "period:Baroque",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "composer:Mozart",
+      "dst": "period:Classical",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "composer:Beethoven",
+      "dst": "period:Classical",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "composer:Chopin",
+      "dst": "period:Romantic",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "composer:Liszt",
+      "dst": "period:Romantic",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "composer:Schumann",
+      "dst": "period:Romantic",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Prelude in C Major",
+      "dst": "composer:Bach",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Prelude in C Major",
+      "dst": "period:Baroque",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Prelude in C Major",
+      "dst": "key:C",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Minuet in G",
+      "dst": "composer:Bach",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Minuet in G",
+      "dst": "period:Baroque",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Minuet in G",
+      "dst": "key:G",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Sonata K.545 1st Mvt",
+      "dst": "composer:Mozart",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Sonata K.545 1st Mvt",
+      "dst": "period:Classical",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Sonata K.545 1st Mvt",
+      "dst": "key:C",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Für Elise",
+      "dst": "composer:Beethoven",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Für Elise",
+      "dst": "period:Classical",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Für Elise",
+      "dst": "key:a",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Nocturne Op.9 No.2",
+      "dst": "composer:Chopin",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Nocturne Op.9 No.2",
+      "dst": "period:Romantic",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Nocturne Op.9 No.2",
+      "dst": "key:Eb",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Étude Op.10 No.3 'Tristesse'",
+      "dst": "composer:Chopin",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Étude Op.10 No.3 'Tristesse'",
+      "dst": "period:Romantic",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Étude Op.10 No.3 'Tristesse'",
+      "dst": "key:E",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Liebestraum No.3",
+      "dst": "composer:Liszt",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Liebestraum No.3",
+      "dst": "period:Romantic",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Liebestraum No.3",
+      "dst": "key:Ab",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Träumerei",
+      "dst": "composer:Schumann",
+      "rel": "composed_by",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Träumerei",
+      "dst": "period:Romantic",
+      "rel": "in_period",
+      "weight": 1.0
+    },
+    {
+      "src": "piece:Träumerei",
+      "dst": "key:F",
+      "rel": "in_key",
+      "weight": 1.0
+    },
+    {
+      "src": "style:Baroque",
+      "dst": "period:Baroque",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "style:Classical",
+      "dst": "period:Classical",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "style:Romantic",
+      "dst": "period:Romantic",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "err:Baroque:ornament",
+      "dst": "period:Baroque",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "err:Baroque:voice",
+      "dst": "period:Baroque",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "err:Classical:articulation",
+      "dst": "period:Classical",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "err:Classical:rhythm",
+      "dst": "period:Classical",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "err:Romantic:pedal",
+      "dst": "period:Romantic",
+      "rel": "typical_of",
+      "weight": 1.0
+    },
+    {
+      "src": "err:Romantic:dynamic",
+      "dst": "period:Romantic",
+      "rel": "typical_of",
+      "weight": 1.0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.21682",
+  "title": "PHOTON: Non-Invasive Optical Tracking of Key-Lever Motion in Historical Keyboard Instruments",
+  "summary": "This paper introduces PHOTON (PHysical Optical Tracking of Notes), a non-invasive optical sensing system for measuring key-lever motion in historical keyboard instruments. PHOTON tracks the vertical displacement of the key lever itself, capturing motion shaped by both performer input and the instrument's mechanically imposed, time-varying load. Reflective optical sensors mounted beneath the distal end of each lever provide continuous displacement, timing, and articulation data without interfering with the action. Unlike existing optical systems designed for modern pianos, PHOTON accommodates the diverse geometries, limited clearances, and non-standard layouts of harpsichords, clavichords, and early fortepianos. Its modular, low-profile architecture enables high-resolution, low-latency sensing across multiple manuals and variable key counts. Beyond performance capture, PHOTON provides real-time MIDI output and supports empirical study of expressive gesture, human-instrument interaction, and the construction of instrument-specific MIDI corpora using real historical mechanisms. The complete system is released as open-source hardware and software, from schematics and PCB layouts developed in KiCad to firmware written in CircuitPython, lowering the barrier to adoption, replication, and extension.",
+  "authors": [
+    "Noah Jaffe",
+    "John Ashley Burgoyne"
+  ],
+  "published": "2026-04-23T13:47:00Z",
+  "updated": "2026-04-23T13:47:00Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.21682",
+  "abs_url": "https://arxiv.org/abs/2604.21682",
+  "fetched_at": "2026-07-19T14:17:07.971825Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

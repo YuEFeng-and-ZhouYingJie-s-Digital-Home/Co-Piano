@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2607.14967",
+  "title": "Latent Trajectory Discrimination for AI-Generated Text Detection",
+  "summary": "Most existing approaches to AI-Generated Text Detection (AIGTD) treat documents as static objects and base their decisions on aggregate statistics or globally compressed embeddings. However, this perspective overlooks the inherently dynamic nature of autoregressive generation, where content evolves progressively through the latent space. In this paper, we reformulate AIGTD as the problem of distinguishing between latent generation trajectories. Instead of relying on static representations, we model how textual representations evolve across the sequence. To this end, we propose Geometric Trajectory and Contrastive Learning (GTCL), a framework that segments the document into ordered local units, encodes each unit in an embedding space, and constructs a structured and sequence-level representation. GTCL then applies contrastive learning to these trajectories to learn geometric regularities associated with the autoregressive generation. Evaluations performed on three different benchmarks and several approaches show that GTCL outperforms detection baselines consistently, which implies that explicitly modeling sequential dynamics provides robust discriminative signals across models and domains. These results suggest that modeling trajectory differences could improve detection and open up a dynamic direction that has been underexplored in previous AIGTD literature.",
+  "authors": [
+    "Gianluca Bonifazi",
+    "Christopher Buratti",
+    "Michele Marchetti",
+    "Federica Parlapiano",
+    "Giulia Quaglieri",
+    "Davide Traini",
+    "Domenico Ursino",
+    "Luca Virgili"
+  ],
+  "published": "2026-07-16T13:19:14Z",
+  "updated": "2026-07-16T13:19:14Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14967",
+  "abs_url": "https://arxiv.org/abs/2607.14967",
+  "fetched_at": "2026-07-19T14:17:07.978105Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

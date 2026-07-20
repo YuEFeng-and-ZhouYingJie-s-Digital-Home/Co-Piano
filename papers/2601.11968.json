@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2601.11968",
+  "title": "MuseAgent-1: Interactive Grounded Multimodal Understanding of Music Scores and Performance Audio",
+  "summary": "Despite recent advances in multimodal large language models (MLLMs), their ability to understand and interact with music remains limited. Music understanding requires grounded reasoning over symbolic scores and expressive performance audio, which general-purpose MLLMs often fail to handle due to insufficient perceptual grounding. We introduce MuseAgent, a music-centric multimodal agent that augments language models with structured symbolic representations derived from sheet music images and performance audio. By integrating optical music recognition and automatic music transcription modules, MuseAgent enables multi-step reasoning and interaction over fine-grained musical content. To systematically evaluate music understanding capabilities, we further propose MuseBench, a benchmark covering music theory reasoning, score interpretation, and performance-level analysis across text, image, and audio modalities. Experiments show that existing MLLMs perform poorly on these tasks, while MuseAgent achieves substantial improvements, highlighting the importance of structured multimodal grounding for interactive music understanding.",
+  "authors": [
+    "Qihao Zhao",
+    "Yunqi Cao",
+    "Yangyu Huang",
+    "Hui Yi Leong",
+    "Fan Zhang",
+    "Kim-Hui Yap",
+    "Wei Hu"
+  ],
+  "published": "2026-01-17T08:54:49Z",
+  "updated": "2026-01-17T08:54:49Z",
+  "categories": [
+    "cs.MM",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.11968",
+  "abs_url": "https://arxiv.org/abs/2601.11968",
+  "fetched_at": "2026-07-19T14:18:41.855270Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

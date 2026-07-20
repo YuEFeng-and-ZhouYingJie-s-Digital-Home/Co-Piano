@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.10780",
+  "title": "Return of the solo author: The changing division of labor in science in the age of generative AI",
+  "summary": "Modern science has experienced a long shift from individual work to team production. Generative artificial intelligence (AI) might appear to extend this trajectory by lowering research costs and enabling larger-scale collaboration. Yet if tasks once performed by coauthors can be delegated to AI, the same technology may also weaken the need for collaboration in parts of the research process. Here, we examine this tension by moving beyond average team size and focusing on the solo-authored tail of the author-count distribution. Analyzing over 300 million works across 26 fields, we find that the decades-long decline in solo authorship halted and partially reversed with ChatGPT's public release in late 2022. We also reveal that this is an uneven phenomenon: it is strongest in fields where coauthors' work is more readily replaceable, and weak or absent in fields that depend on physical collaboration. At the individual level, the recovery is not explained by the entry of new researchers or by changes in field composition. Instead, the break appears among authors who had written only with others, including those with no prior solo publications, and among long-established authors as well as newcomers. Their solo papers stay close to their own coauthored work while narrowing in scope and shifting toward computational topics. Because a solo paper is work without credited human coauthors, this study offers an empirical probe of how generative AI can substitute for scientific labor, and evidence of a reconfiguration of cognitive labor within papers rather than of team size.",
+  "authors": [
+    "Akira Matsui"
+  ],
+  "published": "2026-07-12T14:17:39Z",
+  "updated": "2026-07-12T14:17:39Z",
+  "categories": [
+    "cs.CY",
+    "cs.DL",
+    "cs.SI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.10780",
+  "abs_url": "https://arxiv.org/abs/2607.10780",
+  "fetched_at": "2026-07-19T14:18:41.877789Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

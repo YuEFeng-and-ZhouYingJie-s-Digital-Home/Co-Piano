@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.13640",
+  "title": "The Moving Drone: Negotiating Agency Between the Voice and the Virtual",
+  "summary": "Melodic material in Hindustani music is presented in relation to a tonic, usually sustained by the tanpura, a four-stringed drone instrument. Rooted in Hindustani music, 'The Moving Drone' sets the traditionally static drone into motion that, throughout the performance, gains increasing agency transitioning from reactive to more proactive roles. The work employs four independent loopers in Max/MSP to function as 'virtual' drones. They are populated cyclically in real-time as the vocalist improvises, creating an organic and evolving feedback loop between the voice and the virtual drone. This relationship further evolves melodically by pitch shifting the loops, which introduces a dimension of sudden, explicit movement. Then it changes timbrally, via the integration of GaMaDHaNi, a singer conditioned pitch-to-voice generative AI model to resynthesize looped audio. While current music AI approaches prioritize high-fidelity and realism of generated content which has sparked anxiety over job replacement for the music community, this work intentionally utilizes low-fidelity generative outputs, further necessitating human interpretation and situational context in order to be complete. 'The Moving Drone' positions technology and generative AI within established socio-cultural musical practices, proposing a virtual drone as an active, responsive, and co-creative musical agent.",
+  "authors": [
+    "Nithya Shikarpur",
+    "Victor Arul",
+    "Anna Huang"
+  ],
+  "published": "2026-06-11T17:47:01Z",
+  "updated": "2026-06-11T17:47:01Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.13640",
+  "abs_url": "https://arxiv.org/abs/2606.13640",
+  "fetched_at": "2026-07-19T14:18:41.866770Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

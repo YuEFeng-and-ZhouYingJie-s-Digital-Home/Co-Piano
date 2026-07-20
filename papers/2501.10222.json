@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2501.10222",
+  "title": "Towards An Integrated Approach for Expressive Piano Performance Synthesis from Music Scores",
+  "summary": "This paper presents an integrated system that transforms symbolic music scores into expressive piano performance audio. By combining a Transformer-based Expressive Performance Rendering (EPR) model with a fine-tuned neural MIDI synthesiser, our approach directly generates expressive audio performances from score inputs. To the best of our knowledge, this is the first system to offer a streamlined method for converting score MIDI files lacking expression control into rich, expressive piano performances. We conducted experiments using subsets of the ATEPP dataset, evaluating the system with both objective metrics and subjective listening tests. Our system not only accurately reconstructs human-like expressiveness, but also captures the acoustic ambience of environments such as concert halls and recording studios. Additionally, the proposed system demonstrates its ability to achieve musical expressiveness while ensuring good audio quality in its outputs.",
+  "authors": [
+    "Jingjing Tang",
+    "Erica Cooper",
+    "Xin Wang",
+    "Junichi Yamagishi",
+    "George Fazekas"
+  ],
+  "published": "2025-01-17T14:38:58Z",
+  "updated": "2025-01-17T14:38:58Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2501.10222",
+  "abs_url": "https://arxiv.org/abs/2501.10222",
+  "fetched_at": "2026-07-19T14:18:41.861380Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

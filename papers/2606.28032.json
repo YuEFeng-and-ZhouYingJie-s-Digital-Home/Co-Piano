@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.28032",
+  "title": "A Flexible Encoding Model for Non-Unique Note Alignments",
+  "summary": "Symbolic music alignment links notes in a symbolic performance to their counterparts in a score. While existing alignment encoding formats provide unique correspondences between these notes, there are various musical practices and forms such as practice repetitions in rehearsal and improvised realizations in basso continuo that require a more flexible approach to encoding their alignments. In this paper, we propose a minimal, backward-compatible extension to the Match file format to support such non-unique and semantically complex alignments. We introduce two virtual pointer notes - virtual score notes and virtual performance notes - which allow to encode multiple links between performance and score notes. In addition we expand the Match file's 'section' line to include semantically meaningful annotations of performance regions beyond score-indicated musical repetitions. We further demonstrate the utility of these extensions through two representative use-cases in piano rehearsal and basso continuo.",
+  "authors": [
+    "Suhit Chiruthapudi",
+    "Adam Štefunko",
+    "Silvan Peter",
+    "Patricia Hu",
+    "Jan Hajič",
+    "Carlos Eduardo Cancino-Chacón"
+  ],
+  "published": "2026-06-26T12:38:03Z",
+  "updated": "2026-06-26T12:38:03Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.28032",
+  "abs_url": "https://arxiv.org/abs/2606.28032",
+  "fetched_at": "2026-07-19T14:17:07.968741Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

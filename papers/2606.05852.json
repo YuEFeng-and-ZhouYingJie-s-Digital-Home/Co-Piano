@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.05852",
+  "title": "UniVoice: A Unified Model for Speech and Singing Voice Generation",
+  "summary": "Text-to-speech (TTS) and singing voice synthesis (SVS) both aim to generate human vocal audio from symbolic inputs, but they impose different requirements on the generation process. Speech generation relies on flexible, language-driven prosody, whereas singing generation requires explicit melody control and accurate rhythmic alignment. This mismatch makes it challenging to train a single model that can generate both natural speech and controllable singing, since melody-related conditions should strongly constrain singing but should not restrict speech prosody. We present UniVoice, a unified speech and singing voice generation framework based on conditional flow matching. Instead of using a single undifferentiated conditioning representation, UniVoice factorizes the condition into content, melody, and timbre, which are encoded by modality-appropriate encoders and consumed by a shared Diffusion Transformer (DiT) backbone. For singing, the melody condition is represented by MIDI note sequences; for speech, it is replaced with a learned null melody token, allowing the model to infer prosody from linguistic and acoustic context. This design preserves explicit melody control for singing while avoiding the need to impose melody constraints on speech. We further analyze the null melody token as an approximation to melody marginalization in the conditional flow. Trained on 30k hours of speech and 35k hours of singing data, UniVoice achieves a speech PER of 5.26\\%, comparable to dedicated TTS systems such as F5-TTS (5.21\\%) and CosyVoice3 (5.30\\%). On singing generation, UniVoice achieves a PER of 16.22\\%, outperforming the unified baseline Vevo1.5 (24.72\\%).",
+  "authors": [
+    "Junjie Zheng",
+    "Huixin Xue",
+    "Shihong Ren",
+    "Chaofan Ding",
+    "Hao Liu",
+    "Zihao Chen"
+  ],
+  "published": "2026-06-04T08:27:17Z",
+  "updated": "2026-06-04T08:27:17Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.05852",
+  "abs_url": "https://arxiv.org/abs/2606.05852",
+  "fetched_at": "2026-07-19T14:17:38.247134Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

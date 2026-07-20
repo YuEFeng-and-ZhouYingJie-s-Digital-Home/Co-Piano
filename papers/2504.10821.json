@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2504.10821",
+  "title": "Progressive Rock Music Classification",
+  "summary": "This study investigates the classification of progressive rock music, a genre characterized by complex compositions and diverse instrumentation, distinct from other musical styles. Addressing this Music Information Retrieval (MIR) task, we extracted comprehensive audio features, including spectrograms, Mel-Frequency Cepstral Coefficients (MFCCs), chromagrams, and beat positions from song snippets using the Librosa library. A winner-take-all voting strategy was employed to aggregate snippet-level predictions into final song classifications. We conducted a comparative analysis of various machine learning techniques. Ensemble methods, encompassing Bagging (Random Forest, ExtraTrees, Bagging Classifier) and Boosting (XGBoost, Gradient Boosting), were explored, utilizing Principal Component Analysis (PCA) for dimensionality reduction to manage computational constraints with high-dimensional feature sets. Additionally, deep learning approaches were investigated, including the development of custom 1D Convolutional Neural Network (1D CNN) architectures (named \"Zuck\" and \"Satya\") featuring specific layer configurations, normalization, and activation functions. Furthermore, we fine-tuned a state-of-the-art Audio Spectrogram Transformer (AST) model, leveraging its attention-based mechanisms for audio classification. Performance evaluation on validation and test sets revealed varying effectiveness across models, with ensemble methods like Extra Trees achieving test accuracies up to 76.38%. This research provides insights into the application and relative performance of diverse machine learning paradigms for the nuanced task of progressive rock genre classification.",
+  "authors": [
+    "Arpan Nagar",
+    "Joseph Bensabat",
+    "Jokent Gaza",
+    "Moinak Dey"
+  ],
+  "published": "2025-04-15T02:48:52Z",
+  "updated": "2025-04-15T02:48:52Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2504.10821",
+  "abs_url": "https://arxiv.org/abs/2504.10821",
+  "fetched_at": "2026-07-19T14:18:41.866328Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

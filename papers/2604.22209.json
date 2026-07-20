@@ -1,0 +1,35 @@
+{
+  "arxiv_id": "2604.22209",
+  "title": "UniSonate: A Unified Model for Speech, Music, and Sound Effect Generation with Text Instructions",
+  "summary": "Generative audio modeling has largely been fragmented into specialized tasks, text-to-speech (TTS), text-to-music (TTM), and text-to-audio (TTA), each operating under heterogeneous control paradigms. Unifying these modalities remains a fundamental challenge due to the intrinsic dissonance between structured semantic representations (speech/music) and unstructured acoustic textures (sound effects). In this paper, we introduce UniSonate, a unified flow-matching framework capable of synthesizing speech, music, and sound effects through a standardized, reference-free natural language instruction interface. To reconcile structural disparities, we propose a novel dynamic token injection mechanism that projects unstructured environmental sounds into a structured temporal latent space, enabling precise duration control within a phoneme-driven Multimodal Diffusion Transformer (MM-DiT). Coupled with a multi-stage curriculum learning strategy, this approach effectively mitigates cross-modal optimization conflicts. Extensive experiments demonstrate that UniSonate achieves state-of-the-art performance in instruction-based TTS (WER 1.47%) and TTM (SongEval Coherence 3.18), while maintaining competitive fidelity in TTA. Crucially, we observe positive transfer, where joint training on diverse audio data significantly enhances structural coherence and prosodic expressiveness compared to single-task baselines. Audio samples are available at https://qiangchunyu.github.io/UniSonate/.",
+  "authors": [
+    "Chunyu Qiang",
+    "Xiaopeng Wang",
+    "Kang Yin",
+    "Yuzhe Liang",
+    "Yuxin Guo",
+    "Teng Ma",
+    "Ziyu Zhang",
+    "Tianrui Wang",
+    "Cheng Gong",
+    "Yushen Chen",
+    "Ruibo Fu",
+    "Chen Zhang",
+    "Longbiao Wang",
+    "Jianwu Dang"
+  ],
+  "published": "2026-04-24T04:26:04Z",
+  "updated": "2026-04-24T04:26:04Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.CL",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.22209",
+  "abs_url": "https://arxiv.org/abs/2604.22209",
+  "fetched_at": "2026-07-19T14:18:41.843548Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

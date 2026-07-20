@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2506.12245",
+  "title": "Reversing the Paradigm: Building AI-First Systems with Human Guidance",
+  "summary": "The relationship between humans and artificial intelligence is no longer science fiction -- it's a growing reality reshaping how we live and work. AI has moved beyond research labs into everyday life, powering customer service chats, personalizing travel, aiding doctors in diagnosis, and supporting educators. What makes this moment particularly compelling is AI's increasing collaborative nature. Rather than replacing humans, AI augments our capabilities -- automating routine tasks, enhancing decisions with data, and enabling creativity in fields like design, music, and writing. The future of work is shifting toward AI agents handling tasks autonomously, with humans as supervisors, strategists, and ethical stewards. This flips the traditional model: instead of humans using AI as a tool, intelligent agents will operate independently within constraints, managing everything from scheduling and customer service to complex workflows. Humans will guide and fine-tune these agents to ensure alignment with goals, values, and context. This shift offers major benefits -- greater efficiency, faster decisions, cost savings, and scalability. But it also brings risks: diminished human oversight, algorithmic bias, security flaws, and a widening skills gap. To navigate this transition, organizations must rethink roles, invest in upskilling, embed ethical principles, and promote transparency. This paper examines the technological and organizational changes needed to enable responsible adoption of AI-first systems -- where autonomy is balanced with human intent, oversight, and values.",
+  "authors": [
+    "Cosimo Spera",
+    "Garima Agrawal"
+  ],
+  "published": "2025-06-13T21:48:44Z",
+  "updated": "2025-06-13T21:48:44Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2506.12245",
+  "abs_url": "https://arxiv.org/abs/2506.12245",
+  "fetched_at": "2026-07-19T14:18:41.873651Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

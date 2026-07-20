@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.15013",
+  "title": "Quasi-Pfaffian Solutions to Integrable Systems via Sylvester-Moutard Transformations",
+  "summary": "In this paper, we introduce a mathematical structure called the quasiPfaffian. The quasiPfaffian is analogous to the quasideterminant, a structure used instead of a determinant in noncommutative settings. Building on the Sylvester identity for the quasiPfaffian, we develop a novel transformation, named the Sylvester Moutard transform, this generates new solutions for Moutard transformable integrable systems, such as the Novikov Veselov equation and the two dimensional sine Gordon equation. We also briefly review the classical Moutard transformation in the context of quasiPfaffians and discuss several additional properties of this new object.",
+  "authors": [
+    "Claire R Gilson",
+    "Chen Shu"
+  ],
+  "published": "2026-07-16T14:01:53Z",
+  "updated": "2026-07-16T14:01:53Z",
+  "categories": [
+    "math-ph"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15013",
+  "abs_url": "https://arxiv.org/abs/2607.15013",
+  "fetched_at": "2026-07-19T14:17:38.253654Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

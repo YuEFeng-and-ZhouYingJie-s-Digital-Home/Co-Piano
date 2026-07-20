@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2603.28644",
+  "title": "Constructing Composite Features for Interpretable Music-Tagging",
+  "summary": "Combining multiple audio features can improve the performance of music tagging, but common deep learning-based feature fusion methods often lack interpretability. To address this problem, we propose a Genetic Programming (GP) pipeline that automatically evolves composite features by mathematically combining base music features, thereby capturing synergistic interactions while preserving interpretability. This approach provides representational benefits similar to deep feature fusion without sacrificing interpretability. Experiments on the MTG-Jamendo and GTZAN datasets demonstrate consistent improvements compared to state-of-the-art systems across base feature sets at different abstraction levels. It should be noted that most of the performance gains are noticed within the first few hundred GP evaluations, indicating that effective feature combinations can be identified under modest search budgets. The top evolved expressions include linear, nonlinear, and conditional forms, with various low-complexity solutions at top performance aligned with parsimony pressure to prefer simpler expressions. Analyzing these composite features further reveals which interactions and transformations tend to be beneficial for tagging, offering insights that remain opaque in black-box deep models.",
+  "authors": [
+    "Chenhao Xue",
+    "Weitao Hu",
+    "Joyraj Chakraborty",
+    "Zhijin Guo",
+    "Kang Li",
+    "Tianyu Shi",
+    "Martin Reed",
+    "Nikolaos Thomos"
+  ],
+  "published": "2026-03-30T16:25:58Z",
+  "updated": "2026-03-30T16:25:58Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.28644",
+  "abs_url": "https://arxiv.org/abs/2603.28644",
+  "fetched_at": "2026-07-19T14:18:41.844080Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

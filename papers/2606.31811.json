@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.31811",
+  "title": "MuSViT: A Foundation Vision Model for Sheet Music Representation",
+  "summary": "Foundation models have transformed vision and language processing by providing rich, reusable representations that transfer across diverse tasks. Sheet music, as a visual encoding of musical language, lacks such a strong domain-specific backbone. We introduce MuSViT (Music Score Vision Transformer): the first foundation vision model for sheet music representation -- a ViT encoder pre-trained via Masked Autoencoders on 9.7 million pages from the IMSLP. To handle the complexity of real-world scores, we adopt a two-stage curriculum: a synthetic warm-up on typeset scores followed by large-scale training on the full IMSLP corpus. We evaluate MuSViT on four downstream tasks -- full-page and staff-level music score recognition, music symbol detection, and score difficulty classification -- under two scenarios: linear probing (frozen encoder) and fine-tuning. Under linear probing, MuSViT consistently outperforms modern vision encoders, revealing that general-purpose representations, regardless of scale, fall systematically short on the structured symbolic properties of musical notation. Under fine-tuning, MuSViT generally improves upon task-specific state-of-the-art methods. An additional embedding-transcription consistency analysis reveals that MuSViT encodes symbolic musical structure directly in its representation space -- unlike other encoders, whose embeddings do not correlate with music notation content. These results establish MuSViT as a foundation backbone for sheet music understanding.",
+  "authors": [
+    "Carlos Penarrubia",
+    "Antonio Rios-Vila",
+    "Eliseo Fuentes-Martinez",
+    "Juan C. Martinez-Sevilla",
+    "Francisco J. Castellanos",
+    "María Alfaro-Contreras",
+    "Jorge Calvo-Zaragoza"
+  ],
+  "published": "2026-06-30T15:27:12Z",
+  "updated": "2026-06-30T15:27:12Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.31811",
+  "abs_url": "https://arxiv.org/abs/2606.31811",
+  "fetched_at": "2026-07-19T14:18:41.846128Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

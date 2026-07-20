@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.21227",
+  "title": "Bagpiper-Edit: Zero-Shot Open-Ended Audio Editing via Rich-Caption",
+  "summary": "Current text-guided audio editing methods rely on paired training data, predefined operation templates, and separate processing pipelines across speech, music, and sound. We present Bagpiper-Edit to enable open-ended audio editing via free-form natural language instructions. We reformulate audio editing as a rich-caption rewriting task by treating a rich caption as the semantic representation of an audio clip. The user request is translated into an edited caption, which then guides Bagpiper-Edit to generate the target edited audio with the original audio as contextual acoustic anchor. This unlocks the potential of free-form editing, and circumvents the need for paired audio-editing training data, enabling powerful zero-shot editing capabilities. Evaluations across speech, audio, and free-form editing show Bagpiper-Edit maintains good consistency to the original audio and achieves similar performance to other expert models in most cases. Demo: https://bagpiper-edit.github.io, Codes: https://github.com/espnet/espnet/pull/6417 & https://github.com/HsunGong/espnet",
+  "authors": [
+    "Xun Gong",
+    "Jinchuan Tian",
+    "Haoran Wang",
+    "William Chen",
+    "Shinji Watanabe",
+    "Yanmin Qian"
+  ],
+  "published": "2026-06-19T08:47:05Z",
+  "updated": "2026-06-19T08:47:05Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.21227",
+  "abs_url": "https://arxiv.org/abs/2606.21227",
+  "fetched_at": "2026-07-19T14:18:41.849995Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

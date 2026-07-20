@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.04613",
+  "title": "VocalParse: Towards Unified and Scalable Singing Voice Transcription with Large Audio Language Models",
+  "summary": "High-quality singing annotations are fundamental to modern Singing Voice Synthesis (SVS) systems. However, obtaining these annotations at scale through manual labeling is unrealistic due to the substantial labor and musical expertise required, making automatic annotation highly necessary. Despite their utility, current automatic transcription systems face significant challenges: they often rely on complex multi-stage pipelines, struggle to recover text-note alignments, and exhibit poor generalization to out-of-distribution (OOD) singing data. To alleviate these issues, we present VocalParse, a unified singing voice transcription (SVT) model built upon a Large Audio Language Model (LALM). Specifically, our novel contribution is to introduce an interleaved prompting formulation that jointly models lyrics, melody, and word-note correspondence, yielding a generated sequence that directly maps to a structured musical score. Furthermore, we propose a Chain-of-Thought (CoT) style prompting strategy, which decodes lyrics first as a semantic scaffold, significantly mitigating the context disruption problem while preserving the structural benefits of interleaved generation. Experiments demonstrate that VocalParse achieves state-of-the-art SVT performance on multiple singing datasets. The source code and checkpoint are available at https://github.com/pymaster17/VocalParse.",
+  "authors": [
+    "Yukun Chen",
+    "Tianrui Wang",
+    "Zhaoxi Mu",
+    "Xinyu Yang",
+    "EngSiong Chng"
+  ],
+  "published": "2026-05-06T08:03:31Z",
+  "updated": "2026-05-06T08:03:31Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.04613",
+  "abs_url": "https://arxiv.org/abs/2605.04613",
+  "fetched_at": "2026-07-19T14:18:41.854904Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

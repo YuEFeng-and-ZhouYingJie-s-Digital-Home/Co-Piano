@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2507.12175",
+  "title": "RUMAA: Repeat-Aware Unified Music Audio Analysis for Score-Performance Alignment, Transcription, and Mistake Detection",
+  "summary": "This study introduces RUMAA, a transformer-based framework for music performance analysis that unifies score-to-performance alignment, score-informed transcription, and mistake detection in a near end-to-end manner. Unlike prior methods addressing these tasks separately, RUMAA integrates them using pre-trained score and audio encoders and a novel tri-stream decoder capturing task interdependencies through proxy tasks. It aligns human-readable MusicXML scores with repeat symbols to full-length performance audio, overcoming traditional MIDI-based methods that rely on manually unfolded score-MIDI data with pre-specified repeat structures. RUMAA matches state-of-the-art alignment methods on non-repeated scores and outperforms them on scores with repeats in a public piano music dataset, while also delivering promising transcription and mistake detection results.",
+  "authors": [
+    "Sungkyun Chang",
+    "Simon Dixon",
+    "Emmanouil Benetos"
+  ],
+  "published": "2025-07-16T12:13:13Z",
+  "updated": "2025-07-16T12:13:13Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.12175",
+  "abs_url": "https://arxiv.org/abs/2507.12175",
+  "fetched_at": "2026-07-19T14:18:41.848942Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

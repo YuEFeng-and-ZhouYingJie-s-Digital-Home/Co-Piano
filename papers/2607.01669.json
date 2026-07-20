@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.01669",
+  "title": "UT-AISTimprt submission for ICME 2026 Grand Challenge on Academic Text-to-Music Generation",
+  "summary": "This work investigates the effect of batch sampling strategies during training for text-to-audio music generation under low-data and small-scale model settings. This paper describes our approach and findings for the ICME 2026 Grand Challenge on Academic Text-to-Music Generation. Training data are clustered using either text embeddings or audio embeddings, and samples with similar characteristics are grouped within the same mini-batch to mitigate gradient interference. The effects of modality and cluster granularity on clustering are analyzed. Results show that clustering based on text embeddings achieves better performance on objective evaluation metrics than clustering based on audio embeddings. In addition, different cluster granularity leads to different behaviors across evaluation criteria: a moderate number of clusters performs best on objective metrics, while a larger number of clusters tends to exhibit music with more coherent structure in listening tests.",
+  "authors": [
+    "Shunsuke Yoshida",
+    "Yu-Hua Chen",
+    "Satoru Fukayama"
+  ],
+  "published": "2026-07-02T03:51:01Z",
+  "updated": "2026-07-02T03:51:01Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.01669",
+  "abs_url": "https://arxiv.org/abs/2607.01669",
+  "fetched_at": "2026-07-19T14:18:41.870172Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

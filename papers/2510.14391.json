@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2510.14391",
+  "title": "Beat Tracking as Object Detection",
+  "summary": "Recent beat and downbeat tracking models (e.g., RNNs, TCNs, Transformers) output frame-level activations. We propose reframing this task as object detection, where beats and downbeats are modeled as temporal \"objects.\" Adapting the FCOS detector from computer vision to 1D audio, we replace its original backbone with WaveBeat's temporal feature extractor and add a Feature Pyramid Network to capture multi-scale temporal patterns. The model predicts overlapping beat/downbeat intervals with confidence scores, followed by non-maximum suppression (NMS) to select final predictions. This NMS step serves a similar role to DBNs in traditional trackers, but is simpler and less heuristic. Evaluated on standard music datasets, our approach achieves competitive results, showing that object detection techniques can effectively model musical beats with minimal adaptation.",
+  "authors": [
+    "Jaehoon Ahn",
+    "Moon-Ryul Jung"
+  ],
+  "published": "2025-10-16T07:42:45Z",
+  "updated": "2025-10-17T00:38:35Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.14391",
+  "abs_url": "https://arxiv.org/abs/2510.14391",
+  "fetched_at": "2026-07-19T14:18:41.860567Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

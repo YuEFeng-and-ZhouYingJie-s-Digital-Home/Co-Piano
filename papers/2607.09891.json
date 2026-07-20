@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.09891",
+  "title": "What You Train Is What You Get: Gender Bias, Training Composition, and Post-Hoc Mitigation in Audio Deepfake Detection",
+  "summary": "Audio deepfake detection models determine whether speech is genuine or artificially generated, but high overall accuracy can mask substantial performance disparities across demographic groups. In this work, we investigate gender bias in audio deepfake detection using the ASVspoof5 dataset. We use ASVspoof5 under a controlled custom split designed to isolate gender-composition effects. We train attack-specific models on nine training sets with different gender compositions, ranging from female-only to male-only. We use a ResNet18 classifier with LogSpectrogram and WavLM-Base+ features, and we evaluated six post-hoc threshold calibration methods. Experimental results show that training data composition strongly predicts bias direction, with the underrepresented gender performing worse at test time. WavLM-Base+ features are shown to produce gender performance gaps 3.0 to 4.3 times larger than LogSpectrogram under identical training conditions, and balanced training is found to reduce LogSpectrogram bias but leave WavLM bias largely intact. Moreover, all six calibration strategies, including Oracle calibration with full test-set label access, leave the Equal Error Rate gap unchanged at 1.317 pp, confirming that threshold adjustment cannot correct underlying score distribution disparities. Overall, these findings suggest that gender fairness in audio deepfake detection must be addressed at training time, as post-hoc methods can only partially mitigate the resulting disparities",
+  "authors": [
+    "Aishwarya R. Fursule",
+    "Vamshi Nallaguntla",
+    "Shruti Kshirsagar",
+    "Anderson R. Avila"
+  ],
+  "published": "2026-07-10T18:29:24Z",
+  "updated": "2026-07-10T18:29:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.09891",
+  "abs_url": "https://arxiv.org/abs/2607.09891",
+  "fetched_at": "2026-07-19T14:18:41.878024Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.08168",
+  "title": "MuScriptor: An Open Model for Multi-Instrument Music Transcription",
+  "summary": "Existing methods for automatic music transcription are often limited to single-instrument recordings or fail on complex, real music mixes. Although previous work utilizes synthetic training data, the resulting models generalize poorly, leading to largely unusable transcription output in realistic, multi-instrument settings. In this work, we analyze the effectiveness of synthetic data for pre-training while combining it with fine-tuning on real music audio and post-training using reinforcement learning. We further introduce conditioning on instrument presence to customize transcriptions. Finally, we release MuScriptor, an open-weight multi-instrument music transcription model that works on real-world music recordings from across a diverse range of musical genres.",
+  "authors": [
+    "Simon Rouard",
+    "Michael Krause",
+    "Axel Roebel",
+    "Carl-Johann Simon-Gabriel",
+    "Alexandre Défossez"
+  ],
+  "published": "2026-07-09T07:12:30Z",
+  "updated": "2026-07-09T07:12:30Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.08168",
+  "abs_url": "https://arxiv.org/abs/2607.08168",
+  "fetched_at": "2026-07-19T14:18:41.854791Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

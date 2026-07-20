@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.16641",
+  "title": "PIANO: Personalized Reranking via Information Aggregation Node for Music Search Optimization",
+  "summary": "Unlike short-video content, music tracks have long lifecycles and lasting value. Effective music search re-ranking must therefore align the user's current query with long-term preferences while jointly optimizing Click-Through Rate (CTR) and Conversion Rate (CVR). However, existing methods suffer from two limitations: (1) sequential methods rely on item-interaction history and therefore cannot use historical search queries to tell which past preferences match the user's current search intent; (2) most listwise models optimize a single objective (e.g., CTR only), and conventional multi-objective methods balance click and conversion at the item level, ignoring how these trade-offs play out across the whole ranked list. To address these limitations, we propose PIANO, a personalized listwise re-ranking framework with two key components: (i) the Query-Driven Interest Refiner (QDIR) uses cross-attention over historical queries to align past intents with the current one; (ii) the Information Aggregation Node (IAN), a learnable [CLS]-style token, aggregates the candidate list and predicts CTR/CVR at the list level. Extensive experiments on public and industrial datasets show consistent gains over strong baselines. In online A/B tests on NetEase Cloud Music, a leading music streaming platform, PIANO achieves statistically significant improvements in CTR (+0.62%) and CVR (+4.45%).",
+  "authors": [
+    "Weisheng Li",
+    "Chuqiao Huang",
+    "Pengcheng Li",
+    "Zhengchao Peng",
+    "Qiang Xiao",
+    "Zhongqian Xie",
+    "Qiang Huang",
+    "Chuanjiang Luo"
+  ],
+  "published": "2026-06-15T12:29:09Z",
+  "updated": "2026-06-15T12:29:09Z",
+  "categories": [
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.16641",
+  "abs_url": "https://arxiv.org/abs/2606.16641",
+  "fetched_at": "2026-07-19T14:17:07.969350Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

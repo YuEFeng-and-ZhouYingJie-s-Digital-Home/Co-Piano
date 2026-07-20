@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.26451",
+  "title": "Listening Like a Judge: A Music-Aware Framework for Automatic Singing Performance Evaluation",
+  "summary": "Automatic singing quality assessment (SQA) requires evaluating lyrical correctness and musical fidelity while handling expressive variations. However, existing systems largely rely on either acoustic cues or lyric transcriptions exclusively, limiting holistic performance evaluation. Furthermore, their integration is non-trivial due to challenges in robust singing transcription amid melisma, vibrato, and tempo elasticity. To this end, we propose MusicJudge, a modality-guided framework for automated SQA that performs block-aligned multimodal analysis by coupling lyric correctness with pitch-rhythm fidelity. It detects semantically meaningful lyric blocks using multi-signal matching that integrates semantic embeddings, lexical similarity, and phonetic alignment. To improve singing audio transcription, we introduce Modality-Guided LoRA for ASR fine-tuning. Experiments across datasets demonstrate strong agreement with human expert judgments and validate the generalizability of MusicJudge.",
+  "authors": [
+    "Neelam Saini",
+    "Sourav Ghosh"
+  ],
+  "published": "2026-06-24T23:24:31Z",
+  "updated": "2026-06-24T23:24:31Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.26451",
+  "abs_url": "https://arxiv.org/abs/2606.26451",
+  "fetched_at": "2026-07-19T14:18:41.842627Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2408.11048",
+  "title": "RP1M: A Large-Scale Motion Dataset for Piano Playing with Bi-Manual Dexterous Robot Hands",
+  "summary": "It has been a long-standing research goal to endow robot hands with human-level dexterity. Bi-manual robot piano playing constitutes a task that combines challenges from dynamic tasks, such as generating fast while precise motions, with slower but contact-rich manipulation problems. Although reinforcement learning based approaches have shown promising results in single-task performance, these methods struggle in a multi-song setting. Our work aims to close this gap and, thereby, enable imitation learning approaches for robot piano playing at scale. To this end, we introduce the Robot Piano 1 Million (RP1M) dataset, containing bi-manual robot piano playing motion data of more than one million trajectories. We formulate finger placements as an optimal transport problem, thus, enabling automatic annotation of vast amounts of unlabeled songs. Benchmarking existing imitation learning approaches shows that such approaches reach state-of-the-art robot piano playing performance by leveraging RP1M.",
+  "authors": [
+    "Yi Zhao",
+    "Le Chen",
+    "Jan Schneider",
+    "Quankai Gao",
+    "Juho Kannala",
+    "Bernhard Schölkopf",
+    "Joni Pajarinen",
+    "Dieter Büchler"
+  ],
+  "published": "2024-08-20T17:56:52Z",
+  "updated": "2024-11-18T14:14:22Z",
+  "categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2408.11048",
+  "abs_url": "https://arxiv.org/abs/2408.11048",
+  "fetched_at": "2026-07-19T14:18:41.853911Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

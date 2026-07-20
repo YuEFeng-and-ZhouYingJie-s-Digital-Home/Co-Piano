@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.31595",
+  "title": "Dilemmadata: On the Interoperability of Heterogeneous Roman Numeral Datasets",
+  "summary": "In recent years, there has been growing effort to annotate and collect large-scale corpora of Roman numeral analyses in support of data-driven studies in tonal harmony. We introduce dilemmadata, the first resource to reconcile two major collections, the AugmentedNet Dataset (AN) and the Distant Listening Corpus (DLC), making them interoperable through a shared note-wise TSV schema. The reconciliation confronts four families of dilemmata: annotation-standard (the two encode the same musical fact differently in terms of vocabulary size, syntax, conventions for chord extensions, inventory of special chord functions), representational (what counts as a row, and which information survives the conversion), toolchain (incompatible Python ecosystems built around music21 vs. ms3+dimcat), and curatorial (which pieces to include, exclude, or retain twice). We resolve each by deliberately transforming, augmenting, and omitting information, formalising the mismatches, preserving musical semantics, and flagging transformations that may subtly affect annotation fidelity. Consistency checks and qualitative inspections offer a preliminary assessment of post-conversion validity and a basis for critiquing the theoretical assumptions embedded in each original standard. After removing duplicates and merging the two collections, the resulting dilemmadata (1,621 pieces and aprox. 2.8 M note-wise annotations) is the largest homogeneous Roman-numeral corpus currently available, albeit far from perfect. Crucially, we retain 84 pieces common to both corpora under each of their original analyses, yielding a shared reference set in which two equally legitimate analytical traditions can be compared note-for-note over identical musical material. Released on Zenodo, dilemmadata supports interoperability, comparative harmonization modeling, and future refinement of Roman-numeral encoding standards.",
+  "authors": [
+    "Johannes Hentschel",
+    "Emmanouil Karystinaios",
+    "Gerhard Widmer",
+    "Markus Neuwirth"
+  ],
+  "published": "2026-06-30T12:43:57Z",
+  "updated": "2026-06-30T12:43:57Z",
+  "categories": [
+    "cs.SD",
+    "cs.DL",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.31595",
+  "abs_url": "https://arxiv.org/abs/2606.31595",
+  "fetched_at": "2026-07-19T14:18:41.862879Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

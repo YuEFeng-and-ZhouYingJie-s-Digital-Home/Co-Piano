@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.04724",
+  "title": "From Beats to Breaches:How Offensive AI Infers Sensitive User Information from Playlists",
+  "summary": "The pervasive integration of AI has enabled Offensive AI: the exploitation of AI for malicious ends across the cyber-kill chain. A critical manifestation is the user attribute inference attack, where AI infers sensitive Personally Identifiable Information (PII) from innocuous public data. We explore how music streaming ecosystems, where users routinely release public playlists, can be exploited for Offensive AI. To quantify this threat, we developed musicPIIrate. This novel tool leverages deep learning architectures that utilize both standalone data representations and the structural information embedded in a user's playlist collection. Our design explores set-based approaches (e.g., Deep Sets) and methodologies modeling relationships between playlists (e.g., Graph Neural Networks), which we also combine to leverage both perspectives. Our approach addresses feature extraction from unordered, variable-length set data, enabling accurate PII prediction. Empirical evaluation demonstrates that musicPIIrate achieves state-of-the-art inference accuracy. The tool successfully infers a wide array of attributes, including: Demographics (Age, Country, Gender), Habits (Alcohol, Smoke, Sport), and Personality Traits (OCEAN scores). musicPIIrate outperforms existing methods, beating baselines in 9 out of 15 attribute inference tasks. To counter this vulnerability, we propose JamShield, a lightweight defensive framework. JamShield strategically injects dummy playlists into an account to dilute the PII-carrying signal. Our analysis indicates that JamShield represents a promising defense, lowering inference F1-scores by an average of 10%. This work provides an initial Offensive-AI benchmark for playlist-based PII inference using architectures that leverage set- and graph-structured data and introduces a defense showing encouraging mitigation effects.",
+  "authors": [
+    "Stefano Cecconello",
+    "Mauro Conti",
+    "Luca Pajola",
+    "Luca Pasa",
+    "Pier Paolo Tricomi"
+  ],
+  "published": "2026-05-06T10:18:55Z",
+  "updated": "2026-07-08T09:13:32Z",
+  "categories": [
+    "cs.CR",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.04724",
+  "abs_url": "https://arxiv.org/abs/2605.04724",
+  "fetched_at": "2026-07-19T14:18:41.863773Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

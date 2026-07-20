@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2412.13514",
+  "title": "Tuning Music Education: AI-Powered Personalization in Learning Music",
+  "summary": "Recent AI-driven step-function advances in several longstanding problems in music technology are opening up new avenues to create the next generation of music education tools. Creating personalized, engaging, and effective learning experiences are continuously evolving challenges in music education. Here we present two case studies using such advances in music technology to address these challenges. In our first case study we showcase an application that uses Automatic Chord Recognition to generate personalized exercises from audio tracks, connecting traditional ear training with real-world musical contexts. In the second case study we prototype adaptive piano method books that use Automatic Music Transcription to generate exercises at different skill levels while retaining a close connection to musical interests. These applications demonstrate how recent AI developments can democratize access to high-quality music education and promote rich interaction with music in the age of generative AI. We hope this work inspires other efforts in the community, aimed at removing barriers to access to high-quality music education and fostering human participation in musical expression.",
+  "authors": [
+    "Mayank Sanganeria",
+    "Rohan Gala"
+  ],
+  "published": "2024-12-18T05:25:42Z",
+  "updated": "2024-12-18T05:25:42Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2412.13514",
+  "abs_url": "https://arxiv.org/abs/2412.13514",
+  "fetched_at": "2026-07-19T14:18:41.875402Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

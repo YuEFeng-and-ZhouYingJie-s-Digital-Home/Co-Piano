@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.11937",
+  "title": "From Fork-Join to Asynchronous Tasks: Parallelizing Tiled Cholesky Decomposition with OpenMP and HPX",
+  "summary": "Fork-join parallelism, popularized by OpenMP, remains the dominant model for shared-memory parallel programming, but its implicit synchronization barriers can penalize algorithms with inhomogeneous workloads. Asynchronous many-task (AMT) runtimes sidestep these barriers by expressing work as a dependency graph of fine-grained tasks. Yet, the actual performance benefit over a carefully written fork-join baseline is rarely quantified. In this work, we introduce Cholesky-Bench and use it to revisit the tiled Cholesky decomposition, a canonical irregular kernel, comparing four parallelization variants of the right-looking algorithm across two runtimes: the OpenMP implementations shipped with GCC and LLVM, and the HPX AMT runtime. The variants span classical fork-join, a collapsed fork-join that exposes additional inner-loop parallelism, synchronous tasking, and asynchronous tasking with explicit data dependencies. We benchmark all eight combinations on a dual-socket 128-core AMD Zen 2 node across multiple tile sizes and problem sizes. Our results show that across all variants, HPX outperforms OpenMP at the optimal tile size by 15%-30%. Specifically, asynchronous HPX tasks are up to 26% faster than their OpenMP counterparts, and exhibit roughly 3.8x smaller task overhead. Furthermore, the collapsed fork-join variants close most of the gap to synchronous tasking. Removing redundant synchronization barriers yields an additional improvement of 7% (OpenMP) to 14% (HPX). A GCC-versus-LLVM comparison further reveals compiler-specific differences in fork-join scheduling and task-creation overheads.",
+  "authors": [
+    "Alexander Strack",
+    "Alexander Van Craen",
+    "Dirk Pflüger"
+  ],
+  "published": "2026-06-10T11:09:02Z",
+  "updated": "2026-06-10T11:09:02Z",
+  "categories": [
+    "cs.DC",
+    "cs.PF"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.11937",
+  "abs_url": "https://arxiv.org/abs/2606.11937",
+  "fetched_at": "2026-07-19T14:17:07.972786Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

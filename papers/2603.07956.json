@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2603.07956",
+  "title": "From Daily Song to Daily Self: Supporting Reflective Songwriting of Deaf and Hard-of-Hearing Individuals through Generative Music AI",
+  "summary": "The rapid advancement of generative AI (GenAI) is expanding access to songwriting, offering a new medium of self-expression for Deaf and Hard-of-Hearing (DHH) individuals. However, emerging technologies that support DHH individuals in expressing themselves through music have largely been evaluated in single-session settings and often fall short in helping users unfamiliar with songwriting convey personal narratives or sustain engagement over time. This paper explores songwriting as an extended, music-based journaling practice that supports sustained emotional reflection over multiple sessions. We introduce SoulNote, a GenAI system enabling DHH to engage in iterative songwriting. Grounded in user-centered design, including a design workshop, a preliminary study, and a multi-session diary study, our findings show that ongoing songwriting with \\textit{SoulNote} facilitated emotional growth across three dimensions: self-insight, emotion regulation, and \\revised{everyday attitudes toward emotions and self-care}. Overall, this work demonstrates how GenAI can support marginalized communities by transforming creative expression into a daily practice of self-discovery and reflection.",
+  "authors": [
+    "Youjin Choi",
+    "Jinyoung Yoo",
+    "Jaeyoung Moon",
+    "Yoonjae Kim",
+    "Eun Young Lee",
+    "Jennifer G. Kim",
+    "Jin-Hyuk Hong"
+  ],
+  "published": "2026-03-09T04:44:54Z",
+  "updated": "2026-03-09T04:44:54Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.07956",
+  "abs_url": "https://arxiv.org/abs/2603.07956",
+  "fetched_at": "2026-07-19T14:18:41.867024Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

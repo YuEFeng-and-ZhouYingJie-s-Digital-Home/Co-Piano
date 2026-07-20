@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2505.23784",
+  "title": "Learning Normal Patterns in Musical Loops",
+  "summary": "This paper introduces an unsupervised framework for detecting audio patterns in musical samples (loops) through anomaly detection techniques, addressing challenges in music information retrieval (MIR). Existing methods are often constrained by reliance on handcrafted features, domain-specific limitations, or dependence on iterative user interaction. We address these limitations through an architecture combining deep feature extraction with unsupervised anomaly detection. Our approach leverages a pre-trained Hierarchical Token-semantic Audio Transformer (HTS-AT), paired with a Feature Fusion Mechanism (FFM), to generate representations from variable-length audio loops. These embeddings are processed using one-class Deep Support Vector Data Description (Deep SVDD), which learns normative audio patterns by mapping them to a compact latent hypersphere. Evaluations on curated bass and guitar datasets compare standard and residual autoencoder variants against baselines like Isolation Forest (IF) and and principle component analysis (PCA) methods. Results show our Deep SVDD models, especially the residual autoencoder variant, deliver improved anomaly separation, particularly for larger variations. This research contributes a flexible, fully unsupervised solution for processing diverse audio samples, overcoming previous structural and input limitations while enabling effective pattern identification through distance-based latent space scoring.",
+  "authors": [
+    "Shayan Dadman",
+    "Bernt Arild Bremdal",
+    "Børre Bang",
+    "Rune Dalmo"
+  ],
+  "published": "2025-05-22T19:52:00Z",
+  "updated": "2025-05-22T19:52:00Z",
+  "categories": [
+    "cs.SD",
+    "cs.IR",
+    "cs.LG",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2505.23784",
+  "abs_url": "https://arxiv.org/abs/2505.23784",
+  "fetched_at": "2026-07-19T14:18:41.866058Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

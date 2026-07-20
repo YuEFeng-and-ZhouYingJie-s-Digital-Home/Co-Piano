@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2606.07356",
+  "title": "DirectAudioEdit: Inversion-Free Text-Guided Audio Editing via Diffusion Prediction Contrast",
+  "summary": "Text-guided audio editing aims to modify the language-specified acoustic content while preserving edit-irrelevant source components. Existing training-free methods typically rely on inversion-based editing. While inversion-free editing is appealing as it decreases computational overhead and reconstruction errors, it remains largely unexplored for audio editing. The key challenge is to construct a source-to-target editing path through diffusion denoising dynamics. In this paper, we introduce DirectAudioEdit, the first attempt to develop a training-free and inversion-free method for audio editing. Experiments on music and event-level benchmarks across two backbones show that DirectAudioEdit reduces macro-averaged FAD and KL by 15.9% and 15.8% compared with DDPM inversion, while achieving up to 64.5% editing speedup.",
+  "authors": [
+    "Zhengkun Ge",
+    "Xiaoqian Liu",
+    "Haoran Zhang",
+    "Yuan Ge",
+    "Junxiang Zhang",
+    "Zhengtao Yu",
+    "Jingbo Zhu",
+    "Tong Xiao"
+  ],
+  "published": "2026-06-05T15:04:22Z",
+  "updated": "2026-06-05T15:04:22Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.07356",
+  "abs_url": "https://arxiv.org/abs/2606.07356",
+  "fetched_at": "2026-07-19T14:18:41.871638Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

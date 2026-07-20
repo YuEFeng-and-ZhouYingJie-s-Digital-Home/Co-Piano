@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.20014",
+  "title": "Precise and Simple Audio-to-Score Alignment",
+  "summary": "Audio-to-score alignment is a long-standing challenge in music information retrieval and arguably the most widely applicable alignment task for music research. Alignment algorithms match two versions of a piece of music, and for this to work these versions need to be in comparable formats. Audio-to-audio alignment matches audio features; when matching audio files to scores, they must either synthesize the score or derive audio-like features by means of piano rolls or similar feature sequences. Symbolic alignment, by contrast, matches symbolically encoded notes; in an audio-to-score scenario these would be obtained by a transcription of the audio file. In this article, we present an algorithm that bridges audio-like and symbol-level features directly. Sequential audio features encoding onset and spectral activation are matched to score positions by a bespoke dynamic programming-based matching algorithm derived from symbolic alignment methods. The resulting method is both precise - surpassing widely used audio-to-audio approaches based on synthesized scores -, and remains flexible in its digital signal processing components, i.e., the method is adaptable to diverse timbral characteristics without requiring a separate transcription model. Furthermore it inherits some of the symbolic alignment runtime advantages with an algorithmic complexity that is at worst linear in the length of the (typically short) symbolic score and (typically long) audio feature sequence. In the following sections, we provide a detailed algorithm description and evaluate its alignment quality on a large-scale dataset of solo piano recordings.",
+  "authors": [
+    "Silvan Peter",
+    "Patricia Hu",
+    "Gerhard Widmer"
+  ],
+  "published": "2026-05-19T15:42:12Z",
+  "updated": "2026-05-19T15:42:12Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.20014",
+  "abs_url": "https://arxiv.org/abs/2605.20014",
+  "fetched_at": "2026-07-19T14:17:07.970782Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

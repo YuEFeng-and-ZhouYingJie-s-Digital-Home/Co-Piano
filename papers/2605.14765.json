@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.14765",
+  "title": "Persian MusicGen: A Large-Scale Dataset and Culturally-Aware Generative Model for Persian Music",
+  "summary": "Persian music, with its unique tonalities, modal systems (Dastgah), and rhythmic structures, presents significant challenges for music generation models trained primarily on Western music. We address this gap by curating the first large-scale dataset of Persian songs, comprising over 900 hours high-quality audio samples across diverse sub-genres, including pop, traditional, and contemporary styles. This dataset captures the rich melodic and cultural diversity of Persian music and serves as the foundation for fine-tuning MusicGen, a state-of-the-art generative music model. We adapt MusicGen to this domain and evaluate its performance by utilizing subjective and objective metrics. To assess the semantic alignment between generated music and intended style tags, we report the proportion of relevant tags accurately reflected in the generated outputs. Our results demonstrate that the fine-tuned model produces compositions that more align with Persian stylistic conventions. This work introduces a new resource for generative music research and illustrates the adaptability of music generation models to underrepresented cultural and linguistic contexts.",
+  "authors": [
+    "Mohammad Hossein Sameti",
+    "Diba Hadi Esfangereh",
+    "Sepehr Harfi Moridani",
+    "Leili Javidpour",
+    "Mahdieh Soleymani Baghshah"
+  ],
+  "published": "2026-05-14T12:31:46Z",
+  "updated": "2026-05-14T12:31:46Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.14765",
+  "abs_url": "https://arxiv.org/abs/2605.14765",
+  "fetched_at": "2026-07-19T14:18:41.881152Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

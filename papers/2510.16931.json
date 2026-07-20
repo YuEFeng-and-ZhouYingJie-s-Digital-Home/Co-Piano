@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2510.16931",
+  "title": "RAPID Hand Prototype: Design of an Affordable, Fully-Actuated Biomimetic Hand for Dexterous Teleoperation",
+  "summary": "This paper addresses the scarcity of affordable, fully-actuated five-fingered hands for dexterous teleoperation, which is crucial for collecting large-scale real-robot data within the \"Learning from Demonstrations\" paradigm. We introduce the prototype version of the RAPID Hand, the first low-cost, 20-degree-of-actuation (DoA) dexterous hand that integrates a novel anthropomorphic actuation and transmission scheme with an optimized motor layout and structural design to enhance dexterity. Specifically, the RAPID Hand features a universal phalangeal transmission scheme for the non-thumb fingers and an omnidirectional thumb actuation mechanism. Prioritizing affordability, the hand employs 3D-printed parts combined with custom gears for easier replacement and repair. We assess the RAPID Hand's performance through quantitative metrics and qualitative testing in a dexterous teleoperation system, which is evaluated on three challenging tasks: multi-finger retrieval, ladle handling, and human-like piano playing. The results indicate that the RAPID Hand's fully actuated 20-DoF design holds significant promise for dexterous teleoperation.",
+  "authors": [
+    "Zhaoliang Wan",
+    "Zida Zhou",
+    "Zetong Bi",
+    "Zehui Yang",
+    "Hao Ding",
+    "Hui Cheng"
+  ],
+  "published": "2025-10-19T17:03:26Z",
+  "updated": "2025-10-21T08:11:34Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.16931",
+  "abs_url": "https://arxiv.org/abs/2510.16931",
+  "fetched_at": "2026-07-19T14:18:41.853083Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

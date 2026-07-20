@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2511.20006",
+  "title": "BERT-APC: A Reference-free Framework for Automatic Pitch Correction via Musical Context Inference",
+  "summary": "Automatic Pitch Correction (APC) enhances vocal recordings by aligning pitch deviations with intended musical notes. However, existing APC systems either rely on reference pitches, which limits practical applicability, or employ simple pitch estimation algorithms that often fail to preserve expressiveness and naturalness. We propose BERT-APC, a reference-free APC framework that corrects pitch errors while maintaining the expressiveness and naturalness of vocal performances. In BERT-APC, a stationary pitch predictor first estimates the stationary pitch of each note from the detuned singing voice, where stationary pitch is the continuous pitch from the stable region of a note and approximates its perceived pitch. A context-aware note pitch predictor then infers the intended pitch sequence using a repurposed music language model that incorporates musical context. Finally, a note-level correction algorithm fixes pitch errors while preserving intentional deviations for emotional expression. We also introduce a learnable data augmentation strategy that improves robustness by simulating realistic detuning patterns. Compared to two recent singing voice transcription models, BERT-APC demonstrated superior target note pitch prediction, outperforming the second-best model, ROSVOT, by 10.49 percentage points on highly detuned samples in raw pitch accuracy. In the MOS test, BERT-APC achieved the highest quality rating of $4.32 \\pm 0.15$, significantly higher than Auto-Tune ($3.22 \\pm 0.18$) and Melodyne ($3.08 \\pm 0.18$), while maintaining a comparable ability to preserve expressive nuances. To the best of our knowledge, this is the first APC model that leverages a music language model to achieve reference-free pitch correction with symbolic musical context. The corrected audio samples are available at https://joshua-1995.github.io/BERT-APC-Demo/.",
+  "authors": [
+    "Sungjae Kim",
+    "Kihyun Na",
+    "Jinyoung Choi",
+    "Injung Kim"
+  ],
+  "published": "2025-11-25T07:16:49Z",
+  "updated": "2026-04-28T05:37:03Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.20006",
+  "abs_url": "https://arxiv.org/abs/2511.20006",
+  "fetched_at": "2026-07-19T14:18:41.855510Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

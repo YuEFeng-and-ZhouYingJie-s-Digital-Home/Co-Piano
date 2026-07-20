@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2509.07586",
+  "title": "Exploring System Adaptations For Minimum Latency Real-Time Piano Transcription",
+  "summary": "Advances in neural network design and the availability of large-scale labeled datasets have driven major improvements in piano transcription. Existing approaches target either offline applications, with no restrictions on computational demands, or online transcription, with delays of 128-320 ms. However, most real-time musical applications require latencies below 30 ms. In this work, we investigate whether and how the current state-of-the-art online transcription model can be adapted for real-time piano transcription. Specifically, we eliminate all non-causal processing, and reduce computational load through shared computations across core model components and variations in model size. Additionally, we explore different pre- and postprocessing strategies, and related label encoding schemes, and discuss their suitability for real-time transcription. Evaluating the adaptions on the MAESTRO dataset, we find a drop in transcription accuracy due to strictly causal processing as well as a tradeoff between the preprocessing latency and prediction accuracy. We release our system as a baseline to support researchers in designing models towards minimum latency real-time transcription.",
+  "authors": [
+    "Patricia Hu",
+    "Silvan David Peter",
+    "Jan Schlüter",
+    "Gerhard Widmer"
+  ],
+  "published": "2025-09-09T10:52:53Z",
+  "updated": "2025-09-09T10:52:53Z",
+  "categories": [
+    "eess.AS",
+    "cs.LG",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.07586",
+  "abs_url": "https://arxiv.org/abs/2509.07586",
+  "fetched_at": "2026-07-19T14:18:41.848578Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

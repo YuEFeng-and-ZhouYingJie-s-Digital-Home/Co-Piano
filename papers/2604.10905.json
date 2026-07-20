@@ -1,0 +1,39 @@
+{
+  "arxiv_id": "2604.10905",
+  "title": "Audio Flamingo Next: Next-Generation Open Audio-Language Models for Speech, Sound, and Music",
+  "summary": "We present Audio Flamingo Next (AF-Next), the next-generation and most capable large audio-language model in the Audio Flamingo series, designed to advance understanding and reasoning over speech, environmental sounds and music. Compared to Audio Flamingo 3, AF-Next introduces: (i) a stronger foundational audio-language model that significantly improves accuracy across diverse audio understanding tasks; (ii) scalable strategies for constructing large-scale audio understanding and reasoning data beyond existing academic benchmarks; (iii) support for long and complex audio inputs up to 30 minutes; and (iv) Temporal Audio Chain-of-Thought, a new reasoning paradigm that explicitly grounds intermediate reasoning steps to timestamps in long audio, enabling fine-grained temporal alignment and improved interpretability. To enable these capabilities, we first conduct a systematic analysis of Audio Flamingo 3 to identify key gaps in audio understanding and reasoning. We then curate and scale new large-scale datasets totaling over 1 million hours to address these limitations and expand the existing AudioSkills-XL, LongAudio-XL, AF-Think and AF-Chat datasets. AF-Next is trained using a curriculum-based strategy spanning pre-training, mid-training and post-training stages. Extensive experiments across 20 audio understanding and reasoning benchmarks, including challenging long-audio tasks, show that AF-Next outperforms similarly sized open models by large margins and remains highly competitive with and sometimes surpasses, much larger open-weight and closed models. Beyond benchmark performance, AF-Next exhibits strong real-world utility and transfers well to unseen tasks, highlighting its robustness and generalization ability. In addition to all data, code and methods, we open-source 3 variants of AF-Next, including AF-Next-Instruct, AF-Next-Think and AF-Next-Captioner.",
+  "authors": [
+    "Sreyan Ghosh",
+    "Arushi Goel",
+    "Kaousheik Jayakumar",
+    "Lasha Koroshinadze",
+    "Nishit Anand",
+    "Zhifeng Kong",
+    "Siddharth Gururani",
+    "Sang-gil Lee",
+    "Jaehyeon Kim",
+    "Aya Aljafari",
+    "Chao-Han Huck Yang",
+    "Sungwon Kim",
+    "Ramani Duraiswami",
+    "Dinesh Manocha",
+    "Mohammad Shoeybi",
+    "Bryan Catanzaro",
+    "Ming-Yu Liu",
+    "Wei Ping"
+  ],
+  "published": "2026-04-13T02:11:56Z",
+  "updated": "2026-04-13T02:11:56Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CL",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.10905",
+  "abs_url": "https://arxiv.org/abs/2604.10905",
+  "fetched_at": "2026-07-19T14:18:41.851867Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

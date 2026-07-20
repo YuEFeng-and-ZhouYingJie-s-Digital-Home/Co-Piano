@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.18630",
+  "title": "A Complementary Visualisation Suite for Empirical Performance Analysis: Tempographs, Histograms, Ridgeline Plots, Stacked Bar Charts, and Combination Charts Applied to Beethoven's Piano and Cello Sonatas",
+  "summary": "The choice of visualisation in empirical performance analysis is not a neutral presentation decision but an analytical one: different graphical forms reveal different features of the same dataset, and reliance on any single type systematically conceals what the others expose. This paper presents and argues for a suite of five complementary visualisation tools; tempographs, histograms with spline-smoothed probability density functions, ridgeline plots, stacked bar charts, and combination charts. These are applied to bar-level beats-per-minute data from recordings of Beethoven's five piano and cello sonatas (Op.~5 Nos.~1 and~2; Op.~69; Op.~102 Nos.~1 and~2) spanning 1930--2012. Each tool is described formally, its analytical properties characterised, its implementation detailed in working Python and MATLAB code, and its specific contribution demonstrated on a worked example using two recordings of Op.~5 No.~1 (Casals/Horszowski 1930--39 and Isserlis/Levin 2012) separated by eight decades. A five-panel composite figure applies all five tools to the same two recordings simultaneously, making the complementarity argument concrete: the tempograph reveals moment-to-moment structural parallels invisible in aggregate statistics; the spline-smoothed histogram exposes bimodality and secondary peaks suppressed by binning artefacts; the ridgeline plot positions both recordings within the full distributional space; the stacked bar chart shows divergent sectional pacing concealed by identical movement means; and the combination chart integrates mean tempo, variability, and historical reference marks in a single view. The spline-CDF smoothing method, applied to histogram data via cubic spline interpolation with zero-slope boundary conditions, is presented as a novel contribution to the performance analysis toolkit. Full implementation code is publicly available.",
+  "authors": [
+    "Ignasi Sole"
+  ],
+  "published": "2026-04-18T13:16:54Z",
+  "updated": "2026-04-18T13:16:54Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.18630",
+  "abs_url": "https://arxiv.org/abs/2604.18630",
+  "fetched_at": "2026-07-19T14:18:41.871145Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

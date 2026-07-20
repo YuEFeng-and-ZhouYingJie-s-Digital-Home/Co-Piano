@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2607.15079",
+  "title": "BrainPilot: Automating Brain Discovery with Agentic Research",
+  "summary": "Understanding the brain increasingly depends on integrating evidence across scales, modalities, and disciplines. Addressing a single research question therefore requires a coordinated sequence of operations, from surveying prior work to executing analyses and interpreting results in light of domain knowledge. AI agents promise to accelerate this process, but current agents lack domain expertise in brain science, may fabricate claims, drift during multi-step reasoning, and offer few defined points for expert intervention. These failures are especially costly in brain science, where conclusions feed into downstream scientific claims and depend on laboratory-specific expertise and careful human judgment. We present \\textbf{BrainPilot} a \\textbf{fully open-source} multi-agent system that accelerates brain science research with traceable logs and agent-verified results. A principal investigator (PI) agent coordinates specialist agents grounded in curated domain knowledge: a unified brain science knowledge base containing 7{,}233 indexed items and a skill library of 72 reusable methodology units across seven research domains. Every major step is recorded in the Graph of Trace, an auditable record that links subgoals, tool use, evidence, and claims and allows researchers to follow and inspect the workflow. An Auditor agent further integrates fabrication checking into the workflow. For evaluation, we run three brain science tasks from Agents' Last Exam, introduce our own benchmark, \\textbf{BrainPilotBench-v0}, and present additional end-to-end case studies. Across these evaluations, BrainPilot with an open-source backbone model attains performance comparable to state-of-the-art agent framework with less costs.",
+  "authors": [
+    "Haoxuan Li",
+    "Tianci Gao",
+    "Jianhe Li",
+    "Yang Fan",
+    "Runze Shi",
+    "Weiran Wang",
+    "Tianxiang Zhao",
+    "Zezhao Wu",
+    "Xiaoyang Jiang",
+    "Qihui Zhang",
+    "Jia Li",
+    "Xiao Xiao",
+    "Kai Du",
+    "Xiaoxuan Jia",
+    "Chao Xie",
+    "Lu Mi"
+  ],
+  "published": "2026-07-16T14:49:25Z",
+  "updated": "2026-07-16T14:49:25Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15079",
+  "abs_url": "https://arxiv.org/abs/2607.15079",
+  "fetched_at": "2026-07-19T14:17:07.976999Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

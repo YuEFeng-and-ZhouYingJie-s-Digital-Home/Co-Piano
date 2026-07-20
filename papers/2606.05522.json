@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.05522",
+  "title": "Exploring LLMs for South Asian Music Understanding and Generation",
+  "summary": "Recent advancements in Large Language Models (LLMs) have shown promising results in music understanding and generation tasks. However, existing works remain confined to Western tonal traditions, offering little insight into whether current LLMs can handle structurally distinct low-resource musical traditions. We present the first systematic evaluation of LLM competence in South Asian classical music, a tradition governed by raga, tala-based melodic constraints that impose fundamentally different structural principles from Western harmony-driven music. We ground our evaluation in Hindustani classical theory and Bengali classical forms, including Rabindra and Nazrul Sangeet -- representative low-resource traditions within South Asian classical music. For music understanding evaluation, we introduce a 504-question-answer benchmark spanning raga grammar, cultural knowledge, and symbolic notation reasoning, evaluating 33 LLMs where frontier models such as Gemini 2.5 Pro achieve 85-90% accuracy, while most open-source models remain in the 23-40% range. For music generation, we design a five-level controlled prompting framework and find that even the strongest model produces stylistically faithful outputs only 40% of the time. These results reveal that structural validity and stylistic faithfulness in music generation are distinct objectives and highlight an open challenge for culturally grounded music modeling.",
+  "authors": [
+    "Faria Binte Kader",
+    "Mohtasim Hadi Rafi",
+    "Shah Wasif Sajjad",
+    "Santu Karmaker"
+  ],
+  "published": "2026-06-03T23:53:27Z",
+  "updated": "2026-06-03T23:53:27Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.05522",
+  "abs_url": "https://arxiv.org/abs/2606.05522",
+  "fetched_at": "2026-07-19T14:18:41.857219Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

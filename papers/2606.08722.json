@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.08722",
+  "title": "Can LLMs understand LilyPond? A benchmark for symbolic music generation and understanding",
+  "summary": "Symbolic music evaluation for large language models remains fragmented across representations, datasets, and metrics. We introduce LilyBench, a LilyPond-based benchmark that jointly evaluates symbolic music generation and music understanding on the same family of open-weight LLMs. The benchmark includes a 200-prompt generation suite and ten understanding tasks adapted from ABC-Eval, covering syntax, metadata prediction, structural sequencing, and music recognition. Generation quality is evaluated using compile rate, MusPy descriptor distributions via Jensen-Shannon similarity, and LilyBERT-based Fréchet Music Distance (FMD). Experiments on four open-weight models show that executable LilyPond generation is achievable in zero-shot settings, while structural understanding tasks remain challenging despite strong performance on composer and genre recognition. Our experiments also reveal systematic disagreements between descriptor-based and embedding-based metrics, suggesting that symbolic music evaluation benefits from metric triangulation rather than single-score ranking. We release the benchmark, prompt bank, and evaluation code to support future research in symbolic music generation and understanding at https://github.com/CSCPadova/lilybench",
+  "authors": [
+    "Matteo Spanio",
+    "Mohammad Torabi",
+    "Andrea Poltronieri",
+    "Antonio Rodà"
+  ],
+  "published": "2026-06-07T16:32:59Z",
+  "updated": "2026-06-07T16:32:59Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.08722",
+  "abs_url": "https://arxiv.org/abs/2606.08722",
+  "fetched_at": "2026-07-19T14:18:41.856957Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

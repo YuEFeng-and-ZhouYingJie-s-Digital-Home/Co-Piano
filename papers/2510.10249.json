@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2510.10249",
+  "title": "ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis",
+  "summary": "Artificial Intelligence (AI) for music generation is undergoing rapid developments, with recent symbolic models leveraging sophisticated deep learning and diffusion model algorithms. One drawback with existing models is that they lack structural cohesion, particularly on harmonic-melodic structure. Furthermore, such existing models are largely \"black-box\" in nature and are not musically interpretable. This paper addresses these limitations via a novel generative music framework that incorporates concepts of Schenkerian analysis (SchA) in concert with a diffusion modeling framework. This framework, which we call ProGress (Prolongation-enhanced DiGress), adapts state-of-the-art deep models for discrete diffusion (in particular, the DiGress model of Vignac et al., 2023) for interpretable and structured music generation. Concretely, our contributions include 1) novel adaptations of the DiGress model for music generation, 2) a novel SchA-inspired phrase fusion methodology, and 3) a framework allowing users to control various aspects of the generation process to create coherent musical compositions. Results from human experiments suggest superior performance to existing state-of-the-art methods.",
+  "authors": [
+    "Stephen Ni-Hahn",
+    "Chao Péter Yang",
+    "Mingchen Ma",
+    "Cynthia Rudin",
+    "Simon Mak",
+    "Yue Jiang"
+  ],
+  "published": "2025-10-11T15:06:56Z",
+  "updated": "2025-10-11T15:06:56Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.10249",
+  "abs_url": "https://arxiv.org/abs/2510.10249",
+  "fetched_at": "2026-07-19T14:18:41.865008Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

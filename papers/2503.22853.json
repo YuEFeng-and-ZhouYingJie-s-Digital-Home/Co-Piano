@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2503.22853",
+  "title": "Teaching LLMs Music Theory with In-Context Learning and Chain-of-Thought Prompting: Pedagogical Strategies for Machines",
+  "summary": "This study evaluates the baseline capabilities of Large Language Models (LLMs) like ChatGPT, Claude, and Gemini to learn concepts in music theory through in-context learning and chain-of-thought prompting. Using carefully designed prompts (in-context learning) and step-by-step worked examples (chain-of-thought prompting), we explore how LLMs can be taught increasingly complex material and how pedagogical strategies for human learners translate to educating machines. Performance is evaluated using questions from an official Canadian Royal Conservatory of Music (RCM) Level 6 examination, which covers a comprehensive range of topics, including interval and chord identification, key detection, cadence classification, and metrical analysis. Additionally, we evaluate the suitability of various music encoding formats for these tasks (ABC, Humdrum, MEI, MusicXML). All experiments were run both with and without contextual prompts. Results indicate that without context, ChatGPT with MEI performs the best at 52%, while with context, Claude with MEI performs the best at 75%. Future work will further refine prompts and expand to cover more advanced music theory concepts. This research contributes to the broader understanding of teaching LLMs and has applications for educators, students, and developers of AI music tools alike.",
+  "authors": [
+    "Liam Pond",
+    "Ichiro Fujinaga"
+  ],
+  "published": "2025-03-28T20:15:24Z",
+  "updated": "2025-03-28T20:15:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2503.22853",
+  "abs_url": "https://arxiv.org/abs/2503.22853",
+  "fetched_at": "2026-07-19T14:18:41.874300Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

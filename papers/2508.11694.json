@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2508.11694",
+  "title": "Music and Artificial Intelligence: Artistic Trends",
+  "summary": "We study how musicians use artificial intelligence (AI) across formats like singles, albums, performances, installations, voices, ballets, operas, or soundtracks. We collect 337 music artworks and categorize them based on AI usage: AI composition, co-composition, sound design, lyrics generation, and translation. We find that AI is employed as a co-creative tool, as an artistic medium, and in live performances and installations. Innovative uses of AI include exploring uncanny aesthetics, multilingual and multigenre song releases, and new formats such as online installations. This research provides a comprehensive overview of current AI music practices, offering insights into emerging artistic trends and the challenges faced by AI musicians.",
+  "authors": [
+    "Jordi Pons",
+    "Zack Zukowski",
+    "Julian D. Parker",
+    "CJ Carr",
+    "Josiah Taylor",
+    "Zach Evans"
+  ],
+  "published": "2025-08-12T18:12:02Z",
+  "updated": "2025-08-12T18:12:02Z",
+  "categories": [
+    "cs.CY",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.11694",
+  "abs_url": "https://arxiv.org/abs/2508.11694",
+  "fetched_at": "2026-07-19T14:18:41.868994Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

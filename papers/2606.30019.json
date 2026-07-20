@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2606.30019",
+  "title": "OmniDance: Multimodal Driven Dance Video Generation with Large-scale Internet Data",
+  "summary": "Music-driven dance video generation aims to synthesize expressive human motion that is temporally aligned with music while maintaining high visual fidelity. Despite recent progress, existing methods still face two key limitations: the lack of large-scale, high-quality dance video datasets, and the absence of principled frameworks for integrating music as a complementary conditioning signal into Video Generation Foundation Models. To address these limitations, we introduce CIPE-Dance, a large-scale Internet-sourced dance video dataset with choreography-informed text annotations, constructed via a progressive expert pipeline. To the best of our knowledge, CIPE-Dance is the largest dataset for dance video generation to date, comprising 300k high-quality clips over 400 hours and covering diverse dancers, environments, and dance genres. We further propose OmniDance, a framework-level recipe for integrating music into a TI2V foundation model without sacrificing its original controllability or visual fidelity. Motivated by the complementary roles of text as low-frequency semantics and music as high-frequency temporal dynamics, OmniDance co-designs a depth-aware specialization architecture, an anchored easy-to-hard curriculum learning strategy, and a modality-specialized time-dependent CFG strategy, enabling unified TI2V, MI2V, and MTI2V generation. Extensive experiments on CIPE-Dance demonstrate that OmniDance achieves state-of-the-art performance across all three tasks and exhibits robust multimodal integration capability. Project is available at https://github.com/AMAP-ML/OmniDance.",
+  "authors": [
+    "Kaixing Yang",
+    "Jiashu Zhu",
+    "Xulong Tang",
+    "Ziqiao Peng",
+    "Xiangyue Zhang",
+    "Chubin Chen",
+    "Puwei Wang",
+    "Jiahong Wu",
+    "Xiangxiang Chu",
+    "Hongyan Liu",
+    "Jun He"
+  ],
+  "published": "2026-06-29T09:23:53Z",
+  "updated": "2026-06-29T09:23:53Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.30019",
+  "abs_url": "https://arxiv.org/abs/2606.30019",
+  "fetched_at": "2026-07-19T14:18:41.842454Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

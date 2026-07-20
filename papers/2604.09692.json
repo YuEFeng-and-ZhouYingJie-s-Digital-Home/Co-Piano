@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2604.09692",
+  "title": "Tipiano: Cascaded Piano Hand Motion Synthesis via Fingertip Priors",
+  "summary": "Synthesizing realistic piano hand motions requires both precision and naturalness. Physics-based methods achieve precision but produce stiff motions; data-driven models learn natural dynamics but struggle with positional accuracy. Piano motion exhibits a natural hierarchy: fingertip positions are nearly deterministic given piano geometry and fingering, while wrist and intermediate joints offer stylistic freedom. We present [OURS], a four-stage framework exploiting this hierarchy: (1) statistics-based fingertip positioning, (2) FiLM-conditioned trajectory refinement, (3) wrist estimation, and (4) STGCN-based pose synthesis. We contribute expert-annotated fingerings for the FürElise dataset (153 pieces, ~10 hours). Experiments demonstrate F1 = 0.910, substantially outperforming diffusion baselines (F1 = 0.121), with user study (N=41) confirming quality approaching motion capture. Expert evaluation by professional pianists (N=5) identified anticipatory motion as the key remaining gap, providing concrete directions for future improvement.",
+  "authors": [
+    "Joonhyung Bae",
+    "Kirak Kim",
+    "Hyeyoon Cho",
+    "Sein Lee",
+    "Yoon-Seok Choi",
+    "Hyeon Hur",
+    "Gyubin Lee",
+    "Akira Maezawa",
+    "Satoshi Obata",
+    "Jonghwa Park",
+    "Jaebum Park",
+    "Juhan Nam"
+  ],
+  "published": "2026-04-06T15:04:23Z",
+  "updated": "2026-04-06T15:04:23Z",
+  "categories": [
+    "cs.AI",
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.09692",
+  "abs_url": "https://arxiv.org/abs/2604.09692",
+  "fetched_at": "2026-07-19T14:18:41.852489Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

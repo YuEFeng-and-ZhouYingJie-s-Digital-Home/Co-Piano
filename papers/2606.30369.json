@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.30369",
+  "title": "Predicting Timbre Traits for Interpretable Assessment of Musical Sound Synthesizers",
+  "summary": "Measuring neural audio synthesizers' performance is now routinely conducted using distribution based metrics such as the Fréchet Audio Distance (FAD). Although this metric can be correlated with human perception, it offers limited interpretability beyond ranking different approaches. In this paper, we introduce a deep neural timbre trait predictor composed of a pretrained audio neural embedding (CLAP), and a shallow learnable component. The latter is trained using the RWC musical instrument database and human judgments of 20 timbre descriptions (e.g., woody, percussive, rumbling, etc.) for 31 instruments. The resulting model shows strong correlation with average human ratings (r = 0.66, p < 0.001). We then demonstrate the benefit of this predictor for evaluating the performance of TokenSynth, a neural sound synthesizer. First, the Mean Absolute Error (MAE) computed over the set of generated sounds under different conditioning modalities of the model provides the same ranking as a FAD computed with the RWC database as a reference, suggesting that the proposed predictors are able to provide equivalent information on a distributional basis. Second, because the model is able to qualitatively analyze isolated sounds, we can determine which generated sounds could be improved and identify specific timbral dimensions that need adjustment.",
+  "authors": [
+    "Théo Chasle Cauchy",
+    "Modan Tailleur",
+    "Lindsey Reymore",
+    "Fanny Roche",
+    "Mathieu Lagrange"
+  ],
+  "published": "2026-06-29T14:33:44Z",
+  "updated": "2026-06-29T14:33:44Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.30369",
+  "abs_url": "https://arxiv.org/abs/2606.30369",
+  "fetched_at": "2026-07-19T14:18:41.870572Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

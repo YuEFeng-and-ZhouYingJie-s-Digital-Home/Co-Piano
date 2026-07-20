@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.08750",
+  "title": "Communicating Sound Through Natural Language",
+  "summary": "Natural language is widely used to describe, prompt, and control audio systems, but rarely serves as the representation carrying audio itself. We introduce lexical acoustic coding (LAC), a framework in which pre-trained LLM sender and receiver agents transmit sound through natural language. Under fixed system prompts, the agents write their own analysis and synthesis code, communicating only through a lexical sentence, shared vocabulary, and optional symbolic music structure. The sender analyzes an input waveform into interpretable, non-learned acoustic descriptors, quantizes each with a feature-specific interval vocabulary, and verbalizes the lexical code as English. The receiver parses the sentence back into lexical-acoustic constraints and renders a waveform through closed-loop refinement. The transmitted text serves as both a rich caption and as the transport representation itself. We frame LAC as a finite-rate lossy quantizer, exposing trade-offs between vocabulary size, rate, and fidelity. Experiments on short sounds and symbolic music transfer show that plain text preserves measurable acoustic structure while remaining interpretable, editable, and native to LLM-mediated communication.",
+  "authors": [
+    "Emanuele Rossi",
+    "Emanuele Rodolà"
+  ],
+  "published": "2026-05-09T07:25:54Z",
+  "updated": "2026-05-09T07:25:54Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL",
+    "cs.MA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.08750",
+  "abs_url": "https://arxiv.org/abs/2605.08750",
+  "fetched_at": "2026-07-19T14:18:41.851631Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

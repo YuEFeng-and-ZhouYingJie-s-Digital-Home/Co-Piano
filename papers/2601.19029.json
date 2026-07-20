@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2601.19029",
+  "title": "Audio Foundation Models Outperform Symbolic Representations for Piano Performance Evaluation",
+  "summary": "Automated piano performance evaluation traditionally relies on symbolic (MIDI) representations, which capture note-level information but miss the acoustic nuances that characterize expressive playing. I propose using pre-trained audio foundation models, specifically MuQ and MERT, to predict 19 perceptual dimensions of piano performance quality. Using synthesized audio from PercePiano MIDI files (rendered via Pianoteq), I compare audio and symbolic approaches under controlled conditions where both derive from identical source data. The best model, MuQ layers 9-12 with Pianoteq soundfont augmentation, achieves R^2 = 0.537 (95% CI: [0.465, 0.575]), representing a 55% improvement over the symbolic baseline (R^2 = 0.347). Statistical analysis confirms significance (p < 10^-25) with audio outperforming symbolic on all 19 dimensions. I validate the approach through cross-soundfont generalization (R^2 = 0.534 +/- 0.075), difficulty correlation with an external dataset (rho = 0.623), and multi-performer consistency analysis. Analysis of audio-symbolic fusion reveals high error correlation (r = 0.738), explaining why fusion provides minimal benefit: audio representations alone are sufficient. I release the complete training pipeline, pretrained models, and inference code.",
+  "authors": [
+    "Jai Dhiman"
+  ],
+  "published": "2026-01-26T23:29:38Z",
+  "updated": "2026-01-26T23:29:38Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.19029",
+  "abs_url": "https://arxiv.org/abs/2601.19029",
+  "fetched_at": "2026-07-19T14:18:41.860806Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

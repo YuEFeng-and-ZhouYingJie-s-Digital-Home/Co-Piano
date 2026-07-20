@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.15125",
+  "title": "Asymptotics for the Laplace transform of the Elephant Random Walk via Schwarz-Christoffel mappings",
+  "summary": "We derive the long time asymptotic behavior of the Laplace transform of the Elephant Random Walk (ERW). The ERW is a generalization of the Simple Random Walk in which the past influences the future evolution of the process according to some memory parameter. Its transition kernel is neither space nor time homogeneous and its transition probability at the $n$th step can be written as a function of $n$ and the position of the walk at time $n - 1$. A recurrence relation for its Laplace transform allows one to find a generating function governed by a transport-type PDE whose solution can be written in terms of a Schwarz-Christoffel mapping, allowing a precise analytic control. This enables to apply singularity analysis methods to estimate the Laplace transforms.",
+  "authors": [
+    "Juan Esaul González Rangel"
+  ],
+  "published": "2026-07-16T15:35:16Z",
+  "updated": "2026-07-16T15:35:16Z",
+  "categories": [
+    "math.PR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15125",
+  "abs_url": "https://arxiv.org/abs/2607.15125",
+  "fetched_at": "2026-07-19T14:17:38.252441Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

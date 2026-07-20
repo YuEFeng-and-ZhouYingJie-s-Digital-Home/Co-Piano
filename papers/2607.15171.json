@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.15171",
+  "title": "Multiscale Mixed-Dimensional Simulation via Domain Decomposition and Non-Intrusive Neural Model Order Reduction",
+  "summary": "Many computational models arising in science and engineering exhibit a multiscale structure that makes the assembly or direct solution of the global problem computationally prohibitive. Domain Decomposition (DD) methods overcome this limitation by replacing the global problem with a sequence of coupled local problems, whose iterative solution reconstructs the global response. This work introduces a method in the family of Domain Decomposition Reduced Order Models (DD-ROMs), based on the observation that DD naturally localizes not only the solution operator but also its geometric and parametric dependence. The central idea is that DD transforms a globally intractable solution map into a family of locally representable operators learnable from affordable local data after identification with a common reference configuration, a concept that we formalize through the notion of local representability. Non-intrusive neural surrogates are then trained to approximate the fine-scale local operations and embedded into the iterative solver. The training algorithm is based on a cascaded strategy designed to match the distributions encountered by the deployed surrogate iteration. We interpret the resulting DD method as a perturbed fixed-point iteration and establish that the global error remains bounded by the surrogate approximation error. The framework is instantiated for mixed-dimensional elliptic problems coupling three-dimensional bulk domains with embedded one-dimensional inclusions, using a two-level non-overlapping Robin-Robin method. Numerical experiments show that the resulting DD-ROM is stable, achieves accurate approximation on unseen microscale geometries and features good scalability properties with respect to the number of subdomains, scaling to large size global problems while avoiding fine-scale operator assembly and local high-fidelity solvers in the online stage.",
+  "authors": [
+    "Nunzio Dimola",
+    "Piermario Vitullo",
+    "Paolo Zunino"
+  ],
+  "published": "2026-07-16T16:21:33Z",
+  "updated": "2026-07-16T16:21:33Z",
+  "categories": [
+    "math.NA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15171",
+  "abs_url": "https://arxiv.org/abs/2607.15171",
+  "fetched_at": "2026-07-19T14:17:38.251855Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

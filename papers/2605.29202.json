@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.29202",
+  "title": "Auditing Training Data in Generative Music Models via Black-Box Membership Inference",
+  "summary": "Recent advances in text-to-music generation enable high-fidelity synthesis of structured musical audio, raising growing concerns about data provenance, consent, and training transparency. These models are typically trained on large-scale corpora with little disclosure, leaving no practical mechanism to verify whether a particular audio sample was included in training. In this paper, we investigate black-box membership inference for generative music models, aiming to determine whether a candidate music sample was used during training, given only query access to the deployed system. Our key insight is that training membership induces systematically stronger semantic and structural alignment between a candidate sample and the model's generation conditioned on its caption. We query the target model with the associated caption and measure the relationship between the candidate audio and the generated output in a learned feature space. To capture features that separate members from non-members, we construct paired examples consisting of each track and its caption-conditioned generation from shadow models, and train a music auditor to classify membership. The auditor captures alignment patterns characteristic of training membership and generalizes to unseen target models in a fully black-box setting without access to model parameters or training metadata. Across multiple state-of-the-art music generators, our method achieves up to 98.6% accuracy, with false-positive and false-negative rates as low as 1.9% and 1.0%, demonstrating that reliable training-data auditing is feasible in realistic deployment scenarios.",
+  "authors": [
+    "Yi Chen Liu",
+    "Jiawei Yu",
+    "Kexin Cao",
+    "Syed Irfan Ali Meerza",
+    "Trishika Movva",
+    "Jian Liu"
+  ],
+  "published": "2026-05-28T00:28:22Z",
+  "updated": "2026-05-28T00:28:22Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.29202",
+  "abs_url": "https://arxiv.org/abs/2605.29202",
+  "fetched_at": "2026-07-19T14:18:41.850842Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

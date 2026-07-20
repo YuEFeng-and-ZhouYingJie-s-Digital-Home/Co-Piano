@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.14749",
+  "title": "WanSong v1.0 Technical Report",
+  "summary": "Music generation foundation models have recently attracted significant industry attention. However, achieving efficient generation and high-fidelity long-form audio while supporting controllability remains challenging. To address these needs, we present \\textbf{WanSong}, a simple yet powerful approach for long-form, commercial-grade song generation. Unlike autoregressive (AR) and cascaded multi-stage pipelines (\\eg, AR followed by diffusion), \\textbf{WanSong} is a pure diffusion-based model that directly generates high-fidelity, multilingual songs up to 5 minutes and outputs dual stems (vocals and background music) in a single run. In addition, our diffusion framework enables faster inference through step-distillation, and offers an efficient pathway for fine-tuning and customization to support downstream editing tasks.",
+  "authors": [
+    "Binghui Chen",
+    "Pandeng Li",
+    "Yu Liu",
+    "Jingren Zhou"
+  ],
+  "published": "2026-07-16T09:34:59Z",
+  "updated": "2026-07-16T09:34:59Z",
+  "categories": [
+    "eess.AS",
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14749",
+  "abs_url": "https://arxiv.org/abs/2607.14749",
+  "fetched_at": "2026-07-19T14:18:41.844814Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

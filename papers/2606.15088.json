@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2606.15088",
+  "title": "When the Same Musical Knowledge Forgets Differently: A Clean Probe of Pathway-Dependent Forgetting",
+  "summary": "A model can learn that the piano piece Für Elise is calm and reflective by listening to the audio or by reading a text description, but does it matter which route that knowledge took when it is later at risk of being forgotten? Forgetting research in multimodal models measures what knowledge is lost under adaptation, yet has not asked whether acquisition route affects how easily that knowledge is forgotten. We call this untested premise the Pathway-Invariant Assumption. Music understanding enables a clean test because a music clip and a canonical text description can be aligned to the same perceptual content, allowing the same knowledge unit to enter a model through listening or reading while the target remains fixed. Across multiple architecturally distinct audio-language models, we observe a consistent asymmetry: text-pathway knowledge is forgotten more than matched audio-pathway knowledge under identical adaptation pressure. To attribute this effect to route rather than confounds, we introduce the Paired Pathway Controlled Protocol (PPCP), a three-phase design that establishes matched pathway baselines, activates both pathways under symmetric supervision on the same knowledge pool, and applies identical forgetting pressure to both pathways. The gap is stable across models and gain-controlled analyses, persists when contradictory overwrite is replaced by correct-label cross-domain learning, remains under single-modality pressure, and is not removed by lightweight replay. Two independent routing-depth controls confirm that the effect is not explained by architectural depth, pointing to input representation as the dominant factor. Under PPCP, our results demonstrate that forgetting is highly route-dependent, establishing acquisition route as a new analytical dimension for forgetting research and multimodal system design.",
+  "authors": [
+    "Yu Liu",
+    "Zhiwei Yang",
+    "Wenxiao Zhang",
+    "Cong Cao",
+    "Fangfang Yuan",
+    "Kun Peng",
+    "Haimei Qin",
+    "Lei Jiang",
+    "Jin B. Hong",
+    "Hao Peng",
+    "Yanbing Liu"
+  ],
+  "published": "2026-06-13T03:42:08Z",
+  "updated": "2026-06-17T09:45:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.15088",
+  "abs_url": "https://arxiv.org/abs/2606.15088",
+  "fetched_at": "2026-07-19T14:17:07.969482Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

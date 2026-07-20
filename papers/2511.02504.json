@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2511.02504",
+  "title": "Dexterous Robotic Piano Playing at Scale",
+  "summary": "Endowing robot hands with human-level dexterity has been a long-standing goal in robotics. Bimanual robotic piano playing represents a particularly challenging task: it is high-dimensional, contact-rich, and requires fast, precise control. We present OmniPianist, the first agent capable of performing nearly one thousand music pieces via scalable, human-demonstration-free learning. Our approach is built on three core components. First, we introduce an automatic fingering strategy based on Optimal Transport (OT), allowing the agent to autonomously discover efficient piano-playing strategies from scratch without demonstrations. Second, we conduct large-scale Reinforcement Learning (RL) by training more than 2,000 agents, each specialized in distinct music pieces, and aggregate their experience into a dataset named RP1M++, consisting of over one million trajectories for robotic piano playing. Finally, we employ a Flow Matching Transformer to leverage RP1M++ through large-scale imitation learning, resulting in the OmniPianist agent capable of performing a wide range of musical pieces. Extensive experiments and ablation studies highlight the effectiveness and scalability of our approach, advancing dexterous robotic piano playing at scale.",
+  "authors": [
+    "Le Chen",
+    "Yi Zhao",
+    "Jan Schneider",
+    "Quankai Gao",
+    "Simon Guist",
+    "Cheng Qian",
+    "Juho Kannala",
+    "Bernhard Schölkopf",
+    "Joni Pajarinen",
+    "Dieter Büchler"
+  ],
+  "published": "2025-11-04T11:46:02Z",
+  "updated": "2025-11-04T11:46:02Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.02504",
+  "abs_url": "https://arxiv.org/abs/2511.02504",
+  "fetched_at": "2026-07-19T14:18:41.852964Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

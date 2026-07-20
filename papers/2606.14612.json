@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.14612",
+  "title": "Moonlight in Latent Space: Chirality and Structural Correspondence Between Beethoven's Op. 27 No. 2 and Machine Learning Mechanisms",
+  "summary": "We show that the three movements of Beethoven's \"Moonlight Sonata\" (Op. 27 No. 2) instantiate three distinct machine learning architectures -- not by analogy, but by structural correspondence. Through computational analysis of the score (entropy, Jensen-Shannon divergence, dissonance, hand distributional overlap, self-similarity matrices, temporal memory decay, and contextual pitch embeddings), we establish four counterintuitive findings: (1) perceived musical \"temperature\" is governed by throughput, not distributional width; (2) the lightest movement carries the highest dissonance; (3) the movements implement streaming, recurrent, and periodic positional encoding memory architectures; and (4) the same pitch class acquires different contextual identities across movements, analogous to contextual vs.static embeddings in NLP -- and unsupervised clustering recovers the tonal structure without music-theoretic input. We construct a reverse sonification (decoding analytical features back into MIDI) and quantify the chirality of the encode-decode cycle: what distributions preserve and sequential ordering destroys. Prompted by a listener's observation that the decoded piece sounds like \"mirror isomers that can't be superimposed,\" the chirality measurement reveals reconstruction loss increasing monotonically with n-gram order. Bootstrap baselines and subsample checks confirm all movements carry sequential information above noise, though raw values are confounded by sample size. Cross-domain comparison shows natural language has higher chirality than music, reflecting stronger sequential constraints.",
+  "authors": [
+    "Chen Ying Claude",
+    "Zhihan Luo"
+  ],
+  "published": "2026-06-12T16:35:17Z",
+  "updated": "2026-06-12T16:35:17Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.14612",
+  "abs_url": "https://arxiv.org/abs/2606.14612",
+  "fetched_at": "2026-07-19T14:17:38.246893Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.12193",
+  "title": "Compos3D: Interactive Part-Based Composition for Creative Control in Generative 3D Models",
+  "summary": "While generative AI has unlocked new opportunities for 3D content creation, current workflows often rely on multiple regenerations, which provides limited control and unpredictable outcomes. We present Compos3D, a system that introduces a compositional workflow for generative 3D modeling through remixing. Instead of repeatedly regenerating models, users generate multiple candidates from text or image prompts, select parts of interest via 2D image regions or 3D mesh segments, and assemble them into a coherent design. The system synthesizes these compositions into a refined 3D model, preserving high-level intent while resolving low-level geometry. To evaluate this approach, we conducted a controlled user study comparing remixing and regeneration workflows across both 2D and 3D modalities. Results show that the remixing workflow provides participants with greater creative control, stronger alignment with their intent, and higher satisfaction. We conclude with design recommendations for future AI-assisted 3D modeling workflows.",
+  "authors": [
+    "Faraz Faruqi",
+    "Sean J. Liu",
+    "George Fitzmaurice",
+    "Justin Matejka"
+  ],
+  "published": "2026-07-13T22:24:26Z",
+  "updated": "2026-07-13T22:24:26Z",
+  "categories": [
+    "cs.HC",
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12193",
+  "abs_url": "https://arxiv.org/abs/2607.12193",
+  "fetched_at": "2026-07-19T14:18:41.877315Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

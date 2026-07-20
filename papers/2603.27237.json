@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2603.27237",
+  "title": "Can pre-trained Deep Learning models predict groove ratings?",
+  "summary": "This study explores the extent to which deep learning models can predict groove and its related perceptual dimensions directly from audio signals. We critically examine the effectiveness of seven state-of-the-art deep learning models in predicting groove ratings and responses to groove-related queries through the extraction of audio embeddings. Additionally, we compare these predictions with traditional handcrafted audio features. To better understand the underlying mechanics, we extend this methodology to analyze predictions based on source-separated instruments, thereby isolating the contributions of individual musical elements. Our analysis reveals a clear separation of groove characteristics driven by the underlying musical style of the tracks (funk, pop, and rock). These findings indicate that deep audio representations can successfully encode complex, style-dependent groove components that traditional features often miss. Ultimately, this work highlights the capacity of advanced deep learning models to capture the multifaceted concept of groove, demonstrating the strong potential of representation learning to advance predictive Music Information Retrieval methodologies.",
+  "authors": [
+    "Axel Marmoret",
+    "Nicolas Farrugia",
+    "Jan Alexander Stupacher"
+  ],
+  "published": "2026-03-28T11:20:38Z",
+  "updated": "2026-03-28T11:20:38Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.27237",
+  "abs_url": "https://arxiv.org/abs/2603.27237",
+  "fetched_at": "2026-07-19T14:18:41.864133Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.00303",
+  "title": "Promise-Future Synchronization for Cluster Asynchronous Many-Task Runtimes via MPI One-Sided Communication",
+  "summary": "Asynchronous Many-Task (AMT) runtimes use futures as placeholders for values produced by other tasks. In the ItoyoriFBC AMT runtime, the existing future-only model binds each future to its producer at creation time and requires the number of tasks that read each future to be fixed at compile time. This prevents directly expressing algorithms that create dependencies dynamically. We extend ItoyoriFBC with an implementation of a promise-future model that lifts these limitations. Thereby, our ItoyoriFBC variant supports dynamic algorithms such as Hierarchical LU factorization (HLU). We experimentally evaluated our implementation using HLU on up to 16 nodes and observed near-ideal scaling with a 15.6x speedup.",
+  "authors": [
+    "Mia Reitz"
+  ],
+  "published": "2026-07-01T01:03:21Z",
+  "updated": "2026-07-01T01:03:21Z",
+  "categories": [
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.00303",
+  "abs_url": "https://arxiv.org/abs/2607.00303",
+  "fetched_at": "2026-07-19T14:17:07.972200Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

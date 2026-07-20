@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2602.13891",
+  "title": "GSRM: Generative Speech Reward Model for Speech RLHF",
+  "summary": "Recent advances in speech language models, such as GPT-4o Voice Mode and Gemini Live, have demonstrated promising speech generation capabilities. Nevertheless, the aesthetic naturalness of the synthesized audio still lags behind that of human speech. Enhancing generation quality requires a reliable evaluator of speech naturalness. However, existing naturalness evaluators typically regress raw audio to scalar scores, offering limited interpretability of the evaluation and moreover fail to generalize to speech across different taxonomies. Inspired by recent advances in generative reward modeling, we propose the Generative Speech Reward Model (GSRM), a reasoning-centric reward model tailored for speech. The GSRM is trained to decompose speech naturalness evaluation into an interpretable acoustic feature extraction stage followed by feature-grounded chain-of-thought reasoning, enabling explainable judgments. To achieve this, we curated a large-scale human feedback dataset comprising 31k expert ratings and an out-of-domain benchmark of real-world user-assistant speech interactions. Experiments show that GSRM substantially outperforms existing speech naturalness predictors, achieving model-human correlation of naturalness score prediction that approaches human inter-rater consistency. We further show how GSRM can improve the naturalness of speech LLM generations by serving as an effective verifier for online RLHF.",
+  "authors": [
+    "Maohao Shen",
+    "Tejas Jayashankar",
+    "Osama Hanna",
+    "Naoyuki Kanda",
+    "Yancheng Wang",
+    "Kateřina Žmolíková",
+    "Ruiming Xie",
+    "Niko Moritz",
+    "Anfeng Xu",
+    "Yashesh Gaur",
+    "Gregory Wornell",
+    "Qing He",
+    "Jilong Wu"
+  ],
+  "published": "2026-02-14T21:22:55Z",
+  "updated": "2026-02-14T21:22:55Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.13891",
+  "abs_url": "https://arxiv.org/abs/2602.13891",
+  "fetched_at": "2026-07-19T14:18:41.859765Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

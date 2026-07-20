@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2208.14867",
+  "title": "Sketching the Expression: Flexible Rendering of Expressive Piano Performance with Self-Supervised Learning",
+  "summary": "We propose a system for rendering a symbolic piano performance with flexible musical expression. It is necessary to actively control musical expression for creating a new music performance that conveys various emotions or nuances. However, previous approaches were limited to following the composer's guidelines of musical expression or dealing with only a part of the musical attributes. We aim to disentangle the entire musical expression and structural attribute of piano performance using a conditional VAE framework. It stochastically generates expressive parameters from latent representations and given note structures. In addition, we employ self-supervised approaches that force the latent variables to represent target attributes. Finally, we leverage a two-step encoder and decoder that learn hierarchical dependency to enhance the naturalness of the output. Experimental results show that our system can stably generate performance parameters relevant to the given musical scores, learn disentangled representations, and control musical attributes independently of each other.",
+  "authors": [
+    "Seungyeon Rhyu",
+    "Sarah Kim",
+    "Kyogu Lee"
+  ],
+  "published": "2022-08-31T13:48:28Z",
+  "updated": "2022-09-03T08:58:49Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2208.14867",
+  "abs_url": "https://arxiv.org/abs/2208.14867",
+  "fetched_at": "2026-07-19T14:18:41.861957Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

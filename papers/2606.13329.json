@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.13329",
+  "title": "Work Stealing for the 2D-Mesh Topology of Satellite Constellations in Low Earth Orbit",
+  "summary": "Asynchronous Many-Task (AMT) is a parallel programming model used in High Performance Computing (HPC). An AMT runtime can distribute fine-grained tasks across processing units called workers, through work stealing: when a worker has no tasks left to process, it tries to steal tasks from other workers. Workers are not restricted to a single compute node but can also be distributed across multiple nodes of an HPC cluster. Existing AMT runtimes assume a fully connected network with low, uniform latency and perform global work stealing, selecting another worker at random from all workers in the system. Space Edge Computing (SEC) uses constellations of satellites in Low Earth Orbit (LEO) as distributed compute clusters. Unlike HPC clusters, LEO satellites communicate through inter-satellite links that form a sparse mesh topology. Reaching a distant satellite requires multiple hops, each adding latency. As a step toward adapting AMT to SEC, this paper proposes a neighbor-only work stealing strategy in which workers steal exclusively from directly connected neighbors, avoiding multi-hop communication. An analytical model shows that restricting stealing this way yields a per-attempt latency advantage that grows with constellation size. Preliminary experiments on an HPC cluster with an emulated mesh over uniform low-latency links isolate the effect of victim selection: the neighbor-only strategy performs within ~2.2% of global stealing on both balanced and irregular workloads, indicating that restricting the victim set does not harm load balancing in this setting. Taken together, the experiments suggest that neighbor-only stealing can be on a par with global stealing, and the model suggests that neighbor-only stealing becomes preferable at scale.",
+  "authors": [
+    "Mia Reitz",
+    "Dorian Chenet",
+    "Jonas Posner"
+  ],
+  "published": "2026-06-11T13:22:55Z",
+  "updated": "2026-06-11T13:22:55Z",
+  "categories": [
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.13329",
+  "abs_url": "https://arxiv.org/abs/2606.13329",
+  "fetched_at": "2026-07-19T14:17:07.972675Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

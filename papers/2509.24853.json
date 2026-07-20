@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.24853",
+  "title": "Enhanced Automatic Drum Transcription via Drum Stem Source Separation",
+  "summary": "Automatic Drum Transcription (ADT) remains a challenging task in MIR but recent advances allow accurate transcription of drum kits with up 5 classes - kick, snare, hi-hats, toms and cymbals - via the ADTOF package. In addition, several drum kit \\emph{stem} separation models in the open source community support separation for more than 6 stem classes, including distinct crash and ride cymbals. In this work we explore the benefits of combining these tools to improve the realism of drum transcriptions. We describe a simple post-processing step which expands the transcription output from five to seven classes and furthermore, we are able to estimate MIDI velocity values based on the separated stems. Our solution achieves strong performance when assessed against a baseline of 8-class drum transcription and produces realistic MIDI transcriptions suitable for MIR or music production tasks.",
+  "authors": [
+    "Xavier Riley",
+    "Simon Dixon"
+  ],
+  "published": "2025-09-29T14:39:17Z",
+  "updated": "2025-09-29T14:39:17Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.24853",
+  "abs_url": "https://arxiv.org/abs/2509.24853",
+  "fetched_at": "2026-07-19T14:18:41.855854Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2505.00839",
+  "title": "SMSAT: A Multimodal Acoustic Dataset and Deep Contrastive Learning Framework for Affective and Physiological Modeling of Spiritual Meditation",
+  "summary": "Understanding how auditory stimuli influence emotional and physiological states is fundamental to advancing affective computing and mental health technologies. In this paper, we present a multimodal evaluation of the affective and physiological impacts of three auditory conditions, that is, spiritual meditation (SM), music (M), and natural silence (NS), using a comprehensive suite of biometric signal measures. To facilitate this analysis, we introduce the Spiritual, Music, Silence Acoustic Time Series (SMSAT) dataset, a novel benchmark comprising acoustic time series (ATS) signals recorded under controlled exposure protocols, with careful attention to demographic diversity and experimental consistency. To model the auditory induced states, we develop a contrastive learning based SMSAT audio encoder that extracts highly discriminative embeddings from ATS data, achieving 99.99% classification accuracy in interclass and intraclass evaluations. Furthermore, we propose the Calmness Analysis Model (CAM), a deep learning framework integrating 25 handcrafted and learned features for affective state classification across auditory conditions, attaining robust 99.99% classification accuracy. In contrast, pairwise t tests reveal significant deviations in cardiac response characteristics (CRC) between SM analysis via ANOVA inducing more significant physiological fluctuations. Compared to existing state of the art methods reporting accuracies up to 90%, the proposed model demonstrates substantial performance gains (up to 99%). This work contributes a validated multimodal dataset and a scalable deep learning framework for affective computing applications in stress monitoring, mental well-being, and therapeutic audio-based interventions.",
+  "authors": [
+    "Ahmad Suleman",
+    "Yazeed Alkhrijah",
+    "Misha Urooj Khan",
+    "Hareem Khan",
+    "Muhammad Abdullah Husnain Ali Faiz",
+    "Mohamad A. Alawad",
+    "Zeeshan Kaleem",
+    "Guan Gui"
+  ],
+  "published": "2025-05-01T19:55:50Z",
+  "updated": "2025-05-01T19:55:50Z",
+  "categories": [
+    "cs.SD",
+    "cs.SI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2505.00839",
+  "abs_url": "https://arxiv.org/abs/2505.00839",
+  "fetched_at": "2026-07-19T14:18:41.866198Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

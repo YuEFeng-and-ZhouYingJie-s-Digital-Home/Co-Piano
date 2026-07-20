@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2511.00529",
+  "title": "On Improvisation and Open-Endedness: Insights for Experiential AI",
+  "summary": "Improvisation-the art of spontaneous creation that unfolds moment-to-moment without a scripted outcome-requires practitioners to continuously sense, adapt, and create anew. It is a fundamental mode of human creativity spanning music, dance, and everyday life. The open-ended nature of improvisation produces a stream of novel, unrepeatable moments-an aspect highly valued in artistic creativity. In parallel, open-endedness (OE)-a system's capacity for unbounded novelty and endless \"interestingness\"-is exemplified in natural or cultural evolution and has been considered \"the last grand challenge\" in artificial life (ALife). The rise of generative AI now raises the question in computational creativity (CC) research: What makes a \"good\" improvisation for AI? Can AI learn to improvise in a genuinely open-ended way? In this work-in-progress paper, we report insights from in-depth interviews with 6 experts in improvisation across dance, music, and contact improvisation. We draw systemic connections between human improvisational arts and the design of future experiential AI agents that could improvise alone or alongside humans-or even with other AI agents-embodying qualities of improvisation drawn from practice: active listening (umwelt and awareness), being in the time (mindfulness and ephemerality), embracing the unknown (source of randomness and serendipity), non-judgmental flow (acceptance and dynamical stability, balancing structure and surprise (unpredictable criticality at edge of chaos), imaginative metaphor (synaesthesia and planning), empathy, trust, boundary, and care (mutual theory of mind), and playfulness and intrinsic motivation (maintaining interestingness).",
+  "authors": [
+    "Botao 'Amber' Hu"
+  ],
+  "published": "2025-11-01T12:13:02Z",
+  "updated": "2025-11-05T06:09:53Z",
+  "categories": [
+    "cs.HC",
+    "cs.AI",
+    "cs.NE",
+    "eess.SY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.00529",
+  "abs_url": "https://arxiv.org/abs/2511.00529",
+  "fetched_at": "2026-07-19T14:18:41.867749Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

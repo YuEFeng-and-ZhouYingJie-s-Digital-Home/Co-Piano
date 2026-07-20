@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.22726",
+  "title": "Text Dictates, Music Decorates: Energy-based Attention for Editable Dance Motion Generation",
+  "summary": "Choreographic motion generation poses unique challenges for AI, demanding precise semantic control over complex, temporally structured, and expressive full-body dynamics. While existing models can synthesize motion from music, they remain largely black boxes. Conversely, attempting to condition generation on both text and music frequently leads to modality collapse, where dense acoustic rhythms overwhelm sparse semantic text prompts, destroying user controllability. To resolve this spatial-temporal conflict, we propose STREAM (Structural-Temporal Rhythmic Energy-based Attention for Motion), a modality-decoupled diffusion transformer. STREAM strictly separates conditioning pathways: global text semantics dictate the kinematic structure via Adaptive Layer Normalization (AdaLN), while a novel Bimodal Energy-Based Attention Module (BEAM) routes these features to the musical beat without overwriting the semantics. We further introduce Motorica++, a newly curated dataset enriched with domain-specific dance vocabulary and frame-level semantic annotations from existing Motorica dataset. Additionally, to rigorously quantify zero-shot editability, we propose the Exchange Evaluation Protocol and Editable Dance Score (EDS). Through extensive experiments, STREAM achieves state-of-the-art alignment between motion and music while perfectly preserving choreographic semantics, positioning AI not merely as a reactive synthesizer, but as a controllable, collaborative partner for artistic direction. The source code and datasets are available at https://github.com/SeongJong-Yoo/STREAM.",
+  "authors": [
+    "Seong Jong Yoo",
+    "Siyuan Peng",
+    "Felix Gu",
+    "Stratis Aloimonos",
+    "Cornelia Fermüller"
+  ],
+  "published": "2026-06-22T00:01:05Z",
+  "updated": "2026-07-03T01:47:59Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.22726",
+  "abs_url": "https://arxiv.org/abs/2606.22726",
+  "fetched_at": "2026-07-19T14:18:41.846728Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

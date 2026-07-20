@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2604.09054",
+  "title": "HAFM: Hierarchical Autoregressive Foundation Model for Music Accompaniment Generation",
+  "summary": "Music accompaniment generation aims to automatically produce instrumental accompaniments that are rhythmically, harmonically, and timbrally coherent with a given vocal input, with broad applications in personalized music creation, arrangement assistance, and music education. Existing approaches, primarily operating in the symbolic domain or relying on single-stage audio generation frameworks, commonly suffer from insufficient high-level semantic structure modeling, limited acoustic detail reconstruction, and weak conditional controllability. To address these limitations, this paper proposes HAFM, a Hierarchical Autoregressive Foundation Model for vocal-conditioned music accompaniment generation. The model employs a dual-rate tokenization strategy in which $50$ Hz HuBERT semantic tokens capture high-level musical structure and $75$ Hz EnCodec acoustic tokens encode fine-grained acoustic content, enabling explicit disentanglement of semantic and acoustic representations. Building on this foundation, a three-stage cascaded generation framework is designed to progressively generate semantic tokens, coarse acoustic tokens, and fine acoustic tokens, refining the accompaniment from global structure to local detail. . Objective evaluation on the MUSDB18 dataset demonstrates that the full three-stage model achieves a Fr{é}chet Audio Distance (FAD) score of 1.71, representing an 18.6% relative improvement over the two-stage baseline (FAD = 2.10). Subjective listening tests show that the generated accompaniments achieve a 51.5% preference rate against ground-truth accompaniments in head-to-head comparisons, and substantially outperform the random baseline in terms of rhythmic alignment, harmonic compatibility, and overall musical coherence. The source code and demo are available at https://github.com/HackerHyper/HAFM.git.",
+  "authors": [
+    "Jian Zhu",
+    "Jianwei Cui",
+    "Yunlong Xue",
+    "Shihao Chen",
+    "Yubang Zhang",
+    "Cheng Luo",
+    "Jun Sun"
+  ],
+  "published": "2026-04-10T07:27:55Z",
+  "updated": "2026-06-23T01:22:05Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.09054",
+  "abs_url": "https://arxiv.org/abs/2604.09054",
+  "fetched_at": "2026-07-19T14:18:41.881622Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

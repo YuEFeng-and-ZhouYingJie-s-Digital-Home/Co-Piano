@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.09421",
+  "title": "Multi-task Just Recognizable Difference for Video Coding for Machines: Database, Model, and Coding Application",
+  "summary": "Just Recognizable Difference (JRD) boosts coding efficiency for machine vision through visibility threshold modeling, but is currently limited to a single-task scenario. To address this issue, we propose a Multi-Task JRD (MT-JRD) dataset and an Attribute-assisted MT-JRD (AMT-JRD) model for Video Coding for Machines (VCM), enhancing both prediction accuracy and coding efficiency. First, we construct a dataset comprising 27,264 JRD annotations from machines, supporting three representative tasks including object detection, instance segmentation, and keypoint detection. Secondly, we propose the AMT-JRD prediction model, which integrates Generalized Feature Extraction Module (GFEM) and Specialized Feature Extraction Module (SFEM) to facilitate joint learning across multiple tasks. Thirdly, we innovatively incorporate object attribute information into object-wise JRD prediction through the Attribute Feature Fusion Module (AFFM), which introduces prior knowledge about object size and location. This design effectively compensates for the limitations of relying solely on image features and enhances the model's capacity to represent the perceptual mechanisms of machine vision. Finally, we apply the AMT-JRD model to VCM, where the accurately predicted JRDs are applied to reduce the coding bit rate while preserving accuracy across multiple machine vision tasks. Extensive experimental results demonstrate that AMT-JRD achieves precise and robust multi-task prediction with a mean absolute error of 3.781 and error variance of 5.332 across three tasks, outperforming the state-of-the-art single-task prediction model by 6.7% and 6.3%, respectively. Coding experiments further reveal that compared to the baseline VVC and JPEG, the AMT-JRD-based VCM improves an average of 3.861% and 7.886% Bjontegaard Delta-mean Average Precision (BD-mAP), respectively.",
+  "authors": [
+    "Junqi Liu",
+    "Yun Zhang",
+    "Xiaoxia Huang",
+    "Long Xu",
+    "Weisi Lin"
+  ],
+  "published": "2026-04-10T15:33:45Z",
+  "updated": "2026-04-10T15:33:45Z",
+  "categories": [
+    "eess.IV",
+    "cs.CV",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.09421",
+  "abs_url": "https://arxiv.org/abs/2604.09421",
+  "fetched_at": "2026-07-19T14:17:07.973899Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

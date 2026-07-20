@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2607.00726",
+  "title": "AV-SyncBench: Decoupled Benchmarking of Temporal and Semantic Audio-Visual Synchronization",
+  "summary": "Audio-visual feature extraction is a fundamental component of multimodal understanding and generation tasks. However, existing evaluation protocols for feature extraction models exhibit dimensional bias, typically focusing on either semantic matching or temporal offset detection. Moreover, their data construction remains coupled, preventing independent assessment of temporal and semantic consistency. We propose AV-SyncBench, the first benchmark to fully separate temporal and semantic evaluation for audio-visual synchronization. Built from in-the-wild videos, it spans Voice, Music, and Sound across 10 scenarios and 5 challenge tasks. Data are automatically filtered and manually verified to ensure on-screen sound sources. The benchmark contains 3,269 videos and 38,390 samples, and we evaluate five representative models to quantify feature quality for alignment and downstream tasks. The code and dataset are available at: https://fgt7t6g.github.io/AV-SyncBench.",
+  "authors": [
+    "Tianhong Zhou",
+    "Mingyang Han",
+    "Boyu Li",
+    "Yuxuan Jiang",
+    "Jiaxin Ye",
+    "Dongxiao Wang",
+    "Haoxiang Shi",
+    "Kunpeng Wang",
+    "Jun Song",
+    "Cheng Yu",
+    "Bo Zheng"
+  ],
+  "published": "2026-07-01T10:12:25Z",
+  "updated": "2026-07-01T10:12:25Z",
+  "categories": [
+    "cs.CV",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.00726",
+  "abs_url": "https://arxiv.org/abs/2607.00726",
+  "fetched_at": "2026-07-19T14:18:41.870297Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

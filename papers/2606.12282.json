@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.12282",
+  "title": "PianoKontext: Expressive Performance Rendering from Deadpan Context",
+  "summary": "Expressive performance rendering (EPR) aims to generate realistic performances constrained on sequences of notes. However, flow matching audio editing models manipulate only synchronized music samples of the same duration, limiting their understanding of expressive timing. We introduce PianoKontext, a flow matching rendering model for classical piano music that generates variable-length performances in the latent space of a pretrained Music2Latent model. We synthesize MIDI scores into deadpan audio and employ Dynamic Time Warping (DTW) in the latent space to construct paired data for training. The aligned embeddings are concatenated in DiT blocks, allowing for a simple and effective learning of the dependencies between the score and performances. Audio samples are available at our demo page: https://realfolkcode.github.io/pianokontext_demo/.",
+  "authors": [
+    "Dmitrii Gavrilev"
+  ],
+  "published": "2026-06-10T16:20:24Z",
+  "updated": "2026-06-10T16:20:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.12282",
+  "abs_url": "https://arxiv.org/abs/2606.12282",
+  "fetched_at": "2026-07-19T14:17:07.969754Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

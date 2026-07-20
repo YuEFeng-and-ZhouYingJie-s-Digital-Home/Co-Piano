@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2510.22295",
+  "title": "VietLyrics: A Large-Scale Dataset and Models for Vietnamese Automatic Lyrics Transcription",
+  "summary": "Automatic Lyrics Transcription (ALT) for Vietnamese music presents unique challenges due to its tonal complexity and dialectal variations, but remains largely unexplored due to the lack of a dedicated dataset. Therefore, we curated the first large-scale Vietnamese ALT dataset (VietLyrics), comprising 647 hours of songs with line-level aligned lyrics and metadata to address these issues. Our evaluation of current ASRbased approaches reveal significant limitations, including frequent transcription errors and hallucinations in non-vocal segments. To improve performance, we fine-tuned Whisper models on the VietLyrics dataset, achieving superior results compared to existing multilingual ALT systems, including LyricWhiz. We publicly release VietLyrics and our models, aiming to advance Vietnamese music computing research while demonstrating the potential of this approach for ALT in low-resource language and music.",
+  "authors": [
+    "Quoc Anh Nguyen",
+    "Bernard Cheng",
+    "Kelvin Soh"
+  ],
+  "published": "2025-10-25T13:38:20Z",
+  "updated": "2025-12-20T13:08:30Z",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.22295",
+  "abs_url": "https://arxiv.org/abs/2510.22295",
+  "fetched_at": "2026-07-19T14:18:41.855626Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2511.18146",
+  "title": "GeeSanBhava: Sentiment Tagged Sinhala Music Video Comment Data Set",
+  "summary": "This study introduce GeeSanBhava, a high-quality data set of Sinhala song comments extracted from YouTube manually tagged using Russells Valence-Arousal model by three independent human annotators. The human annotators achieve a substantial inter-annotator agreement (Fleiss kappa = 84.96%). The analysis revealed distinct emotional profiles for different songs, highlighting the importance of comment based emotion mapping. The study also addressed the challenges of comparing comment-based and song-based emotions, mitigating biases inherent in user-generated content. A number of Machine learning and deep learning models were pre-trained on a related large data set of Sinhala News comments in order to report the zero-shot result of our Sinhala YouTube comment data set. An optimized Multi-Layer Perceptron model, after extensive hyperparameter tuning, achieved a ROC-AUC score of 0.887. The model is a three-layer MLP with a configuration of 256, 128, and 64 neurons. This research contributes a valuable annotated dataset and provides insights for future work in Sinhala Natural Language Processing and music emotion recognition.",
+  "authors": [
+    "Yomal De Mel",
+    "Nisansa de Silva"
+  ],
+  "published": "2025-11-22T18:15:06Z",
+  "updated": "2025-11-22T18:15:06Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.18146",
+  "abs_url": "https://arxiv.org/abs/2511.18146",
+  "fetched_at": "2026-07-19T14:18:41.864755Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

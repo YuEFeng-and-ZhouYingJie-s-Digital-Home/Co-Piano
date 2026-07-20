@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.18968",
+  "title": "Audio-to-Audio via Diffusion Warm Initialization",
+  "summary": "In this paper, we propose diffusion warm initialization as a simple yet effective approach for a range of audio-to-audio transformation tasks. To illustrate the generality of the approach, we demonstrate its use in timbre transfer, MIDI-to-Real synthesis, and multiple audio enhancement tasks. We conduct a detailed empirical analysis on timbre transfer to investigate the role of the initialization time $t_\\text{init}$. The effect of $t_\\text{init}$ is evaluated using pitch-based Jaccard Distance and Fréchet Audio Distance to quantify faithfulness to the input signal and alignment with the target distribution. Our results provide practical guidance for selecting $t_\\text{init}$ and show that, once properly chosen, a single pretrained diffusion model combined with warm initialization can support multiple transformation objectives without task-specific training or conditioning. Despite its simplicity, this approach already achieves competitive results when compared with more complex pipelines designed specifically for these tasks. We further observe that warm initialization does not necessarily require explicit noise injection, as the guide signal itself can often serve as a valid initialization state for the backward diffusion process. Together, these findings show that warm initialization provides a simple and effective framework that serves as a fundamental building block for more complex audio transformation pipelines.",
+  "authors": [
+    "Cristóbal Andrade",
+    "Sebastian J. Schlecht"
+  ],
+  "published": "2026-06-17T11:51:42Z",
+  "updated": "2026-06-17T11:51:42Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.18968",
+  "abs_url": "https://arxiv.org/abs/2606.18968",
+  "fetched_at": "2026-07-19T14:17:38.246679Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

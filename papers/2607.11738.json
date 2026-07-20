@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2607.11738",
+  "title": "Qwen-Audio-VAE Technical Report",
+  "summary": "We introduce \\textbf{Qwen-Audio-VAE}, a suite of low-bitrate, fast-encoding continuous audio autoencoders designed for scalable general audio generation. The model is built around a simple but important principle: an audio VAE should not only reconstruct diverse audio with high fidelity, but also produce compact latent representations fast enough to support large-scale text-to-audio training. Qwen-Audio-VAE combines a causal encoder-decoder, window Transformer blocks, and multi-discriminator training to achieve a strong balance between reconstruction quality and compression rate. The model is trained at scale on 5 million hours of multi-domain audio, enabling robust reconstruction across heterogeneous acoustic conditions. To further improve computational efficiency, we adopt an asymmetric encoder-decoder backbone and introduce latency-aware encoder pruning to maximize encoding throughput. Experiments on public speech, music, and sound reconstruction benchmarks show that Qwen-Audio-VAE generalizes well across diverse audio domains and is particularly efficient, requiring only 541 ms to encode 32 minutes of audio. Overall, Qwen-Audio-VAE provides a high-quality, compact, and high-throughput representation backbone for efficient general audio generation.",
+  "authors": [
+    "Ziyue Jiang",
+    "Dake Guo",
+    "Zekai Zhang",
+    "Hangrui Hu",
+    "Ting He",
+    "Xinfa Zhu",
+    "Xiong Wang",
+    "Yongqi Wang",
+    "Jiapeng Wang",
+    "Wenxiang Guo",
+    "Zhifang Guo",
+    "Chenfei Wu",
+    "Dayiheng Liu",
+    "Jin Xu"
+  ],
+  "published": "2026-07-13T16:00:03Z",
+  "updated": "2026-07-13T16:00:03Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.11738",
+  "abs_url": "https://arxiv.org/abs/2607.11738",
+  "fetched_at": "2026-07-19T14:18:41.845061Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

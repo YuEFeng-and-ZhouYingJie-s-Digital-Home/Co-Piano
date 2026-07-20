@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2304.04150",
+  "title": "RoboPianist: Dexterous Piano Playing with Deep Reinforcement Learning",
+  "summary": "Replicating human-like dexterity in robot hands represents one of the largest open problems in robotics. Reinforcement learning is a promising approach that has achieved impressive progress in the last few years; however, the class of problems it has typically addressed corresponds to a rather narrow definition of dexterity as compared to human capabilities. To address this gap, we investigate piano-playing, a skill that challenges even the human limits of dexterity, as a means to test high-dimensional control, and which requires high spatial and temporal precision, and complex finger coordination and planning. We introduce RoboPianist, a system that enables simulated anthropomorphic hands to learn an extensive repertoire of 150 piano pieces where traditional model-based optimization struggles. We additionally introduce an open-sourced environment, benchmark of tasks, interpretable evaluation metrics, and open challenges for future study. Our website featuring videos, code, and datasets is available at https://kzakka.com/robopianist/",
+  "authors": [
+    "Kevin Zakka",
+    "Philipp Wu",
+    "Laura Smith",
+    "Nimrod Gileadi",
+    "Taylor Howell",
+    "Xue Bin Peng",
+    "Sumeet Singh",
+    "Yuval Tassa",
+    "Pete Florence",
+    "Andy Zeng",
+    "Pieter Abbeel"
+  ],
+  "published": "2023-04-09T03:53:05Z",
+  "updated": "2023-12-04T01:14:58Z",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2304.04150",
+  "abs_url": "https://arxiv.org/abs/2304.04150",
+  "fetched_at": "2026-07-19T14:18:41.854659Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

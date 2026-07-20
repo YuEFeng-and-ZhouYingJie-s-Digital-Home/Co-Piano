@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.29219",
+  "title": "SalsaAgent: A multimodal embodied language model for interactive dance generation",
+  "summary": "Interaction between humanoids involves bidirectional and nonverbal reactivity, coordination and synchrony. Toward socially aware robots and interactive virtual agents, we present SalsaAgent, a language model that generates expressive, full-body salsa dance motions in reaction to a human leader and against a contextual music backdrop. We formulate interaction as nonverbal motion token passing, extending the vocabulary of a large language model (LLM) to process discrete motion tokens, pairwise relation tokens, and audio. Our contributions include new tokens for full-body and motion relations, LLM fine-tuning using automatically derived text descriptions of skeleton dynamics for token grounding, and a two-stage token-to-diffusion pipeline. Subjective and objective evaluations demonstrate the effectiveness of our approach in terms of motion quality, music and partner coordination, and consistent two-person spatial behavior, with significant improvements over baselines.",
+  "authors": [
+    "Payam Jome Yazdian",
+    "Zoe Stanley",
+    "Angelica Lim"
+  ],
+  "published": "2026-05-28T01:08:27Z",
+  "updated": "2026-06-03T18:14:15Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.29219",
+  "abs_url": "https://arxiv.org/abs/2605.29219",
+  "fetched_at": "2026-07-19T14:18:41.871998Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

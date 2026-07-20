@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2512.17228",
+  "title": "LUMIA: A Handheld Vision-to-Music System for Real-Time, Embodied Composition",
+  "summary": "Most digital music tools emphasize precision and control, but often lack support for tactile, improvisational workflows grounded in environmental interaction. Lumia addresses this by enabling users to \"compose through looking\"--transforming visual scenes into musical phrases using a handheld, camera-based interface and large multimodal models. A vision-language model (GPT-4V) analyzes captured imagery to generate structured prompts, which, combined with user-selected instrumentation, guide a text-to-music pipeline (Stable Audio). This real-time process allows users to frame, capture, and layer audio interactively, producing loopable musical segments through embodied interaction. The system supports a co-creative workflow where human intent and model inference shape the musical outcome. By embedding generative AI within a physical device, Lumia bridges perception and composition, introducing a new modality for creative exploration that merges vision, language, and sound. It repositions generative music not as a task of parameter tuning, but as an improvisational practice driven by contextual, sensory engagement.",
+  "authors": [
+    "Chung-Ta Huang",
+    "Connie Cheng",
+    "Vealy Lai"
+  ],
+  "published": "2025-12-19T04:27:59Z",
+  "updated": "2025-12-19T04:27:59Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.17228",
+  "abs_url": "https://arxiv.org/abs/2512.17228",
+  "fetched_at": "2026-07-19T14:18:41.867266Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

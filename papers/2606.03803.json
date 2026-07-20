@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.03803",
+  "title": "LiveBand: Live Accompaniment Generation in the Audio Domain",
+  "summary": "We present LiveBand, a real-time system that generates high-fidelity music accompaniments to live audio input, respecting strict causal constraints. Our method trains a causal transformer generator in the continuous latent space of a pre-trained causal audio autoencoder, using adversarial sequence-level supervision from a discriminator. At each timestep, the generator receives only the causally available mix context and Gaussian noise, and predicts accompaniment latents without access to future mix frames or ground-truth target latents. Training is performed in a single parallel forward pass under causal masking, while streaming inference proceeds autoregressively with a rolling attention state. The model's training and inference computations are matched by design, eliminating teacher forcing and the associated exposure bias. On a multi-instrument music accompaniment benchmark, LiveBand improves over prior work on objective measures of audio quality, beat alignment, and mix adherence, while enabling real-time streaming generation without lookahead into the future on consumer hardware.",
+  "authors": [
+    "Marco Pasini",
+    "Javier Nistal",
+    "Ben Hayes",
+    "Mathias Rose Bjare",
+    "Stefan Lattner",
+    "George Fazekas"
+  ],
+  "published": "2026-06-02T15:50:13Z",
+  "updated": "2026-06-09T17:04:13Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.03803",
+  "abs_url": "https://arxiv.org/abs/2606.03803",
+  "fetched_at": "2026-07-19T14:18:41.863246Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

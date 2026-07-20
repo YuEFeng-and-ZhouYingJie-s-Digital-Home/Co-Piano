@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2605.28657",
+  "title": "DEMON: Diffusion Engine for Musical Orchestrated Noise",
+  "summary": "We present DEMON, a real-time diffusion engine that makes the denoising process playable as a live musical instrument: a control surface both broad (many parameters shaped per-frame across the output) and responsive (each control taking effect as fast as its place in the denoising loop allows). Built on ACE-Step 1.5 and StreamDiffusion's ring-buffer architecture with TensorRT acceleration, it sustains up to 12.3 decoder completions per second for 60-second music on a single consumer GPU (RTX 5090), or 11.3 generations per second at our production ring-depth of 4. At these rates denoising parameters become viable as live performance controls, but the ring buffer propagates per-request changes only at its drain rate, a floor of S denoising steps. We contribute four mechanisms. (1) Per-slot heterogeneous denoise scheduling: each ring-buffer slot owns its timestep schedule, so a moving denoise slider is tracked without wiping the in-flight queue, where the upstream global-schedule design must rebuild and discard it. (2) Shared mutable per-step state, giving any parameter consulted at every solver step next-tick effect, bypassing ring-buffer drain. (3) Per-frame source blending: a sampling-time control on the standard SDE re-noise step, giving a framewise transformation-strength axis that complements scalar denoise scheduling. (4) Windowed VAE decode exploiting receptive-field analysis for an 8.0x decode speedup. Together these separate streaming-diffusion parameters into four propagation classes, by onset and convergence latency.",
+  "authors": [
+    "Ryan Fosdick"
+  ],
+  "published": "2026-05-27T15:57:20Z",
+  "updated": "2026-05-27T15:57:20Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.28657",
+  "abs_url": "https://arxiv.org/abs/2605.28657",
+  "fetched_at": "2026-07-19T14:18:41.872132Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.06627",
+  "title": "PianoCoRe: Combined and Refined Piano MIDI Dataset",
+  "summary": "Symbolic music datasets with matched scores and performances are essential for many music information retrieval (MIR) tasks. Yet, existing resources often cover a narrow range of composers, lack performance variety, omit note-level alignments, or use inconsistent naming formats. This work presents PianoCoRe, a large-scale piano MIDI dataset that unifies and refines major open-source piano corpora. The dataset contains 250,046 performances of 5,625 pieces written by 483 composers, totaling 21,763 h of performed music. PianoCoRe is released in tiered subsets to support different applications: from large-scale analysis and pre-training (PianoCoRe-C and deduplicated PianoCoRe-B) to expressive performance modeling with note-level score alignment (PianoCoRe-A/A*). The note-aligned subset, PianoCoRe-A, provides the largest open-source collection of 157,207 performances aligned to 1,591 scores to date. In addition to the dataset, the contributions are: (1) a MIDI quality classifier for detecting corrupted and score-like transcriptions and (2) RAScoP, an alignment refinement pipeline that cleans temporal alignment errors and interpolates missing notes. The analysis shows that the refinement reduces temporal noise and eliminates tempo outliers. Moreover, an expressive performance rendering model trained on PianoCoRe demonstrates improved robustness to unseen pieces compared to models trained on raw or smaller datasets. PianoCoRe provides a ready-to-use foundation for the next generation of expressive piano performance research.",
+  "authors": [
+    "Ilya Borovik"
+  ],
+  "published": "2026-05-07T17:41:07Z",
+  "updated": "2026-05-07T17:41:07Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.06627",
+  "abs_url": "https://arxiv.org/abs/2605.06627",
+  "fetched_at": "2026-07-19T14:17:07.971287Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

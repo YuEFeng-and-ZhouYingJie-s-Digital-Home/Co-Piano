@@ -1,0 +1,38 @@
+{
+  "arxiv_id": "2606.02147",
+  "title": "Multilingual Idioms in Sentences and Conversations Across High-, Medium-, and Low-Resource Languages",
+  "summary": "Idiomatic expressions pose a major challenge for multilingual NLP because their meanings shift between figurative and literal usage, often requiring context for accurate interpretation. Prior work has focused on high-resource languages typically evaluates isolated idiom-meaning questions, overlooking realistic discourse. We introduce MIDI, a multilingual idiom dataset spanning 3 high-, 3 medium-, and 12 low-resource languages, curated by native speakers. Unlike previous datasets, MIDI provides idioms embedded in both sentence-level and conversational contexts, capturing both literal and figurative readings. Benchmarking state-of-the-art models shows that idiom comprehension degrades in low-resource languages and that, in all resource tiers, literal interpretations are substantially harder than figurative ones. Conversational context improves performance but does not eliminate these disparities. Through controlled tests and interventions on hidden representations, we further separate memorization from reasoning, exposing core limitations of current models.",
+  "authors": [
+    "Saeed Almheiri",
+    "Bilal Elbouardi",
+    "Salsabila Zahirah Pranida",
+    "Irina Nikishina",
+    "Ashwath Rao B",
+    "Parameswari Krishnamurthy",
+    "Muhammad Cendekia Airlangga",
+    "Rifo Ahmad Genadi",
+    "Nguyen Phan Gia Bao",
+    "Amir Hossein Yari",
+    "Hawau Olamide Toyin",
+    "Nurdaulet Mukhituly",
+    "Mena Attia",
+    "Besher Hassan",
+    "Ahmad Fathan Hidayatullah",
+    "Tatsuki Kuribayashi",
+    "Haonan Li",
+    "Suma Bhat",
+    "Fajri Koto"
+  ],
+  "published": "2026-06-01T12:16:14Z",
+  "updated": "2026-06-01T12:16:14Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.02147",
+  "abs_url": "https://arxiv.org/abs/2606.02147",
+  "fetched_at": "2026-07-19T14:17:38.247352Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

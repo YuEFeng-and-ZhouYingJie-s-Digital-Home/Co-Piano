@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.13587",
+  "title": "From Prediction to Collaboration: Interactive Symbolic Music Analysis",
+  "summary": "Automatic symbolic music analysis has made substantial progress, yet existing systems are typically designed for a single mode of use, such as full-score prediction, and therefore do not match the broader range of operations that arise in analysis workflows, including partial completion, local correction, and iterative refinement. As a result, there remains a gap between strong benchmark models and systems that can support interactive analytical use. We present a unified framework for symbolic Roman-numeral (RN) analysis that narrows this gap by combining strong predictive performance with direct support for constrained completion and revision. The method is designed to provide a practical trade-off between accuracy and interactive responsiveness by computing expensive pretrained representations once and reusing them during iterative refinement, making powerful pretrained models more amenable to interactive settings. It supports complete score analysis, targeted revision of existing labels, and inference of missing annotations from partial context through a shared modeling framework. Experiments on Dilemmadata, the largest and most heterogeneous benchmark of its kind, show that the proposed approach is a strong RN-analysis baseline while also supporting masked completion from partial labels. Together with a prototype interface for multi-level candidate inspection and editing, these results position automatic RN analysis not only as a prediction problem, but also as a foundation for future interactive tools for music analysis.",
+  "authors": [
+    "Emmanouil Karystinaios",
+    "Johannes Hentschel",
+    "Markus Neuwirth",
+    "Gerhard Widmer"
+  ],
+  "published": "2026-07-15T08:28:43Z",
+  "updated": "2026-07-15T08:28:43Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13587",
+  "abs_url": "https://arxiv.org/abs/2607.13587",
+  "fetched_at": "2026-07-19T14:18:41.856332Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2606.02739",
+  "title": "EntangleCodec: A Unified Discrete Audio Tokenizer via Semantic-Acoustic Entanglement",
+  "summary": "Audio tokenizers serve as the discrete interface between continuous audio and Audio Language Models (ALMs), but existing tokenizers often struggle to support both understanding and generation. Reconstruction-oriented codecs preserve acoustic fidelity but lack rich semantics, while semantic-aware tokenizers typically rely on separate semantic and acoustic streams, introducing redundancy or misalignment. We propose \\textbf{EntangleCodec}, a unified discrete audio tokenizer that learns caption-aligned semantic-acoustic representations before quantization. By aligning audio with rich captions rather than ASR transcripts, EntangleCodec captures linguistic content, speaker identity, emotion, prosody, and acoustic scenes within a compact token stream. A flow-matching diffusion decoder further enables high-quality reconstruction across speech, music, and general audio. EntangleCodec achieves reconstruction quality competitive with specialized codecs, outperforms all codec-based baselines on audio understanding by up to \\textbf{+7.4\\%} on MMAR, and supports both TTS and TTA generation in a unified framework. Furthermore, EntangleCodec-based audio language models demonstrate strong scaling behavior: even at \\textit{0.6B} parameters, the model surpasses specialized continuous-representation LLMs with over \\textit{13B} parameters across three benchmarks using \\textbf{22$\\times$} fewer parameters; scaling to \\textit{8B} further establishes new state-of-the-art results on MMAR, highlighting that representation quality is as critical as model scale in audio language modeling. Code and model weights are available at https://github.com/luckyerr/EntangleCodec.",
+  "authors": [
+    "Hui Li",
+    "Yangfan Gao",
+    "Junlin Shang",
+    "Changhao Jiang",
+    "Tao Gui",
+    "Qi Zhang",
+    "Xuanjing Huang"
+  ],
+  "published": "2026-06-01T18:05:18Z",
+  "updated": "2026-06-01T18:05:18Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.02739",
+  "abs_url": "https://arxiv.org/abs/2606.02739",
+  "fetched_at": "2026-07-19T14:18:41.850596Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

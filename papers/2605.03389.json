@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.03389",
+  "title": "Near-field Wideband Multi-User Localization using NFMR-Net",
+  "summary": "This paper proposes a deep learning based method for wideband near-field multi-user localization. In particular, the proposed approach utilizes the Zadoff-Chu (ZC) sequence based pilots to mitigate the inter-user interference, which in turn aids the estimation of the multi-tap channel matrix. From this channel matrix, we extract the line-of-sight (LoS) array response based on the delay-tap energy profile. The LoS delay-tap is further refined using parabolic interpolation to obtain the coarse estimate of range parameter. Next, the extracted LoS array response is used to obtain the coarse angle estimate using 2D MUSIC algorithm. These coarse estimates are further refined using the near-field music refinement network (NFMR-Net), which involves separate sub-networks for range and angle estimations. Through numerical analysis, the proposed NFMR-Net is demonstrated to outperform conventional 2D MUSIC algorithm.",
+  "authors": [
+    "Pearl Hetul Shah",
+    "Srikar Sharma Sadhu",
+    "Praful D. Mankar"
+  ],
+  "published": "2026-05-05T05:50:12Z",
+  "updated": "2026-05-05T05:50:12Z",
+  "categories": [
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.03389",
+  "abs_url": "https://arxiv.org/abs/2605.03389",
+  "fetched_at": "2026-07-19T14:18:41.864018Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

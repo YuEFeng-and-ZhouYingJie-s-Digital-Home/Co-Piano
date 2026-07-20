@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2305.13758",
+  "title": "A study of audio mixing methods for piano transcription in violin-piano ensembles",
+  "summary": "While piano music transcription models have shown high performance for solo piano recordings, their performance degrades when applied to ensemble recordings. This study aims to analyze the impact of different data augmentation methods on piano transcription performance, specifically focusing on mixing techniques applied to violin-piano ensembles. We apply mixing methods that consider both harmonic and temporal characteristics of the audio. To create datasets for this study, we generated the PFVN-synth dataset, which contains 7 hours of violin-piano ensemble audio by rendering MIDI files and corresponding labels, and also collected unaccompanied violin recordings and mixed them with the MAESTRO dataset. We evaluated the transcription results on both synthesized and real audio recordings datasets.",
+  "authors": [
+    "Hyemi Kim",
+    "Jiyun Park",
+    "Taegyun Kwon",
+    "Dasaem Jeong",
+    "Juhan Nam"
+  ],
+  "published": "2023-05-23T07:19:18Z",
+  "updated": "2023-05-23T07:19:18Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2305.13758",
+  "abs_url": "https://arxiv.org/abs/2305.13758",
+  "fetched_at": "2026-07-19T14:18:41.861839Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

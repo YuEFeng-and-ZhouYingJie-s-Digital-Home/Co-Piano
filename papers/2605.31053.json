@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.31053",
+  "title": "AnchorSteer: Self-Discovered Concept Injection for Structure-Preserving Music Editing",
+  "summary": "Controllable music editing is to modify high-level attributes while strictly preserving rhythmic and melodic structures. However, this task is challenged by a semantic-structural entanglement: steering methods often degrade structure to achieve editing performance, while structural adaptors suppress semantic responsiveness. We propose AnchorSteer, a framework that disentangles this tension by coupling structural anchoring with self-discovered semantic steering. The proposed approach probes internal representations to extract interpretable, label-free concept vectors via a self-supervised reconstruction objective, isolating attributes without curated data. During editing, these portable, plug-and-play concept vectors are injected into diffusion hidden manifolds while a structural adaptor enforces consistency. Variants for unconditioned and conditioned injections are provided to balance robustness and semantic strength. Experiments on ZoME-Bench and subjective tests show that the proposed framework outperforms both steering-only and anchoring-only baselines, enabling significant semantic transformations with high-fidelity structural preservation.",
+  "authors": [
+    "Chih-Heng Chang",
+    "Keng-Seng Ho",
+    "Chih-Yu Tsai",
+    "Kuan-Lin Chen",
+    "Yi-Hsuan Yang",
+    "Jian-Jiun Ding"
+  ],
+  "published": "2026-05-29T09:25:55Z",
+  "updated": "2026-05-29T09:25:55Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.31053",
+  "abs_url": "https://arxiv.org/abs/2605.31053",
+  "fetched_at": "2026-07-19T14:18:41.871755Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

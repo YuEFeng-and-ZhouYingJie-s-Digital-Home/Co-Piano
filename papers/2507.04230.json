@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2507.04230",
+  "title": "High-Resolution Sustain Pedal Depth Estimation from Piano Audio Across Room Acoustics",
+  "summary": "Piano sustain pedal detection has previously been approached as a binary on/off classification task, limiting its application in real-world piano performance scenarios where pedal depth significantly influences musical expression. This paper presents a novel approach for high-resolution estimation that predicts continuous pedal depth values. We introduce a Transformer-based architecture that not only matches state-of-the-art performance on the traditional binary classification task but also achieves high accuracy in continuous pedal depth estimation. Furthermore, by estimating continuous values, our model provides musically meaningful predictions for sustain pedal usage, whereas baseline models struggle to capture such nuanced expressions with their binary detection approach. Additionally, this paper investigates the influence of room acoustics on sustain pedal estimation using a synthetic dataset that includes varied acoustic conditions. We train our model with different combinations of room settings and test it in an unseen new environment using a \"leave-one-out\" approach. Our findings show that the two baseline models and ours are not robust to unseen room conditions. Statistical analysis further confirms that reverberation influences model predictions and introduces an overestimation bias.",
+  "authors": [
+    "Kun Fang",
+    "Hanwen Zhang",
+    "Ziyu Wang",
+    "Ichiro Fujinaga"
+  ],
+  "published": "2025-07-06T03:40:54Z",
+  "updated": "2025-07-06T03:40:54Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.IR",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.04230",
+  "abs_url": "https://arxiv.org/abs/2507.04230",
+  "fetched_at": "2026-07-19T14:18:41.853555Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

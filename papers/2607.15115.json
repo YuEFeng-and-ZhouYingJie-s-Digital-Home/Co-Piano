@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.15115",
+  "title": "Don't Predict, Prioritize: Rethinking GPU Reliability Assessment",
+  "summary": "The reliability of Graphics Processing Units (GPUs) is a criticalbottleneck for modern large-scale AI infrastructure, where a sin-gle node failure can disrupt synchronous training jobs and causesignificant financial losses. While predictive maintenance is widelyused in other hardware domains, we demonstrate that accuratelypredicting the exact timing of GPU failures is inherently difficult.Through an in-depth analysis of telemetry data from a productioncluster, we find that major GPU failures, including Double Bit Er-rors (DBEs) and GPU Lost events, exhibit strong stochasticity andlow signal-to-noise ratios in time-series telemetry, which makesconventional time-based prediction ineffective. This insight motivates a paradigm shift: instead of attempting topredict the absolute timing of a failure, we propose a more robustapproach focused on ranking nodes by their relative failure risk. Wepropose HeaRank (Health Rank), a Learning-to-Rank (LTR) frame-work that leverages stable historical failure patterns to computea global risk ranking of GPU nodes. Evaluated on a production-scale cluster with thousands of GPUs, HeaRank achieves an AUCof 0.83, significantly outperforming both heuristic baselines andstate-of-the-art ranking algorithms. In online deployment, HeaRanksuccessfully captures 64% of future failures within the top 5% ofranked nodes, compared to only 21% by the incumbent productionsystem. These results suggest that relative risk ranking can serveas a robust alternative in environments where absolute failure pre-diction is inherently limited. Our work highlights the importanceof risk-aware scheduling and proactive resource management inmodern GPU clusters.",
+  "authors": [
+    "Difeng Ma",
+    "Changhua Pei",
+    "Yuanwei Lu",
+    "Quan Zhou",
+    "Zexin Wang",
+    "Yibo Zhu",
+    "Daxin Jiang",
+    "Dan Pei",
+    "Jingjing Li",
+    "Gaogang Xie"
+  ],
+  "published": "2026-07-16T15:24:47Z",
+  "updated": "2026-07-16T15:24:47Z",
+  "categories": [
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15115",
+  "abs_url": "https://arxiv.org/abs/2607.15115",
+  "fetched_at": "2026-07-19T14:17:07.976648Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,102 @@
+{
+  "aggregation": {
+    "n_measures": 8,
+    "global": {
+      "avg_score": 92.8,
+      "min_score": 89.0,
+      "max_score": 95.0,
+      "avg_pitch_accuracy": 0.875,
+      "total_errors": 4
+    },
+    "error_hotspots": [
+      {
+        "measure": 1,
+        "n_errors": 1,
+        "score": 93.5,
+        "errors": [
+          {
+            "type": "wrong",
+            "ref_pitch": 64,
+            "user_pitch": 63,
+            "ref_note": 4,
+            "user_note": 3
+          }
+        ]
+      },
+      {
+        "measure": 2,
+        "n_errors": 1,
+        "score": 92.0,
+        "errors": [
+          {
+            "type": "wrong",
+            "ref_pitch": 64,
+            "user_pitch": 63,
+            "ref_note": 4,
+            "user_note": 3
+          }
+        ]
+      },
+      {
+        "measure": 3,
+        "n_errors": 1,
+        "score": 90.5,
+        "errors": [
+          {
+            "type": "wrong",
+            "ref_pitch": 64,
+            "user_pitch": 63,
+            "ref_note": 4,
+            "user_note": 3
+          }
+        ]
+      }
+    ],
+    "weak_measures": [
+      {
+        "measure": 1,
+        "score": 89.0,
+        "errors": 1
+      },
+      {
+        "measure": 2,
+        "score": 90.5,
+        "errors": 1
+      },
+      {
+        "measure": 3,
+        "score": 92.0,
+        "errors": 1
+      }
+    ],
+    "strong_measures": [
+      {
+        "measure": 1,
+        "score": 95.0
+      },
+      {
+        "measure": 2,
+        "score": 94.5
+      },
+      {
+        "measure": 3,
+        "score": 94.0
+      }
+    ],
+    "timing_trend": {
+      "mean_ms": -6.3,
+      "std_ms": 10.8,
+      "drift": "slowing down"
+    },
+    "overall_judgment": "良好,小幅修正后即可"
+  },
+  "prompt": {
+    "system": "你是一位有 30 年经验的古典钢琴教师。你刚听完整首曲子,现在给出一份段落级 + 全曲级的综合反馈。",
+    "user": "## 教学场景\n学生刚完成:Minuet in G(Bach,Baroque)\n总小节数:8\n整体判断:**良好,小幅修正后即可**\n\n## 全曲统计\n- 平均分:92.8 / 100(范围 89.0-95.0)\n- 平均错音率:87.5%\n- 总错音数:4\n- 节奏趋势:slowing down(均值 -6.3ms, 稳定性 std 10.8ms)\n\n## 错音热点 TOP 3\n  - 小节 1: 1 个错音(score 93.5)\n  - 小节 2: 1 个错音(score 92.0)\n  - 小节 3: 1 个错音(score 90.5)\n\n## 弱项小节 TOP 3\n  - 小节 1: score 89.0, 1 错音\n  - 小节 2: score 90.5, 1 错音\n  - 小节 3: score 92.0, 1 错音\n\n## 强项小节 TOP 3\n  - 小节 1: score 95.0\n  - 小节 2: score 94.5\n  - 小节 3: score 94.0\n\n## 你的任务\n写一份 250-400 字的综合反馈,分三段:\n1. **肯定**(100 字):突出强项小节,具体到哪段做得好\n2. **改进建议**(150 字):针对错音热点和弱项小节,具体到小节号和原因\n3. **下一步推荐**(100 字):根据整体判断,推荐下一步(继续精炼 / 改练其他小节 / 进入新曲)\n"
+  },
+  "piece": {
+    "name": "Minuet in G",
+    "composer": "Bach",
+    "period": "Baroque"
+  }
+}

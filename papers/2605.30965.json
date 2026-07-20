@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.30965",
+  "title": "ImmersiveTTS: Environment-Aware Text-to-Speech with Multimodal Diffusion Transformer and Domain-Specific Representation Alignment",
+  "summary": "Recent advancements in text-guided audio generation have yielded promising results in diverse domains, including sound effects, speech, and music. However, jointly generating speech with environmental audio remains challenging due to the inherent disparities in their acoustic patterns and temporal dynamics. We propose ImmersiveTTS, an environment-aware text-to-speech (TTS) model that generates natural speech seamlessly integrated within environmental contexts by explicitly modeling cross-modal interactions. Our model builds on a multimodal diffusion transformer and fuses transcript-aligned speech latent with text-conditioned environmental context via joint attention. To enhance semantic consistency, we introduce a domain-specific representation alignment objective tailored to environment-aware TTS, leveraging complementary self-supervised representations from speech and audio encoders. Experimental results show that ImmersiveTTS achieves higher naturalness, intelligibility, and audio fidelity than existing approaches across objective metrics and human listening tests.",
+  "authors": [
+    "Jun-Hak Yun",
+    "Seung-Bin Kim",
+    "Seong-Whan Lee"
+  ],
+  "published": "2026-05-29T07:58:54Z",
+  "updated": "2026-05-29T07:58:54Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.30965",
+  "abs_url": "https://arxiv.org/abs/2605.30965",
+  "fetched_at": "2026-07-19T14:18:41.871872Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

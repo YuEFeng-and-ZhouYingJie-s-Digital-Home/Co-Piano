@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2604.27436",
+  "title": "BUT System Description for CHiME-9 MCoRec Challenge",
+  "summary": "Multi-talker automatic speech recognition (ASR) in conversational recordings remains an open problem, particularly in scenarios with large portion of overlapping speech where identifying and transcribing a target speaker is difficult from audio alone. Visual cues can help resolve speaker ambiguity, yet their integration into long-context audio-visual (AV) ASR systems has been limited. The CHiME-9 MCoRec task addresses this challenge by requiring transcription of audio-visual recordings of heavily-overlapped parallel conversations, followed by clustering the participants into conversational groups. In this work, we present the BUT system based on a long-context target-speaker AV-ASR model capable of processing long-form recordings in a single decoding pass. Our architecture conditions a pre-trained NVIDIA Parakeet-v2 ASR model on visual representations from a pre-trained AV-HuBERT model. To cluster participants into conversation groups, we employ Qwen3.5-122B LLM to estimate transcript topic similarity followed by hierarchical agglomerative clustering. On the MCoRec development set, the proposed system achieves 33.7% WER and a clustering F1 score of 0.97, improving over the official baseline by 16.2% WER and 0.15 F1 absolute. On the eval set, our team ranked second, being 0.16% WER and 0.5% F1 worse than the best system.",
+  "authors": [
+    "Dominik Klement",
+    "Alexander Polok",
+    "Nguyen Hai Phong",
+    "Prachi Singh",
+    "Lukáš Burget"
+  ],
+  "published": "2026-04-30T05:21:09Z",
+  "updated": "2026-04-30T05:21:09Z",
+  "categories": [
+    "eess.AS",
+    "eess.IV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.27436",
+  "abs_url": "https://arxiv.org/abs/2604.27436",
+  "fetched_at": "2026-07-19T14:18:41.858933Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

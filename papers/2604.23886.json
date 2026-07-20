@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.23886",
+  "title": "MUSIC: Learning Muscle-Driven Dexterous Hand Control",
+  "summary": "We present a data-driven approach for physics-based, muscle-driven dexterous control that enables musculoskeletal hands to perform precise piano playing for novel pieces of music outside the reference dataset. Our approach combines high-frequency muscle-level control with low-frequency latent-space coordination in a hierarchical architecture. At the low level, general single-hand policies are trained via reinforcement learning to generate dynamic muscle-tendon activations while tracking trajectories from a large reference motion dataset. The resulting tracking policies are then distilled into variational autoencoder (VAE) models, yielding smooth and structured latent spaces that abstract away low-level muscle dynamics. For the high level, we train piece-specific policies to operate in this latent space, coordinating bimanual motions based on specific goals, denoted by note events extracted from given musical scores, to synthesize performances beyond the reference data. In addition, we present an enhanced musculoskeletal hand model that supports fine control of fingers for accurate low-level motion tracking and diverse high-level motion synthesis. We evaluate the control pipeline of our approach on a diverse piano repertoire spanning multiple musical styles and technical demands. Results demonstrate that our approach can synthesize coordinated bimanual motions with accurate key presses, and achieve the state-of-the-art performance of piano playing in physics-based dexterous control. We also show that our musculoskeletal hand model demonstrates superior biomechanical stability and tracking precision compared to the existing model, and validate that our musculoskeletal hand model and muscle-driven controller can generate physiologically plausible activation patterns that align with human electromyography (EMG) recordings.",
+  "authors": [
+    "Pei Xu",
+    "Yufei Ye",
+    "Shuchun Sun",
+    "Yu Ding",
+    "Elizabeth Schumann",
+    "C. Karen Liu"
+  ],
+  "published": "2026-04-26T21:05:34Z",
+  "updated": "2026-04-26T21:05:34Z",
+  "categories": [
+    "cs.GR",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.23886",
+  "abs_url": "https://arxiv.org/abs/2604.23886",
+  "fetched_at": "2026-07-19T14:17:07.971693Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

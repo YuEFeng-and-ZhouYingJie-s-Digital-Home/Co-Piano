@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.08526",
+  "title": "A Quantized Native Runtime for On-Device Semantic Audio Generation",
+  "summary": "Semantic audio applications increasingly require controllable generation on commodity and embedded hardware rather than through framework-heavy datacenter stacks. We present \\textit{aria}, a dependency-free native runtime that runs the complete text-to-music pipeline of Stable Audio~3 (SA3) on ordinary GPUs, CPU-only machines, and a Raspberry~Pi~5, with no Python or deep-learning framework underneath. Our main contribution is a study of quantization: running the model at lower numerical precision to fit tight memory budgets, saving memory in place rather than adding to it. Because the runtime owns every internal tensor, it also exposes activation steering, a low-cost way to steer what the model generates. We judge the quality cost with three independent measures of the output (prompt adherence, overall audio quality, taste preservation), each compared against the ordinary variation between random seeds. Eight-bit precision shows no measurable quality loss on any measure while sharply cutting memory, and it is the fastest mode on the GPU; four-bit adds a small, bounded cost but shrinks the footprint enough to run the $1.2$-billion-parameter model on an $8$\\,GB Pi. Against the official implementation, aria matches or exceeds generation speed and starts about seven times faster. A case study of the steering interface generates music carrying taste associations (\\emph{sonic seasoning}), with genuine but bounded control for a subset of attributes. These results make a compact, quantized runtime with built-in control a practical basis for on-device semantic audio in Internet-of-Sounds settings. The \\textit{aria} runtime is released at https://github.com/matteospanio/aria.",
+  "authors": [
+    "Matteo Spanio",
+    "Antonio Rodà"
+  ],
+  "published": "2026-07-09T14:21:34Z",
+  "updated": "2026-07-09T14:21:34Z",
+  "categories": [
+    "cs.SD",
+    "cs.PF"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.08526",
+  "abs_url": "https://arxiv.org/abs/2607.08526",
+  "fetched_at": "2026-07-19T14:18:41.869536Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

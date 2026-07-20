@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.10627",
+  "title": "Profy: Interpretable Visualization of Expertise-Dependent Motor Skills Toward Supporting Piano Practice",
+  "summary": "The quality of piano performance depends on nuanced timing, articulation, and dynamic control, but practice feedback is often summary-based and hard to act on. We introduce Profy, a weakly supervised system that learns from take-level labels derived from aggregated listener ratings (expert-labeled vs. amateur-labeled) to produce time-aligned highlights for review during piano practice. We collected synchronized 1 kHz key-motion and audio from 73 pianists and used 1,083 valid takes for modeling and evaluation. The model outputs clip-level predictions together with evidence scores on a shared resampled model time base for visualization. On 20 amateur clips from short technique studies annotated by 21 expert pianists, the displayed highlight score aligns with passages that expert pianists marked for review despite training without localized labels (Pearson r=0.61, ROC-AUC 0.75). Rather than summarizing a take with a single global score, Profy helps learners decide where to inspect next by supporting scrubbing, looping, and focused replay of time-localized passages associated with expert-amateur differences.",
+  "authors": [
+    "Kazuki Kawamura",
+    "Fujiki Nakamura",
+    "Hayato Nishioka",
+    "Momoko Shioki",
+    "Shinichi Furuya",
+    "Jun Rekimoto"
+  ],
+  "published": "2026-06-09T09:28:46Z",
+  "updated": "2026-06-09T09:28:46Z",
+  "categories": [
+    "cs.HC",
+    "cs.LG",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.10627",
+  "abs_url": "https://arxiv.org/abs/2606.10627",
+  "fetched_at": "2026-07-19T14:17:07.970046Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

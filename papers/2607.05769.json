@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.05769",
+  "title": "LEGATO 2: Toward Multimodal Sheet Music Recognition and Understanding",
+  "summary": "We propose a novel pipeline, Legato 2, for extracting symbolic notation and semantic knowledge from images of sheet music. Legato 2 features the first large-scale neural model for optical music recognition (OMR) to operate sequentially on a system-by-system basis, following the horizontal lines of notation as they are read on the page, rather than treating the page as an undifferentiated image, enabling better scaling to arbitrarily long inputs. It is also the first OMR model capable of generating symbolic transcriptions that include embedded textual content, such as titles and annotations. The pipeline combines system-level segmentation with an autoregressive vision-LM to capture both local notation details and score structure. Across multiple datasets, Legato 2 consistently outperforms prior state of the art. We also show that symbolic transcriptions complement visual inputs for frontier language models, improving their interpretation of dense musical documents. Legato 2 establishes new state-of-the-art performance in both OMR and downstream sheet music understanding.",
+  "authors": [
+    "Guang Yang",
+    "Brian Siyuan Zheng",
+    "Victoria Ebert",
+    "Noah A. Smith"
+  ],
+  "published": "2026-07-07T02:47:13Z",
+  "updated": "2026-07-07T02:47:13Z",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.05769",
+  "abs_url": "https://arxiv.org/abs/2607.05769",
+  "fetched_at": "2026-07-19T14:18:41.856580Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

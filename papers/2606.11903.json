@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.11903",
+  "title": "Snapping Matters: Context-Aware Onset Refinement for Automatic Music Transcription",
+  "summary": "Precise note-level annotations are critical for training automatic music transcription (AMT) systems, in particular note-onset labels, which form a core component of many recent AMT systems. However, high-quality annotations for real-world recordings are scarce. Sequence-level score--audio alignment methods such as dynamic time warping provide only coarse correspondence, making a local refinement step necessary. This refinement step, known as snapping, adjusts aligned score onsets using peaks in a neural onset posteriorgram and often determines whether weakly aligned score--audio pairs become usable training data at all. Despite its practical importance, snapping is typically treated as a simple post-processing heuristic and implemented with greedy local decisions. We present a systematic analysis of snapping strategies for training instrument-agnostic transcribers, demonstrating that snapping is essential for learning from weakly aligned data. Building on this, we formulate snapping as a per-pitch assignment problem and solve it via bipartite graph matching, yielding context-aware onset decisions under overlapping refinement windows and uncertain initial alignments. Extensive cross-dataset experiments across piano, chamber, and orchestral recordings show improved onset alignment and transcription accuracy over greedy snapping, with gains increasing for wider snapping windows and coarser initial alignments. Qualitative examples are provided on our project page: https://abhirupsaha8.github.io",
+  "authors": [
+    "Abhirup Saha",
+    "Hans-Ulrich Berendes",
+    "Meinard Müller",
+    "Ben Maman"
+  ],
+  "published": "2026-06-10T10:30:55Z",
+  "updated": "2026-06-10T10:30:55Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.11903",
+  "abs_url": "https://arxiv.org/abs/2606.11903",
+  "fetched_at": "2026-07-19T14:17:07.969886Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

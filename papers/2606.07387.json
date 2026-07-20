@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.07387",
+  "title": "Making the Most of Limited Data: Score-Aware Training for Text-to-Music Generation",
+  "summary": "State-of-the-art text-to-music generation systems rely on massive proprietary datasets and industrial-scale compute, making it impossible to disentangle architectural contributions from resource advantages. We propose \\textit{score-aware training}, which treats audio-caption alignment score as a direct supervision signal throughout the pipeline. Rather than discarding low-scoring segments, we repurpose them via a CLAP-conditioned Beta noise timestep schedule that routes them to high-noise training regimes, acting as an effective implicit regularizer. Complementarily, segment-level filtering removes the most misaligned examples, and a two-stage caption procedure bridges the distribution gap between verbose training captions and concise inference prompts. A REPA auxiliary loss further transfers structured semantic knowledge from pretrained CLAP and MuQ encoders without additional data. Our 450M-parameter FluxAudio-based system, submitted to the ICME 2026 ATTM Grand Challenge Efficiency Track, ranked 2nd across both tracks in the objective evaluation and 3rd in the Efficiency Track in the final MOS evaluation.",
+  "authors": [
+    "Yun-Chen Cheng",
+    "Tzu-Hung Huang",
+    "Chih-Pin Tan"
+  ],
+  "published": "2026-06-05T15:24:36Z",
+  "updated": "2026-06-05T15:24:36Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.07387",
+  "abs_url": "https://arxiv.org/abs/2606.07387",
+  "fetched_at": "2026-07-19T14:18:41.850233Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

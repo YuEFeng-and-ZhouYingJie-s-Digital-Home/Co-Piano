@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2510.06266",
+  "title": "Language models for longitudinal analysis of abusive content in Billboard Music Charts",
+  "summary": "There is no doubt that there has been a drastic increase in abusive and sexually explicit content in music, particularly in Billboard Music Charts. However, there is a lack of studies that validate the trend for effective policy development, as such content has harmful behavioural changes in children and youths. In this study, we utilise deep learning methods to analyse songs (lyrics) from Billboard Charts of the United States in the last seven decades. We provide a longitudinal study using deep learning and language models and review the evolution of content using sentiment analysis and abuse detection, including sexually explicit content. Our results show a significant rise in explicit content in popular music from 1990 onwards. Furthermore, we find an increasing prevalence of songs with lyrics containing profane, sexually explicit, and otherwise inappropriate language. The longitudinal analysis of the ability of language models to capture nuanced patterns in lyrical content, reflecting shifts in societal norms and language use over time.",
+  "authors": [
+    "Rohitash Chandra",
+    "Yathin Suresh",
+    "Divyansh Raj Sinha",
+    "Sanchit Jindal"
+  ],
+  "published": "2025-10-06T01:59:21Z",
+  "updated": "2025-10-06T01:59:21Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.06266",
+  "abs_url": "https://arxiv.org/abs/2510.06266",
+  "fetched_at": "2026-07-19T14:18:41.865142Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

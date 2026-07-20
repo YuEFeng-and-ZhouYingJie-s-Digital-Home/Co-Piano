@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.18631",
+  "title": "Towards Revised Tempo Indications for Beethoven's Piano and Cello Sonatas: Czerny, Moscheles, Kolisch, and Recorded Practice 1930-2012",
+  "summary": "Historical metronome indications for Beethoven's five piano and cello sonatas (as transmitted by Czerny, Moscheles, and Kolisch), have long been regarded as problematic by performers and scholars alike. This paper presents the first systematic empirical assessment of those indications against a corpus of over one hundred movement-level recordings spanning 1930--2012, encompassing first, second, and third movements across all five sonatas (Op.~5 Nos.~1 and~2; Op.~69; Op.~102 Nos.~1 and~2). The core findings are threefold. First, Czerny's and Moscheles's markings are consistently and substantially exceeded by the entire recording corpus: gaps of 15--39\\% are documented across movements, with the largest divergences in slow Adagio movements and the smallest in fast Allegro finales. Second, Kolisch's 1943 markings align considerably more closely with recorded practice than either Czerny's or Moscheles's, a striking result given that Kolisch was reasoning without corpus data. Third, the central Allegro tempo traditions for each movement are stable across eight decades; not because all performers play alike, but because three coexisting slow, mid-range, and fast traditions persist simultaneously, with the mid-range dominant throughout. Building on these findings, this paper proposes a set of revised tempo indications grounded in the statistical modal tempi of the corpus, presented as ranges reflecting the documented spectrum of expert interpretive practice rather than single prescriptive values. These indications are offered not as claims about Beethoven's intentions but as evidence-based reference points for performers and scholars navigating the gap between historical prescription and performable reality.",
+  "authors": [
+    "Ignasi Sole"
+  ],
+  "published": "2026-04-18T15:51:55Z",
+  "updated": "2026-04-18T15:51:55Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.18631",
+  "abs_url": "https://arxiv.org/abs/2604.18631",
+  "fetched_at": "2026-07-19T14:18:41.871015Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

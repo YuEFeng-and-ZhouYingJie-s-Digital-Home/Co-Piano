@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.24216",
+  "title": "Digital Revival: Acoustic Documentation and Digital Reactivation of Historical Woodwind Instruments",
+  "summary": "Historical woodwind instruments exhibit complex acoustic behaviors that are central to their musical, organological, and cultural significance. However, due to material fragility, aging, and strict conservation requirements, many original instruments held in museum collections can no longer be played. As a result, their acoustic identity remains insufficiently documented, limiting both acoustical research and historically informed performance practice. Digital Revival is an ongoing research project developed in close collaboration with the Rijksmuseum (Amsterdam) and the Kunstmuseum Den Haag. The project investigates how controlled, non-invasive acoustic sampling and digital sound modeling can be used to document, preserve, and reactivate the sonic characteristics of historical woodwind instruments while fully respecting conservation constraints. Recording sessions are designed in consultation with conservators and instrument specialists and combine performance-informed excitation, high-resolution audio capture, and spectral analysis to document timbral, dynamic, and articulatory features. The resulting datasets function both as analytical resources and as playable digital instruments, enabling comparative study of spectral envelopes, transient behavior, and response characteristics across registers and playing techniques. Performer interaction is explored through electronic wind instruments (EWI), allowing real-time control of historically derived sound material. By integrating musical acoustics, conservation science, and artistic research, Digital Revival proposes a sustainable framework for extending the acoustic presence of historical instruments beyond the museum context, supporting research, education, and contemporary performance without compromising the physical integrity of the original artifacts.",
+  "authors": [
+    "Lior Arbel",
+    "Itai Weissman"
+  ],
+  "published": "2026-06-23T07:01:45Z",
+  "updated": "2026-06-23T07:01:45Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.24216",
+  "abs_url": "https://arxiv.org/abs/2606.24216",
+  "fetched_at": "2026-07-19T14:18:41.880322Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

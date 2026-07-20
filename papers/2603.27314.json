@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2603.27314",
+  "title": "TokenDance: Token-to-Token Music-to-Dance Generation with Bidirectional Mamba",
+  "summary": "Music-to-dance generation has broad applications in virtual reality, dance education, and digital character animation. However, the limited coverage of existing 3D dance datasets confines current models to a narrow subset of music styles and choreographic patterns, resulting in poor generalization to real-world music. Consequently, generated dances often become overly simplistic and repetitive, substantially degrading expressiveness and realism. To tackle this problem, we present TokenDance, a two-stage music-to-dance generation framework that explicitly addresses this limitation through dual-modality tokenization and efficient token-level generation. In the first stage, we discretize both dance and music using Finite Scalar Quantization, where dance motions are factorized into upper and lower-body components with kinematic-dynamic constraints, and music is decomposed into semantic and acoustic features with dedicated codebooks to capture choreography-specific structures. In the second stage, we introduce a Local-Global-Local token-to-token generator built on a Bidirectional Mamba backbone, enabling coherent motion synthesis, strong music-dance alignment, and efficient non-autoregressive inference. Extensive experiments demonstrate that TokenDance achieves overall state-of-the-art (SOTA) performance in both generation quality and inference speed, highlighting its effectiveness and practical value for real-world music-to-dance applications.",
+  "authors": [
+    "Ziyue Yang",
+    "Kaixing Yang",
+    "Xulong Tang"
+  ],
+  "published": "2026-03-28T15:38:14Z",
+  "updated": "2026-03-28T15:38:14Z",
+  "categories": [
+    "cs.AI",
+    "cs.CV",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.27314",
+  "abs_url": "https://arxiv.org/abs/2603.27314",
+  "fetched_at": "2026-07-19T14:18:41.844200Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

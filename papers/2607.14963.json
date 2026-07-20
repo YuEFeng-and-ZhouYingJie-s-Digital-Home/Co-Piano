@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.14963",
+  "title": "Umbrella theorems for time-frequency representations",
+  "summary": "An uncertainty principle due to H.S. Shapiro, the so-called Umbrella Theorem, asserts that there is no square integrable function uniformly dominating all the elements of an orthonormal family in $L^2(\\mathbb{R})$ and their Fourier transforms, unless the sequence is finite. In this paper we present some results on Umbrella Theorems in $L^2(\\mathbb{R}^d)$ related to time-frequency representations. We further extend the analysis to the case of $L^2(\\mathbb{R}^+)$, by means of the Mellin transform.",
+  "authors": [
+    "Paolo Boggiatto",
+    "Chiara Boiti",
+    "Alessandro Oliaro"
+  ],
+  "published": "2026-07-16T13:14:42Z",
+  "updated": "2026-07-16T13:14:42Z",
+  "categories": [
+    "math.FA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14963",
+  "abs_url": "https://arxiv.org/abs/2607.14963",
+  "fetched_at": "2026-07-19T14:17:38.254350Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

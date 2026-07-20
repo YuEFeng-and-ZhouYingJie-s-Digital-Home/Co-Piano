@@ -1,0 +1,33 @@
+spawn ssh -p 29955 -o StrictHostKeyChecking=no -o ConnectTimeout=8 root@connect.bjb2.seetacloud.com
+root@connect.bjb2.seetacloud.com's password: 
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.0-78-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Sun Jul 19 22:27:27 2026 from 127.0.0.1
++--------------------------------------------------AutoDL--------------------------------------------------------+
+[32m目录说明:[0m
+╔═════════════════╦════════╦════╦═════════════════════════════════════════════════════════════════════════╗
+║目录             ║名称    ║速度║说明                                                                     ║
+╠═════════════════╬════════╬════╬═════════════════════════════════════════════════════════════════════════╣
+║/                ║系 统 盘║一般║实例关机数据不会丢失，可存放代码等。会随保存镜像一起保存。               ║
+║/root/autodl-tmp ║数 据 盘║ 快 ║实例关机数据不会丢失，可存放读写IO要求高的数据。但不会随保存镜像一起保存 ║
+╚═════════════════╩════════╩════╩═════════════════════════════════════════════════════════════════════════╝
+[32mCPU[0m ：16 核心
+[32m内存[0m：120 GB
+[32mGPU [0m：NVIDIA GeForce RTX 4090, 1
+[32m存储[0m：
+[32m  系 统 盘/               [0m：92% 28G/30G
+[32m  数 据 盘/root/autodl-tmp[0m：1% 12M/250G
++----------------------------------------------------------------------------------------------------------------+
+[31m*注意: [0m
+[31m1.系统盘较小请将大的数据存放于数据盘或文件存储中，重置系统时数据盘和文件存储中的数据不受影响[0m
+[31m2.清理系统盘请参考：https://www.autodl.com/docs/qa1/[0m
+[31m3.终端中长期执行命令请使用screen等工具开后台运行，确保程序不受SSH连接中断影响：https://www.autodl.com/docs/daemon/[0m
+[?2004hroot@autodl-container-b1dw70wevm-f70ef6d1:~# 

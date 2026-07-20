@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2511.13987",
+  "title": "Artificial Intelligence Agents in Music Analysis: An Integrative Perspective Based on Two Use Cases",
+  "summary": "This paper presents an integrative review and experimental validation of artificial intelligence (AI) agents applied to music analysis and education. We synthesize the historical evolution from rule-based models to contemporary approaches involving deep learning, multi-agent architectures, and retrieval-augmented generation (RAG) frameworks. The pedagogical implications are evaluated through a dual-case methodology: (1) the use of generative AI platforms in secondary education to foster analytical and creative skills; (2) the design of a multiagent system for symbolic music analysis, enabling modular, scalable, and explainable workflows. Experimental results demonstrate that AI agents effectively enhance musical pattern recognition, compositional parameterization, and educational feedback, outperforming traditional automated methods in terms of interpretability and adaptability. The findings highlight key challenges concerning transparency, cultural bias, and the definition of hybrid evaluation metrics, emphasizing the need for responsible deployment of AI in educational environments. This research contributes to a unified framework that bridges technical, pedagogical, and ethical considerations, offering evidence-based guidance for the design and application of intelligent agents in computational musicology and music education.",
+  "authors": [
+    "Antonio Manuel Martínez-Heredia",
+    "Dolores Godrid Rodríguez",
+    "Andrés Ortiz García"
+  ],
+  "published": "2025-11-17T23:46:47Z",
+  "updated": "2025-11-17T23:46:47Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.13987",
+  "abs_url": "https://arxiv.org/abs/2511.13987",
+  "fetched_at": "2026-07-19T14:18:41.864876Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

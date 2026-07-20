@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2507.00466",
+  "title": "Beat and Downbeat Tracking in Performance MIDI Using an End-to-End Transformer Architecture",
+  "summary": "Beat tracking in musical performance MIDI is a challenging and important task for notation-level music transcription and rhythmical analysis, yet existing methods primarily focus on audio-based approaches. This paper proposes an end-to-end transformer-based model for beat and downbeat tracking in performance MIDI, leveraging an encoder-decoder architecture for sequence-to-sequence translation of MIDI input to beat annotations. Our approach introduces novel data preprocessing techniques, including dynamic augmentation and optimized tokenization strategies, to improve accuracy and generalizability across different datasets. We conduct extensive experiments using the A-MAPS, ASAP, GuitarSet, and Leduc datasets, comparing our model against state-of-the-art hidden Markov models (HMMs) and deep learning-based beat tracking methods. The results demonstrate that our model outperforms existing symbolic music beat tracking approaches, achieving competitive F1-scores across various musical styles and instruments. Our findings highlight the potential of transformer architectures for symbolic beat tracking and suggest future integration with automatic music transcription systems for enhanced music analysis and score generation.",
+  "authors": [
+    "Sebastian Murgul",
+    "Michael Heizmann"
+  ],
+  "published": "2025-07-01T06:27:42Z",
+  "updated": "2025-07-01T06:27:42Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.00466",
+  "abs_url": "https://arxiv.org/abs/2507.00466",
+  "fetched_at": "2026-07-19T14:18:41.865937Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2406.14850",
+  "title": "DExter: Learning and Controlling Performance Expression with Diffusion Models",
+  "summary": "In the pursuit of developing expressive music performance models using artificial intelligence, this paper introduces DExter, a new approach leveraging diffusion probabilistic models to render Western classical piano performances. In this approach, performance parameters are represented in a continuous expression space and a diffusion model is trained to predict these continuous parameters while being conditioned on the musical score. Furthermore, DExter also enables the generation of interpretations (expressive variations of a performance) guided by perceptually meaningful features by conditioning jointly on score and perceptual feature representations. Consequently, we find that our model is useful for learning expressive performance, generating perceptually steered performances, and transferring performance styles. We assess the model through quantitative and qualitative analyses, focusing on specific performance metrics regarding dimensions like asynchrony and articulation, as well as through listening tests comparing generated performances with different human interpretations. Results show that DExter is able to capture the time-varying correlation of the expressive parameters, and compares well to existing rendering models in subjectively evaluated ratings. The perceptual-feature-conditioned generation and transferring capabilities of DExter are verified by a proxy model predicting perceptual characteristics of differently steered performances.",
+  "authors": [
+    "Huan Zhang",
+    "Shreyan Chowdhury",
+    "Carlos Eduardo Cancino-Chacón",
+    "Jinhua Liang",
+    "Simon Dixon",
+    "Gerhard Widmer"
+  ],
+  "published": "2024-06-21T03:42:23Z",
+  "updated": "2024-06-21T03:42:23Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2406.14850",
+  "abs_url": "https://arxiv.org/abs/2406.14850",
+  "fetched_at": "2026-07-19T14:18:41.861600Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

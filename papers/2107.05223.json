@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2107.05223",
+  "title": "BERT-like Pre-training for Symbolic Piano Music Classification Tasks",
+  "summary": "This article presents a benchmark study of symbolic piano music classification using the masked language modelling approach of the Bidirectional Encoder Representations from Transformers (BERT). Specifically, we consider two types of MIDI data: MIDI scores, which are musical scores rendered directly into MIDI with no dynamics and precisely aligned with the metrical grid notated by its composer and MIDI performances, which are MIDI encodings of human performances of musical scoresheets. With five public-domain datasets of single-track piano MIDI files, we pre-train two 12-layer Transformer models using the BERT approach, one for MIDI scores and the other for MIDI performances, and fine-tune them for four downstream classification tasks. These include two note-level classification tasks (melody extraction and velocity prediction) and two sequence-level classification tasks (style classification and emotion classification). Our evaluation shows that the BERT approach leads to higher classification accuracy than recurrent neural network (RNN)-based baselines.",
+  "authors": [
+    "Yi-Hui Chou",
+    "I-Chun Chen",
+    "Chin-Jui Chang",
+    "Joann Ching",
+    "Yi-Hsuan Yang"
+  ],
+  "published": "2021-07-12T07:03:57Z",
+  "updated": "2024-04-14T03:40:35Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2107.05223",
+  "abs_url": "https://arxiv.org/abs/2107.05223",
+  "fetched_at": "2026-07-19T14:18:41.862412Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

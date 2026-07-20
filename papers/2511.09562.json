@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2511.09562",
+  "title": "WaveRoll: JavaScript Library for Comparative MIDI Piano-Roll Visualization",
+  "summary": "WaveRoll is an interactive JavaScript library that enables comparative visualization and synchronized playback of multiple MIDI piano rolls on a browser. It addresses a specific evaluation need in Automatic Music Transcription (AMT), contrasting multiple MIDI outputs produced from the same input. The library displays multiple MIDI tracks on a single, time-aligned grid with synchronized audio, allowing users to compare pitch and timing, identify missed or extra notes, and observe onset and offset differences, as well as section-level patterns. We expect that such comparisons would assist in model evaluation and error analysis, and help readers to understand the model behavior better. The open-source library is available at https://github.com/crescent-stdio/wave-roll",
+  "authors": [
+    "Hannah Park",
+    "Dasaem Jeong"
+  ],
+  "published": "2025-11-01T12:09:04Z",
+  "updated": "2025-11-01T12:09:04Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.09562",
+  "abs_url": "https://arxiv.org/abs/2511.09562",
+  "fetched_at": "2026-07-19T14:18:41.847924Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

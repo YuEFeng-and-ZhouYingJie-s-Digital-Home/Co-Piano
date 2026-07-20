@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2507.04963",
+  "title": "Modeling the Difficulty of Saxophone Music",
+  "summary": "In learning music, difficulty is an important factor in choice of repertoire, choice of tempo, and structure of practice. These choices are typically done with the guidance of a teacher; however, not all learners have access to one. While piano and strings have had some attention devoted to automated difficulty estimation, wind instruments have so far been under-served. In this paper, we propose a method for estimating the difficulty of pieces for winds and implement it for the tenor saxophone. We take the cost-of-traversal approach, modelling the part as a sequence of transitions -- note pairs. We estimate transition costs from newly collected recordings of trill speeds, comparing representations of saxophone fingerings at various levels of expert input. We then compute and visualise the cost of the optimal path through the part, at a given tempo. While we present this model for the tenor saxophone, the same pipeline can be applied to other woodwinds, and our experiments show that with appropriate feature design, only a small proportion of possible trills is needed to estimate the costs well. Thus, we present a practical way of diversifying the capabilities of MIR in music education to the wind family of instruments.",
+  "authors": [
+    "Šimon Libřický",
+    "Jan Hajič"
+  ],
+  "published": "2025-07-07T13:07:34Z",
+  "updated": "2025-07-07T13:07:34Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.04963",
+  "abs_url": "https://arxiv.org/abs/2507.04963",
+  "fetched_at": "2026-07-19T14:18:41.853429Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

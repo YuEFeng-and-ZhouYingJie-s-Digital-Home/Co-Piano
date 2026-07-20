@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2511.17323",
+  "title": "MusicAIR: A Multimodal AI Music Generation Framework Powered by an Algorithm-Driven Core",
+  "summary": "Recent advances in generative AI have made music generation a prominent research focus. However, many neural-based models rely on large datasets, raising concerns about copyright infringement and high-performance costs. In contrast, we propose MusicAIR, an innovative multimodal AI music generation framework powered by a novel algorithm-driven symbolic music core, effectively mitigating copyright infringement risks. The music core algorithms connect critical lyrical and rhythmic information to automatically derive musical features, creating a complete, coherent melodic score solely from the lyrics. The MusicAIR framework facilitates music generation from lyrics, text, and images. The generated score adheres to established principles of music theory, lyrical structure, and rhythmic conventions. We developed Generate AI Music (GenAIM), a web tool using MusicAIR for lyric-to-song, text-to-music, and image-to-music generation. In our experiments, we evaluated AI-generated music scores produced by the system using both standard music metrics and innovative analysis that compares these compositions with original works. The system achieves an average key confidence of 85%, outperforming human composers at 79%, and aligns closely with established music theory standards, demonstrating its ability to generate diverse, human-like compositions. As a co-pilot tool, GenAIM can serve as a reliable music composition assistant and a possible educational composition tutor while simultaneously lowering the entry barrier for all aspiring musicians, which is innovative and significantly contributes to AI for music generation.",
+  "authors": [
+    "Callie C. Liao",
+    "Duoduo Liao",
+    "Ellie L. Zhang"
+  ],
+  "published": "2025-11-21T15:43:27Z",
+  "updated": "2025-11-21T15:43:27Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CL",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.17323",
+  "abs_url": "https://arxiv.org/abs/2511.17323",
+  "fetched_at": "2026-07-19T14:18:41.873253Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

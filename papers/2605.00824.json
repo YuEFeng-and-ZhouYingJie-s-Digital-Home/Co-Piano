@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.00824",
+  "title": "CustomDancer: Customized Dance Recommendation by Text-Dance Retrieval",
+  "summary": "Dance serves as both a cultural cornerstone and a medium for personal expression, yet the rapid growth of online dance content has made personalized discovery increasingly difficult. Text-based dance retrieval offers a natural interface for users to search with choreographic intent, but it remains underexplored because dance requires simultaneous reasoning over linguistic semantics, musical rhythm, and full-body motion dynamics. We introduce TD-Data, a large-scale open dataset for text-dance retrieval, containing about 4,000 12-second dance clips, 14.6 hours of motion, 22 genres, and annotations from professional dance experts. On top of this dataset, we propose CustomDancer, a multimodal retrieval framework that aligns text with dance through a CLIP-based text encoder, music and motion encoders, and a music-motion blending module. CustomDancer achieves state-of-the-art performance on TD-Data, reaching 10.23% Recall@1 and improving retrieval quality in both quantitative benchmarks and user preference studies.",
+  "authors": [
+    "Yawen Qin",
+    "Ke Qiu",
+    "Qin Zhang"
+  ],
+  "published": "2026-05-01T17:59:50Z",
+  "updated": "2026-05-01T17:59:50Z",
+  "categories": [
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.00824",
+  "abs_url": "https://arxiv.org/abs/2605.00824",
+  "fetched_at": "2026-07-19T14:18:41.843421Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

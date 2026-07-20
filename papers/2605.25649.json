@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.25649",
+  "title": "What if we decompose a simple tone? The Chinese remainder theorem and structured Levi graphs in music",
+  "summary": "While motivated by structural problems in mathematical music theory, this article introduces a novel combinatorial framework that advances the classification of cyclic cubic bipartite graphs. We extend the classical study of Levi graphs by endowing their vertices with an internal algebraic anatomy -- specifically, treating them not as empty geometric nodes, but as defined subsets of a cyclic base space Z_n. This internal structure allows us to formalize and classify a highly restricted class of graph isomorphisms: those strictly induced by global affine bijections f(x) = ax+b (mod n) operating directly on the underlying base set. By applying this framework to generalized tone networks (Tonnetze) unrolled via the Chinese Remainder Theorem in composite dimensions -- specifically the classic 12-TET (3x4) and the decaphonic 10-TET (2x5) -- we reveal absolute geometric anchors for these spaces, namely the (9,4) and (6,5) systems respectively. We completely classify the topological orbits of these structured graphs, proving a fundamental architectural dichotomy: while the isomorphic landscape of 12-TET splits into an orientation-preserving family and an orientation-reversing chiral mirror (providing a rigorous foundation for musical Negative Harmony), the 10-TET space is unconditionally orientation-preserving. Finally, we demonstrate that these abstract combinatorial properties manifest as rigidly coherent, parallel auditory universes through explicit structural voice-leading maps and acoustic physical modeling synthesis.",
+  "authors": [
+    "Paweł Nurowski"
+  ],
+  "published": "2026-05-25T09:53:26Z",
+  "updated": "2026-05-25T09:53:26Z",
+  "categories": [
+    "math.CO",
+    "math.HO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.25649",
+  "abs_url": "https://arxiv.org/abs/2605.25649",
+  "fetched_at": "2026-07-19T14:18:41.880899Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

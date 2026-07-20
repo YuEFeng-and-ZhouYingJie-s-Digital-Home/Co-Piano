@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2603.15440",
+  "title": "Music Genre Classification: A Comparative Analysis of Classical Machine Learning and Deep Learning Approaches",
+  "summary": "Automatic music genre classification is a long-standing challenge in Music Information Retrieval (MIR); work on non-Western music traditions remains scarce. Nepali music encompasses culturally rich and acoustically diverse genres--from the call-and-response duets of Lok Dohori to the rhythmic poetry of Deuda and the distinctive melodies of Tamang Selo--that have not been addressed by existing classification systems. In this paper, we construct a novel dataset of approximately 8,000 labeled 30-second audio clips spanning eight Nepali music genres and conduct a systematic comparison of nine classification models across two paradigms. Five classical machine learning classifiers (Logistic Regression, SVM, KNN, Random Forest, and XGBoost) are trained on 51 hand-crafted audio features extracted via Librosa, while four deep learning architectures (CNN, RNN, parallel CNN-RNN, and sequential CNN followed by RNN) operate on Mel spectrograms of dimension 640 x 128. Our experiments reveal that the sequential Convolutional Recurrent Neural Network (CRNN)--in which convolutional layers feed into an LSTM--achieves the highest accuracy of 84%, substantially outperforming both the best classical models (Logistic Regression and XGBoost, both at 71%) and all other deep architectures. We provide per-class precision, recall, F1-score, confusion matrices, and ROC analysis for every model, and offer a culturally grounded interpretation of misclassification patterns that reflects genuine overlaps in Nepal's musical traditions.",
+  "authors": [
+    "Sachin Prajuli",
+    "Abhishek Karna",
+    "OmPrakash Dhakl"
+  ],
+  "published": "2026-03-16T15:43:48Z",
+  "updated": "2026-03-16T15:43:48Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.15440",
+  "abs_url": "https://arxiv.org/abs/2603.15440",
+  "fetched_at": "2026-07-19T14:18:41.859526Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

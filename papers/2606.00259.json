@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.00259",
+  "title": "Geometric Instability and Self-Limitation in Driven Quantum Systems",
+  "summary": "We develop a unified geometric framework for local non-adiabaticity in driven quantum systems. We show that the previously introduced AMT non adiabaticity parameter arises as a special realization of a more general geometric instability criterion governed by the normalized Fubini Study distinguishability speed. The local geometric evolution speed is identified as the physically relevant quantity controlling the onset of non-adiabatic instability. We introduce a universal dimensionless instability parameter measuring the competition between quantum-state evolution speed and spectral-gap protection. This quantity provides a local, gauge-invariant, and basis-independent criterion for arbitrary driven Hamiltonians. Near quantum critical points, the instability parameter diverges through inverse gap amplification, recovering the Kibble Zurek freeze-out condition directly from local geometric data. We prove that monotonic occupation-dependent nonlinear regulators geometrically compress the quantum metric, establishing a self-limitation theorem in which nonlinear spectral deformation confines the accessible region of projective Hilbert space under strong driving. The multimode extension yields a matrix-valued instability criterion that identifies collective instability channels invisible to scalar descriptions. The framework naturally extends to open quantum systems through the Bures metric and quantum Fisher geometry, where thermal mixing and Lindblad decay increase the instability threshold through geometric suppression of state distinguishability. The instability threshold further implies a universal geometric lower bound on coherent control time and quantum gate duration.",
+  "authors": [
+    "A. M. Tishin"
+  ],
+  "published": "2026-05-29T18:44:40Z",
+  "updated": "2026-06-02T06:04:44Z",
+  "categories": [
+    "quant-ph",
+    "cond-mat.mes-hall"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.00259",
+  "abs_url": "https://arxiv.org/abs/2606.00259",
+  "fetched_at": "2026-07-19T14:17:07.972901Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

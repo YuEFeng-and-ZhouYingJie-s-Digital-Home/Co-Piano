@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2509.08800",
+  "title": "PianoVAM: A Multimodal Piano Performance Dataset",
+  "summary": "The multimodal nature of music performance has driven increasing interest in data beyond the audio domain within the music information retrieval (MIR) community. This paper introduces PianoVAM, a comprehensive piano performance dataset that includes videos, audio, MIDI, hand landmarks, fingering labels, and rich metadata. The dataset was recorded using a Disklavier piano, capturing audio and MIDI from amateur pianists during their daily practice sessions, alongside synchronized top-view videos in realistic and varied performance conditions. Hand landmarks and fingering labels were extracted using a pretrained hand pose estimation model and a semi-automated fingering annotation algorithm. We discuss the challenges encountered during data collection and the alignment process across different modalities. Additionally, we describe our fingering annotation method based on hand landmarks extracted from videos. Finally, we present benchmarking results for both audio-only and audio-visual piano transcription using the PianoVAM dataset and discuss additional potential applications.",
+  "authors": [
+    "Yonghyun Kim",
+    "Junhyung Park",
+    "Joonhyung Bae",
+    "Kirak Kim",
+    "Taegyun Kwon",
+    "Alexander Lerch",
+    "Juhan Nam"
+  ],
+  "published": "2025-09-10T17:35:58Z",
+  "updated": "2025-09-10T17:35:58Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CV",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.08800",
+  "abs_url": "https://arxiv.org/abs/2509.08800",
+  "fetched_at": "2026-07-19T14:18:41.848452Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

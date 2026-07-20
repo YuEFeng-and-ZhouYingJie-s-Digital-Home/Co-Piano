@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2601.14304",
+  "title": "Guided by the Plan: Enhancing Faithful Autoregressive Text-to-Audio Generation with Guided Decoding",
+  "summary": "Autoregressive (AR) models excel at generating temporally coherent audio by producing tokens sequentially, yet they often falter in faithfully following complex textual prompts, especially those describing complex sound events. We uncover a surprising capability in AR audio generators: their early prefix tokens implicitly encode global semantic attributes of the final output, such as event count and sound-object category, revealing a form of implicit planning. Building on this insight, we propose Plan-Critic, a lightweight auxiliary model trained with a Generalized Advantage Estimation (GAE)-inspired objective to predict final instruction-following quality from partial generations. At inference time, Plan-Critic enables guided exploration: it evaluates candidate prefixes early, prunes low-fidelity trajectories, and reallocates computation to high-potential planning seeds. Our Plan-Critic-guided sampling achieves up to a 10-point improvement in CLAP score over the AR baseline-establishing a new state of the art in AR text-to-audio generation-while maintaining computational parity with standard best-of-N decoding. This work bridges the gap between causal generation and global semantic alignment, demonstrating that even strictly autoregressive models can plan ahead.",
+  "authors": [
+    "Juncheng Wang",
+    "Zhe Hu",
+    "Chao Xu",
+    "Siyue Ren",
+    "Yuxiang Feng",
+    "Yang Liu",
+    "Baigui Sun",
+    "Shujun Wang"
+  ],
+  "published": "2026-01-18T07:26:23Z",
+  "updated": "2026-01-18T07:26:23Z",
+  "categories": [
+    "cs.CL",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.14304",
+  "abs_url": "https://arxiv.org/abs/2601.14304",
+  "fetched_at": "2026-07-19T14:18:41.860131Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

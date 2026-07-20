@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.01989",
+  "title": "Polarized lines of the second solar spectrum (SrI, SrII, CaI, BaII) observed at the Pic du Midi Turret Dome spectropolarimeter with the slit orthogonal to the limb",
+  "summary": "The second solar spectrum is the spectrum of the Stokes parameter Q (linear polarization) close to the solar limb. It differs significantly of the usual intensity spectrum (Stokes parameter I). The second solar spectrum contains in the blue just a few polarized lines with Q/I of about 1% (such as CaI, SrI, SrII, BaII, most lines exhibit much weaker polarization. This paper presents new processing of observations made in 2004-2006 with the Pic du Midi Turret Dome spectropolarimeter, which are of strong interest for weak and turbulent unresolved magnetic field measurements in the quiet Sun, through the interpretation of the Hanle effect. As the slit was orthogonal to the limb, the polarization rate Q/I is determined precisely and continuously up to 80'' distance of the limb.",
+  "authors": [
+    "Jean-Marie Malherbe"
+  ],
+  "published": "2026-06-01T09:47:48Z",
+  "updated": "2026-06-01T09:47:48Z",
+  "categories": [
+    "astro-ph.IM",
+    "astro-ph.SR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.01989",
+  "abs_url": "https://arxiv.org/abs/2606.01989",
+  "fetched_at": "2026-07-19T14:17:38.247587Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

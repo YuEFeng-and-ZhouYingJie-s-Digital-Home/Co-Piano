@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2601.20256",
+  "title": "SoftHateBench: Evaluating Moderation Models Against Reasoning-Driven, Policy-Compliant Hostility",
+  "summary": "Online hate on social media ranges from overt slurs and threats (\\emph{hard hate speech}) to \\emph{soft hate speech}: discourse that appears reasonable on the surface but uses framing and value-based arguments to steer audiences toward blaming or excluding a target group. We hypothesize that current moderation systems, largely optimized for surface toxicity cues, are not robust to this reasoning-driven hostility, yet existing benchmarks do not measure this gap systematically. We introduce \\textbf{\\textsc{SoftHateBench}}, a generative benchmark that produces soft-hate variants while preserving the underlying hostile standpoint. To generate soft hate, we integrate the \\emph{Argumentum Model of Topics} (AMT) and \\emph{Relevance Theory} (RT) in a unified framework: AMT provides the backbone argument structure for rewriting an explicit hateful standpoint into a seemingly neutral discussion while preserving the stance, and RT guides generation to keep the AMT chain logically coherent. The benchmark spans \\textbf{7} sociocultural domains and \\textbf{28} target groups, comprising \\textbf{4,745} soft-hate instances. Evaluations across encoder-based detectors, general-purpose LLMs, and safety models show a consistent drop from hard to soft tiers: systems that detect explicit hostility often fail when the same stance is conveyed through subtle, reasoning-based language. \\textcolor{red}{\\textbf{Disclaimer.} Contains offensive examples used solely for research.}",
+  "authors": [
+    "Xuanyu Su",
+    "Diana Inkpen",
+    "Nathalie Japkowicz"
+  ],
+  "published": "2026-01-28T05:04:18Z",
+  "updated": "2026-01-28T05:04:18Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.20256",
+  "abs_url": "https://arxiv.org/abs/2601.20256",
+  "fetched_at": "2026-07-19T14:17:07.974936Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

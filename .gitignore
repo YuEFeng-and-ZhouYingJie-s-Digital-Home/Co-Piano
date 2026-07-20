@@ -1,0 +1,21 @@
+# 测试 MIDI
+*.mid
+*.midi
+
+# 临时文件
+/tmp/*
+!/tmp/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# 系统
+.DS_Store
+*.swp
+
+# 大文件
+*.log
+logs/

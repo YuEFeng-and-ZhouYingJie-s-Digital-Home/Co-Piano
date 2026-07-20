@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.13626",
+  "title": "Generative Modeling of Bach-Style Symbolic Music: A Comparative Study of Autoregressive, Latent-Variable, and Adversarial Approaches",
+  "summary": "We study generative modeling of Bach-style symbolic piano music using a shared MIDI corpus and three model families: autoregressive LSTMs with attention, latent-variable models including recurrent VAEs and vector-quantized VAEs, and generative adversarial networks. We compare their ability to model polyphonic note sequences, learn useful latent representations, and generate stylistically coherent compositions. Our experiments show that the autoregressive LSTM with attention produces the most musically coherent samples, while vector quantization helps mitigate posterior collapse and yields more structured outputs than conventional recurrent VAEs. The adversarial approach captures local pitch patterns but remains difficult to train and generalizes less reliably to Bach's style. These results highlight the relative strengths and failure modes of autoregressive, latent-variable, and adversarial approaches for symbolic music generation.",
+  "authors": [
+    "Dezhi Yu",
+    "Kyuil Lee",
+    "Yongkang Huang"
+  ],
+  "published": "2026-06-11T17:39:55Z",
+  "updated": "2026-06-12T06:30:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.13626",
+  "abs_url": "https://arxiv.org/abs/2606.13626",
+  "fetched_at": "2026-07-19T14:17:07.969625Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

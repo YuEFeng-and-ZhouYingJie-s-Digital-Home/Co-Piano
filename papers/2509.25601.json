@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2509.25601",
+  "title": "Echoes of Humanity: Exploring the Perceived Humanness of AI Music",
+  "summary": "Recent advances in AI music (AIM) generation services are currently transforming the music industry. Given these advances, understanding how humans perceive AIM is crucial both to educate users on identifying AIM songs, and, conversely, to improve current models. We present results from a listener-focused experiment aimed at understanding how humans perceive AIM. In a blind, Turing-like test, participants were asked to distinguish, from a pair, the AIM and human-made song. We contrast with other studies by utilizing a randomized controlled crossover trial that controls for pairwise similarity and allows for a causal interpretation. We are also the first study to employ a novel, author-uncontrolled dataset of AIM songs from real-world usage of commercial models (i.e., Suno). We establish that listeners' reliability in distinguishing AIM causally increases when pairs are similar. Lastly, we conduct a mixed-methods content analysis of listeners' free-form feedback, revealing a focus on vocal and technical cues in their judgments.",
+  "authors": [
+    "Flavio Figueiredo",
+    "Giovanni Martinelli",
+    "Henrique Sousa",
+    "Pedro Rodrigues",
+    "Frederico Pedrosa",
+    "Lucas N. Ferreira"
+  ],
+  "published": "2025-09-29T23:53:58Z",
+  "updated": "2025-09-29T23:53:58Z",
+  "categories": [
+    "cs.AI",
+    "cs.HC",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.25601",
+  "abs_url": "https://arxiv.org/abs/2509.25601",
+  "fetched_at": "2026-07-19T14:18:41.873384Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

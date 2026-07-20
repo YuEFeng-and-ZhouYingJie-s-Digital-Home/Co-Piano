@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.11896",
+  "title": "Musical Metamerism with Time--Frequency Scattering",
+  "summary": "The concept of metamerism originates from colorimetry, where it describes a sensation of visual similarity between two colored lights despite significant differences in spectral content. Likewise, we propose to call ``musical metamerism'' the sensation of auditory similarity which is elicited by two music fragments which differ in terms of underlying waveforms. In this technical report, we describe a method to generate musical metamers from any audio recording. Our method is based on joint time--frequency scattering in Kymatio, an open-source software in Python which enables GPU computing and automatic differentiation. The advantage of our method is that it does not require any manual preprocessing, such as transcription, beat tracking, or source separation. We provide a mathematical description of JTFS as well as some excerpts from the Kymatio source code. Lastly, we review the prior work on JTFS and draw connections with closely related algorithms, such as spectrotemporal receptive fields (STRF), modulation power spectra (MPS), and Gabor filterbank (GBFB).",
+  "authors": [
+    "Vincent Lostanlen",
+    "Han Han"
+  ],
+  "published": "2026-02-12T12:50:50Z",
+  "updated": "2026-02-12T12:50:50Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.11896",
+  "abs_url": "https://arxiv.org/abs/2602.11896",
+  "fetched_at": "2026-07-19T14:18:41.855161Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

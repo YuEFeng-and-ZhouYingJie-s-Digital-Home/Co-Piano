@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.15220",
+  "title": "Structural-Semantic Reciprocal Learning for Unsupervised Visible-Infrared Person Re-Identification",
+  "summary": "Unsupervised visible-infrared person re-identification (USVI-ReID) is challenging due to the large modality gap and the lack of cross-modal identity annotations. Progressive association paradigms have been proposed to gradually bridge the gap, but they suffer from two critical bottlenecks: reliance on ambiguous global representations and unchecked propagation of pseudo-label noise in an open-loop manner. To address these issues, we propose Structural-Semantic Reciprocal Learning (SSRL), a framework that transforms open-loop association into a self-correcting closed-loop system. Structurally, we introduce Fine-grained Structural Decoupling (FSD) to extract discriminative body-part primitives as reliable spatial anchors, complementing ambiguous holistic silhouettes with spatially consistent structural details. Semantically, we design a Closed-loop Semantic Calibration (CSC) mechanism that reconstructs shared semantic prototypes at each epoch and feeds them back into the training loop, effectively filtering pseudo-label noise before the next clustering cycle. Through the reciprocal interaction between structural and semantic learning, SSRL achieves robust cross-modal representation. Extensive experiments demonstrate the competitive performance of SSRL against state-of-the-art USVI-ReID methods on both SYSU-MM01 and RegDB, notably surpassing several supervised counterparts on RegDB.",
+  "authors": [
+    "Moyao Tian",
+    "Shijia Liu",
+    "Yan Yang",
+    "Xin Yuan",
+    "Minshi Chen",
+    "Wei Wang",
+    "Xiao Wang"
+  ],
+  "published": "2026-07-16T17:22:51Z",
+  "updated": "2026-07-16T17:22:51Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15220",
+  "abs_url": "https://arxiv.org/abs/2607.15220",
+  "fetched_at": "2026-07-19T14:17:38.250767Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

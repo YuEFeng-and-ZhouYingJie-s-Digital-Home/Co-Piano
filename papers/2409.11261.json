@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2409.11261",
+  "title": "Kahaani: A Multimodal Co-Creative Storytelling System",
+  "summary": "This paper introduces Kahaani, a multimodal, co-creative storytelling system that leverages Generative Artificial Intelligence, designed for children to address the challenge of sustaining engagement to foster educational narrative experiences. Here we define co-creative as a collaborative creative process in which both the child and Kahaani contribute to the generation of the story. The system combines Large Language Model (LLM), Text-to-Speech (TTS), Text-to-Music (TTM), and Text-to-Video (TTV) generation to produce a rich, immersive, and accessible storytelling experience. The system grounds the co-creation process in two classical storytelling framework, Freytag's Pyramid and Propp's Narrative Functions. The main goals of Kahaani are: (1) to help children improve their English skills, (2) to teach important life lessons through story morals, and (3) to help them understand how stories are structured, all in a fun and engaging way. We present evaluations for each AI component used, along with a user study involving three parent-child pairs to assess the overall experience and educational value of the system.",
+  "authors": [
+    "Samee Arif",
+    "Muhammad Saad Haroon",
+    "Aamina Jamal Khan",
+    "Taimoor Arif",
+    "Agha Ali Raza",
+    "Awais Athar"
+  ],
+  "published": "2024-09-17T15:10:23Z",
+  "updated": "2026-02-08T17:40:41Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2409.11261",
+  "abs_url": "https://arxiv.org/abs/2409.11261",
+  "fetched_at": "2026-07-19T14:18:41.875924Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

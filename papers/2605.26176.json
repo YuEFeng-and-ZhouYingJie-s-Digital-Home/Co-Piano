@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.26176",
+  "title": "PitchBench: Measuring Pitch Hearing in Audio-Language Models",
+  "summary": "Audio-language models (ALMs) are increasingly used in real-world applications that require understanding music, from music tutoring and transcription to captioning, recommendation systems, and music production. More broadly, they are becoming an important component of multimodal AI systems that must reason from sensory input rather than text alone. This makes reliable musical perception a critical prerequisite: if a model cannot accurately hear the structure of sound, it cannot be trusted to reason about, teach, transcribe, or act on audio in the real world. Yet existing benchmarks rarely assess one of the most fundamental musical abilities underlying such perception: pitch hearing. Current evaluations tend to probe pitch hearing only indirectly, through higher-level tasks and often in multiple-choice formats, leaving open how reliably ALMs identify fine-grained pitch across instruments, acoustic conditions, and response formats. We introduce PitchBench, an evaluation suite that systematically measures pitch hearing in ALMs. PitchBench comprises 28 experiments spanning absolute and relative pitch perception within sequences and chords, while varying loudness, note duration, sound source, time stretching, background noise, and other acoustic conditions. Tasks range from identifying individual pitches in isolation to tracking a melodic line within a four-part musical texture. Evaluating frontier ALMs, we find that pitch hearing remains highly unreliable: models perform consistently poorly across settings, with accuracy varying sharply by sound source, note duration, and notation format. Current ALMs do not yet possess stable pitch perception, even for controlled synthetic and instrumental stimuli. Alongside the benchmark, we release PitchBench as a Python package containing the evaluation data and data generation tools to support future work on pitch-aware audio-language modeling.",
+  "authors": [
+    "Milan Liessens Dujardin",
+    "Song-Ze Yu",
+    "Craver Corbyn Thomas-Smith",
+    "David M. Chan",
+    "Karina Nguyen"
+  ],
+  "published": "2026-05-25T05:37:15Z",
+  "updated": "2026-05-25T05:37:15Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.26176",
+  "abs_url": "https://arxiv.org/abs/2605.26176",
+  "fetched_at": "2026-07-19T14:18:41.851079Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

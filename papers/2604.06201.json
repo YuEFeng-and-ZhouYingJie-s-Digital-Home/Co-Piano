@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2604.06201",
+  "title": "Beyond Facts: Benchmarking Distributional Reading Comprehension in Large Language Models",
+  "summary": "While most reading comprehension benchmarks for LLMs focus on factual information that can be answered by localizing specific textual evidence, many real-world tasks require understanding distributional information, such as population-level trends and preferences expressed across collections of text. We introduce Text2DistBench, a reading comprehension benchmark for evaluating LLMs' ability to infer distributional knowledge from natural language. Built from real-world YouTube comments about movie and music entities, the benchmark provides models with entity metadata and associated comments, and requires them to answer distributional questions, such as estimating the proportions of positive and negative comments, or identifying the most and second most frequent topics discussed among viewers. To support reliable and long-term evaluation, the construction pipeline of Text2DistBench is fully automated and continuously updated to incorporate newly emerging entities over time. Experiments across multiple LLMs show that while models substantially outperform random baselines, performance varies widely across different distribution types and characteristics. These findings highlight both the capabilities and limitations of current LLMs in distributional reading comprehension and demonstrate the value of Text2DistBench as a practical and scalable testbed for future research.",
+  "authors": [
+    "Pei-Fu Guo",
+    "Ya-An Tsai",
+    "Chun-Chia Hsu",
+    "Kai-Xin Chen",
+    "Yun-Da Tsai",
+    "Kai-Wei Chang",
+    "Nanyun Peng",
+    "Mi-Yen Yeh",
+    "Shou-De Lin"
+  ],
+  "published": "2026-03-13T19:26:08Z",
+  "updated": "2026-04-18T13:25:27Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.06201",
+  "abs_url": "https://arxiv.org/abs/2604.06201",
+  "fetched_at": "2026-07-19T14:18:41.844450Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.17405",
+  "title": "A Distribution Matching Approach to Neural Piano Transcription with Optimal Transport",
+  "summary": "This paper describes a novel paradigm that formalizes automatic piano transcription (APT) as an optimal transport (OT) problem, not as a frame-level multi-label binary classification problem. Our method learns to minimize the cost of transporting a predicted distribution of note events to the ground-truth distribution over time and frequency. The OT loss can thus accommodate temporal misalignment, leading to perceptually relevant optimization. We also propose a convolutional recurrent neural network (CRNN) with a harmonics-aware attention mechanism to capture the spectro-temporal dependencies inherent in music.Our experiments using the MAESTRO dataset showed that our method attained a state-of-the-art performance in onset detection. We confirmed the versatility of the OT loss in application to existing models.",
+  "authors": [
+    "Weixing Wei",
+    "Raynaldi Lalang",
+    "Dichucheng Li",
+    "Kazuyoshi Yoshii"
+  ],
+  "published": "2026-05-17T12:01:44Z",
+  "updated": "2026-05-17T12:01:44Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.17405",
+  "abs_url": "https://arxiv.org/abs/2605.17405",
+  "fetched_at": "2026-07-19T14:17:07.970918Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

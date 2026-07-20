@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2511.17404",
+  "title": "The Artist is Present: Traces of Artists Resigind and Spawning in Text-to-Audio AI",
+  "summary": "Text-to-audio (TTA) systems are rapidly transforming music creation and distribution, with platforms like Udio and Suno generating thousands of tracks daily and integrating into mainstream music platforms and ecosystems. These systems, trained on vast and largely undisclosed datasets, are fundamentally reshaping how music is produced, reproduced and consumed. This paper presents empirical evidence that artist-conditioned regions can be systematically microlocated through metatag-based prompt design, effectively enabling the spawning of artist-like content through strategic prompt engineering. Through systematic exploration of metatag-based prompt engineering techniques this research reveals how users can access the distinctive sonic signatures of specific artists, evidencing their inclusion in training datasets. Using descriptor constellations drawn from public music taxonomies, the paper demonstrates reproducible proximity to artists such as Bon Iver, Philip Glass, Panda Bear and William Basinski. The results indicate stable text-audio correspondences consistent with artist-specific training signals, enabling precise traversal of stylistic microlocations without explicitly naming artists. This capacity to summon artist-specific outputs shows that artists' creative works fuction as foundational material from which these systems generate new content, often without explicit consent or attribuition. Conceptually, the work clarifies how textual descriptors act as navigational cues in high-dimensional representation spaces; methodologically, it provides a replicable protocol for auditing stylistic inducibility. The findings raise immediate queestions for governance-attribution, consent and disclosure standards-and for creative practice, where induced stylistic proximity complicates boundaries between ownership, reproduction, imitation, creative agency and the ethics of algorithmic creation.",
+  "authors": [
+    "Guilherme Coelho"
+  ],
+  "published": "2025-11-21T17:05:50Z",
+  "updated": "2025-11-21T17:05:50Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.17404",
+  "abs_url": "https://arxiv.org/abs/2511.17404",
+  "fetched_at": "2026-07-19T14:18:41.867502Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

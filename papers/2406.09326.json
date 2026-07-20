@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2406.09326",
+  "title": "PianoMotion10M: Dataset and Benchmark for Hand Motion Generation in Piano Performance",
+  "summary": "Recently, artificial intelligence techniques for education have been received increasing attentions, while it still remains an open problem to design the effective music instrument instructing systems. Although key presses can be directly derived from sheet music, the transitional movements among key presses require more extensive guidance in piano performance. In this work, we construct a piano-hand motion generation benchmark to guide hand movements and fingerings for piano playing. To this end, we collect an annotated dataset, PianoMotion10M, consisting of 116 hours of piano playing videos from a bird's-eye view with 10 million annotated hand poses. We also introduce a powerful baseline model that generates hand motions from piano audios through a position predictor and a position-guided gesture generator. Furthermore, a series of evaluation metrics are designed to assess the performance of the baseline model, including motion similarity, smoothness, positional accuracy of left and right hands, and overall fidelity of movement distribution. Despite that piano key presses with respect to music scores or audios are already accessible, PianoMotion10M aims to provide guidance on piano fingering for instruction purposes. The source code and dataset can be accessed at https://github.com/agnJason/PianoMotion10M.",
+  "authors": [
+    "Qijun Gan",
+    "Song Wang",
+    "Shengtao Wu",
+    "Jianke Zhu"
+  ],
+  "published": "2024-06-13T17:05:23Z",
+  "updated": "2025-02-25T08:21:57Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CV",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2406.09326",
+  "abs_url": "https://arxiv.org/abs/2406.09326",
+  "fetched_at": "2026-07-19T14:18:41.854195Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

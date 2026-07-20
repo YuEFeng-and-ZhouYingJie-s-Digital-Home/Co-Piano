@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2603.25767",
+  "title": "Unlocking Strong Supervision: A Data-Centric Study of General-Purpose Audio Pre-Training Methods",
+  "summary": "Current audio pre-training seeks to learn unified representations for broad audio understanding tasks, but it remains fragmented and is fundamentally bottlenecked by its reliance on weak, noisy, and scale-limited labels. Drawing lessons from vision's foundational pre-training blueprint, we argue that the audio field must first establish its own large-scale, strong supervision framework. We introduce a new data-centric pipeline that leverages a high-fidelity captioner to create SOTA-quality captions and the first Unified Tag System (UTS) that bridges speech, music, and environmental sounds. We then conduct a systematic comparative study of different pre-training objectives on these strong source data. Our experiments suggest that data quality and coverage are the primary drivers of performance, while the choice of objective dictates downstream task specialization.",
+  "authors": [
+    "Xuanru Zhou",
+    "Yiwen Shao",
+    "Wei-Cheng Tseng",
+    "Dong Yu"
+  ],
+  "published": "2026-03-26T07:18:04Z",
+  "updated": "2026-03-26T07:18:04Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.25767",
+  "abs_url": "https://arxiv.org/abs/2603.25767",
+  "fetched_at": "2026-07-19T14:18:41.852238Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

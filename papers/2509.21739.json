@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2509.21739",
+  "title": "Noise-to-Notes: Diffusion-based Generation and Refinement for Automatic Drum Transcription",
+  "summary": "Automatic drum transcription (ADT) is traditionally formulated as a discriminative task to predict drum events from audio spectrograms. In this work, we redefine ADT as a conditional generative task and introduce Noise-to-Notes (N2N), a framework leveraging diffusion modeling to transform audio-conditioned Gaussian noise into drum events with associated velocities. This generative diffusion approach offers distinct advantages, including a flexible speed-accuracy trade-off and strong inpainting capabilities. However, the generation of binary onset and continuous velocity values presents a challenge for diffusion models, and to overcome this, we introduce an Annealed Pseudo-Huber loss to facilitate effective joint optimization. Finally, to augment low-level spectrogram features, we propose incorporating features extracted from music foundation models (MFMs), which capture high-level semantic information and enhance robustness to out-of-domain drum audio. Experimental results demonstrate that including MFM features significantly improves robustness and N2N establishes a new state-of-the-art performance across multiple ADT benchmarks.",
+  "authors": [
+    "Michael Yeung",
+    "Keisuke Toyama",
+    "Toya Teramoto",
+    "Shusuke Takahashi",
+    "Tamaki Kojima"
+  ],
+  "published": "2025-09-26T01:12:43Z",
+  "updated": "2026-03-05T00:37:26Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.21739",
+  "abs_url": "https://arxiv.org/abs/2509.21739",
+  "fetched_at": "2026-07-19T14:18:41.856074Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

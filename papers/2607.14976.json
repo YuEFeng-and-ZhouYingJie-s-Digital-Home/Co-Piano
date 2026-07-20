@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.14976",
+  "title": "From Draft to Draft-Free: One-Step Video Object Removal via Privileged Distillation and Fast Planting",
+  "summary": "Video object removal is a fundamental yet challenging task in video editing. Despite recent progress, existing methods typically fall into two categories. Traditional approaches based on optical flow or attention mechanisms often introduce noticeable artifacts and yield unnatural results. In contrast, diffusion-based methods improve visual realism but demand multiple denoising steps, limiting their practicality. To address these issues, we propose From-Draft-to-Draft-Free (D2DF), a framework that distills the ability of transforming coarse drafts into refined videos into a one-step video generation model. Within D2DF, a teacher model is trained to refine low-quality removal results (\"drafts\") into high-fidelity videos by multiple steps. Then, through Prior-Privileged Consistency Distillation (PPCD), we distill this capability into a student model that performs one-step removal conditioned on the draft. To eliminate draft dependency, we introduce a Self-Guided Fast Planting (SGFP) module based on our Temporal Masked Transformer that autonomously generates scene-consistent pseudo-drafts in latent space, enabling a fully draft-free one-step model. Extensive experiments show that both draft-conditioned and draft-free versions achieve state-of-the-art performance on multiple metrics, surpassing traditional and multi-step generative methods in both quality and efficiency. The denoising process for a single video takes only about 1 second.",
+  "authors": [
+    "Zizhao Chen",
+    "Ping Wei",
+    "Guang Dai",
+    "Jingdong Wang",
+    "Mengmeng Wang"
+  ],
+  "published": "2026-07-16T13:29:27Z",
+  "updated": "2026-07-16T13:29:27Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14976",
+  "abs_url": "https://arxiv.org/abs/2607.14976",
+  "fetched_at": "2026-07-19T14:17:38.254155Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

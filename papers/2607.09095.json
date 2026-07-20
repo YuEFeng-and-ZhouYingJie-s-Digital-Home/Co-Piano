@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.09095",
+  "title": "Event-Based Token Sequences for Audio-Conditioned Music-Game Level Modeling",
+  "summary": "Procedural generation of music game levels is an exciting yet challenging problem, as levels must translate musical structure into interactive sequences of timed gameplay events. Most existing approaches formulate this task by frame-based representations, dividing audio into uniform time grids and predicting events at each frame. This makes gameplay events implicit across many frames. As a result, it is hard to describe event-level timing relations and longer-range structure found in human-authored levels. We use procedural generation as a practical setting to study how musical cues map to interactive event sequences. Inspired by event-based symbolic music modeling, we propose a token-level sequence formulation that casts level generation as a multimodal sequence-to-sequence problem. Conditioned on an audio excerpt and level metadata, the model generates a token sequence alternating gameplay-event and beat-shift tokens. This explicitly represents actions and their relative timing in beat space. Based on this formulation, we build a Transformer model. It outperforms representative frame-level baselines under event-level evaluation. It also enables systematic analysis of how audio supports rhythm-aligned event prediction beyond metadata conditioning.",
+  "authors": [
+    "Ke Zhang",
+    "Chu-Hsuan Hsueh",
+    "Kokolo Ikeda"
+  ],
+  "published": "2026-07-10T04:42:20Z",
+  "updated": "2026-07-10T04:42:20Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.09095",
+  "abs_url": "https://arxiv.org/abs/2607.09095",
+  "fetched_at": "2026-07-19T14:18:41.845755Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

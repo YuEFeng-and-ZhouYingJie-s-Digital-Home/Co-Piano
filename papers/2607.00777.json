@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.00777",
+  "title": "Evaluating Pretrained Music Embeddings for Cross-Performance Jazz Standard Recognition",
+  "summary": "Recognizing jazz standards from audio is a challenging form of tune-level music retrieval: different performances of the same standard may vary in tempo, key, arrangement, instrumentation, improvisational content, and even whether the head melody is present. We study this problem using a curated subset of the Jazz Trio Database designed for cross-performance standard recognition. We compare a from-scratch trained Harmonic CNN baseline against frozen pretrained music representations from recent music understanding foundation models, using both supervised probing and nearest-neighbor retrieval. Our results suggest that from-scratch spectrogram models overfit strongly to training performances, while pretrained embeddings provide better top-$k$ results but are sensitive to performer identity, which can be partially reduced with a lightweight contrastive projection. Our findings motivate jazz standard recognition as a useful stress test for music representation models and as a step toward retrieval-based standard identification. Project page: https://github.com/cagries/tipofmyear.",
+  "authors": [
+    "Çağrı Eser"
+  ],
+  "published": "2026-07-01T11:04:28Z",
+  "updated": "2026-07-01T11:04:28Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.00777",
+  "abs_url": "https://arxiv.org/abs/2607.00777",
+  "fetched_at": "2026-07-19T14:18:41.880558Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

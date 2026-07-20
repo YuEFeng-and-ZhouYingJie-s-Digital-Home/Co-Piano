@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.21670",
+  "title": "Improving Text-to-Music Generation with Human Preference Rewards",
+  "summary": "We describe our entry to the efficiency track of the Academic Text-to-Music (ATTM) Grand Challenge at ICME 2026. Beyond the challenge protocol's FAD-CLAP and CLAP score, we add a learned human-preference reward from TuneJury, a twin pairwise ranker trained over open music-preference datasets. The reward serves both as a training-time conditioning signal and as a sample-selection criterion. The pipeline combines five engineering decisions on a 120M-parameter FluxAudio-S backbone, four at training time and one at inference: (i) training-time reward conditioning that doubles as an inference-time CFG axis, (ii) a sweep over five score-conditioning architectures, where training and inference use different variants, (iii) expert iteration on the top decile, (iv) a short preference-tuning pass (CRPO) for audio-text alignment, and (v) inference post-processing via joint CFG, source separation, and loudness normalization. Per-stage decomposition on 100 Song Describer prompts shows training-time reward conditioning as a functional conditioning axis, expert iteration as the dominant contributor, the preference-tuning pass adding only noise-level gain, and the inference-time score scalar already saturated by the end of the chain.",
+  "authors": [
+    "Yonghyun Kim",
+    "Junwon Lee",
+    "Haiwen Xia",
+    "Yinghao Ma",
+    "Chris Donahue"
+  ],
+  "published": "2026-06-19T18:22:24Z",
+  "updated": "2026-06-19T18:22:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.21670",
+  "abs_url": "https://arxiv.org/abs/2606.21670",
+  "fetched_at": "2026-07-19T14:18:41.880443Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

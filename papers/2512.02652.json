@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2512.02652",
+  "title": "Pianist Transformer: Towards Expressive Piano Performance Rendering via Scalable Self-Supervised Pre-Training",
+  "summary": "Existing methods for expressive music performance rendering, a conditional generation task that aims to generate a human-like performance from a symbolic score, rely on supervised learning over small labeled datasets, which limits scaling of both data volume and model size, despite the availability of vast unlabeled music, as in vision and language. To address this gap, we introduce Pianist Transformer, with three key contributions: 1) introducing large-scale self-supervised learning into expressive piano performance rendering through a unified Musical Instrument Digital Interface (MIDI) representation, enabling pre-training on 10B tokens of unlabeled MIDI data; 2) an efficient asymmetric Transformer with note-level compression, substantially improving training efficiency, memory usage, and inference speed for long-context music modeling; 3) a state-of-the-art rendering model with an editable workflow, achieving strong objective and subjective results and enabling integration into real-world music production workflows. Overall, Pianist Transformer outlines a scalable path toward human-like performance synthesis in the music domain. Code, audio samples, and model checkpoints are available on our project page: https://yhj137.github.io/pianist-transformer-demo/.",
+  "authors": [
+    "Hong-Jie You",
+    "Jie-Jing Shao",
+    "Xiao-Wen Yang",
+    "Lin-Han Jia",
+    "Lan-Zhe Guo",
+    "Yu-Feng Li"
+  ],
+  "published": "2025-12-02T11:13:29Z",
+  "updated": "2026-06-25T17:55:31Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.02652",
+  "abs_url": "https://arxiv.org/abs/2512.02652",
+  "fetched_at": "2026-07-19T14:18:41.860926Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

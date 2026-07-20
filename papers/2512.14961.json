@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2512.14961",
+  "title": "Adaptive Multimodal Person Recognition: A Robust Framework for Handling Missing Modalities",
+  "summary": "Person identification systems often rely on audio, visual, or behavioral cues, but real-world conditions frequently present with missing or degraded modalities. To address this challenge, we propose a multimodal person identification framework incorporating upper-body motion, face, and voice. Experimental results demonstrate that body motion outperforms traditional modalities such as face and voice in within-session evaluations, while serving as a complementary cue that enhances performance in multi-session scenarios. Our model employs a unified hybrid fusion strategy, fusing both feature-level and score-level information to maximize representational richness and decision accuracy. Specifically, it leverages multi-task learning to process modalities independently, followed by cross-attention and gated fusion mechanisms to exploit both unimodal information and cross-modal interactions. Finally, a confidence-weighted strategy and mistake-correction mechanism dynamically adapt to missing data, ensuring that our single classification head achieves optimal performance even in unimodal and bimodal scenarios. We evaluate our method on CANDOR, a newly introduced interview-based multimodal dataset, which we benchmark in this work for the first time. Our results demonstrate that the proposed trimodal system achieves 99.51% Top-1 accuracy on person identification tasks. In addition, we evaluate our model on the VoxCeleb1 dataset as a widely used evaluation protocol and reach 99.92% accuracy in bimodal mode, outperforming conventional approaches. Moreover, we show that our system maintains high accuracy even when one or two modalities are unavailable, making it a robust solution for real-world person recognition applications. The code and data for this work are publicly available.",
+  "authors": [
+    "Aref Farhadipour",
+    "Teodora Vukovic",
+    "Volker Dellwo",
+    "Petr Motlicek",
+    "Srikanth Madikeri"
+  ],
+  "published": "2025-12-16T22:59:24Z",
+  "updated": "2026-01-27T13:42:30Z",
+  "categories": [
+    "cs.CV",
+    "cs.SD",
+    "eess.AS",
+    "eess.IV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.14961",
+  "abs_url": "https://arxiv.org/abs/2512.14961",
+  "fetched_at": "2026-07-19T14:18:41.860257Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

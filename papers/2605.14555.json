@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2605.14555",
+  "title": "Break-the-Beat! Controllable MIDI-to-Drum Audio Synthesis",
+  "summary": "Current methods for creating drum loop audio in digital music production, such as using one-shot samples or resampling, often demand non-trivial efforts of creators. While recent generative models achieve high fidelity and adhere to text, they lack the specific control needed for such a task. Existing symbolic-to-audio research often focuses on single, tonal instruments, leaving the challenge of polyphonic, percussive drum synthesis unaddressed. We address this gap by introducing ``Break-the-Beat!,'' a model capable of rendering a drum MIDI with the timbre of a reference audio. It is built by fine-tuning a pre-trained text-to-audio model with our proposed content encoder and a effective hybrid conditioning mechanism. To enable this, we construct a new dataset of paired target-reference drum audio from existing drum audio datasets. Experiments demonstrate that our model generates high-quality drum audio that follows high-resolution drum MIDI, achieving strong performance across metrics of audio quality, rhythmic alignment, and beat continuity. This offer producers a new, controllable tool for creative production. Demo page: https://ik4sumii.github.io/break-the-beat/",
+  "authors": [
+    "Shuyang Cui",
+    "Zhi Zhong",
+    "Qiyu Wu",
+    "Zachary Novack",
+    "Woosung Choi",
+    "Keisuke Toyama",
+    "Kin Wai Cheuk",
+    "Junghyun Koo",
+    "Yukara Ikemiya",
+    "Christian Simon",
+    "Chihiro Nagashima",
+    "Shusuke Takahashi"
+  ],
+  "published": "2026-05-14T08:32:38Z",
+  "updated": "2026-05-14T08:32:38Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.14555",
+  "abs_url": "https://arxiv.org/abs/2605.14555",
+  "fetched_at": "2026-07-19T14:17:38.248020Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

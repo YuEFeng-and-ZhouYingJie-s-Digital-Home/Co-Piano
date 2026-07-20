@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2606.12555",
+  "title": "AudioX-Turbo: A Unified Framework for Efficient Anything-to-Audio Generation",
+  "summary": "Audio and music generation based on flexible multimodal control signals is a widely applicable topic, with the following key challenges: 1) a unified multimodal modeling framework, 2) large-scale, high-quality training data, and 3) the prohibitive inference cost of multi-step diffusion sampling. As such, we propose AudioX-Turbo, a unified and efficient framework for anything-to-audio generation that integrates varied multimodal conditions (i.e., text, video, and audio signals) in this work. AudioX-Turbo follows a teacher-student paradigm. The teacher AudioX-Base is built on a Multimodal Diffusion Transformer with a Multimodal Adaptive Fusion module that aligns diverse multimodal inputs for high-fidelity synthesis, and is then distilled into the few-step student AudioX-Turbo via Distribution Matching Distillation adapted to flow matching, complemented by a diffusion-based discriminator for high-quality few-step generation. To support the training of AudioX-Turbo, we construct a large-scale, high-quality dataset, IF-caps-Pro, comprising approximately 9.2M samples curated through a two-stage data collection and annotation pipeline. We benchmark AudioX-Turbo across a wide range of tasks, finding that our model achieves superior performance, especially on text-to-audio and text-to-music generation, while operating at only 4 sampling steps and requiring approximately 25x fewer function evaluations (NFE) than multi-step baselines. These results demonstrate that our method is capable of audio generation under flexible multimodal control, showing efficient and powerful instruction-following capabilities. The code and datasets will be available at https://zeyuet.github.io/AudioX-Turbo/.",
+  "authors": [
+    "Zeyue Tian",
+    "Lei Ke",
+    "Zhaoyang Liu",
+    "Ruibin Yuan",
+    "Liumeng Xue",
+    "Yujiu Yang",
+    "Weijia Chen",
+    "Xu Tan",
+    "Qifeng Chen",
+    "Wei Xue",
+    "Yike Guo"
+  ],
+  "published": "2026-06-10T18:06:27Z",
+  "updated": "2026-07-02T19:10:03Z",
+  "categories": [
+    "cs.SD",
+    "cs.CV",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.12555",
+  "abs_url": "https://arxiv.org/abs/2606.12555",
+  "fetched_at": "2026-07-19T14:18:41.847090Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

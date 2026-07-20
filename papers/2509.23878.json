@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2509.23878",
+  "title": "Disentangling Score Content and Performance Style for Joint Piano Rendering and Transcription",
+  "summary": "Expressive performance rendering (EPR) and automatic piano transcription (APT) are fundamental yet inverse tasks in music information retrieval: EPR generates expressive performances from symbolic scores, while APT recovers scores from performances. Despite their dual nature, prior work has addressed them independently. In this paper we propose a unified framework that jointly models EPR and APT by disentangling note-level score content and global performance style representations from both paired and unpaired data. Our framework is built on a transformer-based sequence-to-sequence architecture and is trained using only sequence-aligned data, without requiring fine-grained note-level alignment. To automate the rendering process while ensuring stylistic compatibility with the score, we introduce an independent diffusion-based performance style recommendation module that generates style embeddings directly from score content. This modular component supports both style transfer and flexible rendering across a range of expressive styles. Experimental results from both objective and subjective evaluations demonstrate that our framework achieves competitive performance on EPR and APT tasks, while enabling effective content-style disentanglement, reliable style transfer, and stylistically appropriate rendering. Demos are available at https://jointpianist.github.io/epr-apt/",
+  "authors": [
+    "Wei Zeng",
+    "Junchuan Zhao",
+    "Ye Wang"
+  ],
+  "published": "2025-09-28T13:36:33Z",
+  "updated": "2025-09-28T13:36:33Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.23878",
+  "abs_url": "https://arxiv.org/abs/2509.23878",
+  "fetched_at": "2026-07-19T14:18:41.848157Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

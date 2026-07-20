@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2510.03750",
+  "title": "Evaluating High-Resolution Piano Sustain Pedal Depth Estimation with Musically Informed Metrics",
+  "summary": "Evaluation for continuous piano pedal depth estimation tasks remains incomplete when relying only on conventional frame-level metrics, which overlook musically important features such as direction-change boundaries and pedal curve contours. To provide more interpretable and musically meaningful insights, we propose an evaluation framework that augments standard frame-level metrics with an action-level assessment measuring direction and timing using segments of press/hold/release states and a gesture-level analysis that evaluates contour similarity of each press-release cycle. We apply this framework to compare an audio-only baseline with two variants: one incorporating symbolic information from MIDI, and another trained in a binary-valued setting, all within a unified architecture. Results show that the MIDI-informed model significantly outperforms the others at action and gesture levels, despite modest frame-level gains. These findings demonstrate that our framework captures musically relevant improvements indiscernible by traditional metrics, offering a more practical and effective approach to evaluating pedal depth estimation models.",
+  "authors": [
+    "Hanwen Zhang",
+    "Kun Fang",
+    "Ziyu Wang",
+    "Ichiro Fujinaga"
+  ],
+  "published": "2025-10-04T09:29:52Z",
+  "updated": "2026-02-03T06:32:38Z",
+  "categories": [
+    "cs.IR",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.03750",
+  "abs_url": "https://arxiv.org/abs/2510.03750",
+  "fetched_at": "2026-07-19T14:18:41.853197Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

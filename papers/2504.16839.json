@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2504.16839",
+  "title": "SMART: Tuning a symbolic music generation system with an audio domain aesthetic reward",
+  "summary": "Recent work has proposed training machine learning models to predict aesthetic ratings for music audio. Our work explores whether such models can be used to finetune a symbolic music generation system with reinforcement learning, and what effect this has on the system outputs. To test this, we use group relative policy optimization to finetune a piano MIDI model with Meta Audiobox Aesthetics ratings of audio-rendered outputs as the reward. We find that this optimization has effects on multiple low-level features of the generated outputs, and improves the average subjective ratings in a preliminary listening study with $14$ participants. We also find that over-optimization dramatically reduces diversity of model outputs.",
+  "authors": [
+    "Nicolas Jonason",
+    "Luca Casini",
+    "Bob L. T. Sturm"
+  ],
+  "published": "2025-04-23T16:02:25Z",
+  "updated": "2025-04-23T16:02:25Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2504.16839",
+  "abs_url": "https://arxiv.org/abs/2504.16839",
+  "fetched_at": "2026-07-19T14:18:41.861273Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2605.23140",
+  "title": "Self-Calibration DOA Estimation for Movable Antenna Systems with Antenna Position Errors",
+  "summary": "In this letter, we investigate the direction-of-arrival (DOA) estimation problem for wireless sensing with movable antenna (MA) systems in the presence of unknown antenna position errors (APE). To achieve robust wireless sensing, we transform the DOA estimation problem with APE into an optimization problem via the orthogonality between the steering vector and the noise subspace. Then we propose an alternating optimization (AO)-based self-calibration estimation, which consists of two stages and iteratively estimates the APE and DOA. Specifically, in the first stage, by fixing the APE, the problem reduces to the classical DOA estimation problem, which is solved using the multiple signal classification (MUSIC) algorithm. In the second stage, we fix the DOA to estimate the APE. By applying the Lagrange multiplier technique to the subproblem, we obtain a closed-form expression for the APE estimation. Simulation results demonstrate the superior DOA estimation performance of the proposed self-calibration algorithm for MA systems compared to the existing approaches.",
+  "authors": [
+    "Chengzhi Ye",
+    "Ruoyu Zhang",
+    "Wen Wu",
+    "Byonghyo Shim"
+  ],
+  "published": "2026-05-22T01:38:41Z",
+  "updated": "2026-05-22T01:38:41Z",
+  "categories": [
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.23140",
+  "abs_url": "https://arxiv.org/abs/2605.23140",
+  "fetched_at": "2026-07-19T14:18:41.843120Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

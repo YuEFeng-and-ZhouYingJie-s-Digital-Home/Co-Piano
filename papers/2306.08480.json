@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2306.08480",
+  "title": "Combining piano performance dimensions for score difficulty classification",
+  "summary": "Predicting the difficulty of playing a musical score is essential for structuring and exploring score collections. Despite its importance for music education, the automatic difficulty classification of piano scores is not yet solved, mainly due to the lack of annotated data and the subjectiveness of the annotations. This paper aims to advance the state-of-the-art in score difficulty classification with two major contributions. To address the lack of data, we present Can I Play It? (CIPI) dataset, a machine-readable piano score dataset with difficulty annotations obtained from the renowned classical music publisher Henle Verlag. The dataset is created by matching public domain scores with difficulty labels from Henle Verlag, then reviewed and corrected by an expert pianist. As a second contribution, we explore various input representations from score information to pre-trained ML models for piano fingering and expressiveness inspired by the musicology definition of performance. We show that combining the outputs of multiple classifiers performs better than the classifiers on their own, pointing to the fact that the representations capture different aspects of difficulty. In addition, we conduct numerous experiments that lay a foundation for score difficulty classification and create a basis for future research. Our best-performing model reports a 39.47% balanced accuracy and 1.13 median square error across the nine difficulty levels proposed in this study. Code, dataset, and models are made available for reproducibility.",
+  "authors": [
+    "Pedro Ramoneda",
+    "Dasaem Jeong",
+    "Vsevolod Eremenko",
+    "Nazif Can Tamer",
+    "Marius Miron",
+    "Xavier Serra"
+  ],
+  "published": "2023-06-14T12:49:59Z",
+  "updated": "2023-09-27T14:15:35Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2306.08480",
+  "abs_url": "https://arxiv.org/abs/2306.08480",
+  "fetched_at": "2026-07-19T14:18:41.854537Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

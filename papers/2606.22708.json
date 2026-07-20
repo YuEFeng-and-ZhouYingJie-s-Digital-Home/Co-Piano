@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.22708",
+  "title": "Libretto: Giving LLM Agents a Sense of Musical Structure",
+  "summary": "Generative music systems can now produce impressive audio from text prompts, but audio outputs are difficult to inspect, edit, and diagnose as musical structure. We introduce Libretto, an agent-facing framework for symbolic music generation and revision. Libretto uses an LLM-native grammar with explicit onset slots, voices, and bar-level organization, then evaluates each piece in a corpus-calibrated statistical space over rhythm, harmony, melody, texture, form, and variation. The same structural axes support retrieval, diagnosis, copy-risk control, and iterative self-revision. Across gap filling, reference-guided full-piece generation, gradual morphing, and educational music generation, Libretto turns symbolic music from a raw token sequence into a measurable and editable object for language-model agents.",
+  "authors": [
+    "Yichen Xu"
+  ],
+  "published": "2026-06-21T22:56:07Z",
+  "updated": "2026-06-21T22:56:07Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.22708",
+  "abs_url": "https://arxiv.org/abs/2606.22708",
+  "fetched_at": "2026-07-19T14:18:41.856835Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

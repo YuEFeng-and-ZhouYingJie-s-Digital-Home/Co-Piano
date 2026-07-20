@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2404.09466",
+  "title": "Scoring Time Intervals using Non-Hierarchical Transformer For Automatic Piano Transcription",
+  "summary": "The neural semi-Markov Conditional Random Field (semi-CRF) framework has demonstrated promise for event-based piano transcription. In this framework, all events (notes or pedals) are represented as closed time intervals tied to specific event types. The neural semi-CRF approach requires an interval scoring matrix that assigns a score for every candidate interval. However, designing an efficient and expressive architecture for scoring intervals is not trivial. This paper introduces a simple method for scoring intervals using scaled inner product operations that resemble how attention scoring is done in transformers. We show theoretically that, due to the special structure from encoding the non-overlapping intervals, under a mild condition, the inner product operations are expressive enough to represent an ideal scoring matrix that can yield the correct transcription result. We then demonstrate that an encoder-only structured non-hierarchical transformer backbone, operating only on a low-time-resolution feature map, is capable of transcribing piano notes and pedals with high accuracy and time precision. The experiment shows that our approach achieves the new state-of-the-art performance across all subtasks in terms of the F1 measure on the Maestro dataset.",
+  "authors": [
+    "Yujia Yan",
+    "Zhiyao Duan"
+  ],
+  "published": "2024-04-15T05:35:09Z",
+  "updated": "2024-11-09T19:45:15Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2404.09466",
+  "abs_url": "https://arxiv.org/abs/2404.09466",
+  "fetched_at": "2026-07-19T14:18:41.854426Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2511.16228",
+  "title": "Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education",
+  "summary": "Despite its potential, AI advances in music education are hindered by proprietary systems that limit the democratization of technology in this domain. In particular, AI-driven music difficulty adjustment is especially promising, as simplifying complex pieces can make music education more inclusive and accessible to learners of all ages and contexts. Nevertheless, recent efforts have relied on proprietary datasets, which prevents the research community from reproducing, comparing, or extending the current state of the art. In addition, while these generative methods offer great potential, most of them use the MIDI format, which, unlike others, such as MusicXML, lacks readability and layout information, thereby limiting their practical use for human performers. This work introduces a transformer-based method for adjusting the difficulty of MusicXML piano scores. Unlike previous methods, which rely on annotated datasets, we propose a synthetic dataset composed of pairs of piano scores ordered by estimated difficulty, with each pair comprising a more challenging and easier arrangement of the same piece. We generate these pairs by creating variations conditioned on the same melody and harmony and leverage pretrained models to assess difficulty and style, ensuring appropriate pairing. The experimental results illustrate the validity of the proposed approach, showing accurate control of playability and target difficulty, as highlighted through qualitative and quantitative evaluations. In contrast to previous work, we openly release all resources (code, dataset, and models), ensuring reproducibility while fostering open-source innovation to help bridge the digital divide.",
+  "authors": [
+    "Pedro Ramoneda",
+    "Emilia Parada-Cabaleiro",
+    "Dasaem Jeong",
+    "Xavier Serra"
+  ],
+  "published": "2025-11-20T10:54:43Z",
+  "updated": "2025-11-22T17:06:47Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.16228",
+  "abs_url": "https://arxiv.org/abs/2511.16228",
+  "fetched_at": "2026-07-19T14:18:41.867621Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

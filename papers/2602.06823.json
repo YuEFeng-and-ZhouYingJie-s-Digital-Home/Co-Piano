@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2602.06823",
+  "title": "AI-Generated Music Detection in Broadcast Monitoring",
+  "summary": "AI music generators have advanced to the point where their outputs are often indistinguishable from human compositions. While detection methods have emerged, they are typically designed and validated in music streaming contexts with clean, full-length tracks. Broadcast audio, however, poses a different challenge: music appears as short excerpts, often masked by dominant speech, conditions under which existing detectors fail. In this work, we introduce AI-OpenBMAT, the first dataset tailored to broadcast-style AI-music detection. It contains 3,294 one-minute audio excerpts (54.9 hours) that follow the duration patterns and loudness relations of real television audio, combining human-made production music with stylistically matched continuations generated with Suno v3.5. We benchmark a CNN baseline and state-of-the-art SpectTTTra models to assess SNR and duration robustness, and evaluate on a full broadcast scenario. Across all settings, models that excel in streaming scenarios suffer substantial degradation, with F1-scores dropping below 60% when music is in the background or has a short duration. These results highlight speech masking and short music length as critical open challenges for AI music detection, and position AI-OpenBMAT as a benchmark for developing detectors capable of meeting industrial broadcast requirements.",
+  "authors": [
+    "David López-Ayala",
+    "Asier Cabello",
+    "Pablo Zinemanas",
+    "Emilio Molina",
+    "Martín Rocamora"
+  ],
+  "published": "2026-02-06T16:08:01Z",
+  "updated": "2026-03-02T19:51:39Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.06823",
+  "abs_url": "https://arxiv.org/abs/2602.06823",
+  "fetched_at": "2026-07-19T14:18:41.859888Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.11087",
+  "title": "Energy Calculus: A Compositional Algebra of Energy in Computational Systems",
+  "summary": "Energy is a binding constraint for AI scaling, yet it lacks the formal treatment that computation, communication, and learning have long enjoyed. Recent systems demonstrate large energy savings, but each targets a specific granularity and structure; one cannot combine frequency scaling from one system with critical-path analysis from another and reason about their joint effect on total energy. Energy remains a monolithic scalar that is measured after the fact and optimized with point solutions that do not generalize. We propose energy calculus, a compositional algebra that treats energy as a first-class primitive. It builds on energy elements, units of computation whose energy we can reliably measure, each carrying an energy signature that comprises its time, its static and dynamic energy, the hardware operating point and execution context under which we measured it, and the associated measurement uncertainty. Three operators (sequential, same-device parallel, and cross-device parallel) compose signatures along the same structure as the computation itself, covering arbitrary DAG-structured executions. The algebra rests on seven axioms that capture how hardware consumes energy, and it exhibits two properties distinctive to energy among computing resources: sequential composition commutes only when elements are mutually context-insensitive, and sequential composition does not distribute over parallel composition. We also present a Reduction Theorem that recovers simple context-independent algebra whenever interactions fall below measurement uncertainty, so practitioners pay for context dependence only where the physics demands it. Uncertainty propagates through every composition, so each prediction carries an error bound. Finally, we show that the same operators extend from energy totals to time--energy Pareto frontiers, so reasoning about tradeoffs composes with the same algebra.",
+  "authors": [
+    "Mosharaf Chowdhury",
+    "Jae-Won Chung",
+    "Jeff J. Ma",
+    "Nishil Talati",
+    "Ruofan Wu"
+  ],
+  "published": "2026-07-13T04:55:40Z",
+  "updated": "2026-07-13T04:55:40Z",
+  "categories": [
+    "cs.DC",
+    "cs.PF"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.11087",
+  "abs_url": "https://arxiv.org/abs/2607.11087",
+  "fetched_at": "2026-07-19T14:18:41.877670Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.01762",
+  "title": "Music Genre Classification Using Machine Learning Techniques",
+  "summary": "This paper presents a comparative analysis of machine learning methodologies for automatic music genre classification. We evaluate the performance of classical classifiers, including Support Vector Machines (SVM) and ensemble methods, trained on a comprehensive set of hand-crafted audio features, against a Convolutional Neural Network (CNN) operating on Mel spectrograms. The study is conducted on the widely-used GTZAN dataset. Our findings demonstrate a noteworthy result: the SVM, leveraging domain-specific feature engineering, achieves superior classification accuracy compared to the end-to-end CNN model. We attribute this outcome to the data-constrained nature of the benchmark dataset, where the strong inductive bias of engineered features provides a regularization effect that mitigates the risk of overfitting inherent in high-capacity deep learning models. This work underscores the enduring relevance of traditional feature extraction in practical audio processing tasks and provides a critical perspective on the universal applicability of deep learning, especially for moderately sized datasets.",
+  "authors": [
+    "Alokit Mishra",
+    "Ryyan Akhtar"
+  ],
+  "published": "2025-09-01T20:43:55Z",
+  "updated": "2025-09-01T20:43:55Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.01762",
+  "abs_url": "https://arxiv.org/abs/2509.01762",
+  "fetched_at": "2026-07-19T14:18:41.865556Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

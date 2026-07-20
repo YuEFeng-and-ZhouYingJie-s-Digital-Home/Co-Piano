@@ -1,0 +1,51 @@
+{
+  "n_pieces": 5,
+  "n_clusters": 2,
+  "n_noise": 0,
+  "silhouette_score": 0.412,
+  "method": "kmeans",
+  "cluster_assignments": {
+    "Minuet in G": 0,
+    "Sonata K.545": 1,
+    "Für Elise": 0,
+    "Nocturne Op.9": 1,
+    "Träumerei": 1
+  },
+  "recommendations": [
+    {
+      "piece": "Minuet in G",
+      "cluster_id": 0,
+      "profile_name": "音准薄弱型",
+      "description": "主要问题是错音(音准不准),节奏和力度基本稳定",
+      "recommendation": "音阶+练习曲精练,慢速 60 BPM 准后再加速"
+    },
+    {
+      "piece": "Sonata K.545",
+      "cluster_id": 1,
+      "profile_name": "节奏不稳型",
+      "description": "节奏稳定性差(std 大),音准相对好",
+      "recommendation": "节拍器从 60 BPM 练起,逐步加速到原速"
+    },
+    {
+      "piece": "Für Elise",
+      "cluster_id": 0,
+      "profile_name": "音准薄弱型",
+      "description": "主要问题是错音(音准不准),节奏和力度基本稳定",
+      "recommendation": "音阶+练习曲精练,慢速 60 BPM 准后再加速"
+    },
+    {
+      "piece": "Nocturne Op.9",
+      "cluster_id": 1,
+      "profile_name": "节奏不稳型",
+      "description": "节奏稳定性差(std 大),音准相对好",
+      "recommendation": "节拍器从 60 BPM 练起,逐步加速到原速"
+    },
+    {
+      "piece": "Träumerei",
+      "cluster_id": 1,
+      "profile_name": "节奏不稳型",
+      "description": "节奏稳定性差(std 大),音准相对好",
+      "recommendation": "节拍器从 60 BPM 练起,逐步加速到原速"
+    }
+  ]
+}

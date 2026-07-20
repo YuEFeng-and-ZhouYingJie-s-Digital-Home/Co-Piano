@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2108.10382",
+  "title": "Learning Sparse Analytic Filters for Piano Transcription",
+  "summary": "In recent years, filterbank learning has become an increasingly popular strategy for various audio-related machine learning tasks. This is partly due to its ability to discover task-specific audio characteristics which can be leveraged in downstream processing. It is also a natural extension of the nearly ubiquitous deep learning methods employed to tackle a diverse array of audio applications. In this work, several variations of a frontend filterbank learning module are investigated for piano transcription, a challenging low-level music information retrieval task. We build upon a standard piano transcription model, modifying only the feature extraction stage. The filterbank module is designed such that its complex filters are unconstrained 1D convolutional kernels with long receptive fields. Additional variations employ the Hilbert transform to render the filters intrinsically analytic and apply variational dropout to promote filterbank sparsity. Transcription results are compared across all experiments, and we offer visualization and analysis of the filterbanks.",
+  "authors": [
+    "Frank Cwitkowitz",
+    "Mojtaba Heydari",
+    "Zhiyao Duan"
+  ],
+  "published": "2021-08-23T19:41:11Z",
+  "updated": "2022-11-10T22:10:07Z",
+  "categories": [
+    "eess.AS",
+    "cs.LG",
+    "cs.SD",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2108.10382",
+  "abs_url": "https://arxiv.org/abs/2108.10382",
+  "fetched_at": "2026-07-19T14:18:41.862294Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

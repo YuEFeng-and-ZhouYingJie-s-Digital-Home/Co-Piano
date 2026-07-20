@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.10281",
+  "title": "Drum Synthesis from Expressive Drum Grids via Neural Audio Codecs",
+  "summary": "Generating realistic drum audio directly from symbolic representations is a challenging task at the intersection of music perception and machine learning. We propose a system that transforms an expressive drum grid, a time-aligned MIDI representation with microtiming and velocity information, into drum audio by predicting discrete codes of a neural audio codec. Our approach uses a Transformer-based model to map the drum grid input to a sequence of codec tokens, which are then converted to waveform audio via a pre-trained codec decoder. We experiment with multiple state-of-the-art neural codecs, namely EnCodec, DAC, and X-Codec, to assess how the choice of audio representation impacts the quality of the generated drums. The system is trained and evaluated on the Expanded Groove MIDI Dataset, E-GMD, a large collection of human drum performances with paired MIDI and audio. We evaluate the fidelity and musical alignment of the generated audio using objective metrics. Overall, our results establish codec-token prediction as an effective route for drum grid-to-audio generation and provide practical insights into selecting audio tokenizers for percussive synthesis.",
+  "authors": [
+    "Konstantinos Soiledis",
+    "Maximos Kaliakatsos-Papakostas",
+    "Dimos Makris",
+    "Konstantinos Tsamis"
+  ],
+  "published": "2026-05-11T09:40:14Z",
+  "updated": "2026-05-11T09:40:14Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.10281",
+  "abs_url": "https://arxiv.org/abs/2605.10281",
+  "fetched_at": "2026-07-19T14:17:38.248443Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

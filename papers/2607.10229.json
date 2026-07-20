@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.10229",
+  "title": "Graph Representation of RaagBase: A Unique Dataset for Hindustani Music",
+  "summary": "Raag classification is a fundamental MIR task for Hindustani Music, with applications in recommendation, education, archiving, and intelligent search. However, raag clustering remains underexplored, as most existing approaches rely on annotated audio or labeled datasets. While annotated melodic phrases capture characteristic patterns, complete note sequences preserve temporal structure and contextual dependencies, making them more suitable for data-driven modeling. In this work, we introduce RaagBase, a notation-based text dataset consisting of note sequences from compositions by Pt. Bhatkhande. Furthermore we propose a novel graph-based representation of raag structures by modeling the dominance and absence of notes in compositions. Each composition is represented as a node, and the edges between two compositions corresponds the similarities between them based on the note frequency distribution. Further, we apply established graph clustering techniques to identify groups of similar raag compositions. Experimental results demonstrate highly coherent clusters with strong agreement to ground-truth raag labels, thereby validating both the dataset and the proposed representation. The dataset is publicly available at https://anonymous.4open.science/r/RaagBase-5427.",
+  "authors": [
+    "Chandan Misra",
+    "Swarup Chattopadhyay"
+  ],
+  "published": "2026-07-11T09:34:25Z",
+  "updated": "2026-07-11T09:34:25Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.10229",
+  "abs_url": "https://arxiv.org/abs/2607.10229",
+  "fetched_at": "2026-07-19T14:18:41.879442Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

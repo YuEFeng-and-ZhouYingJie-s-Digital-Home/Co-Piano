@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2509.15222",
+  "title": "Two Web Toolkits for Multimodal Piano Performance Dataset Acquisition and Fingering Annotation",
+  "summary": "Piano performance is a multimodal activity that intrinsically combines physical actions with the acoustic rendition. Despite growing research interest in analyzing the multimodal nature of piano performance, the laborious process of acquiring large-scale multimodal data remains a significant bottleneck, hindering further progress in this field. To overcome this barrier, we present an integrated web toolkit comprising two graphical user interfaces (GUIs): (i) PiaRec, which supports the synchronized acquisition of audio, video, MIDI, and performance metadata. (ii) ASDF, which enables the efficient annotation of performer fingering from the visual data. Collectively, this system can streamline the acquisition of multimodal piano performance datasets.",
+  "authors": [
+    "Junhyung Park",
+    "Yonghyun Kim",
+    "Joonhyung Bae",
+    "Kirak Kim",
+    "Taegyun Kwon",
+    "Alexander Lerch",
+    "Juhan Nam"
+  ],
+  "published": "2025-09-18T17:59:24Z",
+  "updated": "2025-09-18T17:59:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.CV",
+    "cs.MM",
+    "eess.AS",
+    "eess.IV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.15222",
+  "abs_url": "https://arxiv.org/abs/2509.15222",
+  "fetched_at": "2026-07-19T14:18:41.853314Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

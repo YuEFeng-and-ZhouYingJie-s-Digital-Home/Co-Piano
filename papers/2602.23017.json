@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2602.23017",
+  "title": "DigiArm: An Anthropomorphic 3D-Printed Prosthetic Hand with Enhanced Dexterity for Typing Tasks",
+  "summary": "Despite recent advancements, existing prosthetic limbs are unable to replicate the dexterity and intuitive control of the human hand. Current control systems for prosthetic hands are often limited to grasping, and commercial prosthetic hands lack the precision needed for dexterous manipulation or applications that require fine finger motions. Thus, there is a critical need for accessible and replicable prosthetic designs that enable individuals to interact with electronic devices and perform precise finger pressing, such as keyboard typing or piano playing, while preserving current prosthetic capabilities. This paper presents a low-cost, lightweight, 3D-printed robotic prosthetic hand, specifically engineered for enhanced dexterity with electronic devices such as a computer keyboard or piano, as well as general object manipulation. The robotic hand features a mechanism to adjust finger abduction/adduction spacing, a 2-D wrist with the inclusion of controlled ulnar/radial deviation optimized for typing, and control of independent finger pressing. We conducted a study to demonstrate how participants can use the robotic hand to perform keyboard typing and piano playing in real time, with different levels of finger and wrist motion. This supports the notion that our proposed design can allow for the execution of key typing motions more effectively than before, aiming to enhance the functionality of prosthetic hands.",
+  "authors": [
+    "Dean Zadok",
+    "Tom Naamani",
+    "Yuval Bar-Ratson",
+    "Elisha Barash",
+    "Oren Salzman",
+    "Alon Wolf",
+    "Alex M. Bronstein",
+    "Nili Krausz"
+  ],
+  "published": "2026-02-26T13:55:05Z",
+  "updated": "2026-02-26T13:55:05Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.23017",
+  "abs_url": "https://arxiv.org/abs/2602.23017",
+  "fetched_at": "2026-07-19T14:18:41.852842Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

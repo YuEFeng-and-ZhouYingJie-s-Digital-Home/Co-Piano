@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2409.09378",
+  "title": "Prevailing Research Areas for Music AI in the Era of Foundation Models",
+  "summary": "Parallel to rapid advancements in foundation model research, the past few years have witnessed a surge in music AI applications. As AI-generated and AI-augmented music become increasingly mainstream, many researchers in the music AI community may wonder: what research frontiers remain unexplored? This paper outlines several key areas within music AI research that present significant opportunities for further investigation. We begin by examining foundational representation models and highlight emerging efforts toward explainability and interpretability. We then discuss the evolution toward multimodal systems, provide an overview of the current landscape of music datasets and their limitations, and address the growing importance of model efficiency in both training and deployment. Next, we explore applied directions, focusing first on generative models. We review recent systems, their computational constraints, and persistent challenges related to evaluation and controllability. We then examine extensions of these generative approaches to multimodal settings and their integration into artists' workflows, including applications in music editing, captioning, production, transcription, source separation, performance, discovery, and education. Finally, we explore copyright implications of generative music and propose strategies to safeguard artist rights. While not exhaustive, this survey aims to illuminate promising research directions enabled by recent developments in music foundation models.",
+  "authors": [
+    "Megan Wei",
+    "Mateusz Modrzejewski",
+    "Aswin Sivaraman",
+    "Dorien Herremans"
+  ],
+  "published": "2024-09-14T09:06:43Z",
+  "updated": "2025-11-04T04:47:24Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2409.09378",
+  "abs_url": "https://arxiv.org/abs/2409.09378",
+  "fetched_at": "2026-07-19T14:18:41.876214Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

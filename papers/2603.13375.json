@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2603.13375",
+  "title": "InfiniteDance: Scalable 3D Dance Generation Towards in-the-wild Generalization",
+  "summary": "Although existing 3D dance generation methods perform well in controlled scenarios, they often struggle to generalize in the wild. When conditioned on unseen music, existing methods often produce unstructured or physically implausible dance, largely due to limited music-to-dance data and restricted model capacity. This work aims to push the frontier of generalizable 3D dance generation by scaling up both data and model design. (1) On the data side, we develop a fully automated pipeline that reconstructs high-fidelity 3D dance motions from monocular videos. To eliminate the physical artifacts prevalent in existing reconstruction methods, we introduce a Foot Restoration Diffusion Model (FRDM) guided by foot-contact and geometric constraints that enforce physical plausibility while preserving kinematic smoothness and expressiveness, resulting in a diverse, high-quality multimodal 3D dance dataset totaling 100.69 hours. (2) On model design, we propose Choreographic LLaMA (ChoreoLLaMA), a scalable LLaMA-based architecture. To enhance robustness under unfamiliar music conditions, we integrate a retrieval-augmented generation (RAG) module that injects reference dance as a prompt. Additionally, we design a slow/fast-cadence Mixture-of-Experts (MoE) module that enables ChoreoLLaMA to smoothly adapt motion rhythms across varying music tempos. Extensive experiments across diverse dance genres show that our approach surpasses existing methods in both qualitative and quantitative evaluations, marking a step toward scalable, real-world 3D dance generation. Code, models, and data will be released.",
+  "authors": [
+    "Ronghui Li",
+    "Zhongyuan Hu",
+    "Li Siyao",
+    "Youliang Zhang",
+    "Haozhe Xie",
+    "Mingyuan Zhang",
+    "Jie Guo",
+    "Xiu Li",
+    "Ziwei Liu"
+  ],
+  "published": "2026-03-10T10:10:34Z",
+  "updated": "2026-03-10T10:10:34Z",
+  "categories": [
+    "cs.CV",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.13375",
+  "abs_url": "https://arxiv.org/abs/2603.13375",
+  "fetched_at": "2026-07-19T14:18:41.844697Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.06589",
+  "title": "Extending Xenakis: From Architectural Geometry to Sonification of the Philips Pavilion",
+  "summary": "Architecture and music have been linked through proportion and temporal structure, yet architectural geometry is rarely viewed as a source of generative music. Revisiting Xenakis' one-directional transformation from string glissandi in Metastaseis to the ruled surfaces of the Philips Pavilion, we invert this workflow and sonify the completed Pavilion as a temporal composition. We reconstruct the Pavilion as nine ruled surfaces, extract their governing ruling lines, and subdivide each surface into structural lines and spatial sampling points. Four evenly spaced ruling lines per surface generate continuous string glissandi, while 3357 sampled points develop five density-based energy blocks and a sparse brass and woodwind subsequence. Implemented in Python, the system produces MIDI rendered in Ableton Live, accompanied by a real-time 3D visualization that reveals architectural motion, stasis, and structural contrast through sound and image. In general, this work paves the way for the transfer of architectural geometry as a performable musical structure, extending Xenakis's architectural and musical thinking to sonification and interactive music practice.",
+  "authors": [
+    "Changda Ma",
+    "Sunshiyu Wang",
+    "Canting Zhu",
+    "Alexandria Smith"
+  ],
+  "published": "2026-07-06T06:30:45Z",
+  "updated": "2026-07-06T06:30:45Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.06589",
+  "abs_url": "https://arxiv.org/abs/2607.06589",
+  "fetched_at": "2026-07-19T14:17:38.245836Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

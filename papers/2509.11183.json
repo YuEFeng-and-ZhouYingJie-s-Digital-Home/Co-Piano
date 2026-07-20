@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2509.11183",
+  "title": "WeaveMuse: An Open Agentic System for Multimodal Music Understanding and Generation",
+  "summary": "Agentic AI has been standardized in industry as a practical paradigm for coordinating specialized models and tools to solve complex multimodal tasks. In this work, we present WeaveMuse, a multi-agent system for music understanding, symbolic composition, and audio synthesis. Each specialist agent interprets user requests, derives machine-actionable requirements (modalities, formats, constraints), and validates its own outputs, while a manager agent selects and sequences tools, mediates user interaction, and maintains state across turns. The system is extendable and deployable either locally, using quantization and inference strategies to fit diverse hardware budgets, or via the HFApi to preserve free community access to open models. Beyond out-of-the-box use, the system emphasizes controllability and adaptation through constraint schemas, structured decoding, policy-based inference, and parameter-efficient adapters or distilled variants that tailor models to MIR tasks. A central design goal is to facilitate intermodal interaction across text, symbolic notation and visualization, and audio, enabling analysis-synthesis-render loops and addressing cross-format constraints. The framework aims to democratize, implement, and make accessible MIR tools by supporting interchangeable open-source models of various sizes, flexible memory management, and reproducible deployment paths.",
+  "authors": [
+    "Emmanouil Karystinaios"
+  ],
+  "published": "2025-09-14T09:29:33Z",
+  "updated": "2025-09-14T09:29:33Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.11183",
+  "abs_url": "https://arxiv.org/abs/2509.11183",
+  "fetched_at": "2026-07-19T14:18:41.868485Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

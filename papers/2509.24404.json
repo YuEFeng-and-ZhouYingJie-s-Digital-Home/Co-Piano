@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.24404",
+  "title": "From Sound to Setting: AI-Based Equalizer Parameter Prediction for Piano Tone Replication",
+  "summary": "This project presents an AI-based system for tone replication in music production, focusing on predicting EQ parameter settings directly from audio features. Unlike traditional audio-to-audio methods, our approach outputs interpretable parameter values (e.g., EQ band gains) that musicians can further adjust in their workflow. Using a dataset of piano recordings with systematically varied EQ settings, we evaluate both regression and neural network models. The neural network achieves a mean squared error of 0.0216 on multi-band tasks. The system enables practical, flexible, and automated tone matching for music producers and lays the foundation for extensions to more complex audio effects.",
+  "authors": [
+    "Song-Ze Yu"
+  ],
+  "published": "2025-09-29T07:50:28Z",
+  "updated": "2025-09-29T07:50:28Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.24404",
+  "abs_url": "https://arxiv.org/abs/2509.24404",
+  "fetched_at": "2026-07-19T14:18:41.868246Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

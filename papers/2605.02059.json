@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2605.02059",
+  "title": "RenCon 2025: Revival of the Expressive Performance Rendering Competition",
+  "summary": "This paper presents a comprehensive documentation of RenCon 2025, the revival of the expressive performance rendering competition which took place at ISMIR 2025 in Daejeon, Korea. The competition attracted 9 entries from international research groups, representing diverse approaches to expressive piano performance rendering. The two-phase assessment structure comprised a preliminary online evaluation and live real-time rendering at the conference. We analyze the competition format, participant demographics, system performance, and lessons learned for future iterations. The results demonstrate significant advances in expressive rendering capabilities while highlighting remaining challenges in achieving human-level musical expression.",
+  "authors": [
+    "Huan Zhang",
+    "Taegyun Kwon",
+    "Anders Friberg",
+    "Junyan Jiang",
+    "Hayeon Bang",
+    "Hyeyoon Cho",
+    "Gus Xia",
+    "Akira Maezawa",
+    "Simon Dixon",
+    "Dasaem Jeong"
+  ],
+  "published": "2026-05-03T21:06:08Z",
+  "updated": "2026-05-06T14:14:18Z",
+  "categories": [
+    "cs.MM",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.02059",
+  "abs_url": "https://arxiv.org/abs/2605.02059",
+  "fetched_at": "2026-07-19T14:17:07.971516Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.14934",
+  "title": "Still image and spatial-temporal tomato data enabling detection, segmentation, tracking, and video-instance segmentation using strong and weak labels",
+  "summary": "In this manuscript we release two datasets for visual sensing of tomato plants grown in commercial-like settings and acquired using a robot. The first is BUTom21 which consists of still images and manual annotations. The second is BUTom-ST21 which consists of video-based data and semi-automated annotations through AI-based methods, referred to as pseudo-labels. In both cases, we provide pixel-level labels for the ripeness of the fruit. The aim is to provide the research community a challenging set of real-world imagery to explore methods to sense and estimate the state of tomato plants and their fruit, which is an important horticultural crop. Importantly, the spatial-temporal dataset provides individual fruit count and ripeness information enabling researchers to push the boundaries of field-based phenotyping.",
+  "authors": [
+    "Michael Halstead",
+    "Esra Guclu",
+    "Mohamed Farag",
+    "Enrico Pallotta",
+    "Christian Hund",
+    "Ribana Roscher",
+    "Maren Bennewitz",
+    "Juergen Gall",
+    "Cyrill Stachniss",
+    "Chris McCool"
+  ],
+  "published": "2026-07-16T12:47:55Z",
+  "updated": "2026-07-16T12:47:55Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14934",
+  "abs_url": "https://arxiv.org/abs/2607.14934",
+  "fetched_at": "2026-07-19T14:17:07.978343Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

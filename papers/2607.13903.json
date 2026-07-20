@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.13903",
+  "title": "Genre Bias or Aesthetic Perception? Identifying and Mitigating Shortcut Learning in Music Evaluation",
+  "summary": "Music aesthetics scoring plays a critical role in applications such as dataset curation, generative model evaluation, and reward modeling for music generation. Recent approaches rely on deep neural networks trained on human-annotated ratings, but these models may exploit spurious correlations rather than capturing perceptually meaningful aesthetics. In this work, we identify a previously underexplored failure mode in music evaluation models: genre-induced shortcut learning. Through a systematic analysis of SongEval, we show that biases in training data lead to strong correlations between genre-related features and predicted scores, causing the model to use them as a proxy for aesthetics. This results in systematic overestimation of pop music and undervaluation of high-quality samples from other genres, leading to predictions that are inconsistent with human preferences. To address this issue, we propose a training objective that jointly reweights hard samples and regularizes group-level performance, encouraging the model to learn genre-invariant representations of musicality. Experimental results demonstrate that our method reduces genre-dependent bias and improves alignment with human preferences, as reflected by gains in both cross-genre and within-genre preference alignment.",
+  "authors": [
+    "Yizhou Zhang",
+    "Wangjin Zhou",
+    "Yi Zhao",
+    "Wei Tan",
+    "Keisuke Imoto",
+    "Zhi Gong"
+  ],
+  "published": "2026-07-15T14:44:50Z",
+  "updated": "2026-07-15T14:44:50Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13903",
+  "abs_url": "https://arxiv.org/abs/2607.13903",
+  "fetched_at": "2026-07-19T14:18:41.863656Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

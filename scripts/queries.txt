@@ -1,0 +1,21 @@
+# piano-ai-corpus 搜索词(10 组,每组 15-25 篇,合计目标 150+ 篇,过滤后 100+)
+abs:piano+AND+abs:transcription                              # 钢琴自动转谱(主流任务)
+abs:music+AND+abs:generation+AND+(abs:transformer+OR+abs:diffusion)  # 音乐生成(扩散/Transformer)
+abs:expressive+AND+abs:performance+AND+abs:music            # 表现力演奏建模
+abs:piano+AND+(abs:fingering+OR+abs:pedaling)                # 指法/踏板
+abs:music+AND+abs:captioning                                 # 音乐描述
+abs:automatic+AND+abs:music+AND+abs:transcription            # AMT 总览
+abs:score+AND+abs:following+AND+abs:audio                    # 乐谱跟随
+abs:symbolic+AND+abs:music+AND+(abs:generation+OR+abs:modeling)  # 符号音乐建模
+abs:music+AND+abs:practice+AND+abs:AI                        # 练习 AI / 教学
+abs:piano+AND+abs:rendering                                  # 演奏渲染(MIDI→音频)
+abs:music+AND+abs:transformer                                       # 通用音乐 Transformer
+abs:MIDI+AND+abs:music                                              # MIDI 类
+abs:music+AND+abs:analysis+AND+abs:deep+AND+abs:learning            # 音乐分析+DL
+abs:audio+AND+abs:music+AND+abs:generation                          # 音频生成
+abs:piano+AND+abs:performance                                       # 演奏
+abs:music+AND+abs:education+AND+abs:AI                              # 音乐教育 AI
+abs:music+AND+abs:diffusion                                         # 音乐扩散模型
+abs:composition+AND+abs:AI                                          # 创作 AI
+abs:music+AND+abs:dataset                                           # 数据集
+abs:music+AND+abs:foundation+AND+abs:model                          # 音乐基础模型

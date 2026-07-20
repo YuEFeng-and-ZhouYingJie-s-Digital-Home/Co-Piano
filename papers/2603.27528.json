@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2603.27528",
+  "title": "Advancing Multi-Instrument Music Transcription: Results from the 2025 AMT Challenge",
+  "summary": "This paper presents the results of the 2025 Automatic Music Transcription (AMT) Challenge, an online competition to benchmark progress in multi-instrument transcription. Eight teams submitted valid solutions; two outperformed the baseline MT3 model. The results highlight both advances in transcription accuracy and the remaining difficulties in handling polyphony and timbre variation. We conclude with directions for future challenges: broader genre coverage and stronger emphasis on instrument detection.",
+  "authors": [
+    "Ojas Chaturvedi",
+    "Kayshav Bhardwaj",
+    "Tanay Gondil",
+    "Benjamin Shiue-Hal Chou",
+    "Kristen Yeon-Ji Yun",
+    "Yung-Hsiang Lu",
+    "Yujia Yan",
+    "Sungkyun Chang"
+  ],
+  "published": "2026-03-29T05:41:42Z",
+  "updated": "2026-03-29T05:41:42Z",
+  "categories": [
+    "cs.SD",
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.27528",
+  "abs_url": "https://arxiv.org/abs/2603.27528",
+  "fetched_at": "2026-07-19T14:17:07.974184Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

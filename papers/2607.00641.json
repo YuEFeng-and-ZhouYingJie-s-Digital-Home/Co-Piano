@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.00641",
+  "title": "What's a Credit Worth? A Market Framework for Attribution-Aware Compensation in Generative Music",
+  "summary": "Advances in generative AI are rapidly increasing the quality and commercial value of generated music, and this progress depends on large catalogs of creators' recordings. This raises a central question for platform design: how should creators be compensated when their work is used to train generative AI models that in turn produce commercial outputs? We develop a framework for fairly compensating creators in generative-music markets, where each creator's payment depends on a data-attribution score estimating their contribution to model outputs. Compared to past compensation frameworks, our framework has two unique considerations: (1) attribution is traced to entire creator catalogs, not individual songs, and (2) the informativeness (signal-to-noise ratio) of the attribution score is an input to the payment mechanism. The framework yields a closed-form payment rule per creator and measures the welfare cost of inaccurate attribution for both creators and the platform. Whether the welfare-optimal contract is royalty-based or takes the form of fixed-fee licensing depends on how informative attribution is for that creator's catalog. We show that better attribution translates directly into welfare gains for both creators and the platform, yet under multi-platform competition a platform only captures gains from attribution improvements when its signal becomes the most precise in the market. To ground our framework in empirical behavior, we train acoustic and symbolic music generation models and measure the informativeness of scalable attribution techniques against a leave-one-catalog-out ground truth. Our experiments reveal that noisy attribution signals push payment toward fixed-fee licensing and diminish welfare for both creators and the platform, providing an economic motivation for further research on improved attribution.",
+  "authors": [
+    "Luyang Zhang",
+    "Xirui Jiang",
+    "Junwei Deng",
+    "Beibei Li",
+    "Jiaqi W. Ma",
+    "Chris Donahue"
+  ],
+  "published": "2026-07-01T08:55:50Z",
+  "updated": "2026-07-01T08:55:50Z",
+  "categories": [
+    "cs.CY",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.00641",
+  "abs_url": "https://arxiv.org/abs/2607.00641",
+  "fetched_at": "2026-07-19T14:18:41.856711Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

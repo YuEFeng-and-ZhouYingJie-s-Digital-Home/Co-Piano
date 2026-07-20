@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2604.04395",
+  "title": "BiTDiff: Fine-Grained 3D Conducting Motion Generation via BiMamba-Transformer Diffusion",
+  "summary": "3D conducting motion generation aims to synthesize fine-grained conductor motions from music, with broad potential in music education, virtual performance, digital human animation, and human-AI co-creation. However, this task remains underexplored due to two major challenges: (1) the lack of large-scale fine-grained 3D conducting datasets and (2) the absence of effective methods that can jointly support long-sequence generation with high quality and efficiency. To address the data limitation, we develop a quality-oriented 3D conducting motion collection pipeline and construct CM-Data, a fine-grained SMPL-X dataset with about 10 hours of conducting motion data. To the best of our knowledge, CM-Data is the first and largest public dataset for 3D conducting motion generation. To address the methodological limitation, we propose BiTDiff, a novel framework for 3D conducting motion generation, built upon a BiMamba-Transformer hybrid model architecture for efficient long-sequence modeling and a Diffusion-based generative strategy with human-kinematic decomposition for high-quality motion synthesis. Specifically, BiTDiff introduces auxiliary physical-consistency losses and a hand-/body-specific forward-kinematics design for better fine-grained motion modeling, while leveraging BiMamba for memory-efficient long-sequence temporal modeling and Transformer for cross-modal semantic alignment. In addition, BiTDiff supports training-free joint-level motion editing, enabling downstream human-AI interaction design. Extensive quantitative and qualitative experiments demonstrate that BiTDiff achieves state-of-the-art (SOTA) performance for 3D conducting motion generation on the CM-Data dataset. Code will be available upon acceptance.",
+  "authors": [
+    "Tianzhi Jia",
+    "Kaixing Yang",
+    "Xiaole Yang",
+    "Xulong Tang",
+    "Ke Qiu",
+    "Shikui Wei",
+    "Yao Zhao"
+  ],
+  "published": "2026-04-06T03:49:36Z",
+  "updated": "2026-04-23T03:50:19Z",
+  "categories": [
+    "cs.CV",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.04395",
+  "abs_url": "https://arxiv.org/abs/2604.04395",
+  "fetched_at": "2026-07-19T14:18:41.873113Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

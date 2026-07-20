@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2606.06444",
+  "title": "USAD 2.0: Scaling Representation Distillation for Universal Audio Understanding",
+  "summary": "Audio encoders are critical to modern audio applications as large language models (LLMs) increasingly rely on a single encoder for diverse inputs. While self-supervised learning (SSL) has yielded strong domain-specific encoders like speech or music experts, multi-domain approaches like USAD and SPEAR remain limited in coverage and evaluation. Recent studies also suggest supervised encoders align better with audio LLMs. We present USAD 2.0, a universal encoder integrating knowledge from both SSL and supervised foundation models. USAD 2.0 introduces domain-aware distillation to address teacher mismatch, extends coverage to the music domain, and adds second-stage supervised distillation for downstream use. We further scale the model to one billion parameters via depth scaling. Experiments show USAD 2.0 achieves strong or state-of-the-art performance across probing and LLM-based evaluations.",
+  "authors": [
+    "Heng-Jui Chang",
+    "Alexander H. Liu",
+    "Saurabhchand Bhati",
+    "Mrudula Athi",
+    "Anton Ratnarajah",
+    "Amit Chhetri",
+    "James Glass"
+  ],
+  "published": "2026-06-04T17:42:05Z",
+  "updated": "2026-06-04T17:42:05Z",
+  "categories": [
+    "eess.AS",
+    "cs.CL",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.06444",
+  "abs_url": "https://arxiv.org/abs/2606.06444",
+  "fetched_at": "2026-07-19T14:18:41.880785Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

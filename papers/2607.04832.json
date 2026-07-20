@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.04832",
+  "title": "Semantic Homogenization in Italian Popular Music: A Diachronic Analysis",
+  "summary": "In recent years, studies have revealed a decline in semantic variety across popular music lyrics, particularly in English-language songs on streaming platforms like Spotify. This research examines whether a similar trend can be observed in a different linguistic and cultural context: the lyrics of all finalist songs from the 75 editions of the Sanremo Music Festival, Italy's most renowned music competition. What sets this work apart is the development of a flexible and efficient methodology for tracking changes in semantic similarity over time, which can be applied to different datasets to study similar phenomena. Drawing on a combination of full-text, segment-based, topic-based, and word-level analyses, the approach leverages both embedding techniques and large language models. When applied to the Sanremo corpus, this framework reveals a gradual move toward increasing semantic uniformity, echoing the global patterns identified in previous studies. These findings underscore the value of natural language processing tools in uncovering long-term shifts in musical language and cultural expression.",
+  "authors": [
+    "Lorenzo Canale",
+    "Stefano Scotta",
+    "Alberto Messina"
+  ],
+  "published": "2026-07-06T09:07:36Z",
+  "updated": "2026-07-06T09:07:36Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.04832",
+  "abs_url": "https://arxiv.org/abs/2607.04832",
+  "fetched_at": "2026-07-19T14:18:41.879793Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2509.23759",
+  "title": "VioPTT: Violin Technique-Aware Transcription from Synthetic Data Augmentation",
+  "summary": "While automatic music transcription is well-established in music information retrieval, most models are limited to transcribing pitch and timing information from audio, and thus omit crucial expressive and instrument-specific nuances. One example is playing technique on the violin, which affords its distinct palette of timbres for maximal emotional impact. Here, we propose VioPTT (Violin Playing Technique-aware Transcription), a lightweight cascade model that directly transcribes violin playing technique in addition to pitch onset and offset. Furthermore, we release MOSA-VPT, a novel, high-quality synthetic violin playing technique dataset to circumvent the need for manually labeled annotations. Leveraging this dataset, our model demonstrated strong generalization to real-world note-level violin technique recordings in addition to achieving state-of-the-art transcription performance. To our knowledge, VioPTT is the first to jointly combine violin transcription and playing technique prediction within a unified framework.",
+  "authors": [
+    "Ting-Kang Wang",
+    "Yueh-Po Peng",
+    "Li Su",
+    "Vincent K. M. Cheung"
+  ],
+  "published": "2025-09-28T09:10:17Z",
+  "updated": "2026-02-03T09:07:40Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.23759",
+  "abs_url": "https://arxiv.org/abs/2509.23759",
+  "fetched_at": "2026-07-19T14:18:41.855962Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

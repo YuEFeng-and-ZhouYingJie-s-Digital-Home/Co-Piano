@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2502.15255",
+  "title": "ComposeOn Academy: Transforming Melodic Ideas into Complete Compositions Integrating Music Learning",
+  "summary": "Music composition has long been recognized as a significant art form. However, existing digital audio workstations and music production software often present high entry barriers for users lacking formal musical training. To address this, we introduce ComposeOn, a music theory-based tool designed for users with limited musical knowledge. ComposeOn enables users to easily extend their melodic ideas into complete compositions and offers simple editing features. By integrating music theory, it explains music creation at beginner, intermediate, and advanced levels. Our user study (N=10) compared ComposeOn with the baseline method, Suno AI, demonstrating that ComposeOn provides a more accessible and enjoyable composing and learning experience for individuals with limited musical skills. ComposeOn bridges the gap between theory and practice, offering an innovative solution as both a composition aid and music education platform. The study also explores the differences between theory-based music creation and generative music, highlighting the former's advantages in personal expression and learning.",
+  "authors": [
+    "Hongxi Pu",
+    "Futian Jiang",
+    "Zihao Chen",
+    "Xingyue Song"
+  ],
+  "published": "2025-02-21T07:18:19Z",
+  "updated": "2025-02-21T07:18:19Z",
+  "categories": [
+    "cs.HC",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2502.15255",
+  "abs_url": "https://arxiv.org/abs/2502.15255",
+  "fetched_at": "2026-07-19T14:18:41.874937Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

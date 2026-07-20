@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2606.09479",
+  "title": "Optical Music Recognition for Real-World Manuscripts with Synthetic Data",
+  "summary": "Optical Music Recognition (OMR) has seen major progress in model design, with end-to-end methods now capable of recognising notation at all levels of complexity. However, the impact of this progress has been limited by the visual domains of available training datasets, which are largely born-digital. Existing large collections of sheet music in libraries and other heritage institutions contain predominantly manuscripts, whose visual domains are highly diverse and different, so existing OMR systems fail when applied in the real world. These institutions are often resource-constrained, so large in-domain datasets cannot be expected. We provide a first baseline on real-world manuscripts with complex piano notation in the resource-constrained scenario. Using fine-grained music notation graph (MuNG) annotations and the Smashcima synthesis tool, we then show that while some direct transcriptions of in-domain data remain essential, domain adaptation using synthetic musical manuscript images brings significant improvement. Furthermore, the symbols used do not need to be in-domain, so the expensive fine-grained annotation can be avoided. We thus bring OMR closer to one of its stated goals: preserving and promoting musical cultural heritage.",
+  "authors": [
+    "Jiří Mayer",
+    "Martina Dvořáková",
+    "Vojtěch Dvořák",
+    "Markéta Herzánová Vlková",
+    "Filip Bím",
+    "Pavel Pecina",
+    "Samuel Šomorjai",
+    "Petr Žabička",
+    "Jan Hajič"
+  ],
+  "published": "2026-06-08T13:38:48Z",
+  "updated": "2026-06-08T13:38:48Z",
+  "categories": [
+    "cs.CV",
+    "cs.DL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.09479",
+  "abs_url": "https://arxiv.org/abs/2606.09479",
+  "fetched_at": "2026-07-19T14:17:07.970201Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

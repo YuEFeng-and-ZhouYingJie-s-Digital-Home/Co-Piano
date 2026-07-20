@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.30771",
+  "title": "Protecting Futures against Silent Data Corruption -- Efficient Task Replication for Dynamic Data Dependencies",
+  "summary": "As the size of computational problems grows, so does the likelihood of Silent Data Corruptions (SDCs). A common defense is replication, where the computation is repeated and correct results are determined by majority voting. Asynchronous Many-Task (AMT) runtimes are generally well suited for this approach, since the inputs and outputs of task replicas can be compared, and the tasks can be recomputed if necessary. Most existing SDC protection schemes assume static tasks and dependencies. Dynamic settings are more challenging, especially in clusters, since the tasks/data must be tracked for the comparisons. This paper considers a particularly dynamic setting with task spawning at runtime, task communication through C++11-like promises/futures, conditional touches, and cluster-wide load balancing via work-first work stealing. We propose an approach that closely couples original and replica computations by cross-validating all outgoing effects when interacting with the runtime system. The approach selectively recomputes affected tasks only. We implemented the approach in the ItoyoriFBC runtime system and conducted preliminary experiments with Fibonacci and emulated $\\mathcal{H}$-matrix LU decomposition benchmarks. Results show a factor of less than two increase of failure-free running times, despite full replication, which is mainly due to improved opportunities for load balancing resulting from the higher number of tasks. The overhead for failure correction was about 0.5% of the overall running time per SDC.",
+  "authors": [
+    "Rüdiger Nather",
+    "Claudia Fohry",
+    "Mia Reitz"
+  ],
+  "published": "2026-06-29T18:04:57Z",
+  "updated": "2026-06-29T18:04:57Z",
+  "categories": [
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.30771",
+  "abs_url": "https://arxiv.org/abs/2606.30771",
+  "fetched_at": "2026-07-19T14:17:07.972318Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

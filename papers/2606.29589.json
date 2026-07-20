@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.29589",
+  "title": "EchoHawk: A Reproducible Acoustic Pipeline for Drone Detection, Classification, and Direction-Finding, with a Cautionary Study of Session-Level Data Leakage",
+  "summary": "Passive acoustic sensing is an attractive modality for counter-unmanned aerial system (counter-UAS) defence: it is covert, low-cost, and effective against drones with small radar cross-sections or minimal radio emissions. We present EchoHawk, an open and fully reproducible reference pipeline that detects a drone from its rotor harmonics, estimates its blade-passing frequency, and localises it with a microphone array via classical wideband beamforming (delay-and-sum, MVDR, MUSIC) and time-delay processing (GCC-PHAT, SRP-PHAT), followed by temporal tracking. We evaluate the system on a physically transparent synthetic benchmark that pits drones against hard low-frequency harmonic confusers, such as ground vehicles, and on real recorded audio. Our central methodological contribution is a documented case of session-level data leakage in a widely used public dataset: because its recordings are pre-segmented into short clips, naive clip-level splits place adjacent slices of the same continuous recording in both training and test sets, inflating reported performance. Enforcing recording-session-grouped cross-validation reduces, for example, a random-forest baseline's detection probability at a 1% false-alarm rate from 0.796 to 0.745, yielding honest numbers. All code, figures, and a synthetic data generator are released so that every result runs without any download.",
+  "authors": [
+    "David Shulman"
+  ],
+  "published": "2026-06-28T20:19:43Z",
+  "updated": "2026-07-01T14:59:26Z",
+  "categories": [
+    "cs.SD",
+    "physics.app-ph"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.29589",
+  "abs_url": "https://arxiv.org/abs/2606.29589",
+  "fetched_at": "2026-07-19T14:18:41.870702Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

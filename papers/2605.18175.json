@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.18175",
+  "title": "Sonalyzer-Moz: A Framework for Analyzing the Structure of Mozart's Sonata Form",
+  "summary": "The sonata form is a musically rich and hierarchically structured form that poses significant challenges for automatic analysis. While music structure analysis has seen strides of progress in recent years, sonata form analysis remains in its early stages. This is largely due to the time-consuming and high barrier of the music background requirement for annotating classical music structures. To advance research in this area, we curated SoSA-Moz, the first large-scale dataset featuring comprehensive hierarchical structure annotations. This work establishes a foundation for systematic sonata form analysis. Leveraging this newly contributed resource, we further propose Sonalyzer-Moz, a baseline model specifically designed for investigating complex sonata structures. This framework integrates feature aggregation with sequential modeling, enabling it to capture both local feature and upper-level structural dependencies. Experiment results show that Sonalyzer-Moz is capable of identifying the components' boundaries of the upper-level structure that are critical to understanding sonata form. Therefore, this method demonstrates, for the first time, the effectiveness of automatic upper-level analysis of sonata form, and provides a robust baseline for future research in the automatic understanding of sonata form while advancing the study of classical music structure analysis.",
+  "authors": [
+    "Jing Zhao",
+    "KokSheik Wong",
+    "Vishnu Monn Baskaran",
+    "Kiki Adhinugraha",
+    "David Taniar"
+  ],
+  "published": "2026-05-18T10:19:25Z",
+  "updated": "2026-05-18T10:19:25Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.18175",
+  "abs_url": "https://arxiv.org/abs/2605.18175",
+  "fetched_at": "2026-07-19T14:18:41.881015Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

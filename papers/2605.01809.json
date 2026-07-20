@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2605.01809",
+  "title": "TMD-Bench: A Multi-Level Evaluation Paradigm for Music-Dance Co-Generation",
+  "summary": "Unified audio-visual generation is rapidly gaining industrial and creative relevance, enabling applications in virtual production and interactive media. However, when moving from general audio-video synthesis to music-dance co-generation, the task becomes substantially harder: musical rhythm, phrasing, and accents must drive choreographic motion at fine temporal resolution, and such rhythmic coupling is not captured by unimodal metrics or generic audiovisual consistency scores used in current evaluation practice. We introduce TMD-Bench, a benchmark for text-driven music-dance co-generation that assesses systems across unimodal generation quality, instruction adherence, and cross-modal rhythmic alignment. The benchmark integrates computable physical metrics with perceptual multimodal judgments, and is supported by a curated rhythm-aligned music-dance dataset and a fine-grained Music Captioner for structured music semantics. TMD-Bench further reveals that (i) modern commercial audio-visual models, such as Veo 3 and Sora 2, produce high-quality music and video, while rhythmic coupling remains less consistently optimized and leaves room for improvement, and (ii) our unified baseline RhyJAM trained on rhythm-aligned data achieves competitive beat-level synchronization while maintaining competitive unimodal fidelity. This presents prospects for building next-generation music-dance models that explicitly optimize rhythmic and kinetic coherence.",
+  "authors": [
+    "Xiaoda Yang",
+    "Majun Zhang",
+    "Changhao Pan",
+    "Nick Huang",
+    "Yang Yuguang",
+    "Fan Zhuo",
+    "Pengfei Zhou",
+    "Jin Zhou",
+    "Sizhe Shan",
+    "Shan Yang",
+    "Miles Yang",
+    "Yang You",
+    "Zhou Zhao"
+  ],
+  "published": "2026-05-03T10:25:47Z",
+  "updated": "2026-05-03T10:25:47Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.01809",
+  "abs_url": "https://arxiv.org/abs/2605.01809",
+  "fetched_at": "2026-07-19T14:18:41.851747Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.30365",
+  "title": "Mental Damage: Caption Poisoning Attacks on Retrieval-Augmented Text-to-Music Generation",
+  "summary": "Retrieval-augmented text-to-music (TTM) systems augment underspecified user prompts using captions retrieved from a music caption dataset. This design introduces an integrity dependency on the music knowledge database. We show that an attacker can poison the database by injecting a small number of crafted music captions, causing the system to retrieve malicious captions that bias prompt augmentation and steer generation away from the user's intended function, without modifying the user prompt, retriever, or generator. To achieve the music caption poisoning attack, we propose a dual-layer caption poisoning strategy that preserves high-level retrieval anchors while injecting low-level acoustic descriptors to steer prompt augmentation and downstream music generation toward an attacker-chosen target intent. In a MusicCaps knowledge database, CLAP retriever, and MusicGen pipeline, poisoned generations move substantially closer to the attacker's target, while remaining comparably aligned with the original user query. These results expose a practical integrity risk for retrieval-augmented creative AI systems. Our demo can be found at: https://yizhu-wen.github.io/Mental-Damage/",
+  "authors": [
+    "Yizhu Wen",
+    "Shuhao Zhang",
+    "Nan Zhang",
+    "Long Cheng",
+    "Hanqing Guo"
+  ],
+  "published": "2026-05-18T02:11:57Z",
+  "updated": "2026-05-18T02:11:57Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.30365",
+  "abs_url": "https://arxiv.org/abs/2605.30365",
+  "fetched_at": "2026-07-19T14:18:41.851382Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

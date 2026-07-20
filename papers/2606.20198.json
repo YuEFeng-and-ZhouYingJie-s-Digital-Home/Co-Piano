@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.20198",
+  "title": "Pitch Spelling Jazz Lead Sheets, Solo Transcriptions, Classical Piano and Monophonic Scores",
+  "summary": "We present an algorithm for pitch spelling and key estimation. Given an input in MIDI-like format, containing information on note pitches (expressed in semitones relative to the lowest reference note) and bar boundaries, it estimates the appropriate note names, a global Key Signature, and a local scale for each bar. This related information elements are evaluated jointly during two stages of optimisation. During an initial 'modal' stage, a probable scale is proposed for each bar, minimising the number of accidentals to be printed in the printed score with a shortest-path search. Then, during a second stage called 'tonal', these local scales are used to estimate the Key Signature and note names that would result in the best musical notation for the entire piece. We present evaluations conducted on datasets comprising a variety of digital musical scores: jazz lead sheets taken from the Real Book, transcriptions of recordings of jazz soli and bass lines, traditional tunes, as well as classical scores for piano and monophonic instruments. Our procedure was originally designed for use in music transcription, specifically for building digital collections of jazz solos transcribed from audio recordings, for the purposes of music analysis, teaching and the preservation of cultural heritage. This method should also prove useful for other tasks related to the processing of musical notation. Furthermore, to this end, we have defined new distances between various common jazz scales, which may be of some interest to musicological studies.",
+  "authors": [
+    "Augustin Bouquillard",
+    "Florent Jacquemard"
+  ],
+  "published": "2026-06-18T13:13:31Z",
+  "updated": "2026-06-18T13:13:31Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.20198",
+  "abs_url": "https://arxiv.org/abs/2606.20198",
+  "fetched_at": "2026-07-19T14:17:07.969213Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

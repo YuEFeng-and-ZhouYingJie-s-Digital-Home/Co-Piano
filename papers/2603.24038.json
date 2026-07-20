@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2603.24038",
+  "title": "ACAVCaps: Enabling large-scale training for fine-grained and diverse audio understanding",
+  "summary": "General audio understanding is a fundamental goal for large audio-language models, with audio captioning serving as a cornerstone task for their development. However, progress in this domain is hindered by existing datasets, which lack the scale and descriptive granularity required to train truly versatile models. To address this gap, we introduce ACAVCaps, a new large-scale, fine-grained, and multi-faceted audio captioning dataset. Derived from the ACAV100M collection, ACAVCaps is constructed using a multi-expert pipeline that analyzes audio from diverse perspectives-including speech, music, and acoustic properties-which are then synthesized into rich, detailed descriptions by a large language model. Experimental results demonstrate that models pre-trained on ACAVCaps exhibit substantially stronger generalization capabilities on various downstream tasks compared to those trained on other leading captioning datasets. The dataset is available at https://github.com/xiaomi-research/acavcaps.",
+  "authors": [
+    "Yadong Niu",
+    "Tianzi Wang",
+    "Heinrich Dinkel",
+    "Xingwei Sun",
+    "Jiahao Zhou",
+    "Gang Li",
+    "Jizhong Liu",
+    "Junbo Zhang",
+    "Jian Luan"
+  ],
+  "published": "2026-03-25T07:49:39Z",
+  "updated": "2026-03-25T07:49:39Z",
+  "categories": [
+    "eess.AS",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.24038",
+  "abs_url": "https://arxiv.org/abs/2603.24038",
+  "fetched_at": "2026-07-19T14:18:41.852350Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

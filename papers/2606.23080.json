@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.23080",
+  "title": "AudioCALM: Continuous Autoregressive Language Modeling for Universal Audio Generation",
+  "summary": "Unifying speech, sound, and music generation in one model is hindered by tradeoffs between fidelity, end-to-end training, in-context conditioning, and variable-length synthesis that no current paradigm fully resolves. To address this challenge, we present AudioCALM, a universal audio generation framework that extends autoregressive (AR) next-token prediction from discrete tokens to continuous audio latents: a thin flow-matching head replaces the softmax to predict rectified-flow velocities at each position, and a block-causal AR-Flow attention pattern produces arbitrary-length output. Joint training of multiple audio generation tasks faces an asymmetric text--audio mismatch: speech transcripts align to specific time spans and demand tight, time-aligned attention, whereas sound and music captions describe only overall semantics and rely on diffuse, holistic attention; mixing the two disproportionately degrades sound and music generation. We address this asymmetry at two levels: a data reformulation strategy that unifies all three tasks under a single description-style conditioning interface, and a novel architecture Asymmetric Mixture-of-Modality-Experts (A-MoME), which adds a dedicated residual expert for speech while sound and music share the backbone, incurring no inference overhead on non-speech inputs. Experimental results demonstrate that AudioCALM matches modality-specific state-of-the-art and outperforms prior unified baselines on speech, sound, and music generation benchmarks.",
+  "authors": [
+    "Huadai Liu",
+    "Kaicheng Luo",
+    "Wen Wang",
+    "Qian Chen",
+    "Bin Ma",
+    "Xiangang Li",
+    "Wei Xue"
+  ],
+  "published": "2026-06-22T09:30:02Z",
+  "updated": "2026-06-22T09:30:02Z",
+  "categories": [
+    "eess.AS",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.23080",
+  "abs_url": "https://arxiv.org/abs/2606.23080",
+  "fetched_at": "2026-07-19T14:18:41.846610Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

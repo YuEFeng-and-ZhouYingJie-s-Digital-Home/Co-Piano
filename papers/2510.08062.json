@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2510.08062",
+  "title": "Attribution-by-design: Ensuring Inference-Time Provenance in Generative Music Systems",
+  "summary": "The rise of AI-generated music is diluting royalty pools and revealing structural flaws in existing remuneration frameworks, challenging the well-established artist compensation systems in the music industry. Existing compensation solutions, such as piecemeal licensing agreements, lack scalability and technical rigour, while current data attribution mechanisms provide only uncertain estimates and are rarely implemented in practice. This paper introduces a framework for a generative music infrastructure centred on direct attribution, transparent royalty distribution, and granular control for artists and rights' holders. We distinguish ontologically between the training set and the inference set, which allows us to propose two complementary forms of attribution: training-time attribution and inference-time attribution. We here favour inference-time attribution, as it enables direct, verifiable compensation whenever an artist's catalogue is used to condition a generated output. Besides, users benefit from the ability to condition generations on specific songs and receive transparent information about attribution and permitted usage. Our approach offers an ethical and practical solution to the pressing need for robust compensation mechanisms in the era of AI-generated music, ensuring that provenance and fairness are embedded at the core of generative systems.",
+  "authors": [
+    "Fabio Morreale",
+    "Wiebke Hutiri",
+    "Joan Serrà",
+    "Alice Xiang",
+    "Yuki Mitsufuji"
+  ],
+  "published": "2025-10-09T10:49:44Z",
+  "updated": "2025-10-09T10:49:44Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.08062",
+  "abs_url": "https://arxiv.org/abs/2510.08062",
+  "fetched_at": "2026-07-19T14:18:41.868007Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

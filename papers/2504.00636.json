@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2504.00636",
+  "title": "Exploring the Impact of an LLM-Powered Teachable Agent on Learning Gains and Cognitive Load in Music Education",
+  "summary": "This study examines the impact of an LLM-powered teachable agent, grounded in the Learning by Teaching (LBT) pedagogy, on students' music theory learning and cognitive load. The participants were 28 Chinese university students with prior music instrumental experiences. In an online experiment, they were assigned to either an experimental group, which engaged in music analysis with the teachable agent, or a control group, which conducted self-directed analysis using instructional materials. Findings indicate that students in the experimental group achieved significantly higher post-test scores than those in the control group. Additionally, they reported lower cognitive load, suggesting that the teachable agent effectively reduced the cognitive demands of music analysis tasks. These results highlight the potential of AI-driven scaffolding based on LBT principles to enhance music theory education, supporting teachers in delivering theory-oriented instruction while fostering students' self-directed learning skills.",
+  "authors": [
+    "Lingxi Jin",
+    "Baicheng Lin",
+    "Mengze Hong",
+    "Kun Zhang",
+    "Hyo-Jeong So"
+  ],
+  "published": "2025-04-01T10:41:33Z",
+  "updated": "2025-04-01T10:41:33Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2504.00636",
+  "abs_url": "https://arxiv.org/abs/2504.00636",
+  "fetched_at": "2026-07-19T14:18:41.873937Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

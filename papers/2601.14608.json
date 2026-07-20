@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2601.14608",
+  "title": "Exploring Performance-Productivity Trade-offs in AMT Runtimes: A Task Bench Study of Itoyori, ItoyoriFBC, HPX, and MPI",
+  "summary": "Asynchronous Many-Task (AMT) runtimes offer a productive alternative to the Message Passing Interface (MPI). However, the diverse AMT landscape makes fair comparisons challenging. Task Bench, proposed by Slaughter et al., addresses this challenge through a parameterized framework for evaluating parallel programming systems. This work integrates two recent cluster AMTs, Itoyori and ItoyoriFBC, into Task Bench for comprehensive evaluation against MPI and HPX. Itoyori employs a Partitioned Global Address Space (PGAS) model with RDMA-based work stealing, while ItoyoriFBC extends it with futurebased synchronization. We evaluate these systems in terms of both performance and programmer productivity. Performance is assessed across various configurations, including compute-bound kernels, weak scaling, and both imbalanced and communication-intensive patterns. Performance is quantified using application efficiency, i.e., the percentage of maximum performance achieved, and the Minimum Effective Task Granularity (METG), i.e., the smallest task duration before runtime overheads dominate. Programmer productivity is quantified using Lines of Code (LOC) and the Number of Library Constructs (NLC). Our results reveal distinct trade-offs. MPI achieves the highest efficiency for regular, communication-light workloads but requires verbose, lowlevel code. HPX maintains stable efficiency under load imbalance across varying node counts, yet ranks last in productivity metrics, demonstrating that AMTs do not inherently guarantee improved productivity over MPI. Itoyori achieves the highest efficiency in communication-intensive configurations while leading in programmer productivity. ItoyoriFBC exhibits slightly lower efficiency than Itoyori, though its future-based synchronization offers potential for expressing irregular workloads.",
+  "authors": [
+    "Torben R. Lahnor",
+    "Mia Reitz",
+    "Jonas Posner",
+    "Patrick Diehl"
+  ],
+  "published": "2026-01-21T02:57:36Z",
+  "updated": "2026-03-13T03:11:04Z",
+  "categories": [
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.14608",
+  "abs_url": "https://arxiv.org/abs/2601.14608",
+  "fetched_at": "2026-07-19T14:17:07.975055Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

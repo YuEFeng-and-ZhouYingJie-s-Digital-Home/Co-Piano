@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2410.05791",
+  "title": "FürElise: Capturing and Physically Synthesizing Hand Motions of Piano Performance",
+  "summary": "Piano playing requires agile, precise, and coordinated hand control that stretches the limits of dexterity. Hand motion models with the sophistication to accurately recreate piano playing have a wide range of applications in character animation, embodied AI, biomechanics, and VR/AR. In this paper, we construct a first-of-its-kind large-scale dataset that contains approximately 10 hours of 3D hand motion and audio from 15 elite-level pianists playing 153 pieces of classical music. To capture natural performances, we designed a markerless setup in which motions are reconstructed from multi-view videos using state-of-the-art pose estimation models. The motion data is further refined via inverse kinematics using the high-resolution MIDI key-pressing data obtained from sensors in a specialized Yamaha Disklavier piano. Leveraging the collected dataset, we developed a pipeline that can synthesize physically-plausible hand motions for musical scores outside of the dataset. Our approach employs a combination of imitation learning and reinforcement learning to obtain policies for physics-based bimanual control involving the interaction between hands and piano keys. To solve the sampling efficiency problem with the large motion dataset, we use a diffusion model to generate natural reference motions, which provide high-level trajectory and fingering (finger order and placement) information. However, the generated reference motion alone does not provide sufficient accuracy for piano performance modeling. We then further augmented the data by using musical similarity to retrieve similar motions from the captured dataset to boost the precision of the RL policy. With the proposed method, our model generates natural, dexterous motions that generalize to music from outside the training dataset.",
+  "authors": [
+    "Ruocheng Wang",
+    "Pei Xu",
+    "Haochen Shi",
+    "Elizabeth Schumann",
+    "C. Karen Liu"
+  ],
+  "published": "2024-10-08T08:21:05Z",
+  "updated": "2024-10-08T08:21:05Z",
+  "categories": [
+    "cs.GR",
+    "cs.AI",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2410.05791",
+  "abs_url": "https://arxiv.org/abs/2410.05791",
+  "fetched_at": "2026-07-19T14:18:41.853790Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

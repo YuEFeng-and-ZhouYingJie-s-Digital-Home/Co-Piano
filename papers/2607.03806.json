@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.03806",
+  "title": "Probing Low-Level Acoustic Attribute Encoding in CLAP Audio Embeddings",
+  "summary": "Audio foundation models are widely adopted as general-purpose feature extractors, yet the internal structure of their learned representations remains insufficiently understood. In this work, we analyze CLAP audio embeddings through a probing framework, studying the encoding of three fundamental perceptual dimensions: reverberation (RT60), loudness (LUFS), and spectral content, measured via spectral centroid (SC) and relative pitch (RP). Probes of increasing complexity are trained to predict each attribute from frozen embeddings across five datasets spanning noise, speech, monophonic musical notes, and music mixtures. Our primary finding is that all of these attributes are reliably recoverable from the CLAP embedding space across the examined datasets. Within this global picture, two encoding regimes emerge: RT60, LUFS, and RP are approximately linearly encoded, while SC requires non-linear probes. Both regimes generalize across eight additional audio foundation models, with the notable exception that amplitude-invariant architectures discard loudness entirely by construction. The identified linear feature directions are geometrically consistent across datasets for RT60 and LUFS, while highly domain-specific for RP. Finally, we provide a qualitative demonstration of cross-modal consistency, showing that text embeddings of acoustic descriptors align geometrically with the identified RT60 feature direction.",
+  "authors": [
+    "Héctor Martel",
+    "Joe Hennessy-Priest",
+    "Taemin Cho"
+  ],
+  "published": "2026-07-04T10:27:18Z",
+  "updated": "2026-07-04T10:27:18Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.03806",
+  "abs_url": "https://arxiv.org/abs/2607.03806",
+  "fetched_at": "2026-07-19T14:18:41.870038Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2606.02638",
+  "title": "SegTune: Structured and Fine-Grained Control for Song Generation",
+  "summary": "Recent advances in neural song generation have enabled high-quality synthesis from lyrics and global textual prompts. However, most systems fail to model temporally varying attributes of songs, severely limiting fine-grained control over musical structure and dynamics. To address this, we propose SegTune, a Diffusion Transformer-based framework enabling structured and fine-grained controllability by allowing users or large language models (LLMs) to specify local musical descriptions aligned to song segments. These segment prompts are temporally broadcast to corresponding time windows, while global prompts ensure stylistic coherence. To support precise lyric-to-music alignment, we introduce an LLM-based duration predictor that autoregressively generates sentence-level timestamps in LyRiCs format. We further construct a large-scale data pipeline for high-quality song collection with aligned lyrics and prompts, and propose new metrics to evaluate segment alignment and vocal consistency. Experiments demonstrate that SegTune outperforms existing baselines in both musicality and controllability. Visit our project page (https://github.com/KlingAIResearch/SegTune) for codes and more generated songs.",
+  "authors": [
+    "Yuejiao Wang",
+    "Zihao Ji",
+    "Pengfei Cai",
+    "Xu Li",
+    "Haorui Zheng",
+    "Zewen Song",
+    "Zhongliang Liu",
+    "Chen Zhang",
+    "Pengfei Wan"
+  ],
+  "published": "2026-05-31T06:01:15Z",
+  "updated": "2026-05-31T06:01:15Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.02638",
+  "abs_url": "https://arxiv.org/abs/2606.02638",
+  "fetched_at": "2026-07-19T14:18:41.863540Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

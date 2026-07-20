@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2512.17209",
+  "title": "Do Foundational Audio Encoders Understand Music Structure?",
+  "summary": "In music information retrieval (MIR) research, the use of pretrained foundational audio encoders (FAEs) has recently become a trend. FAEs pretrained on large amounts of music and audio data have been shown to improve performance on MIR tasks such as music tagging and automatic music transcription. However, their use for music structure analysis (MSA) remains underexplored: only a small subset of FAEs has been examined for MSA, and the impact of factors such as learning methods, training data, and model context length on MSA performance remains unclear. In this study, we conduct comprehensive experiments on 11 types of FAEs to investigate how these factors affect MSA performance. Our results demonstrate that FAEs using self-supervised learning with masked language modeling on music data are particularly effective for MSA. These findings pave the way for future research in FAE and MSA.",
+  "authors": [
+    "Keisuke Toyama",
+    "Zhi Zhong",
+    "Akira Takahashi",
+    "Shusuke Takahashi",
+    "Yuki Mitsufuji"
+  ],
+  "published": "2025-12-19T03:42:47Z",
+  "updated": "2026-01-29T02:17:30Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.17209",
+  "abs_url": "https://arxiv.org/abs/2512.17209",
+  "fetched_at": "2026-07-19T14:18:41.855390Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

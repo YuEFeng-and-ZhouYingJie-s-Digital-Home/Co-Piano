@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.08806",
+  "title": "Tonnetz-Driven Graph Wedgelet for Harmonic Complexity Reduction in Music Scores",
+  "summary": "Heterogeneous graph built on notes, lyric syllables, and accompaniment events is a natural representation of symbolic music score, providing a substrate for both philological analysis and computational tasks. Music features are therefore well-captured by graph geometry and its properties. This representation has proved effective for analytical tasks as cadence detection, voice separation, and stylistic classification. In the present work, the reduction of harmonic complexity of a music score on graph, by preserving task-relevant information, relation between notes, and graph structure is investigated. A compression scheme for the piano subgraph of vocal-pianistic scores, built on binary wedge partitioning trees, is proposed. The wedges are generated through a fully adaptive greedy algorithm that recursively minimizes the $L^2$-error within a six-dimensional Tonnetz embedding of musical notes. The partitioning process employs a splitting criterion based on harmonic distance, resulting in regions that accurately reflect the intrinsic harmonic relationships among notes. The reconstructed music scores obtained through piecewise-constant functions and the mean values of the notes inside each wedge are used as a new simplified scores human-readable and playable. Some experiments on a corpus of symbolic music scores of three different composers are performed to assess the proposed approach.",
+  "authors": [
+    "Emmanuel Caronna",
+    "Elisa Francomano",
+    "Silvia Licciardi"
+  ],
+  "published": "2026-07-09T10:03:53Z",
+  "updated": "2026-07-09T10:03:53Z",
+  "categories": [
+    "cs.SD",
+    "math.NA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.08806",
+  "abs_url": "https://arxiv.org/abs/2607.08806",
+  "fetched_at": "2026-07-19T14:17:07.968574Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

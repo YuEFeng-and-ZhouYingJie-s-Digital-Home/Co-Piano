@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2605.17414",
+  "title": "S2Accompanist: A Semantic-Aware and Structure-Guided Diffusion Model for Music Accompaniment Generation",
+  "summary": "High-fidelity text-to-music generation typically relies on massive proprietary datasets and immense computational resources. Existing models often struggle to generate coherent pure musical accompaniments and lack precise, localized semantic control due to their reliance on coarse, track-level annotations. To address these limitations under constrained data and computing resources, we propose S2Accompanist, a Semantic-Aware and Structure-Guided Diffusion Model developed for the ICME2026 ATTM Grand Challenge. Specifically, we design an automated data pipeline comprising structural segmentation, Large Audio-Language Model driven segment-level captioning, and dual-metric quality grading to overcome the absence of localized metadata in raw datasets. Furthermore, we propose a semantic-aware Variational Autoencoder fine-tuning strategy that explicitly distills foundational LeadSheet structures into the acoustic latent space, effectively improving the overall audio fidelity. Extensive experiments demonstrate that S2Accompanist achieves state-of-the-art objective performance on the ATTM Grand Challenge benchmark across both the Efficiency and Performance Tracks. With only 402M parameters, our model remains competitive compared to larger-scale unconstrained models and secured first place in the Efficiency Track.",
+  "authors": [
+    "Huakang Chen",
+    "Wenkai Cheng",
+    "Guobin Ma",
+    "Chunbo Hao",
+    "Yuxuan Xia",
+    "Mengqi Wei",
+    "Zhixian Zhao",
+    "Pengcheng Zhu",
+    "Hanbing Zhang",
+    "Lei Xie"
+  ],
+  "published": "2026-05-17T12:22:17Z",
+  "updated": "2026-05-17T12:22:17Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.17414",
+  "abs_url": "https://arxiv.org/abs/2605.17414",
+  "fetched_at": "2026-07-19T14:18:41.851503Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

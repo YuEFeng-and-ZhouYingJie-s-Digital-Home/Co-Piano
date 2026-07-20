@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2605.24193",
+  "title": "Music Transcription with (Almost) No Supervision",
+  "summary": "Competitive music transcription models require large amounts of paired audio-score data, which is scarce due to collection costs, alignment difficulty, and copyright restrictions. Meanwhile, vast quantities of unpaired audio recordings and symbolic scores are freely available but have gone unused. We adopt a cycle-consistent translation framework in which a small amount of paired data acts as a minimal anchor, unlocking the full potential of the unpaired pool. We find that: unpaired data yields surprisingly large gains, especially under limited supervision; unpaired audio contributes more than unpaired scores; incorporating unlabeled audio from a new instrument during training improves transcription for that instrument without any paired supervision. Together, these results suggest that scaling unpaired data offers a practical path toward high-quality transcription for instruments where labeled data remains scarce.",
+  "authors": [
+    "Saebyeol Shin",
+    "Chao Wan",
+    "Zhenzhen Liu",
+    "Justin Lovelace",
+    "Daniel C. Lin",
+    "Kilian Q. Weinberger",
+    "John Thickstun"
+  ],
+  "published": "2026-05-22T20:32:57Z",
+  "updated": "2026-05-22T20:32:57Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.24193",
+  "abs_url": "https://arxiv.org/abs/2605.24193",
+  "fetched_at": "2026-07-19T14:18:41.857955Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

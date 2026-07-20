@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2507.21202",
+  "title": "Combolutional Neural Networks",
+  "summary": "Selecting appropriate inductive biases is an essential step in the design of machine learning models, especially when working with audio, where even short clips may contain millions of samples. To this end, we propose the combolutional layer: a learned-delay IIR comb filter and fused envelope detector, which extracts harmonic features in the time domain. We demonstrate the efficacy of the combolutional layer on three information retrieval tasks, evaluate its computational cost relative to other audio frontends, and provide efficient implementations for training. We find that the combolutional layer is an effective replacement for convolutional layers in audio tasks where precise harmonic analysis is important, e.g., piano transcription, speaker classification, and key detection. Additionally, the combolutional layer has several other key benefits over existing frontends, namely: low parameter count, efficient CPU inference, strictly real-valued computations, and improved interpretability.",
+  "authors": [
+    "Cameron Churchwell",
+    "Minje Kim",
+    "Paris Smaragdis"
+  ],
+  "published": "2025-07-28T13:30:51Z",
+  "updated": "2025-07-28T13:30:51Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.21202",
+  "abs_url": "https://arxiv.org/abs/2507.21202",
+  "fetched_at": "2026-07-19T14:18:41.848825Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

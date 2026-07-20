@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.20035",
+  "title": "Stage-adaptive Token Selection for Efficient Omni-modal LLMs",
+  "summary": "Omni-modal large language models (om-LLMs) achieve unified audio-visual understanding by encoding video and audio into temporally aligned token sequences interleaved at the window level. However, processing these dense non-textual tokens throughout the LLM incurs substantial computational overhead. Although training-free token selection can reduce this cost, existing methods either focus on visual-only inputs or prune om-LLM tokens only before the LLM with fixed per-modality ratios, failing to capture how cross-modal token importance evolves across layers. To address this limitation, we first analyze the layer-wise token dependency of om-LLMs. We find that visual and audio dependencies follow a block-wise pattern and gradually weaken with depth, indicating that many late-layer non-textual tokens become redundant after cross-modal fusion. Motivated by this observation, we propose SEATS, a training-free, stage-adaptive token selection method for efficient om-LLM inference. Before the LLM, SEATS removes spatiotemporal redundancy via attention-weighted diversity selection. Inside the LLM, it progressively prunes tokens across blocks and dynamically allocates the retention budget from temporal windows to modalities using query relevance scores. In late layers, it removes all remaining non-textual tokens once cross-modal fusion is complete. Experiments on Qwen2.5-Omni and Qwen3-Omni demonstrate that SEATS effectively improves inference efficiency. Retaining only 10% of visual and audio tokens, it achieves a 9.3x FLOPs reduction and a 4.8x prefill speedup while preserving 96.3% of the original performance.",
+  "authors": [
+    "Zijie Xin",
+    "Jie Yang",
+    "Ruixiang Zhao",
+    "Tianyi Wang",
+    "Fengyun Rao",
+    "Jing Lyu",
+    "Xirong Li"
+  ],
+  "published": "2026-05-19T15:55:16Z",
+  "updated": "2026-05-19T15:55:16Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.20035",
+  "abs_url": "https://arxiv.org/abs/2605.20035",
+  "fetched_at": "2026-07-19T14:18:41.858683Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

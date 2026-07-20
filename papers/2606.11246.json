@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2606.11246",
+  "title": "Nineteen to the Dozen: Embedding the Neo-Riemannian Tonnetz into a Cyclic 19_3 Symmetric Configuration",
+  "summary": "This paper bridges combinatorial geometry and music theory to solve the fundamental challenge of embedding classical Western harmony into the microtonal 19-tone equal temperament (19-TET). Inspired by Roger Penrose's observations on the mathematical elegance of 19-TET, we provide the theoretical foundation for a physical 19-TET acoustic piano currently under construction. However, playing classical 12-TET music on such an instrument poses a topological problem: emvedding the classical Euler-Riemann Tonnetz into the 19-TET universe inevitably distorts structural chords, creating dissonant ``wolves.'' By formalizing these harmonic spaces as incidence configurations (the 12_3 and 19_3 graphs) and utilizing integer cuts in our optimization model, we exhaustively prove that exactly 32 out of 36 Neo-Riemannian harmonic connections can be preserved. We demonstrate a strict 5-fold degeneracy of this optimum: there exist exactly 5 mathematically equivalent local packings for the wolf chords. Among these, we identify a unique canonical realization in which the 14 excised vertices form a perfectly contiguous geometric void along the primary Hamiltonian cycle. We reveal that the 4 inevitably broken edges represent the exact topological scars of the historical enharmonic diesis, and we formulate the Vicentino Hypothesis regarding 16th-century microtonal composition. Finally, to make this theoretical geometry physically playable, we design a novel 19-TET split-key keyboard, formalized through a biomechanical cost function that optimizes the performer's hand span. This work provides the complete theoretical, historical, and ergonomic blueprint for the next generation of microtonal acoustic instruments.",
+  "authors": [
+    "Pawel Nurowski"
+  ],
+  "published": "2026-06-06T17:58:45Z",
+  "updated": "2026-06-06T17:58:45Z",
+  "categories": [
+    "math.GM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.11246",
+  "abs_url": "https://arxiv.org/abs/2606.11246",
+  "fetched_at": "2026-07-19T14:17:07.970352Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

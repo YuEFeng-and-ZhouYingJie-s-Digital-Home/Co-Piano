@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.23077",
+  "title": "Adopting State-of-the-Art Pretrained Audio Representations for Music Recommender Systems",
+  "summary": "Over the years, Music Information Retrieval (MIR) research community has released various models pretrained on large amounts of music data. Transfer learning showcases the proven effectiveness of pretrained backend models for a broad spectrum of downstream tasks, including auto-tagging and genre classification. However, MIR papers generally do not explore the efficiency of pretrained models for Music Recommender Systems (MRS). In addition, the Recommender Systems community tends to favour traditional end-to-end neural network training. Our research addresses this gap and evaluates the performance of nine pretrained backend models (MusicFM, Music2Vec, MERT, EncodecMAE, Jukebox, MusiCNN, MULE, MuQ and MuQ-MuLan) in the context of MRS. We assess them using five recommendation approaches: K-Nearest Neighbours (KNN), Shallow Neural Network, Contrastive Multi-Modal projection, a Hybrid model, and BERT4Rec both for the hot and cold-start scenarios. Our findings suggest that pretrained audio representations exhibit significant performance disparity between traditional MIR tasks and both hot and cold music recommendations, indicating that valuable aspects of musical information captured by backend models may differ depending on the task. This study establishes a foundation for further exploration of pretrained audio representations to enhance music recommendation systems.",
+  "authors": [
+    "Yan-Martin Tamm",
+    "Anna Aljanaki"
+  ],
+  "published": "2026-04-25T00:09:58Z",
+  "updated": "2026-04-25T00:09:58Z",
+  "categories": [
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.23077",
+  "abs_url": "https://arxiv.org/abs/2604.23077",
+  "fetched_at": "2026-07-19T14:18:41.881386Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

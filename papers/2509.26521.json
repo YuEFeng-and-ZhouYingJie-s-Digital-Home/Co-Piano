@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2509.26521",
+  "title": "MUSE-Explainer: Counterfactual Explanations for Symbolic Music Graph Classification Models",
+  "summary": "Interpretability is essential for deploying deep learning models in symbolic music analysis, yet most research emphasizes model performance over explanation. To address this, we introduce MUSE-Explainer, a new method that helps reveal how music Graph Neural Network models make decisions by providing clear, human-friendly explanations. Our approach generates counterfactual explanations by making small, meaningful changes to musical score graphs that alter a model's prediction while ensuring the results remain musically coherent. Unlike existing methods, MUSE-Explainer tailors its explanations to the structure of musical data and avoids unrealistic or confusing outputs. We evaluate our method on a music analysis task and show it offers intuitive insights that can be visualized with standard music tools such as Verovio.",
+  "authors": [
+    "Baptiste Hilaire",
+    "Emmanouil Karystinaios",
+    "Gerhard Widmer"
+  ],
+  "published": "2025-09-30T16:58:07Z",
+  "updated": "2025-09-30T16:58:07Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.26521",
+  "abs_url": "https://arxiv.org/abs/2509.26521",
+  "fetched_at": "2026-07-19T14:18:41.865278Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

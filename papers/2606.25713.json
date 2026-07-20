@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.25713",
+  "title": "Frequency-Aware Self-Supervised Music Representation Learning",
+  "summary": "Self-supervised learning (SSL) has emerged as an essential paradigm for music information retrieval (MIR). While current SSL models achieve state-of-the-art performance across various MIR tasks, they typically treat audio as 1D sequences, either operating on time-domain waveforms or on flattened time-frequency-domain spectrograms. This discards the rich spatial and structural information in time-frequency representations and overlooks a fundamental intuition in music production. In particular, music is naturally represented as time-frequency grids in MIDI-based workflows, a structure that tightly corresponds to 2D spectrograms and inherently makes many MIR tasks trivial. Motivated by this intuition, we propose PupuJEPA, a visual Joint-Embedding Predictive Architecture (JEPA) that is trained directly on 2D spectrograms. Instead of applying masked language modeling (MLM) to 1D sequences, PupuJEPA learns robust representations by predicting the latent embeddings of masked 2D spectrogram patches from unmasked contexts. To optimally adapt such a visual framework to music signals, we also apply domain-specific modifications to model architecture, training scheme, and inference paradigm, with comprehensive ablation studies showing their effectiveness. Evaluations on the MARBLE benchmark show that PupuJEPA outperforms the 1D sequence-based SSL models across multiple MIR tasks in linear probing. Additionally, case studies of the attention maps also confirm that PupuJEPA captures musically meaningful patterns within the 2D time-frequency domain. Codes and checkpoints are available at: https://www.yichenggu.com/PupuJEPA/.",
+  "authors": [
+    "Yicheng Gu",
+    "Junan Zhang",
+    "Jerry Li",
+    "Zhizheng Wu",
+    "Lauri Juvela"
+  ],
+  "published": "2026-06-24T11:26:38Z",
+  "updated": "2026-06-29T06:39:51Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.25713",
+  "abs_url": "https://arxiv.org/abs/2606.25713",
+  "fetched_at": "2026-07-19T14:17:38.246468Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

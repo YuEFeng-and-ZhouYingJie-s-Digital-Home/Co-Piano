@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.05971",
+  "title": "Multimodal Video-to-Music Recommendation via Semantic Retrieval and Temporal Reranking",
+  "summary": "We present VTMR, a two-stage framework for Video-To-Music Recommendation. In Stage~1, VTMR aligns comprehensive video and music signals in a joint audio-visual-text representation space and efficiently retrieves semantically compatible candidates using coarse global embeddings. In Stage~2, it reranks the retrieved candidates by attending to the temporal sequences of both video and music, thereby capturing fine-grained temporal correspondence. Evaluated on the video-to-music recommendation task, the multimodal retrieval stage improves R@10 from 14.2 to 15.9 and Median Rank from 75 to 58 over the strongest baseline; the temporal reranker further boosts R@10 to 18.3 and Median Rank to 46, demonstrating complementary gains from richer query encoding and temporal alignment. A human preference study confirms that VTMR is on par with a commercial baseline in overall preference, while outperforming a generative baseline in music quality.",
+  "authors": [
+    "Seungheon Doh",
+    "Minhee Lee",
+    "Sangmoon Lee",
+    "Ben Sangbae Chon",
+    "Juhan Nam"
+  ],
+  "published": "2026-07-07T08:04:56Z",
+  "updated": "2026-07-07T08:04:56Z",
+  "categories": [
+    "cs.MM",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.05971",
+  "abs_url": "https://arxiv.org/abs/2607.05971",
+  "fetched_at": "2026-07-19T14:18:41.869754Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

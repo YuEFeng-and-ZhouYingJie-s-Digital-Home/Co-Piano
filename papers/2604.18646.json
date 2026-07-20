@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2604.18646",
+  "title": "Stable Transport Meta-Analysis for Heterogeneous Cardiovascular Trials: A Nuisance-Anchor Framework with a Sign-Stability Diagnostic",
+  "summary": "Random-effects meta-analysis summarizes heterogeneous trials by estimating an average effect over the observed evidence base, which may not represent the clinically relevant target population. In cardiovascular medicine, treatment effects vary systematically across era, endpoint definitions, background therapy, and case-mix, making the historical average often misaligned with current decision-making. We propose stable transport meta-analysis (AMT-MA), a nuisance-anchor estimator that models anchor-aligned variation but does not transport it to the target population. The method combines a weighted-average loss with a scale-normalized softmax regime loss, and incorporates a precision-weighted sign-stability diagnostic with a two-condition abstention rule to avoid reporting a single pooled estimate when stability is not supported. AMT-MA is not intended to minimize RMSE relative to random-effects models, but to redefine the estimand as a stable target-population effect. In a pre-specified ADEMP simulation across six scenarios, AMT-MA (rho = 0.2) showed reduced bias relative to unadjusted pooling and improved coverage in adversarial settings where classical Wald intervals fail (dominant trial: 0.85 vs 0.01; confounded anchor: 0.86 vs 0.34; anchor shift: 0.91 vs 0.60). WLS meta-regression remained competitive when correctly specified. Under sign-flip heterogeneity, the abstention rule triggered in ~84% of replications, compared with ~28-30% in stable regimes. Applications to post-myocardial infarction streptokinase trials and primary-prevention aspirin trials illustrate how AMT-MA quantifies transport uncertainty and provides a clinically interpretable alternative to averaging heterogeneous effects.",
+  "authors": [
+    "Ibrahim Halil Tanboga"
+  ],
+  "published": "2026-04-19T22:59:13Z",
+  "updated": "2026-04-19T22:59:13Z",
+  "categories": [
+    "stat.ME"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.18646",
+  "abs_url": "https://arxiv.org/abs/2604.18646",
+  "fetched_at": "2026-07-19T14:17:07.973359Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

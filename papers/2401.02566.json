@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2401.02566",
+  "title": "Siamese Residual Neural Network for Musical Shape Evaluation in Piano Performance Assessment",
+  "summary": "Understanding and identifying musical shape plays an important role in music education and performance assessment. To simplify the otherwise time- and cost-intensive musical shape evaluation, in this paper we explore how artificial intelligence (AI) driven models can be applied. Considering musical shape evaluation as a classification problem, a light-weight Siamese residual neural network (S-ResNN) is proposed to automatically identify musical shapes. To assess the proposed approach in the context of piano musical shape evaluation, we have generated a new dataset, containing 4116 music pieces derived by 147 piano preparatory exercises and performed in 28 categories of musical shapes. The experimental results show that the S-ResNN significantly outperforms a number of benchmark methods in terms of the precision, recall and F1 score.",
+  "authors": [
+    "Xiaoquan Li",
+    "Stephan Weiss",
+    "Yijun Yan",
+    "Yinhe Li",
+    "Jinchang Ren",
+    "John Soraghan",
+    "Ming Gong"
+  ],
+  "published": "2024-01-04T22:51:13Z",
+  "updated": "2024-01-04T22:51:13Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2401.02566",
+  "abs_url": "https://arxiv.org/abs/2401.02566",
+  "fetched_at": "2026-07-19T14:18:41.876478Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2408.00900",
+  "title": "Expressive MIDI-format Piano Performance Generation",
+  "summary": "This work presents a generative neural network that's able to generate expressive piano performance in MIDI format. The musical expressivity is reflected by vivid micro-timing, rich polyphonic texture, varied dynamics, and the sustain pedal effects. This model is innovative from many aspects of data processing to neural network design. We claim that this symbolic music generation model overcame the common critics of symbolic music and is able to generate expressive music flows as good as, if not better than generations with raw audio. One drawback is that, due to the limited time for submission, the model is not fine-tuned and sufficiently trained, thus the generation may sound incoherent and random at certain points. Despite that, this model shows its powerful generative ability to generate expressive piano pieces.",
+  "authors": [
+    "Jingwei Liu"
+  ],
+  "published": "2024-08-01T20:36:37Z",
+  "updated": "2024-12-13T23:35:16Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2408.00900",
+  "abs_url": "https://arxiv.org/abs/2408.00900",
+  "fetched_at": "2026-07-19T14:18:41.854028Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

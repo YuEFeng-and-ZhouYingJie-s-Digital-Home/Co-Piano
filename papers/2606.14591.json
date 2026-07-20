@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2606.14591",
+  "title": "AudioDER: A Deduplication-Enhanced Reasoning Dataset for Post-Training Large Audio-Language Models",
+  "summary": "Large Audio-Language Models (LALMs) have shown strong performance on a wide range of audio understanding tasks, yet they still struggle with complex audio reasoning. A practical way to improve such capabilities is post-training, whose effectiveness critically depends on the quality and diversity of training data. However, existing audio-language datasets often contain substantial redundancy, where many samples are highly similar in acoustic content and thus provide overlapping supervisory signals. Such redundancy not only increases annotation cost, but also limits corpus diversity and reduces the effectiveness of post-training. To address this issue, we propose a redundancy-aware data construction pipeline for building reasoning-oriented supervision for LALMs. Specifically, we first perform acoustic similarity-based deduplication across raw audio datasets to improve corpus diversity. We then integrate existing audio captions and question-answer pairs into a unified multiple-choice format. Based on these unified annotations, we leverage Qwen3-30B to generate chain-of-thought (CoT) rationales for reasoning-oriented supervision. Based on this pipeline, we construct AudioDER, a reasoning-oriented post-training dataset containing approximately 191k samples spanning sound, speech, and music. Each sample consists of an audio clip, a multiple-choice question, four answer candidates, an audio caption, and a CoT rationale. Extensive experiments show that post-training on AudioDER consistently improves the performance of Qwen2-Audio-7B-Instruct on multiple audio reasoning benchmarks, including MMAU-mini, MMSU, and MMAR. We hope AudioDER can serve as a valuable resource for advancing audio reasoning research and the development of more capable LALMs.",
+  "authors": [
+    "Hui Geng",
+    "Yi Su",
+    "Han Yin",
+    "Tianjiao Wan",
+    "Qisheng Xu",
+    "Jiaxin Chen",
+    "Zijian Gao",
+    "Hengzhu Liu",
+    "Xie Chen",
+    "Kele Xu"
+  ],
+  "published": "2026-06-12T16:09:49Z",
+  "updated": "2026-06-12T16:09:49Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.14591",
+  "abs_url": "https://arxiv.org/abs/2606.14591",
+  "fetched_at": "2026-07-19T14:18:41.850110Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2607.12619",
+  "title": "Agentic Service-Oriented Computing: A Manifesto for the Next Frontier of Service-Oriented Computing",
+  "summary": "The rapid emergence of LLM-powered autonomous and semi-autonomous agents is reshaping software systems from static, request-response components into goal-directed, adaptive, and tool-using computational actors. As these agents move from isolated cognitive prototypes into complex distributed workflows, they confront challenges that the Service-Oriented Computing community has studied for more than two decades: composition, interoperability, quality of service, lifecycle management, governance, security, and trust. Yet much of today's agentic AI ecosystem is developing these foundations ad hoc, without the engineering rigour required for dependable enterprise and societal deployment. This paper introduces Agentic Service-Oriented Computing (ASOC) as a new research and practice area concerned with engineering agents as services, orchestrating services through autonomous and semi-autonomous agents, and governing ecosystems of agents and services under constraints of trust, cybersecurity, compliance, performance, and accountability. We articulate six foundational principles of ASOC (harness-ability, composability, lifecycle engineering, trustworthiness by design, goal-driven orchestration, and observability/accountability) and organise a five-dimensional research agenda spanning: (i) agentic services foundations and lifecycle engineering; (ii) composition, orchestration, and interoperability; (iii) governance, observability, and accountability; (iv) security, trust, and risk management; and (v) evaluation, certification, and Agentic QoS. We argue that the Services Computing community is especially well positioned to provide the conceptual and engineering spine for this emerging field, transforming agentic AI from fragmented demonstrations into dependable, service-based systems worthy of human and organisational trust.",
+  "authors": [
+    "Amin Beheshti",
+    "Rong N. Chang",
+    "Boualem Benatallah",
+    "Fabio Casati",
+    "Schahram Dustdar",
+    "Geoffrey Fox",
+    "Quan Z. Sheng",
+    "Yan Wang",
+    "Jian Yang",
+    "Albert Zomaya"
+  ],
+  "published": "2026-07-14T10:55:59Z",
+  "updated": "2026-07-14T10:55:59Z",
+  "categories": [
+    "cs.AI",
+    "cs.ET"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12619",
+  "abs_url": "https://arxiv.org/abs/2607.12619",
+  "fetched_at": "2026-07-19T14:18:41.877004Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

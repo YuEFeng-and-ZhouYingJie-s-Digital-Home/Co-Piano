@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2410.03375",
+  "title": "SoundSignature: What Type of Music Do You Like?",
+  "summary": "SoundSignature is a music application that integrates a custom OpenAI Assistant to analyze users' favorite songs. The system incorporates state-of-the-art Music Information Retrieval (MIR) Python packages to combine extracted acoustic/musical features with the assistant's extensive knowledge of the artists and bands. Capitalizing on this combined knowledge, SoundSignature leverages semantic audio and principles from the emerging Internet of Sounds (IoS) ecosystem, integrating MIR with AI to provide users with personalized insights into the acoustic properties of their music, akin to a musical preference personality report. Users can then interact with the chatbot to explore deeper inquiries about the acoustic analyses performed and how they relate to their musical taste. This interactivity transforms the application, acting not only as an informative resource about familiar and/or favorite songs, but also as an educational platform that enables users to deepen their understanding of musical features, music theory, acoustic properties commonly used in signal processing, and the artists behind the music. Beyond general usability, the application also incorporates several well-established open-source musician-specific tools, such as a chord recognition algorithm (CREMA), a source separation algorithm (DEMUCS), and an audio-to-MIDI converter (basic-pitch). These features allow users without coding skills to access advanced, open-source music processing algorithms simply by interacting with the chatbot (e.g., can you give me the stems of this song?). In this paper, we highlight the application's innovative features and educational potential, and present findings from a pilot user study that evaluates its efficacy and usability.",
+  "authors": [
+    "Brandon James Carone",
+    "Pablo Ripollés"
+  ],
+  "published": "2024-10-04T12:40:45Z",
+  "updated": "2024-10-04T12:40:45Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.IR",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2410.03375",
+  "abs_url": "https://arxiv.org/abs/2410.03375",
+  "fetched_at": "2026-07-19T14:18:41.875704Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

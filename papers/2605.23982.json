@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2605.23982",
+  "title": "PiAnnotate: A Web Annotation Tool for Piano Fingering, with a Diagnostic Probe",
+  "summary": "Piano fingering shapes how a passage can be played, yet it is difficult to label after a performance. An annotator must decide which finger produced each note while reconciling the score, timing, video, and hand motion. We present PiAnnotate, a web-based pipeline for adding expert fingering annotations to the FurElise performance dataset. The tool brings together a piano-roll view, performance video, and a 3D MANO hand mesh so that reviewers can inspect each assignment in musical and physical context. Rather than storing only the final answer, PiAnnotate keeps paired rule-based and human-edited fingering tracks. These paired tracks make the annotation history auditable by showing where a geometric rule was sufficient, where experts intervened, and how labels changed across review passes. As a final diagnostic, we train a small Transformer probe on the paired tracks. The probe improves on the rule baseline on held-out pieces while remaining conservative about changing labels that were already correct, suggesting that the edited labels contain learnable structure rather than only isolated fixes.",
+  "authors": [
+    "Joonhyung Bae",
+    "Kirak Kim",
+    "Hyeyoon Cho",
+    "Sein Lee",
+    "Yoon-Seok Choi",
+    "Hyeon Hur",
+    "Gyubin Lee",
+    "Akira Maezawa",
+    "Jonghwa Park",
+    "Jaebum Park",
+    "Juhan Nam"
+  ],
+  "published": "2026-05-14T03:51:26Z",
+  "updated": "2026-05-14T03:51:26Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.23982",
+  "abs_url": "https://arxiv.org/abs/2605.23982",
+  "fetched_at": "2026-07-19T14:17:07.971161Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

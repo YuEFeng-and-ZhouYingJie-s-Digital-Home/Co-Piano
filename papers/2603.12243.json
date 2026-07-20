@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2603.12243",
+  "title": "HandelBot: Real-World Piano Playing via Fast Adaptation of Dexterous Robot Policies",
+  "summary": "Mastering dexterous manipulation with multi-fingered hands has been a grand challenge in robotics for decades. Despite its potential, the difficulty of collecting high-quality data remains a primary bottleneck for high-precision tasks. While reinforcement learning and simulation-to-real-world transfer offer a promising alternative, the transferred policies often fail for tasks demanding millimeter-scale precision, such as bimanual piano playing. In this work, we introduce HandelBot, a framework that combines a simulation policy and rapid adaptation through a two-stage pipeline. Starting from a simulation-trained policy, we first apply a structured refinement stage to correct spatial alignments by adjusting lateral finger joints based on physical rollouts. Next, we use residual reinforcement learning to autonomously learn fine-grained corrective actions. Through extensive hardware experiments across five recognized songs, we demonstrate that HandelBot can successfully perform precise bimanual piano playing. Our system outperforms direct simulation deployment by a factor of 1.8x and requires only 30 minutes of physical interaction data.",
+  "authors": [
+    "Amber Xie",
+    "Haozhi Qi",
+    "Dorsa Sadigh"
+  ],
+  "published": "2026-03-12T17:56:29Z",
+  "updated": "2026-05-15T22:34:49Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.12243",
+  "abs_url": "https://arxiv.org/abs/2603.12243",
+  "fetched_at": "2026-07-19T14:18:41.852607Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

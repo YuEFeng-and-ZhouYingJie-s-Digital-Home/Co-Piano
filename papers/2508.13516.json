@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2508.13516",
+  "title": "Is Transfer Learning Necessary for Violin Transcription?",
+  "summary": "Automatic music transcription (AMT) has achieved remarkable progress for instruments such as the piano, largely due to the availability of large-scale, high-quality datasets. In contrast, violin AMT remains underexplored due to limited annotated data. A common approach is to fine-tune pretrained models for other downstream tasks, but the effectiveness of such transfer remains unclear in the presence of timbral and articulatory differences. In this work, we investigate whether training from scratch on a medium-scale violin dataset can match the performance of fine-tuned piano-pretrained models. We adopt a piano transcription architecture without modification and train it on the MOSA dataset, which contains about 30 hours of aligned violin recordings. Our experiments on URMP and Bach10 show that models trained from scratch achieved competitive or even superior performance compared to fine-tuned counterparts. These findings suggest that strong violin AMT is possible without relying on pretrained piano representations, highlighting the importance of instrument-specific data collection and augmentation strategies.",
+  "authors": [
+    "Yueh-Po Peng",
+    "Ting-Kang Wang",
+    "Li Su",
+    "Vincent K. M. Cheung"
+  ],
+  "published": "2025-08-19T05:20:24Z",
+  "updated": "2025-08-20T08:34:51Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.13516",
+  "abs_url": "https://arxiv.org/abs/2508.13516",
+  "fetched_at": "2026-07-19T14:18:41.848701Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

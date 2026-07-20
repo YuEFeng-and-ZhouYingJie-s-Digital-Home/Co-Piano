@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2503.01362",
+  "title": "Streaming Piano Transcription Based on Consistent Onset and Offset Decoding with Sustain Pedal Detection",
+  "summary": "This paper describes a streaming audio-to-MIDI piano transcription approach that aims to sequentially translate a music signal into a sequence of note onset and offset events. The sequence-to-sequence nature of this task may call for the computationally-intensive transformer model for better performance, which has recently been used for offline transcription benchmarks and could be extended for streaming transcription with causal attention mechanisms. We assume that the performance limitation of this naive approach lies in the decoder. Although time-frequency features useful for onset detection are considerably different from those for offset detection, the single decoder is trained to output a mixed sequence of onset and offset events without guarantee of the correspondence between the onset and offset events of the same note. To overcome this limitation, we propose a streaming encoder-decoder model that uses a convolutional encoder aggregating local acoustic features, followed by an autoregressive Transformer decoder detecting a variable number of onset events and another decoder detecting the offset events for the active pitches with validation of the sustain pedal at each time frame. Experiments using the MAESTRO dataset showed that the proposed streaming method performed comparably with or even better than the state-of-the-art offline methods while significantly reducing the computational cost.",
+  "authors": [
+    "Weixing Wei",
+    "Jiahao Zhao",
+    "Yulun Wu",
+    "Kazuyoshi Yoshii"
+  ],
+  "published": "2025-03-03T09:55:54Z",
+  "updated": "2025-03-03T09:55:54Z",
+  "categories": [
+    "cs.SD",
+    "cs.IR",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2503.01362",
+  "abs_url": "https://arxiv.org/abs/2503.01362",
+  "fetched_at": "2026-07-19T14:18:41.849522Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

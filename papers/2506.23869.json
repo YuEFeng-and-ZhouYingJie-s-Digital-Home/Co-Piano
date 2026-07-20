@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2506.23869",
+  "title": "Scaling Self-Supervised Representation Learning for Symbolic Piano Performance",
+  "summary": "We study the capabilities of generative autoregressive transformer models trained on large amounts of symbolic solo-piano transcriptions. After first pretraining on approximately 60,000 hours of music, we use a comparatively smaller, high-quality subset, to finetune models to produce musical continuations, perform symbolic classification tasks, and produce general-purpose contrastive MIDI embeddings by adapting the SimCLR framework to symbolic music. When evaluating piano continuation coherence, our generative model outperforms leading symbolic generation techniques and remains competitive with proprietary audio generation models. On MIR classification benchmarks, frozen representations from our contrastive model achieve state-of-the-art results in linear probe experiments, while direct finetuning demonstrates the generalizability of pretrained representations, often requiring only a few hundred labeled examples to specialize to downstream tasks.",
+  "authors": [
+    "Louis Bradshaw",
+    "Honglu Fan",
+    "Alexander Spangher",
+    "Stella Biderman",
+    "Simon Colton"
+  ],
+  "published": "2025-06-30T14:00:14Z",
+  "updated": "2025-06-30T14:00:14Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2506.23869",
+  "abs_url": "https://arxiv.org/abs/2506.23869",
+  "fetched_at": "2026-07-19T14:18:41.849060Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

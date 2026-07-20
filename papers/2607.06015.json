@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.06015",
+  "title": "Music I Care About: Automated Multimodal Benchmarking of LLM Music Perception Skills on (Almost) Any Music",
+  "summary": "Music represents a cornerstone of human culture, existing digitally across diverse modalities, including audio, symbolic encodings (e.g., MIDI, MusicXML), and sheet music. Despite the advancement of Multimodal Large Language Models (MLLMs), current music benchmarks face three major limitations. First, large static benchmarks are resource-intensive to evaluate, and it remains unclear how their results transfer to diverse kinds of music beyond those included in the benchmark. Second, benchmarks claiming to measure \"music understanding\" often fail to require music perception. Third, they do not support systematic performance comparisons across musical modalities. To overcome these issues, we introduce the Music I Care About Meta-Benchmark (MusICA-MetaBench), a framework that automatically derives on-demand benchmarks directly from user-provided data. By leveraging structured symbolic representations (e.g., MusicXML) and our pre-defined question templates, we build multiple-choice question-answer pairs that probe music perception competencies, aligned with music pedagogy, across audio, music notation images, and symbolic files. We demonstrate our framework with the ChoraleBricks dataset, and experimentally determine benchmark sizes that ensure statistically reliable model comparisons for this setup. By comparing against text-only and white-noise baselines, we show our questions do measure music perception. Ultimately, MusICA-MetaBench represents a significant advancement in the cross-modal assessment of music perception for MLLMs. By proposing a dataset-specific benchmarking paradigm, it enables efficient on-demand evaluation of music perception capabilities.",
+  "authors": [
+    "Tomáš Sourada",
+    "Katia Vendrame",
+    "Jan Hajič"
+  ],
+  "published": "2026-07-07T08:57:34Z",
+  "updated": "2026-07-07T08:57:34Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.06015",
+  "abs_url": "https://arxiv.org/abs/2607.06015",
+  "fetched_at": "2026-07-19T14:17:38.245584Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

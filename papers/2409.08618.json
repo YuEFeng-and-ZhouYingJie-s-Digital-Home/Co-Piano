@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2409.08618",
+  "title": "TapToTab : Video-Based Guitar Tabs Generation using AI and Audio Analysis",
+  "summary": "The automation of guitar tablature generation from video inputs holds significant promise for enhancing music education, transcription accuracy, and performance analysis. Existing methods face challenges with consistency and completeness, particularly in detecting fretboards and accurately identifying notes. To address these issues, this paper introduces an advanced approach leveraging deep learning, specifically YOLO models for real-time fretboard detection, and Fourier Transform-based audio analysis for precise note identification. Experimental results demonstrate substantial improvements in detection accuracy and robustness compared to traditional techniques. This paper outlines the development, implementation, and evaluation of these methodologies, aiming to revolutionize guitar instruction by automating the creation of guitar tabs from video recordings.",
+  "authors": [
+    "Ali Ghaleb",
+    "Eslam ElSadawy",
+    "Ihab Essam",
+    "Mohamed Abdelhakim",
+    "Seif-Eldin Zaki",
+    "Natalie Fahim",
+    "Razan Bayoumi",
+    "Hanan Hindy"
+  ],
+  "published": "2024-09-13T08:17:15Z",
+  "updated": "2024-09-13T08:17:15Z",
+  "categories": [
+    "cs.SD",
+    "cs.CV",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2409.08618",
+  "abs_url": "https://arxiv.org/abs/2409.08618",
+  "fetched_at": "2026-07-19T14:18:41.876346Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

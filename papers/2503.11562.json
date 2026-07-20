@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2503.11562",
+  "title": "Designing Neural Synthesizers for Low-Latency Interaction",
+  "summary": "Neural Audio Synthesis (NAS) models offer interactive musical control over high-quality, expressive audio generators. While these models can operate in real-time, they often suffer from high latency, making them unsuitable for intimate musical interaction. The impact of architectural choices in deep learning models on audio latency remains largely unexplored in the NAS literature. In this work, we investigate the sources of latency and jitter typically found in interactive NAS models. We then apply this analysis to the task of timbre transfer using RAVE, a convolutional variational autoencoder for audio waveforms introduced by Caillon et al. in 2021. Finally, we present an iterative design approach for optimizing latency. This culminates with a model we call BRAVE (Bravely Realtime Audio Variational autoEncoder), which is low-latency and exhibits better pitch and loudness replication while showing timbre modification capabilities similar to RAVE. We implement it in a specialized inference framework for low-latency, real-time inference and present a proof-of-concept audio plugin compatible with audio signals from musical instruments. We expect the challenges and guidelines described in this document to support NAS researchers in designing models for low-latency inference from the ground up, enriching the landscape of possibilities for musicians.",
+  "authors": [
+    "Franco Caspe",
+    "Jordie Shier",
+    "Mark Sandler",
+    "Charalampos Saitis",
+    "Andrew McPherson"
+  ],
+  "published": "2025-03-14T16:30:31Z",
+  "updated": "2025-04-11T18:00:53Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2503.11562",
+  "abs_url": "https://arxiv.org/abs/2503.11562",
+  "fetched_at": "2026-07-19T14:18:41.866548Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

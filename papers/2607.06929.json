@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2607.06929",
+  "title": "MADB: A Large-Scale Music Aesthetics Dataset with Professional and Multi-Dimensional Annotations",
+  "summary": "Music aesthetic assessment is a challenging yet underexplored problem, requiring models to capture fine-grained, multi-dimensional human perceptual judgments. Progress in this area has been limited by the lack of large-scale datasets with structured aesthetic annotations. We introduce MADB, a large-scale dataset and benchmark comprising 9,999 tracks annotated by 30 trained annotators. Each track is rated by around 10 annotators across 10 perceptual dimensions and one overall score, with additional textual comments for multimodal analysis. We establish a unified evaluation framework over multiple pretrained models. Results reveal substantial gaps between model predictions and human judgments, exposing key limitations of current approaches. MADB provides a new benchmark for human-aligned music understanding. Project page: https://github.com/knownree/madb",
+  "authors": [
+    "Sirui Zhang",
+    "Tianle Wang",
+    "Xinyi Tong",
+    "Peiyang Yu",
+    "Jishang Chen",
+    "Liangke Zhao",
+    "Haoxin Zhang",
+    "Duo Xu",
+    "Xin Jin",
+    "Feng Yu",
+    "Songchun Zhu"
+  ],
+  "published": "2026-07-08T02:49:29Z",
+  "updated": "2026-07-08T02:49:29Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.06929",
+  "abs_url": "https://arxiv.org/abs/2607.06929",
+  "fetched_at": "2026-07-19T14:18:41.879675Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2606.23481",
+  "title": "Continuity equations in the Generalised Lagrangian Mean theory",
+  "summary": "Generalised Lagrangian Mean (GLM) theory aims to describe the joint evolution of the mean flow and its perturbations based on the exact system of governing equations. This paper analyses the formulation of the exact system of the GLM continuity equation (GLM-CE) and adds an equation to it. The analysis uses only the general notions of fluid dynamics and excludes the momentum equation. The tools used are Lagrangian X, Eulerian x, averaged Eulerian x' coordinates of fluid particles, and ensemble-based averaging over the parameter a. The targeted forms of GLM-CEs operate with functions x(x', t, a) and rho(x', t, a) where rho is the density. First, we express the actual velocity divergence nabla.u through nabla'.u', where u and u' are the actual and average fluid velocities. Then we derive three explicit versions of GLM-CEs. After that, each exact such equation is explicitly presented as a system of the mean and tilde equations. The latter leads to an upgrade of the GLM governing equations. For comparison, we consider two versions of the Andrews-McIntyre transformation (AMT) for CEs: the generalised and the original. The first yields results similar to those described above but uses a more complex derivation. The second introduces an auxiliary function that is a-independent and satisfies a PDE with special initial conditions. It is applicable to special classes of fluid flows. In addition, its structure explains why the tilde equation has been abolished. Finally, we consider examples of average flows with small Lagrangian perturbations, thus linking our exposition to the classical GLM theory.",
+  "authors": [
+    "Vladimir A. Vladimirov"
+  ],
+  "published": "2026-06-22T15:26:44Z",
+  "updated": "2026-07-11T20:04:22Z",
+  "categories": [
+    "physics.flu-dyn"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.23481",
+  "abs_url": "https://arxiv.org/abs/2606.23481",
+  "fetched_at": "2026-07-19T14:17:07.972558Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

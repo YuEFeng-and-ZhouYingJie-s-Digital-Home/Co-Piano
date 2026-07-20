@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2605.27840",
+  "title": "LoSATok: Low-dimensional Semantic-Acoustic Tokenizer for Cross-Domain Audio Understanding and Generation",
+  "summary": "Audio tokenizers are fundamental to unifying audio understanding and generation. Understanding requires high-level semantics, while generation demands semantic and acoustic details. Existing unified tokenizers jointly encode both in high-dimensional continuous latents, which increases the modeling burden of Diffusion Transformers (DiTs) for generation. We propose LoSATok, a low-dimensional audio tokenizer for cross-domain audio understanding and generation. Motivated by the observation that 1280-dimensional semantic encoder features are compressible, we introduce a Semantic Bottleneck that compresses them into 128 dimensions, regularized by the proposed time-relation loss for temporal feature consistency. We further design a dual-level semantic supervision method that leverages both high- and low-dimensional semantic signals, enabling the tokenizer to jointly capture semantics and acoustic details within a compact latent space. Experiments on speech, music, and general audio show that SemBo preserves strong low-dimensional semantic capacity and LoSATok retains competitive understanding performance compared with several semantic representations, while consistently improving DiT modeling performance on speech, music, and audio generation. These results demonstrate that LoSATok's low-dimensional representations can effectively support audio understanding and generation. Our code is provided at https://github.com/wxzyd123/LoSATok.",
+  "authors": [
+    "Zhisheng Zhang",
+    "Xiang Li",
+    "Yixuan Zhou",
+    "Jing Peng",
+    "Guoyang Zeng",
+    "Zhiyong Wu"
+  ],
+  "published": "2026-05-27T01:56:45Z",
+  "updated": "2026-05-27T01:56:45Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.27840",
+  "abs_url": "https://arxiv.org/abs/2605.27840",
+  "fetched_at": "2026-07-19T14:18:41.872396Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

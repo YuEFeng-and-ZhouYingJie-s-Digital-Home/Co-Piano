@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2607.15082",
+  "title": "Towards Hierarchical Structure Understanding of Newspaper Images",
+  "summary": "Understanding newspaper images remains a challenging task due to their complex, nested hierarchical structures and dense, heterogeneous layouts. In this paper, we explore two complementary approaches for newspaper structure understanding. First, we present a modular bottom-up pipeline that combines state-of-the-art open-source models: YOLO for layout detection, LayoutReader for reading order prediction, and a custom algorithm for article segmentation. This approach leverages existing robust components while maintaining flexibility and interpretability. Second, we introduce Tiramisu (Tiered Transformers for Hierarchical Structure Understanding), a novel end-to-end transformer-based architecture that explicitly models document hierarchy through an iterative tiered process. Tiramisu performs section and article separation, block localization, semantic categorization, and reading order prediction using highly parallelized attention mechanisms. Finally, we release Finlam La Liberté, a new dataset designed specifically for evaluating hierarchical information retrieval in historical newspapers. Experimental results demonstrate the effectiveness of both approaches in reconstructing complex newspaper hierarchies, with comparative analysis highlighting their respective strengths for scalable document digitization. The Tiramisu training code, including the synthetic newspaper generator, is available at https://git.litislab.fr/tiramisu/tiramisu-newspaper-articles-extractor.",
+  "authors": [
+    "William Mocaër",
+    "Solène Tarride",
+    "Thomas Constum",
+    "Merveilles Agbeti-Messan",
+    "Tom Simon",
+    "Clément Chatelain",
+    "Stéphane Nicolas",
+    "Pierrick Tranouez",
+    "Sébastien Cretin",
+    "Thierry Paquet"
+  ],
+  "published": "2026-07-16T14:52:08Z",
+  "updated": "2026-07-16T14:52:08Z",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15082",
+  "abs_url": "https://arxiv.org/abs/2607.15082",
+  "fetched_at": "2026-07-19T14:17:38.252965Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

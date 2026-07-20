@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.01703",
+  "title": "JenBridge: Adaptive Long-Form Video Soundtracking across Scene Transitions",
+  "summary": "We address the challenge of generating high-fidelity, long-form soundtracks that remain coherent across scene transitions. Existing AI music systems are mainly designed for short, isolated clips and lack mechanisms to ensure narrative continuity. We present JenBridge, a modular and interpretable framework for adaptive long-form video soundtracking that ensures both high-fidelity audio generation and transition naturalness. The core architecture is a Transformer-based generative model trained with a flow-matching objective, following a two-stage paradigm: pretraining on large-scale text-audio corpora to establish robust musical priors, then adapting to the video domain with dual text-visual conditioning for precise cross-modal alignment. Crucially, to achieve long-form coherence across diverse scene changes, JenBridge incorporates a novel adaptive transition mechanism. This system features a versatile toolkit of transition styles, including a generative transition method, and uniquely employs a Large Language Model (LLM) Agent that acts as a director to select the most appropriate transition for each narrative shift intelligently. To rigorously assess this task, we propose the LVS Benchmark, a new benchmark that includes a curated dataset and novel evaluation metrics focusing on holistic and transition-aware assessment. Extensive experiments on the proposed benchmark demonstrate that JenBridge significantly outperforms existing methods in both objective and subjective metrics, particularly in terms of transition naturalness and overall narrative coherence. JenBridge represents a significant step towards fully automated, professional-quality video soundtracking.",
+  "authors": [
+    "Jiashuo Yu",
+    "Yao Yao",
+    "Boyu Chen",
+    "Alex Wang"
+  ],
+  "published": "2026-06-01T05:12:20Z",
+  "updated": "2026-06-01T05:12:20Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.01703",
+  "abs_url": "https://arxiv.org/abs/2606.01703",
+  "fetched_at": "2026-07-19T14:18:41.863417Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

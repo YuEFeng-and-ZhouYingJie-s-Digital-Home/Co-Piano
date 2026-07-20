@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.00473",
+  "title": "How Early Is Early Enough? Design-Dependent Observation-Window Sufficiency in Subscription Churn Prediction",
+  "summary": "How many days of early behavior suffice for subscription churn prediction? In the public KKBox dataset, the early indicator of churn is typically an indicator of someone's contract status; however, when looking in the heavily churned manual-renewal segment, having access to early behavior creates a substantial increase in prediction for that specific segment (PR +0.10 at 120 days). A nine-window sufficiency curve shows a diminishing-returns knee in a 45-90 day band. However, stress-testing over three cohort/task designs shows that this curve is singular to the design being tested; for example, in our test with a moving target, the curve inverts and can shift depending on the feature set used. Therefore, any window-sufficiency claim should state its cohort construction, target definition, and feature families. All evidence is from one music-streaming dataset; the mechanism should generalize but the magnitudes may not.",
+  "authors": [
+    "Xiao Han",
+    "Yao Xiao",
+    "Chenyu Wu",
+    "Tongchen Zhang"
+  ],
+  "published": "2026-07-01T05:47:38Z",
+  "updated": "2026-07-01T05:47:38Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.00473",
+  "abs_url": "https://arxiv.org/abs/2607.00473",
+  "fetched_at": "2026-07-19T14:18:41.880204Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

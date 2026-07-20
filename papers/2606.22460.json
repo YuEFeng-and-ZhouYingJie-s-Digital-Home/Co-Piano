@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.22460",
+  "title": "Music Playlist Captioning at Scale with Large Language Models",
+  "summary": "Music streaming services such as Deezer often recommend personalized playlists to users. Playlist captioning, which involves describing these playlists in natural language, is essential for helping users understand the content behind each recommendation, yet remains challenging at scale. This paper presents the automatic playlist captioning system deployed on Deezer in 2025 to address this challenge. Leveraging recent advances in large language models (LLMs) to generate descriptive captions from diverse data sources in a controlled manner, this system now powers the Daily Mix feature, used by millions of users. This deployment has led to significant improvements in user engagement, highlighting how the semantic framing of an unchanged recommendation shapes user perception in online personalized experiences.",
+  "authors": [
+    "Mathieu Delcluze",
+    "Léa Briand",
+    "Benjamin Chapus",
+    "Deniz Mekik",
+    "Guillaume Salha-Galvan"
+  ],
+  "published": "2026-06-21T12:08:53Z",
+  "updated": "2026-06-21T12:08:53Z",
+  "categories": [
+    "cs.IR",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.22460",
+  "abs_url": "https://arxiv.org/abs/2606.22460",
+  "fetched_at": "2026-07-19T14:18:41.849875Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

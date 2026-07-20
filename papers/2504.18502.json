@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2504.18502",
+  "title": "Music Tempo Estimation on Solo Instrumental Performance",
+  "summary": "Recently, automatic music transcription has made it possible to convert musical audio into accurate MIDI. However, the resulting MIDI lacks music notations such as tempo, which hinders its conversion into sheet music. In this paper, we investigate state-of-the-art tempo estimation techniques and evaluate their performance on solo instrumental music. These include temporal convolutional network (TCN) and recurrent neural network (RNN) models that are pretrained on massive of mixed vocals and instrumental music, as well as TCN models trained specifically with solo instrumental performances. Through evaluations on drum, guitar, and classical piano datasets, our TCN models with the new training scheme achieved the best performance. Our newly trained TCN model increases the Acc1 metric by 38.6% for guitar tempo estimation, compared to the pretrained TCN model with an Acc1 of 61.1%. Although our trained TCN model is twice as accurate as the pretrained TCN model in estimating classical piano tempo, its Acc1 is only 50.9%. To improve the performance of deep learning models, we investigate their combinations with various post-processing methods. These post-processing techniques effectively enhance the performance of deep learning models when they struggle to estimate the tempo of specific instruments.",
+  "authors": [
+    "Zhanhong He",
+    "Roberto Togneri",
+    "Xiangyu Zhang"
+  ],
+  "published": "2025-04-25T17:14:52Z",
+  "updated": "2025-04-25T17:14:52Z",
+  "categories": [
+    "eess.AS",
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2504.18502",
+  "abs_url": "https://arxiv.org/abs/2504.18502",
+  "fetched_at": "2026-07-19T14:18:41.849409Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

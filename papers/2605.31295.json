@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2605.31295",
+  "title": "Latent Space Disentanglement via Activation Steering for Interpretable Attribute Control in Symbolic Music Generation",
+  "summary": "Transformer-based architectures have significantly advanced the generation of complex symbolic sequences, yet a significant gap remains in achieving fine-grained, interpretable control over discrete signal attributes. This paper investigates the mechanistic interpretability of the Multitrack Music Transformer (MMT) and proposes a framework for deterministic attribute modulation without retraining to bridge this gap via inference-time activation steering. Utilizing the Difference-in-Means (DiffMean) methodology, we isolate latent directions for signal attributes, specifically Pitch and Duration, within the residual stream. We validate the Linear Representation Hypothesis in this domain, achieving high correlation between steering magnitude and attribute shift. To address the inherent feature entanglement in multi-attribute steering, we introduce a Dual Steering framework utilizing Gram-Schmidt Orthogonalization. Experimental results demonstrate that this geometric decoupling reduces conceptual interference and signal degradation compared to naive vector addition, enabling independent deterministic control even against strong autoregressive conditioning.",
+  "authors": [
+    "Ioannis Prokopiou",
+    "Pantelis Vikatos",
+    "Maximos Kaliakatsos-Papakostas",
+    "Theodoros Giannakopoulos",
+    "Themos Stafylakis"
+  ],
+  "published": "2026-05-29T13:31:56Z",
+  "updated": "2026-05-29T13:31:56Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.IR",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.31295",
+  "abs_url": "https://arxiv.org/abs/2605.31295",
+  "fetched_at": "2026-07-19T14:18:41.857562Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

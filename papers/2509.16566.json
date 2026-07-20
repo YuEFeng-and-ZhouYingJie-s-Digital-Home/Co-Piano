@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2509.16566",
+  "title": "Barwise Section Boundary Detection in Symbolic Music Using Convolutional Neural Networks",
+  "summary": "Current methods for Music Structure Analysis (MSA) focus primarily on audio data. While symbolic music can be synthesized into audio and analyzed using existing MSA techniques, such an approach does not exploit symbolic music's rich explicit representation of pitch, timing, and instrumentation. A key subproblem of MSA is section boundary detection-determining whether a given point in time marks the transition between musical sections. In this paper, we study automatic section boundary detection for symbolic music. First, we introduce a human-annotated MIDI dataset for section boundary detection, consisting of metadata from 6134 MIDI files that we manually curated from the Lakh MIDI dataset. Second, we train a deep learning model to classify the presence of section boundaries within a fixed-length musical window. Our data representation involves a novel encoding scheme based on synthesized overtones to encode arbitrary MIDI instrumentations into 3-channel piano rolls. Our model achieves an F1 score of 0.77, improving over the analogous audio-based supervised learning approach and the unsupervised block-matching segmentation (CBM) audio approach by 0.22 and 0.31, respectively. We release our dataset, code, and models.",
+  "authors": [
+    "Omar Eldeeb",
+    "Martin Malandro"
+  ],
+  "published": "2025-09-20T07:52:08Z",
+  "updated": "2025-09-20T07:52:08Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.16566",
+  "abs_url": "https://arxiv.org/abs/2509.16566",
+  "fetched_at": "2026-07-19T14:18:41.865418Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

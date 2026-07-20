@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15191",
+  "title": "Massive On-shell Splitting Functions in Spinor-Helicity Formalism",
+  "summary": "Collinear splitting functions govern parton evolution, parton showers, and resummation at high-energy colliders. While on-shell spinor-helicity methods have successfully yielded massless QCD splitting functions, a complete on-shell construction for massive particles, systematically incorporating finite-mass effects, is less developed. We present an on-shell constructive formalism for massive collinear splitting functions based on Soper-Weinberg collinear spinors, whose transformation properties follow from a light-front Galilean subgroup of the Poincaré group. Decomposing massive momenta and spinors with respect to fixed lightlike vectors $n$ and $\\bar n$ makes the expansion in the alignment regime $m<p_T\\ll p_+$ manifest. The leading-order structures are matched to massless three-point amplitudes, while an additional Higgs momentum along $\\bar n$ probes the subleading spinor components and relates them to massless four-point amplitudes. We derive the complete set of leading and subleading massive splitting functions for all Standard Model particles and establish a systematic matching dictionary between massless and massive coupling coefficients at both the three- and four-point levels. Higher-point splitting functions are obtained through the recursive bootstrap relation with a universal substitution rule as a consequence of the Galilean symmetry. This constructive framework extends naturally to effective field theory operators and higher perturbative orders, providing a flexible computational tool for precision collider physics and parton shower development.",
+  "authors": [
+    "Yi-Ning Wang",
+    "Chao Wu",
+    "Jiang-Hao Yu"
+  ],
+  "published": "2026-07-16T16:47:43Z",
+  "updated": "2026-07-16T16:47:43Z",
+  "categories": [
+    "hep-ph",
+    "hep-th"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15191",
+  "abs_url": "https://arxiv.org/abs/2607.15191",
+  "fetched_at": "2026-07-19T14:17:38.251426Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

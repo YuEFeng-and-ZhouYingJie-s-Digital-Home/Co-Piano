@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.15009",
+  "title": "Ridge-Spin-Layer Coupling and Emergent Ridgetronics in 2D Altermagnets",
+  "summary": "Extending valleytronics from discrete points to continuous lines in momentum space transforms dispersionless bands into a controllable degree of freedom. Here we introduce ridge--spin--layer coupling (RSLC) in two-dimensional (2D) altermagnets, where a one-dimensional continuous line of dispersionless electronic states (a ridge) in momentum space locks to both spin polarization and atomic sublayer. This ridge-induced quenching of kinetic energy mimics flat-band physics, yet crucially, RSLC grants external control, allowing for layer-selective switching of ridge orientation in reciprocal space, spin-filtered transport in real space, and a distinct electric Hall response. Guided by collinear spin layer group symmetry, we identify three 2D candidate materials, namely Mg$_2$Mo$_2$(PO$_5$)$_2$, Ca(FeP)$_2$, and Mg$_2$V$_2$(SO$_5$)$_2$, each featuring a crossed-ridge structure with two ridges, one per spin channel and sublayer. Our work establishes ridgetronics as a controllable platform for direction-discriminating currents, bridging dispersionless bands with multifunctional device operation.",
+  "authors": [
+    "Mu Tian",
+    "Run-Wu Zhang",
+    "Chaoxi Cui",
+    "Zhi-Ming Yu",
+    "Yugui Yao"
+  ],
+  "published": "2026-07-16T13:56:15Z",
+  "updated": "2026-07-16T13:56:15Z",
+  "categories": [
+    "cond-mat.mtrl-sci",
+    "cond-mat.str-el"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15009",
+  "abs_url": "https://arxiv.org/abs/2607.15009",
+  "fetched_at": "2026-07-19T14:17:38.253830Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

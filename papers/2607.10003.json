@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.10003",
+  "title": "ARIMA: Reconstruction-Grounded Predictive Representation Learning for Symbolic Music",
+  "summary": "Self-supervised learning for symbolic music has advanced largely through token-level pretraining, but such representations remain tied to tokenizer-specific sequences and often provide time-span-level embeddings only indirectly. In this paper, we propose ARIMA, a reconstruction-grounded latent predictive framework for symbolic music that learns compact window-based representations directly from data. ARIMA encodes each fixed-duration window into a continuous latent representation, trains a causal predictor with contrastive next-latent prediction, and grounds the encoder through structured reconstruction of music elements. This design preserves local musical details while modeling temporal progression across windows. We evaluate ARIMA on downstream tasks spanning various levels of music understanding. Results show that ARIMA is particularly efficient and effective on tasks involving harmonic, timing, and cross-performance retrieval, while remaining competitive with much larger baselines on other tasks. Ablations further show that next-latent prediction is essential for temporally integrated representations, and that structured reconstruction stabilizes latent learning without requiring explicit variance regularization. The code is at https://github.com/AndyWeasley2004/symbolic_music_wm.",
+  "authors": [
+    "Mingyang Yao",
+    "Zhaoxiang Feng"
+  ],
+  "published": "2026-07-10T22:02:00Z",
+  "updated": "2026-07-10T22:02:00Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.10003",
+  "abs_url": "https://arxiv.org/abs/2607.10003",
+  "fetched_at": "2026-07-19T14:18:41.856445Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

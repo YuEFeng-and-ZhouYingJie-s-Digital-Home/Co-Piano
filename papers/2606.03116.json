@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.03116",
+  "title": "AnyAudio-Judge: A Dynamic Rubric-Based Benchmark and Evaluator for Audio Instruction Following",
+  "summary": "The rapid advancement of instruction-guided audio generation has highlighted the critical need for robust alignment evaluation. Current automated evaluation methods heavily rely on holistic scoring from general-purpose large language models, which struggle to decouple complex instructions, lack interpretability, and fail to capture fine-grained attribute mismatches. To address this, we introduce a novel dynamic rubric-based evaluation paradigm that adaptively decomposes complex audio captions into a variable number of independent, verifiable binary rubric items. To rigorously benchmark this capability, we propose the AnyAudio-Judge Bench, a comprehensive, bilingual benchmark comprising 7,920 meticulously curated samples across four diverse audio domains (speech, sound, music, and mixed), featuring deliberately constructed hard negatives. Furthermore, we construct a large-scale corpus of 105K samples with explicit Chain-of-Thought (CoT) rationales to train our dedicated evaluator, the AnyAudio-Judge model. By employing a training pipeline that combines Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO), our model successfully aligns its reasoning paths with the rubric-based scoring mechanism. Extensive experiments demonstrate that AnyAudio-Judge not only significantly enhances zero-shot alignment detection compared to state-of-the-art baselines, but also provides precise and interpretable reward signals that substantially improve instruction alignment in downstream reinforcement learning for audio generation.",
+  "authors": [
+    "Haitao Li",
+    "Tian Tan",
+    "Yuguang Yang",
+    "Shan Yang",
+    "Xie Chen"
+  ],
+  "published": "2026-06-02T04:00:32Z",
+  "updated": "2026-06-02T04:00:32Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.03116",
+  "abs_url": "https://arxiv.org/abs/2606.03116",
+  "fetched_at": "2026-07-19T14:18:41.850480Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

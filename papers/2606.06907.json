@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.06907",
+  "title": "SpectCount: Spectrotemporal Counting via Synthetic Signals Improves Large Audio Language Models",
+  "summary": "Large audio language models (LALMs) extend large language models with an audio encoder and large-scale audio data. However, the scarcity of high-quality annotated audio data remains a fundamental bottleneck for scaling. Through probing signal detectability analysis, we identify fine-grained spectrotemporal perceptual weaknesses in a foundation LALM. To address these challenges, we propose Spectrotemporal Counting (SpectCount), a data-efficient fine-tuning approach based on fully synthetic audio signals generated on-the-fly, without relying on real-world audio, annotations, or pretrained generative models. SpectCount not only resolves the observed weaknesses but also improves performance on diverse auditory benchmarks spanning sound, music, and speech, unseen during fine-tuning. These results suggest that weakness-targeted synthetic signals provide a data-efficient path toward enhanced auditory understanding capabilities in LALMs.",
+  "authors": [
+    "Seonuk Kim",
+    "Yonghyeon Jun",
+    "Ju Yeon Kang",
+    "Jimin Hong",
+    "Yoonhyeong Lee",
+    "Nam Soo Kim"
+  ],
+  "published": "2026-06-05T04:50:34Z",
+  "updated": "2026-06-05T04:50:34Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.06907",
+  "abs_url": "https://arxiv.org/abs/2606.06907",
+  "fetched_at": "2026-07-19T14:18:41.880672Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

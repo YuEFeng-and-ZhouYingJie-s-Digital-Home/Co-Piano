@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2604.10438",
+  "title": "Whisper-AuT: Domain-Adapted Audio Encoder for Efficient Audio-LLM Training",
+  "summary": "Audio-native large language models (audio-LLMs) commonly use Whisper as their audio encoder. However, Whisper was trained exclusively on speech data, producing weak representations for music and environmental sound. This forces downstream audio-LLMs to compensate through extensive training on large-scale non-speech data. We present Whisper-AuT, a domain-adapted audio encoder obtained by fine-tuning Whisper-large-v3 on a curated mixture of speech (80%), environmental sound (10%), and music (10%) totaling approximately 20M samples. The full encoder-decoder is trained end-to-end with a seq2seq captioning objective; the decoder is then discarded and only the encoder is retained. Linear probe evaluations show that Whisper-AuT achieves +23.0% on ESC-50 (environmental sound), +5.0% on GTZAN (music genre), and +0.7% on Speech Commands (keyword spotting) compared to the original Whisperlarge-v3 encoder. Whisper-AuT is designed as a drop-in replacement for Whisper in audio-LLM architectures, with the goal of reducing downstream training cost by providing stronger initial audio representations for non-speech domains.",
+  "authors": [
+    "Jielin Qiu",
+    "Ming Zhu",
+    "Wenting Zhao",
+    "Zhiwei Liu",
+    "Liangwei Yang",
+    "Zixiang Chen",
+    "Roshan Ram",
+    "Akshara Prabhakar",
+    "Juntao Tan",
+    "Rithesh Murthy",
+    "Shelby Heinecke",
+    "Caiming Xiong",
+    "Silvio Savarese",
+    "Huan Wang"
+  ],
+  "published": "2026-04-12T03:29:14Z",
+  "updated": "2026-04-12T03:29:14Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.10438",
+  "abs_url": "https://arxiv.org/abs/2604.10438",
+  "fetched_at": "2026-07-19T14:18:41.852001Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

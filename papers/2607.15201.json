@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.15201",
+  "title": "Entanglement Detection for Two-Qubit and Three-Qubit Pure States via Unitary Transformations and Ancilla State Measurements",
+  "summary": "Quantum entanglement is the fundamental hallmark of quantum mechanics and a core resource for realizing long-distance quantum communication and scalable linear quantum computing. Accordingly, the precise detection and quantitative quantification of entanglement constitute a foundational and critical problem in quantum information theory. To date, researchers have proposed numerous sufficient conditions for entanglement detection as well as a variety of entanglement measures to characterize the entanglement strength of quantum states; nevertheless, efficient and direct measurement schemes for core entanglement parameters remain underdeveloped. Based on unitary transformations and auxiliary measurements, this paper proposes a set of quantum circuit schemes capable of directly measuring the bipartite concurrence and the tripartite 3-tangle entanglement measure. By introducing auxiliary qubits and constructing specific controlled unitary operations, the proposed scheme maps the analytical expressions of the two entanglement measures onto the measurement probabilities of output states from quantum circuits. It enables efficient and direct quantitative measurement of bipartite and tripartite entanglement without performing full quantum state tomography. This work provides a feasible technical route for the experimental characterization of entanglement properties and lays a groundwork for the practical deployment of multipartite entanglement resources in quantum information processing.",
+  "authors": [
+    "Yu-Hang Liu",
+    "Yuan-Hong Tao",
+    "Yi-Wen Liu",
+    "Ying-Huan Zhou",
+    "Shao-Ming Fei"
+  ],
+  "published": "2026-07-16T16:57:50Z",
+  "updated": "2026-07-16T16:57:50Z",
+  "categories": [
+    "quant-ph"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15201",
+  "abs_url": "https://arxiv.org/abs/2607.15201",
+  "fetched_at": "2026-07-19T14:17:38.251190Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

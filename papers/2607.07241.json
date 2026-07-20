@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.07241",
+  "title": "Rag Classification of Tagore Songs using Symbolic Music Notation and Novel Weighted Distance Measures",
+  "summary": "Rabindra Sangeet, the body of songs written and composed by Rabindranath Tagore, occupies a distinctive position in Indian music by combining poetic expression with melodic ideas drawn from Hindustani rags, Bengali folk traditions, tappa, kırtan, Baul music, and Western tunes. Although many Tagore songs are associated with rag labels provided by Tagore himself or preserved in authoritative notational traditions, rag identification remains challenging because the songs often reflect creative freedom rather than strict adherence to classical rag grammar. This paper formulates rag identification in Rabindra Sangeet as a supervised classification problem using symbolic music-sheet notations from Swarabitan. Since large-scale annotated audio or music datasets for Rabindra Sangeet are not readily available, this study constructs a rag-labelled symbolic dataset from notated Tagore songs. The work investigates Euclidean distance and cosine similarity for rag classification and introduces a weighted Euclidean distance measure that assigns greater importance to notes belonging to characteristic rag sequences such as arohana and avarohana. Applied within a k-nearest-neighbour framework, the proposed measure improves rag classification by better capturing rag-specific melodic identity.",
+  "authors": [
+    "Chandan Misra",
+    "Swarup Chattopadhyay"
+  ],
+  "published": "2026-07-08T10:20:50Z",
+  "updated": "2026-07-09T06:54:02Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.07241",
+  "abs_url": "https://arxiv.org/abs/2607.07241",
+  "fetched_at": "2026-07-19T14:18:41.879554Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

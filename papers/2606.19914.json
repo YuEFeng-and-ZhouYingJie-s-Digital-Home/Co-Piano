@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.19914",
+  "title": "Co-policy: Responsive Human-Robot Co-Creation for Musical Performances",
+  "summary": "Art has long stood as a pivotal expression of human creativity. Embodied artificial intelligence offers a route for generative models to participate in that creativity through physical action rather than disembodied digital content. In robotic music co-creation, it is challenging to connect semantic musical understanding with real-time and physically executable performance. We present Co-policy, a framework for human-robot musical co-creation that separates semantic intent grounding, constrained musical variation, and visuomotor execution. To ground musical semantics, Co-policy uses pre-inference semantic anchors and a fine-tuned Qwen-vl planner (F-Qwen) to transform speech, live musical seeds, and visual observations into structured co-creation plans. To support low-latency execution, Co-policy introduces a Gaussian-Mixture Visuomotor Policy (GMP), implemented as a conditional mixture-density policy that maps target notes and visual context to multimodal robot actions in a single forward pass. Unlike robotic playback systems that merely reproduce user-specified notes, Co-policy generates complementary musical responses under both musical and physical constraints. Real-robot chime experiments, ablations, and expert evaluation show improved intent alignment, execution accuracy, and response frequency over diffusion-policy and ablated baselines, supporting physically grounded action generation as a key requirement for embodied human-AI co-creation.",
+  "authors": [
+    "Xuetao Li",
+    "Wenke Huang",
+    "Mang Ye",
+    "Zijian Liu",
+    "Jinhua Xie",
+    "Jifeng Xuan",
+    "Miao Li"
+  ],
+  "published": "2026-06-18T08:08:16Z",
+  "updated": "2026-06-18T08:08:16Z",
+  "categories": [
+    "cs.RO",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.19914",
+  "abs_url": "https://arxiv.org/abs/2606.19914",
+  "fetched_at": "2026-07-19T14:18:41.842939Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

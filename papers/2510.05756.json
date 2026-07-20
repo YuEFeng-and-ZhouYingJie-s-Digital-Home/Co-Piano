@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2510.05756",
+  "title": "Transcribing Rhythmic Patterns of the Guitar Track in Polyphonic Music",
+  "summary": "Whereas chord transcription has received considerable attention during the past couple of decades, far less work has been devoted to transcribing and encoding the rhythmic patterns that occur in a song. The topic is especially relevant for instruments such as the rhythm guitar, which is typically played by strumming rhythmic patterns that repeat and vary over time. However, in many cases one cannot objectively define a single \"right\" rhythmic pattern for a given song section. To create a dataset with well-defined ground-truth labels, we asked expert musicians to transcribe the rhythmic patterns in 410 popular songs and record cover versions where the guitar tracks followed those transcriptions. To transcribe the strums and their corresponding rhythmic patterns, we propose a three-step framework. Firstly, we perform approximate stem separation to extract the guitar part from the polyphonic mixture. Secondly, we detect individual strums within the separated guitar audio, using a pre-trained foundation model (MERT) as a backbone. Finally, we carry out a pattern-decoding process in which the transcribed sequence of guitar strums is represented by patterns drawn from an expert-curated vocabulary. We show that it is possible to transcribe the rhythmic patterns of the guitar track in polyphonic music with quite high accuracy, producing a representation that is human-readable and includes automatically detected bar lines and time signature markers. We perform ablation studies and error analysis and propose a set of evaluation metrics to assess the accuracy and readability of the predicted rhythmic pattern sequence.",
+  "authors": [
+    "Aleksandr Lukoianov",
+    "Anssi Klapuri"
+  ],
+  "published": "2025-10-07T10:22:31Z",
+  "updated": "2025-10-07T10:22:31Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.05756",
+  "abs_url": "https://arxiv.org/abs/2510.05756",
+  "fetched_at": "2026-07-19T14:18:41.855737Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

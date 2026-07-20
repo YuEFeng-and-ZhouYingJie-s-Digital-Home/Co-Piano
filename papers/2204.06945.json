@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2204.06945",
+  "title": "The Vision of a Human-Centered Piano",
+  "summary": "For around 300 years, humans have been learning to play the modern piano either with a teacher or on their own. In recent years teaching and learning have been enhanced using augmented technologies that support novices. Other technologies have also tried to improve different use cases with the piano, such as composing and performing. Researchers and practitioners have showcased several forms of augmentation, from hardware improvements, sound quality, rendering projected visualizations to gesture-based and immersive technologies. Today, the landscape of piano augmentations is very diverse, and it is unclear how to describe the ideal piano and its features. In this work, we discuss how the human-centered piano -- the piano that has been designed with humans in the center of the design process and that effectively supports tasks performed on it -- can support pianists. In detail, we present the three tasks of learning, composing, and improvising in which a human-centered piano would be beneficial for the pianist.",
+  "authors": [
+    "Jordan Aiko Deja",
+    "Sven Mayer",
+    "Klen Čopič Pucihar",
+    "Matjaž Kljun"
+  ],
+  "published": "2022-04-14T13:16:46Z",
+  "updated": "2022-04-14T13:16:46Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2204.06945",
+  "abs_url": "https://arxiv.org/abs/2204.06945",
+  "fetched_at": "2026-07-19T14:18:41.862067Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

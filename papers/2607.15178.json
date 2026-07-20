@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.15178",
+  "title": "T^2MLR: Transformer with Temporal Middle-Layer Recurrence",
+  "summary": "Transformer reasoning is limited by autoregressive decoding, which repeat edly compresses rich hidden computation through token space and makes it difficult for intermediate reasoning states to persist across time. We in troduce Transformers with Temporal Middle-Layer Recurrence (T2MLR), a transformers-based latent reasoning architecture that fuses a cached middle layer representation from the previous token directly into an earlier layer of the current token position, enabling abstract intermediate computation to persist across decoding steps with little inference overhead. Across natural-language pretraining and multi-hop reasoning finetuning, T2MLR consistently outperforms data- and parameter-matched Transformer base lines. Moreover, applying recurrence to only a localized middle-layer block (as little as 20% of the network) often outperforms full-layer recurrence. Im portantly, T2MLR does not require pretraining from scratch: retrofitting the recurrent pathway into an existing pretrained 1.7B Transformer and briefly finetuning substantially improves math reasoning, lowering the barrier to practical adoption. These results suggest that effective latent reasoning in Transformers does not require looping over all layers as in previous works, but can instead emerge more strongly from targeted middle-layer recurrence.",
+  "authors": [
+    "Ziyang Cai",
+    "Xingyu Zhu",
+    "Yihe Dong",
+    "Yinghui He",
+    "Sanjeev Arora"
+  ],
+  "published": "2026-07-16T16:33:59Z",
+  "updated": "2026-07-16T16:33:59Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15178",
+  "abs_url": "https://arxiv.org/abs/2607.15178",
+  "fetched_at": "2026-07-19T14:17:38.251635Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

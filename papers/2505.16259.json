@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2505.16259",
+  "title": "Dialogue in Resonance: An Interactive Music Piece for Piano and Real-Time Automatic Transcription System",
+  "summary": "This paper presents <Dialogue in Resonance>, an interactive music piece for a human pianist and a computer-controlled piano that integrates real-time automatic music transcription into a score-driven framework. Unlike previous approaches that primarily focus on improvisation-based interactions, our work establishes a balanced framework that combines composed structure with dynamic interaction. Through real-time automatic transcription as its core mechanism, the computer interprets and responds to the human performer's input in real time, creating a musical dialogue that balances compositional intent with live interaction while incorporating elements of unpredictability. In this paper, we present the development process from composition to premiere performance, including technical implementation, rehearsal process, and performance considerations.",
+  "authors": [
+    "Hayeon Bang",
+    "Taegyun Kwon",
+    "Juhan Nam"
+  ],
+  "published": "2025-05-22T05:50:13Z",
+  "updated": "2025-05-22T05:50:13Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2505.16259",
+  "abs_url": "https://arxiv.org/abs/2505.16259",
+  "fetched_at": "2026-07-19T14:18:41.849175Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

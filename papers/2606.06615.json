@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.06615",
+  "title": "FIGMA: Towards FIne-Grained Music retrievAl",
+  "summary": "Retrieving music using natural language descriptions has improved with contrastive audio-text models such as CLAP, but current systems remain limited to coarse semantic queries. When descriptions specify fine-grained musical attributes such as tempo, key, chord progression, or rhythmic structure, existing models often fail to retrieve the correct audio. We show that this limitation stems from the contrastive learning objective itself: despite being trained on long captions, CLAP-based models effectively utilize only the first few tokens, discarding much of the information encoded in detailed prompts. Then, we propose FIGMA (FIne-Grained Music RetrievAl), a multi-view contrastive architecture that addresses this limitation by jointly optimizing global audio-text alignment and frame-level, token-wise alignment. This design enables FIGMA to capture both high-level semantic context and fine-grained musical attributes within a unified representation space. Moreover, we formalize the task of Fine-Grained Music Retrieval and construct Fine-Grained Music Caption dataset (FGMCaps), a large-scale dataset of 380K music-caption pairs for training along with a 10K test set, both annotated with tempo, key, chord progression, beat count, as well as genre and mood. Extensive experiments demonstrate that FIGMA consistently outperforms existing CLAP-based music retrieval models across multiple music retrieval benchmarks, including out-of-domain evaluations, with relative improvements of up to 73.3%.",
+  "authors": [
+    "Nishit Anand",
+    "Ashish Seth",
+    "Sreyan Ghosh",
+    "Dinesh Manocha",
+    "Ramani Duraiswami"
+  ],
+  "published": "2026-06-04T18:05:39Z",
+  "updated": "2026-06-04T18:05:39Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.06615",
+  "abs_url": "https://arxiv.org/abs/2606.06615",
+  "fetched_at": "2026-07-19T14:18:41.850358Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

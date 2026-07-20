@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2604.22290",
+  "title": "Transformer-Based Rhythm Quantization of Performance MIDI Using Beat Annotations",
+  "summary": "Rhythm transcription is a key subtask of notation-level Automatic Music Transcription (AMT). While deep learning models have been extensively used for detecting the metrical grid in audio and MIDI performances, beat-based rhythm quantization remains largely unexplored. In this work, we introduce a novel deep learning approach for quantizing MIDI performances using a priori beat information. Our method leverages the transformer architecture to effectively process synchronized score and performance data for training a quantization model. Key components of our approach include dataset preparation, a beat-based pre-quantization method to align performance and score times within a unified framework, and a MIDI tokenizer tailored for this task. We adapt a transformer model based on the T5 architecture to meet the specific requirements of rhythm quantization. The model is evaluated using a set of score-level metrics designed for objective assessment of quantization performance. Through systematic evaluation, we optimize both data representation and model architecture. Additionally, we apply performance and score augmentations, such as transposition, note deletion, and performance-side time jitter, to enhance the model's robustness. Finally, a qualitative analysis compares our model's quantization performance against state-of-the-art probabilistic and deep-learning models on various example pieces. Our model achieves an onset F1-score of 97.3% and a note value accuracy of 83.3% on the ASAP dataset. It generalizes well across time signatures, including those not seen during training, and produces readable score output. Fine-tuning on instrument-specific datasets further improves performance by capturing characteristic rhythmic and melodic patterns. This work contributes a robust and flexible framework for beat-based MIDI quantization using transformer models.",
+  "authors": [
+    "Maximilian Wachter",
+    "Sebastian Murgul",
+    "Michael Heizmann"
+  ],
+  "published": "2026-04-24T07:10:11Z",
+  "updated": "2026-04-24T07:10:11Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.22290",
+  "abs_url": "https://arxiv.org/abs/2604.22290",
+  "fetched_at": "2026-07-19T14:17:07.973246Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

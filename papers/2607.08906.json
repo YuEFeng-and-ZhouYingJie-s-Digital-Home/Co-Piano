@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.08906",
+  "title": "Proof-of-Continuity: A Temporal Model for Authority Propagation in Distributed Systems and AI Agents",
+  "summary": "Proof-of-Possession authorization models derive authority from the possession of artifacts such as tokens, credentials, or capabilities. This paper argues that possession is insufficient for discrete execution chains, whether they span multiple services or occur as separated steps within the same machine, because it does not guarantee preservation of the causal relationship between the origin of a request and the authority exercised at later steps. We introduce Proof-of-Continuity, a minimal authority-propagation discipline for the Provenance Identity Continuity (PIC) model, in which each execution step must be causally linked to the previous step and may only propagate a non-expansive subset of the authority received from the origin. It introduces Proof of Relationship, a single-hop causal primitive whose transitive composition is Proof-of-Continuity; these complement Proof-of-Possession rather than replace it. Under this model, the confused deputy condition cannot be satisfied as valid model behavior: any privilege exercised at a later step must already be present in the origin authority context. This is directly relevant to distributed systems and AI agents, where executors invoke tools and downstream services while holding multiple authority sources, so that the same authority/causality mismatch recurs across service boundaries. Under Proof-of-Continuity these sources may be carried together but are never merged into a combined authority, since each step is authorized only against the authority context of the lineage that caused it. This paper concerns authorization propagation rather than authentication: identity and authentication mechanisms such as OIDC, verifiable credentials, wallets, and workload identity remain complementary mechanisms for establishing the origin, while Proof-of-Continuity addresses how authority propagates after that origin exists.",
+  "authors": [
+    "Nicola Gallo"
+  ],
+  "published": "2026-07-09T19:59:29Z",
+  "updated": "2026-07-09T19:59:29Z",
+  "categories": [
+    "cs.CR",
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.08906",
+  "abs_url": "https://arxiv.org/abs/2607.08906",
+  "fetched_at": "2026-07-19T14:18:41.878266Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

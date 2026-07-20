@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.18203",
+  "title": "Multiplication in Multimodal LLMs: Computation with Text, Image, and Audio Inputs",
+  "summary": "Multimodal LLMs can accurately perceive numerical content across modalities yet fail to perform exact multi-digit multiplication when the identical underlying arithmetic problem is presented as numerals, number words, images, or in audio form. Because existing benchmarks often lack systematically paired instances across modalities, it remains difficult to compare genuine arithmetic limits within and across model families. We therefore introduce a controlled multimodal multiplication benchmark that factorially varies digit length, digit sparsity, representation (e.g., numerals vs. number words), and modality (text, rendered images, audio), with paired instances from a reproducible generator. We also define arithmetic load, C, as the product of the total and non-zero digit count as a compact, mechanistically motivated proxy for operation count. Across evaluations, accuracy falls sharply as C grows, often nearing zero by C > 100. Indeed, C remains predictive of performance across modalities and models, with R-squared often > 0.5, nearing the value from more complex measures of arithmetic load that count the number of intermediate arithmetic steps. A separate perception-versus-computation decomposition shows that multimodal degradation is primarily computational rather than perceptual: on matched-perception checks, models are near-perfect (> 99%) across modalities, even when multiplication accuracy drops. Beyond measuring when models fail, we ask which procedures they are predisposed to follow. We introduce a forced-completion loss probe that scores heuristic-specific reasoning prefixes--including columnar multiplication, distributive decomposition, and rounding/compensation. Here, decomposition is favored in both text and vision modalities; heuristic-specific LoRA adapters produce near-orthogonal updates yet degrade accuracy, indicating the base model maintains a well-tuned internal router.",
+  "authors": [
+    "Samuel G. Balter",
+    "Ethan Jerzak",
+    "Connor T. Jerzak"
+  ],
+  "published": "2026-04-20T12:52:07Z",
+  "updated": "2026-04-20T12:52:07Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.18203",
+  "abs_url": "https://arxiv.org/abs/2604.18203",
+  "fetched_at": "2026-07-19T14:18:41.859055Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

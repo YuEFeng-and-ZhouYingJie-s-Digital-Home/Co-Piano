@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.00309",
+  "title": "A Text-Steerable Instrument for Sketching Procedural Soundscapes via Language Models",
+  "summary": "We present a real-time musical interface that converts natural-language scene descriptions into evolving procedural soundscapes. A performer types a prompt such as \"warm jazz cafe at midnight\" and steers it through direct parameter adjustments - stepping brightness down, switching a rhythm style - each producing a predictable, audible shift without re-prompting. Where GPU-bound text-to-audio systems synthesize monolithic waveforms, our instrument generates human-readable configurations over a categorical schema, enabling fine-grained performer control; most valid combinations are designed to sound musically coherent. Three interchangeable backends - embedding retrieval for sub-second CPU-only use, hosted LLMs via API, and a fine-tuned 270M local model - all emit the same schema. A live generator architecture continuously emits audio while resolving new instructions in the background, crossfading seamlessly when ready; even when an LLM takes 5-12 seconds to respond, the audience hears uninterrupted sound - reframing text-to-music as an ongoing performable stream rather than a one-shot generation. We evaluate text-audio semantic alignment using LAION-CLAP on held-out prompts as a technical proxy, finding that retrieval-based configuration outperforms random valid configurations on this metric, while noting that LAION-CLAP also informed retrieval-map construction. We report performance observations, informal listener feedback, and release materials for the SDK, dataset artifacts, model, and audiovisual performance interface.",
+  "authors": [
+    "Prabal Gupta"
+  ],
+  "published": "2026-07-01T01:21:42Z",
+  "updated": "2026-07-01T01:21:42Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "cs.HC",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.00309",
+  "abs_url": "https://arxiv.org/abs/2607.00309",
+  "fetched_at": "2026-07-19T14:18:41.870445Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

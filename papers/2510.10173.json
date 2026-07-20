@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2510.10173",
+  "title": "Chord Colourizer: A Near Real-Time System for Visualizing Musical Key",
+  "summary": "This paper introduces Chord Colourizer, a near real-time system that detects the musical key of an audio signal and visually represents it through a novel graphical user interface (GUI). The system assigns colours to musical notes based on Isaac Newton's original colour wheel, preserving historical links between pitch and hue, and also integrates an Arduino-controlled LED display using 3D-printed star-shaped diffusers to offer a physical ambient media representation. The method employs Constant-Q Transform (CQT) chroma features for chord estimation and visualization, followed by threshold-based filtering and tonal enhancement to isolate the root, third, and fifth. A confidence score is computed for each detection to ensure reliability, and only chords with moderate to very strong certainty are visualized. The graphical interface dynamically updates a colour-coded keyboard layout, while the LED display provides the same colour information via spatial feedback. This multi-modal system enhances user interaction with harmonic content, offering innovative possibilities for education and artistic performance. Limitations include slight latency and the inability to detect extended chords, which future development will aim to address through refined filtering, adaptive thresholds, and support for more complex harmonies such as sevenths and augmented chords. Future work will also explore integration with alternative visualization styles, and the comparison of audio analysis libraries to improve detection speed and precision. Plans also include formal user testing to evaluate perception, usability, and cross-cultural interpretations of colour-pitch mappings.",
+  "authors": [
+    "Paul Haimes"
+  ],
+  "published": "2025-10-11T11:24:32Z",
+  "updated": "2025-10-11T11:24:32Z",
+  "categories": [
+    "cs.HC",
+    "cs.CY",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.10173",
+  "abs_url": "https://arxiv.org/abs/2510.10173",
+  "fetched_at": "2026-07-19T14:18:41.860685Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

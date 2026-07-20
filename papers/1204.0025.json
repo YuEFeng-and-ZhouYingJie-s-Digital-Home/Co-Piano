@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "1204.0025",
+  "title": "The Exozodiacal Dust Problem for Direct Observations of ExoEarths",
+  "summary": "Debris dust in the habitable zones of stars - otherwise known as exozodiacal dust - comes from extrasolar asteroids and comets and is thus an expected part of a planetary system. Background flux from the Solar System's zodiacal dust and the exozodiacal dust in the target system is likely to be the largest source of astrophysical noise in direct observations of terrestrial planets in the habitable zones of nearby stars. Furthermore, dust structures like clumps, thought to be produced by dynamical interactions with exoplanets, are a possible source of confusion. In this paper, we qualitatively assess the primary impact of exozodical dust on high-contrast direct imaging at optical wavelengths, such as would be performed with a coronagraph. Then we present the sensitivity of previous, current, and near-term facilities to thermal emission from debris dust at all distances from nearby solar-type stars, as well as our current knowledge of dust levels from recent surveys. Finally, we address the other method of detecting debris dust, through high-contrast imaging in scattered light. This method is currently far less sensitive than thermal emission observations, but provides high spatial resolution for studying dust structures. This paper represents the first report of NASA's Exoplanet Exploration Program Analysis Group (ExoPAG).",
+  "authors": [
+    "Aki Roberge",
+    "Christine H. Chen",
+    "Rafael Millan-Gabet",
+    "Alycia J. Weinberger",
+    "Philip M. Hinz",
+    "Karl R. Stapelfeldt",
+    "Olivier Absil",
+    "Marc J. Kuchner",
+    "Geoffrey Bryden",
+    "the NASA ExoPAG SAG #1 Team"
+  ],
+  "published": "2012-03-30T21:15:52Z",
+  "updated": "2012-06-12T16:08:41Z",
+  "categories": [
+    "astro-ph.EP",
+    "astro-ph.IM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/1204.0025",
+  "abs_url": "https://arxiv.org/abs/1204.0025",
+  "fetched_at": "2026-07-19T14:17:07.967810Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}
