@@ -1498,3 +1498,53 @@ bash demo_gpu.sh --piece "Für Elise"  # 换曲目
 **耗时**: < 1 分钟(读文件 + 写日志)
 
 ---
+
+---
+## [2026-07-20 19:21] Phase 5.1+5.2+5.3 启动:300 篇抓取 + TTS + ASR(本轮)
+
+**做了什么**:
+- **plan.md** 解锁:移除 [DONE],加 [PHASE_5_STARTED: 2026-07-20 19:18 — v2.0 实时语音对话钢琴老师]
+- **arxiv 查询扩展**:scripts/queries.txt 从 20 组 → 41 组,加 20 组 v2.0 主题
+  - 对话式音乐 AI / 语音识别 + 音乐 / TTS / VAD
+  - RL + 教育 / 智能辅导系统(ITS) / 教学代理
+  - 自适应 + 音乐 / 多模态 + LLM / 实时音频反馈
+  - LLM 对话系统 / 情感计算 / 中文语音合成
+  - 具身 AI 教师 / LLM 长期记忆 / 流式 ASR
+  - 中文 ASR / 开源 TTS / 实时交互音乐 / 多模态学生反馈
+- **后台启动论文抓取** (bg_d0b9d5ca):max-per-query=16, workers=3, 目标 300 篇
+- **scripts/tts_edge.py** (5K 字符):Edge-TTS 封装
+  - 8 种预置音色(中英日 4 种风格)
+  - 自动语种检测(CJK / 假名 / 拉丁字母)
+  - 流式输出 + 词级字幕支持
+  - 钢琴老师默认音色:zh-CN-XiaoyiNeural(温柔女声)
+- **scripts/asr_whisper.py** (5.5K 字符):faster-whisper 封装
+  - 5 种模型(tiny/base/small/medium/large-v3)
+  - 自动语种检测(probability)
+  - 词级时间戳
+  - VAD 内置静音过滤
+  - 麦克风录音模式(--record SECONDS)
+  - **Mac 用 CPU + int8**(CTranslate2 不支持 MPS,关键认知)
+- **包安装**:edge-tts 7.2.8, faster-whisper OK,Whisper small 模型已下载
+
+**Round-trip 测试**(TTS → ASR 闭环):
+- 输入文本:"你好,我是 CoPiano,你的 AI 钢琴老师。Let's play piano together!"
+- Edge-TTS 输出:zh-CN, 42KB MP3
+- Whisper 识别:"你好,我是Co-Piano, 你的 AI 钢琴老师。 Let's play piano together!"
+- 语种:zh (0.978)
+- 7.1s 音频 → 5.2s 识别(0.73x 实时,Mac M4 CPU)
+- **"Co-Piano" 专有名词完美识别** ✓
+
+**v2.0 关键决策**(用户选择):
+- TTS:Edge-TTS 云端(免模型,快速集成)
+- 语言:自动切换(根据用户说话语言自适应)
+- ASR:faster-whisper small(自动语种检测,Mac CPU 可用)
+
+**下一步**(下轮 cron):
+- voice_dialog.py 端到端(mic → ASR → LLM → TTS → speaker)
+- VAD 实时切片
+- 接入 Qwen 7B 推理(本地或 GPU)
+- 麦克风实测
+
+**耗时**: ~6 分钟(模块编写 + 测试)
+
+---

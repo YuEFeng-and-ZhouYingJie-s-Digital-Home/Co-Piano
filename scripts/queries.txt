@@ -19,3 +19,23 @@ abs:music+AND+abs:diffusion                                         # 音乐扩�
 abs:composition+AND+abs:AI                                          # 创作 AI
 abs:music+AND+abs:dataset                                           # 数据集
 abs:music+AND+abs:foundation+AND+abs:model                          # 音乐基础模型
+abs:conversational+AND+abs:music+AND+abs:AI                       # 对话式音乐 AI
+abs:speech+AND+abs:recognition+AND+abs:music                       # 音乐 + 语音识别
+abs:text-to-speech+AND+abs:music                                   # TTS + 音乐
+abs:voice+AND+abs:activity+AND+abs:detection                       # VAD
+abs:reinforcement+AND+abs:learning+AND+abs:education                # RL + 教育
+abs:intelligent+AND+abs:tutoring+AND+abs:system                     # 智能辅导系统(ITS)
+abs:pedagogical+AND+abs:agent                                      # 教学代理
+abs:adaptive+AND+abs:learning+AND+abs:music                         # 自适应 + 音乐
+abs:music+AND+abs:multimodal+AND+abs:LLM                           # 多模态 + LLM
+abs:real-time+AND+abs:audio+AND+abs:feedback                        # 实时音频反馈
+abs:dialogue+AND+abs:system+AND+abs:large+AND+abs:language+AND+abs:model  # LLM 对话系统
+abs:affective+AND+abs:computing+AND+abs:music                       # 情感计算 + 音乐
+abs:voice+AND+abs:synthesis+AND+abs:Chinese                         # 中文语音合成
+abs:embodied+AND+abs:AI+AND+abs:tutor                              # 具身 AI 教师
+abs:long-term+AND+abs:memory+AND+abs:LLM                           # LLM 长期记忆
+abs:streaming+AND+abs:ASR                                          # 流式 ASR
+abs:chinese+AND+abs:ASR                                            # 中文 ASR
+abs:open-source+AND+abs:TTS                                        # 开源 TTS
+abs:real-time+AND+abs:interactive+AND+abs:music                     # 实时交互音乐
+abs:multimodal+AND+abs:feedback+AND+abs:student                     # 多模态学生反馈
