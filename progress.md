@@ -2118,3 +2118,41 @@ Cycle N:
 **耗时**: ~8 分钟
 
 ---
+
+---
+## [2026-07-20 23:38] Phase 6 CYCLE 2 阶段 3: 综合测试(本轮)
+
+**做了什么**:
+- **scripts/cycle2_test.py** (10.5K) — Cycle 2 综合测试
+  - 4 个测试模块:MAESTRO 网络下载 / MIDI analyzer 9 场景 / voice_dialog 集成
+  - 修复递归 bug:`_original_call_llm` 捕获避免无限循环
+- 跑 12 测试
+
+**测试结果 11/12 (92%)**:
+| 测试 | 通过 | 详情 |
+|------|------|------|
+| MAESTRO 下载 | ⚠️  失败 | GCS 链接网络限制 |
+| MIDI analyzer 9 场景 | 9/9 ✅ | score 81-100,8-24 音符,延迟 < 0.04s |
+| voice_dialog 集成 | 2/2 ✅ | "分析 X.mid" / 普通 query 都不递归 |
+
+**关键 bug 修复**:
+- 原始 `with_midi` 函数调 `voice_dialog.call_llm` 触发自身死循环
+- 修法:函数入口捕获 `_original_call_llm = voice_dialog.call_llm`
+- 修复后所有 voice_dialog 集成稳定
+
+**MIDI analyzer 场景分数分布**:
+- 干净:100(完美)
+- 1 错音:93.75
+- 多错音(8 音符):81.25
+- 跨时期(Baroque/Classical/Romantic)都正确识别
+
+**Cycle 2 完成度 3/3**:
+| 阶段 | 状态 |
+|------|------|
+| 1. 调研 | ✅ SWOT + 用户行为 + 6 改进候选 |
+| 2. 实践 | ✅ MIDI analyzer (9.5K) + voice 集成 |
+| 3. 测试 | ✅ 11/12 (92%) |
+
+**耗时**: ~6 分钟
+
+---
