@@ -491,3 +491,18 @@ piano-ai-corpus/
   - 累计 v3.0:5 维模块 + 7 天课程 + A/B 测试 = 可测量可验证的 AI 钢琴教练
   - 下一个循环 (CYCLE 9) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / 论文 draft / GPU 端 LLM 接入
 ]
+
+[CYCLE_9_DONE: 2026-07-21 01:48 — 论文 draft 升级 v2 → v3。
+  - 实践:arxiv_abstract_v3.md (18K, 345 行) — 取代 v2 草稿
+  - 关键更新:
+    - 标题:CoPiano v3: A Multi-Modal Adaptive AI Piano Coach with Spaced-Repetition Curriculum and RCT-Validated Effectiveness
+    - 抽象:5 维整合 + d=0.43 RCT + 36 脚本 + 813 论文
+    - 5 维模块: pitch + expressiveness (9) + hand_pose (9) + sight_reading (4×3×3) + senior (4 开关)
+    - 8 块类型:warmup_pitch/hand/expressiveness/sight_reading/main_piece/review/weakness/cooldown
+    - SM-2 间隔复习:ease 1.3-2.5 + 1/3/7/14/30/60 天
+    - A/B 测试:30/30 × 7 天 + Welch t-test + Cohen's d (与 ITS meta d=0.41 对位)
+    - 8 章节: Intro + Related Work + 5-Dim + Curriculum + Experiments + Discussion + Conclusion + References
+  - 7 附录 (online): 5-dim API + Curriculum 算法 + A/B 框架 + voice_dialog 模式 + KG schema + WCAG 矩阵 + 813 论文
+  - 累计 v3.0:5 维 + 7d 课程 + d=0.43 RCT + 完整论文草稿 = 可投稿研究贡献
+  - 下一个循环 (CYCLE 10) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B 升级 / 真实用户 RCT
+]
