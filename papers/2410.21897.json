@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2410.21897",
+  "title": "Semi-Supervised Self-Learning Enhanced Music Emotion Recognition",
+  "summary": "Music emotion recognition (MER) aims to identify the emotions conveyed in a given musical piece. However, currently, in the field of MER, the available public datasets have limited sample sizes. Recently, segment-based methods for emotion-related tasks have been proposed, which train backbone networks on shorter segments instead of entire audio clips, thereby naturally augmenting training samples without requiring additional resources. Then, the predicted segment-level results are aggregated to obtain the entire song prediction. The most commonly used method is that the segment inherits the label of the clip containing it, but music emotion is not constant during the whole clip. Doing so will introduce label noise and make the training easy to overfit. To handle the noisy label issue, we propose a semi-supervised self-learning (SSSL) method, which can differentiate between samples with correct and incorrect labels in a self-learning manner, thus effectively utilizing the augmented segment-level data. Experiments on three public emotional datasets demonstrate that the proposed method can achieve better or comparable performance.",
+  "authors": [
+    "Yifu Sun",
+    "Xulong Zhang",
+    "Monan Zhou",
+    "Wei Li"
+  ],
+  "published": "2024-10-29T09:42:07Z",
+  "updated": "2025-04-22T01:15:29Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2410.21897",
+  "abs_url": "https://arxiv.org/abs/2410.21897",
+  "fetched_at": "2026-07-20T14:22:43.727877Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

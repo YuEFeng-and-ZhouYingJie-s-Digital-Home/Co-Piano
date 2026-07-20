@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.01473",
+  "title": "A Minimalist Brain-Computer Musical Interface for Real-Time Emotion-Driven Sonification: System Design and Preliminary Evaluation",
+  "summary": "This paper presents a minimalist brain-computer Musical Interface (BCMI) that functions as a real-time affective sonification system, translating prefrontal EEG activity into adaptive music. Emotional valence is estimated from frontal alpha asymmetry (AF7/AF8) and mapped to musical features such as mode, tempo, rhythmic density, and pitch register through a stochastic generative algorithm. The system integrates wireless EEG acquisition, real-time Python signal processing, and Ableton Live-based music generation synchronized via Lab Streaming Layer. An experiment with 22 participants investigated whether intentional emotional self-induction could modulate the BCMI neurofeedback signal. Linear mixed-effects analyses found no significant effects of target emotion or time, indicating that the frontal alpha asymmetry signal did not reliably distinguish instructed emotional states. Individual differences, including musical training and acting experience, explained more variance than the experimental manipulation, which accounted for only 0.40\\% of total signal variance. These findings highlight the challenges of using frontal alpha asymmetry as a voluntary control signal for closed-loop emotion regulation and suggest methodological directions for future BCMI research.",
+  "authors": [
+    "Pablo A. Monroy-D'Croz",
+    "Rafael Ramirez-Melendez",
+    "Julian Cespedes-Guevara"
+  ],
+  "published": "2026-05-31T22:22:15Z",
+  "updated": "2026-05-31T22:22:15Z",
+  "categories": [
+    "cs.AI",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.01473",
+  "abs_url": "https://arxiv.org/abs/2606.01473",
+  "fetched_at": "2026-07-20T11:33:13.435322Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15867",
+  "title": "Scalable Supervisory HVAC Control for Linear Objectives",
+  "summary": "Advanced control of heating and cooling systems can substantially reduce energy costs and pollution. However, real-world adoption of popular algorithms among researchers, such as model predictive control (MPC) and reinforcement learning (RL), remains limited due in part to their high deployment and commissioning costs. Here, we develop two nearly commissioning-free controllers tailored to objectives that depend linearly on the controlled thermal load, such as energy costs and pollution. The controllers require at most two thermal parameters. In representative heating simulations, controller performance is robust to large parameter specification errors, suggesting potential for deployment with no tuning. The controllers maintain good occupant comfort while achieving 43 to 98% (depending on the electricity pricing and controller variant) of the performance improvement achieved by an omniscient policy with perfect model information and forecasts. These results suggest that simple, structure-exploiting controllers may capture most of the attainable value of advanced control while avoiding the data, modeling, tuning, and computational burdens that can arise with conventional MPC or RL.",
+  "authors": [
+    "W. Grant Dierking",
+    "Arash J. Khabbazi",
+    "Levi D. Reyes Premer",
+    "Kevin J. Kircher"
+  ],
+  "published": "2026-07-17T11:27:56Z",
+  "updated": "2026-07-17T11:27:56Z",
+  "categories": [
+    "eess.SY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15867",
+  "abs_url": "https://arxiv.org/abs/2607.15867",
+  "fetched_at": "2026-07-20T11:33:13.424519Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

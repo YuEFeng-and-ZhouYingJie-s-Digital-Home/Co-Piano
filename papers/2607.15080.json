@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.15080",
+  "title": "Evaluating covariate balance for long time horizon Markov decision processes",
+  "summary": "This article explores the application of covariate balance diagnostics for detecting the presence of hidden confounding/model miss-specification in studies applying offline reinforcement learning (RL) to deriving optimal treatment recommendations. The results demonstrate that, either there is a high risk of bias within existing offline RL studies for treatment recommendations or, existing covariate balance metrics are not sufficient to assess such studies. Regardless, existing offline RL studies cannot be concluded as being statistically robust. The conclusions propose future research directions for obtaining more methodologically robust applications of offline RL to treatment recommendation problems.",
+  "authors": [
+    "Joshua Spear",
+    "Rebecca Pope",
+    "Neil J Sebire"
+  ],
+  "published": "2026-07-16T14:49:38Z",
+  "updated": "2026-07-16T14:49:38Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15080",
+  "abs_url": "https://arxiv.org/abs/2607.15080",
+  "fetched_at": "2026-07-20T11:33:13.425302Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

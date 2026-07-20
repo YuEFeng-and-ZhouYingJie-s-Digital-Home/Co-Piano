@@ -1,0 +1,35 @@
+{
+  "arxiv_id": "2602.23649",
+  "title": "AudioCapBench: Quick Evaluation on Audio Captioning across Sound, Music, and Speech",
+  "summary": "We introduce AudioCapBench, a benchmark for evaluating audio captioning capabilities of large multimodal models. \\method covers three distinct audio domains, including environmental sound, music, and speech, with 1,000 curated evaluation samples drawn from established datasets. We evaluate 13 models across two providers (OpenAI, Google Gemini) using both reference-based metrics (METEOR, BLEU, ROUGE-L) and an LLM-as-Judge framework that scores predictions on three orthogonal dimensions: \\textit{accuracy} (semantic correctness), \\textit{completeness} (coverage of reference content), and \\textit{hallucination} (absence of fabricated content). Our results reveal that Gemini models generally outperform OpenAI models on overall captioning quality, with Gemini~3~Pro achieving the highest overall score (6.00/10), while OpenAI models exhibit lower hallucination rates. All models perform best on speech captioning and worst on music captioning. We release the benchmark as well as evaluation code to facilitate reproducible audio understanding research.",
+  "authors": [
+    "Jielin Qiu",
+    "Jianguo Zhang",
+    "Zixiang Chen",
+    "Liangwei Yang",
+    "Ming Zhu",
+    "Juntao Tan",
+    "Haolin Chen",
+    "Wenting Zhao",
+    "Rithesh Murthy",
+    "Roshan Ram",
+    "Akshara Prabhakar",
+    "Shelby Heinecke",
+    "Caiming",
+    "Xiong",
+    "Silvio Savarese",
+    "Huan Wang"
+  ],
+  "published": "2026-02-27T03:33:37Z",
+  "updated": "2026-02-27T03:33:37Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.23649",
+  "abs_url": "https://arxiv.org/abs/2602.23649",
+  "fetched_at": "2026-07-20T11:33:13.429728Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

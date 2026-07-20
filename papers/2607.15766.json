@@ -1,0 +1,36 @@
+{
+  "arxiv_id": "2607.15766",
+  "title": "Before the Action: Benchmarking LLMs on Prospective Hypothesis Discovery",
+  "summary": "Large language models (LLMs) excel at answering pre-specified questions, yet their ability to navigate the open-ended, pre-conclusion stage of discovery remains largely unmeasured. We introduce Prospective Hypothesis Discovery (PHD), which asks models to autonomously construct grounded, discriminative, and testable hypothesis spaces from inconclusive evidence, including anomalous observations and fragmented records, to guide subsequent investigation. To evaluate this capability, we introduce HypoArena, comprising HypoData, a benchmark of 988 cases across six scientific and analytical domains, and HypoEval, an evaluation framework for open-ended hypothesis sets. To construct HypoData at scale, we propose Retrospective Context Regression, a Forge--Audit pipeline that reconstructs pre-conclusion contexts from completed expert documents by removing explicit conclusions, target hypotheses, and retrospective causal attributions while preserving the factual substrate. Because PHD admits multiple valid outputs, HypoEval combines bidirectional pairwise judgments with Bradley--Terry--Davidson aggregation for ranking and six-dimensional rubric scoring for diagnosis. Experiments on 15 frontier LLMs reveal clear capability stratification and model-dependent effects of structured analytical skills, with gains for several lower-performing models on HypoArena but regressions for other systems, including a top-performing model. Compared with absolute rubric scoring, arena evaluation resolves finer-grained differences among models, with aggregated rankings showing strong agreement with human experts and an independent judge. Together, these results support treating PHD as a distinct target for evaluating how LLMs formulate investigative directions when final conclusions are withheld. Our code and data are publicly available at github.com/SKYLENAGE-AI/HypoArena and github.com/SKYLENAGE-AI/HypoArena.",
+  "authors": [
+    "Tianyun Zhong",
+    "Wangyi Jiang",
+    "Wei Wang",
+    "Xuanang Chen",
+    "Yaojie Lu",
+    "Shiwei Ye",
+    "Yuzhen Shi",
+    "Boyu Yang",
+    "Jinghang Wang",
+    "Han Li",
+    "Weiqi Zhai",
+    "Bing Zhao",
+    "Hu Wei",
+    "Haiyang Yu",
+    "Yongbin Li",
+    "Hongyu Lin",
+    "Le Sun",
+    "Xianpei Han"
+  ],
+  "published": "2026-07-17T08:56:43Z",
+  "updated": "2026-07-17T08:56:43Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15766",
+  "abs_url": "https://arxiv.org/abs/2607.15766",
+  "fetched_at": "2026-07-20T14:22:43.715642Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

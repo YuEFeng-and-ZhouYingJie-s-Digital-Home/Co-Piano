@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2510.09016",
+  "title": "DiTSinger: Scaling Singing Voice Synthesis with Diffusion Transformer and Implicit Alignment",
+  "summary": "Recent progress in diffusion-based Singing Voice Synthesis (SVS) demonstrates strong expressiveness but remains limited by data scarcity and model scalability. We introduce a two-stage pipeline: a compact seed set of human-sung recordings is constructed by pairing fixed melodies with diverse LLM-generated lyrics, and melody-specific models are trained to synthesize over 500 hours of high-quality Chinese singing data. Building on this corpus, we propose DiTSinger, a Diffusion Transformer with RoPE and qk-norm, systematically scaled in depth, width, and resolution for enhanced fidelity. Furthermore, we design an implicit alignment mechanism that obviates phoneme-level duration labels by constraining phoneme-to-acoustic attention within character-level spans, thereby improving robustness under noisy or uncertain alignments. Extensive experiments validate that our approach enables scalable, alignment-free, and high-fidelity SVS.",
+  "authors": [
+    "Zongcai Du",
+    "Guilin Deng",
+    "Xiaofeng Guo",
+    "Xin Gao",
+    "Linke Li",
+    "Kaichang Cheng",
+    "Fubo Han",
+    "Siyu Yang",
+    "Peng Liu",
+    "Pan Zhong",
+    "Qiang Fu"
+  ],
+  "published": "2025-10-10T05:39:45Z",
+  "updated": "2025-12-24T17:16:37Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.09016",
+  "abs_url": "https://arxiv.org/abs/2510.09016",
+  "fetched_at": "2026-07-20T11:33:13.438125Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

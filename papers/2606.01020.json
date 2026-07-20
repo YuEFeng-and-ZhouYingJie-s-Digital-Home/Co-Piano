@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.01020",
+  "title": "Tackling the Root of Misinformation by Teaching Laypeople about Logical Fallacies via Socratic Questioning and Critical Argumentation",
+  "summary": "Identifying logical fallacies in everyday discourse is challenging for many people. This challenge is amplified in the era of Large Language Models (LLMs), where malicious agents can deploy fallacious arguments to disseminate misinformation at scale. In this work, we explore the potential of LLMs as part of the solution. We introduce LFTutor, an intelligent tutoring system which uses LLMs to tutor laypeople and help them learn about logical fallacies. LFTutor integrates intent-driven Socratic questioning and critical argumentation principles to actively engage learners to reflect on their reasoning. Through both automatic and human evaluations, we demonstrate that LFTutor significantly outperforms baseline LLMs lacking these pedagogical strategies. This work highlights the promise of combining LLMs with pedagogical scaffolding to foster critical thinking and argument literacy in the age of AI.",
+  "authors": [
+    "Minjing Shi",
+    "Junling Wang",
+    "Jingwei Ni",
+    "Sankalan Pal Chowdhury",
+    "Mrinmaya Sachan"
+  ],
+  "published": "2026-05-31T05:24:57Z",
+  "updated": "2026-05-31T05:24:57Z",
+  "categories": [
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.01020",
+  "abs_url": "https://arxiv.org/abs/2606.01020",
+  "fetched_at": "2026-07-20T11:33:13.427290Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

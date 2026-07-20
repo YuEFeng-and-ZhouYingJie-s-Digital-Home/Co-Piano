@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.07666",
+  "title": "A hierarchical memory architecture overcomes context limits in long-horizon multi-agent computational modeling",
+  "summary": "Large language models (LLMs) demonstrate remarkable reasoning capabilities, yet their stateless architecture fundamentally limits deployment in long-horizon research workflows requiring multi-session continuity and quantitative rigor. Here we present Ensemble QSP, a multi-agent framework featuring a three-layer hierarchical memory architecture that keeps injected context bounded and constant in project duration (mid-term project state: median 301 tokens, max 4,050, across 104 runs) by capping each state category and evicting completed work, enabling continuous autonomous operation without context degradation. The system orchestrates five specialist worker agents under domain-expert principal investigators, enforcing physical constraints through physics-based checklists and structured-domain knowledge. Comprehensive benchmarking demonstrates robust autonomous pharmacokinetic-pharmacodynamic model selection without human intervention, consistent result quality across both lower-cost and frontier LLMs, improved PK parameter recovery relative to single-agent baselines, and stable model selection across linguistically diverse prompts of the same task. Feature-level ablation across physiologically based pharmacokinetic (PBPK) models spanning a broad complexity range shows that PI-agent oversight improves debugging efficiency while preserving final accuracy across conditions. The architecture is structurally domain-agnostic, adding a new scientific domain requires only a new PI agent configuration.",
+  "authors": [
+    "Shivendra G. Tewari",
+    "Holly Kimko"
+  ],
+  "published": "2026-07-08T17:22:28Z",
+  "updated": "2026-07-16T19:04:22Z",
+  "categories": [
+    "q-bio.QM",
+    "cs.MA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.07666",
+  "abs_url": "https://arxiv.org/abs/2607.07666",
+  "fetched_at": "2026-07-20T11:33:13.441102Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

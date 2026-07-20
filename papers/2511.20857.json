@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2511.20857",
+  "title": "Evo-Memory: Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory",
+  "summary": "Statefulness is essential for large language model (LLM) agents to perform long-term planning and problem-solving. This makes memory a critical component, yet its management and evolution remain largely underexplored. Existing evaluations mostly focus on static conversational settings, where memory is passively retrieved from dialogue to answer queries, overlooking the dynamic ability to accumulate and reuse experience across evolving task streams. In real-world environments such as interactive problem assistants or embodied agents, LLMs are required to handle continuous task streams, yet often fail to learn from accumulated interactions, losing valuable contextual insights, a limitation that calls for test-time evolution, where LLMs retrieve, integrate, and update memory continuously during deployment. To bridge this gap, we introduce Evo-Memory, a comprehensive streaming benchmark and framework for evaluating self-evolving memory in LLM agents. Evo-Memory structures datasets into sequential task streams, requiring LLMs to search, adapt, and evolve memory after each interaction. We unify and implement over ten representative memory modules and evaluate them across 10 diverse multi-turn goal-oriented and single-turn reasoning and QA datasets. To better benchmark experience reuse, we provide a baseline method, ExpRAG, for retrieving and utilizing prior experience, and further propose ReMem, an action-think-memory refine pipeline that tightly integrates reasoning, task actions, and memory updates to achieve continual improvement.",
+  "authors": [
+    "Tianxin Wei",
+    "Noveen Sachdeva",
+    "Benjamin Coleman",
+    "Zhankui He",
+    "Yuanchen Bei",
+    "Xuying Ning",
+    "Mengting Ai",
+    "Yunzhe Li",
+    "Jingrui He",
+    "Ed H. Chi",
+    "Chi Wang",
+    "Shuo Chen",
+    "Fernando Pereira",
+    "Wang-Cheng Kang",
+    "Derek Zhiyuan Cheng"
+  ],
+  "published": "2025-11-25T21:08:07Z",
+  "updated": "2026-05-18T16:18:02Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.20857",
+  "abs_url": "https://arxiv.org/abs/2511.20857",
+  "fetched_at": "2026-07-20T14:22:43.721689Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.06595",
+  "title": "When Agents Remember Too Much: Memory Poisoning Attacks on Large Language Model Agents",
+  "summary": "Personal AI agents powered by large language models can reason and act using available tools to access emails, manage calendars, and push code to remote repositories, all with minimal oversight. When augmented with long-term memory, an agent can recall specific details relevant to the current task, reducing the need for large context windows. Currently, long-term memory agents tend to fall into two distinct domains: conversational and action-planning agents. Personal assistant agents sit at the convergence of these two domains and handle sensitive information while interacting with untrusted information sources, creating previously unaccounted security vulnerabilities. In this work, we introduce the novel attack vector, GhostWriter, which exploits current memory subsystems in tool-using personal agents to poison their memory store. GhostWriter operates in two phases: injection, where an adversary sends a hidden attack payload to the target agent; and activation, in which the poisoned memory is retrieved. We show that GhostWriter achieves near-universal injection rates of approximately 98% and a high average activation rate of approximately 60% against state-of-the-art agents. This attack is possible due to the lack of security-focused memory governance. In response, we propose Agentic Memory Sentry (AM-Sentry), which leverages two mitigation techniques: a memory-saving policy and a memory-retrieval screen. Our experiments show that AM-Sentry dramatically reduces GhostWriter's success rate while preserving agent utility.",
+  "authors": [
+    "George Torres",
+    "Sharad Shrestha",
+    "Satyajayant Misra"
+  ],
+  "published": "2026-07-06T19:30:53Z",
+  "updated": "2026-07-06T19:30:53Z",
+  "categories": [
+    "cs.CR",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.06595",
+  "abs_url": "https://arxiv.org/abs/2607.06595",
+  "fetched_at": "2026-07-20T14:22:43.716456Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

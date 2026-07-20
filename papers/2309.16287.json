@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2309.16287",
+  "title": "Predicting performance difficulty from piano sheet music images",
+  "summary": "Estimating the performance difficulty of a musical score is crucial in music education for adequately designing the learning curriculum of the students. Although the Music Information Retrieval community has recently shown interest in this task, existing approaches mainly use machine-readable scores, leaving the broader case of sheet music images unaddressed. Based on previous works involving sheet music images, we use a mid-level representation, bootleg score, describing notehead positions relative to staff lines coupled with a transformer model. This architecture is adapted to our task by introducing an encoding scheme that reduces the encoded sequence length to one-eighth of the original size. In terms of evaluation, we consider five datasets -- more than 7500 scores with up to 9 difficulty levels -- , two of them particularly compiled for this work. The results obtained when pretraining the scheme on the IMSLP corpus and fine-tuning it on the considered datasets prove the proposal's validity, achieving the best-performing model with a balanced accuracy of 40.34\\% and a mean square error of 1.33. Finally, we provide access to our code, data, and models for transparency and reproducibility.",
+  "authors": [
+    "Pedro Ramoneda",
+    "Jose J. Valero-Mas",
+    "Dasaem Jeong",
+    "Xavier Serra"
+  ],
+  "published": "2023-09-28T09:33:47Z",
+  "updated": "2023-09-28T09:33:47Z",
+  "categories": [
+    "cs.SD",
+    "cs.DL",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2309.16287",
+  "abs_url": "https://arxiv.org/abs/2309.16287",
+  "fetched_at": "2026-07-20T14:22:43.708940Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.12706",
+  "title": "AutoSIFT: Automatic Style Sifting for Controllable Speech Generation with Arbitrary Style Infilling",
+  "summary": "State-of-the-art text-to-speech (TTS) models achieve impressive naturalness and expressiveness, yet fine-grained, disentangled control over speaking styles remains challenging. In professional scenarios such as film dubbing, game voice acting, and video content generation, users often need to modify a specific style category, such as emotion, age, or gender, while preserving all others. Existing style-controllable TTS methods typically rely on either text-described styles or speech-reference style transfer, making it difficult to jointly control explicit semantic attributes and preserve subtle, text-undescribed prosodic details. We propose AutoSIFT, a controllable speech generation framework for category-level style editing. AutoSIFT decomposes speaking style into known text-describable categories and unknown residual styles that capture non-verbal prosody and speaker-specific nuances. It consists of a generalized Style Disentangler, which extracts category-aware style prototypes from reference speech, and an Arbitrary Style Infiller, which selectively infills unspecified style categories from the reference. By replacing only text-specified style categories while preserving residual speech-derived styles, AutoSIFT enables natural, expressive, and highly customizable speech generation.",
+  "authors": [
+    "Haowei Lou",
+    "Junda Wu",
+    "Chengkai Huang",
+    "Tong Yu",
+    "Hye-young Paik",
+    "Wen Hu",
+    "Lina Yao"
+  ],
+  "published": "2026-07-14T12:28:43Z",
+  "updated": "2026-07-15T05:16:13Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12706",
+  "abs_url": "https://arxiv.org/abs/2607.12706",
+  "fetched_at": "2026-07-20T11:33:13.420398Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

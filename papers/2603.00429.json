@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2603.00429",
+  "title": "Personalities at Play: Probing Alignment in AI Teammates",
+  "summary": "Collaborative problem solving and learning are shaped by who or what is on the team. As large language models (LLMs) increasingly function as collaborators rather than tools, a key question is whether AI teammates can be aligned to express personality in predictable ways that matter for interaction and learning. We investigate AI personality alignment through a three-lens evaluation framework spanning self-perception (standardized self-report), behavioral expression (team dialogue), and reflective expression (memory construction). We first administered the Big Five Inventory (BFI-44) to LLM-based teammates across four providers (GPT-4o, Claude-3.7 Sonnet, Gemini-2.5 Pro, Grok-3), 32 high/low trait configurations, and multiple prompting strategies. LLMs produced sharply differentiated Big Five profiles, but prompt semantic richness added little beyond simple trait assignment, while provider differences and baseline \"default\" personalities were substantial. Role framing also mattered: several models refused the assessment without context, yet complied when framed as a collaborative teammate. We then simulated AI participation in authentic team transcripts using high-trait personas and analyzed both generated utterances and structured long-term memories with LIWC-22. Personality signals in conversation were generally subtle and most detectable for Extraversion, whereas memory representations amplified trait-specific signals, especially for Neuroticism, Conscientiousness, and Agreeableness; Openness remained difficult to elicit robustly. Together, results suggest that AI personality is measurable but multi-layered and context-dependent, and that evaluating personality-aligned AI teammates requires attention to memory and system-level design, not conversation-only behavior.",
+  "authors": [
+    "Mohammad Amin Samadi",
+    "Nia Nixon"
+  ],
+  "published": "2026-02-28T03:06:02Z",
+  "updated": "2026-02-28T03:06:02Z",
+  "categories": [
+    "cs.HC",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.00429",
+  "abs_url": "https://arxiv.org/abs/2603.00429",
+  "fetched_at": "2026-07-20T14:22:43.720514Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

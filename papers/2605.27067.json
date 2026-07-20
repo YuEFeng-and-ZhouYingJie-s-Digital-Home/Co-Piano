@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2605.27067",
+  "title": "BEAT: Rhythm-Elastic Alignment for Agentic Music-guided Movie Trailer Generation",
+  "summary": "Automatic movie trailer generation must select shots from a full-length film and synchronize them with background music. Existing methods either relegate music alignment to post-processing or enforce rigid one-to-one shot-music mappings, overlooking that professional editing rhythm is elastic: rapid cuts accompany high-energy passages while sustained shots span quieter bars. We introduce BEAT, a framework that addresses this gap with two core components: MuVA, a compact music-visual alignment encoder trained with Sinkhorn-regularized two-stage learning, and Bar-DP, an energy-adaptive dynamic programming algorithm that produces elastic many-to-one alignments following musical dynamics. These components are integrated into a five-phase agentic pipeline that grounds the core alignment in learned cross-modal features while coordinating higher-level creative decisions through structured text signals. To support comprehensive evaluation, we also introduce TrailerArena, a benchmark with 20+ metrics across four complementary dimensions. On TrailerArena, BEAT achieves state-of-the-art performance across shot selection, ordering, and perceptual quality, while producing fully composed trailers end-to-end.",
+  "authors": [
+    "Yutong Wang",
+    "Yunke Wang",
+    "Xinyuan Chen",
+    "Chang Xu"
+  ],
+  "published": "2026-05-26T14:18:13Z",
+  "updated": "2026-05-26T14:18:13Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.27067",
+  "abs_url": "https://arxiv.org/abs/2605.27067",
+  "fetched_at": "2026-07-20T11:33:13.431182Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

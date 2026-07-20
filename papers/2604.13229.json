@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2604.13229",
+  "title": "ProSDD: Learning Prosodic Representations for Speech Deepfake Detection against Expressive and Emotional Attacks",
+  "summary": "Speech deepfake detection (SDD) systems perform well on standard benchmarks datasets but often fail to generalize to expressive and emotional spoofing attacks. Many methods rely on spoof-heavy training data, learning dataset-specific artifacts rather than transferable cues of natural speech. In contrast, humans internalize variability in real speech and detect fakes as deviations from it. We introduce ProSDD, a two-stage framework that enriches model embeddings through supervised masked prediction of speaker-conditioned prosodic variation based on pitch, voice activity, and energy. Stage I learns prosodic variability from real speech, and Stage II jointly optimizes this objective with spoof classification. ProSDD consistently outperforms baselines under both ASVspoof 2019 and 2024 training, reducing ASVspoof 2024 EER from 25.43% to 16.14% (2019-trained) and from 39.62% to 7.38% (2024-trained), while achieving 50% relative reductions on EmoFake and EmoSpoof-TTS.",
+  "authors": [
+    "Aurosweta Mahapatra",
+    "Ismail Rasim Ulgen",
+    "Kong Aik Lee",
+    "Nicholas Andrews",
+    "Berrak Sisman"
+  ],
+  "published": "2026-04-14T18:56:13Z",
+  "updated": "2026-04-14T18:56:13Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.13229",
+  "abs_url": "https://arxiv.org/abs/2604.13229",
+  "fetched_at": "2026-07-20T11:33:13.423590Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

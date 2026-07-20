@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2112.00702",
+  "title": "Semi-supervised music emotion recognition using noisy student training and harmonic pitch class profiles",
+  "summary": "We present Mirable's submission to the 2021 Emotions and Themes in Music challenge. In this work, we intend to address the question: can we leverage semi-supervised learning techniques on music emotion recognition? With that, we experiment with noisy student training, which has improved model performance in the image classification domain. As the noisy student method requires a strong teacher model, we further delve into the factors including (i) input training length and (ii) complementary music representations to further boost the performance of the teacher model. For (i), we find that models trained with short input length perform better in PR-AUC, whereas those trained with long input length perform better in ROC-AUC. For (ii), we find that using harmonic pitch class profiles (HPCP) consistently improve tagging performance, which suggests that harmonic representation is useful for music emotion tagging. Finally, we find that noisy student method only improves tagging results for the case of long training length. Additionally, we find that ensembling representations trained with different training lengths can improve tagging results significantly, which suggest a possible direction to explore incorporating multiple temporal resolutions in the network architecture for future work.",
+  "authors": [
+    "Hao Hao Tan"
+  ],
+  "published": "2021-12-01T18:25:51Z",
+  "updated": "2021-12-09T15:11:04Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2112.00702",
+  "abs_url": "https://arxiv.org/abs/2112.00702",
+  "fetched_at": "2026-07-20T14:22:43.729482Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

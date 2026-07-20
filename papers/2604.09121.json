@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2604.09121",
+  "title": "Interactive ASR: Towards Human-Like Interaction and Semantic Coherence Evaluation for Agentic Speech Recognition",
+  "summary": "Recent years have witnessed remarkable progress in automatic speech recognition (ASR), driven by advances in model architectures and large-scale training data. However, two important aspects remain underexplored. First, Word Error Rate (WER), the dominant evaluation metric for decades, treats all words equally and often fails to reflect the semantic correctness of an utterance at the sentence level. Second, interactive correction-an essential component of human communication-has rarely been systematically studied in ASR research. In this paper, we integrate these two perspectives under an agentic framework for interactive ASR. We propose leveraging LLM-as-a-Judge as a semantic-aware evaluation metric to assess recognition quality beyond token-level accuracy. Furthermore, we design an LLM-driven agent framework to simulate human-like multi-turn interaction, enabling iterative refinement of recognition outputs through semantic feedback. Extensive experiments are conducted on standard benchmarks, including GigaSpeech (English), WenetSpeech (Chinese), the ASRU 2019 code-switching test set. Both objective and subjective evaluations demonstrate the effectiveness of the proposed framework in improving semantic fidelity and interactive correction capability. We will release the code to facilitate future research in interactive and agentic ASR.",
+  "authors": [
+    "Peng Wang",
+    "Yanqiao Zhu",
+    "Zixuan Jiang",
+    "Qinyuan Chen",
+    "Xingjian Zhao",
+    "Xipeng Qiu",
+    "Wupeng Wang",
+    "Zhifu Gao",
+    "Xiangang Li",
+    "Kai Yu",
+    "Xie Chen"
+  ],
+  "published": "2026-04-10T09:02:42Z",
+  "updated": "2026-04-14T06:45:50Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.09121",
+  "abs_url": "https://arxiv.org/abs/2604.09121",
+  "fetched_at": "2026-07-20T11:33:13.443717Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

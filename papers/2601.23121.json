@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2601.23121",
+  "title": "An Automatic Deep Learning Approach for Trailer Generation through Large Language Models",
+  "summary": "Trailers are short promotional videos designed to provide audiences with a glimpse of a movie. The process of creating a trailer typically involves selecting key scenes, dialogues and action sequences from the main content and editing them together in a way that effectively conveys the tone, theme and overall appeal of the movie. This often includes adding music, sound effects, visual effects and text overlays to enhance the impact of the trailer. In this paper, we present a framework exploiting a comprehensive multimodal strategy for automated trailer production. Also, a Large Language Model (LLM) is adopted across various stages of the trailer creation. First, it selects main key visual sequences that are relevant to the movie's core narrative. Then, it extracts the most appealing quotes from the movie, aligning them with the trailer's narrative. Additionally, the LLM assists in creating music backgrounds and voiceovers to enrich the audience's engagement, thus contributing to make a trailer not just a summary of the movie's content but a narrative experience in itself. Results show that our framework generates trailers that are more visually appealing to viewers compared to those produced by previous state-of-the-art competitors.",
+  "authors": [
+    "Roberto Balestri",
+    "Pasquale Cascarano",
+    "Mirko Degli Esposti",
+    "Guglielmo Pescatore"
+  ],
+  "published": "2026-01-30T16:09:44Z",
+  "updated": "2026-01-30T16:09:44Z",
+  "categories": [
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.23121",
+  "abs_url": "https://arxiv.org/abs/2601.23121",
+  "fetched_at": "2026-07-20T11:33:13.429840Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

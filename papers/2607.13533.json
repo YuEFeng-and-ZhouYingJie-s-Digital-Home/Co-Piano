@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.13533",
+  "title": "Scientific-Intention Driven Embodied Intelligent Solar Telescope: Conceptual Design",
+  "summary": "Artificial Intelligence (AI) is profoundly transforming the paradigms of scientific research. Cutting-edge technologies such as Large Language Models (LLMs) and embodied intelligence are continuously pushing the boundaries of scientific instrumentation. Against this backdrop, this paper proposes a novel conceptual system: the Scientific-Intention Driven Embodied Intelligent Solar Telescope (SIDEST). The system is designed with three core layers to achieve three types of intelligent scientific research closed loops. First, the Scientific Intent Research and Demonstration Layer parses the research objectives and intents of scientists (e.g., solar physicists) through natural language interaction, achieving a closed loop for the generation and optimization of executable observation plans aligned with scientific intent via in-depth research. Subsequently, the Observation Realization Layer schedules embodied intelligent solar telescopes to implement a closed loop for the execution of scientific observation plans. Finally, the Evaluation and Evolution Layer coordinates intelligent agents for data processing and scientific analysis to analyze observation data, generate research reports, and iteratively optimize observation strategies and model methods based on results, thereby realizing a self-evolving closed loop for the entire system. During the research process, we constructed a minimal prototype system based on a precision temperature control device for solar telescope birefringent filters to validate the core principles of SIDEST. This prototype successfully implemented all key steps of intention-driven automated research, demonstrating the feasibility of the technical pathways for the three types of intelligent research closed loops. SIDEST redefines telescopes through cutting-edge AI methods.",
+  "authors": [
+    "Lin Jiaben",
+    "Tong Liyue",
+    "Wang Hui",
+    "Shao Mingfu",
+    "Yang Chen"
+  ],
+  "published": "2026-07-15T07:38:07Z",
+  "updated": "2026-07-15T07:38:07Z",
+  "categories": [
+    "astro-ph.IM",
+    "astro-ph.SR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13533",
+  "abs_url": "https://arxiv.org/abs/2607.13533",
+  "fetched_at": "2026-07-20T11:33:13.439370Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

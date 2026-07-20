@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2412.06469",
+  "title": "Jess+: designing embodied AI for interactive music-making",
+  "summary": "In this paper, we discuss the conceptualisation and design of embodied AI within an inclusive music-making project. The central case study is Jess+ an intelligent digital score system for shared creativity with a mixed ensemble of non-disabled and disabled musicians. The overarching aim is that the digital score enables disabled musicians to thrive in a live music conversation with other musicians regardless of the potential barriers of disability and music-making. After defining what we mean by embodied AI and how this approach supports the aims of the Jess+ project, we outline the main design features of the system. This includes several novel approaches such as its modular design, an AI Factory based on an embodied musicking dataset, and an embedded belief system. Our findings showed that the implemented design decisions and embodied-AI approach led to rich experiences for the musicians which in turn transformed their practice as an inclusive ensemble.",
+  "authors": [
+    "Craig Vear",
+    "Johann Benerradi"
+  ],
+  "published": "2024-12-09T13:14:18Z",
+  "updated": "2024-12-09T13:14:18Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2412.06469",
+  "abs_url": "https://arxiv.org/abs/2412.06469",
+  "fetched_at": "2026-07-20T11:33:13.417582Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

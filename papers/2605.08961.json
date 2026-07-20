@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2605.08961",
+  "title": "Dolphin-CN-Dialect: Where Chinese Dialects Matter",
+  "summary": "We present Dolphin-CN-Dialect, a streaming-capable ASR model with a focus on Chinese and dialect-rich scenarios. Compared to the previous version, Dolphin-CN-Dialect introduces substantial improvements in data processing, tokenization, training stability, and data sampling strategies. To address the challenges of highly imbalanced dialect data, we propose a temperature-based sampling strategy that effectively balances standard Mandarin and low-resource dialects, leading to significant gains in dialect recognition performance. In addition, we redesign the tokenizer to better align with linguistic characteristics, adopting character-level modeling for Chinese and subword modeling for English, while introducing extensible dialect tokens. Experimental results show that Dolphin-CN-Dialect achieves improvement in dialect recognition accuracy and CER reduction compared to Dolphin. Furthermore, Dolphin-CN-Dialect reaches competitive performance with recent SOTA open-source ASR models, while maintaining a significantly smaller model size. Dolphin-CN-Dialect supports both streaming and non-streaming inference, enabling a practical balance between latency and accuracy. It also provides flexible customization through hotword support and efficient deployment optimized for specialized hardware. These improvements make Dolphin-CN-Dialect a strong and practical solution for real-world multi-dialect ASR applications.",
+  "authors": [
+    "Yangyang Meng",
+    "Huihang Zhong",
+    "Guodong Lin",
+    "Guanbo Wang",
+    "Hu Du",
+    "Zhiming Shao",
+    "Yukai Huang",
+    "Ke Li",
+    "Wei-Qiang Zhang"
+  ],
+  "published": "2026-05-09T13:56:54Z",
+  "updated": "2026-05-09T13:56:54Z",
+  "categories": [
+    "cs.CL",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.08961",
+  "abs_url": "https://arxiv.org/abs/2605.08961",
+  "fetched_at": "2026-07-20T11:33:13.443603Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

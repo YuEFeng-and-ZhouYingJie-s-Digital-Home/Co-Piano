@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2510.13244",
+  "title": "MotionBeat: Motion-Aligned Music Representation via Embodied Contrastive Learning and Bar-Equivariant Contact-Aware Encoding",
+  "summary": "Music is both an auditory and an embodied phenomenon, closely linked to human motion and naturally expressed through dance. However, most existing audio representations neglect this embodied dimension, limiting their ability to capture rhythmic and structural cues that drive movement. We propose MotionBeat, a framework for motion-aligned music representation learning. MotionBeat is trained with two newly proposed objectives: the Embodied Contrastive Loss (ECL), an enhanced InfoNCE formulation with tempo-aware and beat-jitter negatives to achieve fine-grained rhythmic discrimination, and the Structural Rhythm Alignment Loss (SRAL), which ensures rhythm consistency by aligning music accents with corresponding motion events. Architecturally, MotionBeat introduces bar-equivariant phase rotations to capture cyclic rhythmic patterns and contact-guided attention to emphasize motion events synchronized with musical accents. Experiments show that MotionBeat outperforms state-of-the-art audio encoders in music-to-dance generation and transfers effectively to beat tracking, music tagging, genre and instrument classification, emotion recognition, and audio-visual retrieval. Our project demo page: https://motionbeat2025.github.io/.",
+  "authors": [
+    "Xuanchen Wang",
+    "Heng Wang",
+    "Weidong Cai"
+  ],
+  "published": "2025-10-15T07:44:32Z",
+  "updated": "2026-01-29T04:36:21Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.13244",
+  "abs_url": "https://arxiv.org/abs/2510.13244",
+  "fetched_at": "2026-07-20T14:22:43.726647Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

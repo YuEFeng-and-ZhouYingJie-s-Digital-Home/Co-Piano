@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2604.14637",
+  "title": "Touching Space: Accessible Map Exploration Through Conversational Audio-Haptic Interaction",
+  "summary": "Most existing assistive navigation tools focus on providing real-time guidance for Blind and Low-Vision (BLV) people, but few support building a holistic spatial understanding of unfamiliar environments before travel. Such cognitive map construction (e.g., knowing that a fountain is south of a tower and west of a hotel) is important for pre-travel planning, yet remains underexplored in prior work. To address this gap, we present Touching Space, an end-to-end system that retrieves map data for a target place and loads it into a frontend interface for exploration. The system combines haptic and audio feedback: users explore spatial layouts through touch and ask spoken questions to a conversational agent during exploration. Touching Space contributes a conversational interface that supports BLV users in building cognitive maps on commodity hardware.",
+  "authors": [
+    "Li Liu",
+    "Jiaming Qu",
+    "Marc Jowell Bagaoisan",
+    "David T. Lee",
+    "Leilani H. Gilpin"
+  ],
+  "published": "2026-04-16T05:26:09Z",
+  "updated": "2026-04-16T05:26:09Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.14637",
+  "abs_url": "https://arxiv.org/abs/2604.14637",
+  "fetched_at": "2026-07-20T11:33:13.432988Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

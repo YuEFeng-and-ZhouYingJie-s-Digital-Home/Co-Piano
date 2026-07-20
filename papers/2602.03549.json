@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2602.03549",
+  "title": "EarResp-ANS : Audio-Based On-Device Respiration Rate Estimation on Earphones with Adaptive Noise Suppression",
+  "summary": "Respiratory rate (RR) is a key vital sign for clinical assessment and mental well-being, yet it is rarely monitored in everyday life due to the lack of unobtrusive sensing technologies. In-ear audio sensing is promising due to its high social acceptance and the amplification of physiological sounds caused by the occlusion effect; however, existing approaches often fail under real-world noise or rely on computationally expensive models. We present EarResp-ANS, the first system enabling fully on-device, real-time RR estimation on commercial earphones. The system employs LMS-based adaptive noise suppression (ANS) to attenuate ambient noise while preserving respiration-related acoustic components, without requiring neural networks or audio streaming, thereby explicitly addressing the energy and privacy constraints of wearable devices. We evaluate EarResp-ANS in a study with 18 participants under realistic acoustic conditions, including music, cafeteria noise, and white noise up to 80 dB SPL. EarResp-ANS achieves robust performance with a global MAE of 0.84 CPM , reduced to 0.47 CPM via automatic outlier rejection, while operating with less than 2% processor load directly on the earphone.",
+  "authors": [
+    "Michael Küttner",
+    "Valeria Zitz",
+    "Supraja Ramesh",
+    "Michael Beigl",
+    "Tobias Röddiger"
+  ],
+  "published": "2026-02-03T14:01:23Z",
+  "updated": "2026-02-03T14:01:23Z",
+  "categories": [
+    "cs.SD",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.03549",
+  "abs_url": "https://arxiv.org/abs/2602.03549",
+  "fetched_at": "2026-07-20T14:22:43.722315Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

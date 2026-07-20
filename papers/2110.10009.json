@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2110.10009",
+  "title": "EEGminer: Discovering Interpretable Features of Brain Activity with Learnable Filters",
+  "summary": "Patterns of brain activity are associated with different brain processes and can be used to identify different brain states and make behavioral predictions. However, the relevant features are not readily apparent and accessible. To mine informative latent representations from multichannel recordings of ongoing EEG activity, we propose a novel differentiable decoding pipeline consisting of learnable filters and a pre-determined feature extraction module. Specifically, we introduce filters parameterized by generalized Gaussian functions that offer a smooth derivative for stable end-to-end model training and allow for learning interpretable features. For the feature module, we use signal magnitude and functional connectivity estimates. We demonstrate the utility of our model towards emotion recognition from EEG signals on the SEED dataset, as well as on a new EEG dataset of unprecedented size (i.e., 761 subjects), where we identify consistent trends of music perception and related individual differences. The discovered features align with previous neuroscience studies and offer new insights, such as marked differences in the functional connectivity profile between left and right temporal areas during music listening. This agrees with the respective specialisation of the temporal lobes regarding music perception proposed in the literature.",
+  "authors": [
+    "Siegfried Ludwig",
+    "Stylianos Bakas",
+    "Dimitrios A. Adamos",
+    "Nikolaos Laskaris",
+    "Yannis Panagakis",
+    "Stefanos Zafeiriou"
+  ],
+  "published": "2021-10-19T14:22:04Z",
+  "updated": "2022-02-02T12:19:24Z",
+  "categories": [
+    "cs.LG",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2110.10009",
+  "abs_url": "https://arxiv.org/abs/2110.10009",
+  "fetched_at": "2026-07-20T14:22:43.729659Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

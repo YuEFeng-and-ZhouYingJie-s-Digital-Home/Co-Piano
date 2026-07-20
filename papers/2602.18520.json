@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2602.18520",
+  "title": "Sketch2Feedback: Grammar-in-the-Loop Framework for Rubric-Aligned Feedback on Student STEM Diagrams",
+  "summary": "Providing timely, rubric-aligned feedback on student-drawn diagrams is a persistent challenge in STEM education. While large multimodal models (LMMs) can jointly parse images and generate explanations, their tendency to hallucinate undermines trust in classroom deployments. We present Sketch2Feedback, a grammar-in-the-loop framework that decomposes the problem into four stages -- hybrid perception, symbolic graph construction, constraint checking, and constrained VLM feedback -- so that the language model verbalizes only violations verified by an upstream rule engine. We evaluate on two synthetic micro-benchmarks, FBD-10 (free-body diagrams) and Circuit-10 (circuit schematics), each with 500 images spanning standard and hard noise augmentation tiers, comparing our pipeline against end-to-end LMMs (LLaVA-1.5-7B, Qwen2-VL-7B), a vision-only detector, a YOLOv8-nano learned detector, and an ensemble oracle. On n=100 test samples per benchmark with 95% bootstrap CIs, results are mixed and instructive: Qwen2-VL-7B achieves the highest micro-F1 on both FBDs (0.570) and circuits (0.528), but with extreme hallucination rates (0.78, 0.98). An ensemble oracle that selects the best prediction per sample reaches F1=0.556 with hallucination 0.320 on FBDs, demonstrating exploitable complementarity between grammar and end-to-end approaches. Confidence thresholding at tau=0.7 reduces circuit hallucination from 0.970 to 0.880 with no F1 loss. Hard noise augmentation reveals domain-dependent robustness: FBD detection is resilient while circuit detection degrades sharply. An LLM-as-judge evaluation confirms that the grammar pipeline produces more actionable circuit feedback (4.85/5) than the end-to-end LMM (3.11/5). We release all code, datasets, and evaluation scripts.",
+  "authors": [
+    "Aayam Bansal"
+  ],
+  "published": "2026-02-19T20:34:24Z",
+  "updated": "2026-02-19T20:34:24Z",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.18520",
+  "abs_url": "https://arxiv.org/abs/2602.18520",
+  "fetched_at": "2026-07-20T11:33:13.450502Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

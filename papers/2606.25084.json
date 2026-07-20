@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.25084",
+  "title": "Are We There Yet? Exploring the Capabilities of MLLMs in Assistive AI Applications",
+  "summary": "Multimodal Large Language Models (MLLMs) have redefined visual understanding by combining vision encoders with large-scale language models. This unified architecture enables strong performance on tasks like image captioning, visual question answering, and multimodal dialogue, often in zero- and few-shot settings. Their general-purpose capabilities and flexible interfaces make MLLMs a promising foundation for real-world vision-language applications. Assistive AI aims to help users interact with their environments through natural language. These scenarios demand robust visual recognition, contextual reasoning, and multilingual comprehension-capabilities that MLLMs are believed to offer. However, their effectiveness in assistive settings remains to be fully understood. In this work, we explore whether MLLMs can support Assistive AI by evaluating state-of-the-art models on real-world tasks: recognizing everyday objects like currency, answering questions based on scene text, and reading visually presented content across multiple languages. To this end, we developed a system, NetraLink, using a head-mounted GoPro to capture real-world egocentric data, and collected a benchmark covering these assistive scenarios. Our findings provide a comprehensive diagnostic of current MLLMs, highlighting their strengths and limitations in enabling assistive technologies grounded in visual perception and language interaction.",
+  "authors": [
+    "Shayon Dasgupta",
+    "Avijit Dasgupta",
+    "C. V. Jawahar"
+  ],
+  "published": "2026-06-23T18:44:59Z",
+  "updated": "2026-06-23T18:44:59Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.25084",
+  "abs_url": "https://arxiv.org/abs/2606.25084",
+  "fetched_at": "2026-07-20T11:33:13.435101Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

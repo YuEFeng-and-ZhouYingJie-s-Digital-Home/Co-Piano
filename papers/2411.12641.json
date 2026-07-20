@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2411.12641",
+  "title": "Improving Controllability and Editability for Pretrained Text-to-Music Generation Models",
+  "summary": "The field of AI-assisted music creation has made significant strides, yet existing systems often struggle to meet the demands of iterative and nuanced music production. These challenges include providing sufficient control over the generated content and allowing for flexible, precise edits. This thesis tackles these issues by introducing a series of advancements that progressively build upon each other, enhancing the controllability and editability of text-to-music generation models. First, we introduce Loop Copilot, a system that tries to address the need for iterative refinement in music creation. Loop Copilot leverages a large language model (LLM) to coordinate multiple specialised AI models, enabling users to generate and refine music interactively through a conversational interface. Central to this system is the Global Attribute Table, which records and maintains key musical attributes throughout the iterative process, ensuring that modifications at any stage preserve the overall coherence of the music. While Loop Copilot excels in orchestrating the music creation process, it does not directly address the need for detailed edits to the generated content. To overcome this limitation, MusicMagus is presented as a further solution for editing AI-generated music. MusicMagus introduces a zero-shot text-to-music editing approach that allows for the modification of specific musical attributes, such as genre, mood, and instrumentation, without the need for retraining. By manipulating the latent space within pre-trained diffusion models, MusicMagus ensures that these edits are stylistically coherent and that non-targeted attributes remain unchanged. This system is particularly effective in maintaining the structural integrity of the music during edits, but it encounters challenges with more complex and real-world audio scenarios. ...",
+  "authors": [
+    "Yixiao Zhang"
+  ],
+  "published": "2024-11-19T16:52:34Z",
+  "updated": "2024-11-21T11:46:13Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2411.12641",
+  "abs_url": "https://arxiv.org/abs/2411.12641",
+  "fetched_at": "2026-07-20T11:33:13.417717Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

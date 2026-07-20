@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.08486",
+  "title": "TRADE: Transducer-Augmented Decoder for Speech LLM",
+  "summary": "Speech Large Language Models (Speech LLMs) lack a principled mechanism for streaming inference: their label-synchronous generation has no acoustic-frame alignment, making real-time decoding and end-of-utterance detection difficult. We propose TRADE TRansducer-Augmented DEcoder, which augments a multimodal LLM with a transducer branch that shares the audio encoder and uses the LLM's hidden states directly as the prediction network -- coupling frame-synchronous acoustic alignment with the LLM's linguistic reasoning. Three design choices make the system accurate, streamable, and long-form capable: (1)Tightly coupled dual vocabularies -- a compact transducer vocabulary derived from the LLM vocabulary, enabling zero-cost score fusion; (2)Chunk-synchronized streaming training with gradient stopping, eliminating the train-inference mismatch at offline-equivalent memory cost; and (3)Localized Decoder Audio Attention (LDAA), a causal sliding window that caps KV-cache memory independently of utterance length. A single TRADE checkpoint supports offline and streaming decoding across a continuous range of latency operating points. TRADE achieves 6.71% average WER on the Open ASR Leaderboard, while the streaming recognition with 960ms chunk size reaches 8.40% from the same checkpoint. On long-form speech, it obtains 3.64% WER on TED-LIUM and 10.88% on Earnings-22 without external segmentation. TRADE provides sentence-end punctuation timestamps that, when combined with acoustic voice activity detection (VAD), improve end-of-utterance detection by +0.03 F_1 over acoustic VAD alone.",
+  "authors": [
+    "Yun Tang",
+    "Shanil Puri",
+    "Shinji Watanabe",
+    "Subhabrata Mukherjee"
+  ],
+  "published": "2026-06-07T07:15:34Z",
+  "updated": "2026-06-07T07:15:34Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.08486",
+  "abs_url": "https://arxiv.org/abs/2606.08486",
+  "fetched_at": "2026-07-20T11:33:13.422886Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

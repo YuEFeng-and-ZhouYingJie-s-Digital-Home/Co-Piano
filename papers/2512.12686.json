@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2512.12686",
+  "title": "Memoria: A Scalable Agentic Memory Framework for Personalized Conversational AI",
+  "summary": "Agentic memory is emerging as a key enabler for large language models (LLM) to maintain continuity, personalization, and long-term context in extended user interactions, critical capabilities for deploying LLMs as truly interactive and adaptive agents. Agentic memory refers to the memory that provides an LLM with agent-like persistence: the ability to retain and act upon information across conversations, similar to how a human would. We present Memoria, a modular memory framework that augments LLM-based conversational systems with persistent, interpretable, and context-rich memory. Memoria integrates two complementary components: dynamic session-level summarization and a weighted knowledge graph (KG)-based user modelling engine that incrementally captures user traits, preferences, and behavioral patterns as structured entities and relationships. This hybrid architecture enables both short-term dialogue coherence and long-term personalization while operating within the token constraints of modern LLMs. We demonstrate how Memoria enables scalable, personalized conversational artificial intelligence (AI) by bridging the gap between stateless LLM interfaces and agentic memory systems, offering a practical solution for industry applications requiring adaptive and evolving user experiences.",
+  "authors": [
+    "Samarth Sarin",
+    "Lovepreet Singh",
+    "Bhaskarjit Sarmah",
+    "Dhagash Mehta"
+  ],
+  "published": "2025-12-14T13:38:06Z",
+  "updated": "2025-12-14T13:38:06Z",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.12686",
+  "abs_url": "https://arxiv.org/abs/2512.12686",
+  "fetched_at": "2026-07-20T14:22:43.721519Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

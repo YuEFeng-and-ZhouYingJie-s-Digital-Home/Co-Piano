@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2512.10963",
+  "title": "Emotion-Driven Personalized Recommendation for AI-Generated Content Using Multi-Modal Sentiment and Intent Analysis",
+  "summary": "With the rapid growth of AI-generated content (AIGC) across domains such as music, video, and literature, the demand for emotionally aware recommendation systems has become increasingly important. Traditional recommender systems primarily rely on user behavioral data such as clicks, views, or ratings, while neglecting users' real-time emotional and intentional states during content interaction. To address this limitation, this study proposes a Multi-Modal Emotion and Intent Recognition Model (MMEI) based on a BERT-based Cross-Modal Transformer with Attention-Based Fusion, integrated into a cloud-native personalized AIGC recommendation framework. The proposed system jointly processes visual (facial expression), auditory (speech tone), and textual (comments or utterances) modalities through pretrained encoders ViT, Wav2Vec2, and BERT, followed by an attention-based fusion module to learn emotion-intent representations. These embeddings are then used to drive personalized content recommendations through a contextual matching layer. Experiments conducted on benchmark emotion datasets (AIGC-INT, MELD, and CMU-MOSEI) and an AIGC interaction dataset demonstrate that the proposed MMEI model achieves a 4.3% improvement in F1-score and a 12.3% reduction in cross-entropy loss compared to the best fusion-based transformer baseline. Furthermore, user-level online evaluations reveal that emotion-driven recommendations increase engagement time by 15.2% and enhance satisfaction scores by 11.8%, confirming the model's effectiveness in aligning AI-generated content with users' affective and intentional states. This work highlights the potential of cross-modal emotional intelligence for next-generation AIGC ecosystems, enabling adaptive, empathetic, and context-aware recommendation experiences.",
+  "authors": [
+    "Zheqi Hu",
+    "Xuanjing Chen",
+    "Jinlin Hu"
+  ],
+  "published": "2025-11-25T17:52:22Z",
+  "updated": "2025-11-25T17:52:22Z",
+  "categories": [
+    "cs.IR",
+    "cs.AI",
+    "cs.HC",
+    "cs.LG",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.10963",
+  "abs_url": "https://arxiv.org/abs/2512.10963",
+  "fetched_at": "2026-07-20T11:33:13.419809Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

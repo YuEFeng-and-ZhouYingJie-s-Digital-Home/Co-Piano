@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2605.12988",
+  "title": "Retrieval-Augmented Tutoring for Algorithm Tracing and Problem-Solving in AI Education",
+  "summary": "Students learning algorithms often need support as they interpret traces, debug reasoning errors, and apply procedures across unfamiliar problem instances. In this paper, we present KITE (Knowledge-Informed Tutoring Engine), a Retrieval-Augmented Generation (RAG)-based intelligent tutoring system designed to serve as a classroom teaching assistant for algorithmic reasoning and problem-solving tasks. KITE uses an intent-aware Socratic response strategy to tailor support to different student needs, responding with targeted hints, guiding questions, and progressive scaffolding intended to strengthen students' algorithmic problem-solving ability. To keep responses aligned with course content, KITE uses a multimodal RAG pipeline that retrieves relevant information from course materials. We evaluate KITE using three forms of assessment: RAGAs-based metrics for response grounding and quality, expert evaluation of pedagogical quality, and a simulated student pipeline in which a weaker language model interacts with KITE across two-turn dialogues and produces revised answers after receiving feedback. Results indicate that KITE produces contextually grounded and pedagogically appropriate responses. Further, using simulated students, KITE's feedback helped the student models produce more accurate follow-up responses on procedural and tracing questions, suggesting that its scaffolding can support algorithmic problem-solving. This work contributes a tutoring architecture and an evaluation approach for assessing retrieval-grounded explanations and scaffolded problem-solving feedback.",
+  "authors": [
+    "Mragisha Jain",
+    "Tirth Bhatt",
+    "Griffin Pitts",
+    "Aum Pandya",
+    "Peter Brusilovsky",
+    "Narges Norouzi",
+    "Arto Hellas",
+    "Juho Leinonen",
+    "Bita Akram"
+  ],
+  "published": "2026-05-13T04:37:45Z",
+  "updated": "2026-05-13T04:37:45Z",
+  "categories": [
+    "cs.AI",
+    "cs.CY",
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.12988",
+  "abs_url": "https://arxiv.org/abs/2605.12988",
+  "fetched_at": "2026-07-20T11:33:13.449383Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

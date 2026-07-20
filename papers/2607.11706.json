@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.11706",
+  "title": "VoxENES 2026: Benchmarking Generalization of Speech Spoofing Detectors Against LLM-Era TTS and Voice Conversion",
+  "summary": "Modern LLM-driven text-to-speech (TTS) and voice conversion (VC) systems produce synthetic speech that differs from the generators represented in many legacy spoofing benchmarks. This mismatch creates a temporal generalization gap that can overestimate detector robustness under real-world post-processing conditions. We bridge this gap by introducing VoxENES 2026, a bilingual (English and Spanish) benchmark of 53,628 audio samples generated using 10 contemporary speech synthesis methods and evaluated under 10 standardized post-processing conditions. Using VoxENES 2026, we benchmark eight pretrained detectors without fine-tuning and observe substantial performance degradation: the best model achieves 28.98\\% EER overall, while most perform near or below random chance across modern generators and perturbations. Our results highlight the reliance on brittle artifacts in current detectors and establish VoxENES 2026 as a practical testbed for developing robust audio spoofing countermeasures.",
+  "authors": [
+    "Aastha Sharma",
+    "Guangjing Wang"
+  ],
+  "published": "2026-07-13T15:35:29Z",
+  "updated": "2026-07-13T15:35:29Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.11706",
+  "abs_url": "https://arxiv.org/abs/2607.11706",
+  "fetched_at": "2026-07-20T11:33:13.420661Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

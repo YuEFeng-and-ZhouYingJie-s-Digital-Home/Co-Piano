@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2606.20713",
+  "title": "FairTutor: Equity-Aware Pedagogical LLM Routing for Budget-Constrained AI Tutoring",
+  "summary": "Generative AI tutors provide real-time, personalized learning support, but also create a new education inequity: students with access to premium AI services may receive clearer explanations, more personalized guidance, and better scaffolding than students limited to free or low-cost services. To address this challenge, we propose FairTutor, an equity-aware model-routing framework that achieves cost-effective AI tutoring via pedagogically motivated multi-agent orchestration. FairTutor combines query analysis, pedagogical planning, low-cost model generation, evaluator-guided critique and revision, and selective escalation to premium AI models. We introduce access-tier AI Education (AIED) Advantage Gap to measure the quality difference between premium-access and budget-constrained tutoring, and TutorAccessEval, a benchmark spanning math, reading, writing, science, and language learning. Empirical evaluations show that FairTutor achieves 97.1% of premium pedagogical quality (in floor-adjusted Likert scale) while reducing serving cost by 71.6%. Sensitivity analysis reveals a tunable cost--quality Pareto frontier, enabling FairTutor to be tailored to the needs of diverse student populations.",
+  "authors": [
+    "Qingyang Xu"
+  ],
+  "published": "2026-06-16T12:55:22Z",
+  "updated": "2026-06-16T12:55:22Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.20713",
+  "abs_url": "https://arxiv.org/abs/2606.20713",
+  "fetched_at": "2026-07-20T11:33:13.428460Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

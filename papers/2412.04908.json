@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2412.04908",
+  "title": "MERCI: Multimodal Emotional and peRsonal Conversational Interactions Dataset",
+  "summary": "The integration of conversational agents into our daily lives has become increasingly common, yet many of these agents cannot engage in deep interactions with humans. Despite this, there is a noticeable shortage of datasets that capture multimodal information from human-robot interaction dialogues. To address this gap, we have recorded a novel multimodal dataset (MERCI) that encompasses rich embodied interaction data. The process involved asking participants to complete a questionnaire and gathering their profiles on ten topics, such as hobbies and favorite music. Subsequently, we initiated conversations between the robot and the participants, leveraging GPT-4 to generate contextually appropriate responses based on the participant's profile and emotional state, as determined by facial expression recognition and sentiment analysis. Automatic and user evaluations were conducted to assess the overall quality of the collected data. The results of both evaluations indicated a high level of naturalness, engagement, fluency, consistency, and relevance in the conversation, as well as the robot's ability to provide empathetic responses. It is worth noting that the dataset is derived from genuine interactions with the robot, involving participants who provided personal information and conveyed actual emotions.",
+  "authors": [
+    "Mohammed Althubyani",
+    "Zhijin Meng",
+    "Shengyuan Xie",
+    "Cha Seung",
+    "Imran Razzak",
+    "Eduardo B. Sandoval",
+    "Baki Kocaballi",
+    "Francisco Cruz"
+  ],
+  "published": "2024-12-06T10:04:26Z",
+  "updated": "2025-03-18T05:10:59Z",
+  "categories": [
+    "cs.HC",
+    "cs.ET",
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2412.04908",
+  "abs_url": "https://arxiv.org/abs/2412.04908",
+  "fetched_at": "2026-07-20T14:22:43.724406Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

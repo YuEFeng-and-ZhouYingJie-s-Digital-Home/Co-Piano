@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2509.01336",
+  "title": "The AudioMOS Challenge 2025",
+  "summary": "This is the summary paper for the AudioMOS Challenge 2025, the very first challenge for automatic subjective quality prediction for synthetic audio. The challenge consists of three tracks. The first track aims to assess text-to-music samples in terms of overall quality and textual alignment. The second track is based on the four evaluation dimensions of Meta Audiobox Aesthetics, and the test set consists of text-to-speech, text-to-audio, and text-to-music samples. The third track focuses on synthetic speech quality assessment in different sampling rates. The challenge attracted 24 unique teams from both academia and industry, and improvements over the baselines were confirmed. The outcome of this challenge is expected to facilitate development and progress in the field of automatic evaluation for audio generation systems.",
+  "authors": [
+    "Wen-Chin Huang",
+    "Hui Wang",
+    "Cheng Liu",
+    "Yi-Chiao Wu",
+    "Andros Tjandra",
+    "Wei-Ning Hsu",
+    "Erica Cooper",
+    "Yong Qin",
+    "Tomoki Toda"
+  ],
+  "published": "2025-09-01T10:18:14Z",
+  "updated": "2025-09-01T10:18:14Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.01336",
+  "abs_url": "https://arxiv.org/abs/2509.01336",
+  "fetched_at": "2026-07-20T14:22:43.722994Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

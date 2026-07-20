@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2507.09904",
+  "title": "ASTAR-NTU solution to AudioMOS Challenge 2025 Track1",
+  "summary": "Evaluation of text-to-music systems is constrained by the cost and availability of collecting experts for assessment. AudioMOS 2025 Challenge track 1 is created to automatically predict music impression (MI) as well as text alignment (TA) between the prompt and the generated musical piece. This paper reports our winning system, which uses a dual-branch architecture with pre-trained MuQ and RoBERTa models as audio and text encoders. A cross-attention mechanism fuses the audio and text representations. For training, we reframe the MI and TA prediction as a classification task. To incorporate the ordinal nature of MOS scores, one-hot labels are converted to a soft distribution using a Gaussian kernel. On the official test set, a single model trained with this method achieves a system-level Spearman's Rank Correlation Coefficient (SRCC) of 0.991 for MI and 0.952 for TA, corresponding to a relative improvement of 21.21\\% in MI SRCC and 31.47\\% in TA SRCC over the challenge baseline.",
+  "authors": [
+    "Fabian Ritter-Gutierrez",
+    "Yi-Cheng Lin",
+    "Jui-Chiang Wei",
+    "Jeremy H. M. Wong",
+    "Nancy F. Chen",
+    "Hung-yi Lee"
+  ],
+  "published": "2025-07-14T04:18:15Z",
+  "updated": "2025-07-14T04:18:15Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.09904",
+  "abs_url": "https://arxiv.org/abs/2507.09904",
+  "fetched_at": "2026-07-20T14:22:43.723699Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

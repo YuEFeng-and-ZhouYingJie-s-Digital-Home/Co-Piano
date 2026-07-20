@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2603.01160",
+  "title": "Semantic XPath: Structured Agentic Memory Access for Conversational AI",
+  "summary": "Conversational AI (ConvAI) agents increasingly maintain structured memory to support long-term, task-oriented interactions. In-context memory approaches append the growing history to the model input, which scales poorly under context-window limits. RAG-based methods retrieve request-relevant information, but most assume flat memory collections and ignore structure. We propose Semantic XPath, a tree-structured memory module to access and update structured conversational memory. Semantic XPath improves performance over flat-RAG baselines by 176.7% while using only 9.1% of the tokens required by in-context memory. We also introduce SemanticXPath Chat, an end-to-end ConvAI demo system that visualizes the structured memory and query execution details. Overall, this paper demonstrates a candidate for the next generation of long-term, task-oriented ConvAI systems built on structured memory.",
+  "authors": [
+    "Yifan Simon Liu",
+    "Ruifan Wu",
+    "Liam Gallagher",
+    "Jiazhou Liang",
+    "Armin Toroghi",
+    "Scott Sanner"
+  ],
+  "published": "2026-03-01T15:56:08Z",
+  "updated": "2026-03-01T15:56:08Z",
+  "categories": [
+    "cs.AI",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.01160",
+  "abs_url": "https://arxiv.org/abs/2603.01160",
+  "fetched_at": "2026-07-20T14:22:43.720346Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

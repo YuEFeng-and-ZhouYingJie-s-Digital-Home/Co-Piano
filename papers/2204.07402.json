@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2204.07402",
+  "title": "BYOL for Audio: Exploring Pre-trained General-purpose Audio Representations",
+  "summary": "Pre-trained models are essential as feature extractors in modern machine learning systems in various domains. In this study, we hypothesize that representations effective for general audio tasks should provide multiple aspects of robust features of the input sound. For recognizing sounds regardless of perturbations such as varying pitch or timbre, features should be robust to these perturbations. For serving the diverse needs of tasks such as recognition of emotions or music genres, representations should provide multiple aspects of information, such as local and global features. To implement our principle, we propose a self-supervised learning method: Bootstrap Your Own Latent (BYOL) for Audio (BYOL-A, pronounced \"viola\"). BYOL-A pre-trains representations of the input sound invariant to audio data augmentations, which makes the learned representations robust to the perturbations of sounds. Whereas the BYOL-A encoder combines local and global features and calculates their statistics to make the representation provide multi-aspect information. As a result, the learned representations should provide robust and multi-aspect information to serve various needs of diverse tasks. We evaluated the general audio task performance of BYOL-A compared to previous state-of-the-art methods, and BYOL-A demonstrated generalizability with the best average result of 72.4% and the best VoxCeleb1 result of 57.6%. Extensive ablation experiments revealed that the BYOL-A encoder architecture contributes to most performance, and the final critical portion resorts to the BYOL framework and BYOL-A augmentations. Our code is available online at https://github.com/nttcslab/byol-a for future studies.",
+  "authors": [
+    "Daisuke Niizumi",
+    "Daiki Takeuchi",
+    "Yasunori Ohishi",
+    "Noboru Harada",
+    "Kunio Kashino"
+  ],
+  "published": "2022-04-15T09:44:10Z",
+  "updated": "2022-06-16T05:25:12Z",
+  "categories": [
+    "eess.AS",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2204.07402",
+  "abs_url": "https://arxiv.org/abs/2204.07402",
+  "fetched_at": "2026-07-20T14:22:43.728608Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

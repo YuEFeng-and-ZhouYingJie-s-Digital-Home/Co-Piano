@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2606.05931",
+  "title": "To Be Multimodal or Not to Be: Query-Adaptive Audio-Visual Person Retrieval via Active Modality Detection",
+  "summary": "When retrieving a person from a video archive by voice and face, should the system be multimodal or not? In real-world broadcast archives, unlike curated benchmarks, a target may be heard but unseen, seen but unheard, or both. Fusing scores from an absent modality injects noise, degrading precision below the best unimodal system. We propose a query-adaptive framework that detects active modalities via cross-modal score consistency: when both modalities are active, files retrieved by one also score highly on the other; this agreement breaks down when a modality is absent. Classifiers driven by these cross-modal features achieve 89% detection accuracy. On the BBC Rewind corpus (with over 12,000 broadcast videos) the adaptive system attains 94.2% P@1, outperforming speaker-only (82.9%), face-only (93.4%), and fixed fusion (90.0%), recovering 64% of the gap to an oracle with ground-truth modality labels (96.6%).",
+  "authors": [
+    "Erfan Loweimi",
+    "Mengjie Qian",
+    "Kate Knill",
+    "Guanfeng Wu",
+    "Chi-Ho Chan",
+    "Abbas Haider",
+    "Muhammad Awan",
+    "Josef Kittler",
+    "Hui Wang",
+    "Mark Gales"
+  ],
+  "published": "2026-06-04T09:33:58Z",
+  "updated": "2026-06-04T09:33:58Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.CV",
+    "cs.IR",
+    "cs.LG",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.05931",
+  "abs_url": "https://arxiv.org/abs/2606.05931",
+  "fetched_at": "2026-07-20T11:33:13.423004Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

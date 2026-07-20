@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2511.07821",
+  "title": "SynTTS-Commands: A Public Dataset for On-Device KWS via TTS-Synthesized Multilingual Speech",
+  "summary": "The development of high-performance, on-device keyword spotting (KWS) systems for ultra-low-power hardware is critically constrained by the scarcity of specialized, multi-command training datasets. Traditional data collection through human recording is costly, slow, and lacks scalability. This paper introduces SYNTTS-COMMANDS, a novel, multilingual voice command dataset entirely generated using state-of-the-art Text-to-Speech (TTS) synthesis. By leveraging the CosyVoice 2 model and speaker embeddings from public corpora, we created a scalable collection of English and Chinese commands. Extensive benchmarking across a range of efficient acoustic models demonstrates that our synthetic dataset enables exceptional accuracy, achieving up to 99.5\\% on English and 98\\% on Chinese command recognition. These results robustly validate that synthetic speech can effectively replace human-recorded audio for training KWS classifiers. Our work directly addresses the data bottleneck in TinyML, providing a practical, scalable foundation for building private, low-latency, and energy-efficient voice interfaces on resource-constrained edge devices. The dataset and source code are publicly available at https://github.com/lugan113/SynTTS-Commands-Official.",
+  "authors": [
+    "Lu Gan",
+    "Xi Li"
+  ],
+  "published": "2025-11-11T04:38:06Z",
+  "updated": "2025-11-24T07:57:02Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.07821",
+  "abs_url": "https://arxiv.org/abs/2511.07821",
+  "fetched_at": "2026-07-20T11:33:13.437906Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

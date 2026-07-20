@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.30404",
+  "title": "HUMEMBR: Learning Human Routines for Predictive Embodied Navigation",
+  "summary": "Understanding and navigating human-centered environments over extended periods of time while considering human behavior and routines remains a fundamental challenge in robotics. In real-world settings, robots may be asked to locate a specific individual, predict where that person is likely to be, or estimate when they typically leave a building. Addressing such queries requires reasoning over extensive histories of observations and capturing long-term behavioral patterns. To this end, we introduce Human-Centered Memory for Embodied Robots (HUMEMBR), a system designed for embodied question answering and routine-conditioned navigation. HUMEMBR integrates a continuous memory construction process with a parallel retrieval and querying mechanism, enabling the system to accumulate structured representations of human routines while supporting interactive, user-driven queries. Our experimental results indicate that HUMEMBR improves long-horizon reasoning about human behavior relative to full-context LLM baselines, while using substantially fewer tokens. Furthermore, we deploy HUMEMBR on a physical robot in two distinct environments, showing its ability to handle diverse queries and navigation tasks under real-world conditions.",
+  "authors": [
+    "Samira Huber",
+    "Klaas Pelzer",
+    "Duc M. Nguyen",
+    "Xuesu Xiao",
+    "Sören Pirk"
+  ],
+  "published": "2026-06-29T14:50:50Z",
+  "updated": "2026-06-29T14:50:50Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.30404",
+  "abs_url": "https://arxiv.org/abs/2606.30404",
+  "fetched_at": "2026-07-20T11:33:13.441762Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

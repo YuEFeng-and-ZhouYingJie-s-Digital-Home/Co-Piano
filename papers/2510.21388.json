@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2510.21388",
+  "title": "Compressing Quaternion Convolutional Neural Networks for Audio Classification",
+  "summary": "Conventional Convolutional Neural Networks (CNNs) in the real domain have been widely used for audio classification. However, their convolution operations process multi-channel inputs independently, limiting the ability to capture correlations among channels. This can lead to suboptimal feature learning, particularly for complex audio patterns such as multi-channel spectrogram representations. Quaternion Convolutional Neural Networks (QCNNs) address this limitation by employing quaternion algebra to jointly capture inter-channel dependencies, enabling more compact models with fewer learnable parameters while better exploiting the multi-dimensional nature of audio signals. However, QCNNs exhibit higher computational complexity due to the overhead of quaternion operations, resulting in increased inference latency and reduced efficiency compared to conventional CNNs, posing challenges for deployment on resource-constrained platforms. To address this challenge, this study explores knowledge distillation (KD) and pruning, to reduce the computational complexity of QCNNs while maintaining performance. Our experiments on audio classification reveal that pruning QCNNs achieves similar or superior performance compared to KD while requiring less computational effort. Compared to conventional CNNs and Transformer-based architectures, pruned QCNNs achieve competitive performance with a reduced learnable parameter count and computational complexity. On the AudioSet dataset, pruned QCNNs reduce computational cost by 50\\% and parameter count by 80\\%, while maintaining performance comparable to the conventional CNNs. Furthermore, pruned QCNNs generalize well across multiple audio classification benchmarks, including GTZAN for music genre recognition, ESC-50 for environmental sound classification and RAVDESS for speech emotion recognition.",
+  "authors": [
+    "Arshdeep Singh",
+    "Vinayak Abrol",
+    "Mark D. Plumbley"
+  ],
+  "published": "2025-10-24T12:19:19Z",
+  "updated": "2025-10-24T12:19:19Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.SD",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.21388",
+  "abs_url": "https://arxiv.org/abs/2510.21388",
+  "fetched_at": "2026-07-20T11:33:13.419930Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

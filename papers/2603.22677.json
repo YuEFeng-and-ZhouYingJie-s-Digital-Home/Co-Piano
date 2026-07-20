@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2603.22677",
+  "title": "MuQ-Eval: An Open-Source Per-Sample Quality Metric for AI Music Generation Evaluation",
+  "summary": "Distributional metrics such as Fréchet Audio Distance cannot score individual music clips and correlate poorly with human judgments, while the only per-sample learned metric achieving high human correlation is closed-source. We introduce MUQ-EVAL, an open-source per-sample quality metric for AIgenerated music built by training lightweight prediction heads on frozen MuQ-310M features using MusicEval, a dataset of generated clips from 31 text-to-music systems with expert quality ratings. Our simplest model, frozen features with attention pooling and a two-layer MLP, achieves system-level SRCC = 0.957 and utterance-level SRCC = 0.838 with human mean opinion scores. A systematic ablation over training objectives and adaptation strategies shows that no addition meaningfully improves the frozen baseline, indicating that frozen MuQ representations already capture quality-relevant information. Encoder choice is the dominant design factor, outweighing all architectural and training decisions. LoRA-adapted models trained on as few as 150 clips already achieve usable correlation, enabling personalized quality evaluators from individual listener annotations. A controlled degradation analysis reveals selective sensitivity to signal-level artifacts but insensitivity to musical-structural distortions. Our metric, MUQ-EVAL, is fully open-source, outperforms existing open per-sample metrics, and runs in real time on a single consumer GPU. Code, model weights, and evaluation scripts are available at https://github.com/dgtql/MuQ-Eval.",
+  "authors": [
+    "Di Zhu",
+    "Zixuan Li"
+  ],
+  "published": "2026-03-24T00:57:03Z",
+  "updated": "2026-03-24T00:57:03Z",
+  "categories": [
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.22677",
+  "abs_url": "https://arxiv.org/abs/2603.22677",
+  "fetched_at": "2026-07-20T11:33:13.431785Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2507.16074",
+  "title": "Toward music-based stress management: Contemporary biosensing systems for affective regulation",
+  "summary": "In the last decade, researchers have increasingly explored using biosensing technologies for music-based affective regulation and stress management interventions in laboratory and real-world settings. These systems -- including interactive music applications, brain-computer interfaces, and biofeedback devices -- aim to provide engaging, personalized experiences that improve therapeutic outcomes. In this scoping and mapping review, we summarize and synthesize systematic reviews and empirical research on biosensing systems with potential applications in music-based affective regulation and stress management, identify gaps in the literature, and highlight promising areas for future research. We identified 28 studies involving 646 participants, with most systems utilizing prerecorded music, wearable cardiorespiratory sensors, or desktop interfaces. We categorize these systems based on their biosensing modalities, music types, computational models for affect or stress detection and music prediction, and biofeedback mechanisms. Our findings highlight the promising potential of these systems and suggest future directions, such as integrating multimodal biosensing, exploring therapeutic mechanisms of music, leveraging generative artificial intelligence for personalized music interventions, and addressing methodological, data privacy, and user control concerns.",
+  "authors": [
+    "Natasha Yamane",
+    "Varun Mishra",
+    "Matthew S. Goodwin"
+  ],
+  "published": "2025-07-21T21:21:48Z",
+  "updated": "2025-07-21T21:21:48Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.16074",
+  "abs_url": "https://arxiv.org/abs/2507.16074",
+  "fetched_at": "2026-07-20T11:33:13.436105Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.02950",
+  "title": "Powering An Ecosystem Of Pedagogical AI Agents: A Validation Strategy For A Unified Data Architecture",
+  "summary": "The application of AI in education has evolved from monolithic intelligent tutoring systems to a diverse ecosystem of pedagogical agents, including conversational assistants, virtual coaches, and adaptive tutors. This shift requires a unified and scalable data architecture to manage the complex information feedback loops between human instructors, learners, and the varied AI agents. The design, development, and deployment of the data architecture in turn raises a critical issue of validation. This paper addresses this critical need by describing a practical validation strategy for a high-volume data pipeline developed as part of a data architecture for AI-augmented adult learning at the National AI Institute for Adult Learning and Online Education. Our approach involves a two-stage testing methodology to ensure both functional diversity and real-world scalability. First, the QA environment uses a blend of synthetic and real-world data to validate functional correctness across various event types produced from learner and agent interactions. Following this, the production environment successfully processed a total of over 2.7 million production requests across 21 successful runs carrying authentic event data from a large-scale online program. This validation process surfaced crucial insights into data privacy, a key challenge when handling varied data from multiple AI agent data sources. By outlining a replicable testing strategy for a unified data backbone, this research offers a clear framework for institutions and developers aiming to build and support their own heterogeneous suites of AI-powered learning tools. Keywords: Pedagogical Agents, Learning Ecosystems, Data Architecture, Validation, Scalability, Learning Analytics.",
+  "authors": [
+    "Natalia Theodora",
+    "Ploy Thajchayapong",
+    "Ashok K. Goel"
+  ],
+  "published": "2026-06-01T23:05:41Z",
+  "updated": "2026-06-01T23:05:41Z",
+  "categories": [
+    "cs.ET"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.02950",
+  "abs_url": "https://arxiv.org/abs/2606.02950",
+  "fetched_at": "2026-07-20T11:33:13.427046Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

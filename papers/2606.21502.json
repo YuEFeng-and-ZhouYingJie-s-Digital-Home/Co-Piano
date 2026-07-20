@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.21502",
+  "title": "Towards Pedagogically Aligned LLM Tutors for Math Mistake Remediation",
+  "summary": "Large language models have strong potential for use in intelligent tutoring systems, but they often fail to follow effective pedagogical strategies, such as guiding students without revealing final answers. We study the application of a two-stage alignment pipeline for math mistake remediation, combining supervised fine-tuning on tutoring dialogs with Direct Preference Optimization on synthetic preference pairs. We construct a dataset that integrates existing tutoring corpora with synthetic data generated along pedagogical dimensions, such as scaffolding and factuality, and study different input configurations that incorporate solution correctness and gold answers. Experiments show that this approach improves both factual accuracy and pedagogical quality over base models and existing tutoring models. Human evaluation further indicates that our best model is competitive with a strong proprietary baseline, while providing additional benefits in terms of openness, transparency, and reproducibility. Our results highlight the effectiveness of preference-based pedagogical alignment, while also revealing challenges in reliably evaluating tutoring quality.",
+  "authors": [
+    "Kseniia Petukhova",
+    "Tien Dat Nguyen",
+    "Ekaterina Kochmar"
+  ],
+  "published": "2026-06-19T14:53:55Z",
+  "updated": "2026-06-19T14:53:55Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.21502",
+  "abs_url": "https://arxiv.org/abs/2606.21502",
+  "fetched_at": "2026-07-20T11:33:13.426150Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

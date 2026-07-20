@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2601.00299",
+  "title": "Timed text extraction from Taiwanese Kua-á-hì TV series",
+  "summary": "Taiwanese opera (Kua-á-hì), a major form of local theatrical tradition, underwent extensive television adaptation notably by pioneers like Iûnn Lē-hua. These videos, while potentially valuable for in-depth studies of Taiwanese opera, often have low quality and require substantial manual effort during data preparation. To streamline this process, we developed an interactive system for real-time OCR correction and a two-step approach integrating OCR-driven segmentation with Speech and Music Activity Detection (SMAD) to efficiently identify vocal segments from archival episodes with high precision. The resulting dataset, consisting of vocal segments and corresponding lyrics, can potentially supports various MIR tasks such as lyrics identification and tune retrieval. Code is available at https://github.com/z-huang/ocr-subtitle-editor .",
+  "authors": [
+    "Tzu-Hung Huang",
+    "Yun-En Tsai",
+    "Yun-Ning Hung",
+    "Chih-Wei Wu",
+    "I-Chieh Wei",
+    "Li Su"
+  ],
+  "published": "2026-01-01T10:38:19Z",
+  "updated": "2026-01-01T10:38:19Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.00299",
+  "abs_url": "https://arxiv.org/abs/2601.00299",
+  "fetched_at": "2026-07-20T11:33:13.448817Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

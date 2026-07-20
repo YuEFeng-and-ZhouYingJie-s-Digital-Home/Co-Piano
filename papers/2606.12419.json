@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.12419",
+  "title": "GeoDial: A Multimodal Conversational Tutoring Dataset for Geometry Problem-Solving with Visual Tutor Turns",
+  "summary": "Several educational domains rely heavily on diagrams and visual cues, yet most existing tutoring datasets are limited to text-only interactions. This limits the development of AI tutors that can teach in visually grounded ways used by human instructors. Thus, we introduce GeoDial, a multimodal tutoring dataset of over 1.3K teacher-student dialogs in the domain of geometry collected from experienced math teachers, where instructional turns are explicitly grounded in diagram highlights. We propose a scalable annotation protocol that integrates dialog acts, visual highlighting, and feedback, enabling fine-grained supervision of both language and visual tutoring behavior. To illustrate the challenges posed by this setting, we fine-tune several vision-language models on GeoDial and evaluate their ability to generate tutoring utterances and diagram highlights. While supervised fine-tuning substantially improves the quality of generated dialog, it struggles to produce accurate diagram highlights, revealing a key limitation of current methods and highlighting the need for approaches that more effectively integrate visual reasoning with pedagogical interaction.",
+  "authors": [
+    "Sankalan Pal Chowdhury",
+    "Junling Wang",
+    "Donya Rooein",
+    "April Yi Wang",
+    "Mrinmaya Sachan"
+  ],
+  "published": "2026-05-08T10:54:32Z",
+  "updated": "2026-05-08T10:54:32Z",
+  "categories": [
+    "cs.CY",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.12419",
+  "abs_url": "https://arxiv.org/abs/2606.12419",
+  "fetched_at": "2026-07-20T11:33:13.449606Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

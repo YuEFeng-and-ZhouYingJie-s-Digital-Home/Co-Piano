@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2602.21877",
+  "title": "How to Take a Memorable Picture? Empowering Users with Actionable Feedback",
+  "summary": "Image memorability, i.e., how likely an image is to be remembered, has traditionally been studied in computer vision either as a passive prediction task, with models regressing a scalar score, or with generative methods altering the visual input to boost the image likelihood of being remembered. Yet, none of these paradigms supports users at capture time, when the crucial question is how to improve a photo memorability. We introduce the task of Memorability Feedback (MemFeed), where an automated model should provide actionable, human-interpretable guidance to users with the goal to enhance an image future recall. We also present MemCoach, the first approach designed to provide concrete suggestions in natural language for memorability improvement (e.g., \"emphasize facial expression,\" \"bring the subject forward\"). Our method, based on Multimodal Large Language Models (MLLMs), is training-free and employs a teacher-student steering strategy, aligning the model internal activations toward more memorable patterns learned from a teacher model progressing along least-to-most memorable samples. To enable systematic evaluation on this novel task, we further introduce MemBench, a new benchmark featuring sequence-aligned photoshoots with annotated memorability scores. Our experiments, considering multiple MLLMs, demonstrate the effectiveness of MemCoach, showing consistently improved performance over several zero-shot models. The results indicate that memorability can not only be predicted but also taught and instructed, shifting the focus from mere prediction to actionable feedback for human creators.",
+  "authors": [
+    "Francesco Laiti",
+    "Davide Talon",
+    "Jacopo Staiano",
+    "Elisa Ricci"
+  ],
+  "published": "2026-02-25T13:02:35Z",
+  "updated": "2026-03-19T15:10:18Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.21877",
+  "abs_url": "https://arxiv.org/abs/2602.21877",
+  "fetched_at": "2026-07-20T11:33:13.450384Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

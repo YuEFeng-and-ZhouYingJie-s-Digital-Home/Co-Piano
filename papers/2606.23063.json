@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2606.23063",
+  "title": "Attention-Spectrum Regularization for Replay-Free Continual Multimodal LLMs",
+  "summary": "Multimodal large language models (MLLMs) are increasingly required to adapt to non-stationary streams of visual domains, question types, and user instructions, yet continual fine-tuning often causes severe forgetting of previously acquired multimodal skills. Existing continual vision-language methods mainly preserve outputs, replay data or pseudo-data, regularize embedding geometry, or allocate task-specific parameters, but they provide limited control over how internal cross-modal attention patterns supporting old skills drift during adaptation. We propose Attention-Spectrum Regularization (ASR), a replay-free continual learning framework that preserves skill-conditioned structures of cross-modal attention. ASR treats cross-attention maps as two-dimensional signals, summarizes their scale and directional properties into compact spectral statistics, and stores only skill-wise prototype distributions instead of replaying past image-question pairs, generated pseudo-examples, or old-stage teacher snapshots. In later stages, a phase-invariant spectral regularizer constrains harmful drift of these prototypes while allowing instance-level attention to adapt to new tasks. We provide theoretical analysis showing that skill-conditioned spectral drift controls forgetting under a spectral sufficiency assumption, and that Fourier power spectra are stable to spatial translations and bounded perturbations. Experiments on continual VQA and multimodal instruction-tuning benchmarks, including VQA v2, VQACL, CLT-VQA, CoIN, and UCIT, show that ASR consistently improves final performance and reduces forgetting over strong replay-, regularization-, and adapter-based baselines. Preserving skill-level attention structure is an effective and lightweight mechanism for continual MLLMs. Code is available at https://github.com/Creative-zcx/attention-spectrum-replay",
+  "authors": [
+    "Chuangxin Zhao",
+    "Canran Xiao",
+    "Siyuan Ma",
+    "Mengyao Lyu",
+    "Yanbiao Ma",
+    "Jun Xia",
+    "Guiguang Ding",
+    "Yang Liu"
+  ],
+  "published": "2026-06-22T09:13:53Z",
+  "updated": "2026-06-22T09:13:53Z",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.23063",
+  "abs_url": "https://arxiv.org/abs/2606.23063",
+  "fetched_at": "2026-07-20T11:33:13.444715Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

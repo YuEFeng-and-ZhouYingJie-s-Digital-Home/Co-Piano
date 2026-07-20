@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2204.05649",
+  "title": "ADFF: Attention Based Deep Feature Fusion Approach for Music Emotion Recognition",
+  "summary": "Music emotion recognition (MER), a sub-task of music information retrieval (MIR), has developed rapidly in recent years. However, the learning of affect-salient features remains a challenge. In this paper, we propose an end-to-end attention-based deep feature fusion (ADFF) approach for MER. Only taking log Mel-spectrogram as input, this method uses adapted VGGNet as spatial feature learning module (SFLM) to obtain spatial features across different levels. Then, these features are fed into squeeze-and-excitation (SE) attention-based temporal feature learning module (TFLM) to get multi-level emotion-related spatial-temporal features (ESTFs), which can discriminate emotions well in the final emotion space. In addition, a novel data processing is devised to cut the single-channel input into multi-channel to improve calculative efficiency while ensuring the quality of MER. Experiments show that our proposed method achieves 10.43% and 4.82% relative improvement of valence and arousal respectively on the R2 score compared to the state-of-the-art model, meanwhile, performs better on datasets with distinct scales and in multi-task learning.",
+  "authors": [
+    "Zi Huang",
+    "Shulei Ji",
+    "Zhilan Hu",
+    "Chuangjian Cai",
+    "Jing Luo",
+    "Xinyu Yang"
+  ],
+  "published": "2022-04-12T09:15:48Z",
+  "updated": "2022-06-30T13:54:53Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2204.05649",
+  "abs_url": "https://arxiv.org/abs/2204.05649",
+  "fetched_at": "2026-07-20T14:22:43.728735Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

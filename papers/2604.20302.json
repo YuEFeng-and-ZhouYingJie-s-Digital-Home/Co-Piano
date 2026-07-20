@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2604.20302",
+  "title": "AktivTalk: Digitizing the Talk Test for Voice-Based Exercise Intensity Self-Assessment and Exploring Automated Classification from Speech",
+  "summary": "Monitoring exercise intensity is critical for safe and effective physical activity, particularly for individuals with cardiovascular disease, where overexertion can pose serious risks. Although physiological measures such as heart rate are widely used for avoiding overexertion, they can be unreliable in certain cases, such as when affected by medication or when wearables are worn too loosely. We introduce AktivTalk, a mobile prototype that digitizes the clinically validated Talk Test to support voice-based, in-the-moment self-assessment of exertion. In a within-subject study with 20 participants, we collected exertion-labeled voice samples and found that AktivTalk was rated as highly usable and preferred over conductor-guided assessment. We further explored automated exertion classification from Talk Test speech. Using MFCC-based features with class balancing and cross-validation, a lightweight neural classifier achieved up to 90% accuracy for detecting high vs.non-high exertion from Talk Test recordings. This work highlights the potential of structured voice interactions for accessible exertion assessment and motivates future passive exertion monitoring from speech.",
+  "authors": [
+    "Rania Islambouli",
+    "Laura Geiger",
+    "Daniela Wurhofer",
+    "Devender Kumar",
+    "Clemens Sauerwein",
+    "Jan David Smeddinck"
+  ],
+  "published": "2026-04-22T08:00:36Z",
+  "updated": "2026-04-22T08:00:36Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.20302",
+  "abs_url": "https://arxiv.org/abs/2604.20302",
+  "fetched_at": "2026-07-20T11:33:13.423364Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

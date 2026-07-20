@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2601.16150",
+  "title": "Pay (Cross) Attention to the Melody: Curriculum Masking for Single-Encoder Melodic Harmonization",
+  "summary": "Melodic harmonization, the task of generating harmonic accompaniments for a given melody, remains a central challenge in computational music generation. Recent single encoder transformer approaches have framed harmonization as a masked sequence modeling problem, but existing training curricula inspired by discrete diffusion often result in weak (cross) attention between melody and harmony. This leads to limited exploitation of melodic cues, particularly in out-of-domain contexts. In this work, we introduce a training curriculum, FF (full-to-full), which keeps all harmony tokens masked for several training steps before progressively unmasking entire sequences during training to strengthen melody-harmony interactions. We systematically evaluate this approach against prior curricula across multiple experimental axes, including temporal quantization (quarter vs. sixteenth note), bar-level vs. time-signature conditioning, melody representation (full range vs. pitch class), and inference-time unmasking strategies. Models are trained on the HookTheory dataset and evaluated both in-domain and on a curated collection of jazz standards, using a comprehensive set of metrics that assess chord progression structure, harmony-melody alignment, and rhythmic coherence. Results demonstrate that the proposed FF curriculum consistently outperforms baselines in nearly all metrics, with particularly strong gains in out-of-domain evaluations where harmonic adaptability to novel melodic queues is crucial. We further find that quarter-note quantization, intertwining of bar tokens, and pitch-class melody representations are advantageous in the FF setting. Our findings highlight the importance of training curricula in enabling effective melody conditioning and suggest that full-to-full unmasking offers a robust strategy for single encoder harmonization.",
+  "authors": [
+    "Maximos Kaliakatsos-Papakostas",
+    "Dimos Makris",
+    "Konstantinos Soiledis",
+    "Konstantinos-Theodoros Tsamis",
+    "Vassilis Katsouros",
+    "Emilios Cambouropoulos"
+  ],
+  "published": "2026-01-22T17:46:31Z",
+  "updated": "2026-01-22T17:46:31Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.16150",
+  "abs_url": "https://arxiv.org/abs/2601.16150",
+  "fetched_at": "2026-07-20T14:22:43.706140Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

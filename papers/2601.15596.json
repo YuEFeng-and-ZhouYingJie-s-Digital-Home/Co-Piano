@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2601.15596",
+  "title": "DeepASMR: LLM-Based Zero-Shot ASMR Speech Generation for Anyone of Any Voice",
+  "summary": "While modern Text-to-Speech (TTS) systems achieve high fidelity for read-style speech, they struggle to generate Autonomous Sensory Meridian Response (ASMR), a specialized, low-intensity speech style essential for relaxation. The inherent challenges include ASMR's subtle, often unvoiced characteristics and the demand for zero-shot speaker adaptation. In this paper, we introduce DeepASMR, the first framework designed for zero-shot ASMR generation. We demonstrate that a single short snippet of a speaker's ordinary, read-style speech is sufficient to synthesize high-fidelity ASMR in their voice, eliminating the need for whispered training data from the target speaker. Methodologically, we first identify that discrete speech tokens provide a soft factorization of ASMR style from speaker timbre. Leveraging this insight, we propose a two-stage pipeline incorporating a Large Language Model (LLM) for content-style encoding and a flow-matching acoustic decoder for timbre reconstruction. Furthermore, we contribute DeepASMR-DB, a comprehensive 670-hour English-Chinese multi-speaker ASMR speech corpus, and introduce a novel evaluation protocol integrating objective metrics, human listening tests, LLM-based scoring and unvoiced speech analysis. Extensive experiments confirm that DeepASMR achieves state-of-the-art naturalness and style fidelity in ASMR generation for anyone of any voice, while maintaining competitive performance on normal speech synthesis.",
+  "authors": [
+    "Leying Zhang",
+    "Tingxiao Zhou",
+    "Haiyang Sun",
+    "Mengxiao Bi",
+    "Yanmin Qian"
+  ],
+  "published": "2026-01-22T02:44:22Z",
+  "updated": "2026-01-22T02:44:22Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.15596",
+  "abs_url": "https://arxiv.org/abs/2601.15596",
+  "fetched_at": "2026-07-20T11:33:13.437443Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

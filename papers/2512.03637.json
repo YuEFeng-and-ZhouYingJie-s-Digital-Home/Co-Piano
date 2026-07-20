@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2512.03637",
+  "title": "AaSP: Aliasing-aware Self-Supervised Pre-Training for Audio Spectrogram Transformers",
+  "summary": "Transformer-based audio self-supervised learning (SSL) models commonly use spectrograms, vision-style Transformers, and masked modeling objectives. However, convolutional patchification with temporal downsampling lowers the effective Nyquist frequency and introduces aliasing, while naïve low-pass filtering may remove task-relevant high-frequency cues. We present AaSP, an aliasing-aware self-supervised pre-training framework for audio spectrogram transformers. AaSP combines an aliasing-aware patch representation, teacher-student masked modeling, a cross-attention predictor, and multi-mask contrastive regularization to learn representations that integrate features from alias-prone modulation bands while remaining stable across masked views. Its patch-embedding module, Aliasing-aware Patch Embedding (AaPE), augments standard patch tokens with features from alias-prone modulation bands using a band-limited complex sinusoidal kernel with a two-sided exponential window. The kernel's frequency and decay parameters are estimated from the input, enabling adaptive subband analysis whose outputs are fused with standard patch tokens. We pre-train on AudioSet and evaluate the learned representations by fine-tuning and linear evaluation on acoustic/environmental, speech, and music recognition benchmarks. Under fine-tuning, the full AaSP framework achieves state-of-the-art results on AS-20K, ESC-50, and NSynth among compared self-supervised baselines, while remaining competitive elsewhere. Linear evaluation shows a similar trend, including gains on US8K and NSynth. Overall, AaSP learns representations that are more stable under aliasing-sensitive temporal perturbations and competitive for downstream transfer.",
+  "authors": [
+    "Kohei Yamamoto",
+    "Kosuke Okusa"
+  ],
+  "published": "2025-12-03T10:17:35Z",
+  "updated": "2026-05-14T08:51:32Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG",
+    "stat.ML"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.03637",
+  "abs_url": "https://arxiv.org/abs/2512.03637",
+  "fetched_at": "2026-07-20T11:33:13.419477Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

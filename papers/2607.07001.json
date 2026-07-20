@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.07001",
+  "title": "Ego-Human Motion Prediction with 3D-Aware LLM",
+  "summary": "Anticipating human motion from an egocentric perspective is fundamental for proactive assistance in AR/VR, human-robot collaboration, and embodied AI. While recent works incorporate language as a semantic prior to reduce the ill-posed nature of egocentric forecasting, they largely neglect the 3D spatial and semantic context that governs how motion unfolds, and treat pose and language prediction as separate inference streams. We introduce Ego3DLM, built on two core principles: accurate motion forecasting requires explicit spatial and semantic understanding of the 3D environment, and pose and language must be predicted holistically in a single pass, since motion is inherently tied to the semantic interpretation of actions being performed. Given three-point tracking, 3D scene features, and egocentric video, Ego3DLM simultaneously decodes past pose, future pose, past narration, and future narration in a single autoregressive pass, grounding predicted poses and descriptions in one another to enforce cross-modal and temporal consistency. We adopt a three-stage training scheme: (1) spatial-semantic scene awareness pretraining; (2) holistic instruction tuning over all four outputs in a single pass; and (3) GRPO-based reinforcement finetuning with intra- and inter-modal rewards that directly optimize pose-language fidelity. Experiments on the Nymeria benchmark demonstrate that Ego3DLM achieves state-of-the-art performance across future motion prediction, past motion tracking, and motion description, showing that 3D scene grounding and holistic cross-modal prediction yield physically plausible and semantically coherent motion forecasts. The project page is available at https://jaewoo97.github.io/Ego3DLM/.",
+  "authors": [
+    "Yujin Bae",
+    "Jaewoo Jeong",
+    "Hyeonseong Kim",
+    "Kuk-Jin Yoon"
+  ],
+  "published": "2026-07-08T04:51:24Z",
+  "updated": "2026-07-08T04:51:24Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.07001",
+  "abs_url": "https://arxiv.org/abs/2607.07001",
+  "fetched_at": "2026-07-20T11:33:13.440421Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

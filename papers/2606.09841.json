@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2606.09841",
+  "title": "Human-Centered AI for Safe Shuttle Car Routing in Underground Room-and-Pillar Coal Mines Using Graph Neural Networks",
+  "summary": "Underground room-and-pillar coal mining requires shuttle car operators to make safety-critical routing decisions under conditions of low visibility, dynamic miner movement, congestion, and limited real-time information. This paper presents a human-centered AI decision-support system that recommends safe shuttle car routes using a Graph Neural Network (GNN) trained on expert-informed synthetic data and deployed through a browser-based interface backed by cloud inference services. Rather than making a purely model-centric contribution, the paper shows how interviews, participatory design, usability testing, interaction logs, and interpretability analysis shaped both the interface and the AI model. The resulting application evolved beyond route recommendation to include inline user feedback, blockage reporting, audio cues, and SHAP-based interpretability within a single interactive system. Evaluation across two usability sessions with six participants showed improved task completion, faster response times, fewer errors, higher usability scores, lower cognitive load, and stronger agreement with AI recommendations in the later version. The paper contributes a focused example of how human-centered design can transform an AI routing prototype into a more transparent, auditable, and safety-supportive decision-support system.",
+  "authors": [
+    "Bryant Pollard"
+  ],
+  "published": "2026-04-23T19:33:33Z",
+  "updated": "2026-04-23T19:33:33Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.09841",
+  "abs_url": "https://arxiv.org/abs/2606.09841",
+  "fetched_at": "2026-07-20T11:33:13.432870Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

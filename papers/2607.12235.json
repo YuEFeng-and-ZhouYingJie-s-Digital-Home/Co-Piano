@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.12235",
+  "title": "A Semi-Automated System for Generating Dialogue-Based TTS Lessons Using Large Language Models: An Exploratory Study of Educational Potential",
+  "summary": "This study proposes a semi-automated system for generating dialogue-based lessons using Large Language Models (LLMs) and Text-to-Speech (TTS) technology, and exploratorily examines its educational potential via a practical quasi-experiment. The system augments rather than replaces educators through a three-stage human-in-the-loop workflow (LLM-based slide/narration generation, educator review, automated audiovisual integration), and introduces a novel method for generating Expert-Novice dialogue narration based on cognitive apprenticeship theory. In a study of 245 first-year high school students who sequentially experienced three lesson formats (instructor voice, single-speaker TTS, dialogue TTS; content differed across sessions, limiting format/content separation), we conducted within-subject (Friedman test, N<=183) and repeated cross-sectional (Mann-Whitney U, N=229/206) analyses. TTS audio did not substantially degrade the learning experience versus instructor voice, supported by TOST equivalence testing. Dialogue TTS was significantly superior to single TTS in comprehension (p=.006, q=.025) and cognitive engagement (p=.019, q=.048); enjoyment was non-significant after FDR correction (q=.081) but reached significance after controlling for prior knowledge (proportional-odds model, OR=1.65, q=.025), and these advantages were not attributable to prior-knowledge imbalance. Conversely, single TTS was superior in audio naturalness (p<.001, q<.001, r=-.238), revealing a trade-off between dialogue's benefits and higher extraneous cognitive load. Dialogue format was preferred by 66.9% of learners as most enjoyable (p<.001). These results reflect a fixed-order design; replication is needed before generalizing them as effects of lesson format. This study provides a theoretical and empirical basis for the educational acceptability of TTS audio and for TTS lesson-format design.",
+  "authors": [
+    "Gendo Kumoi",
+    "Fumie Watanabe",
+    "Tota Suko",
+    "Takashi Ishida",
+    "Yuko Kuma",
+    "Manabu Kobayashi",
+    "Shigeichi Hirasawa"
+  ],
+  "published": "2026-07-14T00:35:41Z",
+  "updated": "2026-07-14T00:35:41Z",
+  "categories": [
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12235",
+  "abs_url": "https://arxiv.org/abs/2607.12235",
+  "fetched_at": "2026-07-20T11:33:13.420518Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

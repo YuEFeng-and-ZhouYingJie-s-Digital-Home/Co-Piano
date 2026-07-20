@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2607.15868",
+  "title": "EgoExoMoCap: Distributed Ego-Exo Human Motion Capture",
+  "summary": "Human motion capture from head-mounted devices (HMDs) offers a scalable way to acquire real-world human motion and interaction data, which is crucial for applications in embodied AI and VR/AR. Existing approaches focus on either egocentric body tracking, estimating the motion of the subject wearing the device, or exocentric tracking, capturing the movements of people in the wearer's surroundings. So far, these two paradigms have largely been explored in isolation. In this paper, we propose a novel distributed framework that jointly leverages ego- and exocentric multi-modal signals for human motion estimation from HMDs. Unlike traditional motion capture systems requiring bulky multi-camera setups or obtrusive mocap suits, our approach, EgoExoMoCap, is as simple as two (or more) people, each wearing a pair of smart glasses. The method leverages head (plus potentially wrist) tracking signals for accurate estimation of global motion in the 3D world and combines context-aware image features based on DINOv3 to achieve robustness in the presence of noise and occlusions. Extensive experiments on two in-the-wild datasets show that our approach can robustly reconstruct motion even in challenging scenarios.",
+  "authors": [
+    "Jiaxi Jiang",
+    "Bharat Lal Bhatnagar",
+    "Nan Yang",
+    "Lingni Ma",
+    "Sebastian Starke",
+    "Robin Kips",
+    "Nadine Bertsch",
+    "Christian Holz",
+    "Federica Bogo"
+  ],
+  "published": "2026-07-17T11:31:41Z",
+  "updated": "2026-07-17T11:31:41Z",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.GR",
+    "cs.HC",
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15868",
+  "abs_url": "https://arxiv.org/abs/2607.15868",
+  "fetched_at": "2026-07-20T11:33:13.438683Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.31916",
+  "title": "Theory of Mind and Persuasion Beyond Conversation: Assessing the Capacity of LLMs to Induce Belief States via Planning and Action",
+  "summary": "Theory of Mind (ToM) benchmarks for Large Language Models (LLMs) typically rely on passive question-answering formats, but the deployment of LLMs in increasingly agentic and autonomous forms demands new evaluations. In this paper we evaluate an agent's ability to induce specific belief states in other agents by taking actions rather than using conversational persuasion, a capability we call Non-Conversational Planning ToM (NCP-ToM). NCP-ToM is likely to be essential for many agent use-cases, including within user-assistant interactions and pedagogical contexts, but may also present manipulation or misinformation risks. Using a novel framework, NCP-ExploreToM, we subvert the conventional task structure by providing models with a set of belief state goals and requiring them to move objects or direct characters into rooms to achieve their goals. We evaluated six frontier models, including GPT-5, Gemini 2.5 Pro and the Claude 4 series, and a cohort of human participants, across 600 task instances. GPT-5 was successful on approximately 80% of tasks in the agentic setting, and was the only model to outperform human participants on our task, but was still less robust than humans across contexts. We additionally found that all models, like humans, performed better on tasks inducing true belief states than false belief states, which is a positive signal for alignment efforts. These findings highlight emerging social-reasoning capabilities in LLMs for non-conversational task completion and underscore the necessity of agentic evaluations for understanding the safety and alignment of autonomous social agents.",
+  "authors": [
+    "Ben Slater",
+    "Matteo G. Mecattaf",
+    "Lucy G. Cheke",
+    "John Burden",
+    "Winnie Street"
+  ],
+  "published": "2026-06-30T16:22:12Z",
+  "updated": "2026-06-30T16:22:12Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.31916",
+  "abs_url": "https://arxiv.org/abs/2606.31916",
+  "fetched_at": "2026-07-20T11:33:13.427851Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2511.20972",
+  "title": "SingingSDS: A Singing-Capable Spoken Dialogue System for Conversational Roleplay Applications",
+  "summary": "With recent advances in automatic speech recognition (ASR), large language models (LLMs), and text-to-speech (TTS) technologies, spoken dialogue systems (SDS) have become widely accessible. However, most existing SDS are limited to conventional spoken responses. We present SingingSDS, a cascaded SDS that responds through singing rather than speaking, fostering more affective, memorable, and pleasurable interactions in character-based roleplay and interactive entertainment scenarios. SingingSDS employs a modular ASR-LLM-SVS pipeline and supports a wide range of configurations across character personas, ASR and LLM backends, SVS models, melody sources, and voice profiles, tailored to different needs in terms of latency, quality, and musical style. SingingSDS is available as a plug-and-play web demo, featuring modular, open-source code that supports customization and extension. Demo: https://huggingface.co/spaces/espnet/SingingSDS. Code: https://github.com/SingingSDS/SingingSDS.",
+  "authors": [
+    "Jionghao Han",
+    "Jiatong Shi",
+    "Masao Someki",
+    "Yuxun Tang",
+    "Lan Liu",
+    "Yiwen Zhao",
+    "Wenhao Feng",
+    "Shinji Watanabe"
+  ],
+  "published": "2025-11-26T01:57:03Z",
+  "updated": "2025-12-24T01:19:11Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.20972",
+  "abs_url": "https://arxiv.org/abs/2511.20972",
+  "fetched_at": "2026-07-20T11:33:13.419687Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

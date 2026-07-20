@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2605.17860",
+  "title": "PAREDA: A Multi-Accent Speech Dataset of Natural Language Processing Research Discussions",
+  "summary": "While modern Automatic Speech Recognition (ASR) systems achieve high accuracy on benchmark corpora, their performance often degrades when there is real-world variability. This work focuses on variability arising due to accented, spontaneous, and domain-specific speech. In particular, we introduce PAper REading DAtaset (PAREDA), a first-of-its-kind multi-accent speech dataset consisting of discussions on academic Natural Language Processing (NLP) papers between speakers with Australian, Indian-English, and Chinese English accents. Each session elicits a spontaneous monologue (a summary of a paper's abstract) and a non-monologue (a question-and-answer session between participants), resulting in a corpus rich with technical jargon and conversational phenomena. We evaluate the performance of SOTA ASR models on PAREDA, analysing the impact of accent mixing and increased speech rate. Our results show that, in the zero-shot setting, models perform worse, confirming the dataset's challenging nature. However, fine-tuning on PAREDA significantly reduces the Word Error Rate (WER), demonstrating that our dataset captures linguistic characteristics often missing from existing corpora. PAREDA serves as a valuable new resource for building and evaluating more robust and inclusive ASR systems for specialised, real-world applications.",
+  "authors": [
+    "Sicheng Jin",
+    "Dipankar Srirag",
+    "Aditya Joshi"
+  ],
+  "published": "2026-05-18T05:10:26Z",
+  "updated": "2026-05-18T05:10:26Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.17860",
+  "abs_url": "https://arxiv.org/abs/2605.17860",
+  "fetched_at": "2026-07-20T11:33:13.443387Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

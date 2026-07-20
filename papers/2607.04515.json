@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.04515",
+  "title": "Towards Digital Preservation of Efik: TTS for a Low-Resource African Language",
+  "summary": "Efik, a tonal language spoken by about 3 million second language speakers and 1.5 million native speakers in Southeastern Nigeria, remains underrepresented in speech synthesis research. We present the first documented end-to-end text-to-speech study for Efik, introducing a curated single speaker corpus of 2,632 utterances totaling three hours and a comparative evaluation of four neural models (VITS, MMS-TTS, SpeechT5, and Orpheus-TTS) under low resource conditions. Native speakers evaluated the systems using MOS, Nat-MOS, and A-MOS. MMS-TTS achieved the highest MOS of 3.80 +/- 0.63 and produced more stable long form speech, though tonal errors persisted. Other models showed greater tonal and prosodic inconsistencies. These results provide a reproducible baseline and highlight the need for larger corpora and tone aware modeling for tonal African languages.",
+  "authors": [
+    "Offiong Bassey Edet",
+    "Emmanuel Oyo-Ita",
+    "Archibong Okon Archibong",
+    "David Effanga Bassey",
+    "Mbuotidem Sunday Awak"
+  ],
+  "published": "2026-07-05T21:37:15Z",
+  "updated": "2026-07-05T21:37:15Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.04515",
+  "abs_url": "https://arxiv.org/abs/2607.04515",
+  "fetched_at": "2026-07-20T11:33:13.421637Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

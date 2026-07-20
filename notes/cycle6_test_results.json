@@ -1,0 +1,896 @@
+{
+  "pass": 178,
+  "fail": 0,
+  "tests": [
+    {
+      "name": "has_4_difficulties",
+      "pass": true,
+      "detail": "keys: ['beginner', 'elementary', 'intermediate', 'advanced']"
+    },
+    {
+      "name": "level_beginner_complete",
+      "pass": true,
+      "detail": "all 7 fields present"
+    },
+    {
+      "name": "level_elementary_complete",
+      "pass": true,
+      "detail": "all 7 fields present"
+    },
+    {
+      "name": "level_intermediate_complete",
+      "pass": true,
+      "detail": "all 7 fields present"
+    },
+    {
+      "name": "level_advanced_complete",
+      "pass": true,
+      "detail": "all 7 fields present"
+    },
+    {
+      "name": "octave_range_monotonic",
+      "pass": true,
+      "detail": "ranges: [(4, 5), (3, 5), (3, 6), (3, 6)]"
+    },
+    {
+      "name": "bpm_monotonic_increase",
+      "pass": true,
+      "detail": "bpms: [40, 60, 80, 100]"
+    },
+    {
+      "name": "promote_threshold_strict",
+      "pass": true,
+      "detail": "promotes: [0.8, 0.85, 0.9, 0.95]"
+    },
+    {
+      "name": "pitch_to_name_60",
+      "pass": true,
+      "detail": "60 → C4 (expect C4)"
+    },
+    {
+      "name": "name_to_pitch_C4",
+      "pass": true,
+      "detail": "C4 → 60 (expect 60)"
+    },
+    {
+      "name": "pitch_to_name_62",
+      "pass": true,
+      "detail": "62 → D4 (expect D4)"
+    },
+    {
+      "name": "name_to_pitch_D4",
+      "pass": true,
+      "detail": "D4 → 62 (expect 62)"
+    },
+    {
+      "name": "pitch_to_name_64",
+      "pass": true,
+      "detail": "64 → E4 (expect E4)"
+    },
+    {
+      "name": "name_to_pitch_E4",
+      "pass": true,
+      "detail": "E4 → 64 (expect 64)"
+    },
+    {
+      "name": "pitch_to_name_65",
+      "pass": true,
+      "detail": "65 → F4 (expect F4)"
+    },
+    {
+      "name": "name_to_pitch_F4",
+      "pass": true,
+      "detail": "F4 → 65 (expect 65)"
+    },
+    {
+      "name": "pitch_to_name_67",
+      "pass": true,
+      "detail": "67 → G4 (expect G4)"
+    },
+    {
+      "name": "name_to_pitch_G4",
+      "pass": true,
+      "detail": "G4 → 67 (expect 67)"
+    },
+    {
+      "name": "pitch_to_name_69",
+      "pass": true,
+      "detail": "69 → A4 (expect A4)"
+    },
+    {
+      "name": "name_to_pitch_A4",
+      "pass": true,
+      "detail": "A4 → 69 (expect 69)"
+    },
+    {
+      "name": "pitch_to_name_71",
+      "pass": true,
+      "detail": "71 → B4 (expect B4)"
+    },
+    {
+      "name": "name_to_pitch_B4",
+      "pass": true,
+      "detail": "B4 → 71 (expect 71)"
+    },
+    {
+      "name": "pitch_to_name_72",
+      "pass": true,
+      "detail": "72 → C5 (expect C5)"
+    },
+    {
+      "name": "name_to_pitch_C5",
+      "pass": true,
+      "detail": "C5 → 72 (expect 72)"
+    },
+    {
+      "name": "pitch_to_name_48",
+      "pass": true,
+      "detail": "48 → C3 (expect C3)"
+    },
+    {
+      "name": "name_to_pitch_C3",
+      "pass": true,
+      "detail": "C3 → 48 (expect 48)"
+    },
+    {
+      "name": "pitch_to_name_84",
+      "pass": true,
+      "detail": "84 → C6 (expect C6)"
+    },
+    {
+      "name": "name_to_pitch_C6",
+      "pass": true,
+      "detail": "C6 → 84 (expect 84)"
+    },
+    {
+      "name": "F#4_works",
+      "pass": true,
+      "detail": "F#4 → 66"
+    },
+    {
+      "name": "Bb4_works",
+      "pass": true,
+      "detail": "Bb4 → 70"
+    },
+    {
+      "name": "C#5_works",
+      "pass": true,
+      "detail": "C#5 → 73"
+    },
+    {
+      "name": "key_1",
+      "pass": true,
+      "detail": "'1' → 60 (expect 60)"
+    },
+    {
+      "name": "key_2",
+      "pass": true,
+      "detail": "'2' → 62 (expect 62)"
+    },
+    {
+      "name": "key_3",
+      "pass": true,
+      "detail": "'3' → 64 (expect 64)"
+    },
+    {
+      "name": "key_4",
+      "pass": true,
+      "detail": "'4' → 65 (expect 65)"
+    },
+    {
+      "name": "key_5",
+      "pass": true,
+      "detail": "'5' → 67 (expect 67)"
+    },
+    {
+      "name": "key_6",
+      "pass": true,
+      "detail": "'6' → 69 (expect 69)"
+    },
+    {
+      "name": "key_7",
+      "pass": true,
+      "detail": "'7' → 71 (expect 71)"
+    },
+    {
+      "name": "key_q_high",
+      "pass": true,
+      "detail": "'q' → 72 (expect 72)"
+    },
+    {
+      "name": "key_w_high",
+      "pass": true,
+      "detail": "'w' → 74 (expect 74)"
+    },
+    {
+      "name": "key_e_high",
+      "pass": true,
+      "detail": "'e' → 76 (expect 76)"
+    },
+    {
+      "name": "key_r_high",
+      "pass": true,
+      "detail": "'r' → 77 (expect 77)"
+    },
+    {
+      "name": "key_t_high",
+      "pass": true,
+      "detail": "'t' → 79 (expect 79)"
+    },
+    {
+      "name": "key_y_high",
+      "pass": true,
+      "detail": "'y' → 81 (expect 81)"
+    },
+    {
+      "name": "key_u_high",
+      "pass": true,
+      "detail": "'u' → 83 (expect 83)"
+    },
+    {
+      "name": "uppercase_key",
+      "pass": true,
+      "detail": "'Q' → 72"
+    },
+    {
+      "name": "invalid_key_returns_neg",
+      "pass": true,
+      "detail": "'!' → -1"
+    },
+    {
+      "name": "x_maps_to_D3",
+      "pass": true,
+      "detail": "'x' → 50 (D3)"
+    },
+    {
+      "name": "method_landmark_beginner",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_landmark_beginner_range",
+      "pass": true,
+      "detail": "all in [60,83]: min=60 max=72"
+    },
+    {
+      "name": "method_landmark_elementary",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_landmark_elementary_range",
+      "pass": true,
+      "detail": "all in [48,83]: min=58 max=72"
+    },
+    {
+      "name": "method_landmark_intermediate",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_landmark_intermediate_range",
+      "pass": true,
+      "detail": "all in [48,95]: min=58 max=72"
+    },
+    {
+      "name": "method_landmark_advanced",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_landmark_advanced_range",
+      "pass": true,
+      "detail": "all in [48,95]: min=58 max=72"
+    },
+    {
+      "name": "method_interval_beginner",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_interval_beginner_range",
+      "pass": true,
+      "detail": "all in [60,83]: min=60 max=62"
+    },
+    {
+      "name": "method_interval_elementary",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_interval_elementary_range",
+      "pass": true,
+      "detail": "all in [48,83]: min=48 max=60"
+    },
+    {
+      "name": "method_interval_intermediate",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_interval_intermediate_range",
+      "pass": true,
+      "detail": "all in [48,95]: min=48 max=68"
+    },
+    {
+      "name": "method_interval_advanced",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_interval_advanced_range",
+      "pass": true,
+      "detail": "all in [48,95]: min=48 max=68"
+    },
+    {
+      "name": "method_pattern_beginner",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_pattern_beginner_range",
+      "pass": true,
+      "detail": "all in [60,83]: min=60 max=67"
+    },
+    {
+      "name": "method_pattern_elementary",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_pattern_elementary_range",
+      "pass": true,
+      "detail": "all in [48,83]: min=60 max=67"
+    },
+    {
+      "name": "method_pattern_intermediate",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_pattern_intermediate_range",
+      "pass": true,
+      "detail": "all in [48,95]: min=60 max=67"
+    },
+    {
+      "name": "method_pattern_advanced",
+      "pass": true,
+      "detail": "len=10 all_Notes=True"
+    },
+    {
+      "name": "method_pattern_advanced_range",
+      "pass": true,
+      "detail": "all in [48,95]: min=67 max=74"
+    },
+    {
+      "name": "piece_bach_contrapunctus_loaded",
+      "pass": true,
+      "detail": "len=24"
+    },
+    {
+      "name": "piece_bach_contrapunctus_first_note",
+      "pass": true,
+      "detail": "first: G4"
+    },
+    {
+      "name": "piece_mozart_k545_loaded",
+      "pass": true,
+      "detail": "len=22"
+    },
+    {
+      "name": "piece_mozart_k545_first_note",
+      "pass": true,
+      "detail": "first: C5"
+    },
+    {
+      "name": "piece_chopin_nocturne_loaded",
+      "pass": true,
+      "detail": "len=24"
+    },
+    {
+      "name": "piece_chopin_nocturne_first_note",
+      "pass": true,
+      "detail": "first: A#4"
+    },
+    {
+      "name": "accuracy_calc",
+      "pass": true,
+      "detail": "acc=0.8"
+    },
+    {
+      "name": "duration_calc",
+      "pass": true,
+      "detail": "duration=60.0s"
+    },
+    {
+      "name": "notes_per_minute",
+      "pass": true,
+      "detail": "npm=10.0"
+    },
+    {
+      "name": "to_dict_has_accuracy",
+      "pass": true,
+      "detail": "keys: ['total', 'correct', 'streak', 'best_streak', 'start_time', 'end_time']..."
+    },
+    {
+      "name": "generate_beginner_random",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_beginner_random",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_beginner_random",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_beginner_interval",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_beginner_interval",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_beginner_interval",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_beginner_piece",
+      "pass": true,
+      "detail": "seq_len=24"
+    },
+    {
+      "name": "perfect_beginner_piece",
+      "pass": true,
+      "detail": "acc=100% total=24/24 streak=24"
+    },
+    {
+      "name": "promote_beginner_piece",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_elementary_random",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_elementary_random",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_elementary_random",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_elementary_interval",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_elementary_interval",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_elementary_interval",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_elementary_piece",
+      "pass": true,
+      "detail": "seq_len=24"
+    },
+    {
+      "name": "perfect_elementary_piece",
+      "pass": true,
+      "detail": "acc=100% total=24/24 streak=24"
+    },
+    {
+      "name": "promote_elementary_piece",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_intermediate_random",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_intermediate_random",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_intermediate_random",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_intermediate_interval",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_intermediate_interval",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_intermediate_interval",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_intermediate_piece",
+      "pass": true,
+      "detail": "seq_len=24"
+    },
+    {
+      "name": "perfect_intermediate_piece",
+      "pass": true,
+      "detail": "acc=100% total=24/24 streak=24"
+    },
+    {
+      "name": "promote_intermediate_piece",
+      "pass": true,
+      "detail": "promote=True expected=True"
+    },
+    {
+      "name": "generate_advanced_random",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_advanced_random",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_advanced_random",
+      "pass": true,
+      "detail": "promote=False expected=False"
+    },
+    {
+      "name": "generate_advanced_interval",
+      "pass": true,
+      "detail": "seq_len=8"
+    },
+    {
+      "name": "perfect_advanced_interval",
+      "pass": true,
+      "detail": "acc=100% total=8/8 streak=8"
+    },
+    {
+      "name": "promote_advanced_interval",
+      "pass": true,
+      "detail": "promote=False expected=False"
+    },
+    {
+      "name": "generate_advanced_piece",
+      "pass": true,
+      "detail": "seq_len=24"
+    },
+    {
+      "name": "perfect_advanced_piece",
+      "pass": true,
+      "detail": "acc=100% total=24/24 streak=24"
+    },
+    {
+      "name": "promote_advanced_piece",
+      "pass": true,
+      "detail": "promote=False expected=False"
+    },
+    {
+      "name": "streak_after_2_correct",
+      "pass": true,
+      "detail": "streak=2"
+    },
+    {
+      "name": "streak_reset_on_wrong",
+      "pass": true,
+      "detail": "streak=0"
+    },
+    {
+      "name": "error_recorded",
+      "pass": true,
+      "detail": "errors=1"
+    },
+    {
+      "name": "streak_recover",
+      "pass": true,
+      "detail": "streak=1"
+    },
+    {
+      "name": "input_midi_int",
+      "pass": true,
+      "detail": "correct=1"
+    },
+    {
+      "name": "input_keyboard_str",
+      "pass": true,
+      "detail": "key='1' (C4) correct=1"
+    },
+    {
+      "name": "keyboard_out_of_range",
+      "pass": true,
+      "detail": "D#4 vs key '1' (C4): correct=False"
+    },
+    {
+      "name": "input_note_name",
+      "pass": true,
+      "detail": "name='D#4' correct=1"
+    },
+    {
+      "name": "has_6_tips",
+      "pass": true,
+      "detail": "tips: 9"
+    },
+    {
+      "name": "has_tip_wrong_pitch",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_wrong_octave",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_rhythm",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_streak_break",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_promote",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_demote",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_beginner_hint",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_interval_hint",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "has_tip_pattern_hint",
+      "pass": true,
+      "detail": "tip exists"
+    },
+    {
+      "name": "promote_feedback_has_next",
+      "pass": true,
+      "detail": "fb: 本难度准确率达 90%,可以升到 elementary 啦!"
+    },
+    {
+      "name": "demote_feedback_has_threshold",
+      "pass": true,
+      "detail": "fb2: 准确率 90% < 80%,建议再练 2 次本难度。"
+    },
+    {
+      "name": "octave_feedback",
+      "pass": true,
+      "detail": "fb3: 音高对了,但八度错了。应该是 C4 而不是 C5。注意上下加线。"
+    },
+    {
+      "name": "kw_on_识谱训练",
+      "pass": true,
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+    },
+    {
+      "name": "kw_off_识谱训练",
+      "pass": true,
+      "detail": "active=False"
+    },
+    {
+      "name": "kw_on_练视奏",
+      "pass": true,
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+    },
+    {
+      "name": "kw_off_练视奏",
+      "pass": true,
+      "detail": "active=False"
+    },
+    {
+      "name": "kw_on_识谱",
+      "pass": true,
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+    },
+    {
+      "name": "kw_off_识谱",
+      "pass": true,
+      "detail": "active=False"
+    },
+    {
+      "name": "kw_on_sight reading",
+      "pass": true,
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+    },
+    {
+      "name": "kw_off_sight reading",
+      "pass": true,
+      "detail": "active=False"
+    },
+    {
+      "name": "kw_on_看谱",
+      "pass": true,
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+    },
+    {
+      "name": "kw_off_看谱",
+      "pass": true,
+      "detail": "active=False"
+    },
+    {
+      "name": "switch_to_elementary",
+      "pass": true,
+      "detail": "diff: elementary"
+    },
+    {
+      "name": "switch_to_advanced",
+      "pass": true,
+      "detail": "diff: advanced"
+    },
+    {
+      "name": "default_beginner",
+      "pass": true,
+      "detail": "diff: beginner"
+    },
+    {
+      "name": "voice_no_recursion_on",
+      "pass": true,
+      "detail": "got: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+    },
+    {
+      "name": "voice_falls_to_llm",
+      "pass": true,
+      "detail": "llm_call_count=1"
+    },
+    {
+      "name": "perfect_promote_beginner",
+      "pass": true,
+      "detail": "acc=100% >= 80%"
+    },
+    {
+      "name": "perfect_promote_elementary",
+      "pass": true,
+      "detail": "acc=100% >= 85%"
+    },
+    {
+      "name": "perfect_promote_intermediate",
+      "pass": true,
+      "detail": "acc=100% >= 90%"
+    },
+    {
+      "name": "max_level_advanced",
+      "pass": true,
+      "detail": "advanced: 不能再升"
+    },
+    {
+      "name": "single_session_speed",
+      "pass": true,
+      "detail": "0.0ms per session"
+    },
+    {
+      "name": "invalid_difficulty_raises",
+      "pass": true,
+      "detail": "ValueError raised"
+    },
+    {
+      "name": "invalid_mode_raises",
+      "pass": true,
+      "detail": "ValueError raised"
+    },
+    {
+      "name": "finish_after_complete",
+      "pass": true,
+      "detail": "end_time set: True"
+    },
+    {
+      "name": "invalid_answer_returns_false",
+      "pass": true,
+      "detail": "returned: False"
+    },
+    {
+      "name": "progress_has_current",
+      "pass": true,
+      "detail": "current: 0"
+    },
+    {
+      "name": "progress_has_total",
+      "pass": true,
+      "detail": "total: 10"
+    },
+    {
+      "name": "progress_has_current_note",
+      "pass": true,
+      "detail": "note: D#4"
+    },
+    {
+      "name": "progress_updates",
+      "pass": true,
+      "detail": "after 1 right: 1"
+    },
+    {
+      "name": "staff_not_empty",
+      "pass": true,
+      "detail": "len=42 chars"
+    },
+    {
+      "name": "summary_has_required_keys",
+      "pass": true,
+      "detail": "keys: ['date', 'kind', 'difficulty', 'mode', 'piece', 'note_count', 'correct', 'accuracy', 'best_streak', 'duration_sec', 'notes_per_minute', 'errors']"
+    },
+    {
+      "name": "summary_difficulty_correct",
+      "pass": true,
+      "detail": "diff: beginner"
+    },
+    {
+      "name": "summary_piece_correct",
+      "pass": true,
+      "detail": "piece: test_piece"
+    },
+    {
+      "name": "default_seed_deterministic",
+      "pass": true,
+      "detail": "seq1=['A4', 'G4', 'C4', 'D#4', 'C4'] seq2=['A4', 'G4', 'C4', 'D#4', 'C4']"
+    },
+    {
+      "name": "explicit_seed_deterministic",
+      "pass": true,
+      "detail": "seq3==seq4: True"
+    },
+    {
+      "name": "landmark_ratio",
+      "pass": true,
+      "detail": "ratio=76% (76/100)"
+    },
+    {
+      "name": "data_beginner_in_range",
+      "pass": true,
+      "detail": "min=60 max=74 expected=[60,83]"
+    },
+    {
+      "name": "data_elementary_in_range",
+      "pass": true,
+      "detail": "min=58 max=74 expected=[48,83]"
+    },
+    {
+      "name": "data_intermediate_in_range",
+      "pass": true,
+      "detail": "min=58 max=74 expected=[48,95]"
+    },
+    {
+      "name": "data_advanced_in_range",
+      "pass": true,
+      "detail": "min=58 max=74 expected=[48,95]"
+    }
+  ]
+}

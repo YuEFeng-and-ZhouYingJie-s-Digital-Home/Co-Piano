@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.03003",
+  "title": "psytechlab at CLPsych 2026: Utilising Natural Language Processing methods and Large Language Models for Social Media Text Analysis",
+  "summary": "Social media posts are a rich and valuable source of data for analyzing mental health states and users' well-being using automated analysis tools. In this work, we demonstrate how we used a range of Natural Language Processing (NLP) methods, including Long Short-Term Memory (LSTM), BERT-based models, and Large Language Models (LLMs), for self-state and well-being analysis and summarization during the CLPsych Shared Task 2026. Our approach achieved one of the top Consistency and Contradiction scores for the summarization task and also middle-level results for the other tasks. By testing and developing such mental health-state estimation systems, we contributed to improving mental health support systems. We make our code available https://github.com/psytechlab/CLPsych2026/.",
+  "authors": [
+    "Igor Buyanov",
+    "Nafisa Valieva",
+    "Ekaterina Mazurina"
+  ],
+  "published": "2026-07-03T06:37:57Z",
+  "updated": "2026-07-03T06:37:57Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.03003",
+  "abs_url": "https://arxiv.org/abs/2607.03003",
+  "fetched_at": "2026-07-20T11:33:13.441439Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.15866",
+  "title": "Breakdowns for Human-Machine Creative Reflexivity",
+  "summary": "Generative AI (GenAI) works via goal-directed computation, which differs fundamentally from human creative processes. This poses challenges for the intelligent support of creative experiences. We propose ``breakdowns'' as opportunities for the exchange of perspectives between human and machine. Breakdowns disrupt a flow and force us to consciously evaluate our ``being-in-the-world''. Between human and machine, breakdowns can function as openings for collaborative creative reflection. We are currently studying human-human creative interactions, to identify the markers of these inter-subjective openings, and to understand how they are used in a co-creative process. We present preliminary findings on breakdowns as a design principle for creativity support, prioritising human creative agency and meaningful reflection over automated content generation.",
+  "authors": [
+    "Marianne Bossema",
+    "Somaya Ben Allouch",
+    "Rob Saunders"
+  ],
+  "published": "2026-07-17T11:25:45Z",
+  "updated": "2026-07-17T11:25:45Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15866",
+  "abs_url": "https://arxiv.org/abs/2607.15866",
+  "fetched_at": "2026-07-20T14:22:43.714370Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

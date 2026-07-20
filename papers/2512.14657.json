@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2512.14657",
+  "title": "Adapting Speech Language Model to Singing Voice Synthesis",
+  "summary": "Speech Language Models (SLMs) have recently emerged as a unified paradigm for addressing a wide range of speech-related tasks, including text-to-speech (TTS), speech enhancement (SE), and automatic speech recognition (ASR). However, the generalization capability of large-scale pre-trained SLMs remains underexplored. In this work, we adapt a 1.7B parameter TTS pretrained SLM for singing voice synthesis (SVS), using only a 135-hour synthetic singing corpus, ACE-Opencpop. Building upon the ESPNet-SpeechLM, our recipe involves the following procedure: (1) tokenization of music score conditions and singing waveforms, (2) multi-stream language model token prediction, (3) conditional flow matching-based mel-spectrogram generation. (4) a mel-to-wave vocoder. Experimental results demonstrate that our adapted SLM generalizes well to SVS and achieves performance comparable to leading discrete token-based SVS models.",
+  "authors": [
+    "Yiwen Zhao",
+    "Jiatong Shi",
+    "Jinchuan Tian",
+    "Yuxun Tang",
+    "Jiarui Hai",
+    "Jionghao Han",
+    "Shinji Watanabe"
+  ],
+  "published": "2025-12-16T18:17:34Z",
+  "updated": "2025-12-16T18:17:34Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.14657",
+  "abs_url": "https://arxiv.org/abs/2512.14657",
+  "fetched_at": "2026-07-20T11:33:13.419234Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

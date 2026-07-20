@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.30662",
+  "title": "ELEVATE: Designing Human-Centered GenAI Virtual Tutors for Scalable and Inclusive Education",
+  "summary": "The advent of Generative Artificial Intelligence (GenAI), and in particular Large Language Models (LLMs), is reshaping educational practice, while intensifying ethical debate about its adoption. To date, the dominant paradigm remains cloud-based and text-only chatbot: a centralized service that offers limited pedagogical control, weak transparency over knowledge sources, and non-trivial risks for privacy and regulatory compliance. This model also presumes continuous connectivity and recurring API costs, creating structural barriers for many institutions, reinforcing existing digital divides. At the same time, educational interaction with LLM can benefit from multimodal cues and embodied presence, requiring interfaces that move beyond text-only tutoring. In this work, we propose ELEVATE (Efficient LLM Education with Virtual Avatar Teaching Engine), a framework to develop efficient GenAI-driven avatar tutors governed by epistemic infrastructures. ELEVATE integrates LLM-driven dialogue with embodied 3D avatars for multimodal interaction and adopts a local-first execution model enabling deployment on consumer-grade hardware. The framework formalizes a three-stratum design that separates (i) a student-facing virtual avatar interaction layer, (ii) a local GenAI execution and multimodal synthesis core, and (iii) a teacher-facing governance layer. We implemented and evaluated a working prototype deployed in a real-world educational curriculum. The system runs on standard PCs and smartphones, and we provide system-level performance evidence to show responsive interaction under realistic hardware constraints. Finally, we discuss sociotechnical and pedagogical implications for responsible adoption, positioning ELEVATE as a scalable pathway for privacy-preserving and inclusive GenAI tutoring across heterogeneous school environments.",
+  "authors": [
+    "Lorenzo Stacchio",
+    "Michele Giordano",
+    "Daniele Berardini",
+    "Primo Zingaretti",
+    "Emanuele Frontoni"
+  ],
+  "published": "2026-06-17T07:01:20Z",
+  "updated": "2026-06-17T07:01:20Z",
+  "categories": [
+    "cs.CY",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.30662",
+  "abs_url": "https://arxiv.org/abs/2606.30662",
+  "fetched_at": "2026-07-20T11:33:13.426262Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

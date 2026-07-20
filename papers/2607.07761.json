@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2607.07761",
+  "title": "Aligning Clinical Needs and AI Capabilities: A Survey on LLMs for Medical Reasoning",
+  "summary": "Large language models (LLMs) have emerged as important tools in healthcare, showing growing potential for clinical reasoning and patient care. This survey examines recent progress in medical LLMs, focusing on reasoning applications and requirements. We present a dual-view approach that connects clinical practice with computational methods. On the clinical side, we establish a five-level competency scheme following Miller's Pyramid, progressing from knowledge recall to dynamic case management. On the computational side, we link deductive, inductive, and abductive reasoning patterns to common medical goals and tasks. We also introduce a benchmark dataset spanning five levels of medical reasoning capability and report results on 18 state-of-the-art models, revealing that medical specialist models excel in diagnosis-centric tasks while general models lead in decision support and dialogue. We conclude by discussing current progress and open challenges, including data limitations, hallucination, and grounding issues, and outline directions toward safer, more reliable, and workflow-ready systems.",
+  "authors": [
+    "Qi Peng",
+    "Jiatong Li",
+    "Sirui Huang",
+    "Yiyang Jiang",
+    "Kaisong Gong",
+    "Ronger Ding",
+    "Shijie Ye",
+    "Changmeng Zheng",
+    "Yi Cai",
+    "Xiaobo Yang",
+    "Jin Huang",
+    "Xiao-Yong Wei",
+    "Qing Li"
+  ],
+  "published": "2026-07-08T15:19:37Z",
+  "updated": "2026-07-08T15:19:37Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.07761",
+  "abs_url": "https://arxiv.org/abs/2607.07761",
+  "fetched_at": "2026-07-20T11:33:13.433952Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

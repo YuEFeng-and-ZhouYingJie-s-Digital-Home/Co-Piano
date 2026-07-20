@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2602.01313",
+  "title": "Evaluating Long-Horizon Memory for Multi-Party Collaborative Dialogues",
+  "summary": "Long-term conversational memory in practical LLM applications is inherently collaborative: information is produced by multiple participants, scattered across groups and channels, revised over time, and implicitly grounded in roles and social context. Yet there is currently no established benchmark that evaluates memory under interaction patterns resembling real-world deployment, as existing benchmarks largely focus on dyadic or single-topic dialogues. In this paper, we introduce EverMemBench, the first benchmark designed for long-horizon collaborative memory, built from multi-party, multi-group conversations spanning over one million tokens with dense cross-topic interleaving, temporally evolving decisions, and role-conditioned personas. EverMemBench evaluates memory systems using 2400 QA pairs across three dimensions essential for real applications: fine-grained recall, memory awareness, and user profile understanding. Our evaluation reveals fundamental limitations of current systems: multi-hop reasoning collapses under multi-party attribution even with oracle evidence (26% accuracy), temporal reasoning fails without explicit version semantics beyond timestamps, and memory awareness is bottlenecked by retrieval, as similarity-based methods miss implicitly relevant information. EverMemBench thus represents a concrete step toward realistic evaluation of LLM memory and a cornerstone benchmark for developing next-generation LLMs that reason over time, roles, and collaborative interaction structure. Our benchmark and code are publicly available at https://github.com/EverMind-AI/EverMemBench.",
+  "authors": [
+    "Chuanrui Hu",
+    "Tong Li",
+    "Xingze Gao",
+    "Hongda Chen",
+    "Yi Bai",
+    "Dannong Xu",
+    "Tianwei Lin",
+    "Xiaohong Li",
+    "Yunyun Han",
+    "Jian Pei",
+    "Yafeng Deng"
+  ],
+  "published": "2026-02-01T16:13:08Z",
+  "updated": "2026-03-11T14:38:53Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.01313",
+  "abs_url": "https://arxiv.org/abs/2602.01313",
+  "fetched_at": "2026-07-20T14:22:43.720686Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2508.08216",
+  "title": "Cross-Subject and Cross-Montage EEG Transfer Learning via Individual Tangent Space Alignment and Spatial-Riemannian Feature Fusion",
+  "summary": "Personalised music-based interventions offer a powerful means of supporting motor rehabilitation by dynamically tailoring auditory stimuli to provide external timekeeping cues, modulate affective states, and stabilise gait patterns. Generalisable Brain-Computer Interfaces (BCIs) thus hold promise for adapting these interventions across individuals. However, inter-subject variability in EEG signals, further compounded by movement-induced artefacts and motor planning differences, hinders the generalisability of BCIs and results in lengthy calibration processes. We propose Individual Tangent Space Alignment (ITSA), a novel pre-alignment strategy incorporating subject-specific recentering, distribution matching, and supervised rotational alignment to enhance cross-subject generalisation. Our hybrid architecture fuses Regularised Common Spatial Patterns (RCSP) with Riemannian geometry in parallel and sequential configurations, improving class separability while maintaining the geometric structure of covariance matrices for robust statistical computation. Using leave-one-subject-out cross-validation, `ITSA' demonstrates significant performance improvements across subjects and conditions. The parallel fusion approach shows the greatest enhancement over its sequential counterpart, with robust performance maintained across varying data conditions and electrode configurations. The code will be made publicly available at the time of publication.",
+  "authors": [
+    "Nicole Lai-Tan",
+    "Xiao Gu",
+    "Marios G. Philiastides",
+    "Fani Deligianni"
+  ],
+  "published": "2025-08-11T17:37:17Z",
+  "updated": "2025-08-11T17:37:17Z",
+  "categories": [
+    "cs.LG",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.08216",
+  "abs_url": "https://arxiv.org/abs/2508.08216",
+  "fetched_at": "2026-07-20T11:33:13.435881Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

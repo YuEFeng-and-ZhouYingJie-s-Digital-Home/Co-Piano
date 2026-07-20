@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.10503",
+  "title": "Cross-Cultural Bias in Mel-Scale Representations: Evidence and Alternatives from Speech and Music",
+  "summary": "Modern audio systems universally employ mel-scale representations derived from 1940s Western psychoacoustic studies, potentially encoding cultural biases that create systematic performance disparities. We present a comprehensive evaluation of cross-cultural bias in audio front-ends, comparing mel-scale features with learnable alternatives (LEAF, SincNet) and psychoacoustic variants (ERB, Bark, CQT) across speech recognition (11 languages), music analysis (6 collections), and European acoustic scene classification (10 European cities). Our controlled experiments isolate front-end contributions while holding architecture and training protocols minimal and constant. Results demonstrate that mel-scale features yield 31.2% WER for tonal languages compared to 18.7% for non-tonal languages (12.5% gap), and show 15.7% F1 degradation between Western and non-Western music. Alternative representations significantly reduce these disparities: LEAF reduces the speech gap by 34% through adaptive frequency allocation, CQT achieves 52% reduction in music performance gaps, and ERB-scale filtering cuts disparities by 31% with only 1% computational overhead. We also release FairAudioBench, enabling cross-cultural evaluation, and demonstrate that adaptive frequency decomposition offers practical paths toward equitable audio processing. These findings reveal how foundational signal processing choices propagate bias, providing crucial guidance for developing inclusive audio systems.",
+  "authors": [
+    "Shivam Chauhan",
+    "Ajay Pundhir"
+  ],
+  "published": "2026-04-12T07:41:33Z",
+  "updated": "2026-04-12T07:41:33Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.10503",
+  "abs_url": "https://arxiv.org/abs/2604.10503",
+  "fetched_at": "2026-07-20T11:33:13.418509Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

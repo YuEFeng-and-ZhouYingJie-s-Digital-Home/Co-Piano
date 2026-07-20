@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.04140",
+  "title": "DELTA-TTS: Adapting Autoregressive Model into Diffusion Language Model for Text-to-Speech",
+  "summary": "Autoregressive (AR) text-to-speech (TTS) models generate discrete speech tokens sequentially, which makes inference slow and can degrade robustness by propagating local errors and hallucinations. This limitation stems from their left-to-right AR commitment: each token must be determined before future speech-token context is available. However, such ordering is not an inherent requirement for TTS, as the full input text is available before synthesis. In this paper, we introduce DELTA-TTS, a lightweight LoRA-based adaptation framework that converts a pretrained AR TTS model into a discrete diffusion language model (dLLM) for confidence-ordered speech-token decoding. To better capture the local structure of speech, DELTA-TTS incorporates a convolution module that injects local acoustic context, together with a $1/t$-weighted training objective and a time-shifted inference schedule that defer low-confidence positions to later steps. Trained on only $585$ hours of LibriTTS, DELTA-TTS achieves a $\\textbf{1.75}\\%$ WER on Seed-TTS test-en, outperforming its AR backbone while generating tokens $\\textbf{3.3}\\times$ faster. Further analysis shows that DELTA-TTS produces sharper text--speech alignment, increases overall decoding confidence, and mitigates hallucinations observed in AR generation.",
+  "authors": [
+    "Junwon Moon",
+    "Seungbeom Kim",
+    "Yejin Lee",
+    "Hoseong Ahn",
+    "Sewoong Park",
+    "Heeseung Kim",
+    "Kyuhong Shim"
+  ],
+  "published": "2026-07-05T06:45:47Z",
+  "updated": "2026-07-05T06:45:47Z",
+  "categories": [
+    "eess.AS",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.04140",
+  "abs_url": "https://arxiv.org/abs/2607.04140",
+  "fetched_at": "2026-07-20T11:33:13.421751Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

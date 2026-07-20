@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.13924",
+  "title": "ExpressionCueLens: A Cross-Cultural Analysis of Human-AI Companion Conversations on Social Media",
+  "summary": "LLM-based AI companion agents are increasingly being perceived not only as tools but also as social companions. On social media, people recount conversations where these agents comfort, negotiate and assert boundaries, reflecting a growing attribution of human-like qualities. To profile how agency is perceived in human-AI (HAI) interactions, we introduce the ExpressionCueLens framework, which organizes linguistic, cognitive, behavioral and perceptual cues into ten categories of anthropomorphism expressions. We apply this framework to $\\sim$3500 Reddit and XiaoHongShu posts that discuss HAI companionship. Through iterative expert annotation and LLM-assisted labeling, our cross-platform analysis indicates patterns consistent with the hypothesis that XiaoHongShu users use significantly more expressions of vulnerability and emotions, and more non-perceptual cues. Reddit users employ more perceptual cues with temporality and embodiment expressions. These findings suggest that cultural and platform norms shape the way that companion agents are treated as active, agentic partners, and provides design implications for culturally sensitive HAI companion agents.",
+  "authors": [
+    "Lynnette Hui Xian Ng",
+    "Yunze Xiao",
+    "Lionel Z. Wang",
+    "Weihao Xuan",
+    "Mona Diab"
+  ],
+  "published": "2026-07-15T15:05:41Z",
+  "updated": "2026-07-15T15:05:41Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13924",
+  "abs_url": "https://arxiv.org/abs/2607.13924",
+  "fetched_at": "2026-07-20T11:33:13.438905Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

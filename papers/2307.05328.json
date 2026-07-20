@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2307.05328",
+  "title": "ProgGP: From GuitarPro Tablature Neural Generation To Progressive Metal Production",
+  "summary": "Recent work in the field of symbolic music generation has shown value in using a tokenization based on the GuitarPro format, a symbolic representation supporting guitar expressive attributes, as an input and output representation. We extend this work by fine-tuning a pre-trained Transformer model on ProgGP, a custom dataset of 173 progressive metal songs, for the purposes of creating compositions from that genre through a human-AI partnership. Our model is able to generate multiple guitar, bass guitar, drums, piano and orchestral parts. We examine the validity of the generated music using a mixed methods approach by combining quantitative analyses following a computational musicology paradigm and qualitative analyses following a practice-based research paradigm. Finally, we demonstrate the value of the model by using it as a tool to create a progressive metal song, fully produced and mixed by a human metal producer based on AI-generated music.",
+  "authors": [
+    "Jackson Loth",
+    "Pedro Sarmento",
+    "CJ Carr",
+    "Zack Zukowski",
+    "Mathieu Barthet"
+  ],
+  "published": "2023-07-11T15:19:47Z",
+  "updated": "2023-07-11T15:19:47Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2307.05328",
+  "abs_url": "https://arxiv.org/abs/2307.05328",
+  "fetched_at": "2026-07-20T14:22:43.729801Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

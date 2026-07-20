@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.21832",
+  "title": "AgentCAT: Simulating Computerized Adaptive Testing via Multi-Agent Large Language Models",
+  "summary": "Computerized Adaptive Testing (CAT), as a key technology for personalized education, aims to accurately assess examinee proficiency by retrieving exercises dynamically matching current ability estimates. However, existing CAT research is constrained by limitations of static offline data and isolated component optimization. Restricted by partial labels in offline logs, researchers degrade the dynamic assessment process into static sequence prediction. Current research focuses on isolated perspectives, e.g., selection or diagnosis, neglecting the overall CAT interaction process. To address this, we propose AgentCAT, a Large Language Model-based multi-agent simulation system, to construct a high-fidelity benchmarking environment for dynamic testing. This framework comprises three modules: (1) The examinee agent with memory retrieval and Chain-of-Thought reasoning simulates responses based on cognitive profiles; (2) The selection agent uses coarse-to-fine bucketing and knowledge graph exploration to balance local difficulty and global coverage; (3) The supervisor uses dual-auditing and robust update to ensure convergence and validity. To validate the framework, we evaluated on two real-world datasets across three dimensions: macro-level ability convergence, micro-level interaction logic, and data sparsity resilience. Results show AgentCAT achieves effective ability estimation, and its selection strategy balances difficulty adaptation and instructional coherence, aligning with human pedagogical intuition.",
+  "authors": [
+    "Weiyuan Zhou",
+    "Haiping Ma",
+    "Xiaoshan Yu",
+    "Changqian Wang",
+    "Shangshang Yang",
+    "Xingyi Zhang"
+  ],
+  "published": "2026-06-20T01:55:28Z",
+  "updated": "2026-06-20T01:55:28Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.21832",
+  "abs_url": "https://arxiv.org/abs/2606.21832",
+  "fetched_at": "2026-07-20T11:33:13.428078Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

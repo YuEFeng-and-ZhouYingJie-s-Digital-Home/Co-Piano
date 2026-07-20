@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.01153",
+  "title": "Toward a Unified Framework for Collaborative Design of Human-AI Interaction",
+  "summary": "Human computer interaction is shifting from screen-based systems to multimodal interfaces where artificial intelligence powered systems increasingly interpret user intent through speech, gesture, and gaze. Yet users rarely understand how these interpretations are made, compromising trust and control. Existing approaches treat multimodal alignment, explainability, and human agency as separate concerns, leaving critical gaps in transparency and user oversight. We propose a Human Artificial Intelligence collaboration framework integrating these three principles as interdependent design requirements: 1) multimodal alignment for accurate intent interpretation, 2) interaction centric explainability delivering real time visual, textual, and audio feedback, and 3) agency preserving mechanisms enabling users to accept, reject, or modify artificial intelligence suggestions at any time. We presented the framework through two scenarios, collaborative design and extended reality warehouse robot collaboration, chosen to span differences in time pressure and error reversibility, with the latter situated in a domain where misinterpretation carries documented safety consequences. This approach reframes collaboration as a continuous interaction property, benefiting designers, researchers, and end users by ensuring that as artificial intelligence systems grow more proactive, user understanding and control remain first class design properties.",
+  "authors": [
+    "Ankur Bhatt",
+    "Sven Mayer"
+  ],
+  "published": "2026-05-01T23:09:14Z",
+  "updated": "2026-05-01T23:09:14Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.01153",
+  "abs_url": "https://arxiv.org/abs/2605.01153",
+  "fetched_at": "2026-07-20T11:33:13.432635Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

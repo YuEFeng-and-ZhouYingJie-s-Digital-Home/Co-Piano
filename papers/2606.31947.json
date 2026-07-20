@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.31947",
+  "title": "LuxEmo: Expressive Text-to-Speech Corpus for Luxembourgish",
+  "summary": "State-of-the-art speech datasets predominantly focus on widely spoken languages, often overlooking low-resource languages such as Luxembourgish, which remain underrepresented in speech technology research. In this work, we introduce LuxEmo, a 21-hour conversational expressive speech corpus for Luxembourgish with 4 emotion categories. LuxEmo is derived from Radio Télévision Luxembourg (RTL) youth broadcasts, using automated detection followed by human validation. We propose a semi-automatic curation workflow combining voice activity detection, denoising, language identification, LuxASR-based segmentation, automatic emotion prediction, lexical cues, and targeted human review. Additionally, we benchmark five expressive TTS systems covering German-based cross-lingual transfer, multilingual Luxembourgish support, Luxembourgish adaptation, and non-parametric prosody transfer. Performance is evaluated using both objective metrics and human evaluation.",
+  "authors": [
+    "Nina Hosseini-Kivanani",
+    "Sandipana Dowerah"
+  ],
+  "published": "2026-06-30T16:53:15Z",
+  "updated": "2026-07-02T16:10:55Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.31947",
+  "abs_url": "https://arxiv.org/abs/2606.31947",
+  "fetched_at": "2026-07-20T11:33:13.422475Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.12529",
+  "title": "Listen first: Output-based multi-microphone speech enhancement",
+  "summary": "Traditionally, hearing-aid speech enhancement (SE) algorithms rely on input-based feature estimation, often derived by a voice activity detector (VAD), to configure beamformers. Yet features extracted from noisy microphone signals can become unreliable in challenging acoustic scenes where users most need help. We introduce a novel paradigm in which the settings of a sound processing system are determined by evaluating characteristics of its output. To demonstrate this idea, we employ an output-based system that selects among a set of minimum power distortionless response (MPDR) beamformers. Although MPDR beamformers are typically avoided due to their sensitivity to steering errors, we show that they become effective within an output-based framework. We compare the proposed system to a conventional input-based minimum variance distortionless response (MVDR) baseline. Experimental results show that the proposed system consistently outperforms the MVDR baseline, particularly at low SNRs, in terms of SNR, ESTOI and PESQ.",
+  "authors": [
+    "Panos Apostolidis",
+    "Svend Feldt",
+    "Zheng-Hua Tan",
+    "Jan Østergaard",
+    "Jesper Jensen"
+  ],
+  "published": "2026-07-14T09:04:29Z",
+  "updated": "2026-07-14T09:04:29Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12529",
+  "abs_url": "https://arxiv.org/abs/2607.12529",
+  "fetched_at": "2026-07-20T11:33:13.421993Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

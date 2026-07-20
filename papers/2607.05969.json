@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.05969",
+  "title": "MemDefrag: Latent Memory Defragmentation for Large Language Models",
+  "summary": "Latent memory, which stores past knowledge fragments as per-layer hidden states, has emerged as a promising paradigm (e.g., MemoryLLM and M+) for long-term memory in large language models (LLMs). However, the paradigm suffers from significant performance degradation during memory updates, due to positional encoding misalignment and the absence of any tracing mechanism to distinguish target memory fragments from irrelevant ones. To discover such a tracing mechanism, we probe the layer-wise attention density over stored memory fragments, and find that a small set of middle transformer layers consistently concentrates the highest density on the target fragment - exposing an inherent tracing signal. In light of this, we propose MemDefrag, a training-free and model-agnostic framework that (1) uses a middle-layer tracing signal to conduct memory defragmentation (rank, reorder, and filter memories), and (2) applies an informativeness-guided proportional forgetting mechanism once capacity is exceeded. Experiments show that MemDefrag substantially outperforms MemoryLLM and M+ on knowledge retention (e.g., 43.0% vs. 17.4%/17.6% after 50 memory updates) and long-context benchmarks, and generalizes well across various LLMs and latent-memory variants. The code is available at github.com/ryehr/MemDefrag.",
+  "authors": [
+    "Ruiyi Yan",
+    "Zhuoyuan Mao",
+    "Yiwen Guo"
+  ],
+  "published": "2026-07-07T08:04:34Z",
+  "updated": "2026-07-15T05:36:46Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.05969",
+  "abs_url": "https://arxiv.org/abs/2607.05969",
+  "fetched_at": "2026-07-20T11:33:13.441211Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

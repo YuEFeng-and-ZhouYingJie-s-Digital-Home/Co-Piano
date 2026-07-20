@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.14664",
+  "title": "The Self-Aware Body: A User-Centered Framework for Designing Therapeutic Sonic Interactions",
+  "summary": "This chapter presents a framework for designing therapeutic sonic interaction technologies, with a focus on movement sonification: the real-time conversion of bodily motion into sound that serves as feedback during motor rehabilitation. Despite growing evidence for their effectiveness, technologies implementing movement sonification are yet to be systematically adopted as part of clinical practice, potentially due to a lack of standardized development methodologies as well as inadequate integration of clinical stakeholder perspectives into interaction design. The framework addresses these barriers through three interconnected contributions. The first is a conceptual reframing of the design task as the calibration of sonic variability to the perceptual affordances of the listener and the demands of the clinical context. The second is a practical design platform inspired by professional audio mixing workflows, which imposes a structured and learnable signal-flow architecture on the interaction design process and enables rapid iterative exploration. The third is a user-centered development methodology adapted from healthcare intervention science, which grounds design decisions in engagement with the clinicians and patients who will use the resulting systems. The HearWalk biofeedback system for hemiparetic gait rehabilitation illustrates the framework, and the chapter concludes by examining where large language models and AI tools can meaningfully assist each stage of this design process, as well as where human clinical and perceptual expertise remains irreplaceable.",
+  "authors": [
+    "Prithvi Ravi Kantan",
+    "Sofia Dahl",
+    "Erika G. Spaich"
+  ],
+  "published": "2026-06-12T17:34:29Z",
+  "updated": "2026-06-12T17:34:29Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.14664",
+  "abs_url": "https://arxiv.org/abs/2606.14664",
+  "fetched_at": "2026-07-20T11:33:13.432134Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

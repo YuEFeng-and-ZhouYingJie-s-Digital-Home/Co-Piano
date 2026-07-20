@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.15769",
+  "title": "Making Agent-Mediated Contributions Governable: A Project-Level Governance Manifest for Open-Source AI Collaboration",
+  "summary": "Generative AI and coding agents are intensifying a central governance tension in open-source software (OSS): they scale contribution generation faster than maintainers can assess risk, evidence, and accountability. Existing responses improve agent-readability and traceability, but project rules must also organize contribution-specific risk, evidence, accountability, and review-gate states. We theorize this organizational arrangement as project-side governability infrastructure. A diagnostic audit of 50 GitHub repositories finds widespread general governance artifacts, observable agent-readability, and fragmented AI-governance cues, but no project-wide arrangement that coordinates shared rules, preparation obligations, verification rights, and maintainer decision authority across AI-mediated contribution workflows. We develop the Agent Governance Manifest (AGM) as a repository-hosted boundary resource and bidirectional governance contract linking contributor-side evidence preparation with maintainer-side verification. In a controlled reviewer-side evaluation with 15 participants and 75 task-level outputs, AGM-supported materials improved exact risk-label recovery (37/38 vs. 15/37) and perceived review support (6.14 vs. 3.27 on a 1-7 scale). In a contributor-side feasibility check, 15 participants completed 45 tasks; all final packages represented the core governance state correctly, and 41 passed strict structural validation. The study develops a three-layer framework of agent-readability, traceability, and governability, theorizes agent-mediated contributions as governable boundary objects, and advances compliance-enabling digital innovation governance while preserving maintainer decision authority.",
+  "authors": [
+    "Jinjin Gao",
+    "Luyang Li",
+    "Shufen Guo",
+    "Ligang He",
+    "Xiaoning Sun"
+  ],
+  "published": "2026-07-17T08:58:54Z",
+  "updated": "2026-07-17T08:58:54Z",
+  "categories": [
+    "cs.SE",
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15769",
+  "abs_url": "https://arxiv.org/abs/2607.15769",
+  "fetched_at": "2026-07-20T14:22:43.715461Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

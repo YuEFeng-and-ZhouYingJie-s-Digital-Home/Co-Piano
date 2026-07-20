@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2605.30993",
+  "title": "SwanVoice: Expressive Long-Form Zero-Shot Speech Synthesis for Both Monologue and Dialogue",
+  "summary": "Zero-shot text-to-speech (TTS) has improved substantially for single-speaker synthesis, yet expressive long-form multi-speaker dialogue remains difficult. A common workaround is to synthesize each turn with a monologue TTS model and stitch the outputs together. This adds inference cost and often breaks acoustic consistency, conversational coherence, and affective continuity across turns. Recent dialogue TTS systems have begun to address this setting, but they still struggle to keep expressive coherence, controllable speaker switching, and monologue quality at the same time. We present SwanData-Speech and SwanVoice. SwanData-Speech builds monologue and dialogue corpora from in-the-wild audio, using Swan Forced Aligner for pause-aware word-level alignment and RobustMegaTTS3 for pronunciation-hard cases. Built on these data, SwanVoice is a zero-shot TTS model for 1--4 speakers, combining a 25 Hz VAE, raw-text conditioning with pause-aware symbols and pinyin substitution, and a flow-matching DiT with speaker-turn conditioning. Training starts from monologue speech, moves through mixed and real dialogue data, and then uses DiffusionNFT post-training with phone-level and speaker-similarity rewards. On SwanBench-Speech, SwanVoice obtains higher richness and hierarchy scores than all evaluated open-source baselines in both monologue and dialogue settings, while content accuracy remains the main limitation. Audio demos are available at https://swanaigc.github.io//#swanvoice.",
+  "authors": [
+    "Ruiqi Li",
+    "Yu Zhang",
+    "Changhao Pan",
+    "Ke Lei",
+    "Xiang Yin",
+    "Cheng Yang"
+  ],
+  "published": "2026-05-29T08:27:57Z",
+  "updated": "2026-05-29T08:27:57Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.30993",
+  "abs_url": "https://arxiv.org/abs/2605.30993",
+  "fetched_at": "2026-07-20T11:33:13.447030Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

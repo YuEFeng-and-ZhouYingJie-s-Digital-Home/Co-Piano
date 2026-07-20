@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2511.19629",
+  "title": "SkillSight: Efficient First-Person Skill Assessment with Gaze",
+  "summary": "Egocentric perception on smart glasses could transform how we learn new skills in the physical world, but automatic skill assessment remains a fundamental technical challenge. We introduce SkillSight for power-efficient skill assessment from first-person data. Central to our approach is the hypothesis that skill level is evident not only in how a person performs an activity (video), but also in how they direct their attention when doing so (gaze). Our two-stage framework first learns to jointly model gaze and egocentric video when predicting skill level, then distills a gaze-only student model. At inference, the student model requires only gaze input, drastically reducing power consumption by eliminating continuous video processing. Experiments on three datasets spanning cooking, music, and sports establish, for the first time, the valuable role of gaze in skill understanding across diverse real-world settings. Our SkillSight teacher model achieves state-of-the-art performance, while our gaze-only student variant maintains high accuracy using 73x less power than competing methods. These results pave the way for in-the-wild AI-supported skill learning.",
+  "authors": [
+    "Chi Hsuan Wu",
+    "Kumar Ashutosh",
+    "Kristen Grauman"
+  ],
+  "published": "2025-11-24T19:05:28Z",
+  "updated": "2026-04-03T20:30:02Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.19629",
+  "abs_url": "https://arxiv.org/abs/2511.19629",
+  "fetched_at": "2026-07-20T14:22:43.722471Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

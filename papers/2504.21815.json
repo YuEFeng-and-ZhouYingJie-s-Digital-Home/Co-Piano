@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2504.21815",
+  "title": "From Aesthetics to Human Preferences: Comparative Perspectives of Evaluating Text-to-Music Systems",
+  "summary": "Evaluating generative models remains a fundamental challenge, particularly when the goal is to reflect human preferences. In this paper, we use music generation as a case study to investigate the gap between automatic evaluation metrics and human preferences. We conduct comparative experiments across five state-of-the-art music generation approaches, assessing both perceptual quality and distributional similarity to human-composed music. Specifically, we evaluate synthesis music from various perceptual dimensions and examine reference-based metrics such as Mauve Audio Divergence (MAD) and Kernel Audio Distance (KAD). Our findings reveal significant inconsistencies across the different metrics, highlighting the limitation of the current evaluation practice. To support further research, we release a benchmark dataset comprising samples from multiple models. This study provides a broader perspective on the alignment of human preference in generative modeling, advocating for more human-centered evaluation strategies across domains.",
+  "authors": [
+    "Huan Zhang",
+    "Jinhua Liang",
+    "Huy Phan",
+    "Wenwu Wang",
+    "Emmanouil Benetos"
+  ],
+  "published": "2025-04-30T17:21:04Z",
+  "updated": "2025-04-30T17:21:04Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2504.21815",
+  "abs_url": "https://arxiv.org/abs/2504.21815",
+  "fetched_at": "2026-07-20T14:22:43.723994Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

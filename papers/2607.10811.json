@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.10811",
+  "title": "Distributed Agent System: Fault-Tolerant Collaboration Among Embodied Agents",
+  "summary": "AI engineering is shifting from passive text generation by large language models (LLMs) to agent-driven task execution, creating new reliability challenges for long-horizon tasks under resource constraints and environmental uncertainty. Conventional error-elimination optimization strategies fail to address cumulative error propagation. This paper proposes Distributed Agent System (DAS), a device-edge-cloud framework for fault-tolerant collaboration among heterogeneous agents. We redefine agent reliability as system-level fault tolerance rather than single-turn zero-error accuracy, and present a two-layer fault-tolerance architecture: single-agent execution reliability via fault-tolerant alignment, and cross-agent communication reliability via semi-formal language protocols. This framework provides a practical engineering pathway for reliable heterogeneous embodied agents collaboration in industrial scenarios.",
+  "authors": [
+    "Kai Yu",
+    "Lu Chen",
+    "Hanqi Li"
+  ],
+  "published": "2026-07-12T15:45:54Z",
+  "updated": "2026-07-12T15:45:54Z",
+  "categories": [
+    "cs.MA",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.10811",
+  "abs_url": "https://arxiv.org/abs/2607.10811",
+  "fetched_at": "2026-07-20T11:33:13.439870Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

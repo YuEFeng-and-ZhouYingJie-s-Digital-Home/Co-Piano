@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.01960",
+  "title": "NAVER LABS Europe Submission to the Instruction-following 2026 Short Track",
+  "summary": "In this paper, we describe NAVER LABS Europe's submission to the instruction-following speech processing short track at IWSLT 2026. We participate again in the constrained setting, developing systems capable of jointly performing ASR, ST, and SQA from English speech into Chinese, Italian, and German. Building on our previous submission, ranked first in last year's short track, we update our multi-stage training pipeline by replacing the speech projector with SpeechMapper, a method for learning a speech-to-LLM embedding projector using only ASR data. In addition, we introduce a synthetic SQA dataset, fakACL, composed of artificially generated scientific presentations. This dataset is built by prompting the LLM backbone, segmenting the generated talks, and synthesizing speech with SeamlessM4T-large-v2. The combination of an improved speech projection mechanism and domain-specific synthetic data allows our model to outperform last year's best short-track system, while being considerably more compact and relying on a weaker LLM backbone. This year's results place our system tied for first place in the overall short track ranking.",
+  "authors": [
+    "Marcely Zanon Boito",
+    "Hemant Yadav",
+    "Jean-Luc Meunier",
+    "Ioan Calapodescu"
+  ],
+  "published": "2026-07-02T09:52:08Z",
+  "updated": "2026-07-02T09:52:08Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.01960",
+  "abs_url": "https://arxiv.org/abs/2607.01960",
+  "fetched_at": "2026-07-20T11:33:13.442380Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

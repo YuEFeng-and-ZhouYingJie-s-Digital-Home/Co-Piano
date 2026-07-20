@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2604.15588",
+  "title": "\"Excuse me, may I say something...\" CoLabScience, A Proactive AI Assistant for Biomedical Discovery and LLM-Expert Collaborations",
+  "summary": "The integration of Large Language Models (LLMs) into scientific workflows presents exciting opportunities to accelerate biomedical discovery. However, the reactive nature of LLMs, which respond only when prompted, limits their effectiveness in collaborative settings that demand foresight and autonomous engagement. In this study, we introduce CoLabScience, a proactive LLM assistant designed to enhance biomedical collaboration between AI systems and human experts through timely, context-aware interventions. At the core of our method is PULI (Positive-Unlabeled Learning-to-Intervene), a novel framework trained with a reinforcement learning objective to determine when and how to intervene in streaming scientific discussions, by leveraging the team's project proposal and long- and short-term conversational memory. To support this work, we introduce BSDD (Biomedical Streaming Dialogue Dataset), a new benchmark of simulated research discussion dialogues with intervention points derived from PubMed articles. Experimental results show that PULI significantly outperforms existing baselines in both intervention precision and collaborative task utility, highlighting the potential of proactive LLMs as intelligent scientific assistants.",
+  "authors": [
+    "Yang Wu",
+    "Jinhong Yu",
+    "Jingwei Xiong",
+    "Zhimin Tao",
+    "Xiaozhong Liu"
+  ],
+  "published": "2026-04-16T23:46:22Z",
+  "updated": "2026-04-16T23:46:22Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.HC",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.15588",
+  "abs_url": "https://arxiv.org/abs/2604.15588",
+  "fetched_at": "2026-07-20T14:22:43.718752Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

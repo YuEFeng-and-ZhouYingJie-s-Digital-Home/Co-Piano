@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2605.11663",
+  "title": "Human-Grounded Multimodal Benchmark with 900K-Scale Aggregated Student Response Distributions from Japan's National Assessment of Academic Ability",
+  "summary": "Authentic school examinations provide a high-validity test bed for evaluating multimodal large language models (MLLMs), yet benchmarks grounded in Japanese K-12 assessments remain scarce. We present a multimodal dataset constructed from Japan's National Assessment of Academic Ability, comprising officially released middle-school items in Science, Mathematics, and Japanese Language. Unlike existing benchmarks based on synthetic or curated data, our dataset preserves real exam layouts, diagrams, and Japanese educational text, together with nationwide aggregated student response distributions (N $\\approx$ 900{,}000). These features enable direct comparison between human and model performance under a unified evaluation framework. We benchmark recent multimodal LLMs using exact-match accuracy and character-level F1 for open-ended responses, observing substantial variation across subjects and strong sensitivity to visual reasoning demands. Human evaluation and LLM-as-judge analyses further assess the reliability of automatic scoring. Our dataset establishes a reproducible, human-grounded benchmark for multimodal educational reasoning and supports future research on evaluation, feedback generation, and explainable AI in authentic assessment contexts. Our dataset is available at: https://github.com/KyosukeTakami/gakucho-benchmark",
+  "authors": [
+    "Kyosuke Takami",
+    "Yuka Tateisi",
+    "Satoshi Sekine",
+    "Yusuke Miyao"
+  ],
+  "published": "2026-05-12T07:22:50Z",
+  "updated": "2026-05-12T07:22:50Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.11663",
+  "abs_url": "https://arxiv.org/abs/2605.11663",
+  "fetched_at": "2026-07-20T11:33:13.449495Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

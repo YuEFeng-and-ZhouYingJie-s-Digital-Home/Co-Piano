@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.09338",
+  "title": "Towards Detecting Inconsistencies in End-to-end Generated TODs",
+  "summary": "Generative AI is profoundly transforming the core technologies behind conversational systems, shifting from component-based to end-to-end approaches. However, Large Language Models (LLMs) may still generate inconsistencies, a critical issue particularly in Task-Oriented Dialogues (TODs), where system responses must strictly adhere to information from a domain knowledge base (e.g., restaurants in a city). A single hallucination (e.g., suggesting a non-existent restaurant) can lead to severe task failures. We investigate a method for automatically detecting inconsistencies by conceptualizing TODs as a Constraint Satisfaction Problem (CSP), where variables represent dialogue segments referencing the conversational domain, and constraints among variables capture dialogue properties such as turn coherence and adherence to domain knowledge. We propose a pipeline that first identifies variables in a target dialogue and then applies a CSP solver to identify valid solutions. By comparing the target dialogue with valid variable assignments, we can detect inconsistencies and suggest minimal changes to ensure dialogue consistency. We demonstrate the high accuracy of the CSP-based approach in detecting inconsistencies, and provide a detailed analysis of our findings.",
+  "authors": [
+    "Tiziano Labruna",
+    "Giovanni Bonetta",
+    "Bernardo Magnini"
+  ],
+  "published": "2026-07-10T12:19:59Z",
+  "updated": "2026-07-10T12:19:59Z",
+  "categories": [
+    "cs.CL",
+    "cs.SC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.09338",
+  "abs_url": "https://arxiv.org/abs/2607.09338",
+  "fetched_at": "2026-07-20T11:33:13.433677Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

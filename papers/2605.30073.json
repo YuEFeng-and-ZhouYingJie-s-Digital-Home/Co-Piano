@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2605.30073",
+  "title": "Native Audio-Visual Alignment for Generation",
+  "summary": "Joint audio-video generation aims to synthesize temporally synchronized and semantically coherent visual-acoustic content. However, existing open-source methods mainly rely on either dual-tower designs with posterior alignment or fully unified tri-modal designs that mix textual context, audio and video in one shared space. The former weakens fine-grained audio-video co-evolution, while the latter couples semantic conditioning with low-level synchronization. To address these limitations, we propose NAVA, a Native Audio-Visual Alignment framework for joint audio-video generation. NAVA is built upon context-conditioned native audio-visual alignment: it first establishes audio-video correspondence in a dedicated interaction space, and then uses external context to condition the joint denoising process. Specifically, NAVA is instantiated with an Align-then-Fuse MMDiT architecture, which transitions from modality-aware audio-video alignment to modality-shared joint denoising. Furthermore, we introduce Timbre-in-Context Conditioning to associate reference timbre cues with corresponding speech spans to achieve controllable speech timbre. Experiments on Verse-Bench and Seed-TTS, together with a user study, demonstrate that NAVA achieves superior video quality, precise audio-visual synchronization, competitive audio quality, and stronger reference-timbre controllability using only 6.3B parameters.",
+  "authors": [
+    "Longbin Ji",
+    "Guan Wang",
+    "Xuan Wei",
+    "Chenye Yang",
+    "Xiangrui Liu",
+    "Zhenyu Zhang",
+    "Shuohuan Wang",
+    "Yu Sun",
+    "Jingzhou He"
+  ],
+  "published": "2026-05-28T15:21:45Z",
+  "updated": "2026-05-28T15:21:45Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.30073",
+  "abs_url": "https://arxiv.org/abs/2605.30073",
+  "fetched_at": "2026-07-20T11:33:13.447170Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

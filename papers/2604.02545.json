@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.02545",
+  "title": "Competency Questions as Executable Plans: a Controlled RAG Architecture for Cultural Heritage Storytelling",
+  "summary": "The preservation of intangible cultural heritage is a critical challenge as collective memory fades over time. While Large Language Models (LLMs) offer a promising avenue for generating engaging narratives, their propensity for factual inaccuracies or \"hallucinations\" makes them unreliable for heritage applications where veracity is a central requirement. To address this, we propose a novel neuro-symbolic architecture grounded in Knowledge Graphs (KGs) that establishes a transparent \"plan-retrieve-generate\" workflow for story generation. A key novelty of our approach is the repurposing of competency questions (CQs) - traditionally design-time validation artifacts - into run-time executable narrative plans. This approach bridges the gap between high-level user personas and atomic knowledge retrieval, ensuring that generation is evidence-closed and fully auditable. We validate this architecture using a new resource: the Live Aid KG, a multimodal dataset aligning 1985 concert data with the Music Meta Ontology and linking to external multimedia assets. We present a systematic comparative evaluation of three distinct Retrieval-Augmented Generation (RAG) strategies over this graph: a purely symbolic KG-RAG, a text-enriched Hybrid-RAG, and a structure-aware Graph-RAG. Our experiments reveal a quantifiable trade-off between the factual precision of symbolic retrieval, the contextual richness of hybrid methods, and the narrative coherence of graph-based traversal. Our findings offer actionable insights for designing personalised and controllable storytelling systems.",
+  "authors": [
+    "Naga Sowjanya Barla",
+    "Jacopo de Berardinis"
+  ],
+  "published": "2026-04-02T21:54:33Z",
+  "updated": "2026-04-02T21:54:33Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.02545",
+  "abs_url": "https://arxiv.org/abs/2604.02545",
+  "fetched_at": "2026-07-20T11:33:13.429616Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

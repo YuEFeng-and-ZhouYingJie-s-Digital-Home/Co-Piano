@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.02970",
+  "title": "From Explanation to Diagnosis: Next Generation Interactive Video Coach with Misstep Awareness",
+  "summary": "Intelligent tutoring systems excel at generating explanations but rarely provide principled diagnosis of where and why a learner is wrong. We introduce a misstep-aware coaching capability for Ivy, a neurosymbolic AI coach, built on a two-model architecture that augments a Task-Method-Knowledge (TMK) model with a new Pedagogical Model (PM) in the context of an online graduate AI course at Georgia Tech. The PM makes instructor diagnostic knowledge explicit and machine-readable by encoding, for each quiz question and incorrect response, the learner's underlying belief(a brief statement of the incorrect idea or missing knowledge), a TMK locus(the source of the misunderstanding), a misconception type and targeted scaffolding derived from the instructor's Q\\&A key. Using quiz questions from the course, we demonstrate a proof-of-concept pipeline that detects and classifies learner errors and generates diagnosis-grounded scaffolding, moving Ivy beyond knowledge retrieval toward diagnostic misstep awareness, and enabling more precise, actionable feedback that supports conceptual change and advances adaptive learning systems in AI in education and the learning sciences.",
+  "authors": [
+    "Xiao Jin",
+    "Rahul K. Dass",
+    "Ashok K. Goel"
+  ],
+  "published": "2026-06-02T00:15:51Z",
+  "updated": "2026-06-02T00:15:51Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.02970",
+  "abs_url": "https://arxiv.org/abs/2606.02970",
+  "fetched_at": "2026-07-20T11:33:13.426934Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

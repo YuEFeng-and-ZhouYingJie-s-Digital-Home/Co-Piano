@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.02649",
+  "title": "Dramaturgies of Deception: AI Humanizers and the Performance of Legitimacy in Higher Education Assessment",
+  "summary": "Artificial intelligence (AI) has disrupted assessment in higher education and accelerated a cycle of compounding performances. Institutional policies demand the demonstration of independent authorship, while commercial AI-enabled services allow students to simulate independent thought and writing. This has led to enhanced institutional surveillance, including AI detectors, which are subsequently circumvented using other technologies. AI humanizers, internet-based services that alter AI-generated text to avoid automated or human detection, are a recent symptom of this performative cycle. Little is known about how these services operate, how they appeal to users, and what they imply for educational assessment and integrity. This paper presents an exploratory, systematic investigation of AI humanizer websites, framed through Goffman's sociological account of dramaturgy. Using a systematic search and custom rubric, we cataloged 55 humanizer sites, assessed their performance of identity, and conducted an in-depth multimodal critical discourse analysis of a purposive sample of three sites. Findings show that humanizers are readily available, offer free and premium paid services, and appear to perform similar functions. These include the deletion and discursive absence of misconduct, the framing of AI humanization as a rational and defensible response to surveillance and flawed detection, and appeals to mystification through advanced technology and implied endorsement by universities and corporations. We argue that humanizer services should be viewed as a diagnostic signal: a legible node in a feedback loop of performative assessment. Disrupting this cycle requires structural assessment reform rather than technological solutionism.",
+  "authors": [
+    "Jasper Roe",
+    "Mike Perkins",
+    "Peter Bannister",
+    "Leon Furze",
+    "James Wood"
+  ],
+  "published": "2026-05-04T14:33:53Z",
+  "updated": "2026-05-04T14:33:53Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.02649",
+  "abs_url": "https://arxiv.org/abs/2605.02649",
+  "fetched_at": "2026-07-20T11:33:13.449830Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

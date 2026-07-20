@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2505.16369",
+  "title": "X-ARES: A Comprehensive Framework for Assessing Audio Encoder Performance",
+  "summary": "We introduces X-ARES (eXtensive Audio Representation and Evaluation Suite), a novel open-source benchmark designed to systematically assess audio encoder performance across diverse domains. By encompassing tasks spanning speech, environmental sounds, and music, X-ARES provides two evaluation approaches for evaluating audio representations: linear fine-tuning and unparameterized evaluation. The framework includes 22 distinct tasks that cover essential aspects of audio processing, from speech recognition and emotion detection to sound event classification and music genre identification. Our extensive evaluation of state-of-the-art audio encoders reveals significant performance variations across different tasks and domains, highlighting the complexity of general audio representation learning.",
+  "authors": [
+    "Junbo Zhang",
+    "Heinrich Dinkel",
+    "Yadong Niu",
+    "Chenyu Liu",
+    "Si Cheng",
+    "Anbei Zhao",
+    "Jian Luan"
+  ],
+  "published": "2025-05-22T08:23:54Z",
+  "updated": "2025-05-27T06:49:39Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2505.16369",
+  "abs_url": "https://arxiv.org/abs/2505.16369",
+  "fetched_at": "2026-07-20T14:22:43.726932Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

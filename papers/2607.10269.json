@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.10269",
+  "title": "Devil in the Lens: Analyzing and Defending Physical Prompt Injection Against Vision-Language Models on Wearable Devices",
+  "summary": "Vision-Language Models (VLMs) are rapidly deployed on human-facing wearable devices such as smart glasses to enable multimodal perception and AI-assisted decision-making. While prior research has demonstrated the risks of visual prompt injection into digital image inputs of VLMs, the unique security challenges posed by the increasing integration between physical environments and wearable intelligence, such as those embodied in VLM-enabled AI glasses, remain underexplored. Toward understanding and modeling such threats, our work characterizes how malicious textual information embedded in physical environments introduces a high-priority visual channel for indirect prompt injection, where scene texts that hinder or evade human perception could hijack VLM models' behavior. Such \\textit{Physical Prompt Injection Attacks} can not only disrupt normal tasks of VLM-enabled wearable devices, but also steer models to produce profane, biased, or even untruthful outputs. Using physically captured photos from AI glasses in over 200 real-world environments, our analysis identifies 6 representative threat vectors of physically injected prompts, and further evaluates their impacts on 12 VLM models. Results show that these attacks consistently manipulate model outputs across integrity- and safety-critical tasks, achieving attack success rates of up to 96\\% and 60\\% in simulated and real-world settings. Our analysis confirms that multiple models exhibit excessive blind trust in environmental text, ignoring the actual visual context and producing completely opposite summaries or directives. We further propose two targeted defense strategies, including a mask-based external filter and a semantic-vector-based internal detector, to effectively reduce the success rate and safety impact of these attacks.",
+  "authors": [
+    "Yaxin Li",
+    "Hao Wang",
+    "Yanda Shao",
+    "Shuhao Zhang",
+    "Yan Long"
+  ],
+  "published": "2026-07-11T11:56:05Z",
+  "updated": "2026-07-11T11:56:05Z",
+  "categories": [
+    "cs.CR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.10269",
+  "abs_url": "https://arxiv.org/abs/2607.10269",
+  "fetched_at": "2026-07-20T11:33:13.440093Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

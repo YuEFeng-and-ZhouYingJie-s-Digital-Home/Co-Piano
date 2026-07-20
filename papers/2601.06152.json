@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2601.06152",
+  "title": "HiMeS: Hippocampus-inspired Memory System for Personalized AI Assistants",
+  "summary": "Large language models (LLMs) power many interactive systems such as chatbots, customer-service agents, and personal assistants. In knowledge-intensive scenarios requiring user-specific personalization, conventional retrieval-augmented generation (RAG) pipelines exhibit limited memory capacity and insufficient coordination between retrieval mechanisms and user-specific conversational history, leading to redundant clarification, irrelevant documents, and degraded user experience. Inspired by the hippocampus-neocortex memory mechanism, we propose HiMeS, an AI-assistant architecture that fuses short-term and long-term memory. Our contributions are fourfold: (1) A short-term memory extractor is trained end-to-end with reinforcement learning to compress recent dialogue and proactively pre-retrieve documents from the knowledge base, emulating the cooperative interaction between the hippocampus and prefrontal cortex. (2) A partitioned long-term memory network stores user-specific information and re-ranks retrieved documents, simulating distributed cortical storage and memory reactivation. (3) On a real-world industrial dataset, HiMeS significantly outperforms a cascaded RAG baseline on question-answering quality. (4) Ablation studies confirm the necessity of both memory modules and suggest a practical path toward more reliable, context-aware, user-customized LLM-based assistants.",
+  "authors": [
+    "Hailong Li",
+    "Feifei Li",
+    "Wenhui Que",
+    "Xingyu Fan"
+  ],
+  "published": "2026-01-06T05:05:50Z",
+  "updated": "2026-01-06T05:05:50Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.06152",
+  "abs_url": "https://arxiv.org/abs/2601.06152",
+  "fetched_at": "2026-07-20T14:22:43.721200Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

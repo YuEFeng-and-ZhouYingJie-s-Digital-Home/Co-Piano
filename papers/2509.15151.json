@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2509.15151",
+  "title": "Exploring How Audio Effects Alter Emotion with Foundation Models",
+  "summary": "Audio effects (FX) such as reverberation, distortion, modulation, and dynamic range processing play a pivotal role in shaping emotional responses during music listening. While prior studies have examined links between low-level audio features and affective perception, the systematic impact of audio FX on emotion remains underexplored. This work investigates how foundation models - large-scale neural architectures pretrained on multimodal data - can be leveraged to analyze these effects. Such models encode rich associations between musical structure, timbre, and affective meaning, offering a powerful framework for probing the emotional consequences of sound design techniques. By applying various probing methods to embeddings from deep learning models, we examine the complex, nonlinear relationships between audio FX and estimated emotion, uncovering patterns tied to specific effects and evaluating the robustness of foundation audio models. Our findings aim to advance understanding of the perceptual impact of audio production practices, with implications for music cognition, performance, and affective computing.",
+  "authors": [
+    "Stelios Katsis",
+    "Vassilis Lyberatos",
+    "Spyridon Kantarelis",
+    "Edmund Dervakos",
+    "Giorgos Stamou"
+  ],
+  "published": "2025-09-18T16:57:08Z",
+  "updated": "2026-05-21T10:15:02Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.15151",
+  "abs_url": "https://arxiv.org/abs/2509.15151",
+  "fetched_at": "2026-07-20T11:33:13.435770Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

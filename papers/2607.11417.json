@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.11417",
+  "title": "Generative AI in Higher Education Laboratory Learning: A Qualitative Case Study of Epistemic Scaffolding and Assessment Boundaries",
+  "summary": "Advanced physics laboratories require students to integrate disciplinary knowledge, experimental practice and scientific argumentation across complex observational and analytical tasks. The increasing availability of generative artificial intelligence (GenAI) adds complexity to this coordination, since AI systems may function as conceptual explainers, operational assistants, artefact reviewers or apparently authoritative evaluators. This exploratory qualitative case study examines AstroTutor, a constrained GenAI tutor introduced as an optional support resource in a Master's-level advanced astrophysics laboratory. The study investigates how students framed the tutor within a broader GenAI-mediated learning ecology that included the instructor, peers, course materials, observations, measurements, data analysis and final assessed reports. Seven students attended the course, five used the tutor, and three groups produced a final report. The analysis combined content analysis, thematic analysis and frame analysis. Drawing on chat logs, final reports and limited post-use reflective responses, the results identify five principal GenAI functions: interface interpreter, warrant organiser, report scaffold, unstable authority and resource whose traces may appear in downstream reports. These findings extend previous research on GenAI in education to the context of advanced physics laboratories, showing that its use requires explicit design boundaries, guidance on legitimate and prohibited practices, verification routines, and assessment requirements that preserve students' epistemic responsibility. The educational implications of a GenAI-mediated learning ecology in advanced physics laboratories are also discussed.",
+  "authors": [
+    "Matteo Tuveri",
+    "Alessandro Riggio"
+  ],
+  "published": "2026-07-13T11:24:18Z",
+  "updated": "2026-07-13T11:24:18Z",
+  "categories": [
+    "physics.ed-ph",
+    "astro-ph.IM",
+    "physics.comp-ph",
+    "physics.optics"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.11417",
+  "abs_url": "https://arxiv.org/abs/2607.11417",
+  "fetched_at": "2026-07-20T11:33:13.425703Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

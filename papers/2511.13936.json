@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2511.13936",
+  "title": "Preference-Based Learning in Audio Applications: A Systematic Analysis",
+  "summary": "Despite the parallel challenges that audio and text domains face in evaluating generative model outputs, preference learning remains remarkably underexplored in audio applications. Through a PRISMA-guided systematic review of approximately 500 papers, we find that only 30 (6%) apply preference learning to audio tasks. Our analysis reveals a field in transition: pre-2021 works focused on emotion recognition using traditional ranking methods (rankSVM), while post-2021 studies have pivoted toward generation tasks employing modern RLHF frameworks. We identify three critical patterns: (1) the emergence of multi-dimensional evaluation strategies combining synthetic, automated, and human preferences; (2) inconsistent alignment between traditional metrics (WER, PESQ) and human judgments across different contexts; and (3) convergence on multi-stage training pipelines that combine reward signals. Our findings suggest that while preference learning shows promise for audio, particularly in capturing subjective qualities like naturalness and musicality, the field requires standardized benchmarks, higher-quality datasets, and systematic investigation of how temporal factors unique to audio impact preference learning frameworks.",
+  "authors": [
+    "Aaron Broukhim",
+    "Yiran Shen",
+    "Prithviraj Ammanabrolu",
+    "Nadir Weibel"
+  ],
+  "published": "2025-11-17T21:42:01Z",
+  "updated": "2025-11-17T21:42:01Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.13936",
+  "abs_url": "https://arxiv.org/abs/2511.13936",
+  "fetched_at": "2026-07-20T14:22:43.726132Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

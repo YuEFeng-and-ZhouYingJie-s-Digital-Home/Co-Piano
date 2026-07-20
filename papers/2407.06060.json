@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2407.06060",
+  "title": "MERGE -- A Bimodal Audio-Lyrics Dataset for Static Music Emotion Recognition",
+  "summary": "The Music Emotion Recognition (MER) field has seen steady developments in recent years, with contributions from feature engineering, machine learning, and deep learning. The landscape has also shifted from audio-centric systems to bimodal ensembles that combine audio and lyrics. However, a lack of public, sizable and quality-controlled bimodal databases has hampered the development and improvement of bimodal audio-lyrics systems. This article proposes three new audio, lyrics, and bimodal MER research datasets, collectively referred to as MERGE, which were created using a semi-automatic approach. To comprehensively assess the proposed datasets and establish a baseline for benchmarking, we conducted several experiments for each modality, using feature engineering, machine learning, and deep learning methodologies. Additionally, we propose and validate fixed train-validation-test splits. The obtained results confirm the viability of the proposed datasets, achieving the best overall result of 81.74\\% F1-score for bimodal classification.",
+  "authors": [
+    "Pedro Lima Louro",
+    "Hugo Redinho",
+    "Ricardo Santos",
+    "Ricardo Malheiro",
+    "Renato Panda",
+    "Rui Pedro Paiva"
+  ],
+  "published": "2024-07-08T16:01:04Z",
+  "updated": "2025-06-18T02:04:36Z",
+  "categories": [
+    "cs.SD",
+    "cs.IR",
+    "cs.LG",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2407.06060",
+  "abs_url": "https://arxiv.org/abs/2407.06060",
+  "fetched_at": "2026-07-20T14:22:43.725258Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

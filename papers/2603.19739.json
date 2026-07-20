@@ -1,0 +1,38 @@
+{
+  "arxiv_id": "2603.19739",
+  "title": "MOSS-TTSD: Text to Spoken Dialogue Generation",
+  "summary": "Spoken dialogue generation is crucial for applications like podcasts, dynamic commentary, and entertainment content, but poses significant challenges compared to single-utterance text-to-speech (TTS). Key requirements include accurate turn-taking, cross-turn acoustic consistency, and long-form stability, which current models often fail to address due to a lack of dialogue context modeling. To bridge this gap, we present MOSS-TTSD, a spoken dialogue synthesis model designed for expressive, multi-party conversational speech across multiple languages. With enhanced long-context modeling, MOSS-TTSD generates long-form spoken conversations from dialogue scripts with explicit speaker tags, supporting up to 60 minutes of single-pass synthesis, multi-party dialogue with up to 5 speakers, and zero-shot voice cloning from a short reference audio clip. The model supports various mainstream languages, including English and Chinese, and is adapted to several long-form scenarios. Additionally, to address limitations of existing evaluation methods, we propose TTSD-eval, an objective evaluation framework based on forced alignment that measures speaker attribution accuracy and speaker similarity without relying on speaker diarization tools. Both objective and subjective evaluation results show that MOSS-TTSD surpasses strong open-source and proprietary baselines in dialogue synthesis.",
+  "authors": [
+    "Yuqian Zhang",
+    "Donghua Yu",
+    "Zhengyuan Lin",
+    "Botian Jiang",
+    "Mingshu Chen",
+    "Yaozhou Jiang",
+    "Yiwei Zhao",
+    "Yiyang Zhang",
+    "Yucheng Yuan",
+    "Hanfu Chen",
+    "Kexin Huang",
+    "Jun Zhan",
+    "Cheng Chang",
+    "Zhaoye Fei",
+    "Shimin Li",
+    "Xiaogui Yang",
+    "Qinyuan Cheng",
+    "Xipeng Qiu"
+  ],
+  "published": "2026-03-20T08:23:31Z",
+  "updated": "2026-03-20T08:23:31Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.19739",
+  "abs_url": "https://arxiv.org/abs/2603.19739",
+  "fetched_at": "2026-07-20T11:33:13.437214Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

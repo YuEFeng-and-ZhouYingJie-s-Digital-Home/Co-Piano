@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15969",
+  "title": "Vessel Trajectory Prediction using COLREGs-aware Optimal Planning",
+  "summary": "This paper presents a trajectory prediction method for marine vessels based on optimal planning. Crude initial trajectories respecting static obstacles are first generated using A*-search to provide a feasible warm start. In the second step, a numerical optimizer is used to ensure COLREG compliance. The prediction problem is posed as sequential trajectory planning from the perspective of each surrounding vessel, requiring only their current positions, velocities, and intended destinations as input. As the latter is included in AIS messages, this enables faster predictions than learning-based methods that typically require longer data histories. The proposed method is validated using real-world scenarios constructed from AIS data.",
+  "authors": [
+    "David Kaikkonen",
+    "Fredrik Ljungberg",
+    "Erik Frisk"
+  ],
+  "published": "2026-07-17T14:04:48Z",
+  "updated": "2026-07-17T14:04:48Z",
+  "categories": [
+    "eess.SY",
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15969",
+  "abs_url": "https://arxiv.org/abs/2607.15969",
+  "fetched_at": "2026-07-20T14:22:43.713403Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

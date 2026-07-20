@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2606.09141",
+  "title": "FlashTTS: Fast Streaming TTS with MTP Acceleration and X-pred Mean Flow Distillation",
+  "summary": "Recent progress in speech dialogue systems requires Text-to-Speech (TTS) models to be faster and more responsive. Modern speech dialogue systems impose two primary requirements on TTS models: low latency and support for streaming inputs and outputs. However, most existing single-codebook LLM-based TTS methods rely on multi-stage pipelines that lack native streaming capabilities. These systems typically suffer from high end-to-end latency due to slow autoregressive prediction and multi-step flow matching. To address these limitations, we propose FlashTTS, an open-source and low-latency streaming TTS framework. FlashTTS introduces a lagged multi-track architecture that natively processes streaming text and speech inputs, thereby eliminating the need for sentence-level buffering. To accelerate acoustic generation, we integrate parallel Multi-Token Prediction (MTP) with an X-pred mean flow matching decoder. This configuration achieves high-fidelity token-to-mel generation in exactly two function evaluations (2-NFE). By jointly optimizing input processing and decoding efficiency, FlashTTS offers a practical foundation for real-time speech dialogue systems. Experiments show that FlashTTS substantially reduces First-Packet Latency to 325ms compared to robust streaming baselines, all while preserving strong zero-shot voice cloning and cross-lingual intelligibility. Speech samples are available. The model code and checkpoints will be released as open source.",
+  "authors": [
+    "Hanke Xie",
+    "Xiaming Ren",
+    "Dake Guo",
+    "Ruonan You",
+    "Wenhao Li",
+    "Jingbin Hu",
+    "Guobin Ma",
+    "Huakang Chen",
+    "Kejie Xu",
+    "Rui Huang",
+    "Weiguo Tan",
+    "Xianrong Wang",
+    "Lei Xie"
+  ],
+  "published": "2026-06-08T07:39:26Z",
+  "updated": "2026-06-09T03:52:24Z",
+  "categories": [
+    "eess.AS",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.09141",
+  "abs_url": "https://arxiv.org/abs/2606.09141",
+  "fetched_at": "2026-07-20T11:33:13.446336Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

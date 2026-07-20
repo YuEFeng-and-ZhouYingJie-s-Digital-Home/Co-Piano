@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.15509",
+  "title": "What do you mean by human-AI collaboration: Prerequisite functions and the affordances needed to achieve it",
+  "summary": "The concept of 'collaboration' has been extended rapidly to describe what people now do with conversational agents, intelligent tutors, adaptive platforms, and generative artificial intelligence (AI) tools in general. This chapter asks what is gained and lost when a demanding concept from the learning sciences is applied so freely. Returning to long-standing accounts of collaborative learning, it reconstructs the requirements that a situation, an interaction, and a set of cognitive processes have historically had to meet before being called collaborative. Human-AI collaboration requires a partly symmetric and negotiated relationship, shared and negotiable goals, a low and shifting division of labour, interactive and synchronous exchange, and mutual modelling, grounding, and socially shared regulation. Reviewing process-sensitive empirical studies of writing and problem solving, the chapter shows that most current human-AI interaction is better described as consultation, governance, delegation, or instruction rather than as collaboration. To make these distinctions functional, the chapter introduces a five-level diagnostic taxonomy of human-AI teaming (i.e. transactional, situational, operational, praxical, and synergistic) defined by the affordances an AI system exhibits. It shows that only the highest level begins to satisfy the conditions the tradition places on collaboration. The chapter derives the functions an AI system must possess for collaboration to be achievable, argues that most of these are present-day engineering choices rather than capabilities to be awaited, and sets out the implications for research, measurement, and responsible practice of human-AI collaboration in education.",
+  "authors": [
+    "Mutlu Cukurova"
+  ],
+  "published": "2026-06-13T23:30:12Z",
+  "updated": "2026-06-13T23:30:12Z",
+  "categories": [
+    "cs.HC",
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.15509",
+  "abs_url": "https://arxiv.org/abs/2606.15509",
+  "fetched_at": "2026-07-20T11:33:13.426488Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

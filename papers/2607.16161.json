@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.16161",
+  "title": "Adaptive Fault Injection Planning for Multi-Layer Self-Healing AI Infrastructure",
+  "summary": "Modern GPU-accelerator platforms rely on multi-layer self-healing pipelines that span hardware, firmware, management software, and orchestration. When faults propagate across layer boundaries, they can bypass detection, corrupt diagnosis, or trigger conflicting remediations--yet conventional fault-injection campaigns test each layer in isolation. We present ADA-ST, an adaptive fault-injection methodology that uses a weighted fault-propagation graph to guide cross-layer scenario selection. We construct four-layer graphs for three successive platforms at a hyperscale operator: Alpha, Beta, and Gamma. Platform Alpha, a production system that accumulated 72,550 repair tickets over four years, provides the empirical foundation; 49% of those tickets involve cross-layer fault propagation. We show that existing static test campaigns cover only 20-25% of the modeled fault-propagation edges, leaving approximately three-quarters of the cross-layer attack surface unexercised. ADA-ST closes this gap through iterative, activity-guided scenario selection that maximizes marginal coverage gain per iteration, reaching full edge coverage within 10 iterations on Alpha, 12 on Beta, and 9 on Gamma. The Fault-Layer Abstraction Mapping (FLAM) transfers propagation knowledge across hardware generations with 100% fidelity from Alpha to Beta and 96% from Beta to Gamma. Physical spot-validation on the newest platform confirms all four tested propagation edges, revealing cross-layer vulnerabilities spanning telemetry blind spots, absence-based detection gaps, multi-signal correlation failures, and trust-without-verification propagation at the L2-to-L3 boundary.",
+  "authors": [
+    "Saurabh Kulkarni",
+    "Yuxin Yang",
+    "Rohan Kulkarni",
+    "Gautam Nayak"
+  ],
+  "published": "2026-07-17T17:40:46Z",
+  "updated": "2026-07-17T17:40:46Z",
+  "categories": [
+    "cs.ET"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16161",
+  "abs_url": "https://arxiv.org/abs/2607.16161",
+  "fetched_at": "2026-07-20T14:22:43.710249Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

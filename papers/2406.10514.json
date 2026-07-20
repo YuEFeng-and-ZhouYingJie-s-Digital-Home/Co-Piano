@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2406.10514",
+  "title": "GTR-Voice: Articulatory Phonetics Informed Controllable Expressive Speech Synthesis",
+  "summary": "Expressive speech synthesis aims to generate speech that captures a wide range of para-linguistic features, including emotion and articulation, though current research primarily emphasizes emotional aspects over the nuanced articulatory features mastered by professional voice actors. Inspired by this, we explore expressive speech synthesis through the lens of articulatory phonetics. Specifically, we define a framework with three dimensions: Glottalization, Tenseness, and Resonance (GTR), to guide the synthesis at the voice production level. With this framework, we record a high-quality speech dataset named GTR-Voice, featuring 20 Chinese sentences articulated by a professional voice actor across 125 distinct GTR combinations. We verify the framework and GTR annotations through automatic classification and listening tests, and demonstrate precise controllability along the GTR dimensions on two fine-tuned expressive TTS models. We open-source the dataset and TTS models.",
+  "authors": [
+    "Zehua Kcriss Li",
+    "Meiying Melissa Chen",
+    "Yi Zhong",
+    "Pinxin Liu",
+    "Zhiyao Duan"
+  ],
+  "published": "2024-06-15T05:37:04Z",
+  "updated": "2024-06-15T05:37:04Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2406.10514",
+  "abs_url": "https://arxiv.org/abs/2406.10514",
+  "fetched_at": "2026-07-20T11:33:13.438574Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

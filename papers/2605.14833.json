@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.14833",
+  "title": "Emotion-Attended Stateful Memory (EASM):The Architecture for Hyper-Personalization at Scale",
+  "summary": "Current language model systems remain fundamentally stateless across sessions, limiting their ability to personalize interactions over time. While retrieval-augmented generation and fine-tuning improve knowledge access and domain capability, they do not enable persistent understanding of individual users. We propose an emotion-attended stateful memory architecture that dynamically constructs user-specific conversational context using long-term history, emotional signals, and inferred intent at inference time. To evaluate its impact, we conducted a controlled A/B study across thirty non-scripted conversations spanning six emotionally distinct categories using the same underlying language model in both conditions. The memory-enriched condition consistently outperformed the stateless baseline across all evaluated scenarios. The largest gains were observed in memory grounding (95% improvement), plan clarity (57%), and emotional validation (34%). Results remained consistent even in emotionally adversarial conversations involving grief, distress, and uncertainty. These findings suggest that stateful emotional memory may represent a foundational infrastructure layer for hyper-personalized AI systems, though broader validation across larger and more diverse evaluations remains necessary",
+  "authors": [
+    "Vineet Kotecha",
+    "Vansh Gupta"
+  ],
+  "published": "2026-05-14T13:39:19Z",
+  "updated": "2026-05-14T13:39:19Z",
+  "categories": [
+    "cs.AI",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.14833",
+  "abs_url": "https://arxiv.org/abs/2605.14833",
+  "fetched_at": "2026-07-20T14:22:43.718188Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

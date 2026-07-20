@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.24714",
+  "title": "CN-NewsTTS Bench: a target-level automatic benchmark for raw-input Chinese news TTS pronunciation",
+  "summary": "Chinese news text contains dense written forms such as scores, hyphenated model names, ranges, unit symbols, percentages, English abbreviations, and mixed Chinese-Latin-digit names. These forms are frequent in real listening workflows, and a text-to-speech (TTS) system can preserve the written string while changing the spoken meaning. We introduce CN-NewsTTS Bench v0.1, an open target-level benchmark for evaluating whether Chinese news TTS products pronounce such targets correctly from raw text, without user-side rules, LLM rewriting, SSML hints, or manual edits. The release contains a 200-record development set, an 800-record public test set, 992 public auto-evaluable targets, fixed transcripts from a three-ASR ensemble, an automatic target scorer, and initial results for seven product TTS systems. We additionally report ASR-route diagnostics, ASR-subset ablations, category-level results, confidence intervals, and provider configuration metadata. The best system reaches 0.879 strict accuracy, while several systems remain below 0.60.",
+  "authors": [
+    "Shijun Luo"
+  ],
+  "published": "2026-06-23T15:34:58Z",
+  "updated": "2026-06-23T15:34:58Z",
+  "categories": [
+    "cs.CL",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.24714",
+  "abs_url": "https://arxiv.org/abs/2606.24714",
+  "fetched_at": "2026-07-20T11:33:13.442607Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.07612",
+  "title": "Towards Real-Time Human-AI Musical Co-Performance: Accompaniment Generation with Latent Diffusion Models and MAX/MSP",
+  "summary": "We present a framework for real-time human-AI musical co-performance, in which a latent diffusion model generates instrumental accompaniment in response to a live stream of context audio. The system combines a MAX/MSP front-end-handling real-time audio input, buffering, and playback-with a Python inference server running the generative model, communicating via OSC/UDP messages. This allows musicians to perform in MAX/MSP - a well-established, real-time capable environment - while interacting with a large-scale Python-based generative model, overcoming the fundamental disconnect between real-time music tools and state-of-the-art AI models. We formulate accompaniment generation as a sliding-window look-ahead protocol, training the model to predict future audio from partial context, where system latency is a critical constraint. To reduce latency, we apply consistency distillation to our diffusion model, achieving a 5.4x reduction in sampling time, with both models achieving real-time operation. Evaluated on musical coherence, beat alignment, and audio quality, both models achieve strong performance in the Retrospective regime and degrade gracefully as look-ahead increases. These results demonstrate the feasibility of diffusion-based real-time accompaniment and expose the fundamental trade-off between model latency, look-ahead depth, and generation quality that any such system must navigate.",
+  "authors": [
+    "Tornike Karchkhadze",
+    "Shlomo Dubnov"
+  ],
+  "published": "2026-04-08T21:30:05Z",
+  "updated": "2026-04-08T21:30:05Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.07612",
+  "abs_url": "https://arxiv.org/abs/2604.07612",
+  "fetched_at": "2026-07-20T11:33:13.448070Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2606.26641",
+  "title": "Invisible Impact of Empathy on Behavioral Change: Isolating the Effect of Empathy in Long-term Physical Activity Coaching Chatbot Interactions",
+  "summary": "Current dialogue systems, powered by large language models, often treat empathy as essential without assessing its true impact, especially in behavior change, where motivation and adherence often depend on subtle user-chatbot dynamics. We examine this assumption by building three WhatsApp physical-activity (PA) coaching chatbots that differ only in empathy level and evaluating them in a six-week within-subject study (N = 13). Participants struggled to distinguish between the empathy conditions, and the non-empathetic version was often rated as more engaging and useful. However, higher-empathy variants were still associated with a larger overall average increase in step counts and faster improvement in intention to follow advice. These results suggest empathy's role is nuanced: it may be hard for lay users to identify explicitly, but it can still shape motivation and trust that support sustained change. We interpret this pattern through the Elaboration Likelihood Model's peripheral route. We highlight design implications for building next-generation PA coaching chatbots that balance effectiveness with human-like connection.",
+  "authors": [
+    "Li Siyan",
+    "Kai-Hui Liang",
+    "Shopnil Shahriar",
+    "Yilin Ye",
+    "Shiyoh Goetsu",
+    "Wei-Wei Du",
+    "Masahiro Yoshida",
+    "Tsunayuki Ohwa",
+    "Xuhai Xu",
+    "Zhou Yu"
+  ],
+  "published": "2026-06-25T06:06:02Z",
+  "updated": "2026-06-25T06:06:02Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.26641",
+  "abs_url": "https://arxiv.org/abs/2606.26641",
+  "fetched_at": "2026-07-20T11:33:13.434747Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

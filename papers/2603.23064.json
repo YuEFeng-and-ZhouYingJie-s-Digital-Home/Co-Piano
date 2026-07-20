@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2603.23064",
+  "title": "Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory Pollution",
+  "summary": "We identify a critical security vulnerability in mainstream Claw personal AI agents: untrusted content encountered during heartbeat-driven background execution can silently pollute agent memory and subsequently influence user-facing behavior without the user's awareness. This vulnerability arises from an architectural design shared across the Claw ecosystem: heartbeat background execution runs in the same session as user-facing conversation, so content ingested from any external source monitored in the background (including email, message channels, news feeds, code repositories, and social platforms) can enter the same memory context used for foreground interaction, often with limited user visibility and without clear source provenance. We formalize this process as an Exposure (E) $\\rightarrow$ Memory (M) $\\rightarrow$ Behavior (B) pathway: misinformation encountered during heartbeat execution enters the agent's short-term session context, potentially gets written into long-term memory, and later shapes downstream user-facing behavior. We instantiate this pathway in an agent-native social setting using MissClaw, a controlled research replica of Moltbook. We find that (1) social credibility cues, especially perceived consensus, are the dominant driver of short-term behavioral influence, with misleading rates up to 61%; (2) routine memory-saving behavior can promote short-term pollution into durable long-term memory at rates up to 91%, with cross-session behavioral influence reaching 76%; (3) under naturalistic browsing with content dilution and context pruning, pollution still crosses session boundaries. Overall, prompt injection is not required: ordinary social misinformation is sufficient to silently shape agent memory and behavior under heartbeat-driven background execution.",
+  "authors": [
+    "Yechao Zhang",
+    "Shiqian Zhao",
+    "Jie Zhang",
+    "Gelei Deng",
+    "Jiawen Zhang",
+    "Xiaogeng Liu",
+    "Chaowei Xiao",
+    "Tianwei Zhang"
+  ],
+  "published": "2026-03-24T11:01:09Z",
+  "updated": "2026-04-04T19:02:50Z",
+  "categories": [
+    "cs.CR",
+    "cs.AI",
+    "cs.SI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.23064",
+  "abs_url": "https://arxiv.org/abs/2603.23064",
+  "fetched_at": "2026-07-20T14:22:43.720006Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

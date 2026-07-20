@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2512.20651",
+  "title": "Memory Bear AI A Breakthrough from Memory to Cognition Toward Artificial General Intelligence",
+  "summary": "Large language models (LLMs) face inherent limitations in memory, including restricted context windows, long-term knowledge forgetting, redundant information accumulation, and hallucination generation. These issues severely constrain sustained dialogue and personalized services. This paper proposes the Memory Bear system, which constructs a human-like memory architecture grounded in cognitive science principles. By integrating multimodal information perception, dynamic memory maintenance, and adaptive cognitive services, Memory Bear achieves a full-chain reconstruction of LLM memory mechanisms. Across domains such as healthcare, enterprise operations, and education, Memory Bear demonstrates substantial engineering innovation and performance breakthroughs. It significantly improves knowledge fidelity and retrieval efficiency in long-term conversations, reduces hallucination rates, and enhances contextual adaptability and reasoning capability through memory-cognition integration. Experimental results show that, compared with existing solutions (e.g., Mem0, MemGPT, Graphiti), Memory Bear outperforms them across key metrics, including accuracy, token efficiency, and response latency. This marks a crucial step forward in advancing AI from \"memory\" to \"cognition\".",
+  "authors": [
+    "Deliang Wen",
+    "Ke Sun"
+  ],
+  "published": "2025-12-17T06:06:18Z",
+  "updated": "2026-03-18T04:27:52Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.20651",
+  "abs_url": "https://arxiv.org/abs/2512.20651",
+  "fetched_at": "2026-07-20T14:22:43.721361Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

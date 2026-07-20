@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2607.15004",
+  "title": "CosFly-VLA: A Spatially Aware Vision-Language-Action Model for UAV Tracking",
+  "summary": "Dynamic target tracking is essential for Unmanned Aerial Vehicles (UAVs) operating in complex urban environments, where both the target and the camera viewpoint change continuously. Existing Vision-Language-Action (VLA) policies can track visible targets effectively, but their performance often degrades when buildings, vegetation, or roadside objects block the line of sight. During sustained occlusion, a policy may lose the target state, execute actions toward an incorrect region, and amplify this error through subsequent observations until re-acquisition becomes impossible. To this end, we present CosFly-VLA, a spatially aware VLA model that jointly grounds the target, estimates its visibility, and generates continuous flight actions through a structured prediction interface. To train this policy, we use a large-scale recipe over diverse data sources. Spatially Grounded Continued Pretraining (CPT) on a 500k mixed pool injects UAV-view depth, distance, and 3-D spatial reasoning. A three-stage Curriculum-based Supervised Fine-Tuning (SFT) process then specializes the tracker through multi-head warm-up followed by two-stage curriculum learning over natural and hard / long-occlusion data. Chain-of-Thought (CoT) training subsequently teaches recovery-oriented reasoning traces before structured answers. Finally, a closed-loop Reinforcement Learning (RL) stage optimizes tracking behavior with a multi-component reward covering stand-off tracking, grounding quality, collision avoidance, and task success. Relative to OpenVLA, CosFly-VLA-0.8B reduces open-loop Average Displacement Error (ADE) by 34.1% on seen-test and 35.3% on unseen-test. Closed-loop optimization improves Success Rate (SR) by 29.8% and 2.5%, respectively. These results demonstrate progress from visible-frame imitation toward spatially grounded action-closed-loop control, evaluated under a shared oracle state history.",
+  "authors": [
+    "Ruilong Ren",
+    "Songsheng Cheng",
+    "Yunpeng Zhou",
+    "Hanxuan Chen",
+    "Xiangyue Wang",
+    "Tianle Zeng",
+    "Shuai Yuan",
+    "Binbo Li",
+    "Hanzhong Guo",
+    "Ji Pei",
+    "Da Zhang",
+    "Kangli Wang"
+  ],
+  "published": "2026-07-16T13:52:08Z",
+  "updated": "2026-07-16T13:52:08Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15004",
+  "abs_url": "https://arxiv.org/abs/2607.15004",
+  "fetched_at": "2026-07-20T11:33:13.425466Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

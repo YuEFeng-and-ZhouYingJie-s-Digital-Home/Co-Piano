@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2606.00125",
+  "title": "Multimodal Music Recommendation System using LLMs",
+  "summary": "Music recommendation systems typically treat songs as opaque tokens, relying on collaborative interaction histories which overlooks semantic or acoustic content. Prior work has explored LLM-augmented, multimodal, and text-enhanced approaches to sequential recommendation, and while some methods partially combine semantic, acoustic, or engagement signals, none jointly model all three within a unified LLM-based sequential reasoning framework that grounds recommendations in actual song content. In this work, we propose a multimodal framework for session-based music recommendation that enriches the LastFM-1K dataset with three complementary signals: (1) audio and lyric embeddings extracted using pretrained music and text representation models, (2) LLM-generated semantic metadata using the MGPHot annotation schema, and (3) listening completion ratios. We adopt the E4SRec framework by extending it with multimodal features and different item ID encoder backbones, including SASRec, BERT4Rec, and GRU4Rec. We further extend the LLM backbone option with LLaMa-2-13B, Qwen2.5-7B-Instruct, and LLaMa-3-70B in both zero-shot and fine-tuned settings. Our experiments show that integrating content-based features improves over ID-only baselines up to 95% in terms of Recall and 79% in terms of NDCG. Moreover, our experiments show that naive multimodal fusion does not always yield additive improvements, highlighting challenges in cross-modal integration. We release a large-scale multimodal benchmark for music recommendation.",
+  "authors": [
+    "Srikar Prabhas Kandagatla",
+    "Sreehitha R. Narayana",
+    "Chandana Magapu",
+    "Swetha Mohan",
+    "Shamanth Kuthpadi",
+    "Hongjie Chen",
+    "Ryan A. Rossi",
+    "Franck Dernoncourt",
+    "Nesreen Ahmed"
+  ],
+  "published": "2026-05-28T15:34:12Z",
+  "updated": "2026-05-28T15:34:12Z",
+  "categories": [
+    "cs.IR",
+    "cs.AI",
+    "cs.LG",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.00125",
+  "abs_url": "https://arxiv.org/abs/2606.00125",
+  "fetched_at": "2026-07-20T11:33:13.429277Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

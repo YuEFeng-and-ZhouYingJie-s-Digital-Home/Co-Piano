@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.16181",
+  "title": "Vision-Language Assistant for Emotional Reactions to Risky Driving",
+  "summary": "This study introduces a vision-language pipeline that detects risky driving behaviors and generates emotionally expressive responses to support driver awareness and comfort. Although vision-language models have advanced perception and reasoning in autonomous driving, existing systems rarely consider the emotional dimension or real-world user experience. Keep Yelling Assistant (KYA) detects high-risk driving maneuvers in real time, such as sudden cut-ins. It then produces emotional responses through a large language model tailored to driver preferences. The framework comprises two core modules. The vision module uses YOLOv8 variants to detect nearby vehicles and identify risky behaviors such as sudden cut-ins. Key driving metrics, including relative distance, speed, and projected reach time, are extracted and normalized to produce a structured behavior log. The language module processes this log with user-defined emotional tone settings, such as neutral, humorous, and analytical, and generates verbal reactions using state-of-the-art large language models, including ChatGPT-4o, Claude 3, Gemini 2.5, and Copilot. We evaluated the proposed system using dashcam videos containing risky driving behaviors and a user study involving 108 participants. Participants selected preferred response styles, and the large language models were evaluated based on emotional alignment. All models received favorable ratings, although preferences varied across personas. Notably, the combination of YOLOv8s and ChatGPT-4o achieved the highest score of 4.29 out of 5.00. By integrating real-world perception with emotionally adaptive dialogue, KYA introduces a new paradigm for emotionally intelligent in-vehicle artificial intelligence. It offers promising directions for improving safety, trust, and emotional well-being in both conventional and autonomous vehicles.",
+  "authors": [
+    "Harine Choi",
+    "Eun Hak Lee",
+    "Zhengzhong Tu"
+  ],
+  "published": "2026-07-17T17:57:27Z",
+  "updated": "2026-07-17T17:57:27Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16181",
+  "abs_url": "https://arxiv.org/abs/2607.16181",
+  "fetched_at": "2026-07-20T11:33:13.433559Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

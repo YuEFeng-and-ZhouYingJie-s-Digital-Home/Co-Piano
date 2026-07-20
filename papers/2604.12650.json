@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2604.12650",
+  "title": "Listening Deepfake Detection: A New Perspective Beyond Speaking-Centric Forgery Analysis",
+  "summary": "Existing deepfake detection research has primarily focused on scenarios where the manipulated subject is actively speaking, i.e., generating fabricated content by altering the speaker's appearance or voice. However, in realistic interaction settings, attackers often alternate between falsifying speaking and listening states to mislead their targets, thereby enhancing the realism and persuasiveness of the scenario. Although the detection of 'listening deepfakes' remains largely unexplored and is hindered by a scarcity of both datasets and methodologies, the relatively limited quality of synthesized listening reactions presents an excellent breakthrough opportunity for current deepfake detection efforts. In this paper, we present the task of Listening Deepfake Detection (LDD). We introduce ListenForge, the first dataset specifically designed for this task, constructed using five Listening Head Generation (LHG) methods. To address the distinctive characteristics of listening forgeries, we propose MANet, a Motion-aware and Audio-guided Network that captures subtle motion inconsistencies in listener videos while leveraging speaker's audio semantics to guide cross-modal fusion. Extensive experiments demonstrate that existing Speaking Deepfake Detection (SDD) models perform poorly in listening scenarios. In contrast, MANet achieves significantly superior performance on ListenForge. Our work highlights the necessity of rethinking deepfake detection beyond the traditional speaking-centric paradigm and opens new directions for multimodal forgery analysis in interactive communication settings. The dataset and code are available at https://anonymous.4open.science/r/LDD-B4CB.",
+  "authors": [
+    "Miao Liu",
+    "Fangda Wei",
+    "Jing Wang",
+    "Xinyuan Qian"
+  ],
+  "published": "2026-04-14T12:20:07Z",
+  "updated": "2026-04-14T12:20:07Z",
+  "categories": [
+    "cs.CV",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.12650",
+  "abs_url": "https://arxiv.org/abs/2604.12650",
+  "fetched_at": "2026-07-20T11:33:13.423704Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

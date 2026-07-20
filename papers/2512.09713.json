@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2512.09713",
+  "title": "Robust Speech Activity Detection in the Presence of Singing Voice",
+  "summary": "Speech Activity Detection (SAD) systems often misclassify singing as speech, leading to degraded performance in applications such as dialogue enhancement and automatic speech recognition. We introduce Singing-Robust Speech Activity Detection ( SR-SAD ), a neural network designed to robustly detect speech in the presence of singing. Our key contributions are: i) a training strategy using controlled ratios of speech and singing samples to improve discrimination, ii) a computationally efficient model that maintains robust performance while reducing inference runtime, and iii) a new evaluation metric tailored to assess SAD robustness in mixed speech-singing scenarios. Experiments on a challenging dataset spanning multiple musical genres show that SR-SAD maintains high speech detection accuracy (AUC = 0.919) while rejecting singing. By explicitly learning to distinguish between speech and singing, SR-SAD enables more reliable SAD in mixed speech-singing scenarios.",
+  "authors": [
+    "Philipp Grundhuber",
+    "Mhd Modar Halimeh",
+    "Martin Strauß",
+    "Emanuël A. P. Habets"
+  ],
+  "published": "2025-12-10T14:58:36Z",
+  "updated": "2025-12-10T14:58:36Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.09713",
+  "abs_url": "https://arxiv.org/abs/2512.09713",
+  "fetched_at": "2026-07-20T11:33:13.419361Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

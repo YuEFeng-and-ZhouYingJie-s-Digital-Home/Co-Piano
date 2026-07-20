@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2410.08136",
+  "title": "SoundScape: A Human-AI Co-Creation System Making Your Memories Heard",
+  "summary": "Sound plays a significant role in human memory, yet it is often overlooked by mainstream life-recording methods. Most current UGC (User-Generated Content) creation tools emphasize visual content while lacking user-friendly sound design features. This paper introduces SoundScape, a human-AI co-creation system that allows users to easily create sound memories on mobile devices through innovative interaction. By integrating sound effects and music with visual scenes, SoundScape encourages users to enrich their creations with immersive sound elements, enhancing the atmosphere of their works. To support public creation, SoundScape incorporates a conversational agent and AI music generation technology. User studies indicate that our approach is effective for sound memory creation, with SoundScape outperforming existing tools in terms of user experience and the perceived quality of produced works.",
+  "authors": [
+    "Chongjun Zhong",
+    "Jiaxing Yu",
+    "Yingping Cao",
+    "Songruoyao Wu",
+    "Wenqi Wu",
+    "Kejun Zhang"
+  ],
+  "published": "2024-10-10T17:19:50Z",
+  "updated": "2024-10-10T17:19:50Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2410.08136",
+  "abs_url": "https://arxiv.org/abs/2410.08136",
+  "fetched_at": "2026-07-20T11:33:13.417854Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

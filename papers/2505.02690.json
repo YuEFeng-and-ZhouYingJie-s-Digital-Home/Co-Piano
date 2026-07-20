@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2505.02690",
+  "title": "Dance of Fireworks: An Interactive Broadcast Gymnastics Training System Based on Pose Estimation",
+  "summary": "This study introduces Dance of Fireworks, an interactive system designed to combat sedentary health risks by enhancing engagement in radio calisthenics. Leveraging mobile device cameras and lightweight pose estimation (PoseNet/TensorFlow Lite), the system extracts body keypoints, computes joint angles, and compares them with standardized motions to deliver real-time corrective feedback. To incentivize participation, it dynamically maps users' movements (such as joint angles and velocity) to customizable fireworks animations, rewarding improved accuracy with richer visual effects. Experiments involving 136 participants demonstrated a significant reduction in average joint angle errors from 21.3 degrees to 9.8 degrees (p < 0.01) over four sessions, with 93.4 percent of users affirming its exercise-promoting efficacy and 85.4 percent praising its entertainment value. The system operates without predefined motion templates or specialised hardware, enabling seamless integration into office environments. Future enhancements will focus on improving pose recognition accuracy, reducing latency, and adding features such as multiplayer interaction and music synchronisation. This work presents a cost-effective, engaging solution to promote physical activity in sedentary populations.",
+  "authors": [
+    "Haotian Chen",
+    "Ziyu Liu",
+    "Xi Cheng",
+    "Chuangqi Li"
+  ],
+  "published": "2025-05-05T14:41:06Z",
+  "updated": "2025-05-05T14:41:06Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2505.02690",
+  "abs_url": "https://arxiv.org/abs/2505.02690",
+  "fetched_at": "2026-07-20T14:22:43.705039Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

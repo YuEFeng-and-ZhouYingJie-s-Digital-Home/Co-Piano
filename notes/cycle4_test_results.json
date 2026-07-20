@@ -1,0 +1,173 @@
+{
+  "cycle": 4,
+  "pass": 33,
+  "fail": 0,
+  "tests": [
+    {
+      "name": "scenario_perfect",
+      "pass": true,
+      "detail": "score=78.0 grade=中等 (Average) dims=9"
+    },
+    {
+      "name": "scenario_tense",
+      "pass": true,
+      "detail": "score=68.0 grade=及格 (Pass) dims=9"
+    },
+    {
+      "name": "scenario_collapsed",
+      "pass": true,
+      "detail": "score=64.2 grade=及格 (Pass) dims=9"
+    },
+    {
+      "name": "scenario_asymmetric",
+      "pass": true,
+      "detail": "score=68.0 grade=及格 (Pass) dims=9"
+    },
+    {
+      "name": "monotonicity_perfect_best",
+      "pass": true,
+      "detail": "PERFECT=78.0 > TENSE=68.0 & COLLAPSED=64.2"
+    },
+    {
+      "name": "all_9_dimensions",
+      "pass": true,
+      "detail": "missing=none extra=none"
+    },
+    {
+      "name": "dimension_score_range",
+      "pass": true,
+      "detail": "all in [0,100]: True"
+    },
+    {
+      "name": "finger_curl_index_range",
+      "pass": true,
+      "detail": "angle=52.5° in [20,100]"
+    },
+    {
+      "name": "finger_curl_middle_range",
+      "pass": true,
+      "detail": "angle=51.5° in [20,100]"
+    },
+    {
+      "name": "finger_curl_ring_range",
+      "pass": true,
+      "detail": "angle=55.3° in [20,100]"
+    },
+    {
+      "name": "finger_curl_pinky_range",
+      "pass": true,
+      "detail": "angle=56.3° in [20,100]"
+    },
+    {
+      "name": "tense_index_straight",
+      "pass": true,
+      "detail": "angle=0.0° < 10°"
+    },
+    {
+      "name": "tense_middle_straight",
+      "pass": true,
+      "detail": "angle=0.0° < 10°"
+    },
+    {
+      "name": "tense_ring_straight",
+      "pass": true,
+      "detail": "angle=0.0° < 10°"
+    },
+    {
+      "name": "tense_pinky_straight",
+      "pass": true,
+      "detail": "angle=0.0° < 10°"
+    },
+    {
+      "name": "asymmetric_index_bent",
+      "pass": true,
+      "detail": "index angle=52.5° > 30°"
+    },
+    {
+      "name": "asymmetric_ring_straight",
+      "pass": true,
+      "detail": "ring angle=0.0° < 10°"
+    },
+    {
+      "name": "patch_applied",
+      "pass": true,
+      "detail": "patch result: True"
+    },
+    {
+      "name": "intent_hand_pose",
+      "pass": true,
+      "detail": "got: 你的手型综合分 78.0 (中等 (Average))\n9 维度: wrist_height=68, hand_arch=75, finger_curl=91,..."
+    },
+    {
+      "name": "fallthrough_to_llm",
+      "pass": true,
+      "detail": "got: LLM: 今天天气怎么样"
+    },
+    {
+      "name": "no_recursion",
+      "pass": true,
+      "detail": "LLM called 1 times (expected 1)"
+    },
+    {
+      "name": "english_keyword",
+      "pass": true,
+      "detail": "hand pose query: 你的手型综合分 78.0 (中等 (Average))\n9 维度: wrist_height=68, hand_arch..."
+    },
+    {
+      "name": "multi_calls_stable",
+      "pass": true,
+      "detail": "after 3 LLM calls, count=3 (expected 3)"
+    },
+    {
+      "name": "json_structure",
+      "pass": true,
+      "detail": "keys: ['dimensions', 'finger_details', 'overall_score', 'weights', 'suggestions', 'grade']"
+    },
+    {
+      "name": "suggestions_is_list",
+      "pass": true,
+      "detail": "type: list, len: 3"
+    },
+    {
+      "name": "dimensions_count",
+      "pass": true,
+      "detail": "count: 9"
+    },
+    {
+      "name": "zero_landmarks",
+      "pass": true,
+      "detail": "score=60.0"
+    },
+    {
+      "name": "collinear_landmarks",
+      "pass": true,
+      "detail": "score=65.8"
+    },
+    {
+      "name": "suggestions_generated",
+      "pass": true,
+      "detail": "3 suggestions"
+    },
+    {
+      "name": "suggestions_have_advice",
+      "pass": true,
+      "detail": "all have detailed advice: True"
+    },
+    {
+      "name": "severity_classified",
+      "pass": true,
+      "detail": "severities: ['high', 'high', 'high']"
+    },
+    {
+      "name": "both_hands_symmetry",
+      "pass": true,
+      "detail": "symmetry=60"
+    },
+    {
+      "name": "speed",
+      "pass": true,
+      "detail": "0.06 ms/analyze"
+    }
+  ],
+  "summary": "33/33"
+}

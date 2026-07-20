@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.05493",
+  "title": "Ground3D-LMM: Fine-Grained 3D Point Grounding and Spatial Reasoning with LMM",
+  "summary": "Natural-language queries about 3D environments become actionable when responses are verifiable and metric. Verifiability requires explicit grounding to the referred 3D region, while metric answers report physical measurements in real-world units (e.g., size, thickness, clearance, and distance). Existing 3D large multimodal models (LMMs) approaches remain limited: conversational systems typically respond without explicit 3D grounding, while 3D grounding models are not designed for interactive, metric-aware dialogue. In this paper, we present Ground3D-LMM, a unified model that takes a point cloud and an optional RGB image as input and supports 3D spatial conversation with (i) point-grounded responses and (ii) metric numeric outputs at both object and part granularity, including multi-object queries. To evaluate this intersection of grounding and measurement, we define the 3D Grounded Measurement task, which requires predicting the referred 3D region and the corresponding metric quantities in real-world units. We introduce a large-scale dataset built on ScanNet and ScanNet++ datasets with dense object and part annotations and roughly 2.5M question-answer pairs spanning eight tasks, along with a manually verified test set. Extensive experiments on multiple datasets and tasks show that our proposed Ground3D-LMM model provides a strong baseline for grounded, metric-aware 3D conversational understanding. Our dataset and model are publicly available.",
+  "authors": [
+    "Amol Harsh",
+    "Zongyan Han",
+    "Jean Lahoud",
+    "Ye Liu",
+    "Rao Muhammad Anwer",
+    "Hisham Cholakkal",
+    "Salman Khan",
+    "Fahad Khan"
+  ],
+  "published": "2026-07-06T18:00:00Z",
+  "updated": "2026-07-06T18:00:00Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.05493",
+  "abs_url": "https://arxiv.org/abs/2607.05493",
+  "fetched_at": "2026-07-20T11:33:13.434289Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

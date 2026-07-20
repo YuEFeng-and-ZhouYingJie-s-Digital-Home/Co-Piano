@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2603.16171",
+  "title": "MemX: A Local-First Long-Term Memory System for AI Assistants",
+  "summary": "We present MemX, a local-first long-term memory system for AI assistants with stability-oriented retrieval design. MemX is implemented in Rust on top of libSQL and an OpenAI-compatible embedding API, providing persistent, searchable, and explainable memory for conversational agents. Its retrieval pipeline applies vector recall, keyword recall, Reciprocal Rank Fusion (RRF), four-factor re-ranking, and a low-confidence rejection rule that suppresses spurious recalls when no answer exists in the memory store. We evaluate MemX on two axes. First, two custom Chinese-language benchmark suites (43 queries, <=1,014 records) validate pipeline design: Hit@1=91.3% on a default scenario and 100% under high confusion, with conservative miss-query suppression. Second, the LongMemEval benchmark (500 queries, up to 220,349 records) quantifies system boundaries across four ability types and three storage granularities. At fact-level granularity the system reaches Hit@5=51.6% and MRR=0.380, doubling session-level performance, while temporal and multi-session reasoning remain challenging (<=43.6% Hit@5). FTS5 full-text indexing reduces keyword search latency by 1,100x at 100k-record scale, keeping end-to-end search under 90 ms. Unlike Mem0 and related work that targets end-to-end agent benchmarks, MemX focuses on a narrower, reproducible baseline: local-first deployment, structural simplicity, explainable retrieval, and stability-oriented design.",
+  "authors": [
+    "Lizheng Sun"
+  ],
+  "published": "2026-03-17T06:39:54Z",
+  "updated": "2026-03-17T06:39:54Z",
+  "categories": [
+    "cs.IR",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.16171",
+  "abs_url": "https://arxiv.org/abs/2603.16171",
+  "fetched_at": "2026-07-20T14:22:43.720182Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

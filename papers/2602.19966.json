@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.19966",
+  "title": "GazeFlow: Personalized Ambient Soundscape Generation for Passive Strabismus Self-Monitoring",
+  "summary": "Strabismus affects 2-4% of the population, yet individuals recovering from corrective surgery lack accessible tools for monitoring eye alignment. Dichoptic therapies require active engagement & clinical supervision, limiting their adoption for passive self-awareness. We present GazeFlow, a browser-based self-monitoring system that uses a personalized temporal autoencoder to detect eye drift patterns from webcam-based gaze tracking & provides ambient audio feedback. Unlike alert-based systems, GazeFlow operates according to calm computing principles, morphing musical parameters in proportion to drift severity while remaining in peripheral awareness. We address the challenges of inter-individual variability & domain transfer (1000Hz research to 30Hz webcam) by introducing Binocular Temporal-Frequency Disentanglement (BTFD), Contrastive Biometric Pre-training (CBP), & Gaze-MAML. We validate our approach on the GazeBase dataset (N=50) achieving F1=0.84 for drift detection, & conduct a preliminary user study (N=6) with participants having intermittent strabismus. Participants reported increased awareness of their eye behaviour (M=5.8/7) & preference for ambient feedback over alerts (M=6.2/7). We discuss the system's potential for self-awareness applications & outline directions for clinical validation.",
+  "authors": [
+    "Joydeep Chandra",
+    "Satyam Kumar Navneet",
+    "Yong Zhang"
+  ],
+  "published": "2026-02-23T15:28:55Z",
+  "updated": "2026-02-23T15:28:55Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.19966",
+  "abs_url": "https://arxiv.org/abs/2602.19966",
+  "fetched_at": "2026-07-20T11:33:13.435432Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

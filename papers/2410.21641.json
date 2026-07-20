@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2410.21641",
+  "title": "RDSinger: Reference-based Diffusion Network for Singing Voice Synthesis",
+  "summary": "Singing voice synthesis (SVS) aims to produce high-fidelity singing audio from music scores, requiring a detailed understanding of notes, pitch, and duration, unlike text-to-speech tasks. Although diffusion models have shown exceptional performance in various generative tasks like image and video creation, their application in SVS is hindered by time complexity and the challenge of capturing acoustic features, particularly during pitch transitions. Some networks learn from the prior distribution and use the compressed latent state as a better start in the diffusion model, but the denoising step doesn't consistently improve quality over the entire duration. We introduce RDSinger, a reference-based denoising diffusion network that generates high-quality audio for SVS tasks. Our approach is inspired by Animate Anyone, a diffusion image network that maintains intricate appearance features from reference images. RDSinger utilizes FastSpeech2 mel-spectrogram as a reference to mitigate denoising step artifacts. Additionally, existing models could be influenced by misleading information on the compressed latent state during pitch transitions. We address this issue by applying Gaussian blur on partial reference mel-spectrogram and adjusting loss weights in these regions. Extensive ablation studies demonstrate the efficiency of our method. Evaluations on OpenCpop, a Chinese singing dataset, show that RDSinger outperforms current state-of-the-art SVS methods in performance.",
+  "authors": [
+    "Kehan Sui",
+    "Jinxu Xiang",
+    "Fang Jin"
+  ],
+  "published": "2024-10-29T01:01:18Z",
+  "updated": "2024-10-29T01:01:18Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2410.21641",
+  "abs_url": "https://arxiv.org/abs/2410.21641",
+  "fetched_at": "2026-07-20T11:33:13.438457Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2509.10852",
+  "title": "Pre-Storage Reasoning for Episodic Memory: Shifting Inference Burden to Memory for Personalized Dialogue",
+  "summary": "Effective long-term memory in conversational AI requires synthesizing information across multiple sessions. However, current systems place excessive reasoning burden on response generation, making performance significantly dependent on model sizes. We introduce PREMem (Pre-storage Reasoning for Episodic Memory), a novel approach that shifts complex reasoning processes from inference to memory construction. PREMem extracts fine-grained memory fragments categorized into factual, experiential, and subjective information; it then establishes explicit relationships between memory items across sessions, capturing evolution patterns like extensions, transformations, and implications. By performing this reasoning during pre-storage rather than when generating a response, PREMem creates enriched representations while reducing computational demands during interactions. Experiments show significant performance improvements across all model sizes, with smaller models achieving results comparable to much larger baselines while maintaining effectiveness even with constrained token budgets. Code and dataset are available at https://github.com/sangyeop-kim/PREMem.",
+  "authors": [
+    "Sangyeop Kim",
+    "Yohan Lee",
+    "Sanghwa Kim",
+    "Hyunjong Kim",
+    "Sungzoon Cho"
+  ],
+  "published": "2025-09-13T15:18:08Z",
+  "updated": "2025-09-13T15:18:08Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.10852",
+  "abs_url": "https://arxiv.org/abs/2509.10852",
+  "fetched_at": "2026-07-20T14:22:43.721974Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

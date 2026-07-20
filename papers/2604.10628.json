@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2604.10628",
+  "title": "BMdataset: A Musicologically Curated LilyPond Dataset",
+  "summary": "Symbolic music research has relied almost exclusively on MIDI-based datasets; text-based engraving formats such as LilyPond remain unexplored for music understanding. We present BMdataset, a musicologically curated dataset of 393 LilyPond scores (2,646 movements) transcribed by experts directly from original Baroque manuscripts, with metadata covering composer, musical form, instrumentation, and sectional attributes. Building on this resource, we introduce LilyBERT (weights can be found at https://huggingface.co/csc-unipd/lilybert), a CodeBERT-based encoder adapted to symbolic music through vocabulary extension with 115 LilyPond-specific tokens and masked language model pre-training. Linear probing on the out-of-domain Mutopia corpus shows that, despite its modest size (~90M tokens), fine-tuning on BMdataset alone outperforms continuous pre-training on the full PDMX corpus (~15B tokens) for both composer and style classification, demonstrating that small, expertly curated datasets can be more effective than large, noisy corpora for music understanding. Combining broad pre-training with domain-specific fine-tuning yields the best results overall (84.3% composer accuracy), confirming that the two data regimes are complementary. We release the dataset, tokenizer, and model to establish a baseline for representation learning on LilyPond.",
+  "authors": [
+    "Matteo Spanio",
+    "Ilay Guler",
+    "Antonio Rodà"
+  ],
+  "published": "2026-04-12T13:09:20Z",
+  "updated": "2026-06-07T10:28:59Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.10628",
+  "abs_url": "https://arxiv.org/abs/2604.10628",
+  "fetched_at": "2026-07-20T11:33:13.431551Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

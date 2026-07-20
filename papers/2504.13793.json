@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2504.13793",
+  "title": "ChatNekoHacker: Real-Time Fan Engagement with Conversational Agents",
+  "summary": "ChatNekoHacker is a real-time conversational agent system that strengthens fan engagement for musicians. It integrates Amazon Bedrock Agents for autonomous dialogue, Unity for immersive 3D livestream sets, and VOICEVOX for high quality Japanese text-to-speech, enabling two virtual personas to represent the music duo Neko Hacker. In a one-hour YouTube Live with 30 participants, we evaluated the impact of the system. Regression analysis showed that agent interaction significantly elevated fan interest, with perceived fun as the dominant predictor. The participants also expressed a stronger intention to listen to the duo's music and attend future concerts. These findings highlight entertaining, interactive broadcasts as pivotal to cultivating fandom. Our work offers actionable insights for the deployment of conversational agents in entertainment while pointing to next steps: broader response diversity, lower latency, and tighter fact-checking to curb potential misinformation.",
+  "authors": [
+    "Takuya Sera",
+    "Yusuke Hamano"
+  ],
+  "published": "2025-04-18T16:48:30Z",
+  "updated": "2025-04-18T16:48:30Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2504.13793",
+  "abs_url": "https://arxiv.org/abs/2504.13793",
+  "fetched_at": "2026-07-20T11:33:13.417322Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

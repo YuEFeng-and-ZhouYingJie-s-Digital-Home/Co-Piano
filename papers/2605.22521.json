@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.22521",
+  "title": "Quantifying Full-Body Immersion",
+  "summary": "Humanity is at the forefront of yet another digital revolution, where the lines between real and virtual worlds are dissolving, reshaping how we perceive and interact with our surroundings. In this context, we introduce a transformative paradigm for immersive virtual experiences centered around whole-body kinetic interactions. Our approach redefines immersion through three distinct levels: audio-visual immersion, capturing sensory realism; physical immersion, delivering haptic feedback; and full-body immersion (FBI), where dynamic bodily interaction integrates seamlessly with virtual environments. At the core of this innovation lies a scalable, distributable platform based on modular robotic surface units inspired by the adaptive designs of nature. These units enable the rendering of immersive environments at any scale, from intimate personal experiences to expansive multi-user settings, dynamically adapting to interactions in real-time. The modular system distributes force, shape, and motion feedback throughout entire spaces, replicating the physical characteristics of the environment and enabling new depth of engagement through FBI. By combining scalability, adaptability, and dynamic physical engagement, this framework bridges the gap between real and virtual worlds. It offers an unprecedented level of immersion where users can engage their entire bodies in symbiotic interactions with the virtual space. This work not only advances immersive technology but also redefines how humans and virtual environments coexist, setting a foundation for a new era of human-environment synthesis.",
+  "authors": [
+    "Alihan Bakir",
+    "Ekrem Yüksel",
+    "Fabio Zuliani",
+    "Neil Chennoufi",
+    "Francesco Bruno",
+    "Jamie Paik"
+  ],
+  "published": "2026-05-21T14:13:27Z",
+  "updated": "2026-05-21T14:13:27Z",
+  "categories": [
+    "cs.RO",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.22521",
+  "abs_url": "https://arxiv.org/abs/2605.22521",
+  "fetched_at": "2026-07-20T11:33:13.432397Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

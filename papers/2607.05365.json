@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.05365",
+  "title": "SPEARBench: A Benchmark for Naturalness Evaluation in Streaming Speech-to-Speech Language Models",
+  "summary": "Streaming speech-to-speech language models aim to answer spoken queries directly with synthetic speech. However, standard speech and text benchmarks do not capture whether these systems behave naturally in conversations, where timing, turn-taking, prosody, interpersonal stance, language and dialect consistency, and relationship-aware appropriateness jointly shape perceived quality. We introduce SPEARBench, a benchmark for evaluating naturalness in speech-to-speech language models from question-answer interactions. SPEARBench constructs controlled dialogue prompts from the Seamless Interaction corpus, runs inference across multiple models, and evaluates generated answers using a multidimensional protocol that covers response latency, interruptions, speech quality, ASR robustness, language and dialect consistency, emotional naturalness, interpersonal stance, and explainable distributional baselines. The benchmark includes original human answers as a reference condition and reports results for several contemporary models. Results show that current models can achieve high signal-level quality and low ASR error while still differing from human conversational behavior in latency, overlap, dialect preservation, emotional adaptation, and interpersonal stance dynamics.",
+  "authors": [
+    "Thomas Thebaud",
+    "Yuzhe Wang",
+    "Hao Zhang",
+    "Sathvik Manikantan Napa Ugandhar",
+    "Ashish Hallur",
+    "Georgi Tinchev",
+    "Venkatesh Ravichandran",
+    "Laureano Moro-Velazquez"
+  ],
+  "published": "2026-07-06T17:42:59Z",
+  "updated": "2026-07-06T17:42:59Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.05365",
+  "abs_url": "https://arxiv.org/abs/2607.05365",
+  "fetched_at": "2026-07-20T11:33:13.444211Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

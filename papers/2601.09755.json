@@ -1,0 +1,41 @@
+{
+  "arxiv_id": "2601.09755",
+  "title": "Heterogeneous computing platform for real-time robotics",
+  "summary": "After Industry 4.0 has embraced tight integration between machinery (OT), software (IT), and the Internet, creating a web of sensors, data, and algorithms in service of efficient and reliable production, a new concept of Society 5.0 is emerging, in which infrastructure of a city will be instrumented to increase reliability, efficiency, and safety. Robotics will play a pivotal role in enabling this vision that is pioneered by the NEOM initiative - a smart city, co-inhabited by humans and robots. In this paper we explore the computing platform that will be required to enable this vision. We show how we can combine neuromorphic computing hardware, exemplified by the Loihi2 processor used in conjunction with event-based cameras, for sensing and real-time perception and interaction with a local AI compute cluster (GPUs) for high-level language processing, cognition, and task planning. We demonstrate the use of this hybrid computing architecture in an interactive task, in which a humanoid robot plays a musical instrument with a human. Central to our design is the efficient and seamless integration of disparate components, ensuring that the synergy between software and hardware maximizes overall performance and responsiveness. Our proposed system architecture underscores the potential of heterogeneous computing architectures in advancing robotic autonomy and interactive intelligence, pointing toward a future where such integrated systems become the norm in complex, real-time applications.",
+  "authors": [
+    "Jakub Fil",
+    "Yulia Sandamirskaya",
+    "Hector Gonzalez",
+    "Loïc Azzalin",
+    "Stefan Glüge",
+    "Lukas Friedenstab",
+    "Friedrich Wolf",
+    "Tim Rosmeisl",
+    "Matthias Lohrmann",
+    "Mahmoud Akl",
+    "Khaleel Khan",
+    "Leonie Wolf",
+    "Kristin Richter",
+    "Holm Puder",
+    "Mazhar Ali Bari",
+    "Xuan Choo",
+    "Noha Alharthi",
+    "Michael Hopkins",
+    "Mansoor Hanif Christian Mayr",
+    "Jens Struckmeier",
+    "Steve Furber"
+  ],
+  "published": "2026-01-13T11:48:25Z",
+  "updated": "2026-01-13T11:48:25Z",
+  "categories": [
+    "cs.NE",
+    "cs.AI",
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.09755",
+  "abs_url": "https://arxiv.org/abs/2601.09755",
+  "fetched_at": "2026-07-20T11:33:13.448587Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

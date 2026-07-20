@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.15888",
+  "title": "Red Light, Grey Zone: A Multi-Perspective Interactive Narrative for Autonomous Driving Ethics",
+  "summary": "Autonomous driving ethics is not only an expert concern, but also a public issue involving risk, responsibility, and governance. However, non-experts often struggle to interpret these issues in concrete incidents, especially when responsibility is distributed across multiple stakeholders. This paper investigates interactive narrative as a public-facing method for eliciting situated ethical reflection on autonomous driving. We present Red Light, Grey Zone, a web-based, multi-perspective interactive narrative prototype inspired by a real-world autonomous-driving incident. The prototype invites participants to compare stakeholder perspectives, examine scene materials, and make responsibility judgments in the face of ethical ambiguity. We report an exploratory user study (N=12) examining how differently non-experts responded to the prototype. Our analysis focuses on three dimensions of reflection: ethical cognition, responsibility-focused critical thinking, and multi-perspective reasoning. Exploratory pre-post results showed the strongest self-reported shift in responsibility-focused critical thinking among participants who completed the intended stakeholder-comparison process, while ethical cognition and multi-perspective reasoning showed positive directional trends. Qualitative findings further show how participants reflected on safety and market trade-offs, responsibility ambiguity, transparency and privacy, and governance gaps. Participants also used stakeholder comparison to corroborate evidence and, in many cases, broaden responsibility judgments from single-actor blame toward more distributed interpretations of accountability. Overall, the study suggests that multi-perspective interactive narratives may support non-expert reflection on accountability, evidence, and governance in AI-enabled systems.",
+  "authors": [
+    "Mengyi Wei",
+    "Nianhua Liu",
+    "Chenyu Zuo",
+    "Liqiu Meng"
+  ],
+  "published": "2026-07-17T12:03:46Z",
+  "updated": "2026-07-17T12:03:46Z",
+  "categories": [
+    "cs.CY",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15888",
+  "abs_url": "https://arxiv.org/abs/2607.15888",
+  "fetched_at": "2026-07-20T14:22:43.714166Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

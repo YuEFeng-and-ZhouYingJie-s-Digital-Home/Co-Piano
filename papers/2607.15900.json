@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2607.15900",
+  "title": "Day-Ahead Forecasting of Largest Single Infeed/Outfeed on the Irish Power Grid: A Generative Artificial Intelligence Approach",
+  "summary": "This paper presents a generative artificial intelligence (Gen AI) approach for forecasting, at a day-ahead stage, the largest single infeed (LSI) and largest single outfeed (LSO) on the Irish power system to assist in reserve dimensioning. Developed collaboratively between EirGrid, the electric transmission system operator (TSO) for Ireland, and GridZero.ai using the GridZero.ai platform, the system delivers accurate forecasts up to 38 hours ahead of real-time using limited data available before the day-ahead and intra-day energy market gate closure timings. Initial performance demonstrates an accuracy with a mean absolute percentage error (MAPE) that is only 1.1\\% higher than the results possible using full market data (8-hours ahead). Thus, if this approach is integrated into operational systems and such high levels of accuracy are maintained, reserve procurement costs could be significantly reduced. The results also demonstrate the practicality and extensibility of AI-powered resource planning for TSOs.",
+  "authors": [
+    "Amir Moshari",
+    "Mo Cloonan",
+    "Taulant Kerci",
+    "Zhi Li",
+    "Colm Gaffney",
+    "Chotiya Mahittigul",
+    "Manuel Hurtado",
+    "Simon Tweed",
+    "Bryan Murray",
+    "Michael Walsh",
+    "Eoin Kennedy",
+    "Ritesh Madan"
+  ],
+  "published": "2026-07-17T12:12:48Z",
+  "updated": "2026-07-17T12:12:48Z",
+  "categories": [
+    "eess.SY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15900",
+  "abs_url": "https://arxiv.org/abs/2607.15900",
+  "fetched_at": "2026-07-20T14:22:43.713957Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

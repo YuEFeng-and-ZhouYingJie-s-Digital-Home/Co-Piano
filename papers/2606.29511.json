@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.29511",
+  "title": "Reinforcement Learning in Super Mario Bros: Curriculum, Pedagogy, and Optimal Level Design in World 1-1",
+  "summary": "World 1-1 of Super Mario Bros is widely celebrated as a masterclass in game design: its progressive structure is credited with teaching players core mechanics through the level itself. We ask whether that structure is empirically measurable using reinforcement learning. We implement World 1-1 from scratch as a fully discrete environment and compare four algorithms -- Q-Learning, SARSA, Monte Carlo, and Deep Q-Network (DQN) -- across three progressively complex versions of the same level. Monte Carlo emerges as the strongest agent (94.9% $\\pm$ 1.5% win rate), outperforming DQN (76.4% $\\pm$ 3.4%) by learning to maximize intermediate rewards along winning paths rather than taking the most direct route. We then use Monte Carlo in a curriculum experiment permuting World 1-1's six canonical segments across twelve conditions. Canonical ordering converges fastest, achieves the highest learning efficiency, and is the only condition with zero catastrophic failures; no random permutation matches all three criteria simultaneously. These results provide, to the best of our knowledge, the first empirical validation that World 1-1's canonical design encodes genuine pedagogical structure: one that measurably accelerates learning and cannot be replicated by chance.",
+  "authors": [
+    "Jesse Ponnock",
+    "Lucas Ho"
+  ],
+  "published": "2026-06-28T17:17:23Z",
+  "updated": "2026-06-28T17:17:23Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.29511",
+  "abs_url": "https://arxiv.org/abs/2606.29511",
+  "fetched_at": "2026-07-20T11:33:13.427970Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

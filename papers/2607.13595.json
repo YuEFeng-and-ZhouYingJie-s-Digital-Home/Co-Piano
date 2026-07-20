@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.13595",
+  "title": "Active Trust Management for Successful Human-Robot Teaming: Moving from a Trust Repair to a Trust Satisficing Perspective",
+  "summary": "Integrating mobile robots into human teams promises significant capability improvements for tasks such as searching hazardous environments. Unlike existing teleoperated robots, future robot systems will increasingly be endowed with some level of artificial intelligence (AI), giving them a degree of autonomy in how they pursue mission goals. This autonomy could make a human-agent (robot) team more effective but also put inter-agent trust under strain if robots make a mistake, or (appear to) pursue task priorities that conflict with the team's best interest. During a mission, agents' trust states are anticipated to vary according to the situation as understood by each teammate (trustor). If component-level (agent) or system-level trust falls below sufficient levels for cooperative tasks to be completed, it could critically affect mission success . We argue that active trust management will be an important precondition for the success of human-robot teams (HRTs, a subcategory of human-agent teams with embodied agents), especially in dynamic, high-risk environments. We present a trust satisficing perspective which acknowledges and attempts to account for the fluctuating, multi-faceted, and context-dependent nature of trust and trust requirements even under normal operating conditions. Our outline of a trust management framework for human-robot teaming includes online measurement of proxy metrics for trust, closed-loop adaptation of robot behavior, and variable autonomy to give space for human responsibility in situations requiring value judgements. We refer to a recent experimental exploration of 'swift trust' and a novel behavioral trust metric for HRT, and we highlight issues for further investigation.",
+  "authors": [
+    "Nicola Webb",
+    "Edmund R. Hunt"
+  ],
+  "published": "2026-07-15T08:38:28Z",
+  "updated": "2026-07-15T08:38:28Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13595",
+  "abs_url": "https://arxiv.org/abs/2607.13595",
+  "fetched_at": "2026-07-20T11:33:13.439014Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

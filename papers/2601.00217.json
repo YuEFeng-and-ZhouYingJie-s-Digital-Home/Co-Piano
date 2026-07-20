@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2601.00217",
+  "title": "Mitigating Latent Mismatch in cVAE-Based Singing Voice Synthesis via Flow Matching",
+  "summary": "Singing voice synthesis (SVS) aims to generate natural and expressive singing waveforms from symbolic musical scores. In cVAE-based SVS, however, a mismatch arises because the decoder is trained with latent representations inferred from target singing signals, while inference relies on latent representations predicted only from conditioning inputs. This discrepancy can weaken fine expressive acoustic details in the synthesized output. To mitigate this issue, we propose FM-Singer, a flow-matching-based latent refinement framework for cVAE-based singing voice synthesis. Rather than redesigning the acoustic decoder, the proposed method learns a continuous vector field that transports inference-time latent samples toward posterior-like latent representations through ODE-based integration before waveform generation. Because the refinement is performed in latent space, the method remains lightweight and compatible with a strong parallel synthesis backbone. Experimental results on Korean and Chinese singing datasets show that the proposed latent refinement improves objective metrics and perceptual quality while maintaining practical synthesis efficiency. These results suggest that reducing training-inference latent mismatch is a useful direction for improving expressive singing voice synthesis. Code, pre-trained checkpoints, and audio demos are available at https://github.com/alsgur9368/FM-Singer.",
+  "authors": [
+    "Minhyeok Yun",
+    "Yong-Hoon Choi"
+  ],
+  "published": "2026-01-01T05:41:41Z",
+  "updated": "2026-03-13T05:37:49Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.00217",
+  "abs_url": "https://arxiv.org/abs/2601.00217",
+  "fetched_at": "2026-07-20T11:33:13.437554Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

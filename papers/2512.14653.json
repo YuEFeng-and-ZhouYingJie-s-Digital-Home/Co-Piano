@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2512.14653",
+  "title": "Robust Training of Singing Voice Synthesis Using Prior and Posterior Uncertainty",
+  "summary": "Singing voice synthesis (SVS) has seen remarkable advancements in recent years. However, compared to speech and general audio data, publicly available singing datasets remain limited. In practice, this data scarcity often leads to performance degradation in long-tail scenarios, such as imbalanced pitch distributions or rare singing styles. To mitigate these challenges, we propose uncertainty-based optimization to improve the training process of end-to-end SVS models. First, we introduce differentiable data augmentation in the adversarial training, which operates in a sample-wise manner to increase the prior uncertainty. Second, we incorporate a frame-level uncertainty prediction module that estimates the posterior uncertainty, enabling the model to allocate more learning capacity to low-confidence segments. Empirical results on the Opencpop and Ofuton-P, across Chinese and Japanese, demonstrate that our approach improves performance in various perspectives.",
+  "authors": [
+    "Yiwen Zhao",
+    "Jiatong Shi",
+    "Yuxun Tang",
+    "William Chen",
+    "Shinji Watanabe"
+  ],
+  "published": "2025-12-16T18:12:44Z",
+  "updated": "2025-12-16T18:12:44Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.14653",
+  "abs_url": "https://arxiv.org/abs/2512.14653",
+  "fetched_at": "2026-07-20T11:33:13.437783Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

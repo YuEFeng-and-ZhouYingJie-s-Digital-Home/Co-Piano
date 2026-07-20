@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.16896",
+  "title": "JSPG: Dynamic Dictionary Filtering via Joint Semantic-Pinyin-Glyph Retrieval for Chinese Contextual ASR",
+  "summary": "Contextual Automatic Speech Recognition (ASR) faces challenges with large-scale keyword dictionaries, as excessive irrelevant candidates introduce noise that degrades accuracy. To address this, dynamic filtering typically uses a base ASR model to generate preliminary hypotheses, followed by semantic text retrievers to fetch a concise subset of relevant keywords. However, this approach frequently fails in Chinese ASR. Base models often produce homophonic or near-homophonic errors that preserve the phonetic cues of the target keywords but severely distort their semantic meaning, rendering standard semantic retrievers ineffective. To resolve this, we propose a filtering framework that jointly integrates Semantic, Pinyin, and Glyph features (JSPG). Pinyin effectively retrieves targets based on phonetic similarity, while glyph provides complementary structural cues to filter out numerous irrelevant homophones inherent in Chinese. To bridge the gap between character-level pinyin/glyph metrics and sequence-level filtering, we introduce an extended Smith-Waterman algorithm that computes similarity scores between the N-best hypothesis sequences and keywords. Experiments on the Aishell-1 and RWCS-NER datasets demonstrate that JSPG significantly outperforms single-feature baselines. Furthermore, downstream contextual ASR models guided by JSPG achieve substantial improvements in keyword recognition accuracy.",
+  "authors": [
+    "Shilin Zhou",
+    "Zhenghua Li"
+  ],
+  "published": "2026-05-16T09:16:09Z",
+  "updated": "2026-05-16T09:16:09Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.16896",
+  "abs_url": "https://arxiv.org/abs/2605.16896",
+  "fetched_at": "2026-07-20T11:33:13.443496Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

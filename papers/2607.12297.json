@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.12297",
+  "title": "MobileSAM2: Lightweight Segment Anything for Spatial Intelligence",
+  "summary": "The recent large video foundation model, SAM2, enables segment anything in both images and videos, serving as a powerful base model for various applications. However, many of such use cases require to operate on resource-constrained devices like mobile phones and laptops. In this work, we aim to make SAM2 more mobile-friendly by distilling the heavyweight SAM2 into a lightweight model, facilitating segment anything in both images and videos on mobile devices. To this end, we propose Hypergraphical Knowledge Distill (HyperKD), which introduces the idea of hypergraph into knowledge distillation, aiming to effectively model and transfer SAM2's generalizable and comprehensive knowledge. HyperKD consists of Temporal HyperKD and Granularity HyperKD that construct hypergraphs to explicitly model and extract the generalizable temporal knowledge and the comprehensive multi-granularity knowledge from SAM2 respectively, which are then distilled into the lightweight student model by aligning it with the constructed hypergraphs. Besides, we present MobileSAM2, a new family of lightweight SAM2 that balances efficiency and effectiveness via searching the best model architectures with HyperKD during model size reduction. Extensive experiments validate MobileSAM2 across multiple benchmarks and show promising generalization performance on embodied AI tasks.",
+  "authors": [
+    "Kai Jiang",
+    "Jiaxing Huang",
+    "Jingyi Zhang",
+    "Weiying Xie",
+    "Yunsong Li",
+    "Yufei Wang",
+    "Aoran Xiao",
+    "Dacheng Tao"
+  ],
+  "published": "2026-07-14T03:10:11Z",
+  "updated": "2026-07-14T03:10:11Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12297",
+  "abs_url": "https://arxiv.org/abs/2607.12297",
+  "fetched_at": "2026-07-20T11:33:13.439534Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

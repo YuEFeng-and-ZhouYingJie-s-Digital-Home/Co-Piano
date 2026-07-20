@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2408.10260",
+  "title": "Optical Music Recognition in Manuscripts from the Ricordi Archive",
+  "summary": "The Ricordi archive, a prestigious collection of significant musical manuscripts from renowned opera composers such as Donizetti, Verdi and Puccini, has been digitized. This process has allowed us to automatically extract samples that represent various musical elements depicted on the manuscripts, including notes, staves, clefs, erasures, and composer's annotations, among others. To distinguish between digitization noise and actual music elements, a subset of these images was meticulously grouped and labeled by multiple individuals into several classes. After assessing the consistency of the annotations, we trained multiple neural network-based classifiers to differentiate between the identified music elements. The primary objective of this study was to evaluate the reliability of these classifiers, with the ultimate goal of using them for the automatic categorization of the remaining unannotated data set. The dataset, complemented by manual annotations, models, and source code used in these experiments are publicly accessible for replication purposes.",
+  "authors": [
+    "Federico Simonetta",
+    "Rishav Mondal",
+    "Luca Andrea Ludovico",
+    "Stavros Ntalampiras"
+  ],
+  "published": "2024-08-14T09:29:11Z",
+  "updated": "2024-08-14T09:29:11Z",
+  "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.DL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2408.10260",
+  "abs_url": "https://arxiv.org/abs/2408.10260",
+  "fetched_at": "2026-07-20T14:22:43.724692Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

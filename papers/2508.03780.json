@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2508.03780",
+  "title": "Are Inherently Interpretable Models More Robust? A Study In Music Emotion Recognition",
+  "summary": "One of the desired key properties of deep learning models is the ability to generalise to unseen samples. When provided with new samples that are (perceptually) similar to one or more training samples, deep learning models are expected to produce correspondingly similar outputs. Models that succeed in predicting similar outputs for similar inputs are often called robust. Deep learning models, on the other hand, have been shown to be highly vulnerable to minor (adversarial) perturbations of the input, which manage to drastically change a model's output and simultaneously expose its reliance on spurious correlations. In this work, we investigate whether inherently interpretable deep models, i.e., deep models that were designed to focus more on meaningful and interpretable features, are more robust to irrelevant perturbations in the data, compared to their black-box counterparts. We test our hypothesis by comparing the robustness of an interpretable and a black-box music emotion recognition (MER) model when challenged with adversarial examples. Furthermore, we include an adversarially trained model, which is optimised to be more robust, in the comparison. Our results indicate that inherently more interpretable models can indeed be more robust than their black-box counterparts, and achieve similar levels of robustness as adversarially trained models, at lower computational cost.",
+  "authors": [
+    "Katharina Hoedt",
+    "Arthur Flexer",
+    "Gerhard Widmer"
+  ],
+  "published": "2025-08-05T13:29:29Z",
+  "updated": "2025-08-05T13:29:29Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.03780",
+  "abs_url": "https://arxiv.org/abs/2508.03780",
+  "fetched_at": "2026-07-20T14:22:43.726790Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

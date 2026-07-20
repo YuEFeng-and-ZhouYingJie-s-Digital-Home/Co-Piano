@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.15865",
+  "title": "An MLIR-Based Compilation Method for Large Language Models",
+  "summary": "Large Language Models (LLMs) have become the dominant workload on modern AI accelerators, yet deploying them on specialized hardware still faces two core challenges: how to import a trained model into a compiler-friendly intermediate representation, and how to efficiently schedule the autoregressive inference loop under limited on-chip memory. This paper presents an MLIR (Multi-Level Intermediate Representation) based compilation method for large language models, illustrated using two dialects of operators, TopOp and TpuOp. TopOp serves as a high-level graph dialect that is independent of both the source framework and the target chip, and is responsible for expressing model semantics; TpuOp serves as the target hardware dialect, carrying chip-related decisions such as quantization, layer groups, and memory layout. A model is first represented as TopOp, then lowered layer by layer to TpuOp, and finally a deployable binary is generated. In addition, each Transformer layer is split into three stages for static compilation: prefill, prefill_kv (prefill with historical key-value cache), and decode, so as to accommodate the different computational characteristics of prompt-parallel processing and per-token generation. The method has been implemented in the TPU-MLIR compiler{https://github.com/sophgo/tpu-mlir} and the LLM-TPU deployment project\\footnote{https://github.com/sophgo/LLM-TPU}, supporting a variety of generative models including the Qwen, Llama, InternVL, and MiniCPM-V series, as well as multiple quantization and deployment forms such as GPTQ, AWQ, and AutoRound.",
+  "authors": [
+    "Pengchao Hu",
+    "Zhibin Xin",
+    "Yifan Chen",
+    "Yangyang Zhou",
+    "Liang Wang"
+  ],
+  "published": "2026-07-17T11:24:45Z",
+  "updated": "2026-07-17T11:24:45Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15865",
+  "abs_url": "https://arxiv.org/abs/2607.15865",
+  "fetched_at": "2026-07-20T14:22:43.714543Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

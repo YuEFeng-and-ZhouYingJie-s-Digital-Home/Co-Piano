@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2503.01354",
+  "title": "Augmenting Online Meetings with Context-Aware Real-time Music Generation",
+  "summary": "As online communication continues to expand, participants often face cognitive fatigue and reduced engagement. Cognitive augmentation, which leverages technology to enhance human abilities, offers promising solutions to these challenges. In this study, we investigate the potential of generative artificial intelligence (GenAI) for real-time music generation to enrich online meetings. We introduce Discussion Jockey 2, a system that dynamically produces background music in response to live conversation transcripts. Through a user study involving 14 participants in an online interview setting, we examine the system's impact on relaxation, concentration, and overall user experience. The findings reveal that AI-generated background music significantly enhances user relaxation (average score: 5.75/9) and concentration (average score: 5.86/9). This research underscores the promise of context-aware music generation in improving the quality of online communication and points to future directions for optimizing its implementation across various virtual environments.",
+  "authors": [
+    "Haruki Suzawa",
+    "Ko Watanabe",
+    "Andreas Dengel",
+    "Shoya Ishimaru"
+  ],
+  "published": "2025-03-03T09:46:15Z",
+  "updated": "2025-03-03T09:46:15Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2503.01354",
+  "abs_url": "https://arxiv.org/abs/2503.01354",
+  "fetched_at": "2026-07-20T11:33:13.417454Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

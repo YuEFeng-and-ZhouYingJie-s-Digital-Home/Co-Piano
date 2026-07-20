@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2604.26957",
+  "title": "Simulating Validity: Modal Decoupling in MLLM Generated Feedback on Science Drawings",
+  "summary": "In science education, students frequently construct hand-drawn visual models of scientific phenomena. These drawings rely on a visual structure where information is encoded through visual objects, their attributes, and relationships. Multimodal large language models (MLLMs) are increasingly used to generate feedback on students' hand-drawn scientific models. However, the validity of such feedback depends on whether model claims are grounded in the specific visual evidence of the student drawing. This study uncovers grounding failures, consistent with modal decoupling, in off-the-shelf MLLM feedback, where outputs remain pedagogically plausible in form while contradicting the drawing or treating depicted elements as missing. Using N = 150 middle school drawings from a kinetic molecular theory unit spanning five modeling tasks and three competence levels, we generated N = 300 feedback instances with GPT-5.1. All outputs were coded for four grounding error types: object mismatch, attribute mismatch, relation mismatch, and false absence. Grounding failures were common: 41.3% of feedback instances contained at least one error. An inventory-list-first workflow reduced several error categories and lowered the overall error rate, but it did not resolve the underlying limitation: approximately one in three outputs remained flawed, with false absence as the dominant failure mode. Moreover, feedback that appears visually grounded offered little diagnostic value for identifying invalid instances. The findings indicate that modal decoupling is a substantial limitation and that valid feedback will require grounding mechanisms beyond common prompting strategies.",
+  "authors": [
+    "Arne Bewersdorff",
+    "Nejla Yuruk",
+    "Xiaoming Zhai"
+  ],
+  "published": "2026-04-05T20:45:20Z",
+  "updated": "2026-04-05T20:45:20Z",
+  "categories": [
+    "cs.CY",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.26957",
+  "abs_url": "https://arxiv.org/abs/2604.26957",
+  "fetched_at": "2026-07-20T11:33:13.450163Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

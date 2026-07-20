@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15738",
+  "title": "EduGuard: A Safe RAG-Based LLM Tutor for Programming Education",
+  "summary": "Generative AI (GenAI) is increasingly used by students for programming explanation, debugging, and assignment support. Yet unrestricted large language model (LLM) tutors can hallucinate, contradict course policy, reveal complete solutions, and foster passive dependence. This paper presents EduGuard, a safe retrieval-augmented generation (RAG) tutoring framework for introductory programming. EduGuard integrates query understanding, instructor-approved course retrieval, pedagogical strategy selection, rubric-aware generation, claim-level verification, and overreliance control. To make evaluation provenance explicit, we construct BILearn-CS, a 600-query instructor-authored, TA-validated benchmark spanning concept questions, debugging cases, misconceptions, assignment-support requests, code-mixed Bangla-English queries, and adversarial direct-answer prompts. Moving beyond a synthetic-only benchmark, we further evaluate on a 150-query public CS50-style course-forum set and run a small controlled pilot with 10 undergraduates using a counterbalanced pre-test/post-test design. Using Meta-Llama-3.1-8B-Instruct as the primary generator, hybrid FAISS/BM25 retrieval, and DeBERTa-v3-large-MNLI as an architecturally separate verifier, EduGuard is compared against strong baselines: GPT-4o-mini Tutor, Llama Socratic Tutor, LPITutor-style RAG, RAG with rubric prompting, and RAG with same-model self-checking. On BILearn-CS, EduGuard attains the best correctness (90.1%), grounding (89.4%), and rubric alignment (90.8%), with the lowest hallucination (4.9%) and direct-answer leakage (9.8%). In the pilot, it raises immediate post-test accuracy from 68.4% to 81.2% and cuts overreliance from 38.0% to 17.0% relative to GPT-4o-mini Tutor. These results suggest safe GenAI tutoring requires not only retrieval or strong prompting, but explicit pedagogical control, evidence verification, and deployment safeguards.",
+  "authors": [
+    "S M Asif Hossain",
+    "Ruksat Khan Shayoni",
+    "M. F. Mridha",
+    "Jungpil Shin"
+  ],
+  "published": "2026-07-17T08:18:18Z",
+  "updated": "2026-07-17T08:18:18Z",
+  "categories": [
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15738",
+  "abs_url": "https://arxiv.org/abs/2607.15738",
+  "fetched_at": "2026-07-20T14:22:43.716111Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

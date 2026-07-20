@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.16115",
+  "title": "Student Evaluation of Repeated AI Feedback Across a Semester of Writing",
+  "summary": "Generative AI is increasingly used for feedback in higher education, but evidence from repeated classroom use remains limited. This short paper analyses 2988 reflective essay-feedback-appraisal instances from 283 Estonian bachelor students across one semester. Students obtained and assessed feedback from a self-selected AI tool using a uniform prompt. The present analysis of the anonymized text corpus covers essay content, AI feedback, and its perceived helpfulness. Students found feedback helpful and actionable more often than not; about a tenth thought AI unhelpful, more so towards the end of the semester. We also analyzed essay reflection depth, and used a validated AI text classifier to estimate the share of essays that could be treated as likely unaided student writing. The study contributes descriptive classroom evidence on integration of AI feedback - a fast and scalable way to provide immediate writing advice, but not a self-contained route to better reflection. Benefits depend on whether students learn to use AI selectively and critically, without sliding into over-use harmful for the learning process.",
+  "authors": [
+    "Andres Karjus",
+    "Janika Leoste",
+    "Tiia Õun"
+  ],
+  "published": "2026-07-17T16:53:00Z",
+  "updated": "2026-07-17T16:53:00Z",
+  "categories": [
+    "cs.CY",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16115",
+  "abs_url": "https://arxiv.org/abs/2607.16115",
+  "fetched_at": "2026-07-20T14:22:43.710931Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

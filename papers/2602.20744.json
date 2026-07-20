@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2602.20744",
+  "title": "Voices of the Mountains: Deep Learning-Based Vocal Error Detection System for Kurdish Maqams",
+  "summary": "Maqam, a singing type, is a significant component of Kurdish music. A maqam singer receives training in a traditional face-to-face or through self-training. Automatic Singing Assessment (ASA) uses machine learning (ML) to provide the accuracy of singing styles and can help learners to improve their performance through error detection. Currently, the available ASA tools follow Western music rules. The musical composition requires all notes to stay within their expected pitch range from start to finish. The system fails to detect micro-intervals and pitch bends, so it identifies Kurdish maqam singing as incorrect even though the singer performs according to traditional rules. Kurdish maqam requires recognizing performance errors within microtonal spaces, which is beyond Western equal temperament. This research is the first attempt to address the mentioned gap. While many error types happen during singing, our focus is on pitch, rhythm, and modal stability errors in the context of Bayati-Kurd. We collected 50 songs from 13 vocalists ( 2-3 hours) and annotated 221 error spans (150 fine pitch, 46 rhythm, 25 modal drift). The data was segmented into 15,199 overlapping windows and converted to log-mel spectrograms. We developed a two-headed CNN-BiLSTM with attention mode to decide whether a window contains an error and to classify it based on the chosen errors. Trained for 20 epochs with early stopping at epoch 10, the model reached a validation macro-F1 of 0.468. On the full 50-song evaluation at a 0.750 threshold, recall was 39.4% and precision 25.8% . Within detected windows, type macro-F1 was 0.387, with F1 of 0.492 (fine pitch), 0.536 (rhythm), and 0.133 (modal drift); modal drift recall was 8.0%. The better performance on common error types shows that the method works, while the poor modal-drift recall shows that more data and balancing are needed.",
+  "authors": [
+    "Darvan Shvan Khairaldeen",
+    "Hossein Hassani"
+  ],
+  "published": "2026-02-24T10:17:16Z",
+  "updated": "2026-02-24T10:17:16Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.20744",
+  "abs_url": "https://arxiv.org/abs/2602.20744",
+  "fetched_at": "2026-07-20T14:22:43.722172Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

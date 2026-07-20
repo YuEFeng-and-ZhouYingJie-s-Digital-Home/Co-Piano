@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.07017",
+  "title": "A-MBER: Affective Memory Benchmark for Emotion Recognition",
+  "summary": "AI assistants that interact with users over time need to interpret the user's current emotional state in order to respond appropriately and personally. However, this capability remains insufficiently evaluated. Existing emotion datasets mainly assess local or instantaneous affect, while long-term memory benchmarks focus largely on factual recall, temporal consistency, or knowledge updating. As a result, current resources provide limited support for testing whether a model can use remembered interaction history to interpret a user's present affective state. We introduce A-MBER, an Affective Memory Benchmark for Emotion Recognition, to evaluate this capability. A-MBER focuses on present affective interpretation grounded in remembered multi-session interaction history. Given an interaction trajectory and a designated anchor turn, a model must infer the user's current affective state, identify historically relevant evidence, and justify its interpretation in a grounded way. The benchmark is constructed through a staged pipeline with explicit intermediate representations, including long-horizon planning, conversation generation, annotation, question construction, and final packaging. It supports judgment, retrieval, and explanation tasks, together with robustness settings such as modality degradation and insufficient-evidence conditions. Experiments compare local-context, long-context, retrieved-memory, structured-memory, and gold-evidence conditions within a unified framework. Results show that A-MBER is especially discriminative on the subsets it is designed to stress, including long-range implicit affect, high-dependency memory levels, trajectory-based reasoning, and adversarial settings. These findings suggest that memory supports affective interpretation not simply by providing more history, but by enabling more selective, grounded, and context-sensitive use of past interaction",
+  "authors": [
+    "Deliang Wen",
+    "Ke Sun",
+    "Yu Wang"
+  ],
+  "published": "2026-04-08T12:36:18Z",
+  "updated": "2026-04-08T12:36:18Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.07017",
+  "abs_url": "https://arxiv.org/abs/2604.07017",
+  "fetched_at": "2026-07-20T14:22:43.719315Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

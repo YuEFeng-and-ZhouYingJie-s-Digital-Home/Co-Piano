@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2510.19435",
+  "title": "Time delay embeddings to characterize the timbre of musical instruments using Topological Data Analysis: a study on synthetic and real data",
+  "summary": "Timbre allows us to distinguish between sounds even when they share the same pitch and loudness, playing an important role in music, instrument recognition, and speech. Traditional approaches, such as frequency analysis or machine learning, often overlook subtle characteristics of sound. Topological Data Analysis (TDA) can capture complex patterns, but its application to timbre has been limited, partly because it is unclear how to represent sound effectively for TDA. In this study, we investigate how different time delay embeddings affect TDA results. Using both synthetic and real audio signals, we identify time delays that enhance the detection of harmonic structures. Our findings show that specific delays, related to fractions of the fundamental period, allow TDA to reveal key harmonic features and distinguish between integer and non-integer harmonics. The method is effective for synthetic and real musical instrument sounds and opens the way for future works, which could extend it to more complex sounds using higher-dimensional embeddings and additional persistence statistics.",
+  "authors": [
+    "Gakusei Sato",
+    "Hiroya Nakao",
+    "Riccardo Muolo"
+  ],
+  "published": "2025-10-22T10:01:36Z",
+  "updated": "2025-10-22T10:01:36Z",
+  "categories": [
+    "cs.SD",
+    "math.AT",
+    "nlin.AO",
+    "physics.data-an",
+    "physics.soc-ph"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.19435",
+  "abs_url": "https://arxiv.org/abs/2510.19435",
+  "fetched_at": "2026-07-20T11:33:13.420046Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

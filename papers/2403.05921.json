@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2403.05921",
+  "title": "OntoChat: a Framework for Conversational Ontology Engineering using Language Models",
+  "summary": "Ontology engineering (OE) in large projects poses a number of challenges arising from the heterogeneous backgrounds of the various stakeholders, domain experts, and their complex interactions with ontology designers. This multi-party interaction often creates systematic ambiguities and biases from the elicitation of ontology requirements, which directly affect the design, evaluation and may jeopardise the target reuse. Meanwhile, current OE methodologies strongly rely on manual activities (e.g., interviews, discussion pages). After collecting evidence on the most crucial OE activities, we introduce \\textbf{OntoChat}, a framework for conversational ontology engineering that supports requirement elicitation, analysis, and testing. By interacting with a conversational agent, users can steer the creation of user stories and the extraction of competency questions, while receiving computational support to analyse the overall requirements and test early versions of the resulting ontologies. We evaluate OntoChat by replicating the engineering of the Music Meta Ontology, and collecting preliminary metrics on the effectiveness of each component from users. We release all code at https://github.com/King-s-Knowledge-Graph-Lab/OntoChat.",
+  "authors": [
+    "Bohui Zhang",
+    "Valentina Anita Carriero",
+    "Katrin Schreiberhuber",
+    "Stefani Tsaneva",
+    "Lucía Sánchez González",
+    "Jongmo Kim",
+    "Jacopo de Berardinis"
+  ],
+  "published": "2024-03-09T14:04:06Z",
+  "updated": "2024-04-26T10:13:24Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2403.05921",
+  "abs_url": "https://arxiv.org/abs/2403.05921",
+  "fetched_at": "2026-07-20T11:33:13.436577Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

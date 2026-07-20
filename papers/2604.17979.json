@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.17979",
+  "title": "Architecture Matters More Than Scale: A Comparative Study of Retrieval and Memory Augmentation for Financial QA Under SME Compute Constraints",
+  "summary": "The rapid adoption of artificial intelligence (AI) and large language models (LLMs) is transforming financial analytics by enabling natural language interfaces for reporting, decision support, and automated reasoning. However, limited empirical understanding exists regarding how different LLM-based reasoning architectures perform across realistic financial workflows, particularly under the cost, accuracy, and compliance constraints faced by small and medium-sized enterprises (SMEs). SMEs typically operate within severe infrastructure constraints, lacking cloud GPU budgets, dedicated AI teams, and API-scale inference capacity, making architectural efficiency a first-class concern. To ensure practical relevance, we introduce an explicit SME-constrained evaluation setting in which all experiments are conducted using a locally hosted 8B-parameter instruction-tuned model without cloud-scale infrastructure. This design isolates the impact of architectural choices within a realistic deployment environment. We systematically compare four reasoning architectures: baseline LLM, retrieval-augmented generation (RAG), structured long-term memory, and memory-augmented conversational reasoning across both FinQA and ConvFinQA benchmarks. Results reveal a consistent architectural inversion: structured memory improves precision in deterministic, operand-explicit tasks, while retrieval-based approaches outperform memory-centric methods in conversational, reference-implicit settings. Based on these findings, we propose a hybrid deployment framework that dynamically selects reasoning strategies to balance numerical accuracy, auditability, and infrastructure efficiency, providing a practical pathway for financial AI adoption in resource-constrained environments.",
+  "authors": [
+    "Jianan Liu",
+    "Jing Yang",
+    "Xianyou Li",
+    "Weiran Yan",
+    "Yichao Wu",
+    "Penghao Liang",
+    "Mengwei Yuan"
+  ],
+  "published": "2026-04-20T08:59:41Z",
+  "updated": "2026-05-10T23:16:19Z",
+  "categories": [
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.17979",
+  "abs_url": "https://arxiv.org/abs/2604.17979",
+  "fetched_at": "2026-07-20T14:22:43.718534Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

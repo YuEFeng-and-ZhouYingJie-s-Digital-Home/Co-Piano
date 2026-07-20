@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2606.01410",
+  "title": "What LLMs Must Forget to Teach Effectively: A DIY Approach to Premodern Japanese Language Pedagogy",
+  "summary": "We discuss a novel approach to Premodern Japanese Language Pedagogy (PJLP) with potential applications in other languages and fields. The integration of artificial intelligence into education has largely operated as a top-down project, affording minimal agency to everyday users. This dynamic mirrors the broader frontier model ecosystem, which concentrates massive human and financial resources within a few labs. Drawing inspiration from grassroots initiatives such as the DIY and Maker movements, this paper advocates for an approach to AI in Education that fosters instructional and student agency over the pedagogical process. Specifically, we discuss a tutoring framework for textual analysis in the context of a graduate seminar in premodern Japanese literature, as well as a bilingual interactive dictionary and a conversational partner created for a language course in Classical Japanese. Created through prompt engineering as custom instances of a Large Language Model (LLM), these three tools are designed to counteract the tendency of out-of-the-box LLMs to either bypass student effort through over-explanation or misguide learners via hallucinations. To illustrate how this approach can promote active comprehension and pedagogical alignment, we provide transcripts (logs) of actual exchanges, sample instructions (system prompts), and guidance for instructors curious about exploring this approach in a variety of fields (starter kit).",
+  "authors": [
+    "Ariel Stilerman",
+    "Andrew Nelson",
+    "Alan Cheng",
+    "Caleb Langley",
+    "Sera Wang",
+    "Camilla Piana",
+    "Pelin Çılgın",
+    "Qianhe Qin",
+    "Teisha Nishimitsu",
+    "Liaoliao Zhang",
+    "Huiting Liu",
+    "Josh Eyre",
+    "Gavin Sherry"
+  ],
+  "published": "2026-05-31T19:16:12Z",
+  "updated": "2026-06-15T17:04:04Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.01410",
+  "abs_url": "https://arxiv.org/abs/2606.01410",
+  "fetched_at": "2026-07-20T11:33:13.427165Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

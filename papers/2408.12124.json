@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2408.12124",
+  "title": "Recording Brain Activity While Listening to Music Using Wearable EEG Devices Combined with Bidirectional Long Short-Term Memory Networks",
+  "summary": "Electroencephalography (EEG) signals are crucial for investigating brain function and cognitive processes. This study aims to address the challenges of efficiently recording and analyzing high-dimensional EEG signals while listening to music to recognize emotional states. We propose a method combining Bidirectional Long Short-Term Memory (Bi-LSTM) networks with attention mechanisms for EEG signal processing. Using wearable EEG devices, we collected brain activity data from participants listening to music. The data was preprocessed, segmented, and Differential Entropy (DE) features were extracted. We then constructed and trained a Bi-LSTM model to enhance key feature extraction and improve emotion recognition accuracy. Experiments were conducted on the SEED and DEAP datasets. The Bi-LSTM-AttGW model achieved 98.28% accuracy on the SEED dataset and 92.46% on the DEAP dataset in multi-class emotion recognition tasks, significantly outperforming traditional models such as SVM and EEG-Net. This study demonstrates the effectiveness of combining Bi-LSTM with attention mechanisms, providing robust technical support for applications in brain-computer interfaces (BCI) and affective computing. Future work will focus on improving device design, incorporating multimodal data, and further enhancing emotion recognition accuracy, aiming to achieve practical applications in real-world scenarios.",
+  "authors": [
+    "Jingyi Wang",
+    "Zhiqun Wang",
+    "Guiran Liu"
+  ],
+  "published": "2024-08-22T04:32:22Z",
+  "updated": "2024-08-22T04:32:22Z",
+  "categories": [
+    "cs.LG",
+    "cs.HC",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2408.12124",
+  "abs_url": "https://arxiv.org/abs/2408.12124",
+  "fetched_at": "2026-07-20T11:33:13.436466Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

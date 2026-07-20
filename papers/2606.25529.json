@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2606.25529",
+  "title": "STEB: A Speech-to-Speech Translation Expressiveness Benchmark for Evaluating Beyond Translation Fidelity",
+  "summary": "Speech-to-speech translation (S2ST) should preserve not only lexical meaning, but also expressive attributes: emotion, scenario style (e.g., news reporting vs. dramatic dialogue), and nonverbal vocalizations (NVs). Moreover, collecting cross-lingual target speech that is both translation-faithful and expressively aligned with the source is difficult at scale, making reference-based evaluation impractical. We introduce STEB (Speech-to-Speech Translation Expressiveness Benchmark), a 32.6-hour Chinese--English benchmark that evaluates both standard dimensions (translation fidelity, speaker similarity, duration alignment) and expressiveness dimensions (emotion, scenario style, NV preservation). For expressiveness evaluation, STEB uses a caption-then-summarize framework that converts speech into structured expressive attributes and compares source and hypothesis attributes with an LLM judge. Human validation shows statistically significant correlations with listener judgments across all expressive dimensions. We evaluate six S2ST systems covering cascaded systems, end-to-end models, and speech large language models. Many systems, especially cascaded ones, achieve strong translation fidelity, but they still struggle with emotion preservation (best: 3.82/5) and NV preservation (best: 2.31/5). These results reveal a gap between semantic transfer and expressive transfer, identifying expressiveness preservation as an open challenge for S2ST. Audio samples are available at https://cmots.github.io/steb.github.io/.",
+  "authors": [
+    "Sitong Cheng",
+    "Weizhen Bian",
+    "Songjun Cao",
+    "Jin Li",
+    "Bei Liu",
+    "Chunyang Jiang",
+    "Yike Zhang",
+    "Weihao Wu",
+    "Yiming Li",
+    "Chi-Min Chan",
+    "Long Ma",
+    "Wei Xue"
+  ],
+  "published": "2026-06-24T08:06:41Z",
+  "updated": "2026-06-24T08:06:41Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.25529",
+  "abs_url": "https://arxiv.org/abs/2606.25529",
+  "fetched_at": "2026-07-20T11:33:13.434867Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

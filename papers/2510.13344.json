@@ -1,0 +1,35 @@
+{
+  "arxiv_id": "2510.13344",
+  "title": "UniMoE-Audio: Unified Speech and Music Generation with Dynamic-Capacity MoE",
+  "summary": "Recent advances in unified multimodal models indicate a clear trend towards comprehensive content generation. However, the auditory domain remains a significant challenge, with music and speech often developed in isolation, hindering progress towards universal audio synthesis. This separation stems from inherent task conflicts and severe data imbalances, which impede the development of a truly unified audio generation model. To address this challenge, we propose UniMoE-Audio, a unified speech and music generation model within a novel Dynamic-Capacity Mixture-of-Experts (MoE) framework. Architecturally, UniMoE-Audio introduces a Top-P routing strategy for dynamic expert number allocation, and a hybrid expert design comprising routed experts for domain-specific knowledge, shared experts for domain-agnostic features, and null experts for adaptive computation skipping. To tackle data imbalance, we introduce a three-stage training curriculum: 1) Independent Specialist Training leverages original datasets to instill domain-specific knowledge into each \"proto-expert\" without interference; 2) MoE Integration and Warmup incorporates these specialists into the UniMoE-Audio architecture, warming up the gate module and shared expert using a subset of balanced dataset; and 3) Synergistic Joint Training trains the entire model end-to-end on the fully balanced dataset, fostering enhanced cross-domain synergy. Extensive experiments show that UniMoE-Audio not only achieves state-of-the-art performance on major speech and music generation benchmarks, but also demonstrates superior synergistic learning, mitigating the performance degradation typically seen in naive joint training. Our findings highlight the substantial potential of specialized MoE architecture and curated training strategies in advancing the field of universal audio generation. Homepage: https://mukioxun.github.io/Uni-MoE-site/home.html",
+  "authors": [
+    "Zhenyu Liu",
+    "Yunxin Li",
+    "Xuanyu Zhang",
+    "Qixun Teng",
+    "Shenyuan Jiang",
+    "Xinyu Chen",
+    "Haoyuan Shi",
+    "Jinchao Li",
+    "Qi Wang",
+    "Haolan Chen",
+    "Fanbo Meng",
+    "Mingjun Zhao",
+    "Yu Xu",
+    "Yancheng He",
+    "Baotian Hu",
+    "Min Zhang"
+  ],
+  "published": "2025-10-15T09:30:25Z",
+  "updated": "2025-10-15T09:30:25Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.13344",
+  "abs_url": "https://arxiv.org/abs/2510.13344",
+  "fetched_at": "2026-07-20T14:22:43.708411Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

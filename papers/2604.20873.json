@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2604.20873",
+  "title": "The Shrinking Sweet Spot: How Algorithms, Institutions, and Social Priors Shape Musical Ecosystems",
+  "summary": "Why do some national music markets sustain a rich musical diversity whereas others converge on mostly formulaic output? The existing models of cultural consumption (superstar economics, rational addiction, Bayesian social learning) each capture part of the answer, but none can explain how exposure, social influence, institutional gatekeeping, and algorithmic curation interact to shape what listeners come to prefer. We address this gap by modeling musical taste as a learning process rather than a fixed parameter: a listener's evaluative disposition evolves with each encounter, shaped by the balance between the comfort of the familiar and the reward of the new. Drawing on the active inference framework from cognitive science, we formalize this as a sequential choice model in which preferences, information, and the consumption environment co-evolve, and show how the framework nests and extends key mechanisms from the three canonical economic models. An agent-based simulation generates four predictions: algorithmic curation suppresses consumption diversity beyond a sharp nonlinear threshold; institutional structure determines winner-take-all intensity through confirmatory cross-system contrasts; cultural capital buffers listeners against homogenization; and high-curation, high-conformity systems collapse supply-side dispersion relative to pluralistic ecosystems. We test the framework against four national music ecosystems (Italy's Festival di Sanremo, Brazil, South Korea, and the United Kingdom), identifying structural determinants of ecosystem vitality on both the supply and demand sides. The welfare implications are direct: because listeners' preferences adapt to impoverished environments through the very learning mechanisms the model describes, revealed preference analysis cannot reliably evaluate the outcomes of cultural markets.",
+  "authors": [
+    "Fabio Lokwani Di Matteo",
+    "Pier Luigi Sacco"
+  ],
+  "published": "2026-03-28T16:56:30Z",
+  "updated": "2026-03-28T16:56:30Z",
+  "categories": [
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.20873",
+  "abs_url": "https://arxiv.org/abs/2604.20873",
+  "fetched_at": "2026-07-20T11:33:13.431665Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

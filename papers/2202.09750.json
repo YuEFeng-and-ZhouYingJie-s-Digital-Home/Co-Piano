@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2202.09750",
+  "title": "Enhancing Affective Representations of Music-Induced EEG through Multimodal Supervision and latent Domain Adaptation",
+  "summary": "The study of Music Cognition and neural responses to music has been invaluable in understanding human emotions. Brain signals, though, manifest a highly complex structure that makes processing and retrieving meaningful features challenging, particularly of abstract constructs like affect. Moreover, the performance of learning models is undermined by the limited amount of available neuronal data and their severe inter-subject variability. In this paper we extract efficient, personalized affective representations from EEG signals during music listening. To this end, we employ music signals as a supervisory modality to EEG, aiming to project their semantic correspondence onto a common representation space. We utilize a bi-modal framework by combining an LSTM-based attention model to process EEG and a pre-trained model for music tagging, along with a reverse domain discriminator to align the distributions of the two modalities, further constraining the learning process with emotion tags. The resulting framework can be utilized for emotion recognition both directly, by performing supervised predictions from either modality, and indirectly, by providing relevant music samples to EEG input queries. The experimental findings show the potential of enhancing neuronal data through stimulus information for recognition purposes and yield insights into the distribution and temporal variance of music-induced affective features.",
+  "authors": [
+    "Kleanthis Avramidis",
+    "Christos Garoufis",
+    "Athanasia Zlatintsi",
+    "Petros Maragos"
+  ],
+  "published": "2022-02-20T07:32:12Z",
+  "updated": "2022-02-20T07:32:12Z",
+  "categories": [
+    "cs.SD",
+    "cs.IR",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2202.09750",
+  "abs_url": "https://arxiv.org/abs/2202.09750",
+  "fetched_at": "2026-07-20T14:22:43.728860Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

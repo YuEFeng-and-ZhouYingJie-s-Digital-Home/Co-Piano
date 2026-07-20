@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2602.07063",
+  "title": "Video-based Music Generation",
+  "summary": "As the volume of video content on the internet grows rapidly, finding a suitable soundtrack remains a significant challenge. This thesis presents EMSYNC (EMotion and SYNChronization), a fast, free, and automatic solution that generates music tailored to the input video, enabling content creators to enhance their productions without composing or licensing music. Our model creates music that is emotionally and rhythmically synchronized with the video. A core component of EMSYNC is a novel video emotion classifier. By leveraging pretrained deep neural networks for feature extraction and keeping them frozen while training only fusion layers, we reduce computational complexity while improving accuracy. We show the generalization abilities of our method by obtaining state-of-the-art results on Ekman-6 and MovieNet. Another key contribution is a large-scale, emotion-labeled MIDI dataset for affective music generation. We then present an emotion-based MIDI generator, the first to condition on continuous emotional values rather than discrete categories, enabling nuanced music generation aligned with complex emotional content. To enhance temporal synchronization, we introduce a novel temporal boundary conditioning method, called \"boundary offset encodings,\" aligning musical chords with scene changes. Combining video emotion classification, emotion-based music generation, and temporal boundary conditioning, EMSYNC emerges as a fully automatic video-based music generator. User studies show that it consistently outperforms existing methods in terms of music richness, emotional alignment, temporal synchronization, and overall preference, setting a new state-of-the-art in video-based music generation.",
+  "authors": [
+    "Serkan Sulun"
+  ],
+  "published": "2026-02-05T13:42:36Z",
+  "updated": "2026-02-05T13:42:36Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV",
+    "cs.MM",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2602.07063",
+  "abs_url": "https://arxiv.org/abs/2602.07063",
+  "fetched_at": "2026-07-20T11:33:13.435541Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

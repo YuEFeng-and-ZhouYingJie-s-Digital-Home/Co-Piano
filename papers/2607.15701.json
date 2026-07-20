@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.15701",
+  "title": "RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC",
+  "summary": "Humanoid navigation in dynamic environments requires long-horizon planning while respecting short-horizon dynamic and safety constraints. Classical visibility-graph planners combined with model predictive control (MPC) can efficiently generate collision-free trajectories, but their performance depends on manually tuned parameters and accurate system modeling. In real robotic systems, control delays, state-estimation noise, and locomotion uncertainties can cause overshoot and constraint violations even when the nominal path is geometrically optimal. We propose RAVEN, a hierarchical reinforcement learning (RL)-MPC framework for robust humanoid navigation. Unlike prior approaches that use learning to tune cost weights or replace planning entirely, RAVEN employs RL to adapt the geometric construction of a visibility-graph planner by modifying obstacle inflation and related graph parameters. By directly reshaping the free-space geometry, the learned planner alters the topology of the global path to compensate for delay and tracking imperfections. A collision-free MPC layer then tracks the planned trajectory while explicitly enforcing velocity bounds and obstacle-avoidance constraints. By training under realistic delays and observation noise, RAVEN learns planning adaptations that improve robustness while retaining explicit long-horizon geometric planning and constrained optimization, in contrast to end-to-end learning approaches. We evaluate RAVEN against a manually tuned visibility-graph MPC baseline and a pure RL navigation policy. Results demonstrate reduced overshoot near obstacles, improved robustness in narrow passages, and more reliable navigation under delay and noise. These findings indicate that reinforcement-adaptive graph construction combined with constrained MPC provides an effective and interpretable alternative to end-to-end learning for robust humanoid navigation.",
+  "authors": [
+    "Ruochen Hou",
+    "Shiqi Wang",
+    "Beom Jun Kim",
+    "Hanzhang Fang",
+    "Mehak Singal",
+    "Dennis W. Hong"
+  ],
+  "published": "2026-07-17T07:23:54Z",
+  "updated": "2026-07-17T07:23:54Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15701",
+  "abs_url": "https://arxiv.org/abs/2607.15701",
+  "fetched_at": "2026-07-20T11:33:13.424741Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

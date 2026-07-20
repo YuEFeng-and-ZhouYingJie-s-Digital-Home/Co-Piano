@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.23015",
+  "title": "Counterfactual learning of new adaptive instructional policies using logged data",
+  "summary": "Optimizing instructional policies in Intelligent Tutoring Systems (ITS) typically requires costly online experimentation or student simulators that may fail to capture real-world dynamics. This paper introduces an offline contextual bandit framework that learns new adaptive policies directly from logged interaction data. By mapping student-item interactions onto a continuous latent proficiency-difficulty scale using a Rasch model, we cast the tutoring process as a continuous stochastic bandit problem. We propose a novel reward function designed to optimize ''flow'' by balancing task challenge with student success. Our approach includes a round-specific behavior policy estimation that serves as both a propensity model for off-policy evaluation and a diagnostic tool for ITS adaptivity. We demonstrate the efficacy of this framework across four large-scale real-world datasets, achieving consistent policy improvements over the logged behavior policy. The results show that effective instructional policies can be learned and visualized within seconds of computation, providing a scalable path for improving adaptive learning systems without further data collection.",
+  "authors": [
+    "Samuel Girard",
+    "Sein Minn",
+    "Amel Bouzeghoub",
+    "Jill-Jênn Vie"
+  ],
+  "published": "2026-06-22T08:28:34Z",
+  "updated": "2026-06-22T08:28:34Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.23015",
+  "abs_url": "https://arxiv.org/abs/2606.23015",
+  "fetched_at": "2026-07-20T11:33:13.426041Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

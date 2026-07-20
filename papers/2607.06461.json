@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2607.06461",
+  "title": "WordVoice: Explicit and Decoupled Multi-Dimensional Word-Level Control for LLM-Based TTS",
+  "summary": "While recent Large Language Model (LLM)-based Text-to-Speech (TTS) systems have achieved remarkable naturalness, they predominantly rely on implicit end-to-end generation paradigms, resulting in coarse-grained control. In scenarios demanding precise stylistic interventions and strict temporal alignment, such as audiobook narration and video dubbing, the inability to explicitly manipulate word-level acoustic attributes remains a critical bottleneck. This limitation is primarily amplified by the severe scarcity of fine-grained annotated datasets and the architectural challenge of integrating multi-dimensional control signals into discrete autoregressive generation. To address this, we propose a unified framework for highly precise word-level control. First, we construct WordVoice-5A, a massive 4.7k-hour bilingual dataset featuring five-dimensional word-level annotations (duration, boundary, energy, pitch and tone) developed through a rigorous linguistically-guided pipeline. Second, we introduce WordVoice to transform the implicit generation process into an explicit, highly controllable paradigm. Specifically, we introduce a bound-token mechanism within the LLM to formulate an explicit ``acoustic planning'' process, enabling adaptive multi-task prosodic planning and flexible manual intervention. Furthermore, we augment the token-to-waveform stage with a fine-grained acoustic modulation module, bridging the resolution gap to strictly align word-level attributes between highly compressed discrete tokens and continuous waveforms. Extensive experiments demonstrate that WordVoice achieves superior, decoupled control over multiple acoustic dimensions while maintaining competitive zero-shot synthesis stability. The code and audio samples are publicly available at https://xxh333.github.io/wordvoice-demo/.",
+  "authors": [
+    "Sihang Nie",
+    "Jinxin Ji",
+    "Xiaofen Xing",
+    "Deyi Tuo",
+    "Chengbin Jin",
+    "Jialong Mai",
+    "Xiangmin Xu"
+  ],
+  "published": "2026-07-07T16:22:59Z",
+  "updated": "2026-07-07T16:22:59Z",
+  "categories": [
+    "eess.AS",
+    "cs.CL",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.06461",
+  "abs_url": "https://arxiv.org/abs/2607.06461",
+  "fetched_at": "2026-07-20T11:33:13.421283Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

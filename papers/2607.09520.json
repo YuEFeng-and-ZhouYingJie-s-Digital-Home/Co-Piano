@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.09520",
+  "title": "Seeing is Free, Speaking is Not: Uncovering the True Energy Bottleneck in Edge VLM Inference",
+  "summary": "Vision-Language Models (VLMs) are the perceptual backbone of embodied AI, but their energy footprint on edge hardware remains poorly understood. Existing efficiency efforts focus predominantly on reducing visual tokens, implicitly treating visual processing as the dominant energy cost. We overturn this implicit assumption through the first systematic energy profiling of on-device VLM inference, spanning five models across three architecture families, four input resolutions, and two hardware platforms (NVIDIA RTX 3070 and Jetson Orin NX). Our analysis yields three findings. First, average inference power is a model-intrinsic constant, invariant to input resolution, image complexity, and prompt type, with less than 5% variation across all conditions. This means that all energy variation across inputs must arise from variation in inference time, not from variation in power draw. Second, each output token costs 11 to 39x more wall-clock time than each input token due to the compute-bound and memory-bound asymmetry between prefill and decode, making output token count the dominant driver of both latency and energy. Third, image complexity, measured by the number of objects in an image, induces up to 4.1x energy differences at identical resolution. This variation arises not from increased visual processing cost, but from differences in output length. These findings expose a fundamental limitation of visual token pruning: even removing all visual tokens saves at most 10% of total energy for fixed-token models. Across models spanning 1 billion to 8 billion parameters, controlling output length saves up to 97% of total energy, with the energy dominance of decoding growing stronger at larger model scale. In short, the true energy bottleneck in edge VLM inference is not what the model sees, but how much it says.",
+  "authors": [
+    "Junfei Zhan",
+    "Haoxun Shen",
+    "Mingang Guo",
+    "Zixuan Huang",
+    "Tengjiao He"
+  ],
+  "published": "2026-07-10T15:31:06Z",
+  "updated": "2026-07-10T15:31:06Z",
+  "categories": [
+    "cs.CV",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.09520",
+  "abs_url": "https://arxiv.org/abs/2607.09520",
+  "fetched_at": "2026-07-20T11:33:13.440202Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

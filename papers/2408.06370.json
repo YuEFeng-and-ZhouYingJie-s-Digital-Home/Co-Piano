@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2408.06370",
+  "title": "Lyrics Transcription for Humans: A Readability-Aware Benchmark",
+  "summary": "Writing down lyrics for human consumption involves not only accurately capturing word sequences, but also incorporating punctuation and formatting for clarity and to convey contextual information. This includes song structure, emotional emphasis, and contrast between lead and background vocals. While automatic lyrics transcription (ALT) systems have advanced beyond producing unstructured strings of words and are able to draw on wider context, ALT benchmarks have not kept pace and continue to focus exclusively on words. To address this gap, we introduce Jam-ALT, a comprehensive lyrics transcription benchmark. The benchmark features a complete revision of the JamendoLyrics dataset, in adherence to industry standards for lyrics transcription and formatting, along with evaluation metrics designed to capture and assess the lyric-specific nuances, laying the foundation for improving the readability of lyrics. We apply the benchmark to recent transcription systems and present additional error analysis, as well as an experimental comparison with a classical music dataset.",
+  "authors": [
+    "Ondřej Cífka",
+    "Hendrik Schreiber",
+    "Luke Miner",
+    "Fabian-Robert Stöter"
+  ],
+  "published": "2024-07-30T14:20:09Z",
+  "updated": "2024-07-30T14:20:09Z",
+  "categories": [
+    "eess.AS",
+    "cs.CL",
+    "cs.LG",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2408.06370",
+  "abs_url": "https://arxiv.org/abs/2408.06370",
+  "fetched_at": "2026-07-20T14:22:43.724972Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

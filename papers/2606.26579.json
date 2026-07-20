@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.26579",
+  "title": "An exploratory behavioral and electroencephalographic study of artificial intelligence-assisted learning modes in high school students",
+  "summary": "As artificial intelligence (AI) is rapidly integrating into education, concerns have emerged regarding its potential implications on cognitive engagement and problem-solving behavior. However, existing research largely treats AI exposure as a binary condition (AI vs. no-AI), with limited differentiation between interaction modalities and post-exposure effects. This study investigates whether distinct AI interaction modes (Tutor, Collaborator, Solver) influence frontal EEG spectral activity. Electroencephalography (EEG) data and quantified behavioral metrics were recorded from 48 study participants (24 males, 24 females; ages 14-18) across two counterbalanced quizzes in a within-subject design. Statistical analyses included Friedman tests, repeated-measures ANOVA, paired t-tests, and effect size calculations. Behavioral changes were mathematically analyzed in an observation matrix of three characteristics -Initiation, Processing, and Stress-measured on an ordinal scale. Each mode showed significant differences in all three behavioral measures. Descriptive EEG patterns in AI interaction mode were observed, and the possibility of short-term carryover effects of AI was explored. Although the EEG data did not reach statistical significance, the patterns observed across the three AI interaction modes warrant further investigation. This study provides preliminary behavioral evidence and investigative electrophysiological observations, exploring possible AI-interaction-mode-based differences in neural activity and behavior, while establishing a replicable framework for future human-AI interaction studies.",
+  "authors": [
+    "Kashika Khurana",
+    "Ally Liew"
+  ],
+  "published": "2026-06-25T04:01:19Z",
+  "updated": "2026-06-25T04:01:19Z",
+  "categories": [
+    "cs.HC",
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.26579",
+  "abs_url": "https://arxiv.org/abs/2606.26579",
+  "fetched_at": "2026-07-20T11:33:13.425928Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

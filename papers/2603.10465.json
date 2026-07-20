@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2603.10465",
+  "title": "MoXaRt: Audio-Visual Object-Guided Sound Interaction for XR",
+  "summary": "In Extended Reality (XR), complex acoustic environments often overwhelm users, compromising both scene awareness and social engagement due to entangled sound sources. We introduce MoXaRt, a real-time XR system that uses audio-visual cues to separate these sources and enable fine-grained sound interaction. MoXaRt's core is a cascaded architecture that performs coarse, audio-only separation in parallel with visual detection of sources (e.g., faces, instruments). These visual anchors then guide refinement networks to isolate individual sources, separating complex mixes of up to 5 concurrent sources (e.g., 2 voices + 3 instruments) with ~2 second processing latency. We validate MoXaRt through a technical evaluation on a new dataset of 30 one-minute recordings featuring concurrent speech and music, and a 22-participant user study. Empirical results indicate that our system significantly enhances speech intelligibility, yielding a 36.2% (p < 0.01) increase in listening comprehension within adversarial acoustic environments while substantially reducing cognitive load (p < 0.001), thereby paving the way for more perceptive and socially adept XR experiences.",
+  "authors": [
+    "Tianyu Xu",
+    "Sieun Kim",
+    "Qianhui Zheng",
+    "Ruoyu Xu",
+    "Tejasvi Ravi",
+    "Anuva Kulkarni",
+    "Katrina Passarella-Ward",
+    "Junyi Zhu",
+    "Adarsh Kowdle"
+  ],
+  "published": "2026-03-11T06:35:19Z",
+  "updated": "2026-03-11T06:35:19Z",
+  "categories": [
+    "cs.SD",
+    "cs.CV",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.10465",
+  "abs_url": "https://arxiv.org/abs/2603.10465",
+  "fetched_at": "2026-07-20T11:33:13.448193Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

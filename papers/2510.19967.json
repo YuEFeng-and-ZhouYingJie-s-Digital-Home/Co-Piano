@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2510.19967",
+  "title": "LyriCAR: A Difficulty-Aware Curriculum Reinforcement Learning Framework For Controllable Lyric Translation",
+  "summary": "Lyric translation is a challenging task that requires balancing multiple musical constraints. Existing methods often rely on hand-crafted rules and sentence-level modeling, which restrict their ability to internalize musical-linguistic patterns and to generalize effectively at the paragraph level, where cross-line coherence and global rhyme are crucial. In this work, we propose LyriCAR, a novel framework for controllable lyric translation that operates in a fully unsupervised manner. LyriCAR introduces a difficulty-aware curriculum designer and an adaptive curriculum strategy, ensuring efficient allocation of training resources, accelerating convergence, and improving overall translation quality by guiding the model with increasingly complex challenges. Extensive experiments on the EN-ZH lyric translation task show that LyriCAR achieves state-of-the-art results across both standard translation metrics and multi-dimensional reward scores, surpassing strong baselines. Notably, the adaptive curriculum strategy reduces training steps by nearly 40% while maintaining superior performance. Code, data and model can be accessed at https://github.com/rle27/LyriCAR.",
+  "authors": [
+    "Le Ren",
+    "Xiangjian Zeng",
+    "Qingqiang Wu",
+    "Ruoxuan Liang"
+  ],
+  "published": "2025-10-22T18:57:20Z",
+  "updated": "2025-10-22T18:57:20Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.19967",
+  "abs_url": "https://arxiv.org/abs/2510.19967",
+  "fetched_at": "2026-07-20T14:22:43.707546Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

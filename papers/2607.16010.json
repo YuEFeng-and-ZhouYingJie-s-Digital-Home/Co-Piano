@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.16010",
+  "title": "AI Watermark Evidence Fails Forensic Readiness: An Empirical Evaluation",
+  "summary": "Governments are increasingly mandating that LLM-generated content carry watermarks. The EU AI Act calls for markings that are \"sufficiently reliable and robust.\" California's SB 942 requires disclosure that is \"permanent or extraordinarily difficult to remove.\" Both mandates rest on an untested assumption: that watermark detection yields evidence reliable enough for courts. This paper tests that assumption directly. We evaluate three representative LLM watermarking methods -- KGW, Unigram, and the MarkLLM implementation of SynthID-Text -- against the Daubert admissibility criteria and the NIST SP 800-86 digital forensic process. To structure this evaluation, we propose a Forensic Readiness Score (FRS) framework with 12 criteria, three mandatory gates, and a 60-point scoring system. We focus on meaning-preserving paraphrase as the attack vector, since it is both legally realistic and difficult to dismiss as evidence tampering. The results raise serious evidentiary concerns. Out of 846 valid paraphrase runs across 15 diverse prompts per method, every single initially-detected KGW and Unigram text lost its watermark after paraphrasing -- 100% conditional removal. SynthID fared only slightly better at 98.3%. Even before any attack, false-negative rates were already high: 70% for KGW, 83% for Unigram, 80% for SynthID. The SynthID configuration also flagged 5.4% of paraphrased human-written controls as AI-generated and showed an 18.6% paradox rate, with 80% of its own pristine watermarked output landing in the uncertainty deadband. None of the three methods satisfy more than two of five Daubert factors. We also find that the FRS point-based scoring system, despite working as designed, cannot fully capture forensic uselessness -- a limitation worth noting for future framework design. These configurations, as tested, do not meet the evidentiary bar that courts require.",
+  "authors": [
+    "Saifur Rahman Tamim",
+    "Amir Labib Khan"
+  ],
+  "published": "2026-07-17T14:45:53Z",
+  "updated": "2026-07-17T14:45:53Z",
+  "categories": [
+    "cs.CR",
+    "cs.CL",
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16010",
+  "abs_url": "https://arxiv.org/abs/2607.16010",
+  "fetched_at": "2026-07-20T14:22:43.712674Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

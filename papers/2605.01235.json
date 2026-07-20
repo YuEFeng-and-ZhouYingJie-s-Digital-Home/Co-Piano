@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2605.01235",
+  "title": "MindMelody: A Closed-Loop EEG-Driven System for Personalized Music Intervention",
+  "summary": "Driven by the escalating global burden of mental health conditions, music-based interventions have attracted significant attention as a non-invasive, cost-effective modality for emotion regulation and psychological stress relief. However, current digital music services rely on static preferences and fail to adapt to users' instantaneous psychological states. Furthermore, directly mapping electroencephalography (EEG) to music generation remains challenging due to severe paired-data scarcity and a lack of interpretability. To address these limitations, we propose MindMelody, a fully functional, closed-loop real-time system for EEG-driven personalized music intervention. MindMelody introduces an emotion-mediated semantic bridge. Specifically, a hybrid Transformer-GNN first decodes real-time EEG signals into global Valence-Arousal states and local temporal affect trajectories. These states are then fed into a Retrieval-Augmented Generation (RAG)-equipped Large Language Model (LLM) to formulate structured intervention plans. Subsequently, a novel Hierarchical EEG Controller injects global affect prefixes and local temporal guidance into a pretrained music backbone, enabling fine-grained controllable audio synthesis. Crucially, the system incorporates a continuous feedback loop that updates generation parameters on the fly based on the user's evolving EEG dynamics. Extensive experiments show that MindMelody improves control adherence and emotional alignment, and receives higher perceived helpfulness in a short-term listening setting, suggesting its promise as an adaptive affect-aware music generation framework.",
+  "authors": [
+    "Yimeng Zhang",
+    "Yueru Sun",
+    "Haoyu Gu",
+    "Zhanpeng Jin"
+  ],
+  "published": "2026-05-02T04:15:32Z",
+  "updated": "2026-05-16T20:26:03Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.01235",
+  "abs_url": "https://arxiv.org/abs/2605.01235",
+  "fetched_at": "2026-07-20T11:33:13.432517Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

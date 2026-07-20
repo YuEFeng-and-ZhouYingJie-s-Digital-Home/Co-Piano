@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2606.28881",
+  "title": "An Integrated Machine Learning and Hierarchical Variance Decomposition Pipeline for Student Performance Prediction and Metacognitive Calibration on Multi-Signal Telemetry",
+  "summary": "Predicting student performance and characterizing metacognitive calibration are essential for personalization in intelligent tutoring systems. Prior research treats performance prediction, calibration error calculation, and variance decomposition as separate pipelines, preventing unified interpretation. I propose the Unified Behavioral Prediction and Calibration Analysis Pipeline (UBP-CAP), an integrated framework processing student pre-execution behavioral telemetry through three linked modules: (1) a LightGBM classifier with SHAP for binary correctness prediction, (2) formal calibration metrics (ECE, MCE, and Brier score decomposition) to evaluate metacognitive alignment, and (3) a crossed Generalized Linear Mixed-Effects Model (GLMM) for decomposing calibration deviations. I introduce the Predictive-Explanatory Divergence Index (PEDI), which quantifies structural divergence between predictive and explanatory feature profiles. Evaluated on 1,195 interaction records (27 students, 45 tasks), Logistic Regression achieves AUC-ROC = 0.903, outperforming LightGBM (0.878). Student naive ECE (0.109) significantly exceeds model ECE (0.068), confirming systematic miscalibration. The crossed GLMM yields ICCStudent = 0.123, showing calibration is situational rather than dispositional. PEDIcos = 0.081 (p = 0.327) indicates structural alignment between prediction and explanation on shared behavioral features.",
+  "authors": [
+    "Gurdeep Singh Virdee"
+  ],
+  "published": "2026-06-27T11:59:41Z",
+  "updated": "2026-06-27T11:59:41Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.28881",
+  "abs_url": "https://arxiv.org/abs/2606.28881",
+  "fetched_at": "2026-07-20T11:33:13.425815Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

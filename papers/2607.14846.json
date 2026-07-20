@@ -1,0 +1,33 @@
+{
+  "arxiv_id": "2607.14846",
+  "title": "RW-Voice-EQ Bench: A Real World Benchmark for Evaluating Voice AI Systems",
+  "summary": "Current voice AI benchmarks typically evaluate isolated capabilities such as speech intelligibility, word error rate, or text-based dialogue quality, but they rarely test whether systems harness the acoustic information that distinguishes spoken language from its textual representation. To this end, we introduce the Real World Voice EQ Bench, a multidimensional benchmark for evaluating voice AI across text-to-speech (TTS), speech-to-speech (STS), speech understanding (SU), and automatic speech recognition (ASR). Our evaluations indicate that performance is highly dimension-specific. For TTS, naturalness, expressiveness, identity stability, and reliability are largely independent evaluation dimensions. For STS, access to audio does not guarantee use of vocal affect, and some agents remain largely transcript-driven. For SU, models perform unevenly across paralinguistic tasks. For ASR, real world accent, emotion, noise, and conversational conditions expose failures that are not captured by established clean-speech benchmarks. Together, these results show that voice AI should be evaluated as a profile of acoustic, expressive, interactional, and robustness capabilities rather than by a single aggregate score.",
+  "authors": [
+    "David Ayllon",
+    "Alice Baird",
+    "Jeffrey Brooks",
+    "Franc Camps-Febrer",
+    "Jakub Piotr Cłapa",
+    "Theo Lebryk",
+    "Jens Madsen",
+    "Olya Ossipova",
+    "Sharath Rao",
+    "Hoon Shin",
+    "Tigran Soghbatyan",
+    "Georg Streich",
+    "Rashish Tandon",
+    "Panagiotis Tzirakis"
+  ],
+  "published": "2026-07-16T11:15:16Z",
+  "updated": "2026-07-16T11:15:16Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.14846",
+  "abs_url": "https://arxiv.org/abs/2607.14846",
+  "fetched_at": "2026-07-20T11:33:13.420275Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

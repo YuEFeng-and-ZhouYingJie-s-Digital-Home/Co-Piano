@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15699",
+  "title": "GoStop: Reinforcement Learning for Adaptive Temporal Aggregation in Event-Based Feature Tracking",
+  "summary": "Feature tracking plays a fundamental role in understanding scene motion and supports various downstream tasks. Event cameras, with their high temporal resolution and asynchronous sensing, enable low-latency and motion-robust perception, making them well-suited for feature tracking under fast and non-linear motion. However, existing event-based feature tracking methods rely on fixed heuristic rules based on hand-tuning for event accumulation. Such strategies fail to adapt to diverse motion dynamics, leading to degraded performance under abrupt motion changes or low-motion scenarios. In this paper, we model event accumulation as a sequential decision-making problem and introduce reinforcement learning (RL) framework to adaptively control the accumulation process for online event-based feature tracking. Our approach trains a RL agent that decides whether to continue accumulating events or to perform tracking inference based on motion cues. The proposed adaptive temporal agent enables dynamic adaptation to varying motion patterns without relying on hand-crafted rules. Furthermore, we introduce a Dynamic Event-based Tracking (DEFT) dataset with dynamic motion distributions to evaluate the robustness of the feature tracking. Extensive experiments demonstrate that integrating our plug-and-play framework to existing feature tracking methods consistently outperforms heuristic-based approaches, improving robustness under dynamic motion while offering a better balance between tracking accuracy and efficiency. Our project codes and datasets are available at https://github.com/kmax2001/GoSTOP",
+  "authors": [
+    "Youngho Kim",
+    "Hoonhee Cho",
+    "Jae-Young Kang",
+    "Kuk-Jin Yoon"
+  ],
+  "published": "2026-07-17T07:18:07Z",
+  "updated": "2026-07-17T07:18:07Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15699",
+  "abs_url": "https://arxiv.org/abs/2607.15699",
+  "fetched_at": "2026-07-20T11:33:13.424853Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

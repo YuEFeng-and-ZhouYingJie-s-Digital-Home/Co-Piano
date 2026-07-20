@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.11422",
+  "title": "Chunkwise Aligners for Streaming Speech Recognition",
+  "summary": "We propose the Chunkwise Aligner, a novel architecture for streaming automatic speech recognition (ASR). While the Transducer is the standard model for streaming ASR, its training is costly due to the need to compute all possible audio-label alignments. The recently introduced Aligner reduces this cost by discarding explicit alignments, but this modification makes it unsuitable for streaming. Our approach overcomes this limitation by dividing the audio into chunks and aligning each label to the leftmost frames of its chunk, whereas transitions between chunks are managed by a learned end-of-chunk probability. Experiments show that the Chunkwise Aligner not only matches the Transducer's accuracy in both offline and streaming scenarios, but also offers superior training and decoding efficiencies.",
+  "authors": [
+    "Wen Shen Teo",
+    "Takafumi Moriya",
+    "Masato Mimura"
+  ],
+  "published": "2026-05-12T02:16:26Z",
+  "updated": "2026-05-12T02:16:26Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.11422",
+  "abs_url": "https://arxiv.org/abs/2605.11422",
+  "fetched_at": "2026-07-20T11:33:13.445485Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

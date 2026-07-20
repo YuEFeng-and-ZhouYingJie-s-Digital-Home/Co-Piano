@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2510.16273",
+  "title": "MuseTok: Symbolic Music Tokenization for Generation and Semantic Understanding",
+  "summary": "Discrete representation learning has shown promising results across various domains, including generation and understanding in image, speech and language. Inspired by these advances, we propose MuseTok, a tokenization method for symbolic music, and investigate its effectiveness in both music generation and understanding tasks. MuseTok employs the residual vector quantized-variational autoencoder (RQ-VAE) on bar-wise music segments within a Transformer-based encoder-decoder framework, producing music codes that achieve high-fidelity music reconstruction and accurate understanding of music theory. For comprehensive evaluation, we apply MuseTok to music generation and semantic understanding tasks, including melody extraction, chord recognition, and emotion recognition. Models incorporating MuseTok outperform previous representation learning baselines in semantic understanding while maintaining comparable performance in content generation. Furthermore, qualitative analyses on MuseTok codes, using ground-truth categories and synthetic datasets, reveal that MuseTok effectively captures underlying musical concepts from large music collections.",
+  "authors": [
+    "Jingyue Huang",
+    "Zachary Novack",
+    "Phillip Long",
+    "Yupeng Hou",
+    "Ke Chen",
+    "Taylor Berg-Kirkpatrick",
+    "Julian McAuley"
+  ],
+  "published": "2025-10-18T00:04:48Z",
+  "updated": "2025-10-18T00:04:48Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.16273",
+  "abs_url": "https://arxiv.org/abs/2510.16273",
+  "fetched_at": "2026-07-20T11:33:13.420162Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

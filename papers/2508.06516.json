@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2508.06516",
+  "title": "AutoMashup: Automatic Music Mashups Creation",
+  "summary": "We introduce AutoMashup, a system for automatic mashup creation based on source separation, music analysis, and compatibility estimation. We propose using COCOLA to assess compatibility between separated stems and investigate whether general-purpose pretrained audio models (CLAP and MERT) can support zero-shot estimation of track pair compatibility. Our results show that mashup compatibility is asymmetric -- it depends on the role assigned to each track (vocals or accompaniment) -- and that current embeddings fail to reproduce the perceptual coherence measured by COCOLA. These findings underline the limitations of general-purpose audio representations for compatibility estimation in mashup creation.",
+  "authors": [
+    "Marine Delabaere",
+    "Léa Miqueu",
+    "Michael Moreno",
+    "Gautier Bigois",
+    "Hoang Duong",
+    "Ella Fernandez",
+    "Flavie Manent",
+    "Maria Salgado-Herrera",
+    "Bastien Pasdeloup",
+    "Nicolas Farrugia",
+    "Axel Marmoret"
+  ],
+  "published": "2025-07-30T08:36:08Z",
+  "updated": "2025-07-30T08:36:08Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2508.06516",
+  "abs_url": "https://arxiv.org/abs/2508.06516",
+  "fetched_at": "2026-07-20T14:22:43.723546Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2605.22258",
+  "title": "Harder to Defend: Towards Chinese Toxicity Attacks via Implicit Enhancement and Obfuscation Rewriting",
+  "summary": "Large language models (LLMs) require robust toxicity evaluation beyond explicit wording. This setting remains underexplored in Chinese, where toxicity may combine semantic indirectness with surface obfuscation. We introduce Chinese Implicit Toxicity Attack (CITA), a controlled red-team evaluation and defense-data generation framework, not a deployable evasion tool. CITA uses three stages: (i) Harmful Intent Learning, (ii) Implicit Toxicity Enhancement, and (iii) Obfuscation Variant Rewriting, to preserve harmful intent, increase implicitness, and add controlled surface variants. On CITA-generated evaluation samples, the seven tested detectors exhibit substantial missed-detection risks, reaching an average ASR of 69.48%; human evaluation further confirms preserved harmfulness and increased implicitness/evasiveness. As a downstream defense application, we fine-tune a Chinese Implicit Toxicity Defense model (CITD) with CITA-generated red-team data, showing that such data can improve robustness through additional training.",
+  "authors": [
+    "Jingyi Kang",
+    "Junyu Lu",
+    "Bo Xu",
+    "Hongbo Wang",
+    "Linlin zong",
+    "Roy Ka-Wei Lee",
+    "Hongfei Lin"
+  ],
+  "published": "2026-05-21T10:01:03Z",
+  "updated": "2026-05-21T10:01:03Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.22258",
+  "abs_url": "https://arxiv.org/abs/2605.22258",
+  "fetched_at": "2026-07-20T11:33:13.443158Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

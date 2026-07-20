@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.16130",
+  "title": "A Methodology for Auditable Trustworthiness Levels in AI Lifecycle Governance",
+  "summary": "AI governance increasingly requires judgments about whether an AI system remains adequately trustworthy over time, whether observed changes are tolerable, and how such judgments should be documented in a transparent and contestable way. Yet existing work on AI trustworthiness remains either too high-level to support lifecycle monitoring and reassessment or too narrowly metric-driven to connect with governance needs. We therefore propose a lightweight methodology for auditable trustworthiness levels in AI governance. The methodology has two components: a formal framework for representing and learning trustworthiness levels, and a lightweight AI lifecycle governance procedure for documenting, monitoring, and reassessing them over time. The formal framework models governance-relative trustworthiness through a context-sensitive protocol of measurable dimensions and learns trustworthiness levels as interpretable rules over trustworthiness profiles. Using decision trees as an interpretable proof-of-concept model class, the methodology yields explicit trustworthiness plateaus, readable level transitions, and two simple lifecycle diagnostics: boundary margins and profile drift. The governance procedure embeds these formal objects in a conformity-oriented workflow for design-time labeling, post-deployment monitoring, reassessment, and reporting. It also assigns human responsibilities and control gates for protocol design, validation, monitoring, and reassessment. We illustrate the methodology on synthetic AI lifecycle traces involving degradation, shocks, updates, heterogeneous monitoring cadences, and system comparison. Our methodology does not replace legal or other expert judgment: it supports conformity documentation and lifecycle monitoring by providing an evidential basis for documenting and tracking AI governance-relevant changes over time.",
+  "authors": [
+    "Andrea Ferrario"
+  ],
+  "published": "2026-07-17T17:11:22Z",
+  "updated": "2026-07-17T17:11:22Z",
+  "categories": [
+    "cs.CY",
+    "cs.AI",
+    "eess.SY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16130",
+  "abs_url": "https://arxiv.org/abs/2607.16130",
+  "fetched_at": "2026-07-20T14:22:43.710602Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

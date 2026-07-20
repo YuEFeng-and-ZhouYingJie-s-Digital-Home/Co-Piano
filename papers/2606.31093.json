@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.31093",
+  "title": "Omni-Flow: A Unified Workflow Orchestration and Distributed KV Cache Sharing Framework for Multimodal Inference",
+  "summary": "As large language model (LLM) inference evolves from text-only to multimodal paradigms, inference systems face three challenges: (1) flexible orchestration of multimodal workflows, where heterogeneous computing units exhibit complex dependencies and concurrent control; (2) efficient transmission of massive intermediate data across processes and nodes, with tensors flowing at high speed among heterogeneous roles; and (3) efficient sharing of KV caches and model weights across roles to eliminate redundant GPU memory. Existing solutions deploy LLMs and diffusion models independently, lacking a system-level abstraction for multimodal pipelines; this scatters orchestration logic, tightly couples transmission paths to specific models, and incurs high cost to integrate new models. To address these challenges, we present Omni-Flow, a distributed scheduling framework for multimodal inference through a three-layer abstraction. The Control Flow layer defines workflows via a Python DSL, orchestrating heterogeneous units into a unified dataflow graph that supports static DAGs and dynamic routing, with built-in service discovery and diverse load-balancing strategies. The Data Flow layer provides a distributed KV cache abstraction beyond prefill/decode separation, unifying allocation and enabling direct cross-role transmission across a three-tier paged storage hierarchy (GPU/CPU/SSD) over zero-copy, low-latency channels. The Compute Flow layer supports complex multimodal prefix matching for KV reuse across multi-turn dialogues, and takes over KV cache and sampling logic via a unified SGLang interface, letting diffusion models directly reuse the LLM forward path under unified parallel semantics. We demonstrate that Omni-Flow supports diverse heterogeneous scenarios with a consistent programming model, including omni-modal dialogue (LongCat-Next) and complex image generation pipelines (HunyuanImage-3).",
+  "authors": [
+    "Bin Xiao",
+    "Jingfu Dong",
+    "Changran Wang",
+    "Yitian Chen",
+    "Xiaoyu Zhao",
+    "Yuqi Peng",
+    "Jianping Lin",
+    "Yuchen Xie"
+  ],
+  "published": "2026-06-30T03:29:21Z",
+  "updated": "2026-06-30T03:29:21Z",
+  "categories": [
+    "cs.DC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.31093",
+  "abs_url": "https://arxiv.org/abs/2606.31093",
+  "fetched_at": "2026-07-20T11:33:13.434630Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

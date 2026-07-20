@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2509.20641",
+  "title": "Investigating Modality Contribution in Audio LLMs for Music",
+  "summary": "Audio Large Language Models (Audio LLMs) enable human-like conversation about music, yet it is unclear if they are truly listening to the audio or just using textual reasoning, as recent benchmarks suggest. This paper investigates this issue by quantifying the contribution of each modality to a model's output. We adapt the MM-SHAP framework, a performance-agnostic score based on Shapley values that quantifies the relative contribution of each modality to a model's prediction. We evaluate two models on the MuChoMusic benchmark and find that the model with higher accuracy relies more on text to answer questions, but further inspection shows that even if the overall audio contribution is low, models can successfully localize key sound events, suggesting that audio is not entirely ignored. Our study is the first application of MM-SHAP to Audio LLMs and we hope it will serve as a foundational step for future research in explainable AI and audio.",
+  "authors": [
+    "Giovana Morais",
+    "Magdalena Fuentes"
+  ],
+  "published": "2025-09-25T00:56:35Z",
+  "updated": "2026-02-02T15:29:03Z",
+  "categories": [
+    "cs.LG",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.20641",
+  "abs_url": "https://arxiv.org/abs/2509.20641",
+  "fetched_at": "2026-07-20T11:33:13.416833Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

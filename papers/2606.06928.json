@@ -1,0 +1,37 @@
+{
+  "arxiv_id": "2606.06928",
+  "title": "VoxCPM2 Technical Report",
+  "summary": "We present VoxCPM2, a https://info.arxiv.org/help/prep#abstractsfully open-source multilingual and controllable speech generation foundation model that extends the hierarchical diffusion-autoregressive modeling paradigm of VoxCPM. VoxCPM2 advances the framework in three key dimensions: (i) capability, by unifying 30 languages, 9 Chinese dialects, natural-language voice design, style-controllable voice cloning, and high-fidelity continuation cloning within a single backbone; (ii) quality, through an asymmetric AudioVAE that encodes at 16 kHz and reconstructs at 48 kHz, enabling implicit super-resolution with high encoding efficiency; and (iii) scale, by jointly scaling the model to 2B parameters and the training data to over 2 million hours of multilingual speech. To support these diverse capabilities within one model, we introduce a unified sequence organization that expresses all generation modes through different arrangements of the same input building blocks, allowing joint training under a single set of parameters and objective. VoxCPM2 achieves state-of-the-art or competitive performance on public zero-shot and instruction-following TTS benchmarks. On our internal 30-language evaluation set, it attains an average WER of 1.68%. These results demonstrate that hierarchical continuous-latent modeling, without relying on any external discrete speech tokenizer, offers a viable and powerful foundation for large-scale multilingual and controllable speech generation. The model weights, fine-tuning code, and inference tools are publicly released under the Apache 2.0 license to foster community research and development.",
+  "authors": [
+    "Yixuan Zhou",
+    "Guoyang Zeng",
+    "Xin Liu",
+    "Xiang Li",
+    "Renjie Yu",
+    "Jiancheng Gui",
+    "Jiaheng Wu",
+    "Ziyang Wang",
+    "Xudong Shen",
+    "Runchuan Ye",
+    "Zhisheng Zhang",
+    "Jiuyang Zhou",
+    "Bingsong Bai",
+    "Weiyue Sun",
+    "Mengyuan Deng",
+    "Qundong Shi",
+    "Zhiyong Wu",
+    "Zhiyuan Liu"
+  ],
+  "published": "2026-06-05T05:43:15Z",
+  "updated": "2026-06-05T05:43:15Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.06928",
+  "abs_url": "https://arxiv.org/abs/2606.06928",
+  "fetched_at": "2026-07-20T11:33:13.446615Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

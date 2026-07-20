@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.10790",
+  "title": "Data Augmentation for L2 English Speaking Assessment using TTS",
+  "summary": "Automated assessment of second language (L2) speaking proficiency relies on large-scale annotated speech data, which remains scarce compared to widely available written learner corpora. A promising direction for addressing this imbalance is to use text-to-speech (TTS) and voice cloning to convert written L2 production into synthetic speech. However, written and spoken L2 differ fundamentally: spontaneous speech includes disfluencies and discourse markers, while writing is more planned and complex. This raises the question of what is required to generate synthetic L2 speech suitable for assessment. We address this through a systematic analysis of speaker-text relationships using COREFL, a publicly available corpus containing paired spoken and written responses from the same L2 learners to the same questions across modalities. In our proposed framework, we first address the structural differences between written and spoken language by transforming written responses into spoken-style transcripts (\"speechification\") using a large language model. These transcripts are then converted into speech using a TTS/voice-cloning model. To assign a voice to each synthetic response, we investigate different speaker-text pairing strategies based on shared learner attributes (proficiency level, first language, both, or neither). We evaluate our data augmentation techniques on the language assessment task, with improvements shown in both wav2vec2 (audio-based) and ModernBERT (text-based) scoring systems. Results show that matching speakers and texts by proficiency level yields the most robust synthetic speech. Moreover, raw written text leads to a strong mismatch with spoken language, while speechification substantially reduces this gap and improves grading performance.",
+  "authors": [
+    "Stefano Bannò",
+    "Penny Karanasou",
+    "Mengjie Qian",
+    "Kate M. Knill",
+    "Mark J. F. Gales"
+  ],
+  "published": "2026-07-12T14:43:56Z",
+  "updated": "2026-07-12T14:43:56Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.10790",
+  "abs_url": "https://arxiv.org/abs/2607.10790",
+  "fetched_at": "2026-07-20T11:33:13.420779Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

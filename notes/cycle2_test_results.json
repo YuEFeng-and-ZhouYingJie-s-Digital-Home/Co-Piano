@@ -1,0 +1,159 @@
+{
+  "timestamp": "2026-07-20T23:31:16.538576",
+  "tests": {
+    "maestro_download": {
+      "available": false,
+      "tried_urls": [
+        "https://storage.googleapis.com/magentadata/datasets/maestro/v3.0.0/2018/MIDI-Unprocessed_05_R1_2018_MID--AUDIOINDPG_01-06_R1_2018_wav--2.midi",
+        "https://storage.googleapis.com/magentadata/datasets/maestro/v2.0.0/2004/MIDI-Unprocessed_Segment_01_R1_2004_01-08_wav--1.midi"
+      ],
+      "note": "MAESTRO 直链访问失败,可能需要 GCS 认证或换 URL 格式"
+    },
+    "scenarios": [
+      {
+        "scenario": "beginner_clean",
+        "piece": "Beyer",
+        "period": "Baroque",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.022,
+        "score": 100,
+        "n_pitch_errors": 0,
+        "period_detected": "Baroque",
+        "n_notes": 8,
+        "report_chars": 527
+      },
+      {
+        "scenario": "beginner_one_err",
+        "piece": "Beyer",
+        "period": "Baroque",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.018,
+        "score": 93.75,
+        "n_pitch_errors": 1,
+        "period_detected": "Baroque",
+        "n_notes": 8,
+        "report_chars": 526
+      },
+      {
+        "scenario": "elementary",
+        "piece": "Minuet in G",
+        "period": "Baroque",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.018,
+        "score": 100,
+        "n_pitch_errors": 0,
+        "period_detected": "Baroque",
+        "n_notes": 12,
+        "report_chars": 537
+      },
+      {
+        "scenario": "bach_prelude",
+        "piece": "Bach Prelude",
+        "period": "Baroque",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.018,
+        "score": 93.75,
+        "n_pitch_errors": 2,
+        "period_detected": "Baroque",
+        "n_notes": 16,
+        "report_chars": 553
+      },
+      {
+        "scenario": "sonata_k545",
+        "piece": "Sonata K.545",
+        "period": "Classical",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.02,
+        "score": 95.83,
+        "n_pitch_errors": 2,
+        "period_detected": "Baroque",
+        "n_notes": 24,
+        "report_chars": 555
+      },
+      {
+        "scenario": "chopin_nocturne",
+        "piece": "Chopin Nocturne",
+        "period": "Romantic",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.019,
+        "score": 100,
+        "n_pitch_errors": 0,
+        "period_detected": "Baroque",
+        "n_notes": 16,
+        "report_chars": 553
+      },
+      {
+        "scenario": "fur_elise",
+        "piece": "Für Elise",
+        "period": "Classical",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.019,
+        "score": 81.25,
+        "n_pitch_errors": 6,
+        "period_detected": "Baroque",
+        "n_notes": 16,
+        "report_chars": 546
+      },
+      {
+        "scenario": "many_errors",
+        "piece": "Bach Invention",
+        "period": "Baroque",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.018,
+        "score": 100,
+        "n_pitch_errors": 0,
+        "period_detected": "Baroque",
+        "n_notes": 16,
+        "report_chars": 551
+      },
+      {
+        "scenario": "solo_no_ref",
+        "piece": "Beyer",
+        "period": "Baroque",
+        "source": "synth",
+        "ok": true,
+        "latency_s": 0.017,
+        "score": null,
+        "n_pitch_errors": null,
+        "period_detected": "Baroque",
+        "n_notes": 8,
+        "report_chars": 440
+      }
+    ],
+    "voice_dialog_midi": {
+      "ok": true,
+      "queries": [
+        {
+          "query": "帮我分析 /tmp/cycle1_00_ref.mid 这个 MIDI",
+          "reply_preview": "分析完成!未评分(无 reference),共 8 个音符,Baroque 风格。 完整报告在 /tmp/copiano_midi_report.md",
+          "latency_s": 0.03,
+          "ok": true
+        },
+        {
+          "query": "看下 /tmp/cycle1_05_user.mid 怎么样",
+          "reply_preview": "我听到你说:看下 /tmp/cycle1_05_user.mid 怎么样... 我会记住,继续练!",
+          "latency_s": 0.0,
+          "ok": true
+        }
+      ]
+    }
+  },
+  "summary": {
+    "maestro_available": false,
+    "scenarios_pass": 9,
+    "scenarios_total": 9,
+    "vd_pass": 2,
+    "vd_total": 2,
+    "overall_pass": 11,
+    "overall_total": 12,
+    "pass_rate": "92%"
+  }
+}

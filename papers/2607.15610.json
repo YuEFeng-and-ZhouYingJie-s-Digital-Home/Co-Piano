@@ -1,0 +1,31 @@
+{
+  "arxiv_id": "2607.15610",
+  "title": "Process Reward Informed Tree Rollout for Effective Multi-Turn RL",
+  "summary": "Reinforcement learning (RL) has become a key approach for training LLM agents, yet popular methods such as GRPO/RLOO rely on multiple independently sampled complete trajectories for advantage estimation. In long-horizon agentic tasks, such a uniform rollout strategy can waste budget on uninformative dead-end attempts, while promising intermediate states do not receive sufficient exploration. The multi-turn structure of agentic trajectories, with interleaved actions and observations, naturally supports organizing a trajectory group as a tree, where each turn serves as a decision point for exploration. This perspective reframes effective exploration as the problem of deciding where to branch. We propose Process-Scorer Guided Adaptive Tree Rollout (PATR), a quality-aware rollout framework for multi-turn agent RL. PATR uses task-appropriate process feedback to score partial trajectories, selectively branches from promising states, reuses shared prefixes, and conservatively stops degenerate paths to reduce wasted sampling. The resulting rollout groups remain compatible with standard policy optimization while providing more efficient exploration under the same training budget. We evaluate PATR on FrozenLake and the challenging SWE-Bench, which is largely unexplored by prior tree-rollout agent RL methods. Experiments show that PATR improves performance by up to +5.0 points on SWE-Bench and +9.3 points on FrozenLake, highlighting process-guided tree rollouts as an effective strategy for scalable multi-turn RL.",
+  "authors": [
+    "Xintong Li",
+    "Sha Li",
+    "Yuwei Zhang",
+    "Changlong Yu",
+    "Rongmei Lin",
+    "Hongye Jin",
+    "Shuyi Guan",
+    "Xin Liu",
+    "Linwei Li",
+    "Qingyu Yin",
+    "Jingbo Shang"
+  ],
+  "published": "2026-07-17T04:16:58Z",
+  "updated": "2026-07-17T04:16:58Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15610",
+  "abs_url": "https://arxiv.org/abs/2607.15610",
+  "fetched_at": "2026-07-20T11:33:13.424965Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

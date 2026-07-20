@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.14362",
+  "title": "APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI",
+  "summary": "Large language models still struggle with reliable long-term conversational memory: simply enlarging context windows or applying naive retrieval often introduces noise and destabilizes responses. We present APEX-MEM, a conversational memory system that combines three key innovations: (1) a property graph which uses domain-agnostic ontology to structure conversations as temporally grounded events in an entity-centric framework, (2) append-only storage that preserves the full temporal evolution of information, and (3) a multi-tool retrieval agent that understands and resolves conflicting or evolving information at query time, producing a compact and contextually relevant memory summary. This retrieval-time resolution preserves the full interaction history while suppressing irrelevant details. APEX-MEM achieves 88.88% accuracy on LOCOMO's Question Answering task and 86.2% on LongMemEval, outperforming state-of-the-art session-aware approaches and demonstrating that structured property graphs enable more temporally coherent long-term conversational reasoning.",
+  "authors": [
+    "Pratyay Banerjee",
+    "Masud Moshtaghi",
+    "Shivashankar Subramanian",
+    "Amita Misra",
+    "Ankit Chadha"
+  ],
+  "published": "2026-04-15T19:25:02Z",
+  "updated": "2026-04-15T19:25:02Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.14362",
+  "abs_url": "https://arxiv.org/abs/2604.14362",
+  "fetched_at": "2026-07-20T14:22:43.718954Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

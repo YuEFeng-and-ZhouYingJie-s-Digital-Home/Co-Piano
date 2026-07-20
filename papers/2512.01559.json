@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2512.01559",
+  "title": "LLM2Fx-Tools: Tool Calling For Music Post-Production",
+  "summary": "This paper introduces LLM2Fx-Tools, a multimodal tool-calling framework that generates executable sequences of audio effects (Fx-chain) for music post-production. LLM2Fx-Tools uses a large language model (LLM) to understand audio inputs, select audio effects types, determine their order, and estimate parameters, guided by chain-of-thought (CoT) planning. We also present LP-Fx, a new instruction-following dataset with structured CoT annotations and tool calls for audio effects modules. Experiments show that LLM2Fx-Tools can infer an Fx-chain and its parameters from pairs of unprocessed and processed audio, enabled by autoregressive sequence modeling, tool calling, and CoT reasoning. We further validate the system in a style transfer setting, where audio effects information is transferred from a reference source and applied to new content. Finally, LLM-as-a-judge evaluation demonstrates that our approach generates appropriate CoT reasoning and responses for music production queries. To our knowledge, this is the first work to apply LLM-based tool calling to audio effects modules, enabling interpretable and controllable music production.",
+  "authors": [
+    "Seungheon Doh",
+    "Junghyun Koo",
+    "Marco A. Martínez-Ramírez",
+    "Woosung Choi",
+    "Wei-Hsiang Liao",
+    "Qiyu Wu",
+    "Juhan Nam",
+    "Yuki Mitsufuji"
+  ],
+  "published": "2025-12-01T11:30:21Z",
+  "updated": "2026-01-28T21:36:23Z",
+  "categories": [
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.01559",
+  "abs_url": "https://arxiv.org/abs/2512.01559",
+  "fetched_at": "2026-07-20T11:33:13.430634Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

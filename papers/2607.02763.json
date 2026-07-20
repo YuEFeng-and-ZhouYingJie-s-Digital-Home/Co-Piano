@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.02763",
+  "title": "LuxSQA: Ask Me in Luxembourgish with TTS-Augmented Spoken Question Answering",
+  "summary": "Spoken Question Answering (SQA) remains largely focused on high-resource languages and carefully recorded speech, limiting the reach of speech-LLM methods in low-resource settings. This paper investigates whether text-to-speech (TTS) can provide task-specific training data for Luxembourgish SQA without requiring a large human-recorded QA corpus. Starting from existing text-based QA resources, we translate questions into Luxembourgish, synthesize spoken questions with multiple TTS systems, and pair them with textual answers. We train a parameter-efficient SLAM-style architecture that connects a frozen Whisper encoder to frozen multilingual LLM backends through a learned projector and LoRA adapters. We compare MMS-TTS, Qwen3-TTS, and OmniVoice variants, including single-source corpora of about 48k questions and a 4TTS multi-source mix of approximately 230k questions. Evaluation on LLAMA-LB-Test with two real Luxembourgish speaker conditions shows that multi-source and voice-design-based synthetic training configurations yield the strongest SQA performance. The results also show that no-reference TTS quality scores do not monotonically predict downstream QA performance, indicating that synthetic speech must be evaluated as task-specific training data rather than only as natural-sounding audio.",
+  "authors": [
+    "Nina Hosseini-Kivanani",
+    "Marco Matassoni",
+    "Alessio Brutti"
+  ],
+  "published": "2026-07-02T21:00:52Z",
+  "updated": "2026-07-02T21:00:52Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.02763",
+  "abs_url": "https://arxiv.org/abs/2607.02763",
+  "fetched_at": "2026-07-20T11:33:13.421878Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2606.08030",
+  "title": "Voting Protocols as Coordination Mechanisms for Role-Constrained Multi-Agent Tutoring Systems",
+  "summary": "Agentic tutoring systems introduce a coordination challenge: multiple agents may propose different but reasonable interventions, yet only one response can be delivered to the learner. In this paper, we study how voting protocols shape cooperation among four role-constrained pedagogical agents responsible for scaffolding, misconception, motivation, and metacognition. We compare four voting protocols -- simple, ranked, cumulative, and approval voting -- across two simulated tutoring environments on SciQ and HumanEval benchmarks. Rather than using voting as a simple aggregation step, we use it to analyze how collective decision rules shape coordination under partial pedagogical conflict. Across 1,200 simulated interactions, we find that agent deliberation and voting protocol type frequently change which response ultimately wins, showing that both meaningfully shape the collective decision. Different voting rules also produce distinct coordination behaviors, and even brief tutoring turns show measurable learning gains in simulated students. Overall, we show that protocol choice is associated with distinct coordination patterns among role-specialized pedagogical agents.",
+  "authors": [
+    "Eric S. Qiu",
+    "Joyce Gill"
+  ],
+  "published": "2026-06-06T07:46:08Z",
+  "updated": "2026-06-06T07:46:08Z",
+  "categories": [
+    "cs.MA",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.08030",
+  "abs_url": "https://arxiv.org/abs/2606.08030",
+  "fetched_at": "2026-07-20T11:33:13.428819Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

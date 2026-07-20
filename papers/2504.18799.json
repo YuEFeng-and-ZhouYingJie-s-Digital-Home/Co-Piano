@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2504.18799",
+  "title": "A Survey on Multimodal Music Emotion Recognition",
+  "summary": "Multimodal music emotion recognition (MMER) is an emerging discipline in music information retrieval that has experienced a surge in interest in recent years. This survey provides a comprehensive overview of the current state-of-the-art in MMER. Discussing the different approaches and techniques used in this field, the paper introduces a four-stage MMER framework, including multimodal data selection, feature extraction, feature processing, and final emotion prediction. The survey further reveals significant advancements in deep learning methods and the increasing importance of feature fusion techniques. Despite these advancements, challenges such as the need for large annotated datasets, datasets with more modalities, and real-time processing capabilities remain. This paper also contributes to the field by identifying critical gaps in current research and suggesting potential directions for future research. The gaps underscore the importance of developing robust, scalable, a interpretable models for MMER, with implications for applications in music recommendation systems, therapeutic tools, and entertainment.",
+  "authors": [
+    "Rashini Liyanarachchi",
+    "Aditya Joshi",
+    "Erik Meijering"
+  ],
+  "published": "2025-04-26T05:11:04Z",
+  "updated": "2025-04-26T05:11:04Z",
+  "categories": [
+    "cs.MM",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2504.18799",
+  "abs_url": "https://arxiv.org/abs/2504.18799",
+  "fetched_at": "2026-07-20T14:22:43.727072Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

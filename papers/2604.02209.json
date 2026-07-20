@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.02209",
+  "title": "CV-18 NER: Augmented Common Voice for Named Entity Recognition from Arabic Speech",
+  "summary": "End-to-end speech Named Entity Recognition (NER) aims to directly extract entities from speech. Prior work has shown that end-to-end (E2E) approaches can outperform cascaded pipelines for English, French, and Chinese, but Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources. We introduce CV-18 NER, the first publicly available dataset for NER from Arabic speech, created by augmenting the Arabic Common Voice 18 corpus with manual NER annotations following the fine-grained Wojood schema (21 entity types). We benchmark both pipeline systems (ASR + text NER) and E2E models based on Whisper and AraBEST-RQ. E2E systems substantially outperform the best pipeline configuration on the test set, reaching 37.0% CoER (AraBEST-RQ 300M) and 38.0% CVER (Whisper-medium). Further analysis shows that Arabic-specific self-supervised pretraining yields strong ASR performance, while multilingual weak supervision transfers more effectively to joint speech-to-entity learning, and that larger models may be harder to adapt in this low-resource setting. Our dataset and models are publicly released, providing the first open benchmark for end-to-end named entity recognition from Arabic speech https://huggingface.co/datasets/Elyadata/CV18-NER.",
+  "authors": [
+    "Youssef Saidi",
+    "Haroun Elleuch",
+    "Fethi Bougares"
+  ],
+  "published": "2026-04-02T16:02:20Z",
+  "updated": "2026-04-02T16:02:20Z",
+  "categories": [
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.02209",
+  "abs_url": "https://arxiv.org/abs/2604.02209",
+  "fetched_at": "2026-07-20T11:33:13.443836Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

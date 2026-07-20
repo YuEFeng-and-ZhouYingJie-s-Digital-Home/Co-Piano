@@ -1,0 +1,30 @@
+{
+  "arxiv_id": "2511.07099",
+  "title": "E2E-VGuard: Adversarial Prevention for Production LLM-based End-To-End Speech Synthesis",
+  "summary": "Recent advancements in speech synthesis technology have enriched our daily lives, with high-quality and human-like audio widely adopted across real-world applications. However, malicious exploitation like voice-cloning fraud poses severe security risks. Existing defense techniques struggle to address the production large language model (LLM)-based speech synthesis. While previous studies have considered the protection for fine-tuning synthesizers, they assume manually annotated transcripts. Given the labor intensity of manual annotation, end-to-end (E2E) systems leveraging automatic speech recognition (ASR) to generate transcripts are becoming increasingly prevalent, e.g., voice cloning via commercial APIs. Therefore, this E2E speech synthesis also requires new security mechanisms. To tackle these challenges, we propose E2E-VGuard, a proactive defense framework for two emerging threats: (1) production LLM-based speech synthesis, and (2) the novel attack arising from ASR-driven E2E scenarios. Specifically, we employ the encoder ensemble with a feature extractor to protect timbre, while ASR-targeted adversarial examples disrupt pronunciation. Moreover, we incorporate the psychoacoustic model to ensure perturbative imperceptibility. For a comprehensive evaluation, we test 16 open-source synthesizers and 3 commercial APIs across Chinese and English datasets, confirming E2E-VGuard's effectiveness in timbre and pronunciation protection. Real-world deployment validation is also conducted. Our code and demo page are available at https://wxzyd123.github.io/e2e-vguard/.",
+  "authors": [
+    "Zhisheng Zhang",
+    "Derui Wang",
+    "Yifan Mi",
+    "Zhiyong Wu",
+    "Jie Gao",
+    "Yuxin Cao",
+    "Kai Ye",
+    "Minhui Xue",
+    "Jie Hao"
+  ],
+  "published": "2025-11-10T13:38:53Z",
+  "updated": "2025-11-10T13:38:53Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CR",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2511.07099",
+  "abs_url": "https://arxiv.org/abs/2511.07099",
+  "fetched_at": "2026-07-20T11:33:13.438014Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2202.10453",
+  "title": "Predicting emotion from music videos: exploring the relative contribution of visual and auditory information to affective responses",
+  "summary": "Although media content is increasingly produced, distributed, and consumed in multiple combinations of modalities, how individual modalities contribute to the perceived emotion of a media item remains poorly understood. In this paper we present MusicVideos (MuVi), a novel dataset for affective multimedia content analysis to study how the auditory and visual modalities contribute to the perceived emotion of media. The data were collected by presenting music videos to participants in three conditions: music, visual, and audiovisual. Participants annotated the music videos for valence and arousal over time, as well as the overall emotion conveyed. We present detailed descriptive statistics for key measures in the dataset and the results of feature importance analyses for each condition. Finally, we propose a novel transfer learning architecture to train Predictive models Augmented with Isolated modality Ratings (PAIR) and demonstrate the potential of isolated modality ratings for enhancing multimodal emotion recognition. Our results suggest that perceptions of arousal are influenced primarily by auditory information, while perceptions of valence are more subjective and can be influenced by both visual and auditory information. The dataset is made publicly available.",
+  "authors": [
+    "Phoebe Chua",
+    "Dimos Makris",
+    "Dorien Herremans",
+    "Gemma Roig",
+    "Kat Agres"
+  ],
+  "published": "2022-02-19T07:36:43Z",
+  "updated": "2022-02-19T07:36:43Z",
+  "categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.MM",
+    "cs.SD",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2202.10453",
+  "abs_url": "https://arxiv.org/abs/2202.10453",
+  "fetched_at": "2026-07-20T14:22:43.728994Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

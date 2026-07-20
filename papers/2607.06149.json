@@ -1,0 +1,19 @@
+{
+  "arxiv_id": "2607.06149",
+  "title": "BlossomPsy: A User-Centric AI System for Adaptive and Engaging MBTI Personality Assessments",
+  "summary": "There has been growing public interest in understanding personality traits and emotional characteristics, as such knowledge helps individuals better accept themselves and manage negative emotions. While professional personality scales remain the standard tool for assessment, they are often perceived as tedious or inaccessible to the general public. AI-driven systems can make assessments more accessible, but it is difficult to balance user engagement with predictive consistency in existing works. We tackle this challenge by introducing BlossomPsy, a user-friendly AI-driven MBTI assessment system. MBTI, a widely recognized but psychometrically debated personality framework, serves as the foundation for many recent systems. BlossomPsy integrates multi-turn dialogue and photo-based questions to enhance user engagement while supporting confidence-aware predictions. By combining deep learning, multi-armed bandit algorithms, and control theory, the system dynamically adapts to users' responses. In particular, photo-based questions are designed to increase interactivity and provide additional user information, thereby improving prediction confidence. Experiments involving both human volunteers and large language models (LLMs) provide preliminary evidence that BlossomPsy can produce stable predictions, with higher reported user satisfaction compared to MBTI-M (Chinese version), while maintaining comparable consistency with the reference scale.",
+  "authors": [
+    "Bingjia Huang"
+  ],
+  "published": "2026-07-07T11:20:25Z",
+  "updated": "2026-07-08T15:51:29Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.06149",
+  "abs_url": "https://arxiv.org/abs/2607.06149",
+  "fetched_at": "2026-07-20T11:33:13.434178Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

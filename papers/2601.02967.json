@@ -1,0 +1,32 @@
+{
+  "arxiv_id": "2601.02967",
+  "title": "MoE Adapter for Large Audio Language Models: Sparsity, Disentanglement, and Gradient-Conflict-Free",
+  "summary": "Extending the input modality of Large Language Models~(LLMs) to the audio domain is essential for achieving comprehensive multimodal perception. However, it is well-known that acoustic information is intrinsically \\textit{heterogeneous}, entangling attributes such as speech, music, and environmental context. Existing research is limited to a dense, parameter-shared adapter to model these diverse patterns, which induces \\textit{gradient conflict} during optimization, as parameter updates required for distinct attributes contradict each other. To address this limitation, we introduce the \\textit{\\textbf{MoE-Adapter}}, a sparse Mixture-of-Experts~(MoE) architecture designed to decouple acoustic information. Specifically, it employs a dynamic gating mechanism that routes audio tokens to specialized experts capturing complementary feature subspaces while retaining shared experts for global context, thereby mitigating gradient conflicts and enabling fine-grained feature learning. Comprehensive experiments show that the MoE-Adapter achieves superior performance on both audio semantic and paralinguistic tasks, consistently outperforming dense linear baselines with comparable computational costs. Furthermore, we will release the related code and models to facilitate future research.",
+  "authors": [
+    "Yishu Lei",
+    "Shuwei He",
+    "Jing Hu",
+    "Dan Zhang",
+    "Xianlong Luo",
+    "Danxiang Zhu",
+    "Shikun Feng",
+    "Rui Liu",
+    "Jingzhou He",
+    "Yu Sun",
+    "Hua Wu",
+    "Haifeng Wang"
+  ],
+  "published": "2026-01-06T12:24:38Z",
+  "updated": "2026-01-08T06:17:18Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.02967",
+  "abs_url": "https://arxiv.org/abs/2601.02967",
+  "fetched_at": "2026-07-20T11:33:13.430303Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

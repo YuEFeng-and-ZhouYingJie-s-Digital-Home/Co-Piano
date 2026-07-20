@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2509.02349",
+  "title": "AudioCodecBench: A Comprehensive Benchmark for Audio Codec Evaluation",
+  "summary": "Multimodal Large Language Models (MLLMs) have been widely applied in speech and music. This tendency has led to a focus on audio tokenization for Large Models (LMs). Unlike semantic-only text tokens, audio tokens must both capture global semantic content and preserve fine-grained acoustic details. Moreover, they provide a discrete method for speech and music that can be effectively integrated into MLLMs. However, existing research is unsuitable in the definitions of semantic tokens and acoustic tokens. In addition, the evaluation of different codecs typically concentrates on specific domains or tasks, such as reconstruction or Automatic Speech Recognition (ASR) task, which prevents fair and comprehensive comparisons. To address these problems, this paper provides suitable definitions for semantic and acoustic tokens and introduces a systematic evaluation framework. This framework allows for a comprehensive assessment of codecs' capabilities which evaluate across four dimensions: audio reconstruction metric, codebook index (ID) stability, decoder-only transformer perplexity, and performance on downstream probe tasks. Our results show the correctness of the provided suitable definitions and the correlation among reconstruction metrics, codebook ID stability, downstream probe tasks and perplexity.",
+  "authors": [
+    "Lu Wang",
+    "Hao Chen",
+    "Siyu Wu",
+    "Zhiyue Wu",
+    "Hao Zhou",
+    "Chengfeng Zhang",
+    "Ting Wang",
+    "Haodi Zhang"
+  ],
+  "published": "2025-09-02T14:15:22Z",
+  "updated": "2025-09-04T14:25:57Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2509.02349",
+  "abs_url": "https://arxiv.org/abs/2509.02349",
+  "fetched_at": "2026-07-20T14:22:43.722853Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

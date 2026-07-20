@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.09881",
+  "title": "Toward using Speech to Sense Student Emotion in Remote Learning Environments",
+  "summary": "With advancements in multimodal communication technologies, remote learning environments such as, distance universities are increasing. Remote learning typically happens asynchronously. As a consequence, unlike face-to-face in-person classroom teaching, this lacks availability of sufficient emotional cues for making learning a pleasant experience. Motivated by advances made in the paralinguistic speech processing community on emotion prediction, in this paper we explore use of speech for sensing students' emotions by building upon speech-based self-control tasks developed to aid effective remote learning. More precisely, we investigate: (a) whether speech acquired through self-control tasks exhibit perceptible variation along valence, arousal, and dominance dimensions? and (b) whether those dimensional emotion variations can be automatically predicted? We address these two research questions by developing a dataset containing spontaneous monologue speech acquired as open responses to self-control tasks and by carrying out subjective listener evaluations and automatic dimensional emotion prediction studies on that dataset. Our investigations indicate that speech-based self-control tasks can be a means to sense student emotion in remote learning environment. This opens potential venues to seamlessly integrate paralinguistic speech processing technologies in the remote learning loop for enhancing learning experiences through instructional design and feedback generation.",
+  "authors": [
+    "Sargam Vyas",
+    "Bogdan Vlasenko",
+    "André Mayoraz",
+    "Egon Werlen",
+    "Per Bergamin",
+    "Mathew Magimai. -Doss"
+  ],
+  "published": "2026-04-10T20:15:38Z",
+  "updated": "2026-04-10T20:15:38Z",
+  "categories": [
+    "eess.AS",
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.09881",
+  "abs_url": "https://arxiv.org/abs/2604.09881",
+  "fetched_at": "2026-07-20T11:33:13.449942Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

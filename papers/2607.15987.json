@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.15987",
+  "title": "A Formally Grounded ODRL Evaluator: Implementation and Comparison",
+  "summary": "The ODRL policy language is emerging as the de-facto standard for policy modelling data access and usage preferences, AI governance policies and data workflows in European dataspaces. The current standard has no mathematical formal semantics to describe how a system should implement policy evaluation. This has resulted in a variety of systems and tools that implement their own interpretation of the language, which limits interoperability and cannot guarantee consistent results. Based on an existing semantic model of ODRL, we formalise the problems of ODRL evaluation for the access control and monitoring scenarios, in both static and streaming settings, and we provide a novel, efficient algorithm and implementation. We present the first ODRL Evaluator with transparent formal semantics and supporting all rule types. We experimentally measure its performance, analysing different scalability dimensions related to policy complexity and size of the data on which a policy is evaluated. We compare our system with the state-of-the-art by providing a comparative review of existing ODRL evaluators, which highlights the differences in supported ODRL features and evaluation modes.",
+  "authors": [
+    "Jaime Osvaldo Salas",
+    "Paolo Pareti",
+    "Adeel Aslam",
+    "Christopher Maidens",
+    "George Konstantinidis"
+  ],
+  "published": "2026-07-17T14:24:06Z",
+  "updated": "2026-07-17T14:24:06Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15987",
+  "abs_url": "https://arxiv.org/abs/2607.15987",
+  "fetched_at": "2026-07-20T14:22:43.713040Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2403.10024",
+  "title": "MR-MT3: Memory Retaining Multi-Track Music Transcription to Mitigate Instrument Leakage",
+  "summary": "This paper presents enhancements to the MT3 model, a state-of-the-art (SOTA) token-based multi-instrument automatic music transcription (AMT) model. Despite SOTA performance, MT3 has the issue of instrument leakage, where transcriptions are fragmented across different instruments. To mitigate this, we propose MR-MT3, with enhancements including a memory retention mechanism, prior token sampling, and token shuffling are proposed. These methods are evaluated on the Slakh2100 dataset, demonstrating improved onset F1 scores and reduced instrument leakage. In addition to the conventional multi-instrument transcription F1 score, new metrics such as the instrument leakage ratio and the instrument detection F1 score are introduced for a more comprehensive assessment of transcription quality. The study also explores the issue of domain overfitting by evaluating MT3 on single-instrument monophonic datasets such as ComMU and NSynth. The findings, along with the source code, are shared to facilitate future work aimed at refining token-based multi-instrument AMT models.",
+  "authors": [
+    "Hao Hao Tan",
+    "Kin Wai Cheuk",
+    "Taemin Cho",
+    "Wei-Hsiang Liao",
+    "Yuki Mitsufuji"
+  ],
+  "published": "2024-03-15T05:13:38Z",
+  "updated": "2024-03-15T05:13:38Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG",
+    "cs.MM",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2403.10024",
+  "abs_url": "https://arxiv.org/abs/2403.10024",
+  "fetched_at": "2026-07-20T14:22:43.725831Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

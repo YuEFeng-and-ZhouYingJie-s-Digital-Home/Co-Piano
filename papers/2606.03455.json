@@ -1,0 +1,33 @@
+{
+  "arxiv_id": "2606.03455",
+  "title": "WavTTS: Towards High-Quality Zero-Shot TTS via Direct Raw Waveform Modeling",
+  "summary": "Recently, diffusion models operating on VAE latents or mel-spectrograms have become the dominant paradigm for zero-shot TTS. Although these compressed representations improve generation efficiency, they inevitably suffer from information loss and non-end-to-end training. Theoretically, directly modeling raw waveforms circumvents these issues; however, this direction remains underexplored and is often deemed difficult due to the extremely long sequence length of audio signals. To overcome this, we propose WavTTS, the first raw waveform generative TTS model that substantially narrows the gap with latent-space generative models. Built upon the flow matching with Diffusion Transformer (DiT), WavTTS directly models speech waveforms via a simple patchification strategy, while integrating multi-scale mel-spectrogram supervision to provide perceptual guidance during training. Furthermore, we investigate the impact of prediction targets and noise scheduling in waveform diffusion, and develop an effective schedule design to improve generation quality. Evaluations on open-source benchmarks demonstrate that WavTTS closely approaches the performance of current state-of-the-art latent generative zero-shot TTS models, while substantially outperforming previous end-to-end speech generation models. Our findings demonstrate the feasibility of scaling diffusion-based TTS directly in the waveform space, opening a new direction for end-to-end speech generation.",
+  "authors": [
+    "Wenxi Chen",
+    "Dongya Jia",
+    "Yushen Chen",
+    "Zhikang Niu",
+    "Yuzhe Liang",
+    "Xiquan Li",
+    "Ruiqi Yan",
+    "Ziyang Ma",
+    "Guanrou Yang",
+    "Sanyuan Chen",
+    "Yue Wang",
+    "Zhuo Chen",
+    "Kai Yu",
+    "Xie Chen"
+  ],
+  "published": "2026-06-02T10:33:20Z",
+  "updated": "2026-06-02T10:33:20Z",
+  "categories": [
+    "eess.AS",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.03455",
+  "abs_url": "https://arxiv.org/abs/2606.03455",
+  "fetched_at": "2026-07-20T11:33:13.446895Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

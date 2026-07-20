@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2607.16083",
+  "title": "What Does It Take to Research with AI? A Rapid Review of Competencies to Train LLM-Literate Researchers",
+  "summary": "The growing adoption of Large Language Models in scientific research has created a need to understand what competencies researchers and graduate students require to use these tools critically and responsibly. This rapid review analyzed 194 articles retrieved from Elicit and Google Scholar (2022 to 2025), from which 40 were selected for competency extraction and thematic analysis following independent dual screening (Gwet AC1: 0.76 to 0.83). Eight competencies were identified. The most prevalent was domain expertise and oversight of AI outputs (n = 123), encompassing subject matter mastery, systematic skepticism, source verification, and researcher accountability. Other key competencies include metacognition and decision making about AI use (n = 55), ethics and academic integrity (n = 53), prompt engineering for research (n = 38), and reproducibility of AI use (n = 29). AI literacy and technical knowledge (n = 16) was explicitly identified as a risk factor when absent, with domain expertise treated as a prerequisite for meaningful critical evaluation. The findings suggest that preparing researchers to use LLMs goes beyond technical instruction, requiring an integrated set of epistemic, ethical, and methodological competencies centered on human accountability for the knowledge produced. These results have direct implications for the design of graduate programs and AI literacy initiatives.",
+  "authors": [
+    "Danilo Monteiro Ribeiro",
+    "Ronnie de Souza Santos",
+    "Rodrigo Siqueira",
+    "Breno Andrade",
+    "Rafael Batista Duarte",
+    "Gilberto Hida",
+    "Julia Alencar",
+    "Gustavo Pinto"
+  ],
+  "published": "2026-07-17T16:14:14Z",
+  "updated": "2026-07-17T16:14:14Z",
+  "categories": [
+    "cs.SE"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16083",
+  "abs_url": "https://arxiv.org/abs/2607.16083",
+  "fetched_at": "2026-07-20T14:22:43.711585Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

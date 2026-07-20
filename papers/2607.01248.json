@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.01248",
+  "title": "A Practice Auditing Framework for Large Language Model Use: Collective Empiricism, Pseudo-Rational Cognition, and Governance of AI-Generated Content",
+  "summary": "Large language models are increasingly used for knowledge acquisition, code generation, academic writing, and agent-based automation. In these settings, users may obtain highly structured answers, plans, and judgments without sufficient domain practice. This paper proposes a practice auditing framework for LLM use and AI-generated content governance. It introduces collective empiricism to describe how LLMs compress and reorganize large-scale human experience into outputs that appear empirical and rational, and pseudo-rational cognition to describe how users may mistake AI-generated structured expression for their own rational understanding. The paper analyzes AI subjectivity illusion, subjectivity structures in input materials, template loops in AI-AI conversations, statistical misjudgment in AIGC detection, and memory pollution when generated content enters future contexts, long-term memory, retrieval spaces, or agent skill systems. To reduce these risks, the paper proposes an auditing process based on requirement definition, problem-boundary identification, evidence-source auditing, practical validation, reverse questioning, logging, version management, rollback, and renewed cognition. The framework does not reject AI productivity; it argues that LLM outputs should be returned to verifiable, reproducible, and intervenable processes of practice. The paper provides a conceptual and auditable framework for cognitive risks in LLM interaction, AI-generated content governance, long-term memory systems, and human-AI interaction.",
+  "authors": [
+    "Yang Zhao",
+    "Yingshuo Li",
+    "Zeyu Zhang"
+  ],
+  "published": "2026-06-02T00:46:47Z",
+  "updated": "2026-06-02T00:46:47Z",
+  "categories": [
+    "cs.CY",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.01248",
+  "abs_url": "https://arxiv.org/abs/2607.01248",
+  "fetched_at": "2026-07-20T14:22:43.717382Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

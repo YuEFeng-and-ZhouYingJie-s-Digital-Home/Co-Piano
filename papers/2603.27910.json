@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2603.27910",
+  "title": "GAAMA: Graph Augmented Associative Memory for Agents",
+  "summary": "AI agents that interact with users across multiple sessions require persistent long-term memory to maintain coherent, personalized behavior. Current approaches either rely on flat retrieval-augmented generation (RAG), which loses structural relationships among memories, or use entity-centric knowledge graphs that suffer from mega-hub effects in conversational data, diluting graph-based relevance propagation. We propose GAAMA, a graph-augmented associative memory for agents that constructs a concept-mediated knowledge graph through a three-step pipeline: (1)verbatim episode preservation, (2)LLM-based extraction of atomic facts and topic-level concept nodes, and (3)synthesis of higher-order reflections. The resulting graph uses four node types (episode, fact, reflection, concept) connected by five structural edge types, with concept nodes providing cross-cutting traversal paths that avoid the mega-hub problem of entity-centric designs. Retrieval combines cosine-similarity-based k-nearest neighbor search with edge-type-aware Personalized PageRank (PPR) through an additive scoring function. We further introduce GRAFT (Graph Repair by Augmenting Facts & Topology), a post-retrieval corrective layer that diagnoses retrieval failures and surgically repairs the knowledge graph. On LoCoMo-10 (1,540 questions, 10 multi-session conversations), GAAMA achieves 79.1% mean reward, a +4.2~pp improvement over a tuned RAG baseline, the strongest comparator. On MemoryArena, GAAMA outperforms full-context baselines across three tasks - Group Travel (+0.4~pp), Web Shopping (+3.4~pp), and Progressive Search (+0.7~pp) - with advantages growing monotonically with dialogue length. Notably, GAAMA delivers consistent performance across all categories, matching the best competing method in each, whereas every competitor degrades in at least one category.",
+  "authors": [
+    "Swarna Kamal Paul",
+    "Shubhendu Sharma",
+    "Nitin Sareen"
+  ],
+  "published": "2026-03-29T23:33:38Z",
+  "updated": "2026-05-13T13:52:11Z",
+  "categories": [
+    "cs.AI",
+    "cs.IR",
+    "cs.MA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.27910",
+  "abs_url": "https://arxiv.org/abs/2603.27910",
+  "fetched_at": "2026-07-20T14:22:43.719838Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

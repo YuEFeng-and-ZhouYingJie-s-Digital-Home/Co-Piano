@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2601.13350",
+  "title": "Beyond Mapping : Domain-Invariant Representations via Spectral Embedding of Optimal Transport Plans",
+  "summary": "Distributional shifts between training and inference time data remain a central challenge in machine learning, often leading to poor performance. It motivated the study of principled approaches for domain alignment, such as optimal transport based unsupervised domain adaptation, that relies on approximating Monge map using transport plans, which is sensitive to the transport problem regularization strategy and hyperparameters, and might yield biased domains alignment. In this work, we propose to interpret smoothed transport plans as adjacency matrices of bipartite graphs connecting source to target domain and derive domain-invariant samples' representations through spectral embedding. We evaluate our approach on acoustic adaptation benchmarks for music genre recognition, music-speech discrimination, as well as electrical cable defect detection and classification tasks using time domain reflection in different diagnosis settings, achieving overall strong performances.",
+  "authors": [
+    "Abdel Djalil Sad Saoud",
+    "Fred Maurice Ngolè Mboula",
+    "Hanane Slimani"
+  ],
+  "published": "2026-01-19T19:38:59Z",
+  "updated": "2026-03-06T13:18:08Z",
+  "categories": [
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.13350",
+  "abs_url": "https://arxiv.org/abs/2601.13350",
+  "fetched_at": "2026-07-20T11:33:13.418870Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

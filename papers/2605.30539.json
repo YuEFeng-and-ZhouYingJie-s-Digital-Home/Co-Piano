@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2605.30539",
+  "title": "A Theory-Guided LLM Pedagogical Agent for STEM+C Scaffolding Without Over-Reliance",
+  "summary": "LLM pedagogical agents are proliferating, yet recent findings have raised questions about their adherence to established theories of learning and, by extension, their educational value. Concerns regarding cognitive offloading, over-reliance, and \"gaming\" behaviors persist and remain largely unaddressed. In response, we developed Copa, an agentic, multi-agent, multimodal Collaborative Peer Agent for STEM+C learning. Copa is built on top of the Evidence-Decision-Feedback (EDF) framework, grounding its interactions in Social Cognitive Theory and Social Constructivism and promoting sense-making through adaptive, dialogic support rather than answer-seeking. In an authentic high school computational-modeling study (n=33 dyads), we demonstrate that Copa (1) supports students' confidence building and ability to verbalize conceptual understanding without causing dependence; and (2) provides adaptive feedback personalized to learners that is interpretable with respect to students' multimodal input data. These findings position theory-guided, multimodal LLM agents as a promising path toward classroom AI integration that amplifies students' reasoning rather than replacing it.",
+  "authors": [
+    "Clayton Cohn",
+    "Surya Rayala",
+    "Siyuan Guo",
+    "Hanchen David Wang",
+    "Naveeduddin Mohammed",
+    "Umesh Timalsina",
+    "Shruti Jain",
+    "Ryan Li",
+    "Angela Eeds",
+    "Menton Deweese",
+    "Pamela J. Osborn Popp",
+    "Rebekah Stanton",
+    "Shakeera Walker",
+    "Ashwin T S",
+    "Meiyi Ma",
+    "Gautam Biswas"
+  ],
+  "published": "2026-05-28T20:13:18Z",
+  "updated": "2026-05-28T20:13:18Z",
+  "categories": [
+    "cs.MA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.30539",
+  "abs_url": "https://arxiv.org/abs/2605.30539",
+  "fetched_at": "2026-07-20T11:33:13.449271Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

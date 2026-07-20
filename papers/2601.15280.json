@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2601.15280",
+  "title": "LLM-based Multimodal Feedback Produces Equivalent Learning and Better Student Perceptions than Educator Feedback",
+  "summary": "Providing timely, targeted, and multimodal feedback helps students quickly correct errors, build deep understanding and stay motivated, yet making it at scale remains a challenge. This study introduces a real-time AI-facilitated multimodal feedback system that integrates structured textual explanations with dynamic multimedia resources, including the retrieved most relevant slide page references and streaming AI audio narration. In an online crowdsourcing experiment, we compared this system against fixed business-as-usual feedback by educators across three dimensions: (1) learning effectiveness, (2) learner engagement, (3) perceived feedback quality and value. Results showed that AI multimodal feedback achieved learning gains equivalent to original educator feedback while significantly outperforming it on perceived clarity, specificity, conciseness, motivation, satisfaction, and reducing cognitive load, with comparable correctness, trust, and acceptance. Process logs revealed distinct engagement patterns: for multiple-choice questions, educator feedback encouraged more submissions; for open-ended questions, AI-facilitated targeted suggestions lowered revision barriers and promoted iterative improvement. These findings highlight the potential of AI multimodal feedback to provide scalable, real-time, and context-aware support that both reduces instructor workload and enhances student experience.",
+  "authors": [
+    "Chloe Qianhui Zhao",
+    "Jie Cao",
+    "Jionghao Lin",
+    "Kenneth R. Koedinger"
+  ],
+  "published": "2026-01-21T18:58:08Z",
+  "updated": "2026-01-21T18:58:08Z",
+  "categories": [
+    "cs.HC",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.15280",
+  "abs_url": "https://arxiv.org/abs/2601.15280",
+  "fetched_at": "2026-07-20T11:33:13.450620Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

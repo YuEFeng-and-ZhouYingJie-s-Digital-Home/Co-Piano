@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2405.19342",
+  "title": "Sonos Voice Control Bias Assessment Dataset: A Methodology for Demographic Bias Assessment in Voice Assistants",
+  "summary": "Recent works demonstrate that voice assistants do not perform equally well for everyone, but research on demographic robustness of speech technologies is still scarce. This is mainly due to the rarity of large datasets with controlled demographic tags. This paper introduces the Sonos Voice Control Bias Assessment Dataset, an open dataset composed of voice assistant requests for North American English in the music domain (1,038 speakers, 166 hours, 170k audio samples, with 9,040 unique labelled transcripts) with a controlled demographic diversity (gender, age, dialectal region and ethnicity). We also release a statistical demographic bias assessment methodology, at the univariate and multivariate levels, tailored to this specific use case and leveraging spoken language understanding metrics rather than transcription accuracy, which we believe is a better proxy for user experience. To demonstrate the capabilities of this dataset and statistical method to detect demographic bias, we consider a pair of state-of-the-art Automatic Speech Recognition and Spoken Language Understanding models. Results show statistically significant differences in performance across age, dialectal region and ethnicity. Multivariate tests are crucial to shed light on mixed effects between dialectal region, gender and age.",
+  "authors": [
+    "Chloé Sekkat",
+    "Fanny Leroy",
+    "Salima Mdhaffar",
+    "Blake Perry Smith",
+    "Yannick Estève",
+    "Joseph Dureau",
+    "Alice Coucke"
+  ],
+  "published": "2024-05-14T12:53:32Z",
+  "updated": "2024-05-14T12:53:32Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "cs.LG",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2405.19342",
+  "abs_url": "https://arxiv.org/abs/2405.19342",
+  "fetched_at": "2026-07-20T14:22:43.725690Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

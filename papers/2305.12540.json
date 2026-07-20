@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2305.12540",
+  "title": "On the Efficacy and Noise-Robustness of Jointly Learned Speech Emotion and Automatic Speech Recognition",
+  "summary": "New-age conversational agent systems perform both speech emotion recognition (SER) and automatic speech recognition (ASR) using two separate and often independent approaches for real-world application in noisy environments. In this paper, we investigate a joint ASR-SER multitask learning approach in a low-resource setting and show that improvements are observed not only in SER, but also in ASR. We also investigate the robustness of such jointly trained models to the presence of background noise, babble, and music. Experimental results on the IEMOCAP dataset show that joint learning can improve ASR word error rate (WER) and SER classification accuracy by 10.7% and 2.3% respectively in clean scenarios. In noisy scenarios, results on data augmented with MUSAN show that the joint approach outperforms the independent ASR and SER approaches across many noisy conditions. Overall, the joint ASR-SER approach yielded more noise-resistant models than the independent ASR and SER approaches.",
+  "authors": [
+    "Lokesh Bansal",
+    "S. Pavankumar Dubagunta",
+    "Malolan Chetlur",
+    "Pushpak Jagtap",
+    "Aravind Ganapathiraju"
+  ],
+  "published": "2023-05-21T18:52:21Z",
+  "updated": "2023-05-25T19:33:54Z",
+  "categories": [
+    "eess.AS",
+    "cs.AI",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2305.12540",
+  "abs_url": "https://arxiv.org/abs/2305.12540",
+  "fetched_at": "2026-07-20T14:22:43.728372Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

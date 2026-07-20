@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2502.12438",
+  "title": "Note-Level Singing Melody Transcription for Time-Aligned Musical Score Generation",
+  "summary": "Automatic music transcription converts audio recordings into symbolic representations, facilitating music analysis, retrieval, and generation. A musical note is characterized by pitch, onset, and offset in an audio domain, whereas it is defined in terms of pitch and note value in a musical score domain. A time-aligned score, derived from timing information along with pitch and note value, allows matching a part of the score with the corresponding part of the music audio, enabling various applications. In this paper, we consider an extended version of the traditional note-level transcription task that recognizes onset, offset, and pitch, through including extraction of additional note value to generate a time-aligned score from an audio input. To address this new challenge, we propose an end-to-end framework that integrates recognition of the note value, pitch, and temporal information. This approach avoids error accumulation inherent in multi-stage methods and enhances accuracy through mutual reinforcement. Our framework employs tokenized representations specifically targeted for this task, through incorporating note value information. Furthermore, we introduce a pseudo-labeling technique to address a scarcity problem of annotated note value data. This technique produces approximate note value labels from existing datasets for the traditional note-level transcription. Experimental results demonstrate the superior performance of the proposed model in note-level transcription tasks when compared to existing state-of-the-art approaches. We also introduce new evaluation metrics that assess both temporal and note value aspects to demonstrate the robustness of the model. Moreover, qualitative assessments via visualized musical scores confirmed the effectiveness of our model in capturing the note values.",
+  "authors": [
+    "Leekyung Kim",
+    "Sungwook Jeon",
+    "Wan Heo",
+    "Jonghun Park"
+  ],
+  "published": "2025-02-18T02:12:56Z",
+  "updated": "2025-02-18T02:12:56Z",
+  "categories": [
+    "cs.SD",
+    "eess.AS",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2502.12438",
+  "abs_url": "https://arxiv.org/abs/2502.12438",
+  "fetched_at": "2026-07-20T14:22:43.724131Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

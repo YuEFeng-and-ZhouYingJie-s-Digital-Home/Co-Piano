@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2601.08128",
+  "title": "Embedded AI Companion System on Edge Devices",
+  "summary": "Computational resource constraints on edge devices make it difficult to develop a fully embedded AI companion system with a satisfactory user experience. AI companion and memory systems detailed in existing literature cannot be directly used in such an environment due to lack of compute resources and latency concerns. In this paper, we propose a memory paradigm that alternates between active and inactive phases: during phases of user activity, the system performs low-latency, real-time dialog using lightweight retrieval over existing memories and context; whereas during phases of user inactivity, it conducts more computationally intensive extraction, consolidation, and maintenance of memories across full conversation sessions. This design minimizes latency while maintaining long-term personalization under the tight constraints of embedded hardware. We also introduce an AI Companion benchmark designed to holistically evaluate the AI Companion across both its conversational quality and memory capabilities. In our experiments, we found that our system (using a very weak model: Qwen2.5-7B-Instruct quantized int4) outperforms the equivalent raw LLM without memory across most metrics, and performs comparably to GPT-3.5 with 16k context window.",
+  "authors": [
+    "Rahul Gupta",
+    "Stephen D. H. Hsu"
+  ],
+  "published": "2026-01-13T01:50:06Z",
+  "updated": "2026-01-13T01:50:06Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.08128",
+  "abs_url": "https://arxiv.org/abs/2601.08128",
+  "fetched_at": "2026-07-20T14:22:43.720858Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

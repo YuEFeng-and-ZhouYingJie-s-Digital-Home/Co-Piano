@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2607.11357",
+  "title": "OpsMem: Dual-Memory Reasoning with Cross-Memory Resonance for Failure Diagnosis",
+  "summary": "Failure diagnosis in modern software systems requires iterative evidence acquisition and hypothesis reasoning guided by operational experience. Existing LLM-based methods improve diagnosis through agentic reasoning or knowledge augmentation, but they often lack a mechanism to coordinate the evolving diagnostic state with operational experience during iterative diagnosis. We propose OpsMem, a dual-memory framework that maintains a short-term memory for the current diagnostic state and a long-term memory for reusable operational experience. OpsMem uses cross-memory resonance to activate state-relevant long-term memory, conditions multi-agent diagnosis on the short-term and activated long-term memories, and consolidates reusable experience from solved incidents back into long-term memory. Experiments on a real-world Huawei microservice failure diagnosis dataset show that OpsMem outperforms representative agentic-reasoning and knowledge-augmented baselines, improving Match and Relevant by up to 46.88% and 18.39% over the strongest baseline, respectively.",
+  "authors": [
+    "Yongqian Sun",
+    "Rongchen Gao",
+    "Yu Luo",
+    "Wenwei Gu",
+    "Shenglin Zhang",
+    "Qingyi Guo",
+    "Qiuai Fu",
+    "Yaoliang Wu",
+    "Dan Pei"
+  ],
+  "published": "2026-07-13T10:22:44Z",
+  "updated": "2026-07-13T10:22:44Z",
+  "categories": [
+    "cs.AI",
+    "cs.SE"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.11357",
+  "abs_url": "https://arxiv.org/abs/2607.11357",
+  "fetched_at": "2026-07-20T11:33:13.440766Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

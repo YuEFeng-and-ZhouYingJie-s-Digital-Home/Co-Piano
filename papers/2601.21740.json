@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2601.21740",
+  "title": "MIDI-LLaMA: An Instruction-Following Multimodal LLM for Symbolic Music Understanding",
+  "summary": "Recent advances in multimodal large language models (MLLM) for audio music have demonstrated strong capabilities in music understanding, yet symbolic music, a fundamental representation of musical structure, remains unexplored. In this work, we introduce MIDI-LLaMA, the first instruction-following MLLM for symbolic music understanding. Our approach aligns the MIDI encoder MusicBERT and Llama-3-8B via a two-stage pipeline comprising feature alignment and instruction tuning. To support training, we design a scalable annotation pipeline that annotates GiantMIDI-Piano with fine-grained metadata, resulting in a MIDI-text dataset. Compared with the baseline trained on converting MIDI into ABC notation under the same instruction-tuning procedure, MIDI-LLaMA substantially outperforms in captioning and semantic alignment in question answering. Human evaluation further confirms the advantages of MIDI-LLaMA in music understanding, emotion recognition, creativity, and overall preference. These findings demonstrate that incorporating symbolic music into large language models enhances their capacity for musical understanding.",
+  "authors": [
+    "Meng Yang",
+    "Jon McCormack",
+    "Maria Teresa Llano",
+    "Wanchao Su",
+    "Chao Lei"
+  ],
+  "published": "2026-01-29T13:57:48Z",
+  "updated": "2026-01-29T13:57:48Z",
+  "categories": [
+    "cs.MM",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.21740",
+  "abs_url": "https://arxiv.org/abs/2601.21740",
+  "fetched_at": "2026-07-20T11:33:13.429947Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

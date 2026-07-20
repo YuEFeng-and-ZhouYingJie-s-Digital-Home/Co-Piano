@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.21277",
+  "title": "Compiling Differentiable Audio Graphs to Real-Time DSP",
+  "summary": "Differentiable audio processors are habitually designed and optimised in machine-learning frameworks, but deploying them as real-time audio effects still often requires non-automatic implementation in a dedicated digital signal processing language. The translation is error-prone, demands an onerous verification process, and detaches research prototypes from usable production tools. That being so, we present ADAC, a compiler that lowers a trained model to a framework-agnostic intermediate representation and emits efficient FAUST code whose impulse response matches the source model to within floating-point arithmetic noise, direct paths included. The optimisation loop is made audible by replacing the model in a running plugin after each gradient step. The exported processor carries a small set of macro-controls that leave its stability intact. A stability certificate computed from the shipped parameters is checked before the plugin is built. At the demonstration, a feedback delay network is trained and exported to a working plugin.",
+  "authors": [
+    "Facundo Franchino",
+    "Sebastian J. Schlecht"
+  ],
+  "published": "2026-06-19T09:52:27Z",
+  "updated": "2026-06-19T09:52:27Z",
+  "categories": [
+    "eess.AS",
+    "cs.PL",
+    "cs.SD",
+    "eess.SP"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.21277",
+  "abs_url": "https://arxiv.org/abs/2606.21277",
+  "fetched_at": "2026-07-20T11:33:13.432018Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

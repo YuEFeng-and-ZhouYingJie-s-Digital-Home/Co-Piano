@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2607.08409",
+  "title": "When Synthetic Speech Is All You Have: Better Call GRPO",
+  "summary": "LLM-based ASR adapted to regulated domains such as banking is bottlenecked by privacy: real speech is costly and legally constrained to collect, making synthetic text-to-speech (TTS) an attractive substitute. Yet synthetic speech stays acoustically mismatched with real recordings, and work on this gap has stayed within supervised fine-tuning (SFT). We instead turn to reinforcement learning, and show that Group Relative Policy Optimization (GRPO) extracts far more from the same synthetic speech than SFT. Synthetic-only adaptation of the model with GRPO, a critic-free method rewarding low-WER hypotheses, reduces WER by 40\\% relative to SFT (36.71\\%$\\to$22.09\\%), and an SFT-then-GRPO combination pushes this further to 45\\%. We trace the gain to behavior rather than representation: GRPO reduces insertion errors by improving stopping calibration and speech-to-text alignment by better anchoring attention to audio, leaving early-layer representations intact. When synthetic speech is the main resource, reinforcement learning should be preferred over supervised fine-tuning.",
+  "authors": [
+    "Shashi Kumar",
+    "Yanis Labrak",
+    "Hasindri Watawana",
+    "Sergio Burdisso",
+    "Esaú Villatoro-Tello",
+    "Kadri Hacioğlu",
+    "Petr Motlicek",
+    "Andreas Stolcke"
+  ],
+  "published": "2026-07-09T12:34:56Z",
+  "updated": "2026-07-09T12:34:56Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.08409",
+  "abs_url": "https://arxiv.org/abs/2607.08409",
+  "fetched_at": "2026-07-20T11:33:13.421046Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

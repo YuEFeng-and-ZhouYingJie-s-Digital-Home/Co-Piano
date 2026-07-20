@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2607.00979",
+  "title": "Visualizing Engineering Fundamentals: Design of Mixed Reality and Physical Toolkits for Effective Learning",
+  "summary": "This study examined students' experiences with mixed-reality applications and physical toolkits in Engineering Mechanics to inform design guidelines for educational tools. In a user study with 24 participants, we compared classroom instruction alone, classroom instruction with a mixed-reality application, and classroom instruction with physical toolkits. Thematic analysis of participant feedback revealed that learners' workflows and engagement with fundamental mechanics problems varied across instructional modalities. Participants valued multimodal and interactive experiences that combined visualization with hands-on interaction, while reporting challenges with complex or unclear visualizations. These insights support the human-centered design of mixed-reality and physical tools for engineering education.",
+  "authors": [
+    "Mohammad Abu Nasir Rakib",
+    "Sharmin Akter",
+    "Eshwara Prasad Sridhar",
+    "Somik Biswas",
+    "Md Rassel Raihan",
+    "Mahmudur Rahman"
+  ],
+  "published": "2026-07-01T14:13:41Z",
+  "updated": "2026-07-01T14:13:41Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.00979",
+  "abs_url": "https://arxiv.org/abs/2607.00979",
+  "fetched_at": "2026-07-20T11:33:13.448927Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

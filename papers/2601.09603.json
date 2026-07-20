@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2601.09603",
+  "title": "Linear Complexity Self-Supervised Learning for Music Understanding with Random Quantizer",
+  "summary": "In recent years, foundation models have become very popular due to their exceptional performance, mainly in natural language (NLP) tasks where they were first introduced. These models usually consist of hundreds of millions, or even billions, of parameters, making them resource-intensive during training and in production systems, leading to increased costs. This paper focuses on the reduction of a foundation's model size when applied to music information retrieval (MIR) tasks. Our research combines the Branchformer architecture with SummaryMixing, which were first applied in speech recognition, along with a random quantization process. To facilitate reproducibility, we conduct pre-training on publicly available datasets, complemented by a proprietary dataset comparable in scale to other private datasets reported in the literature. We ensure robust evaluation by using a framework consisting of a variety of downstream MIR tasks. Our results show that our architecture achieves competitive performance when compared with other state-of-the-art models that use multi-head self-attention, while reducing the model size from 8.5% up to 12.3%.",
+  "authors": [
+    "Petros Vavaroutsos",
+    "Theodoros Palamas",
+    "Pantelis Vikatos"
+  ],
+  "published": "2026-01-14T16:23:31Z",
+  "updated": "2026-01-14T16:23:31Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.09603",
+  "abs_url": "https://arxiv.org/abs/2601.09603",
+  "fetched_at": "2026-07-20T11:33:13.418993Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

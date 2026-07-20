@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2604.06911",
+  "title": "Physics-driven Sonification for Improving Multisensory Needle Guidance in Percutaneous Epicardial Access",
+  "summary": "Percutaneous epicardial access (PEA), performed on a beating heart under fluoroscopy, enables arrhythmia treatment. However, advancing a needle toward the thin and moving pericardium remains highly challenging and risky. To address this problem, we present a physics-driven sonification method for Extended Reality (XR)-based multisensory navigation to enhance user perception during the critical needle landing phase in PEA. Dynamic cardiac anatomy from 4D CTA was reconstructed and registered to a real-world coordinate system. Real-time needle tracking provided the position of the needle tip relative to moving cardiac structures and drove an audio-visual feedback module. The visual display presented navigational cues and dynamic anatomy, while the auditory display encoded physiological cardiac states using a multilayer physical membrane model. A phantom study was conducted with twelve cardiologists performing needle insertions under visual-only and multisensory feedback. The multisensory method significantly improved navigation safety ($χ^2 = 11.30$, $p < 0.01$), reducing myocardial contact (3.64% vs. 7.27%) and increasing correct access (90.91% vs. 52.73%). Needle placement accuracy improved, with closer membrane proximity (Cliff delta = 0.19) and reduced variability ($p < 0.05$). Execution time was comparable, while time-accuracy correlations differed significantly between modalities ($p < 0.01$). NASA-TLX indicated lower cognitive load with multisensory guidance ($p < 0.01$). These results demonstrate the feasibility of physics-driven sonification for improving spatiotemporal awareness and supporting user-centered surgical navigation.",
+  "authors": [
+    "Veronica Ruozzi",
+    "Sasan Matinfar",
+    "Pasquale Vergara",
+    "Alessandro Albanesi",
+    "Serena Dell'Aversana",
+    "Stefano Carugo",
+    "Gianluigi Buccoliero",
+    "Nassir Navab",
+    "Alberto Redaelli",
+    "Emiliano Votta"
+  ],
+  "published": "2026-04-08T10:11:07Z",
+  "updated": "2026-04-08T10:11:07Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.06911",
+  "abs_url": "https://arxiv.org/abs/2604.06911",
+  "fetched_at": "2026-07-20T11:33:13.433097Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

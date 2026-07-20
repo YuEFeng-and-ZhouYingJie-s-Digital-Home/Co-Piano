@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2604.23909",
+  "title": "AMAVA: Adaptive Motion-Aware Video-to-Audio Framework for Visually-Impaired Assistance",
+  "summary": "Navigational aids for blind and low vision individuals struggle conveying dynamic real-world environments, leading to cognitive overload from continuous, undifferentiated feedback. We present AMAVA, a novel real-time video-to-audio framework that converts mobile device video into contextually relevant sound effects or text-to-speech descriptions. We propose a motion-aware pipeline using a lightweight AI classification model to distinguish between low and high-movement scenes followed by a real-time text-to-audio synthesis pipeline to enhance environmental perception more efficiently. In static environments, AMAVA generates spoken audio scene descriptions for situational awareness. In high-movement situations, it prioritizes safety by delivering sound cues, such as spoken hazard alerts and environmental sound effects. These audio outputs are produced by a decoder-only transformer-based vision-language model with mixture-of-experts and cross-modal attention for visual understanding, in conjunction with neural text-to-speech and natural sound synthesis networks. The proposed framework uses prompt-based caching and category-specific throttling to avoid auditory clutter and minimize latency. We present a comprehensive evaluation of the system, including a real-time navigation study comparing a white cane alone versus with AMAVA, that shows a significant increase in user confidence and perceived safety.",
+  "authors": [
+    "Benjamin Klein",
+    "Kazi Ruslan Rahman",
+    "Sanchita Ghose"
+  ],
+  "published": "2026-04-26T23:03:15Z",
+  "updated": "2026-04-26T23:03:15Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.23909",
+  "abs_url": "https://arxiv.org/abs/2604.23909",
+  "fetched_at": "2026-07-20T11:33:13.432760Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

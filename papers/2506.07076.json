@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2506.07076",
+  "title": "Harmony-Aware Music-driven Motion Synthesis with Perceptual Constraint on UGC Datasets",
+  "summary": "With the popularity of video-based user-generated content (UGC) on social media, harmony, as dictated by human perceptual principles, is critical in assessing the rhythmic consistency of audio-visual UGCs for better user engagement. In this work, we propose a novel harmony-aware GAN framework, following a specifically designed harmony evaluation strategy to enhance rhythmic synchronization in the automatic music-to-motion synthesis using a UGC dance dataset. This harmony strategy utilizes refined cross-modal beat detection to capture closely correlated audio and visual rhythms in an audio-visual pair. To mimic human attention mechanism, we introduce saliency-based beat weighting and interval-driven beat alignment, which ensures accurate harmony score estimation consistent with human perception. Building on this strategy, our model, employing efficient encoder-decoder and depth-lifting designs, is adversarially trained based on categorized musical meter segments to generate realistic and rhythmic 3D human motions. We further incorporate our harmony evaluation strategy as a weakly supervised perceptual constraint to flexibly guide the synchronized audio-visual rhythms during the generation process. Experimental results show that our proposed model significantly outperforms other leading music-to-motion methods in rhythmic harmony, both quantitatively and qualitatively, even with limited UGC training data. Live samples 15 can be watched at: https://youtu.be/tWwz7yq4aUs",
+  "authors": [
+    "Xinyi Wu",
+    "Haohong Wang",
+    "Aggelos K. Katsaggelos"
+  ],
+  "published": "2025-06-08T10:32:56Z",
+  "updated": "2025-06-08T10:32:56Z",
+  "categories": [
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2506.07076",
+  "abs_url": "https://arxiv.org/abs/2506.07076",
+  "fetched_at": "2026-07-20T14:22:43.723854Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

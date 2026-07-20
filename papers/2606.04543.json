@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2606.04543",
+  "title": "Agentic AI and Pedagogical Best Practice: The Tension Between Automation and Learning",
+  "summary": "Artificial intelligence in education is evolving from passive chatbots to proactive AI agents capable of initiation and goal-directed interactions. While offering opportunities for personalised learning, this shift risks undermining learner agency and cognitive effort. This paper reviews six pedagogical principles-prior knowledge activation, collaborative learning, problem-based learning, formative assessment, scaffolding, and metacognition-through the lens of agentic AI. We discuss the tension between automation and learning, proposing design recommendations that prioritise intentional friction, dynamic scaffolding, human-in-the-loop oversight, and considered AI utilisation to ensure AI supports rather than supplants human learning.",
+  "authors": [
+    "Steve Woollaston",
+    "Brendan Flanagan",
+    "Isanka Wijerathne",
+    "Hiroaki Ogata"
+  ],
+  "published": "2026-06-03T07:26:23Z",
+  "updated": "2026-06-03T07:26:23Z",
+  "categories": [
+    "cs.CY"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.04543",
+  "abs_url": "https://arxiv.org/abs/2606.04543",
+  "fetched_at": "2026-07-20T11:33:13.429039Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

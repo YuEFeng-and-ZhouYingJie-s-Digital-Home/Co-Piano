@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2605.04848",
+  "title": "RTMS: A Real-Time Multimodal Scaffolding System for Improving Debugging in Computing Education",
+  "summary": "Debugging is a demanding aspect of programming yet guidance on how to teach it effectively remains limited. Novices often struggle to recognize impasses regulate their problem solving and manage cognitive load and stress. This study investigates whether real time multimodal feedback triggered by indicators of cognitive load and physiological stress can improve debugging performance narrow expert novice gaps and reduce the influence of prior programming experience on success. We conducted a between subjects experiment with 120 undergraduate computer science students who debugged a medium sized Python program. Participants were assigned to one of four conditions no feedback cognitive load triggered feedback stress triggered feedback or combined trigger feedback. Eye tracking and heart rate variability data were used to detect moments of struggle and automatically deliver brief context sensitive hints. All three feedback conditions significantly improved debugging success and efficiency compared with the control group. Cognitive load triggered feedback produced stronger gains than stress triggered feedback and the combined trigger condition yielded the largest improvements. Programming expertise predicted performance only in the control condition and in all feedback conditions the novice expert gap was markedly reduced. Adaptive feedback that responds to learners cognitive and affective states can help manage debugging demands and reduce performance differences linked to prior experience highlighting opportunities for physiologically aware adaptive learning environments.",
+  "authors": [
+    "Anahita Golrang",
+    "Kshitij Sharma"
+  ],
+  "published": "2026-05-06T12:45:31Z",
+  "updated": "2026-05-06T12:45:31Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.04848",
+  "abs_url": "https://arxiv.org/abs/2605.04848",
+  "fetched_at": "2026-07-20T11:33:13.449716Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

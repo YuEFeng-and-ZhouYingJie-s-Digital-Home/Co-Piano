@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2606.25436",
+  "title": "Evaluating Japanese Dialect Robustness Across Speech and Text-based Large Language Models",
+  "summary": "Dialogue systems based on large language models (LLMs) have advanced significantly in recent years. However, dialectal variation remains a major challenge, particularly for systems that process spoken input. LLM-based speech language models (SLMs), which integrate LLMs with speech processing components, show promise for spoken language tasks, yet their ability to comprehend dialects has not been sufficiently studied. Moreover, it remains unclear how the dialectal understanding of the base LLM affects SLM performance. This study investigates the dialectal robustness of both LLMs and SLMs using Japanese dialects as a test case. We define robustness as the ratio of performance on dialectal versus standard inputs, enabling fair comparisons. Our experiments show that SLM robustness correlates with that of their text-based counterparts. Furthermore, training with dialectal data and fine-tuning the speech encoder each improves robustness in SLMs.",
+  "authors": [
+    "Tomoya Mizumoto",
+    "Yusuke Fujita",
+    "Hao Shi",
+    "Lianbo Liu",
+    "Atsushi Kojima",
+    "Yui Sudo"
+  ],
+  "published": "2026-06-24T05:57:45Z",
+  "updated": "2026-06-24T05:57:45Z",
+  "categories": [
+    "eess.AS",
+    "cs.CL",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.25436",
+  "abs_url": "https://arxiv.org/abs/2606.25436",
+  "fetched_at": "2026-07-20T11:33:13.434983Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

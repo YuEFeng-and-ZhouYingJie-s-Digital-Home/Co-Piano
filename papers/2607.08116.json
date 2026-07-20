@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.08116",
+  "title": "MORES: Mobile Reasoning-as-a-Service via Distributed LLM Inference-Time Scaling",
+  "summary": "Inference-time scaling has emerged as an effective approach for enhancing the capabilities of Large Language Models (LLMs), addressing the growing demand for stronger reasoning without increasing model size. This novel form of LLM scaling comprises two representative approaches: explicit reasoning, which generates intermediate chain-of-thought tokens during an explicit thinking phase, and implicit reasoning, which iteratively updates hidden states in the latent space without producing explicit outputs. Despite their effectiveness, both paradigms incur substantial computational and memory overhead, raising challenges for deployment on resource-constrained edge devices. To address these issues, we propose a Mobile Reasoning-as-aService (MORES) framework that treats reasoning as a computational service accessible to edge devices over wireless networks. Focusing on implicit reasoning, we leverage its recursive structure to partition hiddenstate updates between edge devices and servers, enabling cooperative inference that allows devices to access additional cloud computation on demand. To optimize long-term performance, we formulate a joint computation and communication scheduling problem and solve it using a semantic Mixture-of-Experts (MoE)-based Deep Reinforcement Learning (DRL) algorithm to address heterogeneity in wireless conditions and task demands. The agent adaptively allocates resources by adjusting the number of recurrent steps and the transmission pruning rate, while a semantic router enables high-speed gating for real-time expert selection. Experimental results show that the proposed method achieves an approximately 18% improvement in system throughput over the baseline Soft Actor-Critic (SAC) algorithm. Our code is available at https://github.com/NICE-HKU/MORES.",
+  "authors": [
+    "Guanchen Liu",
+    "Hongyang Du",
+    "Kaibin Huang"
+  ],
+  "published": "2026-07-09T05:24:31Z",
+  "updated": "2026-07-09T05:24:31Z",
+  "categories": [
+    "cs.NI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.08116",
+  "abs_url": "https://arxiv.org/abs/2607.08116",
+  "fetched_at": "2026-07-20T11:33:13.440883Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

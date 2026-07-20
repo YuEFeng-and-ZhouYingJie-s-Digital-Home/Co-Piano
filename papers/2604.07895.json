@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2604.07895",
+  "title": "DialBGM: A Benchmark for Background Music Recommendation from Everyday Multi-Turn Dialogues",
+  "summary": "Selecting an appropriate background music (BGM) that supports natural human conversation is a common production step in media and interactive systems. In this paper, we introduce dialogue-conditioned BGM recommendation, where a model should select non-intrusive, fitting music for a multi-turn conversation that often contains no music descriptors. To study this novel problem, we present DialBGM, a benchmark of 1,200 open-domain daily dialogues, each paired with four candidate music clips and annotated with human preference rankings. Rankings are determined by background suitability criteria, including contextual relevance, non-intrusiveness, and consistency. We evaluate a wide range of open-source and proprietary models, including audio-language models and multimodal LLMs, and show that current models fall far short of human judgments; no model exceeds 35% Hit@1 when selecting the top-ranked clip. DialBGM provides a standardized benchmark for developing discourse-aware methods for BGM selection and for evaluating both retrieval-based and generative models.",
+  "authors": [
+    "Joonhyeok Shin",
+    "Jaehoon Kang",
+    "Yujun Lee",
+    "Hannah Lee",
+    "Yejin Lee",
+    "Yoonji Park",
+    "Kyuhong Shim"
+  ],
+  "published": "2026-04-09T07:06:26Z",
+  "updated": "2026-04-09T07:06:26Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.07895",
+  "abs_url": "https://arxiv.org/abs/2604.07895",
+  "fetched_at": "2026-07-20T11:33:13.429507Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

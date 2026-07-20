@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2605.18222",
+  "title": "Contextual Biasing for Streaming ASR via CTC-based Word Spotting",
+  "summary": "Contextual biasing is essential to improving the recognition of rare and domain-specific words in an automatic speech recognition (ASR) system. While numerous methods have been proposed in recent years, most of them focus on offline settings and do not explicitly address the challenges of streaming ASR. For example, CTC-based word spotting (CTC-WS) have demonstrated strong performance by directly detecting keywords from CTC log-probabilities, but they are limited to offline processing and require access to the full utterance. In This work, we present a streaming extension of CTC-WS for real-time contextual biasing. Our method maintains active keyword paths across audio chunks using a stateful token passing algorithm, enabling the detection of keywords that span multiple chunks. To ensure low latency and stable output, we introduce an incremental commitment mechanism that only emits segments guaranteed not to be affected by future audio, while deferring uncertain regions. This method naturally integrates with streaming ASR pipelines and does not require modifications to the underlying acoustic model or additional training, making it practical for real-world deployment. Experimental results show that our method reduces overall WER and effectively improves keyword F-score, demonstrating its effectiveness for real-time ASR applications.",
+  "authors": [
+    "Kai-Chen Tsai",
+    "Tien-Hong Lo",
+    "Yun-Ting Sun",
+    "Berlin Chen"
+  ],
+  "published": "2026-05-18T11:06:44Z",
+  "updated": "2026-05-19T17:09:34Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.18222",
+  "abs_url": "https://arxiv.org/abs/2605.18222",
+  "fetched_at": "2026-07-20T11:33:13.445208Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

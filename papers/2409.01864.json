@@ -1,0 +1,26 @@
+{
+  "arxiv_id": "2409.01864",
+  "title": "The Role of Large Language Models in Musicology: Are We Ready to Trust the Machines?",
+  "summary": "In this work, we explore the use and reliability of Large Language Models (LLMs) in musicology. From a discussion with experts and students, we assess the current acceptance and concerns regarding this, nowadays ubiquitous, technology. We aim to go one step further, proposing a semi-automatic method to create an initial benchmark using retrieval-augmented generation models and multiple-choice question generation, validated by human experts. Our evaluation on 400 human-validated questions shows that current vanilla LLMs are less reliable than retrieval augmented generation from music dictionaries. This paper suggests that the potential of LLMs in musicology requires musicology driven research that can specialized LLMs by including accurate and reliable domain knowledge.",
+  "authors": [
+    "Pedro Ramoneda",
+    "Emilia Parada-Cabaleiro",
+    "Benno Weck",
+    "Xavier Serra"
+  ],
+  "published": "2024-09-03T13:05:38Z",
+  "updated": "2024-09-03T13:05:38Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.CL",
+    "cs.DL",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2409.01864",
+  "abs_url": "https://arxiv.org/abs/2409.01864",
+  "fetched_at": "2026-07-20T14:22:43.724548Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

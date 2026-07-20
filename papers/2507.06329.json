@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2507.06329",
+  "title": "MixAssist: An Audio-Language Dataset for Co-Creative AI Assistance in Music Mixing",
+  "summary": "While AI presents significant potential for enhancing music mixing and mastering workflows, current research predominantly emphasizes end-to-end automation or generation, often overlooking the collaborative and instructional dimensions vital for co-creative processes. This gap leaves artists, particularly amateurs seeking to develop expertise, underserved. To bridge this, we introduce MixAssist, a novel audio-language dataset capturing the situated, multi-turn dialogue between expert and amateur music producers during collaborative mixing sessions. Comprising 431 audio-grounded conversational turns derived from 7 in-depth sessions involving 12 producers, MixAssist provides a unique resource for training and evaluating audio-language models that can comprehend and respond to the complexities of real-world music production dialogues. Our evaluations, including automated LLM-as-a-judge assessments and human expert comparisons, demonstrate that fine-tuning models such as Qwen-Audio on MixAssist can yield promising results, with Qwen significantly outperforming other tested models in generating helpful, contextually relevant mixing advice. By focusing on co-creative instruction grounded in audio context, MixAssist enables the development of intelligent AI assistants designed to support and augment the creative process in music mixing.",
+  "authors": [
+    "Michael Clemens",
+    "Ana Marasović"
+  ],
+  "published": "2025-07-08T18:33:26Z",
+  "updated": "2025-07-08T18:33:26Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2507.06329",
+  "abs_url": "https://arxiv.org/abs/2507.06329",
+  "fetched_at": "2026-07-20T11:33:13.417013Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

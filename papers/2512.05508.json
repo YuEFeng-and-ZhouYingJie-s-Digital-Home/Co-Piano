@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2512.05508",
+  "title": "Lyrics Matter: Exploiting the Power of Learnt Representations for Music Popularity Prediction",
+  "summary": "Accurately predicting music popularity is a critical challenge in the music industry, offering benefits to artists, producers, and streaming platforms. Prior research has largely focused on audio features, social metadata, or model architectures. This work addresses the under-explored role of lyrics in predicting popularity. We present an automated pipeline that uses LLM to extract high-dimensional lyric embeddings, capturing semantic, syntactic, and sequential information. These features are integrated into HitMusicLyricNet, a multimodal architecture that combines audio, lyrics, and social metadata for popularity score prediction in the range 0-100. Our method outperforms existing baselines on the SpotGenTrack dataset, which contains over 100,000 tracks, achieving 9% and 20% improvements in MAE and MSE, respectively. Ablation confirms that gains arise from our LLM-driven lyrics feature pipeline (LyricsAENet), underscoring the value of dense lyric representations.",
+  "authors": [
+    "Yash Choudhary",
+    "Preeti Rao",
+    "Pushpak Bhattacharyya"
+  ],
+  "published": "2025-12-05T08:09:26Z",
+  "updated": "2025-12-05T08:09:26Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.05508",
+  "abs_url": "https://arxiv.org/abs/2512.05508",
+  "fetched_at": "2026-07-20T11:33:13.430414Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

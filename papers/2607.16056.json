@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.16056",
+  "title": "Multi-Modal Semantic Segmentation of Electrolyzer Components for Sustainable Hydrogen Technologies: A Dual-Branch Deep Learning Approach",
+  "summary": "Accurate segmentation of electrolyzer materials is essential for automated disassembly, sustainable recycling, and circular manufacturing in hydrogen technologies. However, this task is challenging due to strong visual similarity between materials, spectral overlap, irregular shapes, and severe class imbalance. To address these challenges, we propose an AI-driven dual-branch framework, Hyperspectral-RGB Electrolyzer Materials Network (HREM-Net), that combines hyperspectral imaging (HSI) and RGB images for electrolyzer material segmentation. We implemented several innovative modules, including Efficient Channel Attention, Coordinate Attention, Mobile Inverted Bottleneck blocks, and Atrous Spatial Pyramid Pooling to capture spectral and spatial features from HSI, and RGB images. With an adaptive gated cross-modal fusion module and composite loss function, HREM-Net achieves a mean class accuracy of 91.66% and a mean Intersection over Union (mIoU) of 0.82 on the Electrolyzers-HSI dataset, outperforming baseline segmentation models. Cross-dataset validation on the PCB-Vision dataset demonstrates strong generalization with 96.91% accuracy and 0.93 mIoU. This work poses its potential as an industrial application to improve electrolyzer efficiency, thereby improving the predictive maintenance of hydrogen production.",
+  "authors": [
+    "Wasimul Karim",
+    "Nur Mohammad Fahad",
+    "Abdul Hasib Siddique",
+    "Md Rafiqul Islam",
+    "Hooman Mehdizadeh-Rad",
+    "Asif Karim",
+    "Sami Azam"
+  ],
+  "published": "2026-07-17T15:34:20Z",
+  "updated": "2026-07-17T15:34:20Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16056",
+  "abs_url": "https://arxiv.org/abs/2607.16056",
+  "fetched_at": "2026-07-20T14:22:43.712141Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

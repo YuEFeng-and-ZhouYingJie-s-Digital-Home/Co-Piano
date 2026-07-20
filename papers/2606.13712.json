@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.13712",
+  "title": "Multimodal Speaker Identification in Classroom Environments",
+  "summary": "Automated analysis of K-12 classroom dynamics faces challenges due to background noise and variable child speech, often confounding acoustic-only models. This study evaluates a multimodal speaker identification framework anchoring acoustic embeddings with LLM-derived semantic context. Using a subset of the EDSI dataset (8 math classrooms, N = 2,801 utterances), we found an acoustic baseline (ECAPA-TDNN) achieved only 39.0% accuracy. By integrating transcript-based \"contextual anchoring\" into a gradient boosting classifier, our multimodal approach raised student identification to 50.3%. Performance also improved for utterances over 5 seconds, reaching 76.9% accuracy (vs. 64.9% baseline) with a 90.9% Top-3 accuracy. Additionally, the model distinguished teacher vs. student roles with 99.3% accuracy. This approach advances the feasibility of automated feedback systems capable of considering individual student participation, a crucial step for supporting equitable instruction at scale.",
+  "authors": [
+    "Michael L. Chrzan",
+    "Meghavarshini Krishnaswamy",
+    "Robert Gibboni",
+    "Katie Wetstone",
+    "Wei Ai",
+    "Jing Liu"
+  ],
+  "published": "2026-06-10T19:15:40Z",
+  "updated": "2026-06-10T19:15:40Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.13712",
+  "abs_url": "https://arxiv.org/abs/2606.13712",
+  "fetched_at": "2026-07-20T11:33:13.449160Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

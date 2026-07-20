@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.15829",
+  "title": "Cost-efficient generative AI summarization for scalable automated essay scoring in educational assessment",
+  "summary": "Automated essay scoring (AES) enables scalable assessment and timely feedback but remains challenged by transformer input-length limitations, which can cause information loss when processing long essays. This study proposes a generative AI-assisted summarization framework to improve long-form essay representation while maintaining scoring reliability. Using the ASAP 2.0 dataset, we generate controlled-length summaries with three GPT-5 variants (GPT-5, GPT-5 mini, and GPT-5 nano) and use them as inputs for downstream AES models. To preserve original writing signals, handcrafted linguistic features extracted from full essays are integrated with summary representations to form a hybrid framework. The approach is evaluated in terms of scoring performance, summarization quality, and computational cost. Scoring reliability is measured using quadratic weighted kappa (QWK), while summary quality is assessed through lexical overlap, semantic similarity, information retention, and redundancy metrics. Results show that GPT-5 mini achieves the highest agreement with human ratings, whereas GPT-5 produces the strongest summarization quality. Summary quality decreases for higher-scoring essays, indicating that more complex writing is more difficult to compress without information loss. These findings reveal trade-offs among model capacity, summary fidelity, cost efficiency, and preservation of educational constructs. This study provides an initial controlled evaluation of GPT-based summarization for AES and identifies important baselines and ablation studies required for future generalization. Overall, generative AI summarization offers a promising approach for scalable writing assessment while requiring careful validation of information preservation and fairness.",
+  "authors": [
+    "Haowei Hua"
+  ],
+  "published": "2026-07-17T10:39:58Z",
+  "updated": "2026-07-17T10:39:58Z",
+  "categories": [
+    "cs.CL",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15829",
+  "abs_url": "https://arxiv.org/abs/2607.15829",
+  "fetched_at": "2026-07-20T14:22:43.714714Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

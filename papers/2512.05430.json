@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2512.05430",
+  "title": "ArtistMus: A Globally Diverse, Artist-Centric Benchmark for Retrieval-Augmented Music Question Answering",
+  "summary": "Recent advances in large language models (LLMs) have transformed open-domain question answering, yet their effectiveness in music-related reasoning remains limited due to sparse music knowledge in pretraining data. While music information retrieval and computational musicology have explored structured and multimodal understanding, few resources support factual and contextual music question answering (MQA) grounded in artist metadata or historical context. We introduce MusWikiDB, a vector database of 3.2M passages from 144K music-related Wikipedia pages, and ArtistMus, a benchmark of 1,000 questions on 500 diverse artists with metadata such as genre, debut year, and topic. These resources enable systematic evaluation of retrieval-augmented generation (RAG) for MQA. Experiments show that RAG markedly improves factual accuracy; open-source models gain up to +56.8 percentage points (for example, Qwen3 8B improves from 35.0 to 91.8), approaching proprietary model performance. RAG-style fine-tuning further boosts both factual recall and contextual reasoning, improving results on both in-domain and out-of-domain benchmarks. MusWikiDB also yields approximately 6 percentage points higher accuracy and 40% faster retrieval than a general-purpose Wikipedia corpus. We release MusWikiDB and ArtistMus to advance research in music information retrieval and domain-specific question answering, establishing a foundation for retrieval-augmented reasoning in culturally rich domains such as music.",
+  "authors": [
+    "Daeyong Kwon",
+    "SeungHeon Doh",
+    "Juhan Nam"
+  ],
+  "published": "2025-12-05T05:09:30Z",
+  "updated": "2026-02-15T10:39:33Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.IR",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2512.05430",
+  "abs_url": "https://arxiv.org/abs/2512.05430",
+  "fetched_at": "2026-07-20T11:33:13.430519Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

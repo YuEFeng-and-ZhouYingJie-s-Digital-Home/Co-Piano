@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2607.12125",
+  "title": "Faster AI, Uneven Frontier: Rapid Crossings, a Jagged Frontier, and the Repositioning of Human Judgment",
+  "summary": "Between 2023 and 2026, frontier AI systems crossed documented human expert baselines on a growing set of bounded, well-specified, evaluable cognitive tasks, including graduate-level science questions, competition mathematics, software-engineering benchmarks, and structured diagnostic reasoning, while the length of tasks such systems can complete at 50% reliability doubled roughly every seven months. These crossings are rapid and broad, but the frontier is jagged: humans retain decisive advantages in long-horizon reliability, genuinely novel problems, calibrated self-knowledge, sample-efficient learning, and embodied action, and benchmark results overstate deployed capability for reasons that are themselves now documented, namely contamination, construct validity, vendor self-evaluation, and the gap between 50% reliability and the reliability that economic work requires. Concurrently, humans increasingly use these systems as cognitive extensions. The offloading literature predicts costs to unaided skill, and early field evidence is consistent with such costs, though the largest meta-analytic evidence on prior technologies points the other way, and the question of whether generative AI differs is open. Finally, the experimental record on human-AI collaboration shows that naive combination often underperforms the stronger partner, implying that the human contribution must be repositioned toward specification, verification, and oversight, a shift visible in experiments but, so far, barely visible in field labor-market data. This paper states the resulting position, rapid crossings on a jagged frontier with a human role that must be redesigned rather than defended, and draws out its theoretical and practical implications.",
+  "authors": [
+    "Ancuta Margondai",
+    "Julie Rader",
+    "Emma Rader",
+    "Sara Willox",
+    "Mustapha Mouloua"
+  ],
+  "published": "2026-07-13T20:17:43Z",
+  "updated": "2026-07-13T20:17:43Z",
+  "categories": [
+    "cs.HC"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12125",
+  "abs_url": "https://arxiv.org/abs/2607.12125",
+  "fetched_at": "2026-07-20T11:33:13.439645Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

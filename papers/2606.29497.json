@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.29497",
+  "title": "Position-Aware Target Speaker Extraction for Long-Form Multi-Party Conversations: A Diarization-Free Framework for ASR",
+  "summary": "In long-form multi-party conversations, highly imbalanced speaker activity and frequent overlap make it difficult to identify \"who spoke when and what\". Sliding-window continuous speech separation (CSS) mitigates sparse supervision, but often suffers from cross-window speaker inconsistency and residual crosstalk, which in practice requires diarization for reliable speaker attribution. Motivated by the stability of speakers' directions of arrival (DOAs) in meetings, we propose PATSE, a multi-channel Position-Aware Target Speaker Extraction front-end that uses DOA as a spatial prior to directly extract the speech of each target speaker. PATSE combines a DOA-guided spatial encoder and conditioner to generate speaker-attributed streams, from which speaker activity can be inferred via simple post-processing (e.g., VAD) without explicit diarization. Experiments on both replayed and real conversations show consistent ASR gains outperforming CSS and diarization-based pipelines.",
+  "authors": [
+    "Yichi Wang",
+    "Junzhe Chen",
+    "Wangjin Zhou",
+    "Tatsuya Kawahara"
+  ],
+  "published": "2026-06-28T16:52:17Z",
+  "updated": "2026-06-28T16:52:17Z",
+  "categories": [
+    "cs.SD",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.29497",
+  "abs_url": "https://arxiv.org/abs/2606.29497",
+  "fetched_at": "2026-07-20T11:33:13.444337Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

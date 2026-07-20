@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2607.15901",
+  "title": "DSWorld: A Data Science World Model for Efficient Autonomous Agents",
+  "summary": "Despite strong capabilities in data understanding and decision-making, autonomous data science agents still heavily rely on trial-and-error workflows that involve expensive computation. This bottleneck motivates models that can anticipate the effects of data science operations before real execution. In this paper, we introduce the concept of Data Science World Model, which model the data science execution environment by predicting environment state transitions conditioned on current workflow states and candidate operations. We further propose DSWorld, a practical framework that combines structured state construction, cost-aware routing, lightweight real execution, and an LLM-based simulator for expensive operations. To support training, we construct an 8K-scale transition trajectory dataset and introduce Reflective World Model Optimization, an error-aware reinforcement learning strategy for improving transition prediction. Experiments show that DSWorld accelerates RL-based agent training by approximately $14\\times$ and search-based inference by approximately $3$-$6\\times$ while maintaining competitive performance, and outperforms the strongest LLM baseline by 35.6% on transition prediction tasks. The code is available at https://anonymous.4open.science/r/DSWorld.",
+  "authors": [
+    "Zherui Yang",
+    "Fan Liu",
+    "Hao Liu"
+  ],
+  "published": "2026-07-17T12:14:55Z",
+  "updated": "2026-07-17T12:14:55Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15901",
+  "abs_url": "https://arxiv.org/abs/2607.15901",
+  "fetched_at": "2026-07-20T11:33:13.424404Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

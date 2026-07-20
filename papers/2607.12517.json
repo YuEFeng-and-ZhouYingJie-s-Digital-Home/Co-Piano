@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.12517",
+  "title": "Open-Source Intelligence and Music Information Retrieval for Geographic Attribution of Musical Affect and the Ecological Limits of Population Inference",
+  "summary": "A common intuition holds that a region's music mirrors the temperament of its people, so that melancholic melodies mark melancholic populations. We test the measurable half of that intuition and reject the inferential half. Using the Essen Folksong Collection, a corpus of thousands of notated folk melodies, we extract real melodic and affect-related features from 2393 deduplicated melodies spanning 16 countries and 7 geographic regions, with the analysis performed on symbolic scores rather than audio. The mode of each melody is computed with a key-finding algorithm rather than read from the file, because the collection's own documentation warns its major and minor labels are unreliable. Cross-country differences in melodic structure are large and highly significant. All 8 tested features differ across countries at p<0.001, with the leap-related features reaching p<10^-90, and China carries a distinctive wide-leap, high-activity signature (arousal composite +1.24 standard deviations, mean absolute interval 2.77 semitones against Germany's 2.17). We then test the inferential half. We correlate the regional musical-affect measures with two published, validated national indices, the World Happiness Report ladder score and the Hofstede individualism index. None of the 6 correlations is significant (0 of 6). The geography of musical affect is real and measurable, but it does not predict how happy or how individualist a population is, and any claim that it does is an ecological fallacy. We release the full extraction and analysis pipeline, and a fail-closed checker re-derives every number in this paper from the data.",
+  "authors": [
+    "Mohammadreza Rashidi"
+  ],
+  "published": "2026-07-14T08:51:32Z",
+  "updated": "2026-07-14T08:51:32Z",
+  "categories": [
+    "cs.CR",
+    "cs.SD"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.12517",
+  "abs_url": "https://arxiv.org/abs/2607.12517",
+  "fetched_at": "2026-07-20T11:33:13.435210Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

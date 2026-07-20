@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2606.21018",
+  "title": "LK Jam: System Architecture and Implementation of a Real-Time Human-AI Interactive Music Generation System using Role-Aware GRU",
+  "summary": "As artificial intelligence advances into the era of Embodied AI, live musical interaction urgently needs to break free from the limitations of offline, unidirectional generation, achieving a \"virtual synergy\" capable of low-latency, dynamic interplay. To address this, this technical report presents LK_Jam, a real-time, bidirectional human-computer interactive music generation system based on a lightweight Gated Recurrent Unit (GRU) and a high-performance audio host architecture. In the algorithmic representation layer, this system abandons the computationally expensive fixed time-grid. Instead, it constructs a multi-dimensional sparse event stream integrating time-shifts, continuous harmonic embeddings, and role-aware encoding, enabling the model to accurately capture turn-taking logic and micro-timing in a single-step inference. In the engineering implementation layer, this paper builds a strict multithreaded lock-free communication bridge using C++ and the JUCE framework, incorporating the RTNeural inference engine designed specifically for real-time audio. By utilizing compile-time network topology solidification and a zero-allocation (allocation-free) mechanism, the end-to-end overhead of autoregressive decoding is strictly locked at \\(O(1)\\) complexity, structurally mitigating the risk of audio thread dropouts in DAW plugin environments. Furthermore, this study designs a three-stage progressive training strategy, achieving a leap from basic chord harmonization to expert-level interaction. Preliminary observations and architectural analysis demonstrate that while ensuring musical coherence and interactive role-play, the proposed system successfully challenges extreme real-time engineering constraints, offering a highly robust and deployable technical paradigm for next-generation AI co-performers in live music.",
+  "authors": [
+    "Yakun Liu",
+    "Zhiyu Jin",
+    "Dong Liu",
+    "Hai Luan"
+  ],
+  "published": "2026-06-19T01:03:44Z",
+  "updated": "2026-06-19T01:03:44Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.21018",
+  "abs_url": "https://arxiv.org/abs/2606.21018",
+  "fetched_at": "2026-07-20T11:33:13.447651Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

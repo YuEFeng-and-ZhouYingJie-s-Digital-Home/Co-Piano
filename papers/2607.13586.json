@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2607.13586",
+  "title": "UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets",
+  "summary": "Physically grounded 3D assets are increasingly important for embodied AI and robotic simulation. However, most existing 3D assets lack unified physical semantics, including articulation semantics and intrinsic physical properties, required for realistic interaction. Current approaches either treat these semantics independently or rely on canonicalized object structures, limiting robustness across heterogeneous 3D assets. We present UniPhys, a scalable framework for automatically transforming raw 3D assets into simulation-ready assets with unified physical semantics. Based on UniPhys, we construct UniPhys-40K, a large-scale physically grounded dataset, together with UniPhys-Bench, a carefully verified benchmark for unified physical grounding evaluation. We further introduce UniPhysGen, a unified physical grounding model that jointly reasons over articulation semantics and intrinsic physical properties. UniPhysGen incorporates geometry-robust articulation grounding to mitigate geometric shortcut bias under heterogeneous part decompositions. Extensive experiments demonstrate state-of-the-art performance across articulation grounding and intrinsic physical property estimation tasks, while the resulting assets can be directly deployed in robotic simulation environments for realistic physical interaction. Our code and dataset will be available at https://github.com/breezexian/UniPhysGen.",
+  "authors": [
+    "Xian Li",
+    "Rong Wei",
+    "Lujie Yang",
+    "Haolin Huang",
+    "Junyuan Fang",
+    "Siliang Tang",
+    "Jun Xiao",
+    "Rui Tang",
+    "Juncheng Li"
+  ],
+  "published": "2026-07-15T08:27:07Z",
+  "updated": "2026-07-15T08:27:07Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.13586",
+  "abs_url": "https://arxiv.org/abs/2607.13586",
+  "fetched_at": "2026-07-20T11:33:13.439125Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

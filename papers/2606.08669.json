@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2606.08669",
+  "title": "A Comparison of SSL-Based Feature Extractors and Back-End Classifiers for Spoofing Detection: A Multi-Corpus Training and Cross-Linguistic Analysis",
+  "summary": "Voice biometric systems face growing threats from spoofing attacks, yet the evaluation of detection models remains inconsistent across datasets. To investigate these unpredictable fluctuations, we conduct a comprehensive benchmark of four self-supervised learning feature extractors paired with four back-end classifiers. We compare the hierarchical local feature extraction of ResNet with the global sequence and relational modeling of attention and graph-based back-ends. Through multi-corpus training across three scenarios and six evaluation datasets, our empirical analysis yields two critical findings. First, we expose a domain bias within the ASVspoof 5 dataset, showing that naive data scaling actively degrades performance. Second, our cross-linguistic analysis reveals that fine-tuning with just 8 hours of target-language data enhances detection robustness. Together, these findings emphasize the critical need for domain-aware and language-specific adaptation in spoofing detection.",
+  "authors": [
+    "Anh-Tuan Dao",
+    "Driss Matrouf",
+    "Mickael Rouvier",
+    "Nicholas Evans"
+  ],
+  "published": "2026-06-07T15:20:38Z",
+  "updated": "2026-06-07T15:20:38Z",
+  "categories": [
+    "cs.SD",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.08669",
+  "abs_url": "https://arxiv.org/abs/2606.08669",
+  "fetched_at": "2026-07-20T11:33:13.422769Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

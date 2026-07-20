@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2607.15771",
+  "title": "What Do Chinese-Language Generative Search Engines Cite and Surface? A Large-Scale Empirical Study",
+  "summary": "Generative AI question-answering systems increasingly mediate information access, shifting content visibility from ranked search results to retrieval, citation, and presentation in generated answers. We conduct a large-scale empirical study of Chinese-language generative search across the Web and App interfaces of four mainstream platforms. The controlled design covers eight platform interfaces, 614 queries, and three replications per query-platform-interface combination. From 214,119 raw records, we construct a cleaned citation-level dataset of 160,860 records and analyze citation behavior, source attribution, entity exposure, and cross-interface consistency. Five findings emerge. First, brands in the citation pool were selectively surfaced in answers: the overall brand-selection rate was 8.3%, and 12.4% of retrieved sources containing contact information contributed contact information to answers. Second, content fit, cross-source occurrence count, and semantic role were relatively important in predictive models, whereas the 5118-Baidu Composite Quality Score was not the leading predictor for any examined outcome. Third, among cited pages with publication dates, fitted half-lives were approximately 39 days for high-timeliness queries and 68 days for low-timeliness queries. Fourth, approximately 13% of brand exposures could not be matched to the contemporaneous citation pool, and approximately 71% of contact-information exposures could not be matched to the crawled body text. Fifth, source sets differed systematically between the App and Web interfaces of the same platform. These results characterize how Chinese-language generative search systems select, attribute, and surface information and show that interface type is an important dimension of analysis.",
+  "authors": [
+    "Tao Zhen",
+    "Yue Liu",
+    "Gege Zhang",
+    "Yixuan Niu"
+  ],
+  "published": "2026-07-17T09:03:12Z",
+  "updated": "2026-07-17T09:03:12Z",
+  "categories": [
+    "cs.IR"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.15771",
+  "abs_url": "https://arxiv.org/abs/2607.15771",
+  "fetched_at": "2026-07-20T14:22:43.715286Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

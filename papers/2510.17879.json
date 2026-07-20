@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2510.17879",
+  "title": "Decoding Listeners Identity: Person Identification from EEG Signals Using a Lightweight Spiking Transformer",
+  "summary": "EEG-based person identification enables applications in security, personalized brain-computer interfaces (BCIs), and cognitive monitoring. However, existing techniques often rely on deep learning architectures at high computational cost, limiting their scope of applications. In this study, we propose a novel EEG person identification approach using spiking neural networks (SNNs) with a lightweight spiking transformer for efficiency and effectiveness. The proposed SNN model is capable of handling the temporal complexities inherent in EEG signals. On the EEG-Music Emotion Recognition Challenge dataset, the proposed model achieves 100% classification accuracy with less than 10% energy consumption of traditional deep neural networks. This study offers a promising direction for energy-efficient and high-performance BCIs. The source code is available at https://github.com/PatrickZLin/Decode-ListenerIdentity.",
+  "authors": [
+    "Zheyuan Lin",
+    "Siqi Cai",
+    "Haizhou Li"
+  ],
+  "published": "2025-10-17T08:20:01Z",
+  "updated": "2025-10-17T08:20:01Z",
+  "categories": [
+    "cs.NE",
+    "cs.AI",
+    "cs.LG"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2510.17879",
+  "abs_url": "https://arxiv.org/abs/2510.17879",
+  "fetched_at": "2026-07-20T14:22:43.726506Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

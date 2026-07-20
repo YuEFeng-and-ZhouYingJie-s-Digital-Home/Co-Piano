@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2607.08111",
+  "title": "PS4: Proxy-Supervised Joint Training for Real Target Speaker Extraction",
+  "summary": "Training target speaker extraction (TSE) models for real conversational mixtures remains challenging because large-scale training corpora and clean target speech for supervision are unavailable. We present PS4, a proxy-supervised training framework for TSE in real conversational mixtures, with two main contributions. First, we construct a large-scale corpus of 71,771 training samples derived from four public datasets, covering both Chinese and English scenarios. Each sample contains an overlapping speech mixture, per-speaker enrollment audio, a ground-truth transcript, and frame-level voice activity labels. Second, we propose a proxy-supervised joint training strategy that fine-tunes a BSRNN-based TSE model using four complementary differentiable objectives: ASR cross-entropy, speaker similarity, frame-level voice activity detection, and perceptual audio quality. Starting from a publicly available pre-trained checkpoint, only the BSRNN separator is updated during fine-tuning. On the REAL-T challenge leaderboard, PS4 ranks 2nd overall, achieving the best speaker similarity and timing F1 among all submitted systems.",
+  "authors": [
+    "Wanyi Ning",
+    "Wei Zhou",
+    "Yingpeng Li",
+    "Yinshang Guo",
+    "Haitao Qian",
+    "Yiming Cheng"
+  ],
+  "published": "2026-07-09T04:51:11Z",
+  "updated": "2026-07-09T04:51:11Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.08111",
+  "abs_url": "https://arxiv.org/abs/2607.08111",
+  "fetched_at": "2026-07-20T11:33:13.422349Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

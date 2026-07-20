@@ -1,0 +1,33 @@
+{
+  "arxiv_id": "2605.27258",
+  "title": "PilotTTS: A Disciplined Modular Recipe for Competitive Speech Synthesis",
+  "summary": "Building state-of-the-art text-to-speech (TTS) systems typically demands millions of hours of proprietary data and complex multi-stage architectures, creating substantial barriers for resource-constrained research teams. In this report, we present PilotTTS, a lightweight autoregressive TTS system that achieves competitive performance through minimalist architecture and rigorous data engineering. PilotTTS is trained on only 200K hours of data processed entirely with open-source tools. Specifically, our contributions are: (1) a reproducible multi-stage data processing pipeline covering quality assessment, label annotation, and filtering, and (2) a compact model architecture that employs Q-Former-based conditioning to decouple speaker identity from speaking style via cross-sample paired training. Within a unified framework, PilotTTS supports zero-shot voice cloning, emotion synthesis (11 categories), paralinguistic synthesis (4 categories), and Chinese dialect synthesis (14 dialects). On the Seed-TTS Eval benchmark, PilotTTS achieves the lowest WER of 1.50% on test-en, a CER of 0.87% on test-zh, and the highest speaker similarity on both test sets (0.862 and 0.815), outperforming systems trained on significantly larger datasets. We release the complete data pipeline recipe, pretrained weights, and code at https://github.com/AMAPVOICE/PilotTTS.",
+  "authors": [
+    "Bowen Li",
+    "Shaotong Guo",
+    "Zhen Wang",
+    "Yang Xiang",
+    "Mingli Jin",
+    "Yihang Lin",
+    "Jiahui Zhao",
+    "Weibo Xiong",
+    "Dongrui Zhang",
+    "Keming Chen",
+    "Yunze Gao",
+    "Zeyang Lin",
+    "Yuze Zhou",
+    "Yue Liu"
+  ],
+  "published": "2026-05-26T16:36:56Z",
+  "updated": "2026-05-27T06:28:23Z",
+  "categories": [
+    "cs.SD",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.27258",
+  "abs_url": "https://arxiv.org/abs/2605.27258",
+  "fetched_at": "2026-07-20T11:33:13.436965Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

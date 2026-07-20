@@ -1,0 +1,29 @@
+{
+  "arxiv_id": "2603.24961",
+  "title": "Can MLLMs Read Students' Minds? Unpacking Multimodal Error Analysis in Handwritten Math",
+  "summary": "Assessing student handwritten scratchwork is crucial for personalized educational feedback but presents unique challenges due to diverse handwriting, complex layouts, and varied problem-solving approaches. Existing educational NLP primarily focuses on textual responses and neglects the complexity and multimodality inherent in authentic handwritten scratchwork. Current multimodal large language models (MLLMs) excel at visual reasoning but typically adopt an \"examinee perspective\", prioritizing generating correct answers rather than diagnosing student errors. To bridge these gaps, we introduce ScratchMath, a novel benchmark specifically designed for explaining and classifying errors in authentic handwritten mathematics scratchwork. Our dataset comprises 1,720 mathematics samples from Chinese primary and middle school students, supporting two key tasks: Error Cause Explanation (ECE) and Error Cause Classification (ECC), with seven defined error types. The dataset is meticulously annotated through rigorous human-machine collaborative approaches involving multiple stages of expert labeling, review, and verification. We systematically evaluate 16 leading MLLMs on ScratchMath, revealing significant performance gaps relative to human experts, especially in visual recognition and logical reasoning. Proprietary models notably outperform open-source models, with large reasoning models showing strong potential for error explanation. All evaluation data and frameworks are publicly available to facilitate further research.",
+  "authors": [
+    "Dingjie Song",
+    "Tianlong Xu",
+    "Yi-Fan Zhang",
+    "Hang Li",
+    "Zhiling Yan",
+    "Xing Fan",
+    "Haoyang Li",
+    "Lichao Sun",
+    "Qingsong Wen"
+  ],
+  "published": "2026-03-26T02:57:20Z",
+  "updated": "2026-03-26T02:57:20Z",
+  "categories": [
+    "cs.AI",
+    "cs.CL",
+    "cs.CV"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2603.24961",
+  "abs_url": "https://arxiv.org/abs/2603.24961",
+  "fetched_at": "2026-07-20T11:33:13.450272Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

@@ -1,0 +1,23 @@
+{
+  "arxiv_id": "2506.10927",
+  "title": "The Role of Generative AI in Facilitating Social Interactions: A Scoping Review",
+  "summary": "Reduced social connectedness increasingly poses a threat to mental health, life expectancy, and general well-being. Generative AI (GAI) technologies, such as large language models (LLMs) and image generation tools, are increasingly integrated into applications aimed at enhancing human social experiences. Despite their growing presence, little is known about how these technologies influence social interactions. This scoping review investigates how GAI-based applications are currently designed to facilitate social interaction, what forms of social engagement they target, and which design and evaluation methodologies designers use to create and evaluate them. Through an analysis of 30 studies published since 2020, we identify key trends in application domains including storytelling, socio-emotional skills training, reminiscence, collaborative learning, music making, and general conversation. We highlight the role of participatory and co-design approaches in fostering both effective technology use and social engagement, while also examining socio-ethical concerns such as cultural bias and accessibility. This review underscores the potential of GAI to support dynamic and personalized interactions, but calls for greater attention to equitable design practices and inclusive evaluation strategies.",
+  "authors": [
+    "T. T. J. E. Arets",
+    "G. Perugia",
+    "M. Houben",
+    "W. A. IJsselsteijn"
+  ],
+  "published": "2025-06-12T17:37:19Z",
+  "updated": "2025-06-12T17:37:19Z",
+  "categories": [
+    "cs.HC",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2506.10927",
+  "abs_url": "https://arxiv.org/abs/2506.10927",
+  "fetched_at": "2026-07-20T11:33:13.417180Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

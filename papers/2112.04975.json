@@ -1,0 +1,24 @@
+{
+  "arxiv_id": "2112.04975",
+  "title": "Personalized musically induced emotions of not-so-popular Colombian music",
+  "summary": "This work presents an initial proof of concept of how Music Emotion Recognition (MER) systems could be intentionally biased with respect to annotations of musically induced emotions in a political context. In specific, we analyze traditional Colombian music containing politically charged lyrics of two types: (1) vallenatos and social songs from the \"left-wing\" guerrilla Fuerzas Armadas Revolucionarias de Colombia (FARC) and (2) corridos from the \"right-wing\" paramilitaries Autodefensas Unidas de Colombia (AUC). We train personalized machine learning models to predict induced emotions for three users with diverse political views - we aim at identifying the songs that may induce negative emotions for a particular user, such as anger and fear. To this extent, a user's emotion judgements could be interpreted as problematizing data - subjective emotional judgments could in turn be used to influence the user in a human-centered machine learning environment. In short, highly desired \"emotion regulation\" applications could potentially deviate to \"emotion manipulation\" - the recent discredit of emotion recognition technologies might transcend ethical issues of diversity and inclusion.",
+  "authors": [
+    "Juan Sebastián Gómez-Cañón",
+    "Perfecto Herrera",
+    "Estefanía Cano",
+    "Emilia Gómez"
+  ],
+  "published": "2021-12-09T15:12:49Z",
+  "updated": "2021-12-09T15:12:49Z",
+  "categories": [
+    "cs.SD",
+    "cs.HC",
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2112.04975",
+  "abs_url": "https://arxiv.org/abs/2112.04975",
+  "fetched_at": "2026-07-20T14:22:43.729362Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

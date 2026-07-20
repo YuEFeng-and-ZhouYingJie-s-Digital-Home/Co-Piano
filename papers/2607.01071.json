@@ -1,0 +1,27 @@
+{
+  "arxiv_id": "2607.01071",
+  "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+  "summary": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benchmarks primarily evaluate whether memories are correctly stored, retrieved, or updated, while overlooking how retrieved memories influence downstream reasoning and decision-making. To bridge this gap, we propose MemSyco-Bench, a comprehensive benchmark for evaluating memory-induced sycophancy in agent systems. MemSyco-Bench measures when memory should influence a decision and how valid memory should be used. Specifically, it covers five tasks that assess whether agents can reject memory as factual evidence, respect its applicable scope, resolve conflicts between memory and objective evidence, track memory updates, and use valid memory for personalization. All related resources are collected for the community at https://github.com/XMUDeepLIT/MemSyco-Bench.",
+  "authors": [
+    "Zhishang Xiang",
+    "Zerui Chen",
+    "Yunbo Tang",
+    "Zhimin Wei",
+    "Ruqin Ning",
+    "Yujie Lin",
+    "Qinggang Zhang",
+    "Jinsong Su"
+  ],
+  "published": "2026-07-01T15:30:33Z",
+  "updated": "2026-07-02T15:40:30Z",
+  "categories": [
+    "cs.IR",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.01071",
+  "abs_url": "https://arxiv.org/abs/2607.01071",
+  "fetched_at": "2026-07-20T11:33:13.441653Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

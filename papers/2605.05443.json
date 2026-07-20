@@ -1,0 +1,21 @@
+{
+  "arxiv_id": "2605.05443",
+  "title": "SLAM: Structural Linguistic Activation Marking for Language Models",
+  "summary": "LLM watermarks must be detectable without compromising text quality, yet most existing schemes bias the next-token distribution and pay for detection with measurable quality loss. We present SLAM (Structural Linguistic Activation Marking), a novel white-box watermarking scheme that sidesteps this cost by writing the mark into structural geometry rather than token frequencies: sparse autoencoders identify residual-stream directions encoding linguistic structure (e.g., voice, tense, clause order), and we causally steer those directions at generation time, leaving lexical sampling and semantics unconstrained. On Gemma-2 2B and 9B, SLAM achieves 100% detection accuracy with a quality cost of only 1-2 reward points - compared to 7.5-11.5 for KGW, EWD, and Unigram - with naturalness and diversity preserved at near-unwatermarked levels across both models. The trade-off is a complementary robustness profile: SLAM resists word-level edits but is vulnerable to paraphrase that restructures syntax (at a quality cost), the converse of token-distribution methods.",
+  "authors": [
+    "Fabrice Harel-Canada",
+    "Amit Sahai"
+  ],
+  "published": "2026-05-06T21:11:17Z",
+  "updated": "2026-05-08T18:19:21Z",
+  "categories": [
+    "cs.CL",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2605.05443",
+  "abs_url": "https://arxiv.org/abs/2605.05443",
+  "fetched_at": "2026-07-20T11:33:13.423133Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

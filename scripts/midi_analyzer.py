@@ -203,11 +203,13 @@ def format_report(result: dict) -> str:
 def patch_voice_dialog_with_midi():
     """注入 MIDI 分析到 voice_dialog"""
     import voice_dialog
+    # 关键:捕获原始 call_llm(避免递归)
+    _original_call_llm = voice_dialog.call_llm
 
     def with_midi(messages, backend="mock", **kwargs):
         last_user = next((m for m in reversed(messages) if m["role"] == "user"), None)
         if not last_user:
-            return voice_dialog.call_llm(messages, backend=backend, **kwargs)
+            return _original_call_llm(messages, backend=backend, **kwargs)
 
         content = last_user["content"]
         # 触发关键词
@@ -222,18 +224,17 @@ def patch_voice_dialog_with_midi():
             try:
                 result = analyze_midi(midi_path)
                 report = format_report(result)
-                # 短摘要给用户听
                 summary = f"分析完成!{result['meta'].get('grade', '未评分')},共 {result['style'].get('n_notes', 0)} 个音符,{result['style'].get('period_hint', '?')} 风格。"
                 if result.get("eval"):
                     summary += f" 总分 {result['eval'].get('score', 0):.1f},错音 {result['eval'].get('n_pitch_errors', 0)} 个。"
-                # 报告存文件
                 report_path = Path("/tmp/copiano_midi_report.md")
                 report_path.write_text(report, encoding="utf-8")
                 return f"{summary} 完整报告在 {report_path}"
             except FileNotFoundError as e:
                 return f"找不到 MIDI 文件:{e}"
 
-        return voice_dialog.call_llm(messages, backend=backend, **kwargs)
+        # 调原始 call_llm(不会递归)
+        return _original_call_llm(messages, backend=backend, **kwargs)
 
     voice_dialog.call_llm = with_midi
 

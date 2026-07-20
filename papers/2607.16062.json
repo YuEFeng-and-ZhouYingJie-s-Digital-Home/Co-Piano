@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.16062",
+  "title": "When Model Merging Rivals Joint Multi-Task Reinforcement Learning: A Task-Vector Geometry Analysis",
+  "summary": "Model merging is promoted as a substitute for joint multi-task training, yet in the reinforcement-learning setting this substitution is essentially never tested against the baseline it claims to replace: methods merge independently released agents precisely because a joint model is unavailable. We build the missing comparison. Training difficulty-1 and difficulty-2 Qwen3-8B specialists on the AppWorld agent benchmark with LOOP, we merge them (TIES, RAM+) and pit the result against a jointly trained model on the same data. On task-goal completion, merging matches joint RL -- and every merge variant is statistically indistinguishable. To explain why merge method does not matter here, we measure the geometry of the specialists' task vectors, which carries no task-sampling noise: they are near-orthogonal (cosine 0.06 - 0.10) despite ~65% support overlap, a small, shared direction that grows over training and that we calibrate against a random-init floor and a same-run ceiling to confirm it reflects learning, not the low-rank parameterization. Because direction and support are decoupled, support and sign-based merging (RAM, TIES) collapse to near-uniform averaging. We release all code and statistics.",
+  "authors": [
+    "S. Aaron McClendon"
+  ],
+  "published": "2026-07-17T15:41:09Z",
+  "updated": "2026-07-17T15:41:09Z",
+  "categories": [
+    "cs.LG",
+    "cs.AI"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2607.16062",
+  "abs_url": "https://arxiv.org/abs/2607.16062",
+  "fetched_at": "2026-07-20T11:33:13.424183Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

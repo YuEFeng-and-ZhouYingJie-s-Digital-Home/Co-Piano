@@ -1,0 +1,22 @@
+{
+  "arxiv_id": "2604.09472",
+  "title": "Data Selection Effects on Self-Supervised Learning of Audio Representations for French Audiovisual Broadcasts",
+  "summary": "Audio and speech self-supervised encoder models are now widely used for a lot of different tasks. Many of these models are often trained on clean segmented speech content such as LibriSpeech. In this paper, we look into how the pretraining datasets of such SSL (Self-Supervised Learning) models impact their downstream results. We build a large pretraining corpus of highly diverse TV and Radio broadcast audio content, which we describe with automatic tools. We use these annotations to build smaller subsets, which we use to train audio SSL models. Then, we evaluate the models on multiple downstream tasks such as automatic speech recognition, voice activity and music detection, or speaker recognition. The results show the potential of pretraining SSL models on diverse audio content without restricting it to speech. We also perform a membership inference attack to evaluate the encoder ability to memorize their training datasets, which highlight the importance of data deduplication. This unified training could bridge speech and music machine learning communities.",
+  "authors": [
+    "Valentin Pelloin",
+    "Lina Bekkali",
+    "Reda Dehak",
+    "David Doukhan"
+  ],
+  "published": "2026-04-10T16:30:31Z",
+  "updated": "2026-04-10T16:30:31Z",
+  "categories": [
+    "eess.AS"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2604.09472",
+  "abs_url": "https://arxiv.org/abs/2604.09472",
+  "fetched_at": "2026-07-20T11:33:13.418625Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

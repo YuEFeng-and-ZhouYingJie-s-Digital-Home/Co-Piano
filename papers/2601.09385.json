@@ -1,0 +1,42 @@
+{
+  "arxiv_id": "2601.09385",
+  "title": "SLAM-LLM: A Modular, Open-Source Multimodal Large Language Model Framework and Best Practice for Speech, Language, Audio and Music Processing",
+  "summary": "The recent surge in open-source Multimodal Large Language Models (MLLM) frameworks, such as LLaVA, provides a convenient kickoff for artificial intelligence developers and researchers. However, most of the MLLM frameworks take vision as the main input modality, and provide limited in-depth support for the modality of speech, audio, and music. This situation hinders the development of audio-language models, and forces researchers to spend a lot of effort on code writing and hyperparameter tuning. We present SLAM-LLM, an open-source deep learning framework designed to train customized MLLMs, focused on speech, language, audio, and music processing. SLAM-LLM provides a modular configuration of different encoders, projectors, LLMs, and parameter-efficient fine-tuning plugins. SLAM-LLM also includes detailed training and inference recipes for mainstream tasks, along with high-performance checkpoints like LLM-based Automatic Speech Recognition (ASR), Automated Audio Captioning (AAC), and Music Captioning (MC). Some of these recipes have already reached or are nearing state-of-the-art performance, and some relevant techniques have also been accepted by academic papers. We hope SLAM-LLM will accelerate iteration, development, data engineering, and model training for researchers. We are committed to continually pushing forward audio-based MLLMs through this open-source framework, and call on the community to contribute to the LLM-based speech, audio and music processing.",
+  "authors": [
+    "Ziyang Ma",
+    "Guanrou Yang",
+    "Wenxi Chen",
+    "Zhifu Gao",
+    "Yexing Du",
+    "Xiquan Li",
+    "Zhisheng Zheng",
+    "Haina Zhu",
+    "Jianheng Zhuo",
+    "Zheshu Song",
+    "Ruiyang Xu",
+    "Tiranrui Wang",
+    "Yifan Yang",
+    "Yanqiao Zhu",
+    "Zhikang Niu",
+    "Liumeng Xue",
+    "Yinghao Ma",
+    "Ruibin Yuan",
+    "Shiliang Zhang",
+    "Kai Yu",
+    "Eng Siong Chng",
+    "Xie Chen"
+  ],
+  "published": "2026-01-14T11:25:36Z",
+  "updated": "2026-01-14T11:25:36Z",
+  "categories": [
+    "cs.SD",
+    "cs.CL",
+    "cs.MM"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2601.09385",
+  "abs_url": "https://arxiv.org/abs/2601.09385",
+  "fetched_at": "2026-07-20T11:33:13.419108Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}

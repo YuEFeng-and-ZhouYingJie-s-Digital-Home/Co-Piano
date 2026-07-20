@@ -1,0 +1,25 @@
+{
+  "arxiv_id": "2606.18633",
+  "title": "PersonalPlan: Planning Multi-Agent Systems for Personalized Programming Learning",
+  "summary": "Effective programming education requires personalized instruction adapted to diverse learner backgrounds. However, while LLM-based multi-agent systems (MAS) excel at complex planning, existing planners often lack profile-grounding and pedagogical scaffolding, thereby undermining personalized programming learning. To fill in the gap, we first introduce \\textbf{MAP-PPL} (\\textbf{M}ulti-\\textbf{A}gent \\textbf{P}lans for \\textbf{P}ersonalized \\textbf{P}rogramming \\textbf{L}earning), a profile-conditioned multi-agent planning dataset with 3{,}043 query--profile--plan instances from 1{,}730 Stack Overflow question groups and 2{,}738 learner profiles. Each plan specifies agents, subtasks, executable steps, and prerequisite dependencies. Then, we propose \\textbf{PersonalPlan}, a two-stage MAS planner that first performs hierarchical SFT with separate LoRA adapters for profile-aware task decomposition and step dependency planning, then applies a Reward-Adaptive GRPO to encourage the model to generate executable, personalized, and pedagogically scaffolded plans. Extensive experiments on MAP-PPL comparing PersonalPlan against frontier LLMs, generic MAS frameworks, and agentic planners demonstrate its superiority. With only 8B and 32B variants, PersonalPlan achieves state-of-the-art plan executability, personalization, and pedagogical quality, effectively orchestrating MAS for agent-student interactions.",
+  "authors": [
+    "Zhiyuan Wen",
+    "Jiannong Cao",
+    "Peng Gao",
+    "Haochen Shi",
+    "Wengpan Kuan",
+    "Bo Yuan",
+    "Xiuxiu Qi"
+  ],
+  "published": "2026-06-17T03:03:53Z",
+  "updated": "2026-06-17T03:03:53Z",
+  "categories": [
+    "cs.MA"
+  ],
+  "pdf_url": "https://arxiv.org/pdf/2606.18633",
+  "abs_url": "https://arxiv.org/abs/2606.18633",
+  "fetched_at": "2026-07-20T11:33:13.428351Z",
+  "query_name": "?",
+  "pdf_status": "pending",
+  "parse_status": "pending"
+}
