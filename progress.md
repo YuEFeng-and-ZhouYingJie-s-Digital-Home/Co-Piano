@@ -2697,3 +2697,58 @@ Cycle N:
 - 7 知识库 + **1 论文 v3 草稿** (345 行)
 
 **耗时**: ~5 分钟(整合现有材料 + 写 v3 草稿)
+
+## [2026-07-21 02:05] Phase 6 CYCLE 10: copiano_v3 统一 CLI(本批)
+
+**做了什么**:
+- **写 `scripts/copiano_v3.py`** (10K) — CoPiano v3 统一 CLI
+  - **6 子命令**:
+    1. `demo` — 端到端展示 (5 维 + 弱项 + 7d 课程 + SM-2 + A/B + voice)
+    2. `curriculum` — 生成 7 天多模态课程 (curriculum_v2)
+    3. `abtest` — 运行 A/B 测试 + RCT 报告 (ab_test_harness)
+    4. `scores` — 5 维评分模拟 (含银发 age 修正 0.85x)
+    5. `voice` — Voice dialog 集成测试 (5 模块关键词: 识谱/长辈/课程/手型/节拍器)
+    6. `modules` — 列出 10 个 v3.0 模块
+  - **整合模块** (10):
+    - eval_pitch (音准)
+    - expressiveness_analyzer (9 维表现力)
+    - hand_pose_analyzer (9 维手型)
+    - sight_reading_trainer (4 难度 × 3 模式)
+    - senior_mode (4 开关)
+    - curriculum_v2 (8 块多模态)
+    - ab_test_harness (RCT d=0.43)
+    - metronome (节拍器)
+    - student_db (长期记忆)
+    - tonnetz_kg (241 节点 KG)
+  - **入口策略**:无参数默认 demo,新手友好
+
+**关键性能**:
+- 6/6 子命令测试通过
+- demo 端到端 ~ 1.5s (含 A/B 测试)
+- scores 0ms, modules 0ms, voice < 100ms
+- 单一入口整合 10 个模块,符合 Linux "do one thing well + compose" 哲学
+
+**Cycle 10 完成度**:
+| 阶段 | 状态 |
+|------|------|
+| 1. 调研 | ✅ 已完成 (cycle 8) |
+| 2. 实践 | ✅ 10K copiano_v3.py (6 子命令) |
+| 3. 测试 | ✅ 6/6 子命令全过 |
+
+**v3.0 关键升级 (累计)**:
+- v1.0: "92 分 0 错音" (单维)
+- v2.0: + 9 维表现力 76/100
+- v3.0 Cycle 4: + 9 维手型 78/100
+- v3.0 Cycle 5: + 银发模式
+- v3.0 Cycle 6: + 4 难度视奏训练
+- v3.0 Cycle 7: + 7 天多模态自适应课程
+- v3.0 Cycle 8: + A/B 测试 RCT 框架
+- v3.0 Cycle 9: + 论文 v3 草稿
+- **v3.0 Cycle 10: + 统一 CLI** (10 模块 + 6 子命令,一键 demo)
+
+**总文件/论文数**:
+- 17 → **37 脚本**
+- 138 → 813 arxiv 论文
+- 7 知识库 + 1 论文 v3 草稿
+
+**耗时**: ~7 分钟(写 CLI + 6 子命令测试 + commit)

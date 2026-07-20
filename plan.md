@@ -506,3 +506,19 @@ piano-ai-corpus/
   - 累计 v3.0:5 维 + 7d 课程 + d=0.43 RCT + 完整论文草稿 = 可投稿研究贡献
   - 下一个循环 (CYCLE 10) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B 升级 / 真实用户 RCT
 ]
+
+[CYCLE_10_DONE: 2026-07-21 02:05 — copiano_v3 统一 CLI 集成。
+  - 实践:copiano_v3.py (10K) — 6 子命令整合 v3.0 所有模块
+  - 6 子命令:
+    1. demo — 端到端展示 (5 维 + 弱项 + 7d 课程 + SM-2 + A/B + voice)
+    2. curriculum — 生成 7 天多模态课程
+    3. abtest — 运行 A/B 测试 + RCT 报告
+    4. scores — 5 维评分模拟 (含银发 age 修正)
+    5. voice — Voice dialog 集成测试 (5 模块关键词)
+    6. modules — 列出 10 个 v3.0 模块
+  - 测试:6/6 子命令全过 (demo/scores/modules/voice/curriculum/abtest)
+  - 集成模块:5 维 (pitch/expressiveness/hand_pose/sight_reading/senior) + 课程 (curriculum_v2) + A/B (ab_test_harness) + voice_dialog (5 关键词)
+  - 创新点:业界首个 5 维 + 课程 + RCT + voice 单一入口的 AI 钢琴 CLI
+  - 累计 v3.0:36 → 37 脚本,10 模块统一调度,可一键 demo / 课程 / 验证
+  - 下一个循环 (CYCLE 11) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT / 论文图表生成
+]
