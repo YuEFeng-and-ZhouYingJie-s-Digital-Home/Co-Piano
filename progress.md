@@ -2088,3 +2088,33 @@ Cycle N:
 **耗时**: ~12 分钟
 
 ---
+
+---
+## [2026-07-20 23:18] Phase 6 CYCLE 2 阶段 2: MIDI 文件分析器(本轮)
+
+**做了什么**:
+- **scripts/midi_analyzer.py** (9.5K) — MIDI 文件深度分析器
+  - 接受本地 MIDI 或 URL(MAESTRO 等)
+  - 双模式:solo(只风格分析)/ compare(评分+风格)
+  - 5 维评估(音准/节奏/力度/完整度/风格) + 风格判断(巴洛克/古典/浪漫)
+  - Markdown 报告 + JSON 数据双输出
+  - **patch_voice_dialog_with_midi()**:用户说"分析 X.mid"自动跑
+
+**实测**:
+- CLI 对比:`midi_analyzer.py user.mid --reference ref.mid --piece "Beyer" --period Baroque`
+  - 93.8 分,1/8 错音,Baroque 风格识别 ✓
+- voice_dialog 集成:"帮我分析 /tmp/cycle1_01_user.mid 这个 MIDI"
+  - 自动解析路径 → 跑分析 → 返回摘要 + 报告路径 ✓
+- 报告 5 节(总览/评估/风格/评级/附录)+ Markdown
+
+**关键修复**:
+- `style_analyzer` 函数名是 `analyze_midi` 不是 `analyze`
+
+**调研对位**:
+- 用户无 MIDI 键盘痛点 → 现在能分析任何 MIDI
+- 对接 MAESTRO 公开数据集(200h 古典钢琴)→ 通过 URL 自动下载
+- 视频玩家转 MIDI(Basic Pitch) → 即可走这个工具
+
+**耗时**: ~8 分钟
+
+---
