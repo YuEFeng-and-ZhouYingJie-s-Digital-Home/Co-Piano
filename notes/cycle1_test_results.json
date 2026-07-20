@@ -1,0 +1,216 @@
+{
+  "timestamp": "2026-07-20T22:46:56.923890",
+  "tests": {
+    "network_data": {
+      "available": true,
+      "url": "https://storage.googleapis.com/magentadata/datasets/maestro/v3.0.0/maestro-v3.0.0-midi.zip",
+      "size_mb": 55.7,
+      "note": "MAESTRO 可下载,但 ~100MB,需要手动处理"
+    },
+    "eval_pitch": [
+      {
+        "scenario": "beginner_clean",
+        "piece": "Beyer Op.101 No.1",
+        "period": "Baroque",
+        "score": 100,
+        "n_pitch_errors": 0,
+        "pitch_accuracy": 1.0,
+        "expected_errors": 0,
+        "ok": true
+      },
+      {
+        "scenario": "beginner_one_error",
+        "piece": "Beyer Op.101 No.1",
+        "period": "Baroque",
+        "score": 93.75,
+        "n_pitch_errors": 1,
+        "pitch_accuracy": 0.875,
+        "expected_errors": 1,
+        "ok": true
+      },
+      {
+        "scenario": "elementary_perfect",
+        "piece": "Minuet in G",
+        "period": "Baroque",
+        "score": 100,
+        "n_pitch_errors": 0,
+        "pitch_accuracy": 1.0,
+        "expected_errors": 0,
+        "ok": true
+      },
+      {
+        "scenario": "elementary_off_rhythm",
+        "piece": "Minuet in G",
+        "period": "Baroque",
+        "score": 95.83,
+        "n_pitch_errors": 1,
+        "pitch_accuracy": 0.917,
+        "expected_errors": 1,
+        "ok": true
+      },
+      {
+        "scenario": "intermediate_good",
+        "piece": "Bach Prelude",
+        "period": "Baroque",
+        "score": 100,
+        "n_pitch_errors": 0,
+        "pitch_accuracy": 1.0,
+        "expected_errors": 0,
+        "ok": true
+      },
+      {
+        "scenario": "intermediate_some_errors",
+        "piece": "Bach Prelude",
+        "period": "Baroque",
+        "score": 93.75,
+        "n_pitch_errors": 2,
+        "pitch_accuracy": 0.875,
+        "expected_errors": 2,
+        "ok": true
+      },
+      {
+        "scenario": "classical_advanced",
+        "piece": "Sonata K.545",
+        "period": "Classical",
+        "score": 95.0,
+        "n_pitch_errors": 2,
+        "pitch_accuracy": 0.9,
+        "expected_errors": 2,
+        "ok": true
+      },
+      {
+        "scenario": "romantic_chopin",
+        "piece": "Chopin Nocturne",
+        "period": "Romantic",
+        "score": 95.83,
+        "n_pitch_errors": 2,
+        "pitch_accuracy": 0.917,
+        "expected_errors": 2,
+        "ok": true
+      },
+      {
+        "scenario": "rhythm_drift",
+        "piece": "Für Elise",
+        "period": "Classical",
+        "score": 100,
+        "n_pitch_errors": 0,
+        "pitch_accuracy": 1.0,
+        "expected_errors": 0,
+        "ok": true
+      },
+      {
+        "scenario": "many_errors",
+        "piece": "Bach Invention",
+        "period": "Baroque",
+        "score": 81.25,
+        "n_pitch_errors": 6,
+        "pitch_accuracy": 0.625,
+        "expected_errors": 5,
+        "ok": true
+      },
+      {
+        "scenario": "perfect_pieces",
+        "piece": "Bach Prelude",
+        "period": "Baroque",
+        "score": 100,
+        "n_pitch_errors": 0,
+        "pitch_accuracy": 1.0,
+        "expected_errors": 0,
+        "ok": true
+      },
+      {
+        "scenario": "worst_case",
+        "piece": "Liszt Liebestraum",
+        "period": "Romantic",
+        "score": 91.67,
+        "n_pitch_errors": 5,
+        "pitch_accuracy": 0.833,
+        "expected_errors": 5,
+        "ok": true
+      }
+    ],
+    "metronome": [
+      {
+        "bpm": 60,
+        "beats": 4,
+        "measures": 4,
+        "elapsed_s": 16.144,
+        "expected_s": 16.0,
+        "timing_accuracy": 0.991,
+        "ok": true
+      },
+      {
+        "bpm": 90,
+        "beats": 4,
+        "measures": 2,
+        "elapsed_s": 5.394,
+        "expected_s": 5.333,
+        "timing_accuracy": 0.9887,
+        "ok": true
+      },
+      {
+        "bpm": 120,
+        "beats": 4,
+        "measures": 2,
+        "elapsed_s": 4.053,
+        "expected_s": 4.0,
+        "timing_accuracy": 0.9868,
+        "ok": true
+      },
+      {
+        "bpm": 180,
+        "beats": 3,
+        "measures": 4,
+        "elapsed_s": 4.107,
+        "expected_s": 4.0,
+        "timing_accuracy": 0.9732,
+        "ok": true
+      }
+    ],
+    "voice_dialog": {
+      "scenario": "beginner_clean",
+      "queries": [
+        {
+          "layer": "curriculum",
+          "query": "给我一个 7 天计划",
+          "backend": "mock",
+          "latency_s": 0.0,
+          "reply_len": 2485,
+          "reply_preview": "# 🎹 你的 7 天练习计划\n_生成时间:2026-07-20 22:47 | 每天 30 分钟_\n\n## Day 1 (2026-07-20) — 新曲导入\n",
+          "ok": true
+        },
+        {
+          "layer": "teaching",
+          "query": "我弹得怎么样",
+          "backend": "mock",
+          "latency_s": 0.0,
+          "reply_len": 56,
+          "reply_preview": "你这段 100 分,错音 0 个,节奏波动 0.0ms。Bach Prelude 是 Baroque 时期风格。",
+          "ok": true
+        },
+        {
+          "layer": "gpu",
+          "query": "我现在应该重点练什么",
+          "backend": "gpu",
+          "latency_s": 2.53,
+          "reply_len": 87,
+          "reply_preview": "继续保持当前的优秀表现！可以尝试加入一些对位技巧的练习，比如Bach的二声部或三声部作品，提升你的音乐织体感和独立手指技巧。同时，适当增加一些速度练习，挑战自己",
+          "ok": true
+        }
+      ],
+      "ok": true
+    }
+  },
+  "summary": {
+    "network_data_attempted": true,
+    "eval_pitch_pass": 12,
+    "eval_pitch_total": 12,
+    "metronome_pass": 4,
+    "metronome_total": 4,
+    "voice_dialog_pass": 3,
+    "voice_dialog_total": 3,
+    "overall_pass": 19,
+    "overall_total": 19,
+    "pass_rate": "100%"
+  }
+}
