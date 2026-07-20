@@ -1,0 +1,150 @@
+{
+  "timestamp": "2026-07-20T21:15:46.871340",
+  "scenarios": [
+    {
+      "query": "给我一个 7 天练习计划",
+      "backend": "mock",
+      "reply": "# 🎹 你的 7 天练习计划\n_生成时间:2026-07-20 21:15 | 每天 30 分钟_\n\n## Day 1 (2026-07-20) — 新曲导入\n**总时长**:30 分钟\n\n### 🟢 热身 (5min)\n- **五指音阶**\n- 重点:手指热身 + 慢速\n\n### 🎯 主曲 (18min)\n- **Bach Prelude in C (BWV 846)**\n- 目标分:88\n- 重点:['16th notes', 'voice independence'] (Baroque 风格)\n\n### 🌙 收尾 (5min)\n- **Minuet in G**\n- 备注:放松 + 享受\n\n### ✅ 今日目标\n- Bach Prelude in C (BWV 846) 达 88 分\n- 错音 < 2 个\n- 节奏波动 < 15ms\n- 先通读乐谱,不求完美\n\n## Day 2 (2026-07-21) — 技术专攻\n**总时长**:30 分钟\n\n### 🟢 热身 (5min)\n- **弱项专练:音 4/Minuet in G**\n- 重点:针对错音:音 4, Minuet in G\n\n### 🎯 主曲 (18min)\n- **Sonata K.545 1st mvt (Mozart)**\n- 目标分:88\n- 重点:['Alberti bass', 'light touch'] (Classical 风格)\n\n### 🌙 收尾 (5min)\n- **Minuet in G**\n- 备注:放松 + 享受\n\n### ✅ 今日目标\n- Sonata K.545 1st mvt (Mozart) 达 88 分\n- 错音 < 2 个\n- 节奏波动 < 15ms\n\n## Day 3 (2026-07-22) — 巩固\n**总时长**:30 分钟\n\n### 🟢 热身 (5min)\n- **Hanon No.1**\n- 重点:手指热身 + 慢速\n\n### 🎯 主曲 (18min)\n- **Chopin Nocturne Op.9 No.2**\n- 目标分:88\n- 重点:['rubato', 'chord voicing'] (Romantic 风格)\n\n### 🔄 复习 (8min)\n- **Bach Prelude**\n- 备注:重点改上次错音(弱项:音 4, Minuet in G)\n\n### 🌙 收尾 (5min)\n- **Minuet in G**\n- 备注:放松 + 享受\n\n### ✅ 今日目标\n- Chopin Nocturne Op.9 No.2 达 88 分\n- 错音 < 2 个\n- 节奏波动 < 15ms\n\n## Day 4 (2026-07-23) — 休息/复习\n**总时长**:30 分钟\n\n### 🟢 热身 (5min)\n- **弱项专练:音 4/Minuet in G**\n- 重点:针对错音:音 4, Minuet in G\n\n### 🎯 主曲 (18min)\n- **Beethoven Sonata Op.27 No.2 (Moonlight)**\n- 目标分:88\n- 重点:['pedaling', 'expressive dynamics'] (Classical 风格)\n\n### 🌙 收尾 (5min)\n- **Minuet in G**\n- 备注:放松 + 享受\n\n### ✅ 今日目标\n- Beethoven Sonata Op.27 No.2 (Moonlight) 达 88 分\n- 错音 < 2 个\n- 节奏波动 < 15ms\n\n## Day 5 (2026-07-24) — 组合\n**总时长**:30 分钟\n\n### 🟢 热身 (5min)\n- **Hanon No.1**\n- 重点:手指热身 + 慢速\n\n### 🎯 主曲 (18min)\n- **Bach Prelude in C (BWV 846)**\n- 目标分:92\n- 重点:深化 ['16th notes', 'voice independence']\n\n### 🔄 复习 (8min)\n- **Bach Prelude**\n- 备注:重点改上次错音(弱项:音 4, Minuet in G)\n\n### 🌙 收尾 (5min)\n- **Minuet in G**\n- 备注:放松 + 享受\n\n### ✅ 今日目标\n- Bach Prelude in C (BWV 846) 达 92 分\n- 错音 < 2 个\n- 节奏波动 < 15ms\n\n## Day 6 (2026-07-25) — 表现力\n**总时长**:30 分钟\n\n### 🟢 热身 (5min)\n- **弱项专练:音 4/Minuet in G**\n- 重点:针对错音:音 4, Minuet in G\n\n### 🎯 主曲 (18min)\n- **Bach Prelude in C (BWV 846)**\n- 目标分:92\n- 重点:深化 ['16th notes', 'voice independence']\n\n### 🌙 收尾 (5min)\n- **Minuet in G**\n- 备注:放松 + 享受\n\n### ✅ 今日目标\n- Bach Prelude in C (BWV 846) 达 92 分\n- 错音 < 2 个\n- 节奏波动 < 15ms\n\n## Day 7 (2026-07-26) — 总复习\n**总时长**:30 分钟\n\n### 🟢 热身 (5min)\n- **Hanon No.1**\n- 重点:手指热身 + 慢速\n\n### 🎯 主曲 (18min)\n- **Bach Prelude in C (BWV 846)**\n- 目标分:92\n- 重点:深化 ['16th notes', 'voice independence']\n\n### 🌙 收尾 (5min)\n- **Minuet in G**\n- 备注:放松 + 享受\n\n### ✅ 今日目标\n- Bach Prelude in C (BWV 846) 达 92 分\n- 错音 < 2 个\n- 节奏波动 < 15ms\n- 7 天总结,准备下周计划\n",
+      "reply_len": 2574,
+      "latency_s": 0.0,
+      "ok": true,
+      "error": null,
+      "layer": "curriculum",
+      "keyword_check": {
+        "expected": [
+          "Day 1",
+          "Minuet",
+          "Bach"
+        ],
+        "found": [
+          "Day 1",
+          "Minuet",
+          "Bach"
+        ],
+        "all_present": true,
+        "coverage": "3/3"
+      }
+    },
+    {
+      "query": "我弹得怎么样",
+      "backend": "mock",
+      "reply": "你这段 92.0 分,错音 0 个,节奏波动 17.0ms。Bach Prelude 是 Baroque 时期风格。",
+      "reply_len": 58,
+      "latency_s": 0.0,
+      "ok": true,
+      "error": null,
+      "layer": "teaching_engine",
+      "keyword_check": {
+        "expected": [
+          "分",
+          "错音"
+        ],
+        "found": [
+          "分",
+          "错音"
+        ],
+        "all_present": true,
+        "coverage": "2/2"
+      }
+    },
+    {
+      "query": "我经常错哪里",
+      "backend": "mock",
+      "reply": "你的综合指标都不错,继续保持!",
+      "reply_len": 15,
+      "latency_s": 0.0,
+      "ok": true,
+      "error": null,
+      "layer": "teaching_engine",
+      "keyword_check": {
+        "expected": [
+          "音",
+          "弱项"
+        ],
+        "found": [],
+        "all_present": false,
+        "coverage": "0/2"
+      }
+    },
+    {
+      "query": "我现在应该重点练什么",
+      "backend": "gpu",
+      "reply": "继续保持对《G大调小步舞曲》的练习，特别是注意音准和连奏（legato）。可以尝试慢速练习，确保每个音符都准确无误。逐渐加快速度，同时保持音色的连贯性和流畅性。继续巩固你的节奏感，保持稳定的节拍。加油！",
+      "reply_len": 101,
+      "latency_s": 3.05,
+      "ok": true,
+      "error": null,
+      "layer": "gpu_qwen7b",
+      "keyword_check": {
+        "expected": [
+          "音",
+          "Bach"
+        ],
+        "found": [
+          "音"
+        ],
+        "all_present": false,
+        "coverage": "1/2"
+      }
+    },
+    {
+      "query": "巴洛克时期怎么弹",
+      "backend": "gpu",
+      "reply": "巴洛克时期的演奏要注意几个关键点：保持清晰的对位线条，合理使用装饰音如颤音和滑音，触键要颗粒分明，力度变化要明显。尝试在每个音符间保持连贯（legato），但不要过度。多听原作录音，感受其风格。继续练习，你会越来越接近巴洛克的韵味。",
+      "reply_len": 116,
+      "latency_s": 4.85,
+      "ok": true,
+      "error": null,
+      "layer": "gpu_qwen7b",
+      "keyword_check": {
+        "expected": [
+          "巴洛克",
+          "对位",
+          "装饰音"
+        ],
+        "found": [
+          "巴洛克",
+          "对位",
+          "装饰音"
+        ],
+        "all_present": true,
+        "coverage": "3/3"
+      }
+    },
+    {
+      "query": "给我点鼓励",
+      "backend": "gpu",
+      "reply": "继续保持！你的进步非常显著，特别是在Bach的前奏曲上取得了92分的好成绩。每次练习都更加准确和流畅，这是非常了不起的进步！继续享受音乐带来的乐趣吧！",
+      "reply_len": 75,
+      "latency_s": 9.23,
+      "ok": true,
+      "error": null,
+      "layer": "gpu_qwen7b",
+      "keyword_check": {
+        "expected": [
+          "进步",
+          "继续"
+        ],
+        "found": [
+          "进步",
+          "继续"
+        ],
+        "all_present": true,
+        "coverage": "2/2"
+      }
+    }
+  ],
+  "summary": {
+    "daemon": {
+      "reachable": false,
+      "raw": "spawn ssh -p 29955 -o StrictHostKeyChecking=no -o ConnectTimeout=8 root@connect.bjb2.seetacloud.com curl -s http://127.0.0.1:8765/health --max-time 5\n\nroot@connect.bjb2.seetacloud.com's password: \n{\"s"
+    },
+    "total": 6,
+    "passed": 4,
+    "failed": 2,
+    "pass_rate": "67%",
+    "avg_latency_s": 2.85,
+    "direct_answer_avg_s": 0.0,
+    "gpu_avg_s": 5.71
+  }
+}
