@@ -1993,3 +1993,29 @@ Cycle N:
 **耗时**: ~12 分钟(满了)
 
 ---
+
+---
+## [2026-07-20 22:40] Phase 6 CYCLE 1 阶段 2: 节拍器 metronome.py(本轮)
+
+**做了什么**:
+- **scripts/metronome.py** (8K) — 终端/集成节拍器
+  - **程序合成 click**(40ms 正弦+指数衰减,无外部样本,跨平台)
+  - 强拍 1000Hz + 弱拍 800Hz,音量区分
+  - BPM 30-300 / 拍号 1-12 / 跑 N 小节 / 无限循环 / 跟随录音 4 模式
+  - **跟随模式**(run_with_tapping):边播 click 边录音,自动检测每拍有没有弹
+  - 文字可视化:强拍 [1] 弱拍 2/3/4 + ●●●● 进度
+  - patch_voice_dialog_with_metronome() 注入:用户说"开 N BPM 节拍器"自动启动
+
+**实测**:
+- 单独 CLI:`python3 metronome.py --bpm 120 --measures 2 --silent` → 2 小节 OK
+- 跟随模式:8 拍,每拍显示 RMS 音量
+- voice_dialog 集成:"帮我开 100 BPM 节拍器" → 跑 8 小节 + LLM 回复"已经帮你跑了..."
+
+**调研对位**:
+- Flowkey 用户痛点:无内置节拍器
+- Simply Piano 同上
+- CoPiano 现在:✅ 内置,可通过语音命令启动,跨平台,无样本
+
+**耗时**: ~10 分钟
+
+---
