@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-07-21T00:16:03.808071",
+  "tests": {
+    "scenarios": [
+      {
+        "scenario": "baroque_low",
+        "period": "Baroque",
+        "quality": "low",
+        "overall": 39.6,
+        "velocity_std": 3.72,
+        "dynamic_range": 12,
+        "ltv": 0.6,
+        "voicing_balance": 13.54,
+        "melody_lead_ms": 0.0,
+        "articulation": "staccato",
+        "n_notes": 256,
+        "latency_s": 0.004,
+        "ok": true
+      },
+      {
+        "scenario": "baroque_medium",
+        "period": "Baroque",
+        "quality": "medium",
+        "overall": 71.5,
+        "velocity_std": 8.08,
+        "dynamic_range": 30,
+        "ltv": 97.15,
+        "voicing_balance": 29.52,
+        "melody_lead_ms": 10.23,
+        "articulation": "legato",
+        "n_notes": 256,
+        "latency_s": 0.004,
+        "ok": true
+      },
+      {
+        "scenario": "classical_low",
+        "period": "Classical",
+        "quality": "low",
+        "overall": 39.7,
+        "velocity_std": 3.83,
+        "dynamic_range": 12,
+        "ltv": 0.58,
+        "voicing_balance": 14.12,
+        "melody_lead_ms": 0.0,
+        "articulation": "staccato",
+        "n_notes": 256,
+        "latency_s": 0.004,
+        "ok": true
+      },
+      {
+        "scenario": "classical_high",
+        "period": "Classical",
+        "quality": "high",
+        "overall": 81.3,
+        "velocity_std": 11.73,
+        "dynamic_range": 50,
+        "ltv": 93.0,
+        "voicing_balance": 39.65,
+        "melody_lead_ms": 25.0,
+        "articulation": "legato",
+        "n_notes": 256,
+        "latency_s": 0.004,
+        "ok": true
+      },
+      {
+        "scenario": "romantic_low",
+        "period": "Romantic",
+        "quality": "low",
+        "overall": 48.3,
+        "velocity_std": 3.71,
+        "dynamic_range": 12,
+        "ltv": 8.26,
+        "voicing_balance": 13.51,
+        "melody_lead_ms": 0.0,
+        "articulation": "staccato",
+        "n_notes": 256,
+        "latency_s": 0.004,
+        "ok": true
+      },
+      {
+        "scenario": "romantic_medium",
+        "period": "Romantic",
+        "quality": "medium",
+        "overall": 59.3,
+        "velocity_std": 8.3,
+        "dynamic_range": 30,
+        "ltv": 98.59,
+        "voicing_balance": 30.84,
+        "melody_lead_ms": 9.72,
+        "articulation": "legato",
+        "n_notes": 256,
+        "latency_s": 0.004,
+        "ok": true
+      },
+      {
+        "scenario": "romantic_high",
+        "period": "Romantic",
+        "quality": "high",
+        "overall": 69.6,
+        "velocity_std": 11.67,
+        "dynamic_range": 50,
+        "ltv": 93.7,
+        "voicing_balance": 39.96,
+        "melody_lead_ms": 25.0,
+        "articulation": "legato",
+        "n_notes": 256,
+        "latency_s": 0.004,
+        "ok": true
+      }
+    ]
+  },
+  "summary": {
+    "scenarios_pass": 7,
+    "scenarios_total": 7,
+    "monotonicity_ok": true,
+    "period_ok": true,
+    "melody_lead_ok": true,
+    "overall_pass": 10,
+    "overall_total": 10,
+    "pass_rate": "100%"
+  }
+}
