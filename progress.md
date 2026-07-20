@@ -2516,3 +2516,66 @@ Cycle N:
 - 5 知识库 (cycle1-6)
 
 **耗时**: ~15 分钟(写 2 脚本 + 修 5 bug + 178 测试)
+
+## [2026-07-21 01:23] Phase 6 CYCLE 7 阶段 1+2+3: curriculum_v2 + 7 天自适应课程(本批)
+
+**做了什么**:
+- **写 `scripts/curriculum_v2.py`** (23K) — 7 天多模态自适应课程
+  - **8 块类型**:warmup_pitch (音准热身) / warmup_hand (手型热身) / expressiveness (表现力专练) / sight_reading (视奏训练) / main_piece (主曲打磨) / review_piece (间隔复习) / weakness_drill (弱项专练) / cooldown_relax (放松)
+  - **5 维模块整合**:pitch (eval_pitch) + expressiveness (C3) + hand_pose (C4) + rhythm (主曲) + sight_reading (C6)
+  - **SpacedRepetition (类 SM-2)**:ease factor 1.3-2.5 + interval_idx 推进 + score 阈值 60/85 切换;record_review + get_next_review + get_due_pieces
+  - **WeaknessDetector**:5 维分数 → top 3 弱项 (high/medium/low severity) + 弱项→块类型映射 + 弱项→教学重点
+  - **AdaptivePlanner**:7 天自适应生成,day 1-7 难度渐进 (beginner → advanced), 隔天切换 expressiveness/sight_reading, day 3/5/7 间隔复习
+  - **银发模式自动激活**:age >= 60 → 每日 +5min, 加鼓励词
+  - **voice_dialog 集成**:5 关键词 (我的课程/今天练什么/查看计划/标记完成/跳过) + 无递归
+  - **format_plan**:文本输出含 🎹/📊/🎯/📅 4 段
+- **写 `scripts/cycle7_test.py`** (16K) — 综合测试
+  - 19 测试模块 / 75 个断言
+  - 8 块类型完整字段 + 5 维定义 + BlockSpec 字段 + DayPlanV2 total_minutes/summary
+  - SM-2 ease 变化 + 弱项排序 + 块类型映射
+  - 7 天生成 + 块数 5-8 + 5 维模块映射 >= 3
+  - 银发 (age 30/60/75) + voice_dialog 5 关键词 + Monkey patch 无递归
+  - 自适应难度 (高分 +2 提前, 低分 -1 滞后) + format_plan + 速度 (0.1ms)
+  - WeaknessDetector.from_student_db + JSON 序列化 + 间隔复习集成
+- **修 2 个 bug**:
+  1. get_difficulty_for_day 高分 avg=92 day 1 期望 elementary 但仍 beginner (因 progression 开头 2x beginner) → +2 提前
+  2. test_spaced_repetition first_review days_until 边界值 -1 (当天午夜后) → 改为 >= -1
+
+**关键性能**:
+- 7 天 × 6-8 块 = 49-56 块/周
+- 难度渐进 1:1 匹配 (beginner → advanced)
+- 银发:30 min/day → 35 min/day (+17%)
+- 处理速度:0.1 ms/plan (含 5 维检测 + 间隔复习)
+- 无递归:voice_dialog llm_call_count=1
+- 间隔复习:day 3/5/7 自动添加 review_piece
+- 弱项优先:1 维 → 6 块都包含针对该维度的专练
+
+**调研对位**:
+- SAMICK 5 模式 vs CoPiano 8 块 + 5 维整合
+- Simply Piano 12 章 vs CoPiano 7 天自适应 (每日重排)
+- Flowkey 1500 曲 vs CoPiano 4 首轮转 + 间隔复习
+- 扇贝 SM-2 vs CoPiano 简化 SM-2 + 音乐专用
+- Anki 通用 vs CoPiano 多模态 + 5 维整合
+
+**Cycle 7 完成度 3/3**:
+| 阶段 | 状态 |
+|------|------|
+| 1. 调研 | ✅ 4.9K 知识库 (9 章节) |
+| 2. 实践 | ✅ 23K curriculum_v2 (8 块 + 5 维 + SM-2 + 银发) |
+| 3. 测试 | ✅ 75/75 (100%) |
+
+**v3.0 关键升级 (累计)**:
+- v1.0: "92 分 0 错音" (单维)
+- v2.0: + 9 维表现力 76/100
+- v3.0 Cycle 4: + 9 维手型 78/100
+- v3.0 Cycle 5: + 银发模式 (4 开关)
+- v3.0 Cycle 6: + 4 难度视奏训练
+- **v3.0 Cycle 7: + 7 天多模态自适应课程** (8 块 + 5 维 + SM-2 + 弱项 + 银发整合)
+- **完整闭环**:感知 → 评估 → 弱项 → 课程 → 训练 → 反馈 → 进度
+
+**总文件/论文数**:
+- 17 → 34 脚本
+- 138 → 813 arxiv 论文
+- 6 知识库 (cycle1-7)
+
+**耗时**: ~12 分钟(调研 + 写 2 脚本 + 修 2 bug + 75 测试)

@@ -1,0 +1,381 @@
+{
+  "pass": 75,
+  "fail": 0,
+  "tests": [
+    {
+      "name": "has_8_block_types",
+      "pass": true,
+      "detail": "keys: {'weakness_drill', 'sight_reading', 'warmup_hand', 'main_piece', 'warmup_pitch', 'review_piece', 'expressiveness', 'cooldown_relax'}"
+    },
+    {
+      "name": "block_warmup_pitch_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "block_warmup_hand_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "block_expressiveness_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "block_sight_reading_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "block_main_piece_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "block_review_piece_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "block_weakness_drill_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "block_cooldown_relax_complete",
+      "pass": true,
+      "detail": "all 6 fields"
+    },
+    {
+      "name": "has_5_dims",
+      "pass": true,
+      "detail": "dims: ['pitch', 'expressiveness', 'hand_pose', 'rhythm', 'sight_reading']"
+    },
+    {
+      "name": "dims_include_pitch",
+      "pass": true,
+      "detail": "pitch"
+    },
+    {
+      "name": "dims_include_sight_reading",
+      "pass": true,
+      "detail": "sight_reading"
+    },
+    {
+      "name": "basic_init",
+      "pass": true,
+      "detail": "min=5"
+    },
+    {
+      "name": "module_auto_set",
+      "pass": true,
+      "detail": "module=eval_pitch"
+    },
+    {
+      "name": "name_auto",
+      "pass": true,
+      "detail": "name=音准热身"
+    },
+    {
+      "name": "to_dict_has_all",
+      "pass": true,
+      "detail": "keys: ['block_type', 'minutes', 'target', 'piece', 'module', 'notes', 'score']"
+    },
+    {
+      "name": "basic_init",
+      "pass": true,
+      "detail": "day=1"
+    },
+    {
+      "name": "total_minutes",
+      "pass": true,
+      "detail": "total=25"
+    },
+    {
+      "name": "block_count",
+      "pass": true,
+      "detail": "blocks=4"
+    },
+    {
+      "name": "summary_works",
+      "pass": true,
+      "detail": "summary: Day 1 (新起点): 25min [🎵✋🎹🌙]"
+    },
+    {
+      "name": "to_dict",
+      "pass": true,
+      "detail": "to_dict ok"
+    },
+    {
+      "name": "first_review_next_1day",
+      "pass": true,
+      "detail": "next: 2026-07-21, interval_idx=0, days_until=-1"
+    },
+    {
+      "name": "score_90_advances",
+      "pass": true,
+      "detail": "interval_idx=1"
+    },
+    {
+      "name": "bad_score_resets",
+      "pass": true,
+      "detail": "interval_idx=0"
+    },
+    {
+      "name": "ease_changed",
+      "pass": true,
+      "detail": "ease=1.6"
+    },
+    {
+      "name": "get_due_pieces",
+      "pass": true,
+      "detail": "due: 2 pieces"
+    },
+    {
+      "name": "default_weakness_count",
+      "pass": true,
+      "detail": "got 3"
+    },
+    {
+      "name": "first_is_lowest",
+      "pass": true,
+      "detail": "first: sight_reading"
+    },
+    {
+      "name": "custom_weakness_first",
+      "pass": true,
+      "detail": "first: pitch"
+    },
+    {
+      "name": "high_severity",
+      "pass": true,
+      "detail": "severity=high"
+    },
+    {
+      "name": "pitch_to_warmup",
+      "pass": true,
+      "detail": "block_type=warmup_pitch"
+    },
+    {
+      "name": "has_focus",
+      "pass": true,
+      "detail": "focus: 音准/错音:慢速单手 + 分手练"
+    },
+    {
+      "name": "has_7_days",
+      "pass": true,
+      "detail": "days: 7"
+    },
+    {
+      "name": "weekly_goals_count",
+      "pass": true,
+      "detail": "goals: 3"
+    },
+    {
+      "name": "difficulty_progression",
+      "pass": true,
+      "detail": "progression: ['beginner', 'beginner', 'elementary', 'elementary', 'intermediate', 'intermediate', 'advanced']"
+    },
+    {
+      "name": "day1_beginner",
+      "pass": true,
+      "detail": "d1: beginner"
+    },
+    {
+      "name": "day7_advanced",
+      "pass": true,
+      "detail": "d7: advanced"
+    },
+    {
+      "name": "day1_blocks",
+      "pass": true,
+      "detail": "blocks: 6 (total 33min)"
+    },
+    {
+      "name": "day2_blocks",
+      "pass": true,
+      "detail": "blocks: 5 (total 27min)"
+    },
+    {
+      "name": "day3_blocks",
+      "pass": true,
+      "detail": "blocks: 6 (total 33min)"
+    },
+    {
+      "name": "day4_blocks",
+      "pass": true,
+      "detail": "blocks: 5 (total 27min)"
+    },
+    {
+      "name": "day5_blocks",
+      "pass": true,
+      "detail": "blocks: 6 (total 33min)"
+    },
+    {
+      "name": "day6_blocks",
+      "pass": true,
+      "detail": "blocks: 5 (total 27min)"
+    },
+    {
+      "name": "day7_blocks",
+      "pass": true,
+      "detail": "blocks: 6 (total 33min)"
+    },
+    {
+      "name": "core_blocks_used",
+      "pass": true,
+      "detail": "used: {'weakness_drill', 'sight_reading', 'warmup_hand', 'main_piece', 'warmup_pitch', 'expressiveness', 'cooldown_relax'}"
+    },
+    {
+      "name": "multi_modules",
+      "pass": true,
+      "detail": "modules: {'eval_pitch', 'multi', 'free_play', 'hand_pose_analyzer', 'midi_analyzer', 'expressiveness_analyzer', 'sight_reading_trainer'}"
+    },
+    {
+      "name": "age30_no_senior",
+      "pass": true,
+      "detail": "senior=False"
+    },
+    {
+      "name": "age60_senior_activated",
+      "pass": true,
+      "detail": "senior=True"
+    },
+    {
+      "name": "age75_senior",
+      "pass": true,
+      "detail": "senior=True"
+    },
+    {
+      "name": "senior_more_time",
+      "pass": true,
+      "detail": "30=30min, 60=35min"
+    },
+    {
+      "name": "kw_我的课程",
+      "pass": true,
+      "detail": "r: Day 1 新起点 + 音准,共 33 分钟。。🎵音准热身 5 分钟。✋手型热身 3 分钟。👀视奏训练 7 分钟。🎹主曲"
+    },
+    {
+      "name": "kw_今天练什么",
+      "pass": true,
+      "detail": "r2: Day 1 新起点 + 音准,共 33 分钟。。🎵音准热身 5 分钟。✋手型热身 3 分钟。👀视奏训练 7 分钟。🎹主曲"
+    },
+    {
+      "name": "kw_查看计划",
+      "pass": true,
+      "detail": "r3: Day 1 新起点 + 音准,共 33 分钟。。🎵音准热身 5 分钟。✋手型热身 3 分钟。👀视奏训练 7 分钟。🎹主曲"
+    },
+    {
+      "name": "kw_标记完成",
+      "pass": true,
+      "detail": "r4: 好的,Day 1 标记完成。明天是 Day 2 表现力探索。"
+    },
+    {
+      "name": "day_advanced",
+      "pass": true,
+      "detail": "day_idx=1"
+    },
+    {
+      "name": "kw_跳过",
+      "pass": true,
+      "detail": "r5: 好的,跳到 Day 3。"
+    },
+    {
+      "name": "voice_no_recursion_on",
+      "pass": true,
+      "detail": "got: Day 1 新起点 + 音准,共 33 分钟。。🎵音准热身 5 分钟。✋手型热身 3 分钟。👀视奏训"
+    },
+    {
+      "name": "voice_falls_to_llm",
+      "pass": true,
+      "detail": "llm_call_count=1"
+    },
+    {
+      "name": "high_score_advances",
+      "pass": true,
+      "detail": "high: elementary (1), low: beginner (0)"
+    },
+    {
+      "name": "day1_default",
+      "pass": true,
+      "detail": "d1=beginner"
+    },
+    {
+      "name": "day4_default",
+      "pass": true,
+      "detail": "d4=elementary"
+    },
+    {
+      "name": "day7_default",
+      "pass": true,
+      "detail": "d7=advanced"
+    },
+    {
+      "name": "high_d1",
+      "pass": true,
+      "detail": "d1=92: elementary"
+    },
+    {
+      "name": "low_d1",
+      "pass": true,
+      "detail": "d1=65: beginner"
+    },
+    {
+      "name": "has_title",
+      "pass": true,
+      "detail": "title: # 🎹 你的 7 天 AI 自适应课程 (v3.0 多模态)\n_生成时间: 2026-07-21 01:18_\n_当前水"
+    },
+    {
+      "name": "has_senior_marker",
+      "pass": true,
+      "detail": "has 银发模式"
+    },
+    {
+      "name": "has_7_days",
+      "pass": true,
+      "detail": "Day count: 7"
+    },
+    {
+      "name": "has_weekly_goals",
+      "pass": true,
+      "detail": "has 目标"
+    },
+    {
+      "name": "plan_speed",
+      "pass": true,
+      "detail": "0.1ms per plan"
+    },
+    {
+      "name": "from_db_works",
+      "pass": true,
+      "detail": "dims: {'pitch': 76.66666666666667, 'expressiveness': 71.66666666666667, 'hand_pose': 75.0, 'rhythm': 81.66666666666667, 'sight_reading': 65.0}"
+    },
+    {
+      "name": "from_db_pitch_correct",
+      "pass": true,
+      "detail": "pitch=76.66666666666667"
+    },
+    {
+      "name": "empty_db_uses_default",
+      "pass": true,
+      "detail": "uses default"
+    },
+    {
+      "name": "json_serializable",
+      "pass": true,
+      "detail": "len=8287"
+    },
+    {
+      "name": "has_review_blocks",
+      "pass": true,
+      "detail": "reviews: [(3, 'Old Bach'), (5, 'Old Bach'), (7, 'Old Bach')]"
+    },
+    {
+      "name": "custom_weakness",
+      "pass": true,
+      "detail": "weak_focus: ['手型:手腕放松 + 5-finger 慢抬', '视奏:Landmark 法 + 3 教学法', '表现力:timing + dynamics 对比']"
+    }
+  ]
+}

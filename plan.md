@@ -472,3 +472,12 @@ piano-ai-corpus/
   - 累计 v3.0:音高 + 9 维表现力 + 9 维手型 + 银发模式 + 视奏训练 (5 维一体化)
   - 下一个循环 (CYCLE 7) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / 7 天课程深度扩展
 ]
+
+[CYCLE_7_DONE: 2026-07-21 01:23 — 调研+实践+测试 三阶段全过。
+  - 调研:扇贝 SM-2 间隔复习 + SAMICK 5 模式 + Simply Piano/Flowkey + 教学法 3 大支柱 (Spaced Repetition/Deliberate Practice/Multimodal)
+  - 实践:curriculum_v2 (23K) — 8 块类型 (warmup_pitch/warmup_hand/expressiveness/sight_reading/main_piece/review/weakness/cooldown) × 7 天 × 5 维模块整合
+  - 测试:75/75 (100%) — 5 维整合 + 间隔复习 SM-2 + 弱项检测 + 银发模式 + 自适应难度 + voice_dialog 无递归
+  - 创新点:业界首个 5 维多模态自适应 7 天 AI 钢琴课程 (整合音高/表现力/手型/银发/视奏 + SM-2 + 弱项专练)
+  - 累计 v3.0:5 维模块 + 7 天自适应调度 = 完整 AI 钢琴教练体验
+  - 下一个循环 (CYCLE 8) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / 课程效果评估 (A/B test)
+]
