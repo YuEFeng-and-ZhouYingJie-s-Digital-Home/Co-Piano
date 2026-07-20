@@ -1,14 +1,11 @@
 """
-llm_gpu_client.py — Mac 端调 GPU 上 Qwen 7B 的客户端
+llm_gpu_client.py — Mac 端调 GPU 上 Qwen 7B 的客户端(via HTTP 持久化 daemon)
 
-把 OpenAI 风格 messages → GPU 上 llm_call_ms.py → 回复文本
+底层:
+- GPU 端跑 llm_daemon.py,模型常驻,监听 127.0.0.1:8765
+- Mac 通过 SSH 跑 `curl http://localhost:8765/chat` 调
 
-流程:
-1. 把 messages 写成 prompt.json(mac /tmp)
-2. scp 到 GPU /tmp/
-3. ssh 跑 python3 scripts/llm_call_ms.py <model_id> /tmp/prompt.json
-4. 解析 stdout(以 ---RESPONSE--- / ---END--- 为界)
-5. 清理
+这样:模型只加载一次,后续请求 3-5s(纯推理时间)
 
 用法:
     from llm_gpu_client import call_qwen_gpu
@@ -20,27 +17,19 @@ llm_gpu_client.py — Mac 端调 GPU 上 Qwen 7B 的客户端
 from __future__ import annotations
 
 import json
-import os
 import re
-import sys
-import tempfile
 import time
-from pathlib import Path
 from typing import Optional
 
-from gpu_shell import scp_to_gpu, run_on_gpu, GPU_SCRIPTS_DIR, GPU_PWD
+from gpu_shell import run_on_gpu, GPU_HOST
 
-# 默认模型
-DEFAULT_MODEL = "qwen/Qwen2.5-7B-Instruct"
+DAEMON_URL = "http://127.0.0.1:8765"
 DEFAULT_MAX_TOKENS = 200
-DEFAULT_TIMEOUT = 120  # GPU 加载模型 + 推理可能 30-60s
+DEFAULT_TIMEOUT = 90  # daemon 模型已加载,主要时间在推理
 
 
 def _messages_to_prompt(messages: list[dict]) -> dict:
-    """把 OpenAI messages 转成 llm_call_ms 需要的 {system, user} 格式
-
-    简单做法:system 取首条 system,user 取最后一条 user
-    """
+    """OpenAI messages → {system, user}"""
     system = next((m["content"] for m in messages if m["role"] == "system"), "你是 CoPiano,AI 钢琴老师。")
     user_parts = [m["content"] for m in messages if m["role"] == "user"]
     user = "\n\n".join(user_parts) if user_parts else "你好"
@@ -49,67 +38,86 @@ def _messages_to_prompt(messages: list[dict]) -> dict:
 
 def call_qwen_gpu(
     messages: list[dict],
-    model_id: str = DEFAULT_MODEL,
     max_tokens: int = DEFAULT_MAX_TOKENS,
     timeout: int = DEFAULT_TIMEOUT,
 ) -> str:
-    """通过 SSH 在 GPU 上调 Qwen,返回生成文本
+    """通过 GPU 端 daemon 调 Qwen,返回生成文本
 
     Args:
-        messages: OpenAI 风格 messages 列表
-        model_id: ModelScope/HF 模型 ID
+        messages: OpenAI 风格 messages
         max_tokens: 最大生成 tokens
-        timeout: 超时秒数
+        timeout: SSH 调用超时(秒)
+
+    Returns:
+        生成的回复文本(出错时返回带 [gpu-error] 前缀的字符串)
     """
-    # 1. 写本地 prompt.json
     prompt = _messages_to_prompt(messages)
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False, encoding="utf-8") as f:
-        json.dump(prompt, f, ensure_ascii=False)
-        local_prompt = f.name
+    body = json.dumps({**prompt, "max_tokens": max_tokens}, ensure_ascii=False)
 
-    remote_prompt = "/tmp/copiano_prompt.json"
+    # 转义单引号给 shell
+    body_escaped = body.replace("'", "'\\''")
+
+    # SSH 调 curl
+    curl_cmd = (
+        f"curl -s -X POST {DAEMON_URL}/chat "
+        f"-H 'Content-Type: application/json' "
+        f"-d '{body_escaped}' "
+        f"--max-time {timeout - 5}"
+    )
     try:
-        # 2. scp 到 GPU
-        scp_to_gpu(local_prompt, remote_prompt, timeout=15)
+        out = run_on_gpu(curl_cmd, timeout=timeout)
+    except Exception as e:
+        return f"[gpu-error] {e}"
 
-        # 3. 在 GPU 上跑 llm_call_ms.py
-        # 用 cd 到 copiano/code 目录 + copiano conda env
-        remote_cmd = (
-            f"cd {GPU_SCRIPTS_DIR} 2>/dev/null && "
-            f"/root/autodl-tmp/conda-envs/copiano/bin/python3 "
-            f"llm_call_ms.py {model_id} {remote_prompt} {max_tokens} 2>&1"
-        )
-        out = run_on_gpu(remote_cmd, timeout=timeout)
+    # 过滤 expect 输出(gpu.sh 会输出 spawn / password 提示行)
+    # 真实 stdout 在 password 之后
+    if "password:" in out:
+        out = out.split("password:", 1)[1]
+    # 去除可能的前后空白和首行提示
+    out = out.strip()
 
-        # 4. 解析输出(以 ---RESPONSE--- / ---END--- 为界)
-        m = re.search(r"---RESPONSE---\s*\n(.*?)\n\s*---END---", out, re.DOTALL)
-        if m:
-            return m.group(1).strip()
+    # 解析 JSON 响应
+    try:
+        resp = json.loads(out.strip())
+    except json.JSONDecodeError:
+        return f"[gpu-error] 非 JSON 响应: {out[:200]}"
 
-        # 兜底:如果没找到标记,返回整个 stdout(去掉加载日志)
-        # 启发式:取最后 1000 字符(生成结果通常在末尾)
-        tail = out.strip().split("\n")[-5:]
-        return "\n".join(tail).strip()
-    finally:
-        Path(local_prompt).unlink(missing_ok=True)
+    if "error" in resp:
+        return f"[gpu-error] {resp['error']}"
+
+    return resp.get("text", "")
 
 
-# ----- 直接给 voice_dialog 用 -----
+def gpu_daemon_status() -> dict:
+    """查 daemon 状态(健康检查 + 模型信息)"""
+    out = run_on_gpu(f"curl -s {DAEMON_URL}/health --max-time 5", timeout=15)
+    try:
+        return json.loads(out.strip())
+    except Exception:
+        return {"reachable": False, "raw": out[:200]}
+
+
+# ----- 注入 voice_dialog -----
 def patch_voice_dialog_with_gpu():
     """把 voice_dialog.call_llm 的 backend='gpu' 真正接通"""
     import voice_dialog
 
     def gpu_llm(messages, backend="mock", **kwargs):
         if backend != "gpu":
-            return voice_dialog._mock_llm(messages) if backend == "mock" else None
+            if backend == "mock":
+                return voice_dialog._mock_llm(messages)
+            return None
         try:
             t0 = time.time()
             reply = call_qwen_gpu(messages)
             dt = time.time() - t0
-            print(f"[gpu-llm] ✅ {dt:.1f}s, {len(reply)} chars", file=sys.stderr)
+            if "[gpu-error]" in reply:
+                print(f"[gpu-llm] ❌ {reply}", file=__import__("sys").stderr)
+                return voice_dialog._mock_llm(messages)
+            print(f"[gpu-llm] ✅ {dt:.1f}s, {len(reply)} chars", file=__import__("sys").stderr)
             return reply
         except Exception as e:
-            print(f"[gpu-llm] ❌ {e}", file=sys.stderr)
+            print(f"[gpu-llm] ❌ {e}", file=__import__("sys").stderr)
             return voice_dialog._mock_llm(messages)
 
     voice_dialog.call_llm = gpu_llm
@@ -119,17 +127,28 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--test", action="store_true", help="跑一个测试对话")
+    parser.add_argument("--status", action="store_true", help="查 daemon 状态")
+    parser.add_argument("--speed", action="store_true", help="测 3 次推理速度")
     args = parser.parse_args()
 
-    if args.test:
+    if args.status:
+        print(json.dumps(gpu_daemon_status(), ensure_ascii=False, indent=2))
+    elif args.test:
         msgs = [
             {"role": "system", "content": "你是 CoPiano,AI 钢琴老师。简洁回复,中文为主。"},
             {"role": "user", "content": "你好,简单介绍一下你自己。"},
         ]
         t0 = time.time()
         reply = call_qwen_gpu(msgs)
-        print(f"=== Q (sent via GPU) ===")
-        for m in msgs:
-            print(f"[{m['role']}] {m['content']}")
-        print(f"\n=== A (from Qwen 7B on GPU, {time.time()-t0:.1f}s) ===")
+        print(f"=== A (from Qwen 7B on GPU, {time.time()-t0:.1f}s) ===")
         print(reply)
+    elif args.speed:
+        print("=== 连续 3 次推理速度测试 ===")
+        msgs = [
+            {"role": "system", "content": "你是 CoPiano,AI 钢琴老师。简洁回复。"},
+            {"role": "user", "content": "用一句话介绍巴洛克时期的钢琴风格。"},
+        ]
+        for i in range(3):
+            t0 = time.time()
+            reply = call_qwen_gpu(msgs)
+            print(f"[{i+1}] {time.time()-t0:.1f}s: {reply[:100]}")

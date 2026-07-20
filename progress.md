@@ -1729,3 +1729,46 @@ A (Qwen 7B, 64.6s):
 **耗时**: ~10 分钟
 
 ---
+
+---
+## [2026-07-20 20:38] Phase 5: GPU LLM 持久化 daemon — 60s → 2s 提速 30x(本轮)
+
+**做了什么**:
+- **scripts/llm_daemon.py** (5.5K) — GPU 端持久化 LLM 服务
+  - stdlib `http.server` (免装 Flask)
+  - 模型常驻内存,只加载一次
+  - 端点:`GET /health` + `POST /chat`
+  - 监听 `127.0.0.1:8765`
+- **scripts/llm_gpu_client.py** 重写为 HTTP 客户端(4.5K)
+  - 不再每次 scp + ssh 跑脚本
+  - 一次 SSH 跑 curl 即可
+  - 自动过滤 expect 输出(spawn 行 + password 提示)
+- **GPU 端 daemon 上传 + 启动** (PID 698007,模型 14.23 GiB)
+
+**性能飞跃**:
+| 阶段 | 延迟 | 备注 |
+|------|------|------|
+| v2.0 上一轮 | 60-65s | 每次新 Python 进程 + 重载 Qwen 7B |
+| **v2.0 这一轮** | **1.3-2.6s** | daemon 模型常驻,纯推理 |
+| 提速 | **30-40x** | 实时对话可用 |
+
+**端到端实测**(Mac voice_dialog + 教学引擎 + GPU Qwen 7B):
+```
+Q: 我弹得怎么样       (2.6s) "你 Bach Prelude 91 分,无错音。注意 legato 连贯性"  ← 真引用历史
+Q: 巴洛克时期怎么弹   (2.5s) "对位清晰 + 颗粒触键 + 装饰音规律 + 强弱突然对比"
+Q: 给我一个练习建议   (2.1s) "分声部单独练 Bach Prelude,每天 15 分钟"
+```
+
+回复 88/69/91 字符 — 简洁精准,真用上 latest_eval + KG 上下文
+
+**关键技术点**:
+- `ThreadingHTTPServer` 支持并发
+- `do_sample=False` 关闭采样,保证确定性
+- `do_POST` 严格校验必需字段
+- `expect eof` 输出用 `password:` 分割过滤
+
+**v2.0 进度 7/10** — LLM 通路全通,实时对话可用
+
+**耗时**: ~8 分钟
+
+---
