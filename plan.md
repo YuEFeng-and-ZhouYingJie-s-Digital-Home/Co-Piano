@@ -389,3 +389,4 @@ piano-ai-corpus/
 | 2026-07-20 17:14 | Phase 4.1 | **实时反馈引擎** | real_time_feedback.py,2s 滑窗+规则引擎,< 10ms 延迟 | 实时反馈骨架 |
 | 2026-07-20 17:15 | Phase 4.2 | **Basic Pitch 集成** | audio_to_midi.py,Spotify 开源 + librosa fallback,440Hz 检出 A4 1.09s | 实时反馈核心依赖 |
 | 2026-07-20 17:30 | Phase 4.3 | **视频手型骨架** | video_hand_tracker.py,OpenCV 流 + MediaPipe 占位 + 手型分析 | Phase 4 视频端 |
+| 2026-07-20 17:45 | Phase 4.4 | **音频→实时反馈链路 demo** | realtime_audio_demo.py,2s 滑窗+librosa pYIN+评估+反馈,链路完整 | Phase 4 关键验证 |

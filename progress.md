@@ -1272,3 +1272,49 @@ FeedbackEngine(规则 + 冷却)
 **耗时**: ~8 分钟
 
 ---
+## [2026-07-20 17:45] Phase 4.4: 完整音频→实时反馈链路 demo(本轮)
+
+**做了什么**:
+- **写 `scripts/realtime_audio_demo.py`** — Phase 4 端到端 demo
+  - 音频加载(librosa)
+  - 2s 滑窗,1s 步进
+  - 窗口内 librosa pYIN 转 MIDI events
+  - RealTimeEvaluator 喂入 events
+  - FeedbackEngine 触发反馈
+  - 汇总报告
+- **跑通测试**(3 音 2.5s 音频):
+  - 2 窗口处理
+  - 第 1 窗口 7 events,触发 "⚠ 节奏不稳:std 384ms"
+  - 完整链路:音频→MIDI→评估→反馈 ✓
+
+**关键发现**:
+- **链路完整**:音频→MIDI events→评估→反馈✓
+- **延迟瓶颈**:librosa pYIN 2.26s/窗口(超目标 10x)
+- **优化方向**:用 Basic Pitch 替代 pYIN(预估 100ms/窗口)
+- 演示模式 OK,生产模式需优化
+
+**Phase 4 实时反馈链路**:
+```
+麦克风/音频文件
+  ↓
+滑窗(2s, 1s 步进)
+  ↓
+音高检测(pYIN 现在 / Basic Pitch 优化后)
+  ↓
+MIDI events → RealTimeEvaluator
+  ↓
+FeedbackEngine + 2s 冷却
+  ↓
+即时反馈(< 10ms 评估,但音高检测是瓶颈)
+```
+
+**Phase 4 完成度**(4/5):
+- ✅ 实时反馈引擎
+- ✅ Basic Pitch
+- ✅ 视频手型骨架
+- ✅ 音频→反馈链路 demo
+- ⏳ 集成到 copiano.py
+
+**耗时**: ~10 分钟
+
+---
