@@ -538,3 +538,23 @@ piano-ai-corpus/
   - 累计 v3.0:37 → 38 脚本,论文 v3 草稿配齐图表,可直接投稿
   - 下一个循环 (CYCLE 12) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT / README/CHANGELOG
 ]
+
+[CYCLE_12_DONE: 2026-07-21 02:35 — README v3.0 + CHANGELOG 创建。
+  - 实践:README.md (309 行, 7.9K) + CHANGELOG.md (125 行, 2.6K)
+  - README v3.0 关键内容:
+    - 5 维多模态表 (D1-D5) — 业界首个
+    - 11 cycles 24h 路线图
+    - 6 子命令快速开始
+    - 38 脚本清单
+    - 5 维架构图 (ASCII)
+    - 系统要求 (最低/推荐/可选)
+    - 测试统计 (412/413 99.8%)
+    - 论文图表 (6 PNG + 6 SVG)
+    - 引用格式 (BibTeX)
+  - CHANGELOG.md:
+    - 6 个版本 (v3.0/v2.0/v1.0/v0.5/v0.3/v0.1)
+    - 11 cycles 详细记录
+    - 累计统计 (17→38 脚本, 138→813 论文)
+  - 累计 v3.0:38 脚本 + 7 知识库 + 1 论文 + 6 图表 + README/CHANGELOG = 完整发布就绪
+  - 下一个循环 (CYCLE 13) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
+]
