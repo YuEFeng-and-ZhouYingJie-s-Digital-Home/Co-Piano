@@ -393,3 +393,4 @@ piano-ai-corpus/
 | 2026-07-20 18:00 | Phase 4.5 | **Mac App SwiftUI 外壳** | macos/CoPianoApp.swift 7.5K 字符,评分圆+反馈区+录音控制 | Phase 4 完成 |
 | 2026-07-20 18:18 | Phase 4.6 | **demo_gpu.sh 稳定脚本** | 5 步拆分,6 选项,抗 SSH 中断 | 用户最稳 GPU 入口 |
 | 2026-07-20 18:30 | Phase 4.7 | **Executive Summary 更新** | 加 Phase 4 + 17 脚本 + Mac App + 57 轮时间线 | 项目最终概览 |
+| 2026-07-20 18:45 | Phase 4.8 | **Phase 4 完成报告** | notes/phase4_report.md,4 层 + 实时,6 步流程 6 轮 | Phase 4 完结报告 |
