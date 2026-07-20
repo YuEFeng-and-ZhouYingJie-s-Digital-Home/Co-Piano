@@ -1,0 +1,266 @@
+{
+  "pass": 52,
+  "fail": 0,
+  "tests": [
+    {
+      "name": "student_cohort_init",
+      "pass": true,
+      "detail": "id=s001, age=30"
+    },
+    {
+      "name": "default_initial_scores",
+      "pass": true,
+      "detail": "has pitch: 70.0"
+    },
+    {
+      "name": "ab_result_init",
+      "pass": true,
+      "detail": "n_control=10"
+    },
+    {
+      "name": "to_dict",
+      "pass": true,
+      "detail": "keys: ['n_control', 'n_treatment', 'duration_days', 'dimensions', 'control_pre']"
+    },
+    {
+      "name": "mean_basic",
+      "pass": true,
+      "detail": "mean=3"
+    },
+    {
+      "name": "mean_empty",
+      "pass": true,
+      "detail": "empty=0"
+    },
+    {
+      "name": "variance_basic",
+      "pass": true,
+      "detail": "var=2.5"
+    },
+    {
+      "name": "std_dev_basic",
+      "pass": true,
+      "detail": "std=1.58"
+    },
+    {
+      "name": "cohens_d_basic",
+      "pass": true,
+      "detail": "|d|=1.265, expected=1.265"
+    },
+    {
+      "name": "cohens_d_zero",
+      "pass": true,
+      "detail": "d=0.0"
+    },
+    {
+      "name": "cohens_d_large",
+      "pass": true,
+      "detail": "|d|=79.20 (large)"
+    },
+    {
+      "name": "t_test_significant",
+      "pass": true,
+      "detail": "t=5.00, p=0.0011"
+    },
+    {
+      "name": "t_positive",
+      "pass": true,
+      "detail": "t=5.00"
+    },
+    {
+      "name": "t_test_ns",
+      "pass": true,
+      "detail": "t=0.00, p=1.0000"
+    },
+    {
+      "name": "normal_cdf_0",
+      "pass": true,
+      "detail": "cdf(0)=0.5000000005248086"
+    },
+    {
+      "name": "normal_cdf_2",
+      "pass": true,
+      "detail": "cdf(2)=0.9772"
+    },
+    {
+      "name": "normal_cdf_-2",
+      "pass": true,
+      "detail": "cdf(-2)=0.0228"
+    },
+    {
+      "name": "t_cdf_0",
+      "pass": true,
+      "detail": "t_cdf(0,30)=0.5"
+    },
+    {
+      "name": "t_cdf_2_df30",
+      "pass": true,
+      "detail": "t_cdf(2,30)=0.9727"
+    },
+    {
+      "name": "label_negligible",
+      "pass": true,
+      "detail": "0.1=negligible"
+    },
+    {
+      "name": "label_small",
+      "pass": true,
+      "detail": "0.3=small"
+    },
+    {
+      "name": "label_medium",
+      "pass": true,
+      "detail": "0.6=medium"
+    },
+    {
+      "name": "label_large",
+      "pass": true,
+      "detail": "1.0=large"
+    },
+    {
+      "name": "label_negative",
+      "pass": true,
+      "detail": "-0.4=small (abs)"
+    },
+    {
+      "name": "simulate_7_days",
+      "pass": true,
+      "detail": "len=8 (day 0-7)"
+    },
+    {
+      "name": "scores_in_range",
+      "pass": true,
+      "detail": "post scores: {'pitch': 77.69294305260748, 'expressiveness': 62.70550999007252, 'hand_pose': 80.51666562385064, 'rhythm': 81.16177530532892, 'sight_reading': 65.22418132731603}"
+    },
+    {
+      "name": "treatment_pitch_higher",
+      "pass": true,
+      "detail": "control=72.1, treatment=75.6"
+    },
+    {
+      "name": "treatment_sight_higher",
+      "pass": true,
+      "detail": "control sight=60.7, treatment=63.5"
+    },
+    {
+      "name": "senior_slower",
+      "pass": true,
+      "detail": "senior gain=2.4, normal gain=5.6"
+    },
+    {
+      "name": "control_count",
+      "pass": true,
+      "detail": "n=10"
+    },
+    {
+      "name": "treatment_count",
+      "pass": true,
+      "detail": "n=10"
+    },
+    {
+      "name": "control_group",
+      "pass": true,
+      "detail": "all control"
+    },
+    {
+      "name": "treatment_group",
+      "pass": true,
+      "detail": "all treatment"
+    },
+    {
+      "name": "result_dimensions",
+      "pass": true,
+      "detail": "dims: ['pitch', 'expressiveness', 'hand_pose', 'rhythm', 'sight_reading']"
+    },
+    {
+      "name": "result_stats",
+      "pass": true,
+      "detail": "stats: ['pitch', 'expressiveness', 'hand_pose', 'rhythm', 'sight_reading']"
+    },
+    {
+      "name": "result_effect_sizes",
+      "pass": true,
+      "detail": "d: ['pitch', 'expressiveness', 'hand_pose', 'rhythm', 'sight_reading']"
+    },
+    {
+      "name": "treatment_wins_all",
+      "pass": true,
+      "detail": "treatment wins 5/5 dims"
+    },
+    {
+      "name": "d_pitch_in_range",
+      "pass": true,
+      "detail": "d=0.208"
+    },
+    {
+      "name": "d_expressiveness_in_range",
+      "pass": true,
+      "detail": "d=0.312"
+    },
+    {
+      "name": "d_hand_pose_in_range",
+      "pass": true,
+      "detail": "d=0.409"
+    },
+    {
+      "name": "d_rhythm_in_range",
+      "pass": true,
+      "detail": "d=0.678"
+    },
+    {
+      "name": "d_sight_reading_in_range",
+      "pass": true,
+      "detail": "d=0.433"
+    },
+    {
+      "name": "has_title",
+      "pass": true,
+      "detail": "title ok"
+    },
+    {
+      "name": "has_table",
+      "pass": true,
+      "detail": "table ok"
+    },
+    {
+      "name": "has_summary",
+      "pass": true,
+      "detail": "has 效应"
+    },
+    {
+      "name": "has_conclusion",
+      "pass": true,
+      "detail": "has 结论"
+    },
+    {
+      "name": "json_serializable",
+      "pass": true,
+      "detail": "len=4094"
+    },
+    {
+      "name": "json_round_trip",
+      "pass": true,
+      "detail": "n_control=5"
+    },
+    {
+      "name": "ab_test_speed",
+      "pass": true,
+      "detail": "1.9ms for 30/group × 7 days"
+    },
+    {
+      "name": "same_seed_same_result",
+      "pass": true,
+      "detail": "deterministic"
+    },
+    {
+      "name": "beta_half_1_1",
+      "pass": true,
+      "detail": "I_0.5(1,1)=0.5000"
+    },
+    {
+      "name": "has_summary",
+      "pass": true,
+      "detail": "summary: A/B 测试完成: 5 per group × 3 天\n平均效应量 Cohen's d = 0.47 (small)\n显"
+    }
+  ]
+}

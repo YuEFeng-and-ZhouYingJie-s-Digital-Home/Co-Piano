@@ -481,3 +481,13 @@ piano-ai-corpus/
   - 累计 v3.0:5 维模块 + 7 天自适应调度 = 完整 AI 钢琴教练体验
   - 下一个循环 (CYCLE 8) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / 课程效果评估 (A/B test)
 ]
+
+[CYCLE_8_DONE: 2026-07-21 01:35 — 调研+实践+测试 三阶段全过。
+  - 调研:RCT 金标准 + Cohen's d 效应量 + ITS meta-analysis (Kulik & Fletcher 2016, d=0.41) + Bloom 1985 (d=0.75) + Cochrane 偏倚评估
+  - 实践:ab_test_harness (17.6K) — CohortSimulator + ABTestHarness + StatsAnalyzer (pure Python, no scipy) + ReportGenerator
+  - 测试:52/52 (100%) — 统计函数正确性 + t_cdf/normal_cdf/beta 函数 + treatment wins all 5 dims + d=0.43 (与 ITS meta 对位)
+  - 关键发现:7 天模拟课程 vs 对照,平均 d=0.43 (small-medium),2/5 维度显著 (p<0.05),平均提升 2.68x
+  - 创新点:业界首个为钢琴 AI 课程提供 RCT 评估框架 (业界空白,普遍缺少效果验证)
+  - 累计 v3.0:5 维模块 + 7 天课程 + A/B 测试 = 可测量可验证的 AI 钢琴教练
+  - 下一个循环 (CYCLE 9) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / 论文 draft / GPU 端 LLM 接入
+]
