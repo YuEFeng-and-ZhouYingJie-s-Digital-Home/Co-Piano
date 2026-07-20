@@ -1,0 +1,248 @@
+{
+  "eval": {
+    "score": 93.5,
+    "pitch_accuracy": 0.875,
+    "note_completeness": 1.0,
+    "timing_mean_ms": -6.3,
+    "timing_std_ms": 10.8,
+    "velocity_correlation": 0.0,
+    "n_ref": 8,
+    "n_user": 8,
+    "n_matched": 8,
+    "n_pitch_errors": 1,
+    "pitch_error_samples": [
+      {
+        "type": "wrong",
+        "ref_pitch": 64,
+        "user_pitch": 63,
+        "ref_note": 4,
+        "user_note": 3
+      }
+    ]
+  },
+  "align": {
+    "score_duration_s": 4.05,
+    "perf_duration_s": 4.05,
+    "n_alignment_points": 17,
+    "alignment_quality": 0.1874,
+    "first_5_alignment": [
+      {
+        "score_time_s": 0.0,
+        "perf_time_s": 0.0
+      },
+      {
+        "score_time_s": 0.25,
+        "perf_time_s": 0.2
+      },
+      {
+        "score_time_s": 0.5,
+        "perf_time_s": 0.45
+      },
+      {
+        "score_time_s": 0.75,
+        "perf_time_s": 0.75
+      },
+      {
+        "score_time_s": 1.0,
+        "perf_time_s": 1.0
+      }
+    ],
+    "last_5_alignment": [
+      {
+        "score_time_s": 3.0,
+        "perf_time_s": 3.0
+      },
+      {
+        "score_time_s": 3.25,
+        "perf_time_s": 3.25
+      },
+      {
+        "score_time_s": 3.5,
+        "perf_time_s": 3.5
+      },
+      {
+        "score_time_s": 3.75,
+        "perf_time_s": 3.75
+      },
+      {
+        "score_time_s": 4.0,
+        "perf_time_s": 4.0
+      }
+    ]
+  },
+  "style": {
+    "midi_path": "/root/autodl-tmp/copiano/data/test_user.mid",
+    "duration_s": 8.0,
+    "n_notes": 8,
+    "key": "C minor",
+    "time_signature": "4/4",
+    "tempo_bpm": 120,
+    "pitch": {
+      "min": 60.0,
+      "max": 72.0,
+      "center": 66.0,
+      "range_semitones": 12.0
+    },
+    "velocity": {
+      "min": 60,
+      "max": 85,
+      "mean": 71.2,
+      "std": 7.0
+    },
+    "texture": {
+      "note_density_per_sec": 1.0,
+      "avg_simultaneous_notes": 2.0,
+      "max_simultaneous_notes": 2
+    },
+    "period_hint": "Baroque",
+    "period_confidence": 0.71,
+    "style_hints": [
+      "音符稀疏,可能为巴洛克时期或练习曲",
+      "音域窄(<20 半音),练习曲或简单旋律",
+      "力度均匀,机械式弹奏"
+    ]
+  },
+  "piece": {
+    "name": "Minuet in G",
+    "composer": "Bach",
+    "key": "G",
+    "period": "Baroque",
+    "difficulty": 2,
+    "form": "AB",
+    "style_notes": "三拍子优雅,带装饰音,弱起注意"
+  },
+  "prompt": {
+    "system": "你是一位有 30 年经验的古典钢琴教师,熟悉巴洛克、古典、浪漫三个时期。\n你的教学风格:\n- 先肯定学生做得好的地方(必须)\n- 然后指出具体问题(音/节奏/力度/表现力)\n- 解释\"为什么\"(乐理或风格根据)\n- 给出可执行的练习建议(具体到音/小节)\n- 用比喻和具体例子,避免抽象术语\n- 简短(200 字以内),不要用\"加油\"\"你可以的\"等空话\n",
+    "user": "## 教学场景\n学生正在练习:Minuet in G(Bach,Baroque时期,难度2)\n当前小节:1 / 总小节数:16\n调性:G\n\n## 评估结果(来自 MIDI 自动评估)\n- 总分:93.5 / 100\n- 错音率:87.5% (1 个错音)\n- 节奏偏差:均值 -6.3ms,标准差 10.8ms\n- 力度相关性:0.00\n- 完整度:100.0%\n\n## 错音细节(最多 5 个)\n  - 小节 1: 4 → 弹成了 3(半音差)\n\n## 节奏异常小节(若有)\n  (无明显异常)\n\n## 乐理知识上下文(RAG 检索)\n### 时期风格\n通奏低音主导,对位严密,装饰音即兴,常用羽管键琴音色\n\n### 该时期常见错误\n  - 装饰音不规范: 巴洛克装饰音(trill/mordent)无固定时值,需依风格加装饰\n  - 声部独立差: 对位作品各声部须独立,常被压成单层旋律\n\n### 类似作品\n  - Prelude in C Major (Bach, 难度 1)\n  - Minuet in G (Bach, 难度 2)\n\n## 你的任务\n写一段简短(150-250 字)、有温度、有\"为什么\"的教学反馈。\n要求:\n1. 一句话肯定(必须)\n2. 指出 1-2 个最关键的具体问题(具体到小节/音)\n3. 解释为什么这是问题(乐理/风格)\n4. 给出 1 个可立即练习的建议\n",
+    "meta": {
+      "piece": "Minuet in G",
+      "composer": "Bach",
+      "period": "Baroque",
+      "measure": 1,
+      "score": 93.5
+    }
+  },
+  "llm_response": "很好，你已经掌握了大部分的音符和节奏。但在小节1中，你将第4拍弹成了3，这是一个半音的错误。在巴洛克时期，准确把握每个音符的音高非常重要，因为这直接影响到作品的和谐与美感。你可以尝试单独练习这个小节，重点放在第4拍上，确保弹出正确的音高。比如，你可以先慢速弹奏，专注于这个音，然后再逐渐加快速度。这样可以帮助你更好地理解和记忆正确的音高。",
+  "aggregation": {
+    "n_measures": 8,
+    "global": {
+      "avg_score": 92.0,
+      "min_score": 87.5,
+      "max_score": 93.5,
+      "avg_pitch_accuracy": 0.875,
+      "total_errors": 3
+    },
+    "error_hotspots": [
+      {
+        "measure": 1,
+        "n_errors": 1,
+        "score": 87.5,
+        "errors": [
+          {
+            "type": "wrong",
+            "ref_pitch": 64,
+            "user_pitch": 63,
+            "ref_note": 4,
+            "user_note": 3
+          }
+        ]
+      },
+      {
+        "measure": 2,
+        "n_errors": 1,
+        "score": 89.5,
+        "errors": [
+          {
+            "type": "wrong",
+            "ref_pitch": 64,
+            "user_pitch": 63,
+            "ref_note": 4,
+            "user_note": 3
+          }
+        ]
+      },
+      {
+        "measure": 3,
+        "n_errors": 1,
+        "score": 91.5,
+        "errors": [
+          {
+            "type": "wrong",
+            "ref_pitch": 64,
+            "user_pitch": 63,
+            "ref_note": 4,
+            "user_note": 3
+          }
+        ]
+      }
+    ],
+    "weak_measures": [
+      {
+        "measure": 1,
+        "score": 87.5,
+        "errors": 1
+      },
+      {
+        "measure": 2,
+        "score": 89.5,
+        "errors": 1
+      },
+      {
+        "measure": 3,
+        "score": 91.5,
+        "errors": 1
+      }
+    ],
+    "strong_measures": [
+      {
+        "measure": 1,
+        "score": 93.5
+      },
+      {
+        "measure": 2,
+        "score": 93.5
+      },
+      {
+        "measure": 3,
+        "score": 93.5
+      }
+    ],
+    "timing_trend": {
+      "mean_ms": -6.3,
+      "std_ms": 10.8,
+      "drift": "slowing down"
+    },
+    "overall_judgment": "良好,小幅修正后即可"
+  },
+  "aggregated_prompt": {
+    "system": "你是一位有 30 年经验的古典钢琴教师。你刚听完整首曲子,现在给出一份段落级 + 全曲级的综合反馈。",
+    "user": "## 教学场景\n学生刚完成:Minuet in G(Bach,Baroque)\n总小节数:8\n整体判断:**良好,小幅修正后即可**\n\n## 全曲统计\n- 平均分:92.0 / 100(范围 87.5-93.5)\n- 平均错音率:87.5%\n- 总错音数:3\n- 节奏趋势:slowing down(均值 -6.3ms, 稳定性 std 10.8ms)\n\n## 错音热点 TOP 3\n  - 小节 1: 1 个错音(score 87.5)\n  - 小节 2: 1 个错音(score 89.5)\n  - 小节 3: 1 个错音(score 91.5)\n\n## 弱项小节 TOP 3\n  - 小节 1: score 87.5, 1 错音\n  - 小节 2: score 89.5, 1 错音\n  - 小节 3: score 91.5, 1 错音\n\n## 强项小节 TOP 3\n  - 小节 1: score 93.5\n  - 小节 2: score 93.5\n  - 小节 3: score 93.5\n\n## 你的任务\n写一份 250-400 字的综合反馈,分三段:\n1. **肯定**(100 字):突出强项小节,具体到哪段做得好\n2. **改进建议**(150 字):针对错音热点和弱项小节,具体到小节号和原因\n3. **下一步推荐**(100 字):根据整体判断,推荐下一步(继续精炼 / 改练其他小节 / 进入新曲)\n"
+  },
+  "aggregated_llm_response": "### 综合反馈\n\n#### 1. 肯定\n在这次演奏中，你展现了出色的技巧和音乐表现力。特别是在小节1、2和3，你的表现非常出色，得分分别为93.5、93.5和91.5，这表明你在这些部分已经掌握了正确的节奏和音准。特别是在小节1，你的演奏流畅且富有表现力，展示了良好的音乐感觉和控制力。\n\n#### 2. 改进建议\n尽管整体表现良好，但仍有几个小节需要进一步改进。首先，在小节1和2，虽然得分较高，但都出现了一个错音（分别是87.5和89.5）。这可能是因为在快速转换音符时，手指的协调性还不够熟练。建议你在练习时放慢速度，专注于每个音符的准确性和连贯性。此外，小节3也出现了一个错音（91.5），这可能是由于节奏上的细微变化导致的。建议你在练习时特别注意节奏的变化点，确保每个音符都能准确无误地演奏出来。\n\n#### 3. 下一步推荐\n鉴于你的整体表现良好，我建议你继续精炼这些强项小节，同时针对错音热点进行针对性练习。可以尝试使用节拍器来帮助你更好地掌握节奏，并通过反复练习来提高手指的灵活性和准确性。一旦这些小节得到巩固，你可以考虑进入下一小节的学习，逐步提升整个曲目的演奏水平。",
+  "recommendations": [
+    {
+      "piece": "Sonata K.545 1st Mvt",
+      "composer": "Mozart",
+      "difficulty": 3,
+      "period": "Classical",
+      "ucb_score": "inf",
+      "reason": "基于 cluster 4 ({'difficulty_bias': 1, 'style_bias': None}) 匹配难度 3 Classical"
+    },
+    {
+      "piece": "Für Elise",
+      "composer": "Beethoven",
+      "difficulty": 4,
+      "period": "Classical",
+      "ucb_score": "inf",
+      "reason": "基于 cluster 4 ({'difficulty_bias': 1, 'style_bias': None}) 匹配难度 4 Classical"
+    },
+    {
+      "piece": "Träumerei",
+      "composer": "Schumann",
+      "difficulty": 4,
+      "period": "Romantic",
+      "ucb_score": "inf",
+      "reason": "基于 cluster 4 ({'difficulty_bias': 1, 'style_bias': None}) 匹配难度 4 Romantic"
+    }
+  ]
+}

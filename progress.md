@@ -1355,3 +1355,34 @@ FeedbackEngine + 2s 冷却
 **耗时**: ~10 分钟
 
 ---
+## [2026-07-20 18:18] Phase 4.6: demo_gpu.sh 稳定 GPU demo(本轮)
+
+**做了什么**:
+- **写 `demo_gpu.sh`** — 解决 quickstart.sh scp 链被 SSH 中断的问题
+  - 拆 5 步:上传 MIDI / 上传脚本 / 跑 / 拷回 / 摘要
+  - 6 个选项:--no-llm / --piece X / --skip-upload / --skip-run / --all
+  - 默认曲目 Minuet in G,可改
+- **跑通测试**:
+  - --no-llm --all 模式
+  - 5 步全成功
+  - 聚类 + 推荐完整
+  - 报告 2227 字符
+  - 摘要展示 score 93.5/错音 1/推荐 Mozart
+
+**关键发现**:
+- quickstart 的 scp 链会被 SSH eof 中断(scp: Connection closed)
+- demo_gpu 拆分后每个 scp 独立 expect,不会中断
+- 5 步流程对用户更友好(看每步状态)
+
+**用法示例**:
+```bash
+bash demo_gpu.sh                # 默认(7B LLM,~3 分钟)
+bash demo_gpu.sh --no-llm      # 不调 LLM,~30 秒
+bash demo_gpu.sh --all         # 预置 5 首 history 跑 Phase 3
+bash demo_gpu.sh --skip-upload # 脚本已存在时跳过
+bash demo_gpu.sh --piece "Für Elise"  # 换曲目
+```
+
+**耗时**: ~10 分钟(写 + 测)
+
+---

@@ -391,3 +391,4 @@ piano-ai-corpus/
 | 2026-07-20 17:30 | Phase 4.3 | **视频手型骨架** | video_hand_tracker.py,OpenCV 流 + MediaPipe 占位 + 手型分析 | Phase 4 视频端 |
 | 2026-07-20 17:45 | Phase 4.4 | **音频→实时反馈链路 demo** | realtime_audio_demo.py,2s 滑窗+librosa pYIN+评估+反馈,链路完整 | Phase 4 关键验证 |
 | 2026-07-20 18:00 | Phase 4.5 | **Mac App SwiftUI 外壳** | macos/CoPianoApp.swift 7.5K 字符,评分圆+反馈区+录音控制 | Phase 4 完成 |
+| 2026-07-20 18:18 | Phase 4.6 | **demo_gpu.sh 稳定脚本** | 5 步拆分,6 选项,抗 SSH 中断 | 用户最稳 GPU 入口 |
