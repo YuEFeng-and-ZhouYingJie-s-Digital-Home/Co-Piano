@@ -394,3 +394,5 @@ piano-ai-corpus/
 | 2026-07-20 18:18 | Phase 4.6 | **demo_gpu.sh 稳定脚本** | 5 步拆分,6 选项,抗 SSH 中断 | 用户最稳 GPU 入口 |
 | 2026-07-20 18:30 | Phase 4.7 | **Executive Summary 更新** | 加 Phase 4 + 17 脚本 + Mac App + 57 轮时间线 | 项目最终概览 |
 | 2026-07-20 18:45 | Phase 4.8 | **Phase 4 完成报告** | notes/phase4_report.md,4 层 + 实时,6 步流程 6 轮 | Phase 4 完结报告 |
+
+[DONE: 2026-07-20 19:02 — v1.0 正式封版,59 轮 cron 推进完成(Phase 1+2+3+4 全部完结,arxiv 138 篇调研,17 脚本 + SwiftUI App + 8 报告)。后续若用户回归:从 v1.0 tag 切回主分支继续 v1.1 开发;若不再继续:归档即可。]
