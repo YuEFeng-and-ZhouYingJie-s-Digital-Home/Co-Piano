@@ -1942,3 +1942,54 @@ python3 scripts/v2_smoke_test.py
 - 等待用户开 v2.1 或归档
 
 ---
+
+---
+## [2026-07-20 22:35] Phase 6 CYCLE 1: 调研阶段(本轮)
+
+**循环框架**(持久推进):
+```
+Cycle N:
+  阶段 1: 调研(市场 + arxiv)
+  阶段 2: 实践(从调研找方向,开发)
+  阶段 3: 测试(网络 + 自生成数据)
+  每个 cron tick 跑 1 阶段 1 步
+```
+
+**Cycle 1 - 阶段 1(本轮调研)做了什么**:
+- **web 搜索**(8 个数据源):知乎、什么值得买、应用宝、豌豆荚、官网、企鹅号、CSDN、网易
+- **市场产品调研**:30+ 产品
+  - 国际 6: Simply Piano / Flowkey / Piano Marvel / Yousician / Synthesia
+  - 国内 24+: AI 音乐学园(3000万+用户)/ 西西魔法钢琴 / 小叶子 / 小马 AI 陪练 等
+- **4 大评测维度**(2026 主流):AI 识别 / 课程体系 / 激励机制 / 适龄性
+- **价格样本**:$19.99/月(Flowkey)~¥199 永久(AI 音乐学园)
+- **用户痛点汇总**:8 项高频(没人指导细节 / 不会识谱 / 不知练什么 / 进度不连贯 等)
+- **知识库写入**:`notes/market_knowledge.md` (4.4K, 9 章节)
+
+**CoPiano 差异化护城河**(2026 无人做):
+1. AI 古典钢琴老师 + 实时语音对话
+2. 跨会话长期记忆
+3. 古典时期风格敏感(巴洛克/古典/浪漫)
+4. 自适应课程规划(7天计划)
+5. LLM + KG 推理(具体到小节+风格)
+6. 5 维评估(音高/节奏/力度/完整度/风格)
+
+**arxiv 关键词扩展**(+ 8 组):
+- AI piano tutor
+- real-time music feedback mobile
+- adaptive music curriculum
+- long-term memory conversational AI
+- emotion recognition music learning
+- automatic music assessment
+- piano student AI practice
+- music knowledge graph education
+
+**后台论文抓取**(bg_dab9ad6a):8 新查询 × 32 = 256 尝试,去重后预计 +150-200 篇
+- 当前论文 693 → 目标 850-900
+
+**Cycle 1 阶段 2 / 3**(下轮):
+- 实践:基于市场调研,选 1-2 个具体改进点(成人友好模式?古典风格深度?)
+- 测试:用网络数据(MAESTRO 公开数据集)+ 自生成 MIDI
+
+**耗时**: ~12 分钟(满了)
+
+---

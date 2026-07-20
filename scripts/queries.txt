@@ -39,3 +39,11 @@ abs:chinese+AND+abs:ASR                                            # 中文 ASR
 abs:open-source+AND+abs:TTS                                        # 开源 TTS
 abs:real-time+AND+abs:interactive+AND+abs:music                     # 实时交互音乐
 abs:multimodal+AND+abs:feedback+AND+abs:student                     # 多模态学生反馈
+abs:AI+piano+tutor                                                    # AI 钢琴老师(竞争对位)
+abs:real-time+AND+abs:music+AND+abs:feedback+AND+abs:mobile            # 实时音乐反馈(移动端)
+abs:adaptive+AND+abs:music+AND+abs:curriculum                          # 自适应音乐课程
+abs:long-term+AND+abs:memory+AND+abs:conversational+AND+abs:AI         # 长期记忆对话 AI
+abs:emotion+AND+abs:recognition+AND+abs:music+AND+abs:learning          # 情感识别 + 音乐学习
+abs:automatic+AND+abs:music+AND+abs:assessment                          # 自动音乐评估
+abs:practice+AND+abs:AI+AND+abs:piano+AND+abs:student                    # 钢琴学生 AI 练习
+abs:music+AND+abs:knowledge+AND+abs:graph+AND+abs:education             # 音乐知识图谱教育
