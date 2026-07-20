@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-20T22:46:56.923890",
+  "timestamp": "2026-07-21T03:50:58.321349",
   "tests": {
     "network_data": {
       "available": true,
@@ -134,36 +134,36 @@
         "bpm": 60,
         "beats": 4,
         "measures": 4,
-        "elapsed_s": 16.144,
+        "elapsed_s": 16.14,
         "expected_s": 16.0,
-        "timing_accuracy": 0.991,
+        "timing_accuracy": 0.9913,
         "ok": true
       },
       {
         "bpm": 90,
         "beats": 4,
         "measures": 2,
-        "elapsed_s": 5.394,
+        "elapsed_s": 5.411,
         "expected_s": 5.333,
-        "timing_accuracy": 0.9887,
+        "timing_accuracy": 0.9854,
         "ok": true
       },
       {
         "bpm": 120,
         "beats": 4,
         "measures": 2,
-        "elapsed_s": 4.053,
+        "elapsed_s": 4.079,
         "expected_s": 4.0,
-        "timing_accuracy": 0.9868,
+        "timing_accuracy": 0.9802,
         "ok": true
       },
       {
         "bpm": 180,
         "beats": 3,
         "measures": 4,
-        "elapsed_s": 4.107,
+        "elapsed_s": 4.097,
         "expected_s": 4.0,
-        "timing_accuracy": 0.9732,
+        "timing_accuracy": 0.9757,
         "ok": true
       }
     ],
@@ -176,7 +176,7 @@
           "backend": "mock",
           "latency_s": 0.0,
           "reply_len": 2485,
-          "reply_preview": "# 🎹 你的 7 天练习计划\n_生成时间:2026-07-20 22:47 | 每天 30 分钟_\n\n## Day 1 (2026-07-20) — 新曲导入\n",
+          "reply_preview": "# 🎹 你的 7 天练习计划\n_生成时间:2026-07-21 03:51 | 每天 30 分钟_\n\n## Day 1 (2026-07-21) — 新曲导入\n",
           "ok": true
         },
         {
@@ -192,7 +192,7 @@
           "layer": "gpu",
           "query": "我现在应该重点练什么",
           "backend": "gpu",
-          "latency_s": 2.53,
+          "latency_s": 1.7,
           "reply_len": 87,
           "reply_preview": "继续保持当前的优秀表现！可以尝试加入一些对位技巧的练习，比如Bach的二声部或三声部作品，提升你的音乐织体感和独立手指技巧。同时，适当增加一些速度练习，挑战自己",
           "ok": true

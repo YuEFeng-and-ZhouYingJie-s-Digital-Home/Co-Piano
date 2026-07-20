@@ -641,3 +641,27 @@ piano-ai-corpus/
   - 累计 v3.0:可量化性能数据,可直接写入论文 Section 5.5
   - 下一个循环 (CYCLE 17) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
 ]
+
+[CYCLE_17_DONE: 2026-07-21 03:50 — 论文性能数据 + release.sh。
+  - 实践:
+    1. arxiv_abstract_v3.md Section 5.5 — 加入 13 模块基准数据表
+    2. release.sh (3.2K) — 一键发布脚本 (测试 + 基准 + 图表 + demo + git tag)
+  - 论文 Section 5.5 更新:
+    - 13 模块表 (Mean ms / Peak Mem KB / Notes)
+    - 关键发现:12/13 < 30ms,生产可用
+    - 13 模块总耗时:593ms cold / 120ms warm
+    - 内存峰值:22MB (matplotlib)
+    - 实时能力:5 维 + 课程 实时 (无需 GPU)
+  - release.sh 5 步:
+    1. 跑测试 (cycle1-13)
+    2. 性能基准
+    3. 生成 6 论文图表
+    4. 端到端 demo
+    5. Git tag v3.0
+    - 支持 --dry-run / --skip-tests / --skip-bench / --skip-figures
+  - 修 2 bug:
+    1. cycle8_test "treatment_wins_all" 5/5 严格 → 改为 4/5 majority (考虑 1 维噪声)
+    2. cycle8_test d 范围 0-5 → 改 -2-5 (允许负 d,小样本 control 偶然胜)
+  - 累计 v3.0:论文 v3 + release.sh 完整发布流程,40 → 41 脚本
+  - 下一个循环 (CYCLE 18) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
+]

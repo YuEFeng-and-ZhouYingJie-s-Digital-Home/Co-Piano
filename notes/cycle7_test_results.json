@@ -5,7 +5,7 @@
     {
       "name": "has_8_block_types",
       "pass": true,
-      "detail": "keys: {'weakness_drill', 'sight_reading', 'warmup_hand', 'main_piece', 'warmup_pitch', 'review_piece', 'expressiveness', 'cooldown_relax'}"
+      "detail": "keys: {'warmup_pitch', 'review_piece', 'cooldown_relax', 'expressiveness', 'weakness_drill', 'main_piece', 'sight_reading', 'warmup_hand'}"
     },
     {
       "name": "block_warmup_pitch_complete",
@@ -225,12 +225,12 @@
     {
       "name": "core_blocks_used",
       "pass": true,
-      "detail": "used: {'weakness_drill', 'sight_reading', 'warmup_hand', 'main_piece', 'warmup_pitch', 'expressiveness', 'cooldown_relax'}"
+      "detail": "used: {'warmup_pitch', 'cooldown_relax', 'expressiveness', 'weakness_drill', 'main_piece', 'sight_reading', 'warmup_hand'}"
     },
     {
       "name": "multi_modules",
       "pass": true,
-      "detail": "modules: {'eval_pitch', 'multi', 'free_play', 'hand_pose_analyzer', 'midi_analyzer', 'expressiveness_analyzer', 'sight_reading_trainer'}"
+      "detail": "modules: {'free_play', 'eval_pitch', 'sight_reading_trainer', 'expressiveness_analyzer', 'midi_analyzer', 'multi', 'hand_pose_analyzer'}"
     },
     {
       "name": "age30_no_senior",
@@ -325,7 +325,7 @@
     {
       "name": "has_title",
       "pass": true,
-      "detail": "title: # 🎹 你的 7 天 AI 自适应课程 (v3.0 多模态)\n_生成时间: 2026-07-21 01:18_\n_当前水"
+      "detail": "title: # 🎹 你的 7 天 AI 自适应课程 (v3.0 多模态)\n_生成时间: 2026-07-21 03:51_\n_当前水"
     },
     {
       "name": "has_senior_marker",

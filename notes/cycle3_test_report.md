@@ -1,6 +1,6 @@
 # CoPiano Cycle 3 测试报告
 
-**测试时间**: 2026-07-21T00:16:03.808071
+**测试时间**: 2026-07-21T03:51:32.172883
 **总通过率**: 10/10 (100%)
 
 ---
@@ -9,13 +9,13 @@
 
 | Scenario | 时期 | 质量 | Overall | vel_std | dynamic_range | LTV | lead | articulation |
 |----------|------|------|---------|---------|---------------|-----|------|--------------|
-| baroque_low | Baroque | low | **39.6** | 3.72 | 12 | 0.6% | 0.0ms | staccato |
-| baroque_medium | Baroque | medium | **71.5** | 8.08 | 30 | 97.15% | 10.23ms | legato |
-| classical_low | Classical | low | **39.7** | 3.83 | 12 | 0.58% | 0.0ms | staccato |
-| classical_high | Classical | high | **81.3** | 11.73 | 50 | 93.0% | 25.0ms | legato |
-| romantic_low | Romantic | low | **48.3** | 3.71 | 12 | 8.26% | 0.0ms | staccato |
-| romantic_medium | Romantic | medium | **59.3** | 8.3 | 30 | 98.59% | 9.72ms | legato |
-| romantic_high | Romantic | high | **69.6** | 11.67 | 50 | 93.7% | 25.0ms | legato |
+| baroque_low | Baroque | low | **39.6** | 3.71 | 12 | 0.55% | 0.0ms | staccato |
+| baroque_medium | Baroque | medium | **71.6** | 8.09 | 30 | 97.14% | 10.23ms | legato |
+| classical_low | Classical | low | **38.5** | 3.59 | 12 | 0.57% | 0.0ms | staccato |
+| classical_high | Classical | high | **81.3** | 13.65 | 50 | 92.98% | 25.0ms | legato |
+| romantic_low | Romantic | low | **48.5** | 3.74 | 12 | 8.45% | 0.0ms | staccato |
+| romantic_medium | Romantic | medium | **57.7** | 7.71 | 30 | 98.85% | 9.72ms | legato |
+| romantic_high | Romantic | high | **69.6** | 12.58 | 50 | 93.78% | 25.0ms | legato |
 
 **通过**: 7/7
 

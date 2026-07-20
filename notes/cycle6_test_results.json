@@ -700,7 +700,7 @@
     {
       "name": "kw_on_识谱训练",
       "pass": true,
-      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 C5。请按对应键 (电脑键 1-7 / "
     },
     {
       "name": "kw_off_识谱训练",
@@ -710,7 +710,7 @@
     {
       "name": "kw_on_练视奏",
       "pass": true,
-      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 C5。请按对应键 (电脑键 1-7 / "
     },
     {
       "name": "kw_off_练视奏",
@@ -720,7 +720,7 @@
     {
       "name": "kw_on_识谱",
       "pass": true,
-      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 C5。请按对应键 (电脑键 1-7 / "
     },
     {
       "name": "kw_off_识谱",
@@ -730,7 +730,7 @@
     {
       "name": "kw_on_sight reading",
       "pass": true,
-      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 C5。请按对应键 (电脑键 1-7 / "
     },
     {
       "name": "kw_off_sight reading",
@@ -740,7 +740,7 @@
     {
       "name": "kw_on_看谱",
       "pass": true,
-      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+      "detail": "r: 好,开始 入门 Beginner 视奏训练。第 1 个音是 C5。请按对应键 (电脑键 1-7 / "
     },
     {
       "name": "kw_off_看谱",
@@ -765,7 +765,7 @@
     {
       "name": "voice_no_recursion_on",
       "pass": true,
-      "detail": "got: 好,开始 入门 Beginner 视奏训练。第 1 个音是 A4。请按对应键 (电脑键 1-7 / "
+      "detail": "got: 好,开始 入门 Beginner 视奏训练。第 1 个音是 C5。请按对应键 (电脑键 1-7 / "
     },
     {
       "name": "voice_falls_to_llm",
@@ -795,7 +795,7 @@
     {
       "name": "single_session_speed",
       "pass": true,
-      "detail": "0.0ms per session"
+      "detail": "0.1ms per session"
     },
     {
       "name": "invalid_difficulty_raises",
@@ -860,7 +860,7 @@
     {
       "name": "default_seed_deterministic",
       "pass": true,
-      "detail": "seq1=['A4', 'G4', 'C4', 'D#4', 'C4'] seq2=['A4', 'G4', 'C4', 'D#4', 'C4']"
+      "detail": "seq1=['C5', 'F4', 'C5', 'C4', 'F4'] seq2=['C5', 'F4', 'C5', 'C4', 'F4']"
     },
     {
       "name": "explicit_seed_deterministic",

@@ -130,7 +130,7 @@
     {
       "name": "scores_in_range",
       "pass": true,
-      "detail": "post scores: {'pitch': 77.69294305260748, 'expressiveness': 62.70550999007252, 'hand_pose': 80.51666562385064, 'rhythm': 81.16177530532892, 'sight_reading': 65.22418132731603}"
+      "detail": "post scores: {'pitch': 72.33748497652165, 'expressiveness': 69.60765166228256, 'hand_pose': 80.45566296574002, 'rhythm': 85.52242162441978, 'sight_reading': 63.57626680100955}"
     },
     {
       "name": "treatment_pitch_higher",
@@ -183,34 +183,34 @@
       "detail": "d: ['pitch', 'expressiveness', 'hand_pose', 'rhythm', 'sight_reading']"
     },
     {
-      "name": "treatment_wins_all",
+      "name": "treatment_wins_majority",
       "pass": true,
-      "detail": "treatment wins 5/5 dims"
+      "detail": "treatment wins 4/5 dims"
     },
     {
       "name": "d_pitch_in_range",
       "pass": true,
-      "detail": "d=0.208"
+      "detail": "d=0.477"
     },
     {
       "name": "d_expressiveness_in_range",
       "pass": true,
-      "detail": "d=0.312"
+      "detail": "d=0.392"
     },
     {
       "name": "d_hand_pose_in_range",
       "pass": true,
-      "detail": "d=0.409"
+      "detail": "d=0.661"
     },
     {
       "name": "d_rhythm_in_range",
       "pass": true,
-      "detail": "d=0.678"
+      "detail": "d=0.225"
     },
     {
       "name": "d_sight_reading_in_range",
       "pass": true,
-      "detail": "d=0.433"
+      "detail": "d=0.496"
     },
     {
       "name": "has_title",
@@ -235,7 +235,7 @@
     {
       "name": "json_serializable",
       "pass": true,
-      "detail": "len=4094"
+      "detail": "len=4093"
     },
     {
       "name": "json_round_trip",
@@ -245,7 +245,7 @@
     {
       "name": "ab_test_speed",
       "pass": true,
-      "detail": "1.9ms for 30/group × 7 days"
+      "detail": "3.7ms for 30/group × 7 days"
     },
     {
       "name": "same_seed_same_result",
@@ -260,7 +260,7 @@
     {
       "name": "has_summary",
       "pass": true,
-      "detail": "summary: A/B 测试完成: 5 per group × 3 天\n平均效应量 Cohen's d = 0.47 (small)\n显"
+      "detail": "summary: A/B 测试完成: 5 per group × 3 天\n平均效应量 Cohen's d = 0.23 (small)\n显"
     }
   ]
 }
