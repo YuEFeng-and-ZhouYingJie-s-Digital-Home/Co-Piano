@@ -3119,3 +3119,56 @@ bash setup.sh --core-only --audio --dev
 - 7 知识库 + 1 论文 + 6 图表 + 1 cohort + 1 benchmark + README + CHANGELOG + requirements + setup + release
 
 **耗时**: ~5 分钟(更新论文 + 写 release.sh + 修 2 bug + 验证)
+
+## [2026-07-21 04:05] Phase 6 CYCLE 18: Makefile 21 命令(本批)
+
+**做了什么**:
+- **写 `Makefile`** (4.2K) — 21 个 make 命令
+  - **安装 (5)**: install / install-full / install-llm / install-audio / install-dev
+  - **演示 (3)**: demo / demo-senior / modules
+  - **课程 (2)**: curriculum / curriculum-senior
+  - **A/B (3)**: abtest / abtest-quick / scores
+  - **测试 (4)**: test / test-cycle1/6/8 / test-all
+  - **基准/图表/数据/清理/发布/文档/统计 (8)**: bench / bench-quick / figures / data / clean / release / release-dry / docs / count
+  - 颜色输出 (蓝/绿/黄/红)
+  - 自动 help (grep ## 注释)
+- **验证**:
+  - `make help` → 列出 21 命令
+  - `make count` → 53 脚本 / 15K 行 / 13 测试 / 6 图表
+  - `make demo-senior` → 端到端 demo 正常 (age=65)
+
+**关键命令示例**:
+```bash
+make demo         # 5 维 + 7d 课程 + RCT + voice
+make demo-senior  # 银发模式 demo
+make abtest       # 30/30 × 7 days A/B 测试
+make test         # 跑所有测试
+make bench        # 13 模块性能基准
+make figures      # 6 论文图表
+make release      # 一键发布
+make count        # 统计代码 + Git log
+```
+
+**Cycle 18 完成度**:
+| 阶段 | 状态 |
+|------|------|
+| 1. 调研 | ✅ 已有 (cycle 1-17 全部完成) |
+| 2. 实践 | ✅ 4.2K Makefile (21 命令) |
+| 3. 测试 | ✅ help/count/demo-senior 全部正常 |
+
+**v3.0 关键升级 (累计)**:
+- v1.0: 4 层架构
+- v2.0: + voice + GPU 7B
+- v3.0: 5 维 + 7d 课程 + RCT + 论文 + 图表 + CLI + 文档 + 真实化 + 安装 + 性能 + 发布 + **Makefile**
+
+**总文件/论文数**:
+- 17 → **41 脚本** + 4 发布工具 (requirements/setup/release/Makefile)
+- 138 → 813 arxiv 论文
+- 7 知识库 + 1 论文 + 6 图表 + 1 cohort + 1 benchmark + README + CHANGELOG
+
+**开发者体验**:
+- 前: `python3 scripts/copiano_v3.py demo --age 65`
+- 后: `make demo-senior`
+- 41 个脚本 → 21 个 make 命令 (聚合简化)
+
+**耗时**: ~3 分钟(写 Makefile + 验证 3 命令)

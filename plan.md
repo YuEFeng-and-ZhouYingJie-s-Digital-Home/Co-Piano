@@ -665,3 +665,26 @@ piano-ai-corpus/
   - 累计 v3.0:论文 v3 + release.sh 完整发布流程,40 → 41 脚本
   - 下一个循环 (CYCLE 18) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
 ]
+
+[CYCLE_18_DONE: 2026-07-21 04:05 — Makefile (21 命令)。
+  - 实践:Makefile (4.2K) — 21 个 make 命令
+  - 6 大类:
+    1. 安装 (5): install / install-full / install-llm / install-audio / install-dev
+    2. 演示 (3): demo / demo-senior / modules
+    3. 课程 (2): curriculum / curriculum-senior
+    4. A/B (3): abtest / abtest-quick / scores
+    5. 测试 (4): test / test-cycle1/6/8 / test-all
+    6. 基准/图表/数据/清理/发布/文档/统计 (8)
+  - 关键命令:
+    - make demo / make demo-senior (5 维 + 7d 课程 + RCT + voice)
+    - make abtest (30/30 × 7) / make abtest-quick
+    - make test (cycle1-13) / make test-all
+    - make bench (13 模块) / make bench-quick
+    - make figures (6 论文图表)
+    - make data (60 学生真实化)
+    - make release (一键发布) / make release-dry
+    - make count (代码统计 + Git log)
+  - 验证:make help 列出 21 命令,make count 53 脚本 / 15K 行 / 13 测试 / 6 图表
+  - 累计 v3.0:41 → 41 脚本 + 4 发布工具 (requirements/setup/release/Makefile)
+  - 下一个循环 (CYCLE 19) 候选:Web 端 / 多人共享 DB / 真钢琴录音 / GPU 14B / 真实用户 RCT
+]
