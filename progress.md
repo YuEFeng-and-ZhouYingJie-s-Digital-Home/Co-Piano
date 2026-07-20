@@ -1611,3 +1611,78 @@ bash demo_gpu.sh --piece "Für Elise"  # 换曲目
 **耗时**: ~8 分钟
 
 ---
+
+---
+## [2026-07-20 20:08] Phase 5.6 完成:教学引擎 teaching_engine.py(本轮)
+
+**做了什么**:
+- **scripts/teaching_engine.py** (15K 字符) — v2.0 大脑
+  - `StudentProfile` 数据类:弹了多少首 / 均分 / 最佳/最差 / 错音累计 / 趋势
+  - `TeachingEngine` 类:融合 MIDI 评估 + KG + 历史 → 教学上下文
+  - **6 个直答场景**(无需 LLM,数据驱动):
+    1. "我弹得怎么样" → 评估摘要(分/错音/波动/时期)
+    2. "多少分" → score + 评级
+    3. "我经常错哪里" → 平均指标分析(音准/节奏/力度)
+    4. "进步了吗" → 趋势检测(improving/stable/declining,基于前后半段平均)
+    5. "我弹过什么" → 最近 5 首
+    6. "巴洛克" / "古典" / "浪漫" → KG 时期风格
+  - **LLM 上下文构建**:`build_context_for_llm()` 拼 4 段
+    - 学生画像 / 最近评估详情 / 最近 3 首 / KG 上下文
+  - **KG 集成**:`tonnetz_kg.MusicKG` 3 时期 + 5 作曲家
+  - **推荐引擎**(简化版):基于 avg score 分 4 档(基础/中等/良好/优秀)
+  - **patch_voice_dialog()**:monkey-patch 注入到 voice_dialog
+    - 拦截 `call_llm` 优先用 direct answer
+    - 改写 `build_messages` 注入教学上下文到 system prompt
+  - **CLI 测试模式**:`--query "..."` 单测
+
+**6 场景直答实测**(3 首历史 + 1 set_latest_eval = 4 首):
+```
+Q: 我弹得怎么样
+A: 你这段 91.0 分,错音 0 个,节奏波动 8.0ms。Bach Prelude 是 Baroque 时期风格。
+Q: 我经常错哪里
+A: 你的主要弱点:音准 89%。  ← 真从 history 算的
+Q: 进步了吗
+A: 最近 4 首:平均 86.4 分,📈 在进步!  ← 真趋势检测(后 2 首 91 vs 前 2 首 83.25,差 7.75 > 5)
+Q: 巴洛克时期怎么弹
+A: 巴洛克时期(1600-1750):对位清晰、装饰音有规律(trill/mordent)、触键颗粒分明...  ← KG
+Q: 下一首弹什么
+A: 推荐继续:巴赫小前奏曲 / 莫扎特奏鸣曲 K.545。  ← 基于 avg 80-90 分档
+Q: 今天心情好
+A: (no direct hit) → mock LLM fallback
+```
+
+**LLM 上下文注入实测**(拼到 system prompt 末尾):
+```
+## 学生画像
+- 已弹 4 首,平均 86.4 分,趋势:improving
+- 累计错音 4 个
+- 历史区间:78.0-91.0 分
+
+## 最近评估
+- 曲目:Bach Prelude(Baroque)
+- 评分:91.0
+- 错音:0 个,音准率 95.0%
+- 节奏偏差:-3.0ms,波动 8.0ms
+- 力度相关性:0.50
+
+## 最近 3 首
+  - Sonata K.545(Classical):78.0 分, 3 错音
+  - Bach Prelude(Baroque):91.0 分, 0 错音
+  - Bach Prelude(Unknown):91.0 分, 0 错音
+
+## KG 上下文
+- 巴洛克:巴洛克时期(1600-1750):对位清晰...
+```
+
+**关键设计**:
+- 直答优先 → 简单问题不烧 LLM token
+- LLM 上下文丰富 → 复杂问题有真数据支撑
+- 3 时期 + 5 作曲家 KG 硬编码(后续可换 graph DB)
+- 趋势用前后半段平均差 > 5 判定(启发式)
+- monkey-patch 不改 voice_dialog 源码
+
+**v2.0 进度 6/10**(5.1-5.6 全过)
+
+**耗时**: ~10 分钟
+
+---
