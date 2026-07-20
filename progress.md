@@ -1386,3 +1386,27 @@ bash demo_gpu.sh --piece "Für Elise"  # 换曲目
 **耗时**: ~10 分钟(写 + 测)
 
 ---
+## [2026-07-20 18:30] Phase 4.7: Executive Summary 更新(本轮)
+
+**做了什么**:
+- **更新 `EXECUTIVE_SUMMARY.md`** — 加 Phase 4 内容
+  - 标题 48→57 轮
+  - 加 Phase 4 架构行
+  - 核心脚本 14→17 + Mac App 1
+  - 加"P4 实时"< 10ms 行
+  - 加 demo_gpu.sh 到 quickstart
+  - 加 4.7/4.8 段(段落级聚合 + 推荐)
+  - 加 P4 实时/视频/Mac App 论文对位行
+  - 加 Basic Pitch / MediaPipe / SwiftUI / Contextual Bandit 技术栈
+  - 已知限制加 2 条(MediaPipe 装不上 + SwiftUI 占位)
+  - 时间线 47 步加 4 步到 51 步,加 Phase 4 全部 5 步
+
+**关键内容**:
+- 完整 4 层 + Phase 4 架构图
+- 完整实测 demo 结果(5152 字符报告)
+- 完整 57 轮 cron 时间线
+- 完整论文对位 + 技术栈 + 限制 + 未来工作
+
+**耗时**: ~6 分钟
+
+---
