@@ -1063,3 +1063,51 @@
 **耗时**: ~6 分钟
 
 ---
+## [2026-07-20 15:15] Phase 3.11: Git 初始化 + commit(本轮)
+
+**做了什么**:
+- `git init` + `.gitignore`(忽略 .mid / __pycache__ / .log / 大文件)
+- `git add -A` → **461 个文件 commit**
+- commit message 包含 L1/L2/L3/L4 完整描述
+- 47 轮 cron 产出正式入版本管理
+
+**git 状态**:
+- 1 commit(完整 Phase 1+2+3)
+- 461 个 tracked 文件
+- branch: master(或 main,看 git 默认)
+
+**关键价值**:
+- 用户能 git log 看到完整开发历史
+- 后续开发可分 commit(避免 clobber 整文件)
+- 配合 GitHub 仓库即可公开发布
+
+**耗时**: < 1 分钟
+
+---
+## [2026-07-20 15:30] Phase 3.12: quickstart_phase3.sh 一键体验(本轮)
+
+**做了什么**:
+- **写 `quickstart_phase3.sh`** — Phase 3 一键 5 步体验
+  - Step 1: 环境检查(sklearn / hdbscan / mido / music21)
+  - Step 2: 测试 MIDI
+  - Step 3: 预置 5 首 history(覆盖不同 cluster)
+  - Step 4: 9 步 copiano + 聚类 + 推荐
+  - Step 5: 摘要展示(总分/聚类/推荐)
+- **3 种模式**:
+  - 默认(Mac 端,无 LLM,~5 秒)
+  - `--gpu`(走 AutoDL 4090,完整 LLM,~3 分钟)
+  - `--no-history`(不预置,用户自己累积)
+- **跑通 Mac 端**:
+  - 报告 3157 字符
+  - 聚类 silhouette 0.412,K=2
+  - 推荐 3 首(基于 cluster 0)
+
+**关键价值**:
+- Phase 3 用户最简入口(0 命令记忆)
+- `--gpu` 模式自动 scp + GPU + 拷回
+- 摘要直接展示总分/聚类/推荐
+- 与 `quickstart.sh` 互补(分别演示 Phase 1+2 和 Phase 3)
+
+**耗时**: ~10 分钟
+
+---
