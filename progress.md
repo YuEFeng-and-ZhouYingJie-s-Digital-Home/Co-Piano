@@ -1234,3 +1234,41 @@ FeedbackEngine(规则 + 冷却)
 **耗时**: ~10 分钟
 
 ---
+## [2026-07-20 17:30] Phase 4.3: 视频手型追踪骨架(本轮)
+
+**做了什么**:
+- mediapipe Python 包装不上(网络/版本问题)
+- **写 `scripts/video_hand_tracker.py`** — 视频手型骨架
+  - OpenCV 视频流(已可用)
+  - **2 种 detector**:
+    - MediaPipe HandLandmarker(若装好)— 21 个关键点
+    - OpenCV 肤色 fallback(没装 mediapipe 时)
+  - **手型分析** `analyze_hand_pose()`:
+    - 5 指伸展度(0-1)
+    - 整体姿态(relaxed/neutral/tense)
+    - 手腕位置
+  - **可显示 / 可输出视频**
+  - **支持 摄像头 / 视频文件**
+
+**关键发现**:
+- MediaPipe 装不上,但架构完整(用户装好即可用)
+- HandLandmarker 模型 6MB,需单独下载
+- OpenCV 肤色 fallback 不准,但能跑通流程
+- 21 个 landmark 索引映射(wrist + thumb + 4 指 × 4 段)
+
+**完整 Phase 4 实时反馈架构**(含视频):
+```
+麦克风音频流 ─→ Basic Pitch ─→ MIDI 事件 ─→ 评估引擎
+摄像头视频流 ─→ MediaPipe ─→ 21 landmarks ─→ 手型分析
+                                       ↓
+                                  综合反馈
+                                  (音频错音 + 手型姿态)
+```
+
+**下一步**(后续 cron):
+- 实时反馈集成到 copiano.py(`--realtime` 选项)
+- Mac App(SwiftUI)外壳
+
+**耗时**: ~8 分钟
+
+---
