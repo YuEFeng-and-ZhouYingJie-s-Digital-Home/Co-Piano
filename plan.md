@@ -828,3 +828,11 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_25_DONE: 2026-07-21 15:00 — A2.3 JWT Auth (6 端点, 16K 代码, 25/25 测试, bcrypt + PyJWT)]
 
 [CYCLE_26_DONE: 2026-07-21 15:08 — A2.4 OAuth2 Apple/Google/WeChat (6 端点, 15K 代码, 22/22 测试, JWKS 验签)]
+
+[USER_PAUSE: 2026-07-21 15:13 — 用户要求停止 CoPiano v4 cron 自动推进。
+  - 已完成: A2.1 / A2.2 / A2.3 / A2.4 (4/36 Phase 7A 任务, 6.7% 总任务)
+  - 当前第一个 [PENDING]: A2.5 Alembic 数据库迁移
+  - 等用户恢复指令才能继续
+  - 所有代码已 commit,backend/ 79/79 测试全过
+  - W1 (8 项) 仍 BLOCKED 等用户操作
+]
