@@ -846,3 +846,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [USER_RESUME: 2026-07-21 15:30 — 用户绑定腾讯云控制台公钥,USER_PAUSE 解除]
 
 [CYCLE_28_DONE: 2026-07-21 15:38 — A1.6 PostgreSQL 16 + Redis 7 (Docker Compose, 2 服务 healthy, ~50 MiB)]
+
+[CYCLE_29_DONE: 2026-07-21 15:50 — A2.5 Alembic 迁移 (初始 d263a44e8ad2, 4 表 + 13 索引, 真 PG 部署成功)]

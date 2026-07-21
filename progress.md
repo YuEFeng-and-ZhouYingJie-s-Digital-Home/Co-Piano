@@ -3901,3 +3901,92 @@ $ docker exec copiano-redis redis-cli -a $REDIS_PASSWORD GET hello
 - 5/60 → **6/60** 总任务 (10.0%)
 - 服务器: 1.9G RAM + 28G 磁盘 + PostgreSQL + Redis 全栈就绪
 - 代码: 63K + 4 K 部署参考文档
+
+## [2026-07-21 15:50] Cycle 29: A2.5 Alembic 数据库迁移 ✅ DONE
+
+**任务**: A2.5 — Alembic 数据库迁移
+**状态**: ✅ DONE
+**耗时**: ~12 分钟
+
+**产出** (6 K 新文件):
+- `backend/alembic.ini` — alembic 配置
+- `backend/alembic/env.py` (60 行) — 自动 import app.models + target_metadata=Base.metadata + 覆盖 URL
+- `backend/alembic/script.py.mako` — 模板
+- `backend/alembic/versions/d263a44e8ad2_initial_schema.py` (142 行) — 初始 migration
+- `backend/alembic/README.md` (80 行) — 使用文档
+- `backend/tests/test_alembic.py` (180 行) — 8 迁移测试
+
+**Migration 摘要** (`d263a44e8ad2_initial_schema.py`):
+- 4 张业务表 + 1 张 alembic_version
+- 全部 UUID/BIGINT 主键
+- 全部 ON DELETE CASCADE 外键
+- 13 个索引(email/created_at/user_id/score/etc)
+- 4 个 ENUM(subscription_tier/oauth_provider/difficulty/block_type/sight_reading_*)
+- 7 个 timestamp with time zone 字段
+
+**测试结果** (本地 venv, 16.35s):
+```
+87 passed (新增 8 个 alembic 测试):
+  test_alembic_config_exists ✓
+  test_alembic_env_uses_base_metadata ✓
+  test_migration_creates_all_tables ✓ (SQLite 4 张表)
+  test_migration_creates_indexes ✓
+  test_downgrade_drops_tables ✓
+  test_alembic_current_tracks_revision ✓
+  test_roundtrip_idempotent ✓
+  test_migration_files_have_required_structure ✓
+```
+
+**真 PG 部署验证** (远程 124.156.184.160):
+```bash
+# SSH 隧道 15432 → 服务器 5432
+ssh -L 15432:127.0.0.1:5432 ubuntu@124.156.184.160
+DATABASE_URL_SYNC="postgresql://copiano:XXX@127.0.0.1:15432/copiano" alembic upgrade head
+INFO  [alembic.runtime.migration] Running upgrade  -> d263a44e8ad2, initial schema
+INFO  d263a44e8ad2 (head)
+
+# 服务器 PG 实际表:
+$ docker exec copiano-postgres psql -U copiano -d copiano -c '\dt'
+ Schema |          Name          | Type  |  Owner
+--------+------------------------+-------+---------
+ public | alembic_version        | table | copiano
+ public | curriculum_progress    | table | copiano
+ public | evaluations            | table | copiano
+ public | sight_reading_sessions | table | copiano
+ public | users                  | table | copiano
+(5 rows) ✓
+```
+
+**踩过的 2 个小坑**:
+1. psycopg2 缺 → `pip install psycopg2-binary==2.9.9`
+2. 服务器 PG 只绑 127.0.0.1 → 用 SSH 隧道 `ssh -L 15432:127.0.0.1:5432` 桥接本地
+
+**关键设计**:
+- **env.py 自动注册** — `import app.models` 让所有模型 import 时就注册到 Base.metadata
+- **URL 从 env 读** — 生产用 `settings.database_url_sync`,本地测试用 sqlite
+- **compare_type + compare_server_default** — alembic 检测字段类型/默认值变化
+- **autogenerate 只生成初始** — 后续 schema 变更应人工 review 再 commit
+- **本地测试用临时 SQLite** — 不污染生产 DB
+
+**累计 backend 测试**: 79 → **87/87 全过** (+8)
+
+**W2 进度 5/6**:
+- ✅ A2.1 FastAPI scaffold (8)
+- ✅ A2.2 SQLAlchemy 4 表 (24)
+- ✅ A2.3 JWT Auth (25)
+- ✅ A2.4 OAuth2 (22)
+- ✅ A2.5 Alembic 迁移 (8)
+- ⏳ A2.6 middleware (CORS/rate_limit/logging) — 最后一项
+
+**下一步** (Cycle 30): A2.6 middleware
+- CORS 已在 A2.1 配置,可能微调
+- rate_limit 用 slowapi (FastAPI 官方推荐)
+- logging 结构化(structlog)
+- request_id 中间件(链路追踪)
+
+**累计 v4 进度**:
+- 6/36 → **7/36** Phase 7A 任务完成 (19.4%)
+- 6/60 → **7/60** 总任务 (11.7%)
+- 服务器: PG + Redis + 4 表已就绪
+- 代码: 63K → **69K** (+6K)
+- 测试: 79 → **87** (+8)
