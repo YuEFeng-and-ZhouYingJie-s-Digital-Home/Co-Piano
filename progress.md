@@ -3990,3 +3990,101 @@ $ docker exec copiano-postgres psql -U copiano -d copiano -c '\dt'
 - 服务器: PG + Redis + 4 表已就绪
 - 代码: 63K → **69K** (+6K)
 - 测试: 79 → **87** (+8)
+
+## [2026-07-21 16:10] Cycle 30: A2.6 Middleware ✅ DONE — W2 收官
+
+**任务**: A2.6 — 基础 middleware (CORS + rate_limit + logging + request_id)
+**状态**: ✅ DONE
+**耗时**: ~12 分钟
+**🎉 W2 (FastAPI 基础) 全部完成 6/6**
+
+**产出** (5 K 新代码):
+- `backend/app/core/logging.py` (75 行) — structlog JSON/console 配置
+- `backend/app/core/rate_limit.py` (50 行) — slowapi Limiter + 4 限流策略
+- `backend/app/middleware/__init__.py`
+- `backend/app/middleware/request_id.py` (60 行) — UUID 注入 + 日志绑定
+- `backend/app/middleware/error_handler.py` (70 行) — 3 个全局异常 handler
+- `backend/main.py` (重写) — 串起 lifespan + 限流 + 3 middleware + 路由
+- `backend/tests/test_middleware.py` (200 行) — 13 测试
+
+**Middleware 栈** (执行顺序):
+1. **SlowAPIMiddleware** — 全局 60/min IP 限流
+2. **CORS** — 5 个 origin (localhost:3000/5173, copiano.com/app)
+3. **RequestIDMiddleware** — 注入 X-Request-ID + structlog contextvars 绑定
+4. **ErrorHandler** — 3 个 handler: HTTPException / 422 验证 / 500 未捕获
+
+**关键设计**:
+- **JSON 日志 (生产) / Console (开发)** — `structlog.JSONRenderer` vs `ConsoleRenderer(colors)`
+- **structlog contextvars** — 每个请求的 request_id/method/path 自动注入每条日志
+- **慢 API 限流策略** — 4 档:default 60/min · auth 5/min · feedback 10/min · upload 20/hr
+- **错误格式双字段** — 同时返回 `detail`(FastAPI 标准) + `message` + `error` + `request_id`,向后兼容
+- **429 优先级** — 限流比业务验证更早拦截
+- **X-Forwarded-For** — 限流 key 支持反向代理场景
+
+**测试结果** (本地 venv, 18.64s):
+```
+100 passed (A2.6 新增 13):
+  test_request_id_generated_when_missing ✓
+  test_request_id_inherited_when_provided ✓
+  test_request_id_unique_per_request ✓
+  test_http_exception_handler ✓
+  test_unhandled_exception_handler ✓
+  test_validation_error_handler ✓
+  test_rate_limit_headers_present ✓
+  test_rate_limit_exceeded_returns_429 ✓
+  test_setup_logging_runs_without_error ✓
+  test_get_logger_returns_bound_logger ✓
+  test_full_app_health_returns_request_id ✓
+  test_full_app_status_lists_middleware_module ✓
+  test_full_app_cors_preflight ✓
+```
+
+**踩过的 3 个小坑**:
+1. `structlog.stdlib.add_logger_name` 需要 stdlib Logger,不能用 PrintLogger → 自定义 _add_service 加 logger 字段
+2. slowapi 限流的 endpoint 函数必须有 `request` 参数 → 测试加 `async def limited(request: Request)`
+3. slowapi 注入 header 需要 `Response` 对象(不能是 dict) → endpoint 返回 `JSONResponse`
+
+**冒烟测试** (uvicorn 启动 + curl):
+```bash
+$ curl -si /health
+HTTP/1.1 200 OK
+x-request-id: req_2da55aa50d2e49f1
+
+$ tail -1 uvicorn.log
+2026-07-21T08:07:58Z [info] request_completed
+  request_id=req_2da55aa50d2e49f1 method=GET path=/health
+  status_code=200 duration_ms=0.99 client_ip=127.0.0.1
+
+$ curl -si /api/v1/nonexistent
+HTTP/1.1 404 Not Found
+{"detail":"Not Found","error":"http_error","status_code":404,
+ "message":"Not Found","request_id":"req_ad72edf0dc624b73"}
+
+$ curl -X OPTIONS /api/v1/auth/signup -H "Origin: http://localhost:3000"
+HTTP/1.1 200 OK
+access-control-allow-origin: http://localhost:3000
+access-control-allow-credentials: true
+```
+
+**累计 backend 测试**: 87 → **100/100 全过** (+13) 🎯
+
+**W2 进度 6/6 完成** 🎉:
+- ✅ A2.1 FastAPI scaffold (8)
+- ✅ A2.2 SQLAlchemy 4 表 (24)
+- ✅ A2.3 JWT Auth (25)
+- ✅ A2.4 OAuth2 (22)
+- ✅ A2.5 Alembic (8)
+- ✅ A2.6 Middleware (13)
+
+**下一步** (Cycle 31): A3.1 — 移植 v3.0 Python 模块到 backend/services/
+- 把 v3.0 5 维算法 (eval_pitch / expressiveness / hand_pose / sight_reading) 包装成 service
+- 复用 v3.0 测试数据 + cohort
+- A3.2 /api/v1/evaluations 端点准备好 service 才能写
+
+**累计 v4 进度**:
+- 7/36 → **8/36** Phase 7A 任务完成 (22.2%)
+- 7/60 → **8/60** 总任务 (13.3%)
+- 代码: 69K → **74K** (+5K)
+- 测试: 87 → **100** (+13) 🎯
+- 端点: 12 业务 + 5 meta
+- 基础设施: 服务器(Docker/Nginx/UFW/PG/Redis) + 4 业务表(deployed)

@@ -7,28 +7,32 @@ AI 古典钢琴教练 — 后端 API 服务
 入口: `python main.py` 或 `uvicorn main:app --reload --port 8000`
 
 作者: CoPiano Team
-版本: v4.0 (Phase 7A W2 — A2.1)
+版本: v4.0 (Phase 7A W2 — A2.6)
 日期: 2026-07-21
 """
-import logging
 import os
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
+import structlog
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from slowapi import _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
 
 from app.api.v1.router import api_router
 from app.core.config import settings
+from app.core.logging import get_logger, setup_logging
+from app.core.rate_limit import limiter
+from app.middleware.error_handler import register_exception_handlers
+from app.middleware.request_id import RequestIDMiddleware
 
 # ──────────────────────────────────────────────
-# 日志配置
+# 日志配置 (structlog)
 # ──────────────────────────────────────────────
-logging.basicConfig(
-    level=os.getenv("LOG_LEVEL", "INFO"),
-    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-)
-logger = logging.getLogger("copiano.api")
+setup_logging()
+logger = get_logger("copiano.api")
 
 # ──────────────────────────────────────────────
 # 应用元数据
@@ -53,7 +57,7 @@ CoPiano — AI 古典钢琴教练
 | rhythm | 20% | 节奏稳定性 |
 | sight_reading | 15% | 视奏能力 |
 """
-APP_VERSION = "4.0.0-alpha"
+APP_VERSION = settings.app_version
 API_V1_PREFIX = "/api/v1"
 
 # ──────────────────────────────────────────────
@@ -62,17 +66,16 @@ API_V1_PREFIX = "/api/v1"
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """应用启动/关闭钩子"""
-    logger.info("🚀 CoPiano API starting (version=%s)", APP_VERSION)
-    logger.info("📍 Environment: %s", os.getenv("ENV", "development"))
+    logger.info("copiano_api_starting", version=APP_VERSION, env=settings.env)
     yield
-    logger.info("🛑 CoPiano API shutting down")
+    logger.info("copiano_api_shutting_down")
 
 
 # ──────────────────────────────────────────────
 # FastAPI 应用实例
 # ──────────────────────────────────────────────
 app = FastAPI(
-    title=APP_TITLE,
+    title=settings.app_name,
     description=APP_DESCRIPTION,
     version=APP_VERSION,
     lifespan=lifespan,
@@ -82,20 +85,30 @@ app = FastAPI(
 )
 
 # ──────────────────────────────────────────────
-# CORS 中间件
+# 限流 (slowapi)
 # ──────────────────────────────────────────────
-CORS_ORIGINS = os.getenv(
-    "CORS_ORIGINS",
-    "http://localhost:3000,http://localhost:5173,https://copiano.com,https://app.copiano.com",
-).split(",")
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+app.add_middleware(SlowAPIMiddleware)
 
+# ──────────────────────────────────────────────
+# 中间件 (顺序很重要: 后加的先执行)
+# ──────────────────────────────────────────────
+# 1. CORS (最先,所有跨域请求都先过这里)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins_list,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["X-Request-ID"],  # 暴露给前端
 )
+
+# 2. Request ID (每个请求绑定 UUID,贯穿日志)
+app.add_middleware(RequestIDMiddleware)
+
+# 3. 全局异常处理 (最后兜底)
+register_exception_handlers(app)
 
 # ──────────────────────────────────────────────
 # 挂载 v1 路由
@@ -138,18 +151,17 @@ async def ping():
     return {"ping": "pong", "ts": "2026-07-21"}
 
 
-# ──────────────────────────────────────────────
-# API v1 路由占位符 (后续 A2.2-A4.8 填充)
-# ──────────────────────────────────────────────
 @app.get(f"{API_V1_PREFIX}/status", tags=["meta"])
 async def api_v1_status():
     """v1 状态总览 — 列出已实现的模块"""
     return {
         "api_version": "v1",
         "modules": {
-            "auth": True,         # ✅ A2.3 (signup/login/refresh/logout)
-            "users": True,        # ✅ A2.3 (GET /me, PATCH /me)
-            "oauth": True,        # ✅ A2.4 (Apple/Google/WeChat + link/unlink)
+            "auth": True,         # ✅ A2.3
+            "users": True,        # ✅ A2.3
+            "oauth": True,        # ✅ A2.4
+            "middleware": True,   # ✅ A2.6 (CORS + rate_limit + request_id + logging)
+            "alembic": True,      # ✅ A2.5
             "evaluations": False, # A3.2-A3.4
             "curriculum": False,  # A4.2-A4.3
             "sight_reading": False, # A4.5
@@ -171,25 +183,15 @@ async def api_v1_status():
             "GET /api/v1/users/me": "当前用户信息",
             "PATCH /api/v1/users/me": "更新资料 (name/age/lang)",
         },
-        "next_task": "A2.5 — Alembic 数据库迁移",
-        "eta": "W2",
-    }
-
-
-# ──────────────────────────────────────────────
-# 全局异常处理
-# ──────────────────────────────────────────────
-@app.exception_handler(Exception)
-async def global_exception_handler(request, exc):
-    """兜底异常处理 (生产环境应避免泄露内部错误)"""
-    logger.exception("Unhandled error on %s: %s", request.url.path, exc)
-    return JSONResponse(
-        status_code=500,
-        content={
-            "error": "internal_server_error",
-            "message": str(exc) if os.getenv("DEBUG") else "Internal server error",
+        "middleware": {
+            "cors": settings.cors_origins_list,
+            "rate_limit_default": "60/minute per IP",
+            "request_id_header": "X-Request-ID",
+            "logging": "JSON (production) / Console (development)",
         },
-    )
+        "next_task": "A3.1 — 移植 v3.0 Python 模块到 backend/services/",
+        "eta": "W3",
+    }
 
 
 # ──────────────────────────────────────────────
@@ -202,4 +204,5 @@ if __name__ == "__main__":
         host=os.getenv("HOST", "0.0.0.0"),
         port=int(os.getenv("PORT", "8000")),
         reload=os.getenv("DEBUG", "false").lower() == "true",
+        log_config=None,  # 用我们自己的 structlog,不覆盖
     )

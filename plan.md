@@ -848,3 +848,7 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_28_DONE: 2026-07-21 15:38 — A1.6 PostgreSQL 16 + Redis 7 (Docker Compose, 2 服务 healthy, ~50 MiB)]
 
 [CYCLE_29_DONE: 2026-07-21 15:50 — A2.5 Alembic 迁移 (初始 d263a44e8ad2, 4 表 + 13 索引, 真 PG 部署成功)]
+
+[CYCLE_30_DONE: 2026-07-21 16:10 — A2.6 Middleware (CORS + slowapi + structlog + RequestID + ErrorHandler, 13 测试, W2 收官)]
+
+[PHASE_7A_W2_DONE: 2026-07-21 16:10 — W2 (FastAPI 基础) 6/6 完成: A2.1-A2.6 全部 ✅]

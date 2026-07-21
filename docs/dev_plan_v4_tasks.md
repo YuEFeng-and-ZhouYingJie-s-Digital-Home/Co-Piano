@@ -32,7 +32,7 @@
 - [DONE: 2026-07-21 15:00] **A2.3**: JWT Auth (signup/login/refresh/logout) + /me — bcrypt + PyJWT + 6 端点 + 25 集成测试全过
 - [DONE: 2026-07-21 15:08] **A2.4**: OAuth2 (Apple/Google/WeChat 登录) — 6 端点 + PyJWT[crypto] + JWKS 验签 + 22 集成测试全过
 - [DONE: 2026-07-21 15:50] **A2.5**: Alembic 数据库迁移 — 初始 migration (d263a44e8ad2) + SQLite/PG 双向测试 + 8 迁移测试 + 真 PG 部署 4 张表 + alembic/README.md
-- [PENDING] **A2.6**: 基础 middleware (CORS, rate_limit, logging)
+- [DONE: 2026-07-21 16:10] **A2.6**: 基础 middleware (CORS + slowapi rate_limit + structlog logging + RequestID + global exception handler) — 13 测试全过
 
 ### W3: 5 维评估 API (复用 v3.0)
 
