@@ -4273,3 +4273,122 @@ HTTP 201
 - 代码: 75.5K → **83.5K** (+8K)
 - 测试: 120 → **130** (+10)
 - 端点: 12 → **15 业务端点** (3 新增)
+
+## [2026-07-21 16:55] Cycle 33: A3.5 S3/MinIO MIDI 存储 ✅ DONE
+
+**任务**: A3.5 — S3/MinIO MIDI 文件存储
+**状态**: ✅ DONE
+**耗时**: ~14 分钟
+
+**产出** (5K 新代码 + 服务器 1 新服务):
+- 服务器:MinIO 容器部署 + 端口 9000/9001 + bucket `copiano-midi`
+- `backend/app/services/storage.py` (170 行) — boto3 封装
+- `backend/app/core/config.py` (扩展) — s3_endpoint_url / s3_public_url
+- `backend/app/api/v1/evaluations.py` (扩展) — 上传到 S3 + presigned URL 端点
+- `backend/tests/test_storage.py` (190 行) — 14 测试
+- `backend/requirements.txt` — boto3 + moto[s3]
+
+**MinIO 部署** (服务器):
+```bash
+# 扩展 docker-compose.yml
+minio:
+  image: minio/minio:latest
+  command: server /data --console-address ":9001"
+  ports: ["127.0.0.1:9000:9000", "127.0.0.1:9001:9001"]
+  healthcheck: curl /minio/health/live
+  resources: cpus 0.5 / memory 512M
+
+# 凭据
+MINIO_ROOT_USER=copiano
+MINIO_ROOT_PASSWORD=mNioCopiano2026Secret
+```
+
+**StorageService API** (10 个方法):
+```python
+storage_service.upload_file(local_path, prefix='midi', content_type='audio/midi') → s3:// URI
+storage_service.upload_bytes(data, key_suffix, prefix, content_type) → s3:// URI
+storage_service.get_presigned_url(s3_uri, expires_seconds=3600) → 临时 URL
+storage_service.get_public_url(s3_uri) → 公开 URL(假设 bucket public-read)
+storage_service.delete_file(s3_uri) → bool
+storage_service.exists(s3_uri) → bool
+storage_service.get_bytes(s3_uri) → bytes
+```
+
+**新端点**:
+```
+GET /api/v1/evaluations/{id}/download-url?expires_seconds=3600
+  → { url, expires_in, expires_at }
+  → 给前端 presigned URL 直接从 MinIO 拉 MIDI 播放
+```
+
+**关键设计**:
+- **boto3 + path addressing style** — MinIO 兼容 S3 API
+- **key 路径** — `midi/<YYYY>/<MM>/<uuid12>_<safe_filename>`,防冲突
+- **路径穿越防护** — `..` 替换为 `_`,防止恶意 filename
+- **懒加载 boto3 client** — 只在第一次用时连接
+- **s3_endpoint_url vs s3_public_url** — 内部(127.0.0.1)vs 外部(presigned URL)
+- **bucket 自动创建** — `_ensure_bucket` 第一次访问时
+- **moto mock** — 测试用 `mock_aws` 模拟 S3,无需真实 MinIO
+- **优雅降级** — S3 上传失败 → 用 `local://` 占位,不阻塞评估
+
+**测试结果** (本地 venv, 99.56s — moto 启动慢):
+```
+144 passed (A3.5 新增 14):
+  test_storage_service_init ✓
+  test_parse_uri_with_scheme ✓
+  test_parse_uri_without_scheme ✓
+  test_build_key ✓
+  test_build_key_sanitizes_path_traversal ✓
+  test_upload_bytes ✓
+  test_upload_file ✓
+  test_get_presigned_url ✓
+  test_delete_file ✓
+  test_exists ✓
+  test_get_bytes ✓
+  test_upload_bytes_custom_content_type ✓
+  test_ensure_bucket_idempotent ✓
+  test_storage_service_singleton ✓
+```
+
+**真 MinIO 集成测试** (SSH 隧道 19000→9000):
+```python
+client.put_object(Bucket="copiano-midi", Key="test/real_upload.mid", Body=b"...")
+# ✅ upload
+# ✅ presigned URL: http://127.0.0.1:19000/copiano-midi/test/... + X-Amz-Signature
+# ✅ download: True
+# ✅ delete
+```
+
+**踩过的 2 个坑**:
+1. moto mock_aws 跟 MinIO endpoint URL 冲突 → 测试 fixture 临时把 s3_endpoint_url 设为空
+2. parse_uri split 行为: 不带 scheme 时 `path/to/file` 拆成 bucket=path, key=to/file
+
+**服务器端资源** (更新):
+```
+NAME               STATUS
+copiano-postgres   Up (healthy)
+copiano-redis      Up (healthy)
+copiano-minio      Up (healthy) ← 新增
+```
+
+**累计 backend 测试**: 130 → **144/144 全过** (+14) 🎯
+
+**W3 进度 5/6**:
+- ✅ A3.1 移植 v3.0
+- ✅ A3.2-A3.4 评估 API (3 端点)
+- ✅ A3.5 S3/MinIO 存储 (含 1 新服务)
+- ⏳ A3.6 Redis 缓存评估结果 — 最后一个 W3 任务
+
+**下一步** (Cycle 34): A3.6 — Redis 缓存评估结果
+- 同一 MIDI 重复评估时直接命中缓存
+- TTL 24h
+- key: `eval:{midi_hash}:{period_hint}`
+- 用 settings.redis_url 连接
+- 测试用 fakeredis 避免依赖
+
+**累计 v4 进度**:
+- 12/36 → **13/36** Phase 7A 任务完成 (36.1%)
+- 12/60 → **13/60** 总任务 (21.7%)
+- 代码: 83.5K → **88.5K** (+5K)
+- 测试: 130 → **144** (+14)
+- 服务器: 3 容器健康 (PG + Redis + MinIO)

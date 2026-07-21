@@ -14,6 +14,7 @@ import logging
 import os
 import tempfile
 import uuid
+from datetime import datetime, timedelta
 from typing import List, Optional
 
 from fastapi import (
@@ -40,6 +41,7 @@ from app.schemas.evaluation import (
     EvaluationResponse,
 )
 from app.services.evaluation_service import evaluation_service
+from app.services.storage import storage_service
 
 logger = logging.getLogger("copiano.evaluations.api")
 
@@ -97,14 +99,25 @@ async def create_evaluation(
             # sight_reading_score 留空(A4.5 接)
             # hand_landmarks 留空(Mobile 端上传)
         )
-        # 4. 持久化到 PG
+        # 4. 上传 MIDI 到 S3/MinIO(A3.5)
+        try:
+            s3_uri = storage_service.upload_file(
+                tmp_path,
+                prefix=f"users/{current_user.id}/midi",
+                content_type="audio/midi",
+            )
+        except Exception as e:
+            logger.warning("s3_upload_failed: %s, using local://", e)
+            s3_uri = f"local://{midi_file.filename or 'upload.mid'}"
+
+        # 5. 持久化到 PG
         from datetime import datetime, timezone
         evaluation = Evaluation(
             user_id=current_user.id,
             piece_name=piece_name,
             piece_composer=piece_composer or "",
             difficulty=difficulty,
-            midi_url=f"local://{midi_file.filename or 'upload.mid'}",  # A3.5 替换为 S3
+            midi_url=s3_uri,
             midi_size_bytes=midi_size,
             duration_seconds=0.0,  # 后续从 MIDI 解析
             pitch_score=result.pitch_score,
@@ -190,3 +203,49 @@ async def get_evaluation(
     if eval_obj.user_id != current_user.id:
         raise HTTPException(status_code=403, detail="Not your evaluation")
     return EvaluationResponse.model_validate(eval_obj)
+
+
+@router.get(
+    "/{evaluation_id}/download-url",
+    summary="获取 MIDI 的 presigned URL(临时下载链接)",
+)
+async def get_midi_download_url(
+    evaluation_id: uuid.UUID,
+    expires_seconds: int = Query(default=3600, ge=60, le=86400),
+    current_user: User = Depends(get_current_active_user),
+) -> dict:
+    """生成 MIDI 文件的临时访问 URL(presigned)
+
+    默认 1 小时有效,客户端用这个 URL 直接从 MinIO 拉 MIDI 播放
+    """
+    from app.db.base import get_async_session_factory
+    factory = get_async_session_factory()
+    async with factory() as db:
+        eval_obj = await db.get(Evaluation, evaluation_id)
+        if not eval_obj:
+            raise HTTPException(status_code=404, detail="Evaluation not found")
+        if eval_obj.user_id != current_user.id:
+            raise HTTPException(status_code=403, detail="Not your evaluation")
+
+    if eval_obj.midi_url.startswith("local://"):
+        raise HTTPException(
+            status_code=400,
+            detail="MIDI not in S3 (legacy local file)",
+        )
+
+    try:
+        url = storage_service.get_presigned_url(
+            eval_obj.midi_url,
+            expires_seconds=expires_seconds,
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to generate download URL: {e}",
+        )
+
+    return {
+        "url": url,
+        "expires_in": expires_seconds,
+        "expires_at": (datetime.utcnow() + timedelta(seconds=expires_seconds)).isoformat() + "Z",
+    }

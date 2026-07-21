@@ -59,10 +59,11 @@ class Settings(BaseSettings):
     wechat_app_secret: str = ""
 
     # ── S3 / MinIO ──
-    s3_endpoint_url: str = ""
+    s3_endpoint_url: str = "http://127.0.0.1:9000"  # FastAPI → MinIO 内部
+    s3_public_url: str = ""  # 客户端访问的公网 URL(空则用 s3_endpoint_url)
     s3_bucket: str = "copiano-midi"
-    s3_access_key: str = ""
-    s3_secret_key: str = ""
+    s3_access_key: str = "copiano"
+    s3_secret_key: str = "mNioCopiano2026Secret"
     s3_region: str = "us-east-1"
 
     # ── 监控 ──

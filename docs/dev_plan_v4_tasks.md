@@ -38,7 +38,7 @@
 
 - [DONE: 2026-07-21 16:30] **A3.1**: 移植 v3.0 Python 模块到 backend/services/ — eval_pitch + expressiveness + hand_pose + senior_mode 直接复用,evaluation_service 编排 5 维, 20 测试全过
 - [DONE: 2026-07-21 16:45] **A3.2-A3.4**: /api/v1/evaluations POST + GET + history — multipart 上传 + 5 维评估 + 持久化 PG + 10 测试全过
-- [PENDING] **A3.5**: S3/MinIO MIDI 文件存储
+- [DONE: 2026-07-21 16:55] **A3.5**: S3/MinIO MIDI 文件存储 — MinIO 部署 + storage_service + boto3 + presigned URL + 14 测试全过 + 真 MinIO 集成测试通过
 - [PENDING] **A3.6**: 评估结果缓存 (Redis)
 
 ### W4: 课程 + 视奏 + LLM 反馈 API
