@@ -18,6 +18,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+from app.api.v1.router import api_router
+from app.core.config import settings
+
 # ──────────────────────────────────────────────
 # 日志配置
 # ──────────────────────────────────────────────
@@ -88,11 +91,16 @@ CORS_ORIGINS = os.getenv(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=CORS_ORIGINS,
+    allow_origins=settings.cors_origins_list,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ──────────────────────────────────────────────
+# 挂载 v1 路由
+# ──────────────────────────────────────────────
+app.include_router(api_router, prefix=API_V1_PREFIX)
 
 # ──────────────────────────────────────────────
 # 基础路由
@@ -139,8 +147,8 @@ async def api_v1_status():
     return {
         "api_version": "v1",
         "modules": {
-            "auth": False,        # A2.3
-            "users": False,       # A2.2
+            "auth": True,         # ✅ A2.3 (signup/login/refresh/logout)
+            "users": True,        # ✅ A2.3 (GET /me, PATCH /me)
             "evaluations": False, # A3.2-A3.4
             "curriculum": False,  # A4.2-A4.3
             "sight_reading": False, # A4.5
@@ -148,7 +156,15 @@ async def api_v1_status():
             "senior_mode": False, # A4.6
             "subscription": False, # A5.x
         },
-        "next_task": "A2.2 — SQLAlchemy 2.0 models",
+        "endpoints": {
+            "POST /api/v1/auth/signup": "注册新用户",
+            "POST /api/v1/auth/login": "登录 (返回 JWT pair)",
+            "POST /api/v1/auth/refresh": "刷新 access token",
+            "POST /api/v1/auth/logout": "登出",
+            "GET /api/v1/users/me": "当前用户信息",
+            "PATCH /api/v1/users/me": "更新资料 (name/age/lang)",
+        },
+        "next_task": "A2.4 — OAuth2 (Apple/Google)",
         "eta": "W2",
     }
 

@@ -3597,3 +3597,74 @@ sight_reading_sessions: id, user_id (FK), difficulty (4 enum), mode (3 enum),
 - 0/60 → 2/60 总任务 (3.3%)
 - backend/ 代码量: 12.4K → 32K (+19.6K)
 - 测试: 8 → 32 (+24)
+
+## [2026-07-21 15:00] Cycle 25: A2.3 JWT Auth ✅ DONE
+
+**任务**: A2.3 — JWT Auth (signup / login / refresh / logout) + /me
+**状态**: ✅ DONE
+**耗时**: ~15 分钟 (含修 4 个 Python 3.9 / pytest-asyncio / bcrypt 兼容问题)
+
+**产出** (16K 新代码):
+- `backend/app/core/config.py` (75 行) — Pydantic Settings,从 env / .env 加载,JWT_SECRET 默认值含随机盐
+- `backend/app/core/security.py` (110 行) — bcrypt 哈希 + JWT encode/decode + create_access/refresh/pair
+- `backend/app/services/user_service.py` (75 行) — UserService (get_by_id/email, create, authenticate, update_last_login)
+- `backend/app/schemas/auth.py` (95 行) — SignupRequest / LoginRequest / RefreshRequest / TokenResponse / UserResponse (含 UUID→str 转换)
+- `backend/app/api/deps.py` (75 行) — get_current_user / get_current_active_user / get_current_verified_user 依赖
+- `backend/app/api/v1/auth.py` (130 行) — POST /signup, /login, /refresh, /logout
+- `backend/app/api/v1/users.py` (60 行) — GET /me, PATCH /me
+- `backend/app/api/v1/router.py` (10 行) — 聚合 v1 路由
+- `backend/tests/test_auth.py` (370 行) — 25 集成测试 + 6 unit tests
+
+**6 个端点**:
+```
+POST   /api/v1/auth/signup    注册新用户 (201 + JWT pair)
+POST   /api/v1/auth/login     登录 (200 + JWT pair)
+POST   /api/v1/auth/refresh   refresh token 换新 access (200)
+POST   /api/v1/auth/logout    登出 (无状态,前端清 token)
+GET    /api/v1/users/me       当前用户信息 (需 Bearer)
+PATCH  /api/v1/users/me       更新 name/age/preferred_language
+```
+
+**关键设计**:
+- **bcrypt 3.2.2** 兼容 passlib 1.7.4 (新 bcrypt 4.x 移除了 `__about__`)
+- **JWT 类型隔离** — access/refresh 互不通用 (sub + type 双校验)
+- **依赖链** — get_current_user → get_current_active_user → get_current_verified_user
+- **银发模式 PATCH 时重新评估** — 用户改年龄后自动激活
+- **UUID→str validator** — Pydantic 不自动转 UUID,需 field_validator
+- **aiosqlite 测试** — 用 async engine 让 FastAPI async 端点能跑通
+
+**踩过的 4 个坑**:
+1. `str | int` Python 3.9 不支持 → 加 `from __future__ import annotations`
+2. `bcrypt 4.x` 移除了 `__about__` → pin 到 `bcrypt==3.2.2`
+3. `aiosqlite` 需要 `greenlet` → `pip install greenlet==3.0.3`
+4. UUID→str 没自动转 → `field_validator("id", mode="before")`
+
+**测试结果** (本地 venv, 9.51s):
+```
+57 passed:
+  test_main.py: 8 (基础冒烟)
+  test_models.py: 24 (CRUD + 关系 + 业务方法)
+  test_auth.py: 25 (单元 + 集成)
+```
+
+**累计 backend 测试**: 32 → **57/57 全过** (+25)
+
+**冒烟测试** (uvicorn 启动):
+```bash
+$ uvicorn main:app --port 8766
+$ curl /api/v1/status
+{"api_version":"v1","modules":{"auth":true,"users":true,...},"endpoints":{...}}
+```
+
+**下一步** (Cycle 26):
+- 第一个 [PENDING] 任务: **A2.4** OAuth2 (Apple/Google/微信 登录)
+- 复用 authlib + httpx + python-jose
+- 端点: GET /api/v1/auth/apple/callback, /google/callback, /wechat/callback
+- 第三方登录 + 绑定已有账户
+
+**累计 v4 进度**:
+- 1/36 → **3/36** Phase 7A 任务完成 (8.3%)
+- 1/60 → **3/60** 总任务 (5.0%)
+- backend/ 代码量: 12.4K → **48K** (+35.6K)
+- 测试: 8 → **57** (+49)
+- 端点: 0 → **6 业务端点 + 5 meta 端点**

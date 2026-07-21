@@ -58,9 +58,12 @@ def test_api_v1_status():
     data = r.json()
     assert data["api_version"] == "v1"
     assert "modules" in data
-    # 当前所有模块应该都还是 False (未实现)
-    for module, status in data["modules"].items():
-        assert status is False, f"{module} should be False in A2.1"
+    # A2.3 已实现: auth + users
+    assert data["modules"]["auth"] is True
+    assert data["modules"]["users"] is True
+    # 其它还没做
+    for module in ["evaluations", "curriculum", "sight_reading", "feedback", "senior_mode", "subscription"]:
+        assert data["modules"][module] is False, f"{module} should be False"
 
 
 def test_cors_headers():
