@@ -3750,3 +3750,82 @@ HTTP 503 (没配 WECHAT_APP_ID,正确)
 - backend/ 代码量: 48K → **63K** (+15K)
 - 测试: 57 → **79** (+22)
 - 端点: 6 → **12 业务端点** + 5 meta
+
+## [2026-07-21 15:35] Cycle 27: A1.4 服务器初始化 ✅ DONE
+
+**任务**: A1.4 — 服务器初始化 (Ubuntu + Docker + Nginx)
+**状态**: ✅ DONE
+**耗时**: ~12 分钟
+**前置**: 用户绑定腾讯云控制台公钥 (15:30)
+
+**已装版本/状态**:
+| 组件 | 版本/状态 |
+|------|----------|
+| OS | Ubuntu 22.04.5 LTS (Jammy) |
+| 内核 | 5.15.0-181-generic |
+| Docker | 29.6.2 |
+| Docker Compose | v5.3.1 |
+| Nginx | 1.18.0 (运行中) |
+| UFW | active (22/80/443 开放) |
+| Swap | 2GB /swapfile (fstab 持久化) |
+| /opt/copiano/ | 已创建 (ubuntu:ubuntu) |
+| 时区 | CST (Asia/Shanghai) |
+| Docker log | json-file 10m × 3 文件轮转 |
+
+**系统资源**:
+- 磁盘: 40G 总,11G 已用,28G 空闲
+- 内存: 1.9G RAM + 2G swap = 3.9G 可用
+- 注意: 1.9G 内存偏小,PostgreSQL + Redis + FastAPI + Qwen 必须用 swap
+
+**执行步骤** (8 步,1 个 SSH 会话完成):
+1. `apt update` — 93 包可升级 (不动,先建环境)
+2. Docker 官方脚本安装 → 已存在(镜像里预装) → 跳过
+3. `usermod -aG docker ubuntu` — 免 sudo 用 docker
+4. UFW 配置 — 22/80/443 开放,默认拒绝入站
+5. Docker hello-world 验证 — pull + run 成功
+6. `mkdir /opt/copiano` — 部署目录
+7. Docker daemon.json log 轮转配置
+8. 2G swap 创建 + fstab 持久化
+
+**关键决策**:
+- **2G swap 必加** — 1.9G RAM 跑 PostgreSQL + Redis + FastAPI 不够,swap 兜底
+- **不动 apt upgrade** — 避免重启中断 cron,稳定优先
+- **Docker log 10m×3** — 30M 总量上限,防磁盘满(轻量服务器常见坑)
+- **Nginx 已运行但未配置** — A1.5 (SSL) 需等 A1.3 DNS
+- **保留镜像原配置** — Tencent Cloud Lighthouse 镜像已经预装 Docker + Nginx,省事
+
+**冒烟测试结果**:
+```bash
+$ docker --version
+Docker version 29.6.2, build dfc4efb
+$ docker compose version
+Docker Compose version v5.3.1
+$ docker run --rm hello-world
+Hello from Docker!
+$ sudo ufw status
+Status: active
+22/tcp, 80/tcp, 443/tcp ALLOW IN
+$ swapon --show
+/swapfile  2G
+```
+
+**W1 进度 1/8** (用户操作 7 项仍 BLOCKED):
+- ✅ A1.4 服务器初始化 — 已完成
+- ⏳ A1.1 Apple Developer — 等你申请
+- ⏳ A1.2 域名 — 你的 copiano.com 已有
+- ⏳ A1.3 DNS A 记录 — 你需要配 5 条 A 记录指向 124.156.184.160
+- ⏳ A1.5 Let's Encrypt — 依赖 A1.3
+- ⏳ A1.6 PostgreSQL + Redis — 现在可做!Docker 已就绪
+- ⏳ A1.7 GitHub repo — 等你给账号
+- ⏳ A1.8 OpenAI key — 等你给 key
+
+**下一步** (Cycle 28, 下一个 cron tick):
+- **A1.6** PostgreSQL 16 + Redis 7 Docker 部署
+- 在服务器上跑 docker compose,pgdata 持久化,/opt/copiano/postgres/
+- Redis 配密码 + AOF 持久化
+- 测连通性:`psql` + `redis-cli` 远程登录
+
+**累计 v4 进度**:
+- 4/36 → **5/36** Phase 7A 任务完成 (13.9%)
+- 4/60 → **5/60** 总任务 (8.3%)
+- 进度类别: 服务器 ✅ 1/8 + 代码 ✅ 4/36
