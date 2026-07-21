@@ -4088,3 +4088,98 @@ access-control-allow-credentials: true
 - 测试: 87 → **100** (+13) 🎯
 - 端点: 12 业务 + 5 meta
 - 基础设施: 服务器(Docker/Nginx/UFW/PG/Redis) + 4 业务表(deployed)
+
+## [2026-07-21 16:30] Cycle 31: A3.1 移植 v3.0 评估模块 ✅ DONE
+
+**任务**: A3.1 — 把 v3.0 5 维算法移植到 backend/services/
+**状态**: ✅ DONE
+**耗时**: ~15 分钟(踩了 4 个坑)
+
+**产出**:
+- 直接复用 4 个 v3.0 模块(copied as-is):
+  - `backend/app/services/eval_pitch.py` (173 行)
+  - `backend/app/services/expressiveness.py` (449 行)
+  - `backend/app/services/hand_pose.py` (637 行)
+  - `backend/app/services/senior_mode.py` (351 行)
+- 新增编排层:
+  - `backend/app/services/evaluation_service.py` (200 行) — 5 维 orchestration
+- `backend/app/services/__init__.py` (更新)
+- `backend/tests/test_evaluation_service.py` (330 行) — 20 测试
+
+**复用率**:
+- v3.0 算法 100% 复用,0 行业务逻辑改写
+- 接口转换:value_objects (Note, ExpressivenessProfile) → dict
+- 字段标准化:v3.0 score 0-100 → v4 score 0-1
+
+**关键设计**:
+- **保留 v3.0 dataclass 内部结构** — 外部 dict 包装,内部不动
+- **5 维权重一致** — pitch 0.20 / expressiveness 0.25 / hand_pose 0.20 / rhythm 0.20 / sight_reading 0.15
+- **异常隔离** — 任何一维度评估失败,其他维度继续
+- **EvaluationService 单例** — `evaluation_service` 全局可用
+- **evaluate_full 灵活** — 可部分维度(只 ref+user,只 hand landmarks,只 sight_reading)
+- **stdlib 风格日志** — 避免 structlog kwargs 兼容问题
+
+**测试结果** (本地 venv, 20.14s):
+```
+120 passed (A3.1 新增 20):
+  test_eval_pitch_direct_perfect ✓
+  test_eval_pitch_direct_one_wrong ✓
+  test_eval_pitch_direct_half_wrong ✓
+  test_midi_to_notes ✓
+  test_evaluate_pitch_service_perfect ✓
+  test_evaluate_pitch_service_one_wrong ✓
+  test_evaluate_pitch_service_timing ✓
+  test_evaluate_full_perfect ✓
+  test_evaluate_full_with_sight_reading ✓
+  test_evaluate_full_no_input ✓
+  test_evaluate_full_invalid_midi ✓
+  test_evaluation_result_to_dict ✓
+  test_weights_sum_to_one ✓
+  test_expressiveness_analyze ✓
+  test_expressiveness_with_period ✓
+  test_senior_simplify_basic ✓
+  test_senior_simplify_short_passthrough ✓
+  test_senior_config_default ✓
+  test_hand_pose_import ✓
+  test_evaluation_service_singleton ✓
+```
+
+**踩过的 4 个坑**:
+1. `defaultdict` 配置错 → fixture 改用 `tmp_path` + `return p`(原来没 return)
+2. `ExpressivenessProfile` 用 `asdict` 需要 `from dataclasses import asdict`
+3. structlog 风格 `logger.info("event", key=value)` 在 stdlib 下崩 → 改 `logger.info("event %s", value)`
+4. test_oauth 用 TestClient 触发 main.py → setup_logging → 影响后续测试的 logging 行为
+
+**冒烟测试**:
+```python
+r = evaluation_service.evaluate_full(
+    reference_midi='/tmp/test_ref.mid',
+    user_midi='/tmp/test_user_perfect.mid',
+    period_hint='baroque',
+)
+# pitch=1.0, rhythm=1.0, overall=0.458 (expressiveness 拉低,simple MIDI 表现力差)
+```
+
+**累计 backend 测试**: 100 → **120/120 全过** (+20) 🎯
+
+**W3 进度 1/6**:
+- ✅ A3.1 移植 v3.0 模块 (20 测试)
+- ⏳ A3.2 /api/v1/evaluations 端点 (MIDI 上传 → 5 维) — 下一个
+- ⏳ A3.3 /api/v1/evaluations/{id} 详情
+- ⏳ A3.4 /api/v1/evaluations/history 历史
+- ⏳ A3.5 S3/MinIO MIDI 文件存储
+- ⏳ A3.6 评估结果缓存 (Redis)
+
+**下一步** (Cycle 32): A3.2 — POST /api/v1/evaluations
+- multipart/form-data 上传 MIDI 文件
+- 调 evaluation_service.evaluate_full
+- 持久化到 PostgreSQL (复用 A2.2 Evaluation 模型)
+- 返回 5 维分数 + overall + tips
+- 限流:20/hour(防滥用)
+
+**累计 v4 进度**:
+- 8/36 → **9/36** Phase 7A 任务完成 (25.0%)
+- 8/60 → **9/60** 总任务 (15.0%)
+- 代码: 74K → **75.5K** (+1.5K 编排层)
+- 测试: 100 → **120** (+20)
+- 5 维算法: 100% 复用 v3.0 (零重写)

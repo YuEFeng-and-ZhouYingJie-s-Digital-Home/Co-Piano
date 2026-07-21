@@ -36,7 +36,7 @@
 
 ### W3: 5 维评估 API (复用 v3.0)
 
-- [PENDING] **A3.1**: 移植 v3.0 Python 模块到 backend/services/
+- [DONE: 2026-07-21 16:30] **A3.1**: 移植 v3.0 Python 模块到 backend/services/ — eval_pitch + expressiveness + hand_pose + senior_mode 直接复用,evaluation_service 编排 5 维, 20 测试全过
 - [PENDING] **A3.2**: /api/v1/evaluations 端点 (MIDI 上传 → 5 维)
 - [PENDING] **A3.3**: /api/v1/evaluations/{id} 详情
 - [PENDING] **A3.4**: /api/v1/evaluations/history 历史
