@@ -27,6 +27,15 @@ from .oauth import (
     OAuthLinkRequest,
     WeChatCallbackRequest,
 )
+from .sight_reading import (
+    SightReadingAnswerRequest,
+    SightReadingAnswerResponse,
+    SightReadingQuestion,
+    SightReadingSessionResponse,
+    SightReadingSessionStats,
+    SightReadingStartRequest,
+    SightReadingStartResponse,
+)
 
 __all__ = [
     "SignupRequest",
@@ -49,4 +58,11 @@ __all__ = [
     "CurriculumWeekResponse",
     "BlockCompleteRequest",
     "BlockCompleteResponse",
+    "SightReadingStartRequest",
+    "SightReadingStartResponse",
+    "SightReadingQuestion",
+    "SightReadingAnswerRequest",
+    "SightReadingAnswerResponse",
+    "SightReadingSessionResponse",
+    "SightReadingSessionStats",
 ]

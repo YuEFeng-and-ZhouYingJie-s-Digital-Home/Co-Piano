@@ -4695,3 +4695,71 @@ v3.0 curriculum 返回 `weakness_drill` 和 `cooldown_relax` 不在 v4 BlockType
 - 代码: 99K → **109K** (+10K)
 - 测试: 178 → **189** (+11)
 - 端点: 16 → **19 业务端点** (+3)
+
+## [2026-07-21 18:00] Cycle 37: A4.5 视奏 API ✅ DONE
+
+**任务**: A4.5 — /api/v1/sight-reading 3 端点
+**状态**: ✅ DONE
+**耗时**: ~12 分钟
+
+**产出** (8K 新代码):
+- `backend/app/schemas/sight_reading.py` (90 行) — Start/Answer/Question/Stats/Response
+- `backend/app/api/v1/sight_reading.py` (215 行) — 3 端点
+- `backend/tests/test_sight_reading_api.py` (270 行) — 12 测试
+
+**3 个端点**:
+```
+POST /api/v1/sight-reading/session             开始会话 → 201 + 第一题
+POST /api/v1/sight-reading/session/{id}/answer  提交答案 → 正确性 + 下一题
+GET  /api/v1/sight-reading/session/{id}        会话详情 + 统计
+```
+
+**关键设计**:
+- **内存 session state** — `_SESSIONS` dict 存题目进度(生产应换 Redis)
+- **20 题上限** — `MAX_QUESTIONS_PER_SESSION = 20`,答完自动结束
+- **题目持久化** — total_questions / correct_count / streak_max 累加到 DB
+- **结束统计** — 算 accuracy + duration_seconds + notes_per_minute
+- **路径权限** — user_id 不匹配 → 403
+- **难度/模式对应** — random→landmark, interval→interval, piece→pattern
+- **题目复用 service** — 调 sight_reading_service._generate_question
+
+**测试结果** (本地 venv, 114.19s):
+```
+201 passed (A4.5 新增 12):
+  test_start_session_success ✓
+  test_start_session_4_difficulties ✓
+  test_start_session_3_modes ✓
+  test_start_session_requires_auth ✓
+  test_start_session_invalid_difficulty ✓
+  test_answer_correct ✓
+  test_answer_wrong ✓
+  test_answer_next_question_provided ✓
+  test_answer_session_not_found ✓
+  test_answer_other_user_forbidden ✓
+  test_get_session_detail ✓
+  test_get_session_other_user_forbidden ✓
+```
+
+**累计 backend 测试**: 189 → **201/201 全过** (+12) 🎯
+
+**W4 进度 5/8**:
+- ✅ A4.1 移植
+- ✅ A4.2 课程 API
+- ✅ A4.3 标记完成
+- ✅ A4.4 移植
+- ✅ A4.5 视奏 API
+- ⏳ A4.6 senior + LLM proxy
+- ⏳ A4.7 /feedback (LLM 流式)
+- ⏳ A4.8 WebSocket
+
+**下一步** (Cycle 38): A4.6 — senior_mode + LLM proxy
+- senior_mode 已 port,在 user service 自动激活 (age ≥ 60)
+- LLM proxy: backend LLM 调用层(对接 Qwen 本地 / OpenAI)
+- 这一项主要做 LLM service 包装,后端 A4.7 端点用它
+
+**累计 v4 进度**:
+- 16/36 → **17/36** Phase 7A 任务完成 (47.2%)
+- 16/60 → **17/60** 总任务 (28.3%)
+- 代码: 109K → **117K** (+8K)
+- 测试: 189 → **201** (+12)
+- 端点: 19 → **22 业务端点** (+3)

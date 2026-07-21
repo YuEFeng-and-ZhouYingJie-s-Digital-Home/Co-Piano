@@ -164,7 +164,7 @@ async def api_v1_status():
             "alembic": True,      # ✅ A2.5
             "evaluations": True,  # ✅ A3.2-A3.4
             "curriculum": True,   # ✅ A4.2-A4.3 (7天课程 + mark complete)
-            "sight_reading": False, # A4.5
+            "sight_reading": True, # ✅ A4.5 (session + answer + 详情)
             "feedback": False,    # A4.7
             "senior_mode": False, # A4.6
             "subscription": False, # A5.x
@@ -188,6 +188,9 @@ async def api_v1_status():
             "GET /api/v1/curriculum": "7 天课程(动态生成)",
             "GET /api/v1/curriculum/{day_num}": "某天课程详情",
             "POST /api/v1/curriculum/blocks/{id}/complete": "标记 block 完成",
+            "POST /api/v1/sight-reading/session": "开始视奏会话",
+            "POST /api/v1/sight-reading/session/{id}/answer": "提交答案 + 下一题",
+            "GET /api/v1/sight-reading/session/{id}": "会话详情 + 统计",
         },
         "middleware": {
             "cors": settings.cors_origins_list,
@@ -195,7 +198,7 @@ async def api_v1_status():
             "request_id_header": "X-Request-ID",
             "logging": "JSON (production) / Console (development)",
         },
-        "next_task": "A4.5 — 视奏 API (/sight-reading/session + answer)",
+        "next_task": "A4.6 — senior_mode + LLM proxy",
         "eta": "W4",
     }
 
