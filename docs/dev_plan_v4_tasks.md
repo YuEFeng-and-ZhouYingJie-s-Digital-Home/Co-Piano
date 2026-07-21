@@ -43,10 +43,9 @@
 
 ### W4: 课程 + 视奏 + LLM 反馈 API
 
-- [PENDING] **A4.1**: 移植 curriculum_v2 到 backend/services/
+- [DONE: 2026-07-21 17:30] **A4.1 + A4.4**: 移植 curriculum_v2 + sight_reading_trainer + curriculum_service + sight_reading_service + 18 测试全过
 - [PENDING] **A4.2**: /api/v1/curriculum 端点
 - [PENDING] **A4.3**: /api/v1/curriculum/blocks/{id}/complete
-- [PENDING] **A4.4**: 移植 sight_reading_trainer 到 backend/
 - [PENDING] **A4.5**: /api/v1/sight-reading/session + answer
 - [PENDING] **A4.6**: 移植 senior_mode + LLM proxy
 - [PENDING] **A4.7**: /api/v1/feedback 端点 (LLM 流式)

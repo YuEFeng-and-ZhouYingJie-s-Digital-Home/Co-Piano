@@ -4509,3 +4509,116 @@ MIDI 上传 → 临时文件
 - 测试: 144 → **160** (+16)
 - 服务器: 3 容器 (PG + Redis + MinIO) 全 healthy
 - 端点: 15 → **16 业务端点** (新增 download-url)
+
+## [2026-07-21 17:30] Cycle 35: A4.1 + A4.4 课程/视奏服务 ✅ DONE
+
+**任务**: A4.1 + A4.4 — 移植 v3.0 curriculum_v2 + sight_reading_trainer 到 backend/services
+**状态**: ✅ DONE (2 任务合 1 tick)
+**耗时**: ~15 分钟
+
+**产出** (1.4K 新代码 + 1.4K 复用):
+- 直接复用 2 个 v3.0 模块(copied as-is,1433 行):
+  - `backend/app/services/curriculum_v2.py` (700 行)
+  - `backend/app/services/sight_reading_trainer.py` (733 行)
+- 新增 2 个 service wrapper:
+  - `backend/app/services/curriculum_service.py` (170 行) — 7 天 plan + SM-2 + 弱点检测
+  - `backend/app/services/sight_reading_service.py` (140 行) — 4 难度 × 3 模式 × 3 输入
+- `backend/tests/test_curriculum_sight_reading.py` (240 行) — 18 测试
+
+**CurriculumService API** (4 方法):
+```python
+curriculum_service.generate_week_plan(user_id, avg_score, user_age, weakness_dimensions)
+  → { week_id, total_days, total_blocks, days: [{day_num, difficulty, blocks}] }
+  → 39 blocks / 7 days (beginner 用户)
+
+curriculum_service.mark_block_complete(block_id, score)
+  → SM-2 spaced repetition 更新
+  → 返回 next_review + ease + days_until
+
+curriculum_service.detect_weaknesses(recent_evaluations)
+  → ["pitch", "rhythm"] (得分 < 0.6 的维度)
+```
+
+**SightReadingService API** (3 方法):
+```python
+sight_reading_service.start_session(user_id, difficulty, mode, input_method)
+  → { session_id, current_question: {method, notes, note_names, count} }
+  → 4 难度 (beginner→advanced) × 3 模式 (random/interval/piece) × 3 教学法
+
+sight_reading_service.check_answer(question, user_notes)
+  → { correct, accuracy, matched, total }
+  → 80% 算 correct
+
+sight_reading_service._generate_question(difficulty, mode, seed)
+  → 用 v3.0 训练器生成题目(支持 seed 可复现)
+```
+
+**关键设计**:
+- **block_type 映射** — v3.0 用 `warmup_hand`,v4 ORM 用 `hand`,service 层自动转换
+- **week_id 格式** — `week_<user_id前8位>_<YYYYMMDD>`,天然唯一
+- **SM-2 0-100 分制** — v3.0 record_review 收 0-100,我们 0-1 → ×100 转换
+- **WeaknessDetector 注入** — 外部 weakness_dimensions 写到 dim_scores,影响 plan 排序
+- **3 模式 + 教学法** — random→landmark / interval→interval / piece→pattern
+- **确定性 seed** — 相同 seed 题目完全相同,前端可重现
+
+**测试结果** (本地 venv, 112.22s):
+```
+178 passed (A4.1+A4.4 新增 18):
+  test_curriculum_generate_young_user ✓
+  test_curriculum_generate_senior_user ✓
+  test_curriculum_block_types_normalized ✓
+  test_curriculum_weakness_input_affects_plan ✓
+  test_curriculum_mark_block_complete ✓
+  test_curriculum_detect_weaknesses_empty ✓
+  test_curriculum_detect_weaknesses_low_score ✓
+  test_curriculum_singleton ✓
+  test_sight_reading_start_session_random ✓
+  test_sight_reading_4_difficulties ✓
+  test_sight_reading_3_modes ✓
+  test_sight_reading_invalid_difficulty ✓
+  test_sight_reading_check_answer_perfect ✓
+  test_sight_reading_check_answer_partial ✓
+  test_sight_reading_check_answer_empty ✓
+  test_sight_reading_consistent_seeding ✓
+  test_sight_reading_singleton ✓
+  test_v3_modules_directly_importable ✓
+```
+
+**冒烟测试**:
+```python
+plan = curriculum_service.generate_week_plan(uuid.uuid4(), avg_score=0.7, user_age=25)
+# week_id: week_7bbf8e72_20260721
+# days: 7, blocks: 39
+# day 1: 6 blocks (warmup_pitch 5min, hand 3min, sight_reading 7min, main_piece 10min, ...)
+
+session = sight_reading_service.start_session(uuid.uuid4(), 'beginner', 'random')
+# Q1: ['F4', 'F4', 'E4', 'C5', 'F4'] (5 notes, landmark method)
+```
+
+**踩过的 3 个坑**:
+1. v3.0 `SpacedRepetition.review()` 不存在,要用 `record_review + get_next_review` 组合
+2. v3.0 `WeaknessDetector.weakness_scores` 不存在,实际是 `dim_scores`
+3. v3.0 的 senior 模式不影响 plan 时长(只影响 voice_dialog),测试要相应调整
+
+**累计 backend 测试**: 160 → **178/178 全过** (+18) 🎯
+
+**W4 进度 2/8**:
+- ✅ A4.1 移植 curriculum_v2
+- ✅ A4.4 移植 sight_reading_trainer
+- ⏳ A4.2 /api/v1/curriculum — 下一个
+- ⏳ A4.3 /api/v1/curriculum/blocks/{id}/complete
+- ⏳ A4.5 /api/v1/sight-reading/session + answer
+- ⏳ A4.6 senior_mode + LLM proxy
+- ⏳ A4.7 /api/v1/feedback (LLM 流式)
+- ⏳ A4.8 WebSocket /api/v1/ws/llm
+
+**下一步** (Cycle 36): A4.2 + A4.3 — Curriculum API 端点
+- GET /api/v1/curriculum → 当前用户 7 天计划(按需生成)
+- GET /api/v1/curriculum/{day_num} → 某天详情
+- POST /api/v1/curriculum/blocks/{id}/complete → 标记完成(SM-2 更新 + 写 PG)
+
+**累计 v4 进度**:
+- 14/36 → **15/36** Phase 7A 任务完成 (41.7%)
+- 14/60 → **15/60** 总任务 (25.0%)
+- 代码: 93.5K → **99K** (+5.5K,2 任务合 1)
+- 测试: 160 → **178** (+18)
