@@ -4763,3 +4763,98 @@ GET  /api/v1/sight-reading/session/{id}        会话详情 + 统计
 - 代码: 109K → **117K** (+8K)
 - 测试: 189 → **201** (+12)
 - 端点: 19 → **22 业务端点** (+3)
+
+## [2026-07-21 18:15] Cycle 38: A4.6 LLM Proxy ✅ DONE
+
+**任务**: A4.6 — LLM proxy (Qwen 本地 + OpenAI 兜底)
+**状态**: ✅ DONE
+**耗时**: ~12 分钟
+
+**产出** (8K 新代码):
+- `backend/app/services/llm_service.py` (260 行) — LLM 代理
+- `backend/tests/test_llm_service.py` (300 行) — 14 测试
+
+**LLMService API** (4 方法):
+```python
+llm_service.generate(prompt, system=None, max_tokens=512, temperature=0.7, prefer="qwen")
+  → LLMResponse { content, model, backend, latency_ms, prompt_tokens, completion_tokens, total_tokens }
+  → 自动 fallback:Qwen 失败 → OpenAI
+
+llm_service.stream(prompt, system=None, ...)
+  → AsyncIterator[str]  # 流式 yield 文本片段
+
+llm_service.generate_feedback(evaluation_dict, user_age=None)
+  → LLMResponse
+  → 自动用 5 维分数生成教学反馈
+  → 60+ 银发用户自动用简化 system prompt
+```
+
+**关键设计**:
+- **双后端 fallback** — Qwen 本地(http://localhost:8080)优先,失败自动切 OpenAI
+- **OpenAI 兼容 API** — Qwen 走 `/v1/chat/completions`,跟 OpenAI 同协议
+- **httpx 异步客户端** — 不阻塞 FastAPI event loop
+- **银发自动检测** — `user_age >= 60` → 简化 system prompt("耐心"、"简单"、"鼓励")
+- **5 维自动排序** — 找出 strongest/weakest 维度作为 LLM 输入上下文
+- **流式简化版** — 一次 yield 全部 content(避免真 SSE 复杂度)
+- **LLMResponse dataclass** — 统一格式(content/model/backend/latency/tokens)
+
+**测试结果** (本地 venv, 140.88s):
+```
+215 passed (A4.6 新增 14):
+  test_llm_response_to_dict ✓
+  test_llm_response_defaults ✓
+  test_llm_service_init ✓
+  test_llm_service_singleton ✓
+  test_generate_qwen_success ✓
+  test_generate_qwen_error_raises ✓
+  test_generate_openai_success ✓
+  test_generate_openai_no_key_raises ✓
+  test_generate_fallback_qwen_to_openai ✓ (call 2 次,自动切换)
+  test_generate_all_backends_fail ✓
+  test_stream_yields_content ✓
+  test_generate_feedback_basic ✓
+  test_generate_feedback_senior ✓
+  test_senior_uses_simpler_system_prompt ✓
+```
+
+**LLM 评估反馈 prompt 模板**:
+```
+学员演奏了《{piece_name}》,综合分 {overall_score:.0%}。
+
+5 维分数:
+  - 音准 (pitch): 95%
+  - 表现力 (expressiveness): 70%
+  - 手型 (hand_pose): 50%
+  - 节奏 (rhythm): 85%
+  - 视奏 (sight_reading): 60%
+
+最强:音准 95%
+最弱:手型 50%
+
+请给出简短反馈。
+```
+
+**累计 backend 测试**: 201 → **215/215 全过** (+14) 🎯
+
+**W4 进度 6/8**:
+- ✅ A4.1 移植
+- ✅ A4.2 课程 API
+- ✅ A4.3 标记完成
+- ✅ A4.4 移植
+- ✅ A4.5 视奏 API
+- ✅ A4.6 LLM proxy
+- ⏳ A4.7 /feedback (LLM 流式)
+- ⏳ A4.8 WebSocket
+
+**下一步** (Cycle 39): A4.7 — /api/v1/feedback 端点
+- POST /api/v1/feedback 接受 evaluation_id,异步调 LLM,流式返回反馈
+- 同时回写 evaluation.llm_feedback + llm_model + llm_latency_ms
+- 限流:10/min/user(贵)
+- 银发用户自动简化 prompt
+
+**累计 v4 进度**:
+- 17/36 → **18/36** Phase 7A 任务完成 (50.0%) 🎯 一半!
+- 17/60 → **18/60** 总任务 (30.0%)
+- 代码: 117K → **125K** (+8K)
+- 测试: 201 → **215** (+14)
+- 5 维评估 + 课程 + 视奏 + LLM 全栈通

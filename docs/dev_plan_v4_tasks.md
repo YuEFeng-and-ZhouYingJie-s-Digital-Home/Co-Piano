@@ -46,7 +46,7 @@
 - [DONE: 2026-07-21 17:30] **A4.1 + A4.4**: 移植 curriculum_v2 + sight_reading_trainer + curriculum_service + sight_reading_service + 18 测试全过
 - [DONE: 2026-07-21 17:45] **A4.2 + A4.3**: /api/v1/curriculum 3 端点 (GET 全计划 / GET 某天 / POST 标记完成) + 11 测试全过
 - [DONE: 2026-07-21 18:00] **A4.5**: /api/v1/sight-reading 3 端点 (开 session / 答 / 详情) + 12 测试全过
-- [PENDING] **A4.6**: 移植 senior_mode + LLM proxy
+- [DONE: 2026-07-21 18:15] **A4.6**: LLM proxy (Qwen 本地 + OpenAI 兜底 + 流式 + 银发简化) + 14 测试全过
 - [PENDING] **A4.7**: /api/v1/feedback 端点 (LLM 流式)
 - [PENDING] **A4.8**: WebSocket /api/v1/ws/llm
 
