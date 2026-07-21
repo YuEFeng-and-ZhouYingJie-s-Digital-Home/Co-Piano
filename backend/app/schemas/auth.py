@@ -58,6 +58,7 @@ class UserResponse(BaseModel):
     is_senior: bool = False
     subscription_tier: SubscriptionTier = SubscriptionTier.FREE
     oauth_provider: OAuthProvider = OAuthProvider.LOCAL
+    oauth_id: Optional[str] = None
     preferred_language: str = "zh-CN"
     is_active: bool = True
     is_verified: bool = False

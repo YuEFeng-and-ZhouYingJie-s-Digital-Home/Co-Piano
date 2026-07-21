@@ -7,6 +7,13 @@ from .auth import (
     TokenResponse,
     UserResponse,
 )
+from .oauth import (
+    AppleCallbackRequest,
+    GoogleCallbackRequest,
+    OAuthAccountInfo,
+    OAuthLinkRequest,
+    WeChatCallbackRequest,
+)
 
 __all__ = [
     "SignupRequest",
@@ -15,4 +22,9 @@ __all__ = [
     "TokenResponse",
     "UserResponse",
     "MessageResponse",
+    "AppleCallbackRequest",
+    "GoogleCallbackRequest",
+    "WeChatCallbackRequest",
+    "OAuthLinkRequest",
+    "OAuthAccountInfo",
 ]

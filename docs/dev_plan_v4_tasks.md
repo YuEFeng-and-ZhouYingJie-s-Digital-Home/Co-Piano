@@ -30,7 +30,7 @@
 - [DONE: 2026-07-21 14:30] **A2.1**: FastAPI 项目结构 (backend/) — main.py + requirements.txt + Dockerfile + README.md + .env.example + 8 冒烟测试全通过
 - [DONE: 2026-07-21 14:45] **A2.2**: SQLAlchemy 2.0 模型 (User/Evaluation/Curriculum/SightReadingSession) — 4 张表 + lazy engine + 24 测试全过
 - [DONE: 2026-07-21 15:00] **A2.3**: JWT Auth (signup/login/refresh/logout) + /me — bcrypt + PyJWT + 6 端点 + 25 集成测试全过
-- [PENDING] **A2.4**: OAuth2 (Apple/Google 登录)
+- [DONE: 2026-07-21 15:08] **A2.4**: OAuth2 (Apple/Google/WeChat 登录) — 6 端点 + PyJWT[crypto] + JWKS 验签 + 22 集成测试全过
 - [PENDING] **A2.5**: Alembic 数据库迁移
 - [PENDING] **A2.6**: 基础 middleware (CORS, rate_limit, logging)
 

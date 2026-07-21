@@ -149,6 +149,7 @@ async def api_v1_status():
         "modules": {
             "auth": True,         # ✅ A2.3 (signup/login/refresh/logout)
             "users": True,        # ✅ A2.3 (GET /me, PATCH /me)
+            "oauth": True,        # ✅ A2.4 (Apple/Google/WeChat + link/unlink)
             "evaluations": False, # A3.2-A3.4
             "curriculum": False,  # A4.2-A4.3
             "sight_reading": False, # A4.5
@@ -161,10 +162,16 @@ async def api_v1_status():
             "POST /api/v1/auth/login": "登录 (返回 JWT pair)",
             "POST /api/v1/auth/refresh": "刷新 access token",
             "POST /api/v1/auth/logout": "登出",
+            "POST /api/v1/auth/oauth/apple": "Apple Sign In",
+            "POST /api/v1/auth/oauth/google": "Google Sign In",
+            "POST /api/v1/auth/oauth/wechat": "WeChat 扫码登录",
+            "GET /api/v1/auth/oauth/wechat/qrcode": "微信扫码 URL",
+            "POST /api/v1/auth/oauth/link": "绑 OAuth 到当前用户",
+            "POST /api/v1/auth/oauth/unlink": "解绑 OAuth",
             "GET /api/v1/users/me": "当前用户信息",
             "PATCH /api/v1/users/me": "更新资料 (name/age/lang)",
         },
-        "next_task": "A2.4 — OAuth2 (Apple/Google)",
+        "next_task": "A2.5 — Alembic 数据库迁移",
         "eta": "W2",
     }
 

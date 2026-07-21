@@ -3668,3 +3668,85 @@ $ curl /api/v1/status
 - backend/ 代码量: 12.4K → **48K** (+35.6K)
 - 测试: 8 → **57** (+49)
 - 端点: 0 → **6 业务端点 + 5 meta 端点**
+
+## [2026-07-21 15:08] Cycle 26: A2.4 OAuth2 (Apple/Google/WeChat) ✅ DONE
+
+**任务**: A2.4 — OAuth2 登录 (Apple Sign In / Google / 微信扫码)
+**状态**: ✅ DONE
+**耗时**: ~13 分钟
+
+**产出** (15K 新代码):
+- `backend/app/schemas/oauth.py` (60 行) — AppleCallbackRequest / GoogleCallbackRequest / WeChatCallbackRequest / OAuthLinkRequest / OAuthAccountInfo
+- `backend/app/services/oauth_service.py` (220 行) — verify_apple_id_token / verify_google_id_token / wechat_exchange_code / get_or_create_oauth_user / link_oauth_to_user
+- `backend/app/api/v1/oauth.py` (180 行) — 6 端点 (apple/google/wechat 登录 + wechat/qrcode + link + unlink)
+- `backend/app/core/config.py` (扩展) — apple_client_id / google_client_id / wechat_app_id / wechat_app_secret
+- `backend/tests/test_oauth.py` (420 行) — 22 集成 + 单元测试
+
+**6 个端点**:
+```
+POST   /api/v1/auth/oauth/apple              Apple Sign In
+POST   /api/v1/auth/oauth/google             Google Sign In
+POST   /api/v1/auth/oauth/wechat             微信 code 登录
+GET    /api/v1/auth/oauth/wechat/qrcode      微信扫码 URL
+POST   /api/v1/auth/oauth/link               绑 OAuth 到当前用户 (需登录)
+POST   /api/v1/auth/oauth/unlink             解绑 OAuth (需登录 + 本地密码)
+```
+
+**关键设计**:
+- **Apple 验签** — PyJWKClient 拉 Apple JWKS (https://appleid.apple.com/auth/keys) + RS256 验签
+- **Google 验签** — PyJWKClient 拉 Google JWKS (https://www.googleapis.com/oauth2/v3/certs) + RS256 验签
+- **WeChat** — httpx 调 2 个 API (code→access_token, access_token+openid→userinfo)
+- **get_or_create_oauth_user 3 步**:
+  1. 按 (provider, oauth_id) 查 → 命中复用
+  2. 按 email 查 → 命中合并到已有账户(关联登录)
+  3. 都没 → 创建新 user (微信无 email 用占位 `{provider}_{id}@oauth.copiano.com`)
+- **Apple/Google email 视为已验证** (`is_verified=True`)
+- **link 防冲突** — 同一 OAuth 不能绑多个 user (409)
+- **unlink 安全** — OAuth-only 用户(无 password)不能解绑(防止账户丢失)
+- **微信扫码 URL** — `https://open.weixin.qq.com/connect/qrconnect?appid=...&redirect_uri=...`
+
+**测试策略**:
+- **Mock 一切外部调用** — `monkeypatch.setattr(oauth_service, "verify_*", fake)` 避免真请求 Apple/Google/微信
+- **覆盖** — 新建/已有/email 合并/无 email/绑定/解绑/无 password 阻止解绑/已绑冲突
+
+**测试结果** (本地 venv, 12.44s):
+```
+79 passed (A2.1 8 + A2.2 24 + A2.3 25 + A2.4 22):
+  test_oauth.py: 22 集成 + 单元
+```
+
+**累计 backend 测试**: 57 → **79/79 全过** (+22)
+
+**踩过的 2 个小坑**:
+1. `monkeypatch.setattr(Settings, ...)` 不能改 Pydantic 单例 → 直接 patch `config_module.settings` 实例属性
+2. `UserResponse` 缺 `oauth_id` 字段 → 加上 + `field_validator`
+
+**冒烟测试**:
+```bash
+$ uvicorn main:app --port 8767
+$ curl /api/v1/status
+{"modules":{"auth":true,"users":true,"oauth":true,...},"endpoints":12 个}
+$ curl /api/v1/auth/oauth/wechat/qrcode?redirect_uri=...
+HTTP 503 (没配 WECHAT_APP_ID,正确)
+```
+
+**W2 进度 4/6**:
+- ✅ A2.1 FastAPI scaffold (8)
+- ✅ A2.2 SQLAlchemy 4 表 (24)
+- ✅ A2.3 JWT Auth 6 端点 (25)
+- ✅ A2.4 OAuth2 6 端点 (22)
+- ⏳ A2.5 Alembic 迁移 — 下一个
+- ⏳ A2.6 middleware (CORS/rate_limit/logging)
+
+**下一步** (Cycle 27): A2.5 Alembic 数据库迁移
+- 配置 alembic.ini + env.py
+- 自动从 SQLAlchemy Base.metadata 生成初始 migration
+- 验证: upgrade / downgrade 双向
+- 测试: 内存 SQLite 跑 migration
+
+**累计 v4 进度**:
+- 3/36 → **4/36** Phase 7A 任务完成 (11.1%)
+- 3/60 → **4/60** 总任务 (6.7%)
+- backend/ 代码量: 48K → **63K** (+15K)
+- 测试: 57 → **79** (+22)
+- 端点: 6 → **12 业务端点** + 5 meta

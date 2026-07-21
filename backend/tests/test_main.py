@@ -58,9 +58,10 @@ def test_api_v1_status():
     data = r.json()
     assert data["api_version"] == "v1"
     assert "modules" in data
-    # A2.3 已实现: auth + users
+    # A2.3 + A2.4 已实现
     assert data["modules"]["auth"] is True
     assert data["modules"]["users"] is True
+    assert data["modules"]["oauth"] is True
     # 其它还没做
     for module in ["evaluations", "curriculum", "sight_reading", "feedback", "senior_mode", "subscription"]:
         assert data["modules"][module] is False, f"{module} should be False"

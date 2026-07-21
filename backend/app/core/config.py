@@ -52,6 +52,12 @@ class Settings(BaseSettings):
     qwen_api_url: str = "http://localhost:8080"
     openai_api_key: str = ""
 
+    # ── OAuth ──
+    apple_client_id: str = ""  # Bundle ID or Service ID
+    google_client_id: str = ""  # OAuth 2.0 Client ID
+    wechat_app_id: str = ""
+    wechat_app_secret: str = ""
+
     # ── S3 / MinIO ──
     s3_endpoint_url: str = ""
     s3_bucket: str = "copiano-midi"

@@ -826,3 +826,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_24_DONE: 2026-07-21 14:45 — A2.2 SQLAlchemy 2.0 模型 (4 表, 32K 代码, 24/24 测试, lazy engine)]
 
 [CYCLE_25_DONE: 2026-07-21 15:00 — A2.3 JWT Auth (6 端点, 16K 代码, 25/25 测试, bcrypt + PyJWT)]
+
+[CYCLE_26_DONE: 2026-07-21 15:08 — A2.4 OAuth2 Apple/Google/WeChat (6 端点, 15K 代码, 22/22 测试, JWKS 验签)]
