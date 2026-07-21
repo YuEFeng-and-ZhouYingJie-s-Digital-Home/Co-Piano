@@ -4392,3 +4392,120 @@ copiano-minio      Up (healthy) ← 新增
 - 代码: 83.5K → **88.5K** (+5K)
 - 测试: 130 → **144** (+14)
 - 服务器: 3 容器健康 (PG + Redis + MinIO)
+
+## [2026-07-21 17:08] Cycle 34: A3.6 Redis 评估缓存 ✅ DONE — W3 收官 🎉
+
+**任务**: A3.6 — 评估结果 Redis 缓存
+**状态**: ✅ DONE
+**耗时**: ~12 分钟
+
+**产出** (5K 新代码):
+- `backend/app/services/cache.py` (170 行) — Redis 缓存封装
+- `backend/app/api/v1/evaluations.py` (扩展) — 评估前查 cache,评估后写 cache (24h TTL)
+- `backend/tests/test_cache.py` (215 行) — 16 测试
+- `backend/requirements.txt` — redis + fakeredis
+
+**CacheService API** (7 方法):
+```python
+cache_service.get(key) → dict | None
+cache_service.set(key, value, ttl=86400) → bool
+cache_service.delete(key) → bool
+cache_service.exists(key) → bool
+cache_service.incr(key, ttl=60) → int  # 限流场景
+cache_service.ttl(key) → int
+cache_service.eval_key(midi_path, period_hint) → 'eval:xxxxxxxxxxxxxxxx'  # 业务辅助
+```
+
+**关键设计**:
+- **懒加载 + 失败降级** — Redis 不可用时返回 None/False,不阻塞主流程
+- **auto-disable** — 连接失败后 _enabled=False,不再重试,避免日志噪音
+- **业务 key 复用** — `eval:<midi_hash[:16]>`,同 MIDI 同 period 命中
+- **midi_hash 算法** — 读前 8KB + size + mtime,不全读节省 IO
+- **JSON 自动序列化** — 嵌套 dict / list 直接 set
+- **connect_timeout 2s** — Redis 挂了也不卡 API
+
+**集成进评估流**:
+```
+POST /api/v1/evaluations
+  ↓
+1. 算 cache_key = eval:<hash(midi, period)>
+2. cache.get(key) → 有就跳过 5 维计算
+3. 调 evaluation_service.evaluate_full (~1-3s)
+4. cache.set(key, result, ttl=24h)
+5. 上传 S3 + 写 PG
+```
+
+**测试结果** (本地 venv, 100.84s):
+```
+160 passed (A3.6 新增 16):
+  test_cache_service_init ✓
+  test_is_available_when_redis_unreachable ✓
+  test_get_set_basic ✓
+  test_get_missing ✓
+  test_set_ttl ✓
+  test_delete ✓
+  test_exists ✓
+  test_incr ✓
+  test_set_complex_types ✓
+  test_set_when_unavailable ✓
+  test_midi_hash_deterministic ✓
+  test_midi_hash_differs_for_different_period ✓
+  test_midi_hash_missing_file ✓
+  test_eval_key_format ✓
+  test_evaluation_cache_roundtrip ✓
+  test_cache_service_singleton ✓
+```
+
+**真 Redis 集成测试** (SSH 隧道 16379→6379):
+```python
+cs.set("real_test:key", {"hello": "redis", "n": 42}, ttl_seconds=60)
+# ✅ set OK
+# ✅ get: {'hello': 'redis', 'n': 42}
+# ✅ ttl: 60
+# ✅ delete: None
+```
+
+**踩过的 2 个坑**:
+1. fakeredis fixture 只 patch 类属性,singleton 的 _client 还是 None → 改为 monkey-patch `client` property
+2. `midi_hash` 缺文件时没截 [:16] → 修正
+
+**累计 backend 测试**: 144 → **160/160 全过** (+16) 🎯
+
+**W3 进度 6/6 完成** 🎉:
+- ✅ A3.1 移植 v3.0 模块 (20)
+- ✅ A3.2 POST /evaluations (3)
+- ✅ A3.3 GET /{id} (3)
+- ✅ A3.4 GET /history (4)
+- ✅ A3.5 S3/MinIO 存储 (14)
+- ✅ A3.6 Redis 缓存 (16)
+
+**5 维评估全链路**:
+```
+MIDI 上传 → 临时文件
+  → 缓存查 (Redis,24h TTL,命中跳过 5 维计算)
+  → 5 维计算 (eval_pitch + expressiveness + hand_pose)
+  → S3 上传 (MinIO,bucket: copiano-midi)
+  → PG 持久化 (Evaluation 表,5 维分数 + overall)
+  → 响应 (5 维 + tips + 评估 ID)
+  → 前端 GET /{id} 查详情
+  → GET /history 列分页
+  → GET /{id}/download-url 拿 presigned URL 拉 MIDI
+```
+
+**下一步** (Cycle 35, W4 启动): A4.x 课程 API
+- **A4.1** 移植 curriculum_v2.py 到 backend/services/
+- **A4.2** /api/v1/curriculum 端点 (7 天课程)
+- **A4.3** /api/v1/curriculum/blocks/{id}/complete (标记完成)
+- **A4.4** 移植 sight_reading_trainer
+- **A4.5** /api/v1/sight-reading/session + answer
+- **A4.6** 移植 senior_mode + LLM proxy
+- **A4.7** /api/v1/feedback 端点 (LLM 流式)
+- **A4.8** WebSocket /api/v1/ws/llm
+
+**累计 v4 进度**:
+- 13/36 → **14/36** Phase 7A 任务完成 (38.9%)
+- 13/60 → **14/60** 总任务 (23.3%)
+- 代码: 88.5K → **93.5K** (+5K)
+- 测试: 144 → **160** (+16)
+- 服务器: 3 容器 (PG + Redis + MinIO) 全 healthy
+- 端点: 15 → **16 业务端点** (新增 download-url)

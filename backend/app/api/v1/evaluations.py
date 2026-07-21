@@ -40,6 +40,7 @@ from app.schemas.evaluation import (
     EvaluationListResponse,
     EvaluationResponse,
 )
+from app.services.cache import cache_service
 from app.services.evaluation_service import evaluation_service
 from app.services.storage import storage_service
 
@@ -91,15 +92,55 @@ async def create_evaluation(
     midi_size = len(content)
 
     try:
-        # 3. 调 evaluation_service
-        result = evaluation_service.evaluate_full(
-            user_midi=tmp_path,
-            period_hint=period_hint,
-            # reference_midi 留空(A3.5 加 S3 后支持)
-            # sight_reading_score 留空(A4.5 接)
-            # hand_landmarks 留空(Mobile 端上传)
-        )
-        # 4. 上传 MIDI 到 S3/MinIO(A3.5)
+        # 3. 查缓存(A3.6)
+        cache_key = cache_service.eval_key(tmp_path, period_hint)
+        cached = cache_service.get(cache_key)
+        if cached:
+            logger.info("eval_cache_hit key=%s", cache_key)
+            from types import SimpleNamespace
+            result = SimpleNamespace(
+                pitch_score=cached["pitch_score"],
+                expressiveness_score=cached["expressiveness_score"],
+                hand_pose_score=cached["hand_pose_score"],
+                rhythm_score=cached["rhythm_score"],
+                sight_reading_score=cached["sight_reading_score"],
+                overall_score=cached["overall_score"],
+                teaching_tips=cached.get("teaching_tips", []),
+                pitch_detail=cached.get("pitch_detail"),
+                expressiveness_detail=cached.get("expressiveness_detail"),
+                hand_pose_detail=cached.get("hand_pose_detail"),
+                duration_ms=cached.get("duration_ms", 0),
+            )
+        else:
+            # 4. 调 evaluation_service
+            result = evaluation_service.evaluate_full(
+                user_midi=tmp_path,
+                period_hint=period_hint,
+                # reference_midi 留空(A3.5 加 S3 后支持)
+                # sight_reading_score 留空(A4.5 接)
+                # hand_landmarks 留空(Mobile 端上传)
+            )
+            # 5. 写缓存(24h)
+            cache_service.set(
+                cache_key,
+                {
+                    "pitch_score": result.pitch_score,
+                    "expressiveness_score": result.expressiveness_score,
+                    "hand_pose_score": result.hand_pose_score,
+                    "rhythm_score": result.rhythm_score,
+                    "sight_reading_score": result.sight_reading_score,
+                    "overall_score": result.overall_score,
+                    "teaching_tips": result.teaching_tips,
+                    "pitch_detail": result.pitch_detail,
+                    "expressiveness_detail": result.expressiveness_detail,
+                    "hand_pose_detail": result.hand_pose_detail,
+                    "duration_ms": result.duration_ms,
+                },
+                ttl_seconds=86400,
+            )
+            logger.info("eval_cache_miss key=%s", cache_key)
+
+        # 6. 上传 MIDI 到 S3/MinIO(A3.5)
         try:
             s3_uri = storage_service.upload_file(
                 tmp_path,
@@ -110,7 +151,7 @@ async def create_evaluation(
             logger.warning("s3_upload_failed: %s, using local://", e)
             s3_uri = f"local://{midi_file.filename or 'upload.mid'}"
 
-        # 5. 持久化到 PG
+        # 7. 持久化到 PG
         from datetime import datetime, timezone
         evaluation = Evaluation(
             user_id=current_user.id,
