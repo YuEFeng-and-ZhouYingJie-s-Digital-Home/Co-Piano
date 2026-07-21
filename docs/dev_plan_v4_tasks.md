@@ -65,7 +65,7 @@
 ### W6: Next.js Web App 主体
 
 - [DONE: 2026-07-22 03:20] **A6.1**: NextAuth.js v5 (Auth.js) — package.json + next-auth@5.0.0-beta.22; auth.config.ts(edge-safe, pages, JWT session, authorized() 路由保护 /app/*, jwt/session callbacks 透传 accessToken); auth.ts(Credentials 调后端 /auth/login 拿 JWT + Google/Apple OAuth2 providers); middleware.ts(Edge runtime, matcher 排除 /api/auth+静态+OG); app/api/auth/[...nextauth]/route.ts(GET+POST); types/next-auth.d.ts(Session 加 accessToken/refreshToken/userId, User 加同); lib/api.ts(apiFetch 通用 wrapper, 自动注入 Bearer+超时+FormData+ApiError 异常类+ 5 便捷方法 get/post/put/patch/delete/upload); lib/auth-helpers.ts(useAuth+loginWithCredentials/Google/Apple+logout); components/providers.tsx(SessionProvider); layout.tsx 注入 Providers; .env.example 加 NEXTAUTH_SECRET/URL/GOOGLE/APPLE; tests/api.test.ts(ApiError); 11 文件 ~12K 代码, W6 1/9
-- [PENDING] **A6.2**: /login + /signup 页面
+- [DONE: 2026-07-22 03:38] **A6.2**: /login + /signup — components/auth/{auth-shell(logo+title+2 链接), oauth-buttons(Google+Apple inline SVG), login-form(RHF+zod+Mail/Lock icon+callbackUrl 保留), signup-form(注册+自动登录+terms)} + components/ui/{input(Radix-style), label(Radix)} + app/{login/page.tsx(robots noindex), signup/page.tsx(robots noindex)} + package.json + react-hook-form 7.53+zod 3.23+@hookform/resolvers 3.9; 7 文件 ~13K 代码, W6 2/9
 - [PENDING] **A6.3**: /app 路由组 (受保护页面)
 - [PENDING] **A6.4**: /app/curriculum 7 天课程
 - [PENDING] **A6.5**: /app/record MIDI 录音界面
