@@ -894,3 +894,7 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [PHASE_7A_W5_DONE: 2026-07-22 03:05 — W5 (Next.js 营销站) 7/7 完成: A5.1-A5.7 全部 ✅, 等待用户 DNS 生效后一键部署]
 
 [CYCLE_47_DONE: 2026-07-22 03:05 — A5.7 部署套件 (web/deploy/{nginx.copiano.com.conf HTTPS 301+HSTS+OCSP Stapling+Gzip+Next.js static 1y cache+120s LLM 超时+10M body, docker-compose.yml 127.0.0.1:3000+healthcheck+log 10m×3, deploy.sh rsync+remote up+health 200, install-server.sh 一键 nginx+certbot+ufw+logrotate, healthcheck.sh 5min cron+Slack 告警, README 故障排查+验证} + docs/deploy_web.md 5 子域架构+用户操作清单; 7 文件 584 行; W5 7/7 🎉)]
+
+[PHASE_7A_W6_STARTED: 2026-07-22 03:20 — A6.1 NextAuth v5 完成, W6 1/9]
+
+[CYCLE_48_DONE: 2026-07-22 03:20 — A6.1 NextAuth.js v5 (Auth.js beta 22) — 11 文件 ~12K: auth.config.ts edge-safe + 路由保护 + JWT 透传 accessToken; auth.ts Credentials(走后端 /auth/login)+Google+Apple; middleware.ts Edge runtime; app/api/auth/[...nextauth]/route.ts; types/next-auth.d.ts; lib/api.ts (apiFetch+ApiError+5 便捷方法+FormData+30s 超时); lib/auth-helpers.ts; components/providers.tsx; layout.tsx 注入; .env.example; tests/api.test.ts]

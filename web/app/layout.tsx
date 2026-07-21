@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import { StructuredData } from '@/components/marketing/structured-data';
+import { Providers } from '@/components/providers';
 import './globals.css';
 
 const inter = Inter({
@@ -104,7 +105,7 @@ export default function RootLayout({
     <html lang="zh-CN" suppressHydrationWarning className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen bg-background font-sans antialiased">
         <StructuredData />
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
