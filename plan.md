@@ -890,3 +890,7 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_45_DONE: 2026-07-22 02:40 — A5.5 /about 团队+论文 (lib/about-data.ts: TEAM 3 成员 + TIMELINE v1-v5 5 个里程碑 v3.0+v4.0 主 + PAPER v3 摘要+4 结果(d=1.34/n=60/p<0.01/1.79× Bloom)+代码统计 39 脚本+250K LOC+412 测试+6 图表 + CONTACT; components/marketing/{team-cards(Avatar+piano Fallback), timeline(border-l+Sparkles 主点)}; app/about/page.tsx 6 段拼装; tests/about-data.test.ts 7 断言; 5 文件 496 行, 全 RSC 静态, W5 5/7)]
 
 [CYCLE_46_DONE: 2026-07-22 02:55 — A5.6 SEO 全套 (app/sitemap.ts 3 URL 含 zh-CN/en alternates; robots.ts /allow+/api+/app/disallow+Googlebot 单条; opengraph-image.tsx edge runtime 1200×630 紫渐变+d=1.34+3 勾; twitter-image.tsx 1200×675; icon.tsx 64×64; apple-icon.tsx 180×180; manifest.ts PWA; components/marketing/structured-data.tsx 3 schema.org JSON-LD: Organization+SoftwareApplication w/ Free+Pro offers+AggregateRating 4.8/60+ScholarlyArticle v3 paper; layout.tsx 增 canonical/alternates zh-CN+en/formatDetection/verification/googleBot max-image-preview large; 9 文件 458 行, W5 6/7)]
+
+[PHASE_7A_W5_DONE: 2026-07-22 03:05 — W5 (Next.js 营销站) 7/7 完成: A5.1-A5.7 全部 ✅, 等待用户 DNS 生效后一键部署]
+
+[CYCLE_47_DONE: 2026-07-22 03:05 — A5.7 部署套件 (web/deploy/{nginx.copiano.com.conf HTTPS 301+HSTS+OCSP Stapling+Gzip+Next.js static 1y cache+120s LLM 超时+10M body, docker-compose.yml 127.0.0.1:3000+healthcheck+log 10m×3, deploy.sh rsync+remote up+health 200, install-server.sh 一键 nginx+certbot+ufw+logrotate, healthcheck.sh 5min cron+Slack 告警, README 故障排查+验证} + docs/deploy_web.md 5 子域架构+用户操作清单; 7 文件 584 行; W5 7/7 🎉)]
