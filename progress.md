@@ -3345,3 +3345,71 @@ C20    release   (CHANGELOG + tag)     1 cycle
 - 0 → **3 Git tags** (v1.0 / v2.0 / v3.0)
 
 **耗时**: ~2 分钟(添加 [DONE] 标记)
+
+## [2026-07-21 14:00] 项目方向调整 (PIVOT) — v3 → v4: iPhone App + Website
+
+**重大调整**: 用户决定从 CLI/Python 转向 iPhone App + 网站开发(有自有域名和服务器)
+
+**新方向**:
+- **iOS App** (Swift/SwiftUI, iOS 16+, 8 屏)
+- **Website** (Next.js 14, 5 路由, Web MIDI)
+- **Backend API** (FastAPI + PostgreSQL + Redis)
+- **部署** (用户自有域名 copiano.com + 服务器, Docker + Nginx + SSL)
+- **商业化** (订阅 免费/Pro ¥29/Senior 免费)
+
+**关键文档**:
+- `docs/dev_plan_v4.md` (16.7K, 12 章节)
+  - 总体架构 + 域名配置 + iPhone App 规划 + Website 规划 + Backend API + 部署 + 商业化 + 风险
+- `docs/dev_plan_v4_tasks.md` (4.1K, ~60 任务)
+  - Phase 7A 后端+网站 36 任务 (W1-W8)
+  - Phase 7B iPhone App 24 任务 (W9-W16)
+  - Phase 7C 真实 RCT 10+ 任务 (W17-W25)
+  - 状态管理:`[PENDING] → [DONE]/[BLOCKED]/[FAILED]`
+
+**实施路线图** (6 个月):
+```
+Phase 7A: 后端 + 网站 (W1-W8, 8 周)
+  - W1: 服务器 + DNS + SSL + Docker + DB
+  - W2: FastAPI 基础 + Auth
+  - W3: 5 维评估 API (复用 v3.0 Python)
+  - W4: 课程 + 视奏 + LLM 反馈 API
+  - W5: Marketing 主页
+  - W6: Web App 主体
+  - W7: Web MIDI 集成
+  - W8: 部署 + 测试
+
+Phase 7B: iPhone App (W9-W16, 8 周)
+Phase 7C: 真实 RCT (W17-W25, 8 周,与 7A/7B 并行)
+```
+
+**Cron 任务调整**:
+- **旧规则**: 用户给粗粒度任务,agent 自主决定 cycle 方向
+- **新规则**: 读取 `docs/dev_plan_v4_tasks.md` 找第一个 `[PENDING]` 任务
+- 每个 cron tick 完成 1 个任务 (12 分钟)
+- 改状态:`[PENDING] → [DONE: YYYY-MM-DD HH:MM]` 或 `[BLOCKED: 原因]`
+- 全部 Phase 7A 完成 → 写 `[PHASE_7A_DONE]`
+
+**保留内容**:
+- 旧 [DONE: 2026-07-21 04:50] v3.0 完结 (历史里程碑)
+- 17→41 脚本 (复用为后端服务)
+- 论文 v3 草稿 (作为 v4 基础)
+
+**v3.0 → v4 复用率**:
+- 5 维算法: 100% 复用 (D1-D5)
+- 7 天课程: 100% 复用 (curriculum_v2.py → backend/services/)
+- 视奏训练: 100% 复用
+- 银发模式: 100% 复用
+- A/B 测试: 100% 复用 (真实 RCT 验证用)
+- 论文数据: 100% 复用 (论文 v4 升级用)
+
+**新文档**:
+- 20.9 KB 新文档
+- 12 章节 + ~60 任务
+- 6 个月实施计划
+- 4 个子域名 (copiano/app/api/admin)
+- ¥880-2900/月云成本 OR ¥15-25K 一次性自建
+
+**第一个 cron tick 自动任务**:
+- 找 `[PENDING]` 任务 A1.1 (申请 Apple Developer 账号)
+- 注:此任务需用户操作,agent 无法直接执行
+- 候选自动任务:A1.4 (服务器初始化脚本) 或 A2.1 (FastAPI 项目结构)

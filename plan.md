@@ -796,3 +796,27 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 - 完整发布工具链 (一键安装/发布/测试)
 
 项目状态: ✅ DONE
+
+[PIVOT: 2026-07-21 14:00 — 项目方向调整: CoPiano v3 → v4 (iPhone App + 网站)。
+  - 用户指令:转为 iPhone App 和网站开发,自有域名和服务器
+  - 新方向:
+    - iOS App (Swift/SwiftUI, iOS 16+, 8 屏)
+    - Website (Next.js 14, 5 路由, Web MIDI)
+    - Backend API (FastAPI + PostgreSQL + Redis)
+    - 部署 (用户自有域名 copiano.com + 服务器, Docker + Nginx + SSL)
+    - 商业化 (订阅 免费/Pro ¥29/Senior 免费)
+  - 实施: 6 个月 (Phase 7A 后端+网站 8 周, Phase 7B iOS 8 周, Phase 7C RCT 8 周)
+  - 关键文档:
+    - docs/dev_plan_v4.md (16.7K, 12 章节, 完整架构 + 部署)
+    - docs/dev_plan_v4_tasks.md (4.1K, ~60 任务, [PENDING]/[DONE]/[BLOCKED] 状态)
+  - 旧 [DONE: 2026-07-21 04:50] 保留作为历史里程碑 (v3.0 完成)
+  - 写 [PHASE_7_STARTED: 2026-07-21 14:00] 标记 (新方向)
+  - cron 任务调整: 读取 docs/dev_plan_v4_tasks.md 找 [PENDING], 完成改 [DONE]
+  - 累计 v3.0: 17→41 脚本保留为后端服务复用,论文 v3 草稿保留作为论文 v4 基础
+]
+
+[PHASE_7_STARTED: 2026-07-21 14:00 — Phase 7 启动: iPhone App + Website + Backend。
+  - 见 docs/dev_plan_v4.md (完整开发方案)
+  - 见 docs/dev_plan_v4_tasks.md (任务跟踪,~60 任务,Phase 7A 36 / 7B 24)
+  - 第一个 [PENDING] 任务: A1.1 申请 Apple Developer 账号 (需用户操作)
+  - 状态: cron tick 自动推进
