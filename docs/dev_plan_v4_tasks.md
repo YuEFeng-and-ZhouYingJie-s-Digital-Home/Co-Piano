@@ -19,7 +19,7 @@
 - [BLOCKED: 需用户操作 — DNS A 记录] **A1.3**: 配置 DNS 记录 (5 个子域名 A 记录)
 - [DONE: 2026-07-21 15:35] **A1.4**: 服务器初始化 (Ubuntu 22.04, Docker, Nginx) — SSH 通, Docker 29.6.2 + Compose v5.3.1 + Nginx 1.18.0 + UFW (22/80/443) + 2G swap + /opt/copiano/ 目录 + Docker log 轮转 (10m×3)
 - [BLOCKED: 依赖 A1.3 DNS] **A1.5**: 申请 Let's Encrypt SSL 证书
-- [BLOCKED: 依赖 A1.4 服务器] **A1.6**: 部署 PostgreSQL 16 + Redis 7
+- [DONE: 2026-07-21 15:38] **A1.6**: 部署 PostgreSQL 16 + Redis 7 — Docker Compose,localhost-only 端口,AOF 持久化,健康检查,密码在 .env (gitignore),2 服务 healthy
 - [BLOCKED: 需用户操作 — GitHub 账号] **A1.7**: 创建 GitHub 仓库 (private)
 - [BLOCKED: 需用户操作 — OpenAI 账号] **A1.8**: 申请 OpenAI API key (备份 LLM)
 

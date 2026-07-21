@@ -3829,3 +3829,75 @@ $ swapon --show
 - 4/36 → **5/36** Phase 7A 任务完成 (13.9%)
 - 4/60 → **5/60** 总任务 (8.3%)
 - 进度类别: 服务器 ✅ 1/8 + 代码 ✅ 4/36
+
+## [2026-07-21 15:38] Cycle 28: A1.6 PostgreSQL + Redis 部署 ✅ DONE
+
+**任务**: A1.6 — Docker Compose 部署 PostgreSQL 16 + Redis 7
+**状态**: ✅ DONE
+**耗时**: ~6 分钟 (复用 A1.4 的 Docker 环境)
+**前置**: A1.4 (服务器初始化) 已完成
+
+**产出**:
+- 服务器 `/opt/copiano/postgres/`:
+  - `docker-compose.yml` (53 行,无明文密码)
+  - `.env` (4 变量,已 gitignore,含 32 字符随机密码)
+  - `data/` (PG 持久卷)
+  - `init/` (预留,放 SQL 初始化脚本)
+- 服务器 `/opt/copiano/redis/`:
+  - `data/` (AOF 持久化)
+- 本地 `server/postgres/` (部署参考):
+  - `docker-compose.yml` (从服务器拉回)
+  - `.env.example` (模板)
+  - `README.md` (架构图 + 部署步骤 + 连接字符串)
+
+**当前服务** (服务器端):
+```
+NAME               IMAGE                STATUS                    PORTS
+copiano-postgres   postgres:16-alpine   Up X (healthy)            127.0.0.1:5432->5432
+copiano-redis      redis:7-alpine       Up X (healthy)            127.0.0.1:6379->6379
+```
+
+**资源使用** (服务器):
+- PostgreSQL: 36.5 MiB / 512 MiB 限
+- Redis: 13 MiB / 256 MiB 限
+- 合计 ~50 MiB,1.9G 内存 + 2G swap 足够
+
+**冒烟测试**:
+```bash
+$ docker exec copiano-postgres psql -U copiano -d copiano -c 'SELECT version();'
+PostgreSQL 16.14 on x86_64-pc-linux-musl ✓
+
+$ docker exec copiano-redis redis-cli -a $REDIS_PASSWORD PING
+PONG ✓
+
+$ docker exec copiano-redis redis-cli -a $REDIS_PASSWORD SET hello world
+OK
+$ docker exec copiano-redis redis-cli -a $REDIS_PASSWORD GET hello
+"world" ✓
+```
+
+**关键设计**:
+- **localhost only 端口** — 5432/6379 绑定 127.0.0.1,外部必须经 FastAPI
+- **AOF 持久化** — Redis `appendonly yes`,重启可恢复
+- **LRU 淘汰** — `maxmemory 200mb + allkeys-lru`,防 OOM
+- **密码 .env 分离** — 12-factor app 实践,docker-compose.yml 用 `${VAR}` 引用
+- **健康检查** — pg_isready + redis-cli ping,失败自动重启
+- **资源限制** — deploy.resources.limits 防止单服务吃光 1.9G 内存
+- **TZ Asia/Shanghai** — 数据库时间和业务时间一致
+
+**W1 进度 2/8**:
+- ✅ A1.4 服务器初始化
+- ✅ A1.6 PostgreSQL + Redis 部署 (新完成)
+- ⏳ A1.1/1.2/1.3/1.5/1.7/1.8 仍 BLOCKED 等用户
+
+**下一步** (Cycle 29):
+- 第一个 [PENDING] 任务: **A2.5** Alembic 数据库迁移 (纯代码,可做)
+- 复用 backend/ 的 SQLAlchemy Base.metadata 自动生成初始 migration
+- 验证 upgrade / downgrade 双向
+- 在服务器真实 PG 上跑一遍(用刚配的密码)
+
+**累计 v4 进度**:
+- 5/36 → **6/36** Phase 7A 任务完成 (16.7%)
+- 5/60 → **6/60** 总任务 (10.0%)
+- 服务器: 1.9G RAM + 28G 磁盘 + PostgreSQL + Redis 全栈就绪
+- 代码: 63K + 4 K 部署参考文档
