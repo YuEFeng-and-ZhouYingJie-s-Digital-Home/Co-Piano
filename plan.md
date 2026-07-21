@@ -872,3 +872,11 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_38_DONE: 2026-07-21 18:15 — A4.6 LLM proxy (Qwen + OpenAI fallback + 银发简化, 14 测试, W4 6/8)]
 
 [CYCLE_39_DONE: 2026-07-21 22:30 — A4.7 Feedback API (3 端点, 12 测试, LLM 反馈 + PG 回写, W4 7/8)]
+
+[CYCLE_40_DONE: 2026-07-22 01:10 — A4.8 WebSocket /ws/llm (JWT 鉴权 + 20-char chunk 流式 + 1008 close + obfuscation, 8 测试, W4 8/8 🎉)]
+
+[PHASE_7A_W4_DONE: 2026-07-22 01:10 — W4 (课程+视奏+LLM) 8/8 完成: A4.1-A4.8 全部 ✅]
+
+[CYCLE_41_DONE: 2026-07-22 01:25 — A5.1 Next.js 14 项目初始化 (web/ 目录 23 文件 92K, 含 package.json + next.config.mjs + tsconfig + tailwind.config.ts + postcss.config + app/layout.tsx + app/globals.css + app/page.tsx + lib/utils.ts + Dockerfile + .env.example + components.json (shadcn 配置) + .eslintrc + .prettierrc + vitest.config + favicon.svg + tests/lib.test.ts(3 测试); 5 配置文件 100% JSON 校验通过, 字体/SEO/主题色 完备; A5.2 PENDING]
+
+[PHASE_7A_W5_STARTED: 2026-07-22 01:25 — A5.1 (Next.js 14 init) 完成, W5 1/7]

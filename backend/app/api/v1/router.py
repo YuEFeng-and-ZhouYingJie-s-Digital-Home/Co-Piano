@@ -12,6 +12,7 @@ from app.api.v1 import (
     oauth,
     sight_reading,
     users,
+    ws,
 )
 
 api_router = APIRouter()
@@ -22,3 +23,4 @@ api_router.include_router(evaluations.router)
 api_router.include_router(curriculum.router)
 api_router.include_router(sight_reading.router)
 api_router.include_router(feedback.router)
+api_router.include_router(ws.router)

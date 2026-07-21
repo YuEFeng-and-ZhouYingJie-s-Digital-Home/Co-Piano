@@ -194,6 +194,7 @@ async def api_v1_status():
             "POST /api/v1/feedback": "为评估生成 LLM 教学反馈",
             "GET /api/v1/feedback/history": "当前用户历史反馈",
             "GET /api/v1/feedback/{evaluation_id}": "拿某次评估的反馈",
+            "WS /api/v1/ws/llm": "WebSocket 流式 LLM 反馈",
         },
         "middleware": {
             "cors": settings.cors_origins_list,
@@ -201,8 +202,8 @@ async def api_v1_status():
             "request_id_header": "X-Request-ID",
             "logging": "JSON (production) / Console (development)",
         },
-        "next_task": "A4.8 — WebSocket /api/v1/ws/llm (流式 LLM)",
-        "eta": "W4",
+        "next_task": "W5 — Next.js Marketing 主页 (A5.1+)",
+        "eta": "W5",
     }
 
 

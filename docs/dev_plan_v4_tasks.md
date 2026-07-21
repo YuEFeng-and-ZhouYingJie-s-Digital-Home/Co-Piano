@@ -47,12 +47,14 @@
 - [DONE: 2026-07-21 17:45] **A4.2 + A4.3**: /api/v1/curriculum 3 端点 (GET 全计划 / GET 某天 / POST 标记完成) + 11 测试全过
 - [DONE: 2026-07-21 18:00] **A4.5**: /api/v1/sight-reading 3 端点 (开 session / 答 / 详情) + 12 测试全过
 - [DONE: 2026-07-21 18:15] **A4.6**: LLM proxy (Qwen 本地 + OpenAI 兜底 + 流式 + 银发简化) + 14 测试全过
-- [DONE: 2026-07-21 22:30] **A4.7**: /api/v1/feedback 3 端点 (POST/GET/history) + 12 测试全过 — W4 7/8
-- [PENDING] **A4.8**: WebSocket /api/v1/ws/llm
+- [DONE: 2026-07-21 22:30] **A4.7**: /api/v1/feedback 3 端点 (POST/GET/history) + 12 测试全过
+- [DONE: 2026-07-22 01:10] **A4.8**: WebSocket /api/v1/ws/llm (流式 LLM 反馈) + 8 测试全过 — W4 收官 🎉
+
+[PHASE_7A_W4_DONE: 2026-07-22 01:10 — W4 (课程 + 视奏 + LLM) 8/8 完成: A4.1-A4.8 全部 ✅]
 
 ### W5: Next.js Marketing 主页
 
-- [PENDING] **A5.1**: Next.js 14 项目初始化 (web/)
+- [DONE: 2026-07-22 01:25] **A5.1**: Next.js 14 项目初始化 (web/) — package.json + next.config.mjs + tsconfig + tailwind.config.ts + postcss.config + app/layout.tsx + app/globals.css + app/page.tsx + lib/utils.ts + Dockerfile + .env.example + components.json (shadcn) + .eslintrc + .prettierrc + vitest.config + favicon.svg + tests/lib.test.ts(3 测试) — 23 文件 92K
 - [PENDING] **A5.2**: Tailwind CSS + shadcn/ui 配置
 - [PENDING] **A5.3**: Marketing 主页 / (Hero + 5 维 + RCT 数据)
 - [PENDING] **A5.4**: /pricing 订阅页

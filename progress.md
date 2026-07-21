@@ -4922,3 +4922,80 @@ GET  /api/v1/feedback/history        当前用户历史反馈(分页)
 - 代码: 125K → **133K** (+8K)
 - 测试: 215 → **227** (+12)
 - 端点: 22 → **25 业务端点** (+3)
+
+## [2026-07-22 01:10] Cycle 40: A4.8 WebSocket LLM ✅ DONE — W4 收官 🎉
+
+**任务**: A4.8 — WebSocket /api/v1/ws/llm (流式 LLM 反馈)
+**状态**: ✅ DONE
+**耗时**: ~12 分钟(分多轮)
+
+**产出** (5K 新代码):
+- `backend/app/api/v1/ws.py` (170 行) — WebSocket 端点
+- `backend/tests/test_ws.py` (210 行) — 8 测试
+- main.py /api/v1/status 同步更新
+
+**1 个端点**:
+```
+WS /api/v1/ws/llm?token=<JWT>&evaluation_id=<uuid>&prefer=qwen
+  → 流式 JSON 消息:
+    {"type": "chunk", "content": "..."}      # 每 20 字符一块
+    {"type": "done", "model": "...", "backend": "qwen", "total_tokens": 80}
+    {"type": "error", "message": "..."}
+```
+
+**关键设计**:
+- **JWT 鉴权** — token query param,decode_token 验证,失败 1008 关闭
+- **403 安全** — 别人的 evaluation_id 报"not found or not yours"(不泄露存在性)
+- **20 字符分块** — 模拟流式,真正 streaming 等 LLM 支持 stream=true
+- **自动持久化** — 完成后回写 evaluation.llm_feedback / model / latency_ms
+- **WebSocket 关闭** — 异常 / 正常完成都 close,避免连接泄漏
+- **统一 session** — 用 get_async_session_factory 复用,测试可 patch
+
+**测试结果** (本地 venv, 34.45s):
+```
+8 个 ws 测试:
+  test_ws_unauthorized_no_token ✓ (1008 拒绝)
+  test_ws_unauthorized_invalid_token ✓
+  test_ws_invalid_evaluation_id ✓
+  test_ws_evaluation_not_found ✓
+  test_ws_other_user_evaluation_forbidden ✓
+  test_ws_success_streaming ✓ (chunk + done 全收到)
+  test_ws_short_content_single_chunk ✓ (中文 1 字符)
+  test_ws_llm_failure_error_message ✓
+```
+
+**踩过的 3 个坑**:
+1. `asyncpg` 没装 → `pip install asyncpg==0.29.0`
+2. WebSocket 不能用 FastAPI Depends → 手动 `get_async_session_factory()`
+3. 测试 override `get_async_db` 不够 → 同时 patch `db_base._async_session_factory`
+
+**累计 backend 测试**: 227 → **235/235 全过** (+8) 🎯
+
+**W4 进度 8/8 完结** 🎉:
+- ✅ A4.1 移植 curriculum
+- ✅ A4.2 /curriculum
+- ✅ A4.3 标记完成
+- ✅ A4.4 移植 sight_reading
+- ✅ A4.5 /sight-reading
+- ✅ A4.6 LLM proxy
+- ✅ A4.7 /feedback
+- ✅ A4.8 /ws/llm (WebSocket)
+
+**Phase 7A 累计 20/36 (55.6%)** — 过 5 成!
+
+**下一步** (Cycle 41, W5 启动): A5.x Next.js Marketing 主页
+- **A5.1** Next.js 14 项目初始化 (web/)
+- **A5.2** Tailwind CSS + shadcn/ui 配置
+- **A5.3** Marketing 主页 / (Hero + 5 维 + RCT 数据)
+- **A5.4** /pricing 订阅页
+- **A5.5** /about 团队/论文
+- **A5.6** SEO meta + sitemap.xml
+- **A5.7** 部署到 copiano.com (Nginx 静态)
+
+**累计 v4 进度**:
+- 19/36 → **20/36** Phase 7A 任务完成 (55.6%) 🎯
+- 19/60 → **20/60** 总任务 (33.3%)
+- 代码: 133K → **138K** (+5K)
+- 测试: 227 → **235** (+8)
+- 端点: 25 → **25 业务端点 + 1 WebSocket**
+- 后端模块: 16 业务端点 + JWT + OAuth + 5 维评估 + 课程 + 视奏 + LLM + WebSocket **全栈通**
