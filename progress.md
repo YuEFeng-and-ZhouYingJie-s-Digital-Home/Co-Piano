@@ -3497,3 +3497,103 @@ $ curl http://127.0.0.1:8765/api/v1/status
 - 0/36 → 1/36 Phase 7A 任务完成 (2.8%)
 - 0/60 → 1/60 总任务 (1.7%)
 - backend/ 目录已落地,可直接进入 A2.2
+
+## [2026-07-21 14:45] Cycle 24: A2.2 SQLAlchemy 2.0 模型 ✅ DONE
+
+**任务**: A2.2 — SQLAlchemy 2.0 模型 (User / Evaluation / CurriculumProgress / SightReadingSession)
+**状态**: ✅ DONE
+**耗时**: ~14 分钟
+
+**产出** (32K 源代码):
+- `backend/app/db/base.py` (110 行) — Base + lazy engine (async + sync) + Session factories + get_db 依赖
+- `backend/app/db/__init__.py` — 集中导出
+- `backend/app/models/base.py` — TimestampMixin (created_at + updated_at)
+- `backend/app/models/user.py` (120 行) — User + SubscriptionTier + OAuthProvider 枚举
+- `backend/app/models/evaluation.py` (110 行) — Evaluation + DifficultyLevel + 5 维权重
+- `backend/app/models/curriculum.py` (95 行) — CurriculumProgress + BlockType (8 种) + SM-2 字段
+- `backend/app/models/sight_reading.py` (115 行) — SightReadingSession + 3 枚举
+- `backend/app/models/__init__.py` — 集中导出
+- `backend/tests/test_models.py` (310 行) — 24 测试
+
+**4 张表 schema**:
+```sql
+users: id, email (unique), password_hash, name, age, is_senior,
+       subscription_tier (5 enum), oauth_provider (4 enum), oauth_id,
+       is_active, is_verified, last_login_at, created_at, updated_at
+
+evaluations: id, user_id (FK), piece_name, piece_composer, difficulty (4 enum),
+             midi_url, midi_size_bytes, duration_seconds,
+             pitch_score, expressiveness_score, hand_pose_score,
+             rhythm_score, sight_reading_score, overall_score,
+             llm_feedback (8K), llm_model, llm_latency_ms,
+             created_at, updated_at
+
+curriculum_progress: id, user_id (FK), day_num, block_id, block_type (8 enum),
+                     title, description, completed_at, score, duration_seconds,
+                     ease_factor (SM-2), interval_days, repetitions,
+                     UNIQUE(user_id, day_num, block_id)
+
+sight_reading_sessions: id, user_id (FK), difficulty (4 enum), mode (3 enum),
+                        input_method (3 enum), total_questions, correct_count,
+                        accuracy, streak_max, notes_per_minute,
+                        started_at, ended_at, duration_seconds
+```
+
+**关键设计**:
+- **lazy engine 模式** — `get_async_engine()` / `get_sync_engine()`,避免 import 时尝试连 DB
+- **SQLAlchemy 2.0 风格** — `Mapped[...]` / `mapped_column(...)` 类型提示
+- **5 维权重** — 复刻 v3.0 论文 (pitch 0.20 + expressiveness 0.25 + hand_pose 0.20 + rhythm 0.20 + sight_reading 0.15)
+- **银发自动激活** — `User.should_auto_senior()`:age ≥ 60 OR is_senior=True
+- **SM-2 字段** — ease_factor / interval_days / repetitions (直接复用 v3.0 curriculum_v2 逻辑)
+- **CASCADE delete** — user 一删全删
+- **PG UUID** — 生产用 UUID (PG_UUID),测试 SQLite 自动 fallback
+
+**测试结果** (本地 venv, 0.44s):
+```
+24 passed:
+  test_user_create_basic ✓
+  test_user_email_unique ✓
+  test_user_senior_auto_activate_age_60 ✓
+  test_user_senior_auto_activate_age_59 ✓
+  test_user_senior_explicit_override ✓
+  test_user_no_age_not_senior ✓
+  test_user_timestamps ✓
+  test_user_subscription_tiers ✓
+  test_evaluation_create ✓
+  test_evaluation_weights_consistent ✓
+  test_evaluation_user_relationship ✓
+  test_evaluation_difficulty_enum ✓
+  test_curriculum_create ✓
+  test_curriculum_complete ✓
+  test_curriculum_unique_user_day_block ✓
+  test_curriculum_all_8_block_types ✓
+  test_sight_reading_create ✓
+  test_sight_reading_end ✓
+  test_sight_reading_4_difficulties ✓
+  test_sight_reading_3_modes ✓
+  test_sight_reading_3_inputs ✓
+  test_user_cascade_delete ✓
+  test_all_models_importable ✓
+  test_all_tables_created ✓
+```
+
+**累计 backend 测试**: 8 (A2.1) + 24 (A2.2) = **32/32 通过**
+
+**下一步** (Cycle 25):
+- 第一个 [PENDING] 任务: **A2.3** JWT Auth (signup/login/refresh)
+- 复用 passlib (bcrypt) + PyJWT
+- 端点: POST /api/v1/auth/signup, /login, /refresh, GET /users/me
+- 不需要外部依赖,可纯代码推进
+
+**W1 状态更新** (14:30):
+- 用户提供 SSH key: `/Users/yuefeng/Downloads/123.pem`
+- 服务器 IP: `124.156.184.160` (lhins-mq9onx9j,腾讯云 Lighthouse)
+- **问题**: 22 端口开着但所有用户公钥都被拒 (Permission denied)
+- 推测: 腾讯云 Lighthouse 控制台未注入此公钥
+- A1.4 仍 BLOCKED,等用户在 https://console.cloud.tencent.com/lighthouse 绑定公钥
+
+**累计 v4 进度**:
+- 0/36 → 2/36 Phase 7A 任务完成 (5.6%)
+- 0/60 → 2/60 总任务 (3.3%)
+- backend/ 代码量: 12.4K → 32K (+19.6K)
+- 测试: 8 → 32 (+24)
