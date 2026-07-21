@@ -20,6 +20,12 @@ from .evaluation import (
     EvaluationListResponse,
     EvaluationResponse,
 )
+from .feedback import (
+    FeedbackHistoryItem,
+    FeedbackHistoryResponse,
+    FeedbackRequest,
+    FeedbackResponse,
+)
 from .oauth import (
     AppleCallbackRequest,
     GoogleCallbackRequest,
@@ -65,4 +71,8 @@ __all__ = [
     "SightReadingAnswerResponse",
     "SightReadingSessionResponse",
     "SightReadingSessionStats",
+    "FeedbackRequest",
+    "FeedbackResponse",
+    "FeedbackHistoryItem",
+    "FeedbackHistoryResponse",
 ]

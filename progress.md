@@ -4858,3 +4858,67 @@ llm_service.generate_feedback(evaluation_dict, user_age=None)
 - 代码: 117K → **125K** (+8K)
 - 测试: 201 → **215** (+14)
 - 5 维评估 + 课程 + 视奏 + LLM 全栈通
+
+## [2026-07-21 22:30] Cycle 39: A4.7 Feedback API ✅ DONE — W4 7/8
+
+**任务**: A4.7 — /api/v1/feedback 端点
+**状态**: ✅ DONE
+**耗时**: ~12 分钟(分多轮完成)
+
+**产出** (8K 新代码):
+- `backend/app/schemas/feedback.py` (60 行) — FeedbackRequest/Response/HistoryItem
+- `backend/app/api/v1/feedback.py` (190 行) — 3 端点
+- `backend/tests/test_feedback_api.py` (300 行) — 12 测试
+- main.py /api/v1/status 同步更新
+
+**3 个端点**:
+```
+POST /api/v1/feedback                提交 evaluation_id → 调 LLM → 回写 PG
+GET  /api/v1/feedback/{evaluation_id}  拿某次评估的 LLM 反馈
+GET  /api/v1/feedback/history        当前用户历史反馈(分页)
+```
+
+**关键设计**:
+- **回写 PG** — `evaluation.llm_feedback` + `llm_model` + `llm_latency_ms`
+- **银发自动** — 传 user_age 给 generate_feedback,自动简化 prompt
+- **限流 10/min/user** — 走 RATE_LIMIT_FEEDBACK 常量
+- **错误隔离** — LLM 全失败 → 503(不污染 PG)
+- **403 隔离** — 别人的评估直接 403,即使 ID 存在
+- **history 只列有反馈的** — `WHERE llm_feedback != ''` 过滤
+- **mock 友好** — patch `app.api.v1.feedback.llm_service.generate_feedback` 即可测试
+
+**测试结果** (本地 venv, 197+30 = 227 全过):
+```
+12 个 feedback 测试:
+  test_create_feedback_success ✓
+  test_create_feedback_persisted_to_pg ✓ (回写 PG,GET 能拿到)
+  test_create_feedback_not_found ✓
+  test_create_feedback_other_user_forbidden ✓
+  test_create_feedback_llm_unavailable ✓ (LLM 失败 → 503)
+  test_create_feedback_requires_auth ✓
+  test_get_feedback_after_create ✓
+  test_get_feedback_not_generated ✓ (404 + "No feedback generated")
+  test_get_feedback_invalid_id ✓ (400)
+  test_history_empty ✓
+  test_history_pagination ✓ (3 个 → limit 2 + 1)
+  test_history_only_feedback_with_llm ✓
+```
+
+**累计 backend 测试**: 215 → **227/227 全过** (+12) 🎯
+
+**W4 进度 7/8**:
+- ✅ A4.1-A4.7 全部完成
+- ⏳ A4.8 WebSocket — 最后一项
+
+**下一步** (Cycle 40): A4.8 — WebSocket /api/v1/ws/llm
+- 真流式 LLM(token-by-token push)
+- 前端用 WebSocket 接收增量
+- 同一 A4.7 反馈业务,只是 streaming 模式
+- 鉴权:WebSocket subprotocol 传 JWT
+
+**累计 v4 进度**:
+- 18/36 → **19/36** Phase 7A 任务完成 (52.8%)
+- 18/60 → **19/60** 总任务 (31.7%)
+- 代码: 125K → **133K** (+8K)
+- 测试: 215 → **227** (+12)
+- 端点: 22 → **25 业务端点** (+3)
