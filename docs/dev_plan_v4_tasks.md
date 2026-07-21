@@ -57,7 +57,7 @@
 - [DONE: 2026-07-22 01:25] **A5.1**: Next.js 14 项目初始化 (web/) — package.json + next.config.mjs + tsconfig + tailwind.config.ts + postcss.config + app/layout.tsx + app/globals.css + app/page.tsx + lib/utils.ts + Dockerfile + .env.example + components.json (shadcn) + .eslintrc + .prettierrc + vitest.config + favicon.svg + tests/lib.test.ts(3 测试) — 23 文件 92K
 - [DONE: 2026-07-22 01:32] **A5.2**: Tailwind CSS + shadcn/ui 配置 — components/ui/{Button(7 variant × 4 size, CVA), Card(6 子组件), Badge(7 variant), Separator(Radix), Avatar(Radix)} + 加 @radix-ui/react-separator dep + tests/cn-variants.test.ts(7 断言) — 5 组件 ~7.5K 代码, CVA 静态断言验证 variant 名称稳定
 - [DONE: 2026-07-22 01:42] **A5.3**: Marketing 主页 / (Hero + 5 维 + RCT 数据) — components/marketing/{Navbar(sticky+backdrop-blur), Hero(gradient+CTA), FiveDimensions(5 卡片+CVA icons), RctChart(Recharts BarChart, 4 基线对照), Stats(4 数字), CtaSection(紫渐变), Footer(3 分类链接)} + app/page.tsx 7 段拼装 — 8 文件 553 行, RSC 静态 + RctChart 'use client' 唯一客户端组件
-- [PENDING] **A5.4**: /pricing 订阅页
+- [DONE: 2026-07-22 02:25] **A5.4**: /pricing 订阅页 — lib/pricing-data.ts(5 档:Free/Pro ¥29/Senior 免费/Teacher ¥99/School ¥999, BillingCycle, formatCny, getTierById) + components/marketing/{pricing-cards(月/年切换+5 卡 grid+Pro 高亮), pricing-faq(accordion)} + app/pricing/page.tsx(4 段拼装) + tests/pricing-data.test.ts(9 断言覆盖 tier 数/唯一性/Pro 高亮/Senior 免费/年付 17% 折) — 5 文件 491 行, RSC + pricing-cards/faq 'use client'
 - [PENDING] **A5.5**: /about 团队/论文
 - [PENDING] **A5.6**: SEO meta + sitemap.xml
 - [PENDING] **A5.7**: 部署到 copiano.com (Nginx 静态)
