@@ -162,8 +162,8 @@ async def api_v1_status():
             "oauth": True,        # ✅ A2.4
             "middleware": True,   # ✅ A2.6
             "alembic": True,      # ✅ A2.5
-            "evaluations": True,  # ✅ A3.2-A3.4 (POST/GET/history)
-            "curriculum": False,  # A4.2-A4.3
+            "evaluations": True,  # ✅ A3.2-A3.4
+            "curriculum": True,   # ✅ A4.2-A4.3 (7天课程 + mark complete)
             "sight_reading": False, # A4.5
             "feedback": False,    # A4.7
             "senior_mode": False, # A4.6
@@ -185,6 +185,9 @@ async def api_v1_status():
             "POST /api/v1/evaluations": "上传 MIDI → 5 维评估",
             "GET /api/v1/evaluations/{id}": "评估详情",
             "GET /api/v1/evaluations/history": "当前用户评估历史(分页)",
+            "GET /api/v1/curriculum": "7 天课程(动态生成)",
+            "GET /api/v1/curriculum/{day_num}": "某天课程详情",
+            "POST /api/v1/curriculum/blocks/{id}/complete": "标记 block 完成",
         },
         "middleware": {
             "cors": settings.cors_origins_list,
@@ -192,8 +195,8 @@ async def api_v1_status():
             "request_id_header": "X-Request-ID",
             "logging": "JSON (production) / Console (development)",
         },
-        "next_task": "A3.5 — S3/MinIO MIDI 文件存储",
-        "eta": "W3",
+        "next_task": "A4.5 — 视奏 API (/sight-reading/session + answer)",
+        "eta": "W4",
     }
 
 

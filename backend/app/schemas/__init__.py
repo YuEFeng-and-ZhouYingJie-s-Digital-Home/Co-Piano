@@ -7,6 +7,13 @@ from .auth import (
     TokenResponse,
     UserResponse,
 )
+from .curriculum import (
+    BlockCompleteRequest,
+    BlockCompleteResponse,
+    CurriculumBlock,
+    CurriculumDay,
+    CurriculumWeekResponse,
+)
 from .evaluation import (
     EvaluationCreateRequest,
     EvaluationCreateResponse,
@@ -37,4 +44,9 @@ __all__ = [
     "EvaluationCreateResponse",
     "EvaluationResponse",
     "EvaluationListResponse",
+    "CurriculumBlock",
+    "CurriculumDay",
+    "CurriculumWeekResponse",
+    "BlockCompleteRequest",
+    "BlockCompleteResponse",
 ]

@@ -28,7 +28,7 @@ from app.services.curriculum_v2 import (
 
 logger = logging.getLogger("copiano.curriculum")
 
-# v3.0 → v4 block_type 映射(v3.0 用 warmup_hand,我们用 hand)
+# v3.0 → v4 block_type 映射(v3.0 用 warmup_hand/weakness_drill/cooldown_relax)
 BLOCK_TYPE_MAP = {
     "warmup_pitch": "warmup_pitch",
     "warmup_hand": "hand",  # 兼容 v3.0 命名
@@ -38,6 +38,9 @@ BLOCK_TYPE_MAP = {
     "review": "review",
     "weakness": "weakness",
     "cooldown": "cooldown",
+    # v3.0 实际可能产生的扩展名
+    "weakness_drill": "weakness",
+    "cooldown_relax": "cooldown",
 }
 
 

@@ -4622,3 +4622,76 @@ session = sight_reading_service.start_session(uuid.uuid4(), 'beginner', 'random'
 - 14/60 → **15/60** 总任务 (25.0%)
 - 代码: 93.5K → **99K** (+5.5K,2 任务合 1)
 - 测试: 160 → **178** (+18)
+
+## [2026-07-21 17:45] Cycle 36: A4.2 + A4.3 Curriculum API ✅ DONE
+
+**任务**: A4.2 + A4.3 — /api/v1/curriculum 3 端点
+**状态**: ✅ DONE (2 任务合 1 tick)
+**耗时**: ~12 分钟
+
+**产出** (10K 新代码):
+- `backend/app/schemas/curriculum.py` (60 行) — CurriculumBlock / Day / WeekResponse / BlockComplete
+- `backend/app/api/v1/curriculum.py` (250 行) — 3 端点
+- `backend/app/services/curriculum_service.py` (扩展) — block_type 映射补全
+- `backend/tests/test_curriculum_api.py` (220 行) — 11 测试
+- main.py /api/v1/status 同步更新
+
+**3 个端点**:
+```
+GET  /api/v1/curriculum                       7 天计划(动态生成,根据用户水平 + 弱点)
+GET  /api/v1/curriculum/{day_num}             单天详情(1-7)
+POST /api/v1/curriculum/blocks/{id}/complete  标记完成 → SM-2 + 写 PG
+```
+
+**关键设计**:
+- **动态生成** — 每次请求根据用户 avg_score + 弱点 + 年龄重新算
+- **block_id 解析** — `warmup_pitch_1_0` → (day_num=1, type=warmup_pitch),支持 `warmup_hand` 兼容
+- **SM-2 集成** — 调 curriculum_service.mark_block_complete 拿 next_review + ease
+- **PG 持久化** — 写到 CurriculumProgress 表,支持重复完成(更新不报错)
+- **avg_score 算法** — 最近 10 次 overall 平均,无则默认 0.5
+- **弱点自动注入** — 5 维分 < 0.6 自动识别,影响 plan 排序
+- **block_type 扩展** — v3.0 weakness_drill/cooldown_relax 映射到 v4 weakness/cooldown
+
+**测试结果** (本地 venv, 131.37s):
+```
+189 passed (A4.2+A4.3 新增 11):
+  test_get_curriculum_success ✓
+  test_get_curriculum_requires_auth ✓
+  test_get_curriculum_senior_age_60 ✓
+  test_get_curriculum_day_1 ✓
+  test_get_curriculum_day_7 ✓
+  test_get_curriculum_day_invalid ✓ (day=0/8 → 400)
+  test_mark_block_complete_success ✓
+  test_mark_block_complete_invalid_id ✓
+  test_mark_block_complete_score_range ✓ (1.5 → 422)
+  test_mark_block_complete_idempotent ✓
+  test_mark_block_complete_requires_auth ✓
+```
+
+**踩过的 1 个坑**:
+v3.0 curriculum 返回 `weakness_drill` 和 `cooldown_relax` 不在 v4 BlockType 枚举里 → 扩展 BLOCK_TYPE_MAP 映射
+
+**累计 backend 测试**: 178 → **189/189 全过** (+11) 🎯
+
+**W4 进度 4/8**:
+- ✅ A4.1 移植 curriculum_v2
+- ✅ A4.4 移植 sight_reading_trainer
+- ✅ A4.2 /api/v1/curriculum
+- ✅ A4.3 /api/v1/curriculum/blocks/{id}/complete
+- ⏳ A4.5 视奏 API
+- ⏳ A4.6 senior + LLM
+- ⏳ A4.7 /feedback
+- ⏳ A4.8 WebSocket
+
+**下一步** (Cycle 37): A4.5 — 视奏 API
+- POST /api/v1/sight-reading/session (开新会话,生成第一题)
+- POST /api/v1/sight-reading/session/{id}/answer (回答 + 算分)
+- GET /api/v1/sight-reading/session/{id} (会话详情)
+- 视奏分数回写 evaluation.sight_reading_score(下次评估自动取)
+
+**累计 v4 进度**:
+- 15/36 → **16/36** Phase 7A 任务完成 (44.4%)
+- 15/60 → **16/60** 总任务 (26.7%)
+- 代码: 99K → **109K** (+10K)
+- 测试: 178 → **189** (+11)
+- 端点: 16 → **19 业务端点** (+3)
