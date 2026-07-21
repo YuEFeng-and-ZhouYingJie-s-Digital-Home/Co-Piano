@@ -56,7 +56,7 @@
 
 - [DONE: 2026-07-22 01:25] **A5.1**: Next.js 14 项目初始化 (web/) — package.json + next.config.mjs + tsconfig + tailwind.config.ts + postcss.config + app/layout.tsx + app/globals.css + app/page.tsx + lib/utils.ts + Dockerfile + .env.example + components.json (shadcn) + .eslintrc + .prettierrc + vitest.config + favicon.svg + tests/lib.test.ts(3 测试) — 23 文件 92K
 - [DONE: 2026-07-22 01:32] **A5.2**: Tailwind CSS + shadcn/ui 配置 — components/ui/{Button(7 variant × 4 size, CVA), Card(6 子组件), Badge(7 variant), Separator(Radix), Avatar(Radix)} + 加 @radix-ui/react-separator dep + tests/cn-variants.test.ts(7 断言) — 5 组件 ~7.5K 代码, CVA 静态断言验证 variant 名称稳定
-- [PENDING] **A5.3**: Marketing 主页 / (Hero + 5 维 + RCT 数据)
+- [DONE: 2026-07-22 01:42] **A5.3**: Marketing 主页 / (Hero + 5 维 + RCT 数据) — components/marketing/{Navbar(sticky+backdrop-blur), Hero(gradient+CTA), FiveDimensions(5 卡片+CVA icons), RctChart(Recharts BarChart, 4 基线对照), Stats(4 数字), CtaSection(紫渐变), Footer(3 分类链接)} + app/page.tsx 7 段拼装 — 8 文件 553 行, RSC 静态 + RctChart 'use client' 唯一客户端组件
 - [PENDING] **A5.4**: /pricing 订阅页
 - [PENDING] **A5.5**: /about 团队/论文
 - [PENDING] **A5.6**: SEO meta + sitemap.xml

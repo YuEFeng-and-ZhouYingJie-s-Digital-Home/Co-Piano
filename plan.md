@@ -882,3 +882,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [PHASE_7A_W5_STARTED: 2026-07-22 01:25 — A5.1 (Next.js 14 init) 完成, W5 1/7]
 
 [CYCLE_42_DONE: 2026-07-22 01:32 — A5.2 Tailwind + shadcn/ui 配置 (components/ui/{Button(CVA 7×4), Card(6 子), Badge(7 variant), Separator(Radix), Avatar(Radix)} + @radix-ui/react-separator dep + tests/cn-variants.test.ts(7 静态断言), W5 2/7)]
+
+[CYCLE_43_DONE: 2026-07-22 01:42 — A5.3 Marketing 主页 (Navbar sticky+blur, Hero 渐变, FiveDimensions 5 卡片 with icons+权重, RctChart Recharts BarChart 4 基线对照 d=0.41/0.75/0.42/1.34, Stats 4 数字, CtaSection 紫渐变, Footer 3 类链接; app/page.tsx 7 段拼装, RSC 静态 + RctChart 'use client' 唯一客户端组件; 8 文件 553 行, 27 imports, W5 3/7)]
