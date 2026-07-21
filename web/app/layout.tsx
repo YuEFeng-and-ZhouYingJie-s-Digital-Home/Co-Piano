@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
+import { StructuredData } from '@/components/marketing/structured-data';
 import './globals.css';
 
 const inter = Inter({
@@ -31,19 +32,30 @@ export const metadata: Metadata = {
     'AI 教育',
     '五维评估',
     '自适应课程',
+    '视奏训练',
+    '银发',
   ],
   authors: [{ name: 'CoPiano Team' }],
   creator: 'CoPiano',
+  publisher: 'CoPiano',
+  formatDetection: { email: false, address: false, telephone: false },
+  alternates: {
+    canonical: 'https://copiano.com',
+    languages: {
+      'zh-CN': 'https://copiano.com',
+      en: 'https://copiano.com/en',
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
     url: 'https://copiano.com',
     title: 'CoPiano — AI 古典钢琴教练',
-    description: '5 维 AI 评估 + RCT 验证。让钢琴学习更聪明。',
+    description: '5 维 AI 评估 + RCT 验证 (d=1.34)。让钢琴学习更聪明。',
     siteName: 'CoPiano',
     images: [
       {
-        url: '/og-image.png',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'CoPiano — AI 古典钢琴教练',
@@ -53,12 +65,23 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'CoPiano — AI 古典钢琴教练',
-    description: '5 维 AI 评估 + RCT 验证。',
-    images: ['/og-image.png'],
+    description: '5 维 AI 评估 + RCT 验证 d=1.34。',
+    images: ['/twitter-image'],
+    creator: '@copiano',
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // 部署后填入真实 code
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
 };
 
@@ -80,6 +103,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" suppressHydrationWarning className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen bg-background font-sans antialiased">
+        <StructuredData />
         {children}
       </body>
     </html>
