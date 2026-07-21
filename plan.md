@@ -900,3 +900,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_48_DONE: 2026-07-22 03:20 — A6.1 NextAuth.js v5 (Auth.js beta 22) — 11 文件 ~12K: auth.config.ts edge-safe + 路由保护 + JWT 透传 accessToken; auth.ts Credentials(走后端 /auth/login)+Google+Apple; middleware.ts Edge runtime; app/api/auth/[...nextauth]/route.ts; types/next-auth.d.ts; lib/api.ts (apiFetch+ApiError+5 便捷方法+FormData+30s 超时); lib/auth-helpers.ts; components/providers.tsx; layout.tsx 注入; .env.example; tests/api.test.ts]
 
 [CYCLE_49_DONE: 2026-07-22 03:38 — A6.2 /login+/signup (components/auth/{auth-shell, oauth-buttons(Google+Apple 内嵌 SVG), login-form(RHF+zod+Mail/Lock icon+callbackUrl), signup-form(注册+自动登录+terms)} + components/ui/{input, label} + app/{login, signup}/page.tsx robots noindex + package.json + react-hook-form 7.53+zod 3.23+@hookform/resolvers 3.9; 7 文件 ~13K; W6 2/9)]
+
+[CYCLE_50_DONE: 2026-07-22 03:55 — A6.3 /app 路由组 (lib/nav-items 7 项+primary; components/app/{sidebar lg:fixed 64px+active 高亮, mobile-nav 顶条+抽屉+底 5 tab, user-menu Avatar+Dropdown}; ui/dropdown-menu 完整 Radix; app/app/layout auth() 守护+redirect 401→/login?callbackUrl; app/app/page 欢迎+今日推荐+4 快捷+上次评估; 7 文件 ~14K, W6 3/9)]
