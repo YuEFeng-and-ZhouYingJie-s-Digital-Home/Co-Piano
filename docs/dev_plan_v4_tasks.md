@@ -14,18 +14,20 @@
 
 ### W1: 服务器 + 基础设施
 
-- [PENDING] **A1.1**: 申请 Apple Developer 账号 ($99/年) — 需用户操作
-- [PENDING] **A1.2**: 注册/确认 copiano.com 域名 (用户自有)
-- [PENDING] **A1.3**: 配置 DNS 记录 (5 个子域名 A 记录)
-- [PENDING] **A1.4**: 服务器初始化 (Ubuntu 22.04, Docker, Nginx)
-- [PENDING] **A1.5**: 申请 Let's Encrypt SSL 证书
-- [PENDING] **A1.6**: 部署 PostgreSQL 16 + Redis 7
-- [PENDING] **A1.7**: 创建 GitHub 仓库 (private)
-- [PENDING] **A1.8**: 申请 OpenAI API key (备份 LLM)
+- [BLOCKED: 需用户操作 — Apple Developer 申请] **A1.1**: 申请 Apple Developer 账号 ($99/年)
+- [BLOCKED: 需用户操作 — 域名已自有,需提供 DNS 控制台权限] **A1.2**: 注册/确认 copiano.com 域名
+- [BLOCKED: 需用户操作 — DNS A 记录] **A1.3**: 配置 DNS 记录 (5 个子域名 A 记录)
+- [BLOCKED: 需用户操作 — 服务器 SSH 凭据] **A1.4**: 服务器初始化 (Ubuntu 22.04, Docker, Nginx)
+- [BLOCKED: 依赖 A1.3 DNS] **A1.5**: 申请 Let's Encrypt SSL 证书
+- [BLOCKED: 依赖 A1.4 服务器] **A1.6**: 部署 PostgreSQL 16 + Redis 7
+- [BLOCKED: 需用户操作 — GitHub 账号] **A1.7**: 创建 GitHub 仓库 (private)
+- [BLOCKED: 需用户操作 — OpenAI 账号] **A1.8**: 申请 OpenAI API key (备份 LLM)
+
+> W1 全部 BLOCKED,等待用户提供凭据/账号。Cron 自动从 W2 开始推进。
 
 ### W2: FastAPI 基础
 
-- [PENDING] **A2.1**: FastAPI 项目结构 (backend/)
+- [DONE: 2026-07-21 14:30] **A2.1**: FastAPI 项目结构 (backend/) — main.py + requirements.txt + Dockerfile + README.md + .env.example + 8 冒烟测试全通过
 - [PENDING] **A2.2**: SQLAlchemy 2.0 模型 (User/Evaluation/Curriculum)
 - [PENDING] **A2.3**: JWT Auth (signup/login/refresh)
 - [PENDING] **A2.4**: OAuth2 (Apple/Google 登录)

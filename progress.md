@@ -3413,3 +3413,87 @@ Phase 7C: 真实 RCT (W17-W25, 8 周,与 7A/7B 并行)
 - 找 `[PENDING]` 任务 A1.1 (申请 Apple Developer 账号)
 - 注:此任务需用户操作,agent 无法直接执行
 - 候选自动任务:A1.4 (服务器初始化脚本) 或 A2.1 (FastAPI 项目结构)
+
+## [2026-07-21 14:30] Cycle 23: A2.1 FastAPI 项目结构 ✅ DONE
+
+**任务**: A2.1 — FastAPI 项目结构 (backend/)
+**状态**: ✅ DONE
+**耗时**: ~12 分钟
+
+**产出** (12.4K 源代码, 0 第三方依赖外):
+- `backend/main.py` (182 行) — FastAPI 入口,lifespan + CORS + 8 路由 + 全局异常处理
+- `backend/requirements.txt` (63 行) — 9 大类依赖 (FastAPI/SQLAlchemy/Redis/JWT/HTTP/S3/MIDI/LLM/监控)
+- `backend/Dockerfile` (48 行) — Python 3.11-slim + 非 root 用户 + 健康检查
+- `backend/.env.example` (79 行) — 12 个 env 段 (应用/CORS/DB/Redis/JWT/OAuth/LLM/S3/监控/支付)
+- `backend/README.md` (160 行) — 快速开始 + 5 维 API 文档 + 任务跟踪表
+- `backend/.gitignore` (57 行) — Python/Env/IDE/Secrets 标准
+- `backend/tests/test_main.py` (105 行) — 8 冒烟测试 (root/health/ping/status/cors/openapi/docs/redoc)
+
+**目录结构**:
+```
+backend/
+├── main.py          # FastAPI 入口
+├── requirements.txt # 依赖
+├── Dockerfile       # 生产镜像
+├── .env.example     # 环境变量模板
+├── README.md        # 文档
+├── .gitignore
+├── app/             # 业务代码 (A2.2+ 填充)
+│   ├── __init__.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── v1/
+│   │       └── __init__.py
+└── tests/
+    ├── __init__.py
+    └── test_main.py
+```
+
+**测试结果** (本地 venv):
+```
+tests/test_main.py::test_root PASSED                                     [ 12%]
+tests/test_main.py::test_health PASSED                                   [ 25%]
+tests/test_main.py::test_ping PASSED                                     [ 37%]
+tests/test_main.py::test_api_v1_status PASSED                            [ 50%]
+tests/test_main.py::test_cors_headers PASSED                             [ 62%]
+tests/test_main.py::test_openapi_schema PASSED                           [ 75%]
+tests/test_main.py::test_docs_ui PASSED                                  [ 87%]
+tests/test_main.py::test_redoc_ui PASSED                                 [100%]
+============================== 8 passed in 0.34s ===============================
+```
+
+**冒烟测试** (uvicorn 启动 → curl):
+```bash
+$ uvicorn main:app --port 8765
+$ curl http://127.0.0.1:8765/health
+{"status":"ok","service":"copiano-api","version":"4.0.0-alpha"}
+$ curl http://127.0.0.1:8765/api/v1/status
+{"api_version":"v1","modules":{"auth":false,"users":false,"evaluations":false,...},"next_task":"A2.2"}
+```
+
+**关键设计决策**:
+- **OpenAPI URL** 移到 `/api/v1/openapi.json` (而非默认 `/openapi.json`) — 与 v1 路径前缀对齐
+- **CORS 默认** 包含 `localhost:3000` (Next.js) + `copiano.com` + `app.copiano.com`
+- **健康检查** 单独 endpoint 不在 v1 下 — 供 Nginx upstream + Docker HEALTHCHECK 复用
+- **uvicorn workers=4** 默认 — 适配 4 vCPU 服务器
+- **Python 3.11** (Dockerfile + requirements 注释) — 现代 type hints + 性能
+
+**W1 状态** (A1.1-A1.8) — 全部 [BLOCKED: 需要用户操作]:
+- A1.1 Apple Developer ($99/年) — 用户操作
+- A1.2 域名确认 (用户自有 copiano.com)
+- A1.3 DNS A 记录 (5 个子域名) — 用户操作
+- A1.4 服务器初始化 (Ubuntu 22.04 + Docker) — 用户提供 SSH 凭据
+- A1.5 Let's Encrypt SSL — 依赖 A1.3
+- A1.6 PostgreSQL + Redis 部署 — 依赖 A1.4
+- A1.7 GitHub 仓库 (private) — 用户操作
+- A1.8 OpenAI API key — 用户操作
+
+**下一步** (Cycle 24):
+- 第一个 [PENDING] 任务: **A2.2** SQLAlchemy 2.0 模型 (User/Evaluation/Curriculum)
+- 不需要外部依赖,可纯代码推进
+- 预计 ~15 分钟
+
+**累计 v4 进度**:
+- 0/36 → 1/36 Phase 7A 任务完成 (2.8%)
+- 0/60 → 1/60 总任务 (1.7%)
+- backend/ 目录已落地,可直接进入 A2.2
