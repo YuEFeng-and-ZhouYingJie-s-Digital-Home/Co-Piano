@@ -854,3 +854,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [PHASE_7A_W2_DONE: 2026-07-21 16:10 — W2 (FastAPI 基础) 6/6 完成: A2.1-A2.6 全部 ✅]
 
 [CYCLE_31_DONE: 2026-07-21 16:30 — A3.1 移植 v3.0 5 维模块 (eval_pitch + expressiveness + hand_pose + senior_mode + evaluation_service 编排, 20 测试, 100% 复用 v3.0)]
+
+[CYCLE_32_DONE: 2026-07-21 16:45 — A3.2-A3.4 评估 API (POST/GET/history, multipart 上传, 10 测试, 3 端点)]

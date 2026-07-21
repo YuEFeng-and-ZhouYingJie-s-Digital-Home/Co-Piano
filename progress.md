@@ -4183,3 +4183,93 @@ r = evaluation_service.evaluate_full(
 - 代码: 74K → **75.5K** (+1.5K 编排层)
 - 测试: 100 → **120** (+20)
 - 5 维算法: 100% 复用 v3.0 (零重写)
+
+## [2026-07-21 16:45] Cycle 32: A3.2-A3.4 评估 API 端点 ✅ DONE (3 任务合 1 tick)
+
+**任务**: A3.2 /api/v1/evaluations + A3.3 /{id} + A3.4 /history
+**状态**: ✅ DONE (3 任务)
+**耗时**: ~12 分钟
+
+**产出** (8 K 新代码):
+- `backend/app/schemas/evaluation.py` (75 行) — EvaluationCreateRequest/Response/ListResponse
+- `backend/app/api/v1/evaluations.py` (200 行) — 3 端点
+- `backend/tests/test_evaluations.py` (290 行) — 10 测试
+- main.py /api/v1/status 同步更新
+
+**3 个端点**:
+```
+POST   /api/v1/evaluations             multipart/form-data: midi_file + piece_name + difficulty + period_hint
+                                        → 201 + EvaluationCreateResponse (含 tips + 详细数据)
+GET    /api/v1/evaluations/{id}        UUID → EvaluationResponse (404/403)
+GET    /api/v1/evaluations/history     ?skip=0&limit=20 → EvaluationListResponse
+```
+
+**关键设计**:
+- **multipart/form-data** — 用 FastAPI `File()` + `Form()`,`python-multipart` 后端
+- **临时文件处理** — `tempfile.NamedTemporaryFile` 收上传,评估完 `os.unlink` 清理
+- **路径顺序** — `/history` 在 `/{evaluation_id}` 之前注册,避免 FastAPI 贪婪匹配
+- **权限隔离** — `eval_obj.user_id != current_user.id` → 403
+- **分页** — skip + limit + total,标准 REST 模式
+- **50MB 上限** — 防止巨型 MIDI 撑爆服务器
+- **持久化** — 评估后立刻写 PG,异常隔离,失败不会污染已存数据
+- **midi_url 占位** — `local://filename.mid`,A3.5 接 S3 后替换
+
+**测试结果** (本地 venv, 23.29s):
+```
+130 passed (A3.2-A3.4 新增 10):
+  test_create_evaluation_success ✓
+  test_create_evaluation_requires_auth ✓
+  test_create_evaluation_missing_piece_name ✓
+  test_create_evaluation_empty_midi ✓
+  test_get_evaluation_by_id ✓
+  test_get_evaluation_not_found ✓
+  test_get_evaluation_other_user_forbidden ✓
+  test_list_evaluations_history_empty ✓
+  test_list_evaluations_history_pagination ✓ (skip/limit)
+  test_list_evaluations_only_own ✓
+```
+
+**踩过的 2 个坑**:
+1. `python-multipart` 没装 → 装上即可
+2. FastAPI 路径贪婪匹配 `/history` → `/{evaluation_id}` → 把 history 路由放在前面
+
+**冒烟测试** (POST + 5 维):
+```bash
+$ curl -X POST /api/v1/evaluations -H "Authorization: Bearer $TOKEN" \
+    -F "midi_file=@bach.mid" -F "piece_name=Bach Prelude"
+HTTP 201
+{
+  "evaluation": {
+    "id": "...",
+    "piece_name": "Bach Prelude",
+    "pitch_score": 0.0,  # 无 reference,自动 0
+    "expressiveness_score": 0.05,  # 简单 MIDI 表现力低
+    "overall_score": 0.01
+  },
+  "tips": ["表现力可以更丰富..."],
+  "duration_ms": 0
+}
+```
+
+**累计 backend 测试**: 120 → **130/130 全过** (+10) 🎯
+
+**W3 进度 4/6**:
+- ✅ A3.1 移植 v3.0 模块 (20)
+- ✅ A3.2 POST /evaluations (3)
+- ✅ A3.3 GET /{id} (3)
+- ✅ A3.4 GET /history (4)
+- ⏳ A3.5 S3/MinIO MIDI 存储 — 下一个
+- ⏳ A3.6 Redis 缓存评估结果
+
+**下一步** (Cycle 33): A3.5 — S3/MinIO MIDI 存储
+- 已有 MinIO 镜像在 v4 plan,需在服务器启动
+- 用 boto3 SDK,生成 presigned URL
+- 评估时:上传到 S3 → 评估完保留在 S3
+- 详情页:从 S3 拉 MIDI 给前端做可视化
+
+**累计 v4 进度**:
+- 9/36 → **12/36** Phase 7A 任务完成 (33.3%) 🎯
+- 9/60 → **12/60** 总任务 (20.0%)
+- 代码: 75.5K → **83.5K** (+8K)
+- 测试: 120 → **130** (+10)
+- 端点: 12 → **15 业务端点** (3 新增)

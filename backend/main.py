@@ -160,9 +160,9 @@ async def api_v1_status():
             "auth": True,         # ✅ A2.3
             "users": True,        # ✅ A2.3
             "oauth": True,        # ✅ A2.4
-            "middleware": True,   # ✅ A2.6 (CORS + rate_limit + request_id + logging)
+            "middleware": True,   # ✅ A2.6
             "alembic": True,      # ✅ A2.5
-            "evaluations": False, # A3.2-A3.4
+            "evaluations": True,  # ✅ A3.2-A3.4 (POST/GET/history)
             "curriculum": False,  # A4.2-A4.3
             "sight_reading": False, # A4.5
             "feedback": False,    # A4.7
@@ -182,6 +182,9 @@ async def api_v1_status():
             "POST /api/v1/auth/oauth/unlink": "解绑 OAuth",
             "GET /api/v1/users/me": "当前用户信息",
             "PATCH /api/v1/users/me": "更新资料 (name/age/lang)",
+            "POST /api/v1/evaluations": "上传 MIDI → 5 维评估",
+            "GET /api/v1/evaluations/{id}": "评估详情",
+            "GET /api/v1/evaluations/history": "当前用户评估历史(分页)",
         },
         "middleware": {
             "cors": settings.cors_origins_list,
@@ -189,7 +192,7 @@ async def api_v1_status():
             "request_id_header": "X-Request-ID",
             "logging": "JSON (production) / Console (development)",
         },
-        "next_task": "A3.1 — 移植 v3.0 Python 模块到 backend/services/",
+        "next_task": "A3.5 — S3/MinIO MIDI 文件存储",
         "eta": "W3",
     }
 
