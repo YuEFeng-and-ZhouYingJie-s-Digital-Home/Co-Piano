@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { api, ApiError } from '@/lib/api';
+import { StaffDisplay } from '@/components/sight-reading/staff-display';
 import {
   LEVEL_META,
   MODE_META,
@@ -214,18 +215,7 @@ function QuestionDisplay({
   mode: SightReadingSession['mode'];
 }) {
   if (mode === 'staff') {
-    return (
-      <div className="text-2xl font-mono">
-        {question.notes_midi.map((m, i) => (
-          <span key={i} className="mx-1">
-            {midiToNoteName(m)}
-          </span>
-        ))}
-        <div className="mt-2 text-xs text-muted-foreground">
-          (五线谱 VexFlow 渲染待 W7 集成)
-        </div>
-      </div>
-    );
+    return <StaffDisplay notesMidi={question.notes_midi} width={360} height={120} />;
   }
   if (mode === 'numbered') {
     return (
@@ -240,20 +230,20 @@ function QuestionDisplay({
   }
   // dual
   return (
-    <div>
-      <div className="text-2xl font-mono">
-        {question.notes_midi.map((m, i) => (
-          <span key={i} className="mx-1">
-            {midiToNoteName(m)}
-          </span>
-        ))}
+    <div className="space-y-3">
+      <div>
+        <div className="text-xs text-muted-foreground mb-1">五线谱</div>
+        <StaffDisplay notesMidi={question.notes_midi} width={360} height={120} />
       </div>
-      <div className="mt-2 text-2xl font-bold">
-        {question.notes_solfege.map((s, i) => (
-          <span key={i} className="mx-1">
-            {s}
-          </span>
-        ))}
+      <div>
+        <div className="text-xs text-muted-foreground mb-1">简谱</div>
+        <div className="text-2xl font-bold">
+          {question.notes_solfege.map((s, i) => (
+            <span key={i} className="mx-1">
+              {s}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
