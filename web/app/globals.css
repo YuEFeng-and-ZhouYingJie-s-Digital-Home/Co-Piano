@@ -78,3 +78,80 @@
 .piano-key-black.active {
   background: linear-gradient(180deg, #6b2cff 0%, #4a1fbd 100%);
 }
+
+/* ===== 银发模式 (Senior) — 大字体 + 高对比 + 简化阴影 ===== */
+.senior {
+  --font-sans-scale: 1.2;
+}
+
+.senior body,
+.senior {
+  font-size: 1.05rem; /* 基础字体 17px → 18px */
+  line-height: 1.75; /* 行高更宽松 */
+}
+
+/* Headings 全部放大 */
+.senior h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+.senior h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+.senior h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.senior h4 {
+  font-size: 1.25rem;
+}
+
+/* 按钮放大 + 高对比 */
+.senior button,
+.senior [role='button'] {
+  min-height: 2.75rem;
+  font-weight: 600;
+}
+
+/* 链接加深 */
+.senior a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 输入框加大 */
+.senior input,
+.senior textarea,
+.senior select {
+  font-size: 1.05rem;
+  min-height: 2.75rem;
+  padding: 0.625rem 0.875rem;
+}
+
+/* 卡片高对比边框 + 简化阴影 */
+.senior [class*='shadow'] {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08) !important;
+}
+.senior [class*='border-border'] {
+  border-width: 2px !important;
+}
+
+/* 减少动画 — 老年人对动态效果敏感 */
+.senior *,
+.senior *::before,
+.senior *::after {
+  animation-duration: 0.001ms !important;
+  transition-duration: 0.001ms !important;
+}
+
+/* 银发友好焦点环 (键盘导航) */
+.senior *:focus-visible {
+  outline: 3px solid #6b2cff !important;
+  outline-offset: 2px !important;
+}
+
+/* Sidebar 文字加大 */
+.senior aside {
+  font-size: 1.05rem;
+}

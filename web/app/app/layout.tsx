@@ -1,8 +1,11 @@
 import { redirect } from 'next/navigation';
 import { auth } from '@/auth';
+import { api, ApiError } from '@/lib/api';
 import { Sidebar } from '@/components/app/sidebar';
 import { MobileNav } from '@/components/app/mobile-nav';
 import { UserMenu } from '@/components/app/user-menu';
+import { SeniorModeApplier } from '@/components/app/senior-mode-applier';
+import type { UserProfile } from '@/lib/settings-types';
 
 export default async function AppLayout({
   children,
@@ -15,8 +18,22 @@ export default async function AppLayout({
     redirect('/login?callbackUrl=/app');
   }
 
+  // 拉 user profile 拿 is_senior(失败 fallback false)
+  let isSenior = false;
+  try {
+    const profile = await api.get<UserProfile>('/api/v1/users/me');
+    isSenior = profile.is_senior;
+  } catch (e) {
+    if (!(e instanceof ApiError && e.status === 401)) {
+      console.warn('Failed to load user profile for senior mode:', e);
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background">
+      {/* 应用银发模式 className 到 <html> */}
+      <SeniorModeApplier isSenior={isSenior} />
+
       {/* 桌面端 sidebar */}
       <Sidebar />
 
