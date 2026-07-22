@@ -920,3 +920,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_57_DONE: 2026-07-22 10:50 — A7.3 VexFlow 五线谱可视化 (package.json +vexflow@4.2.3; components/sight-reading/staff-display.tsx VexFlow Renderer+Stave+StaveNote+Accidental+Voice+Formatter+MIDI→key 转换+sharp 自动加+主题; components/record/midi-staff-preview.tsx 极简 SMF 解析器+前 32 音+StaffDisplay; question-runner 改造 staff/dual 模式; 4 文件 ~280 行, W7 1/6)]
 
 [CYCLE_58_DONE: 2026-07-22 11:05 — A7.4 银发模式 UI 主题 (app/globals.css .senior 8 段 CSS; lib/use-senior-mode hook; components/app/senior-mode-applier; app/app/layout 拉 is_senior; docs/senior-mode.md; 5 文件 ~84 行, W7 2/6)]
+
+[CYCLE_59_DONE: 2026-07-22 17:55 — DNS+SSL 操作指南产出 (docs/dns_setup_guide.md ~5K 6 步骤: 1) 控制台登录 2) 添加 copiano.com 域 3) 6 条 A 记录 @/www/app/api/docs/admin → 124.156.184.160 TTL 600 4) dig 验证生效 5) certbot --standalone 6 域名一证书 6) Nginx 上传+重载+健康检查+故障排查表)]
