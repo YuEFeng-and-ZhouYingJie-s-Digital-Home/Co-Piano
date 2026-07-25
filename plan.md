@@ -922,3 +922,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_58_DONE: 2026-07-22 11:05 — A7.4 银发模式 UI 主题 (app/globals.css .senior 8 段 CSS; lib/use-senior-mode hook; components/app/senior-mode-applier; app/app/layout 拉 is_senior; docs/senior-mode.md; 5 文件 ~84 行, W7 2/6)]
 
 [CYCLE_59_DONE: 2026-07-22 17:55 — DNS+SSL 操作指南产出 (docs/dns_setup_guide.md ~5K 6 步骤: 1) 控制台登录 2) 添加 copiano.com 域 3) 6 条 A 记录 @/www/app/api/docs/admin → 124.156.184.160 TTL 600 4) dig 验证生效 5) certbot --standalone 6 域名一证书 6) Nginx 上传+重载+健康检查+故障排查表)]
+
+[CYCLE_60_DONE: 2026-07-25 22:50 — 域名切换 copiano.com → yefzyj.top (用户自有域) — web/deploy/{nginx.yefzyj.top.conf, docker-compose.yml 改 4 NEXT_PUBLIC URL, deploy.sh healthcheck 域名, install-server.sh certbot 6 域名+hi@yefzyj.top email, healthcheck.sh} + .env.example 默认改 yefzyj.top + 11 个 lib/components/app 文件批量改 https://{*,app,api,docs,admin}.yefzyj.top + wss://api.yefzyj.top + hi@yefzyj.top/press@yefzyj.top + auth.ts 同步 + docs/dns_setup_guide.md 完整重写为 DNSPod 操作 (6 步 + 故障排查); 19 文件已更新; A1.3 状态 BLOCKED → IN_PROGRESS]

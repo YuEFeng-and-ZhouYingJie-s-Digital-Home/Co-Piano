@@ -47,7 +47,7 @@ export default function PricingPage() {
               <p className="mt-3 text-muted-foreground">
                 没找到答案?
                 {' '}
-                <a href="mailto:hi@copiano.com" className="text-piano-500 underline">
+                <a href="mailto:hi@yefzyj.top" className="text-piano-500 underline">
                   发邮件给我们
                 </a>
               </p>

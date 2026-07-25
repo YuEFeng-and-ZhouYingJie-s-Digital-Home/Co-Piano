@@ -4,7 +4,7 @@ import Google from 'next-auth/providers/google';
 import Apple from 'next-auth/providers/apple';
 import { authConfig } from './auth.config';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://api.copiano.com';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://api.yefzyj.top';
 
 /**
  * NextAuth 主入口 — 包含 Credentials + OAuth2 providers

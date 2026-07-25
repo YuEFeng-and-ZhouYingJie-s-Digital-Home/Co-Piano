@@ -56,8 +56,8 @@ export default async function SettingsPage() {
 
       <div className="text-center text-xs text-muted-foreground pt-4">
         需要帮助?联系{' '}
-        <a href="mailto:hi@copiano.com" className="underline">
-          hi@copiano.com
+        <a href="mailto:hi@yefzyj.top" className="underline">
+          hi@yefzyj.top
         </a>
       </div>
     </div>

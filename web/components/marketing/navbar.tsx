@@ -23,7 +23,7 @@ export function Navbar() {
             关于
           </Link>
           <Link
-            href="https://docs.copiano.com"
+            href="https://docs.yefzyj.top"
             className="hover:text-foreground transition-colors"
           >
             文档
@@ -31,10 +31,10 @@ export function Navbar() {
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild variant="ghost" size="sm">
-            <Link href="https://app.copiano.com/login">登录</Link>
+            <Link href="https://app.yefzyj.top/login">登录</Link>
           </Button>
           <Button asChild variant="piano" size="sm">
-            <Link href="https://app.copiano.com/signup">免费开始</Link>
+            <Link href="https://app.yefzyj.top/signup">免费开始</Link>
           </Button>
         </div>
       </div>

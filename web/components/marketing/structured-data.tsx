@@ -3,7 +3,7 @@
  * Google Rich Results / 百度结构化数据 / 学术论文 schema.org/ScholarlyArticle
  */
 
-const BASE_URL = process.env.NEXT_PUBLIC_MARKETING_URL ?? 'https://copiano.com';
+const BASE_URL = process.env.NEXT_PUBLIC_MARKETING_URL ?? 'https://yefzyj.top';
 
 export function StructuredData() {
   const organization = {
@@ -18,7 +18,7 @@ export function StructuredData() {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      email: 'hi@copiano.com',
+      email: 'hi@yefzyj.top',
       contactType: 'customer support',
       availableLanguage: ['zh-Hans', 'en'],
     },

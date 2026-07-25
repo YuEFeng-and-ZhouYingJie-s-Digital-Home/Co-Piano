@@ -1,10 +1,10 @@
-# CoPiano Marketing Web — 生产 Docker Compose
+# CoPiano Marketing Web — 生产 Docker Compose (yefzyj.top)
 # 部署路径: /opt/copiano/web/docker-compose.yml
 # 启动: docker compose up -d
 #
 # 假设:
-#  - 主域名 copiano.com 已在 DNS 解析到 124.156.184.160
-#  - Nginx 已配置并 reload (见 nginx.copiano.com.conf)
+#  - 域名 yefzyj.top + 5 子域名已在 DNSPod 解析到 124.156.184.160
+#  - Nginx 已配置 (见 nginx.yefzyj.top.conf) + reload
 #  - SSL 证书已通过 certbot 签发
 
 services:
@@ -20,10 +20,10 @@ services:
       - NODE_ENV=production
       - PORT=3000
       - HOSTNAME=0.0.0.0
-      - NEXT_PUBLIC_API_BASE_URL=https://api.copiano.com
-      - NEXT_PUBLIC_WS_BASE_URL=wss://api.copiano.com
-      - NEXT_PUBLIC_APP_URL=https://app.copiano.com
-      - NEXT_PUBLIC_MARKETING_URL=https://copiano.com
+      - NEXT_PUBLIC_API_BASE_URL=https://api.yefzyj.top
+      - NEXT_PUBLIC_WS_BASE_URL=wss://api.yefzyj.top
+      - NEXT_PUBLIC_APP_URL=https://app.yefzyj.top
+      - NEXT_PUBLIC_MARKETING_URL=https://yefzyj.top
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/api/health"]
       interval: 30s

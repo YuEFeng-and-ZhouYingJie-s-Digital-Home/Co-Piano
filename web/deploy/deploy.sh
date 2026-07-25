@@ -1,5 +1,5 @@
 #!/bin/bash
-# CoPiano 营销站 — 部署脚本
+# CoPiano 营销站 — 部署脚本 (yefzyj.top)
 # 用法: ./deploy.sh [--no-build]
 #
 # 流程:
@@ -62,9 +62,9 @@ REMOTE
 # --- 4. 健康检查 ---
 log "Health check..."
 sleep 5
-HEALTH=$(curl -s -o /dev/null -w '%{http_code}' https://copiano.com/api/health || echo "000")
+HEALTH=$(curl -s -o /dev/null -w '%{http_code}' https://yefzyj.top/api/health || echo "000")
 if [[ "$HEALTH" == "200" ]]; then
-    log "✅ Deploy success — https://copiano.com/api/health → 200"
+    log "✅ Deploy success — https://yefzyj.top/api/health → 200"
 else
     log "⚠️ Health check returned $HEALTH — check docker logs"
     ssh -i "$SSH_KEY" -p "$SERVER_PORT" -o StrictHostKeyChecking=no "$SERVER" \

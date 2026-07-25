@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://copiano.com'),
+  metadataBase: new URL('https://yefzyj.top'),
   title: {
     default: 'CoPiano — AI 古典钢琴教练',
     template: '%s | CoPiano',
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
   publisher: 'CoPiano',
   formatDetection: { email: false, address: false, telephone: false },
   alternates: {
-    canonical: 'https://copiano.com',
+    canonical: 'https://yefzyj.top',
     languages: {
-      'zh-CN': 'https://copiano.com',
-      en: 'https://copiano.com/en',
+      'zh-CN': 'https://yefzyj.top',
+      en: 'https://yefzyj.top/en',
     },
   },
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    url: 'https://copiano.com',
+    url: 'https://yefzyj.top',
     title: 'CoPiano — AI 古典钢琴教练',
     description: '5 维 AI 评估 + RCT 验证 (d=1.34)。让钢琴学习更聪明。',
     siteName: 'CoPiano',

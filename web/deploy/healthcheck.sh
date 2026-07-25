@@ -1,11 +1,11 @@
 #!/bin/bash
-# CoPiano Web 健康检查 + 监控
+# CoPiano Web 健康检查 + 监控 (yefzyj.top)
 # cron: */5 * * * * /opt/copiano/web/deploy/healthcheck.sh
 # 用 UptimeRobot / 飞书机器人 / 邮件告警
 
 set -euo pipefail
 
-DOMAIN="${DOMAIN:-https://copiano.com}"
+DOMAIN="${DOMAIN:-https://yefzyj.top}"
 SLACK_WEBHOOK="${SLACK_WEBHOOK:-}"
 LOG=/var/log/copiano-web-health.log
 

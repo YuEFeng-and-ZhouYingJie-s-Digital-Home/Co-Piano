@@ -5,7 +5,7 @@
 
 import { auth } from '@/auth';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://api.copiano.com';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://api.yefzyj.top';
 
 export class ApiError extends Error {
   constructor(

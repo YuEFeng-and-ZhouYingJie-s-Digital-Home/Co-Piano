@@ -66,7 +66,7 @@ export function FeedbackGenerator({
         return;
       }
 
-      const wsBase = process.env.NEXT_PUBLIC_WS_BASE_URL ?? 'wss://api.copiano.com';
+      const wsBase = process.env.NEXT_PUBLIC_WS_BASE_URL ?? 'wss://api.yefzyj.top';
       const url = `${wsBase}/api/v1/ws/llm?token=${encodeURIComponent(accessToken)}&evaluation_id=${evaluationId}`;
       const ws = new WebSocket(url);
       wsRef.current = ws;

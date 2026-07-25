@@ -16,7 +16,7 @@
 
 - [BLOCKED: 需用户操作 — Apple Developer 申请] **A1.1**: 申请 Apple Developer 账号 ($99/年)
 - [BLOCKED: 需用户操作 — 域名已自有,需提供 DNS 控制台权限] **A1.2**: 注册/确认 copiano.com 域名
-- [BLOCKED: 需用户操作 — DNS A 记录] **A1.3**: 配置 DNS 记录 (5 个子域名 A 记录)
+- [IN_PROGRESS: 2026-07-25 — 用户确认用 yefzyj.top 域名] **A1.3**: 配置 DNS 记录 (6 个子域名 → 124.156.184.160 via DNSPod)
 - [DONE: 2026-07-21 15:35] **A1.4**: 服务器初始化 (Ubuntu 22.04, Docker, Nginx) — SSH 通, Docker 29.6.2 + Compose v5.3.1 + Nginx 1.18.0 + UFW (22/80/443) + 2G swap + /opt/copiano/ 目录 + Docker log 轮转 (10m×3)
 - [BLOCKED: 依赖 A1.3 DNS] **A1.5**: 申请 Let's Encrypt SSL 证书
 - [DONE: 2026-07-21 15:38] **A1.6**: 部署 PostgreSQL 16 + Redis 7 — Docker Compose,localhost-only 端口,AOF 持久化,健康检查,密码在 .env (gitignore),2 服务 healthy

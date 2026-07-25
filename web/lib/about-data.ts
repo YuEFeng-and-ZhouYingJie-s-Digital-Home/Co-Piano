@@ -120,8 +120,8 @@ export const PAPER = {
 } as const;
 
 export const CONTACT = {
-  email: 'hi@copiano.com',
-  press: 'press@copiano.com',
+  email: 'hi@yefzyj.top',
+  press: 'press@yefzyj.top',
   wechat: 'CoPiano_Official',
   github: 'https://github.com/copiano/copiano',
   arxivDraft: '/about#paper',
