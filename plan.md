@@ -930,3 +930,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_62_DONE: 2026-07-27 16:15 — GitHub push 成功 (YuEFeng-and-ZhouYingJie-s-Digital-Home/Co-Piano) — 94 commits force-pushed (覆盖空 Initial commit), origin 已配 (无 token 落盘, URL 即用即弃), remote HEAD e24d3a3]
 
 [CYCLE_63_DONE: 2026-07-27 16:45 — GitHub 管理员操作手册产出 (docs/github_admin_reference.md 13K 15 节: 0安全/1基础/2分支保护/3CODEOWNERS/4 Secrets×10/5 Environments/6 Webhooks/7 Labels 17 个/8 安全 4 项/9 CI/10 Insights/11 Releases/12 curl+gh 速查/13 13 个关键 URL/14 P0-P2 立即清单/15 现状表; 同时用 token 查了真实仓库状态 确认 admin 全开)]
+
+[SECURITY_INCIDENT: 2026-07-27 16:50] — Token ghp_FOokfVgz... 暴露在 chat history + commit history,已用 git filter-branch 清除所有痕迹 (2 commits rewritten),远端验证已无 token. ⚠️ 用户必须立即去 https://github.com/settings/tokens 撤销并生成新 token (30 天过期 + 强制 1Password)
