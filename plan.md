@@ -926,3 +926,5 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_60_DONE: 2026-07-25 22:50 — 域名切换 copiano.com → yefzyj.top (用户自有域) — web/deploy/{nginx.yefzyj.top.conf, docker-compose.yml 改 4 NEXT_PUBLIC URL, deploy.sh healthcheck 域名, install-server.sh certbot 6 域名+hi@yefzyj.top email, healthcheck.sh} + .env.example 默认改 yefzyj.top + 11 个 lib/components/app 文件批量改 https://{*,app,api,docs,admin}.yefzyj.top + wss://api.yefzyj.top + hi@yefzyj.top/press@yefzyj.top + auth.ts 同步 + docs/dns_setup_guide.md 完整重写为 DNSPod 操作 (6 步 + 故障排查); 19 文件已更新; A1.3 状态 BLOCKED → IN_PROGRESS]
 
 [CYCLE_61_DONE: 2026-07-27 16:00 — GitHub 提交准备 (.gitignore 强化+venv/node_modules/.next; LICENSE MIT; .github/workflows/ci.yml 3 jobs backend pytest + web build + scripts lint; .github/ISSUE_TEMPLATE bug+feature; PULL_REQUEST_TEMPLATE; SECURITY.md 报告+自托管; CONTRIBUTING.md dev workflow+7 领域; README.md 重写 v4.0 highlight; CHANGELOG.md +v4.0 24 cycles 条目; 10 文件 623+ 行已 commit)]
+
+[CYCLE_62_DONE: 2026-07-27 16:15 — GitHub push 成功 (YuEFeng-and-ZhouYingJie-s-Digital-Home/Co-Piano) — 94 commits force-pushed (覆盖空 Initial commit), origin 已配 (无 token 落盘, URL 即用即弃), remote HEAD e24d3a3]
