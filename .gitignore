@@ -1,21 +1,92 @@
-# 测试 MIDI
-*.mid
-*.midi
-
-# 临时文件
-/tmp/*
-!/tmp/.gitkeep
-
 # Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+*.so
 *.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+dist/
+build/
+*.whl
 
-# 系统
-.DS_Store
+# Virtualenv
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+
+# Node / Next.js
+node_modules/
+.pnp/
+.pnp.js
+.next/
+out/
+build/
+next-env.d.ts
+.turbo/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.envrc
+
+# IDE
+.idea/
+.vscode/
 *.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
 
-# 大文件
+# Logs
 *.log
 logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Test MIDI (large)
+*.mid
+*.midi
+
+# Build artifacts
+*.tgz
+*.zip
+*.tar.gz
+
+# Coverage
+coverage/
+.nyc_output/
+
+# OS
+.tmp/
+tmp/
+*.tmp
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# venv artifacts
+*.so
+*.dylib
+*.dll
+
+# Local dev
+.bash_history
+.python-version
+.mypy_cache

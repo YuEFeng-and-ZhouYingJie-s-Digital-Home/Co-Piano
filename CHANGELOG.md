@@ -1,7 +1,46 @@
 # CoPiano Changelog
 
 > 项目变更日志,按版本倒序排列。
-> 最近更新: 2026-07-21 04:30 (Cycle 20 完结,19 cycles)
+> 最近更新: 2026-07-27 16:00 (v4.0 W6 完结,42 cycles)
+
+---
+
+## [v4.0] — 2026-07-21 → 2026-07-27 (WIP, 24 cycles)
+
+### 🎉 iPhone App + Website + Backend (Phase 7A 营销站 + Web App + MIDI 集成)
+
+**核心架构**:
+- 5 子域名 (`yefzyj.top` / `www` / `app` / `api` / `docs` / `admin`) 部署在腾讯云 Lighthouse
+- 5 个 Docker 容器: web (Next.js) / backend (FastAPI) / postgres / redis / minio
+- Web MIDI (浏览器录 MIDI 键盘) + VexFlow 五线谱实时渲染
+- 银发模式 UI 主题 (WCAG 2.1 AA, .senior CSS, 字体放大 + 高对比)
+
+**W5 Marketing (7 cycles, 41-47)**:
+- A5.1 Next.js 14 初始化 (23 文件) · A5.2 shadcn/ui (5 组件) · A5.3 营销主页 (Hero + 5 维 + Recharts RCT d=1.34)
+- A5.4 /pricing (5 档) · A5.5 /about (论文 d=1.34 + 5 里程碑) · A5.6 SEO (7 端点 + 3 JSON-LD)
+- A5.7 部署套件 (Nginx + Docker + certbot + healthcheck)
+
+**W6 Web App (9 cycles, 48-56)**:
+- A6.1 NextAuth v5 (Credentials → 后端 JWT + Google/Apple + Edge middleware)
+- A6.2 /login + /signup (RHF + zod + OAuth) · A6.3 /app 路由组 (auth 守护 + sidebar + mobile-nav + user-menu)
+- A6.4 /app/curriculum (7 天课程, BlockType×8 + SM-2) · A6.5 /app/record (Web MIDI + SMF 编码器 + 5 维展示)
+- A6.6 /app/feedback (WebSocket 流式反馈) · A6.7 /app/progress (5 维 Recharts + 4 段时间切换)
+- A6.8 /app/sight-reading (4 难度 × 3 模式 + 80% 过关) · A6.9 /app/settings (profile + senior + 订阅 + 密码)
+
+**W7 Web MIDI 集成 (2 cycles, 57-58)**:
+- A7.3 VexFlow 五线谱 (sight-reading + MIDI 预览, 极简 SMF 解析器)
+- A7.4 银发模式 UI 主题 (.senior CSS, hook + html className, WCAG 2.1 AA)
+
+**配套**:
+- 24 cycles × ~14K 代码 = ~340K 行
+- 81 Git commits
+- 5 docs (`dev_plan_v4.md` 16.7K + `dev_plan_v4_tasks.md` ~60 tasks + DNS 指南 + 部署指南 + RCT 协议)
+- GitHub repo 准备 (MIT LICENSE + .github/workflows/ci.yml + issue/PR 模板)
+
+### 域名切换 (Cycle 60)
+- 原计划 `copiano.com` → 用户自有域 **`yefzyj.top`** (DNSPod 管理)
+- 19 个文件批量改写 (`web/deploy/*.conf` + 11 个 lib/components/app 文件)
+- DNS 解析需要用户在 DNSPod 加 6 条 A 记录 → 124.156.184.160
 
 ---
 
