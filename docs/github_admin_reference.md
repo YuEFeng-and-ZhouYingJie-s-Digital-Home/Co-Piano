@@ -12,7 +12,7 @@
 
 ## 🚨 0. 安全:Token 已暴露,立即撤销
 
-**当前 token `ghp_…REDACTED…` 已在 chat history / shell history 出现多次,必须撤销**:
+**当前 token `ghp_…REDACTED…` 曾在 chat history / shell history 暴露,必须撤销**:
 
 1. 打开 https://github.com/settings/tokens
 2. 找到这个 token,点 **Delete** (右上角)
@@ -439,7 +439,7 @@ gh repo delete YuEFeng-and-ZhouYingJie-s-Digital-Home/Co-Piano --yes
 ## ✅ 14. 立即执行清单 (按优先级)
 
 ### 🔴 P0 (今天做)
-1. **撤销旧 token** `ghp_…REDACTED…` + 生成新 token
+1. **撤销旧 token** `ghp_…REDACTED…` (曾经在 chat history 暴露) + 生成新 token
 2. 配 main 分支保护 (PR + 1 approval + status checks)
 3. 加 `.github/CODEOWNERS`
 4. 开启 Dependabot + Secret scanning + Push protection

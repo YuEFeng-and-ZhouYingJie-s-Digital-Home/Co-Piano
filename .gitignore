@@ -90,3 +90,14 @@ docker-compose.override.yml
 .bash_history
 .python-version
 .mypy_cache
+
+# Large binary assets (AI-generated hero images etc.)
+assets/**/*.png
+assets/**/*.jpg
+assets/**/*.jpeg
+assets/**/*.webp
+assets/**/*.gif
+
+# Root-level hero images (untracked, kept locally)
+/copiano_hero_*.png
+
