@@ -7,6 +7,9 @@ import type { NextAuthConfig } from 'next-auth';
  * Credentials/OAuth providers 在 auth.ts 中添加
  */
 export const authConfig: NextAuthConfig = {
+  // 信任所有 host (因为用 IP 直连 / hosts 文件绕过 DNS)
+  // 部署到正式域名后, 改成具体域名白名单更安全
+  trustHost: true,
   pages: {
     signIn: '/login',
     newUser: '/signup',
