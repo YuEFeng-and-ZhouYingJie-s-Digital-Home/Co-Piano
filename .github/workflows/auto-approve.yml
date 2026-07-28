@@ -1,0 +1,26 @@
+name: Auto-approve owner PRs
+
+# 用途: 单 owner 仓库绕过"自己不能批自己 PR"限制
+# 工作流: 检测新 PR,如果是 owner (kzhou176-dot) 创建,自动 APPROVE
+# 这样 owner 可以在 web UI 直接 Merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  auto-approve:
+    name: Auto-approve owner
+    runs-on: ubuntu-latest
+    # 只对 owner 自己的 PR 触发
+    if: github.event.pull_request.user.login == 'kzhou176-dot'
+    steps:
+      - name: Auto-approve
+        run: gh pr review "$PR_URL" --approve --body "Auto-approved by bot (single-owner repo)"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
