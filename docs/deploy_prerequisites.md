@@ -13,7 +13,7 @@
 
 ### 0.1 撤销
 - 打开 https://github.com/settings/tokens
-- 找到 token `ghp_…REDACTED…`(或最近生成的)
+- 找到你近期生成的 GitHub PAT(以 `ghp_` 开头)
 - 点击右侧 **Delete** 按钮
 - 确认删除
 
