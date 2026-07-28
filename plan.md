@@ -932,3 +932,11 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 [CYCLE_63_DONE: 2026-07-27 16:45 — GitHub 管理员操作手册产出 (docs/github_admin_reference.md 13K 15 节: 0安全/1基础/2分支保护/3CODEOWNERS/4 Secrets×10/5 Environments/6 Webhooks/7 Labels 17 个/8 安全 4 项/9 CI/10 Insights/11 Releases/12 curl+gh 速查/13 13 个关键 URL/14 P0-P2 立即清单/15 现状表; 同时用 token 查了真实仓库状态 确认 admin 全开)]
 
 [SECURITY_INCIDENT: 2026-07-27 16:50] — Token ghp_FOokfVgz... 暴露在 chat history + commit history,已用 git filter-branch 清除所有痕迹 (2 commits rewritten),远端验证已无 token. ⚠️ 用户必须立即去 https://github.com/settings/tokens 撤销并生成新 token (30 天过期 + 强制 1Password)
+
+[CYCLE_65_DONE: 2026-07-28 — GitHub admin 完整落地 (按 D→A→B→C 顺序)]
+- D: main 分支保护 (1 PR approval + admins enforced + no force push + no delete + conversation resolution + require_code_owner_reviews=true)
+- A: Dependabot alerts (200 endpoint OK) + secret scanning + push protection 启用
+- B: 10 topics (ai/music/piano/education/fastapi/nextjs/postgresql/web-midi/classical-music/music-education) + SEO description + homepage=yefzyj.top + wiki disable
+- C: .github/CODEOWNERS (12 路径规则) + .github/dependabot.yml (pip/npm/github-actions/docker 4 ecosystem) + 12 CoPiano labels (实际总 18 含 GitHub 默认)
+- 18 commits pushed, 14258KB
+- 远端 HEAD: 1dd5833, 0 stars/forks, 1 open issue (PR#1 closed)
