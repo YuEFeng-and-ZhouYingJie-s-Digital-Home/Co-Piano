@@ -1,0 +1,49 @@
+# CODEOWNERS — CoPiano repo
+# 配置: https://github.com/YuEFeng-and-ZhouYingJie-s-Digital-Home/Co-Piano/settings/branches
+# 启用 require_code_owner_reviews 后,修改以下路径的 PR 必须经 @yuefeng 审查
+
+# 默认所有路径归你
+*                                       @yuefeng
+
+# Backend (Python / FastAPI)
+backend/                                @yuefeng
+backend/app/api/                        @yuefeng
+backend/app/services/                   @yuefeng
+backend/app/models/                     @yuefeng
+backend/app/schemas/                    @yuefeng
+backend/tests/                          @yuefeng
+backend/alembic/                        @yuefeng
+backend/requirements.txt                @yuefeng
+backend/Dockerfile                      @yuefeng
+
+# Web (Next.js / TypeScript)
+web/                                    @yuefeng
+web/app/                                @yuefeng
+web/components/                         @yuefeng
+web/lib/                                @yuefeng
+web/tests/                              @yuefeng
+web/package.json                        @yuefeng
+web/next.config.mjs                     @yuefeng
+web/tailwind.config.ts                  @yuefeng
+web/Dockerfile                          @yuefeng
+
+# 部署 / DevOps
+web/deploy/                             @yuefeng
+docs/dns_setup_guide.md                 @yuefeng
+docs/deploy_web.md                      @yuefeng
+docs/github_admin_reference.md          @yuefeng
+Dockerfile                              @yuefeng
+docker-compose.yml                      @yuefeng
+
+# CI / 安全 / Secrets
+.github/                                @yuefeng
+.github/workflows/                      @yuefeng
+.github/CODEOWNERS                      @yuefeng
+SECURITY.md                             @yuefeng
+LICENSE                                 @yuefeng
+
+# 文档
+README.md                               @yuefeng
+CHANGELOG.md                            @yuefeng
+CONTRIBUTING.md                         @yuefeng
+docs/                                   @yuefeng
