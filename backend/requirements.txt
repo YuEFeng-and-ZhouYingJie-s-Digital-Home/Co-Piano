@@ -62,7 +62,7 @@ httpx==0.27.2
 # Development
 black==24.10.0
 ruff==0.6.8
-ipython==8.28.0
+ipython==9.15.0
 
 # 2026-07-28 部署发现缺失,补上
 slowapi==0.1.9
