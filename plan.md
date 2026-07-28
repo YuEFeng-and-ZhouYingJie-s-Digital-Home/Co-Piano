@@ -949,3 +949,8 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 - T5: .github/workflows/codeql.yml (Python + JS/TS 2 matrix, security-extended + security-and-quality queries, push/PR/weekly 触发)
 - 4 workflows active (CI / CodeQL / Deploy / Dependabot)
 - 注意: 每次推 main 都要临时关 required_pull_request_reviews (1 owner 不能自批)
+
+[CYCLE_67_DONE: 2026-07-28 04:25 — Auto-approve bot + 部署前置指南]
+- T6: .github/workflows/auto-approve.yml (PR 来自 kzhou176-dot 自动 APPROVE, 解决单 owner 自批限制)
+- T7: docs/deploy_prerequisites.md (7 步 + 时间线 + 5 FAQ, ~58 分钟)
+- 5 workflows active: Auto-approve / CI / CodeQL / Deploy / Dependabot
