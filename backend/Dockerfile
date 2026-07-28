@@ -4,7 +4,7 @@
 # 运行: docker run -p 8000:8000 --env-file .env copiano-api
 # ──────────────────────────────────────────────
 
-FROM mirror.gcr.io/library/python:3.11-bookworm AS base
+FROM mirror.gcr.io/library/python:3.14-bookworm AS base
 
 # 防止 Python 写入 .pyc,确保 stdout/stderr 不缓冲
 ENV PYTHONDONTWRITEBYTECODE=1 \
