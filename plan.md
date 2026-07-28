@@ -940,3 +940,12 @@ CoPiano v3.0 已完成业界首个 5 维多模态 + RCT 验证 + 完整工具链
 - C: .github/CODEOWNERS (12 路径规则) + .github/dependabot.yml (pip/npm/github-actions/docker 4 ecosystem) + 12 CoPiano labels (实际总 18 含 GitHub 默认)
 - 18 commits pushed, 14258KB
 - 远端 HEAD: 1dd5833, 0 stars/forks, 1 open issue (PR#1 closed)
+
+[CYCLE_66_DONE: 2026-07-28 04:05 — GitHub admin tasks 1-5 (按顺序完成)]
+- T1: 4 CI Secrets (BACKEND_DATABASE_URL / BACKEND_REDIS_URL / BACKEND_JWT_SECRET / NEXTAUTH_SECRET) — 用 PyNaCl sealed_box 加密 GitHub public key
+- T2: production environment (限制 main 分支 + 防 self-review)
+- T3: .github/workflows/deploy.yml (2 jobs deploy-web + deploy-backend via webfactory/ssh-agent,trigger push to main + manual dispatch,health check yefzyj.top/api/health)
+- T4: v4.0.0 Release (tag + 2593 char body 含 5 维评估/RCT/部署前置/技术栈)
+- T5: .github/workflows/codeql.yml (Python + JS/TS 2 matrix, security-extended + security-and-quality queries, push/PR/weekly 触发)
+- 4 workflows active (CI / CodeQL / Deploy / Dependabot)
+- 注意: 每次推 main 都要临时关 required_pull_request_reviews (1 owner 不能自批)
