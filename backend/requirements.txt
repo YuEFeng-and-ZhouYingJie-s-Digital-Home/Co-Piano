@@ -43,7 +43,7 @@ music21==9.1.0
 numpy==1.26.4
 
 # LLM — Qwen (本地 GPU) + OpenAI
-openai==1.51.0
+openai==2.49.0
 transformers==4.45.2
 torch==2.4.1
 accelerate==0.34.2
