@@ -44,7 +44,7 @@ numpy==1.26.4
 
 # LLM — Qwen (本地 GPU) + OpenAI
 openai==1.51.0
-transformers==4.45.2
+transformers==5.5.0
 torch==2.4.1
 accelerate==0.34.2
 
