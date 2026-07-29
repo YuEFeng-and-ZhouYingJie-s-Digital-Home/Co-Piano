@@ -33,9 +33,8 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -301,19 +300,19 @@ def _norm_melody_lead(ms: float) -> float:
 # ----- 报告生成 -----
 def format_report(profile: ExpressivenessProfile, period: str = "") -> str:
     md = [
-        f"# 表现力分析报告",
-        f"",
+        "# 表现力分析报告",
+        "",
         f"**音符数**: {profile.n_notes}  |  **最大同时发声音**: {profile.n_simultaneous_max}  |  **Articulation**: {profile.detected_articulation}",
         f"**时期**: {period or '未指定'}",
-        f"",
-        f"---",
-        f"",
+        "",
+        "---",
+        "",
         f"## 综合评分: **{profile.overall} / 100**",
-        f"",
-        f"## 9 维度细分",
-        f"",
-        f"| # | 维度 | 原始值 | 评分(0-10) | 说明 |",
-        f"|---|------|--------|------------|------|",
+        "",
+        "## 9 维度细分",
+        "",
+        "| # | 维度 | 原始值 | 评分(0-10) | 说明 |",
+        "|---|------|--------|------------|------|",
         f"| 1 | velocity_mean | {profile.velocity_mean} | — | 平均力度 |",
         f"| 2 | velocity_std | {profile.velocity_std} | {min(10, profile.velocity_std):.1f} | 力度变化(越高 = 越有表现) |",
         f"| 3 | dynamic_range | {profile.dynamic_range} | {min(10, profile.dynamic_range/12.7):.1f} | pp→ff 跨度(127=全幅) |",
@@ -323,16 +322,16 @@ def format_report(profile: ExpressivenessProfile, period: str = "") -> str:
         f"| 7 | touch_speed | — | {profile.touch_speed:.1f} | 推算触键速度 |",
         f"| 8 | articulation | {profile.detected_articulation} | {profile.articulation:.1f} | 连断奏比例 |",
         f"| 9 | release_var | — | {profile.release_var:.1f} | 释放变化 |",
-        f"",
-        f"## 教学建议",
-        f"",
+        "",
+        "## 教学建议",
+        "",
     ]
     md.extend(_generate_teaching_tips(profile, period))
     md.extend([
-        f"",
-        f"---",
-        f"",
-        f"_基于 Goebl 2001 / Repp 1996 / KTH Rule System 等研究_",
+        "",
+        "---",
+        "",
+        "_基于 Goebl 2001 / Repp 1996 / KTH Rule System 等研究_",
     ])
     return "\n".join(md)
 

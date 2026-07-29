@@ -6,7 +6,6 @@ from __future__ import annotations
 
 import uuid
 from datetime import datetime
-from typing import Optional
 
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator
 
@@ -19,8 +18,8 @@ from app.models.user import OAuthProvider, SubscriptionTier
 class UserBase(BaseModel):
     """用户基础字段"""
     email: EmailStr
-    name: Optional[str] = Field(default=None, max_length=100)
-    age: Optional[int] = Field(default=None, ge=0, le=120)
+    name: str | None = Field(default=None, max_length=100)
+    age: int | None = Field(default=None, ge=0, le=120)
     preferred_language: str = Field(default="zh-CN", max_length=10)
 
 
@@ -30,7 +29,7 @@ class UserBase(BaseModel):
 class SignupRequest(UserBase):
     """注册请求"""
     password: str = Field(min_length=8, max_length=128)
-    confirm_password: Optional[str] = None  # 可选,前端校验
+    confirm_password: str | None = None  # 可选,前端校验
 
 
 class LoginRequest(BaseModel):
@@ -53,16 +52,16 @@ class UserResponse(BaseModel):
 
     id: str
     email: EmailStr
-    name: Optional[str] = None
-    age: Optional[int] = None
+    name: str | None = None
+    age: int | None = None
     is_senior: bool = False
     subscription_tier: SubscriptionTier = SubscriptionTier.FREE
     oauth_provider: OAuthProvider = OAuthProvider.LOCAL
-    oauth_id: Optional[str] = None
+    oauth_id: str | None = None
     preferred_language: str = "zh-CN"
     is_active: bool = True
     is_verified: bool = False
-    last_login_at: Optional[datetime] = None
+    last_login_at: datetime | None = None
     created_at: datetime
 
     @field_validator("id", mode="before")
@@ -86,4 +85,4 @@ class TokenResponse(BaseModel):
 class MessageResponse(BaseModel):
     """通用消息响应"""
     message: str
-    detail: Optional[str] = None
+    detail: str | None = None

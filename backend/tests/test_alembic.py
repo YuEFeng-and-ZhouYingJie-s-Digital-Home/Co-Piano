@@ -19,8 +19,6 @@ import sqlite3
 import subprocess
 import tempfile
 
-import pytest
-
 
 def _run_alembic(args, db_url, cwd=None):
     """运行 alembic 命令,设置 DATABASE_URL_SYNC env var"""

@@ -10,7 +10,6 @@ from pathlib import Path
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BACKEND_DIR))
 
-import json
 import pytest
 
 from app.services.cache import CacheService, cache_service

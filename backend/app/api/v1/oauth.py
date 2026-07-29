@@ -18,7 +18,6 @@ OAuth API — Apple / Google / WeChat 登录端点
 from __future__ import annotations
 
 import logging
-from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -121,7 +120,7 @@ async def login_google(
 )
 async def wechat_qrcode(
     redirect_uri: str = Query(..., description="回调 URL,需在微信开放平台配置"),
-    state: Optional[str] = Query(None, description="CSRF token"),
+    state: str | None = Query(None, description="CSRF token"),
 ):
     """前端拿到 url 后转二维码,用户扫码后微信 redirect 到 redirect_uri?code=...&state=..."""
     try:

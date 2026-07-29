@@ -13,13 +13,9 @@ Cycle 7 Stage 2 实现:
 对位: SAMICK / Simply Piano / Flowkey / Anki SM-2
 """
 
-import hashlib
 import json
-import time
-from dataclasses import dataclass, field, asdict
+from dataclasses import asdict, dataclass, field
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Tuple
-
 
 # === 6 类练习块定义 ===
 
@@ -133,8 +129,8 @@ class DayPlanV2:
     date: str
     theme: str
     duration_min: int
-    blocks: List[BlockSpec] = field(default_factory=list)
-    daily_goals: List[str] = field(default_factory=list)
+    blocks: list[BlockSpec] = field(default_factory=list)
+    daily_goals: list[str] = field(default_factory=list)
     difficulty: str = 'beginner'  # 当日整体难度
     senior_mode: bool = False  # 是否启用银发模式
     notes: str = ''  # 备注
@@ -158,11 +154,11 @@ class DayPlanV2:
 class WeekPlanV2:
     """7 天计划"""
     start_date: str
-    days: List[DayPlanV2] = field(default_factory=list)
-    weekly_goals: List[str] = field(default_factory=list)
-    weakness_focus: List[str] = field(default_factory=list)  # 本周专攻弱项
+    days: list[DayPlanV2] = field(default_factory=list)
+    weekly_goals: list[str] = field(default_factory=list)
+    weakness_focus: list[str] = field(default_factory=list)  # 本周专攻弱项
     avg_score: float = 0.0  # 学生当前平均分
-    difficulty_progression: List[str] = field(default_factory=list)  # 7 天难度档
+    difficulty_progression: list[str] = field(default_factory=list)  # 7 天难度档
 
     def to_dict(self):
         return {
@@ -188,9 +184,9 @@ class SpacedRepetition:
 
     def __init__(self):
         # piece_name → {'last_review': date_str, 'ease': 1.5, 'interval_idx': 0, 'last_score': 0}
-        self.pieces: Dict[str, dict] = {}
+        self.pieces: dict[str, dict] = {}
 
-    def get_next_review(self, piece_name: str) -> Optional[Dict]:
+    def get_next_review(self, piece_name: str) -> dict | None:
         """获取下次复习时间 (None = 还没学过)"""
         if piece_name not in self.pieces:
             return None
@@ -238,7 +234,7 @@ class SpacedRepetition:
         state['last_review'] = date_str
         state['last_score'] = score
 
-    def get_due_pieces(self, max_count: int = 3) -> List[Dict]:
+    def get_due_pieces(self, max_count: int = 3) -> list[dict]:
         """获取今日需要复习的曲子 (按 days_until 升序)"""
         all_due = []
         for piece in self.pieces:
@@ -260,7 +256,7 @@ class SpacedRepetition:
 class WeaknessDetector:
     """从 5 维分数检测 top 弱项"""
 
-    def __init__(self, dim_scores: Dict[str, float] = None):
+    def __init__(self, dim_scores: dict[str, float] = None):
         # 默认 5 维分数 0-100
         self.dim_scores = dim_scores or {
             'pitch': 75.0,
@@ -270,7 +266,7 @@ class WeaknessDetector:
             'sight_reading': 60.0,
         }
 
-    def detect(self, top_n: int = 3) -> List[Dict]:
+    def detect(self, top_n: int = 3) -> list[dict]:
         """返回 top_n 弱项 (分数最低优先)"""
         sorted_dims = sorted(self.dim_scores.items(), key=lambda x: x[1])
         weak = []
@@ -361,7 +357,7 @@ def get_difficulty_for_day(day_num: int, avg_score: float = 0) -> str:
 class AdaptivePlanner:
     """7 天自适应规划器 (v2 整合 5 维 + 间隔复习 + 银发)"""
 
-    def __init__(self, db=None, age: Optional[int] = None, time_per_day_min: int = 30, days: int = 7):
+    def __init__(self, db=None, age: int | None = None, time_per_day_min: int = 30, days: int = 7):
         self.db = db
         self.age = age
         self.time_per_day = time_per_day_min
@@ -406,7 +402,7 @@ class AdaptivePlanner:
             difficulty_progression=difficulty_progression,
         )
 
-    def _build_weekly_goals(self, weakness: List[Dict]) -> List[str]:
+    def _build_weekly_goals(self, weakness: list[dict]) -> list[str]:
         """构建本周 3 个目标"""
         goals = []
         for w in weakness[:2]:
@@ -415,7 +411,7 @@ class AdaptivePlanner:
         goals.append(f"总练习 {self.days} 天 × {self.time_per_day}min = {self.days * self.time_per_day}min")
         return goals
 
-    def _build_day(self, day_num: int, weakness: List[Dict], difficulty: str) -> DayPlanV2:
+    def _build_day(self, day_num: int, weakness: list[dict], difficulty: str) -> DayPlanV2:
         """构建 1 天计划 (6-8 块)"""
         # 银发模式:每天多 5min,块更少
         time_budget = self.time_per_day + 5 if self.senior_mode_active else self.time_per_day
@@ -514,7 +510,7 @@ class AdaptivePlanner:
             notes=self._build_day_notes(day_num),
         )
 
-    def _build_daily_goals(self, day_num: int, weakness: List[Dict], blocks: List[BlockSpec]) -> List[str]:
+    def _build_daily_goals(self, day_num: int, weakness: list[dict], blocks: list[BlockSpec]) -> list[str]:
         """构建每日 3-5 个目标"""
         goals = []
         # 主曲目标
@@ -566,7 +562,7 @@ class AdaptivePlanner:
             f"# 🎹 你的 {len(plan.days)} 天 AI 自适应课程 (v3.0 多模态)",
             f"_生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}_",
             f"_当前水平: {plan.avg_score:.0f} 分_"
-            + (f" | 👴 银发模式" if self.senior_mode_active else ""),
+            + (" | 👴 银发模式" if self.senior_mode_active else ""),
             "",
             "## 📊 本周目标",
         ]
@@ -606,7 +602,7 @@ def patch_voice_dialog_with_curriculum(dialog_module=None, planner: AdaptivePlan
         'current_day_idx': 0,
     }
 
-    def handle_curriculum_request(text: str) -> Optional[str]:
+    def handle_curriculum_request(text: str) -> str | None:
         text_lower = text.lower()
         on_kw = ['我的课程', '今天练什么', '查看计划', '课程', '练什么', '看课程']
         done_kw = ['标记完成', '练完了', '完成', 'done', 'finish']

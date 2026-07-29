@@ -13,18 +13,13 @@ from __future__ import annotations
 import logging
 import uuid
 from datetime import datetime
-from typing import Dict, Optional
 
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.deps import get_current_active_user
 from app.db.base import get_async_db
 from app.models.sight_reading import (
-    SightReadingDifficulty,
-    SightReadingInput,
-    SightReadingMode,
     SightReadingSession,
 )
 from app.models.user import User
@@ -45,7 +40,7 @@ router = APIRouter(prefix="/sight-reading", tags=["sight_reading"])
 
 # 简单内存 session 状态(题目进度)
 # 实际生产应该用 Redis 存,这里只是 demo
-_SESSIONS: Dict[str, dict] = {}
+_SESSIONS: dict[str, dict] = {}
 
 # 一次会话最多 20 题
 MAX_QUESTIONS_PER_SESSION = 20
@@ -175,7 +170,7 @@ async def answer_question(
     await db.commit()
 
     # 7. 下一题
-    next_q: Optional[SightReadingQuestion] = None
+    next_q: SightReadingQuestion | None = None
     if not is_complete:
         next_q = _gen_question_payload(
             session.difficulty.value, session.mode.value

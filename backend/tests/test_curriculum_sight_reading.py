@@ -223,10 +223,11 @@ def test_sight_reading_singleton():
 def test_v3_modules_directly_importable():
     """v3.0 模块可直接调用"""
     from app.services.curriculum_v2 import (
-        AdaptivePlanner, SpacedRepetition, WeaknessDetector,
+        AdaptivePlanner,
     )
     from app.services.sight_reading_trainer import (
-        SightReadingTrainer, pitch_to_name, name_to_pitch,
+        name_to_pitch,
+        pitch_to_name,
     )
     # 简单烟雾测试
     assert callable(AdaptivePlanner)

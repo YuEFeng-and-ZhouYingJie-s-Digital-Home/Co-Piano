@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Badge } from '@/components/ui/badge';
 import { api, ApiError } from '@/lib/api';
+import { wsBaseUrl } from '@/lib/urls';
 import { auth } from '@/auth';
 import type { Feedback } from '@/lib/feedback-types';
 
@@ -66,7 +67,12 @@ export function FeedbackGenerator({
         return;
       }
 
-      const wsBase = process.env.NEXT_PUBLIC_WS_BASE_URL ?? 'wss://api.yefzyj.top';
+      const wsBase = wsBaseUrl();
+      if (!wsBase) {
+        setError('NEXT_PUBLIC_WS_BASE_URL 未设置');
+        setStatus('error');
+        return;
+      }
       const url = `${wsBase}/api/v1/ws/llm?token=${encodeURIComponent(accessToken)}&evaluation_id=${evaluationId}`;
       const ws = new WebSocket(url);
       wsRef.current = ws;

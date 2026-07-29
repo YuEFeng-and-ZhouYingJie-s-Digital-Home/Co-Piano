@@ -15,15 +15,13 @@ from __future__ import annotations
 import logging
 import uuid
 from datetime import datetime
-from typing import Any, Optional
+from typing import Any
 
 from app.services.curriculum_v2 import (
     AdaptivePlanner as V3Planner,
-    BlockSpec,
-    DayPlanV2,
+)
+from app.services.curriculum_v2 import (
     SpacedRepetition,
-    WeekPlanV2,
-    WeaknessDetector,
 )
 
 logger = logging.getLogger("copiano.curriculum")
@@ -53,7 +51,7 @@ class CurriculumService:
     def _make_planner(
         self,
         avg_score: float = 0.5,
-        user_age: Optional[int] = None,
+        user_age: int | None = None,
     ) -> V3Planner:
         """每次生成都新建一个 planner(传入 age)"""
         return V3Planner(age=user_age, time_per_day_min=30, days=7)
@@ -62,8 +60,8 @@ class CurriculumService:
         self,
         user_id: uuid.UUID,
         avg_score: float = 0.5,
-        user_age: Optional[int] = None,
-        weakness_dimensions: Optional[list[str]] = None,
+        user_age: int | None = None,
+        weakness_dimensions: list[str] | None = None,
     ) -> dict[str, Any]:
         """生成 7 天课程计划
 

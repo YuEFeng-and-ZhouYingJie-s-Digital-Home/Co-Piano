@@ -15,7 +15,6 @@ import os
 import tempfile
 import uuid
 from datetime import datetime, timedelta
-from typing import List, Optional
 
 from fastapi import (
     APIRouter,
@@ -31,7 +30,6 @@ from sqlalchemy import desc, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.deps import get_current_active_user
-from app.core.rate_limit import RATE_LIMIT_UPLOAD
 from app.db.base import get_async_db
 from app.models.evaluation import DifficultyLevel, Evaluation
 from app.models.user import User
@@ -152,7 +150,6 @@ async def create_evaluation(
             s3_uri = f"local://{midi_file.filename or 'upload.mid'}"
 
         # 7. 持久化到 PG
-        from datetime import datetime, timezone
         evaluation = Evaluation(
             user_id=current_user.id,
             piece_name=piece_name,

@@ -4,6 +4,7 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 
 /**
  * 客户端 auth helpers — 包装 next-auth/react
+ * OAuth (Google/Apple) 暂未启用,等配置好 client_id/secret + 后端用户打通后再加
  */
 
 export function useAuth() {
@@ -22,14 +23,6 @@ export async function loginWithCredentials(email: string, password: string) {
     password,
     redirect: false,
   });
-}
-
-export async function loginWithGoogle() {
-  return signIn('google', { callbackUrl: '/app' });
-}
-
-export async function loginWithApple() {
-  return signIn('apple', { callbackUrl: '/app' });
 }
 
 export async function logout() {

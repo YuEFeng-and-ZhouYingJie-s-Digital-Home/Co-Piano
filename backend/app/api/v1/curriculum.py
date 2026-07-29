@@ -10,11 +10,9 @@ Curriculum API — 课程端点
 from __future__ import annotations
 
 import logging
-import re
 from datetime import datetime
-from typing import List, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 

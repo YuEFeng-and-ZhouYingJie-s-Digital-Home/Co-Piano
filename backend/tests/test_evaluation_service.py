@@ -17,12 +17,13 @@ sys.path.insert(0, str(BACKEND_DIR))
 import mido
 import pytest
 
+from app.services.eval_pitch import evaluate as vp_evaluate
+from app.services.eval_pitch import midi_to_notes
 from app.services.evaluation_service import (
     WEIGHTS,
     EvaluationResult,
     evaluation_service,
 )
-from app.services.eval_pitch import evaluate as vp_evaluate, midi_to_notes
 from app.services.expressiveness import (
     analyze_expressiveness,
 )

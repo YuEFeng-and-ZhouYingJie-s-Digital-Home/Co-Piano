@@ -24,7 +24,7 @@ export function CtaSection() {
               size="lg"
               className="min-w-[200px] bg-white text-piano-700 hover:bg-piano-50"
             >
-              <Link href="https://app.yefzyj.top/signup">
+              <Link href="/signup">
                 免费开始
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

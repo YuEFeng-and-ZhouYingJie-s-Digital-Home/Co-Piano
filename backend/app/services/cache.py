@@ -17,10 +17,8 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
-import os
-from datetime import datetime
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 import redis
 
@@ -33,11 +31,11 @@ class CacheService:
     """Redis 缓存服务(失败降级,无脑 None)"""
 
     def __init__(self) -> None:
-        self._client: Optional[redis.Redis] = None
+        self._client: redis.Redis | None = None
         self._enabled = True
 
     @property
-    def client(self) -> Optional[redis.Redis]:
+    def client(self) -> redis.Redis | None:
         """懒加载 Redis 客户端"""
         if not self._enabled:
             return None
@@ -65,7 +63,7 @@ class CacheService:
     # ──────────────────────────────────────────────
     # 基础操作
     # ──────────────────────────────────────────────
-    def get(self, key: str) -> Optional[dict]:
+    def get(self, key: str) -> dict | None:
         """获取 JSON 缓存(自动反序列化)"""
         client = self.client
         if not client:
@@ -117,7 +115,7 @@ class CacheService:
         except redis.RedisError:
             return False
 
-    def incr(self, key: str, ttl_seconds: Optional[int] = None) -> int:
+    def incr(self, key: str, ttl_seconds: int | None = None) -> int:
         """原子递增(限流场景)"""
         client = self.client
         if not client:

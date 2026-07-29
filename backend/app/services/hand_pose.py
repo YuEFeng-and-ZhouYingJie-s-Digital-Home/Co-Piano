@@ -21,10 +21,7 @@ Cycle 4 Stage 2 实现:
 
 import json
 import math
-import os
 import sys
-from typing import Dict, List, Optional, Tuple
-
 
 # === MediaPipe 21 关键点索引 ===
 WRIST = 0
@@ -37,7 +34,7 @@ PINKY_MCP, PINKY_PIP, PINKY_DIP, PINKY_TIP = 17, 18, 19, 20
 
 # === 数学工具函数 ===
 
-def vec3(a, b) -> Tuple[float, float, float]:
+def vec3(a, b) -> tuple[float, float, float]:
     """向量 b - a (允许输入 list/dict)"""
     return (b[0] - a[0], b[1] - a[1], b[2] - a[2])
 
@@ -57,7 +54,7 @@ def vec2_angle_deg(v1, v2) -> float:
     return math.degrees(math.acos(cos_a))
 
 
-def get_point(landmarks, idx) -> Tuple[float, float, float]:
+def get_point(landmarks, idx) -> tuple[float, float, float]:
     """从 21 关键点 list 中取一个点"""
     p = landmarks[idx]
     if isinstance(p, dict):
@@ -65,7 +62,7 @@ def get_point(landmarks, idx) -> Tuple[float, float, float]:
     return (p[0], p[1], p[2] if len(p) > 2 else 0)
 
 
-def get_xy(landmarks, idx) -> Tuple[float, float]:
+def get_xy(landmarks, idx) -> tuple[float, float]:
     p = get_point(landmarks, idx)
     return (p[0], p[1])
 
@@ -128,7 +125,7 @@ def compute_hand_arch(landmarks) -> float:
     return 50  # 过度
 
 
-def compute_finger_curl(landmarks) -> Dict[str, float]:
+def compute_finger_curl(landmarks) -> dict[str, float]:
     """
     维度 3: 5 指弯曲度
     每指 MCP-PIP-TIP 形成的角度
@@ -162,7 +159,7 @@ def compute_finger_curl(landmarks) -> Dict[str, float]:
             else:
                 score = 55  # 太弯
             result[name] = {'angle': round(angle, 1), 'score': score}
-        except Exception as e:
+        except Exception:
             result[name] = {'angle': 0, 'score': 50}
     return result
 
@@ -300,7 +297,7 @@ def compute_relaxation(landmarks) -> float:
 
 # === 综合分析 ===
 
-def analyze_hand_pose(landmarks, left_landmarks=None, right_landmarks=None) -> Dict:
+def analyze_hand_pose(landmarks, left_landmarks=None, right_landmarks=None) -> dict:
     """
     完整 9 维度手型分析
     返回: dict with 9 dims + overall + suggestions
@@ -387,7 +384,7 @@ def _score_to_grade(score) -> str:
 
 # === 合成测试数据生成器 ===
 
-def generate_test_hand_pose(pose_type: str = 'perfect') -> List[List[float]]:
+def generate_test_hand_pose(pose_type: str = 'perfect') -> list[list[float]]:
     """
     生成 21 关键点合成数据用于测试
     pose_type: perfect / tense / collapsed / asymmetric
@@ -477,14 +474,14 @@ def generate_test_hand_pose(pose_type: str = 'perfect') -> List[List[float]]:
 
 # === MediaPipe 集成 (如可用) ===
 
-def extract_landmarks_from_image(image_path: str) -> Optional[List]:
+def extract_landmarks_from_image(image_path: str) -> list | None:
     """
     从图片提取 MediaPipe 21 关键点
     如果 MediaPipe 不可用,返回 None
     """
     try:
-        import mediapipe as mp
         import cv2
+        import mediapipe as mp
         mp_hands = mp.solutions.hands
         hands = mp_hands.Hands(
             static_image_mode=True,
@@ -519,7 +516,7 @@ def patch_voice_dialog_with_hand_pose(dialog_module=None):
     用法: patch_voice_dialog_with_hand_pose(voice_dialog)
     然后说 "分析我的手型" 自动跑
     """
-    def handle_hand_pose_request(text: str) -> Optional[str]:
+    def handle_hand_pose_request(text: str) -> str | None:
         text_lower = text.lower()
         # 中文/英文意图识别
         keywords = ['手型', '手姿', '手的姿势', 'hand pose', 'hand posture', '手部姿态']
@@ -532,7 +529,7 @@ def patch_voice_dialog_with_hand_pose(dialog_module=None):
 
         # 简洁摘要
         s = f"你的手型综合分 {result['overall_score']} ({result['grade']})\n"
-        s += f"9 维度: " + ", ".join([
+        s += "9 维度: " + ", ".join([
             f"{k}={v:.0f}" for k, v in result['dimensions'].items()
         ]) + "\n"
         if result['suggestions']:
@@ -614,14 +611,14 @@ def main():
             print_hand_pose_report(result)
 
 
-def print_hand_pose_report(r: Dict):
-    print(f"\n=== 钢琴手型 9 维度分析 ===")
+def print_hand_pose_report(r: dict):
+    print("\n=== 钢琴手型 9 维度分析 ===")
     print(f"综合分: {r['overall_score']} ({r['grade']})")
-    print(f"\n维度分数 (0-100):")
+    print("\n维度分数 (0-100):")
     for k, v in r['dimensions'].items():
         bar = "█" * int(v / 10) + "░" * (10 - int(v / 10))
         print(f"  {k:24s} {bar} {v}")
-    print(f"\n各指角度:")
+    print("\n各指角度:")
     for finger, info in r['finger_details'].items():
         print(f"  {finger:8s} {info['angle']}° (score {info['score']})")
     if r['suggestions']:
@@ -630,7 +627,7 @@ def print_hand_pose_report(r: Dict):
             print(f"  {i}. [{s['severity']}] {s['dimension']}={s['score']}")
             print(f"     → {s['advice']}")
     else:
-        print(f"\n✅ 你的手型很好,继续保持!")
+        print("\n✅ 你的手型很好,继续保持!")
 
 
 if __name__ == '__main__':

@@ -362,9 +362,10 @@ def test_user_cascade_delete(session):
 def test_all_models_importable():
     """所有模型可被集中导入"""
     from app.models import (
-        User, Evaluation, CurriculumProgress, SightReadingSession,
-        SubscriptionTier, OAuthProvider, DifficultyLevel,
-        BlockType, SightReadingDifficulty, SightReadingMode, SightReadingInput,
+        CurriculumProgress,
+        Evaluation,
+        SightReadingSession,
+        User,
     )
     assert User.__tablename__ == "users"
     assert Evaluation.__tablename__ == "evaluations"

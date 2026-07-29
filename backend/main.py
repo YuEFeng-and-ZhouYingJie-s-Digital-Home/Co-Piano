@@ -13,8 +13,7 @@ AI 古典钢琴教练 — 后端 API 服务
 import os
 from contextlib import asynccontextmanager
 
-import structlog
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from slowapi import _rate_limit_exceeded_handler
@@ -95,9 +94,12 @@ app.add_middleware(SlowAPIMiddleware)
 # 中间件 (顺序很重要: 后加的先执行)
 # ──────────────────────────────────────────────
 # 1. CORS (最先,所有跨域请求都先过这里)
+#    - allow_origins: 静态白名单 (localhost / 生产域名)
+#    - allow_origin_regex: 正则 (Cloudflare Tunnel 随机 URL 等)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins_list,
+    allow_origin_regex=settings.cors_origin_regex_combined(),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

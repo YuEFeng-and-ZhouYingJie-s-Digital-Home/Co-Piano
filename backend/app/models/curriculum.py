@@ -11,7 +11,6 @@ CurriculumProgress 模型 — 7 天课程进度
 import enum
 import uuid
 from datetime import datetime
-from typing import Optional
 
 from sqlalchemy import (
     DateTime,
@@ -21,7 +20,6 @@ from sqlalchemy import (
     Integer,
     String,
     UniqueConstraint,
-    func,
 )
 from sqlalchemy.dialects.postgresql import UUID as PG_UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -70,7 +68,7 @@ class CurriculumProgress(Base, TimestampMixin):
     description: Mapped[str] = mapped_column(String(2000), default="", nullable=False)
 
     # 完成情况
-    completed_at: Mapped[Optional[datetime]] = mapped_column(
+    completed_at: Mapped[datetime | None] = mapped_column(
         DateTime(timezone=True), nullable=True
     )
     score: Mapped[float] = mapped_column(Float, default=0.0, nullable=False)

@@ -177,17 +177,16 @@ def test_ws_success_streaming(client):
     with patch(
         "app.api.v1.ws.llm_service.generate_feedback",
         new=AsyncMock(side_effect=_mock_llm("Mocked streaming feedback content here")),
-    ):
-        with client.websocket_connect(
-            f"/api/v1/ws/llm?token={token}&evaluation_id={eval_id}"
-        ) as ws:
-            # 接收所有消息
-            messages = []
-            while True:
-                msg = ws.receive_json()
-                messages.append(msg)
-                if msg["type"] in ("done", "error"):
-                    break
+    ), client.websocket_connect(
+        f"/api/v1/ws/llm?token={token}&evaluation_id={eval_id}"
+    ) as ws:
+        # 接收所有消息
+        messages = []
+        while True:
+            msg = ws.receive_json()
+            messages.append(msg)
+            if msg["type"] in ("done", "error"):
+                break
 
     # 至少 1 个 chunk + 1 个 done
     chunks = [m for m in messages if m["type"] == "chunk"]
@@ -210,16 +209,15 @@ def test_ws_short_content_single_chunk(client):
     with patch(
         "app.api.v1.ws.llm_service.generate_feedback",
         new=AsyncMock(side_effect=_mock_llm("短")),
-    ):
-        with client.websocket_connect(
-            f"/api/v1/ws/llm?token={token}&evaluation_id={eval_id}"
-        ) as ws:
-            messages = []
-            while True:
-                msg = ws.receive_json()
-                messages.append(msg)
-                if msg["type"] in ("done", "error"):
-                    break
+    ), client.websocket_connect(
+        f"/api/v1/ws/llm?token={token}&evaluation_id={eval_id}"
+    ) as ws:
+        messages = []
+        while True:
+            msg = ws.receive_json()
+            messages.append(msg)
+            if msg["type"] in ("done", "error"):
+                break
     chunks = [m for m in messages if m["type"] == "chunk"]
     # 1 个 chunk (中文也按字符切,虽然只有 1 字符但 chunk_size=20 不会切)
     assert len(chunks) == 1
@@ -234,13 +232,12 @@ def test_ws_llm_failure_error_message(client):
     with patch(
         "app.api.v1.ws.llm_service.generate_feedback",
         new=AsyncMock(side_effect=RuntimeError("All LLM backends failed")),
-    ):
-        with client.websocket_connect(
-            f"/api/v1/ws/llm?token={token}&evaluation_id={eval_id}"
-        ) as ws:
-            msg = ws.receive_json()
-            assert msg["type"] == "error"
-            assert "All LLM backends failed" in msg["message"]
+    ), client.websocket_connect(
+        f"/api/v1/ws/llm?token={token}&evaluation_id={eval_id}"
+    ) as ws:
+        msg = ws.receive_json()
+        assert msg["type"] == "error"
+        assert "All LLM backends failed" in msg["message"]
 
 
 if __name__ == "__main__":

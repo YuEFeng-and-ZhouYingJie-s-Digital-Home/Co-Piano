@@ -2,6 +2,8 @@
  * About 页静态数据 — 团队 + 时间线 + 论文 v3
  */
 
+import { contactEmail, pressEmail } from './urls';
+
 export interface TeamMember {
   name: string;
   role: string;
@@ -120,8 +122,8 @@ export const PAPER = {
 } as const;
 
 export const CONTACT = {
-  email: 'hi@yefzyj.top',
-  press: 'press@yefzyj.top',
+  email: contactEmail(),
+  press: pressEmail(),
   wechat: 'CoPiano_Official',
   github: 'https://github.com/copiano/copiano',
   arxivDraft: '/about#paper',

@@ -4,8 +4,6 @@ Users API — 当前用户信息
 """
 from __future__ import annotations
 
-from typing import Optional
-
 from fastapi import APIRouter, Depends
 
 from app.api.deps import get_current_active_user
@@ -32,9 +30,9 @@ async def get_me(
     summary="更新当前用户资料 (name/age/preferred_language)",
 )
 async def update_me(
-    name: Optional[str] = None,
-    age: Optional[int] = None,
-    preferred_language: Optional[str] = None,
+    name: str | None = None,
+    age: int | None = None,
+    preferred_language: str | None = None,
     current_user: User = Depends(get_current_active_user),
 ) -> UserResponse:
     """简化版 PATCH,只允许更新几个非敏感字段"""

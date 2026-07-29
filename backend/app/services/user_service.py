@@ -4,25 +4,24 @@ User Service — 业务逻辑层
 """
 import uuid
 from datetime import datetime, timezone
-from typing import Optional
 
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.security import hash_password, verify_password
-from app.models.user import OAuthProvider, User
+from app.models.user import User
 
 
 class UserService:
     """用户业务逻辑"""
 
     @staticmethod
-    async def get_by_id(db: AsyncSession, user_id: uuid.UUID) -> Optional[User]:
+    async def get_by_id(db: AsyncSession, user_id: uuid.UUID) -> User | None:
         result = await db.execute(select(User).where(User.id == user_id))
         return result.scalar_one_or_none()
 
     @staticmethod
-    async def get_by_email(db: AsyncSession, email: str) -> Optional[User]:
+    async def get_by_email(db: AsyncSession, email: str) -> User | None:
         result = await db.execute(select(User).where(User.email == email.lower()))
         return result.scalar_one_or_none()
 
@@ -31,8 +30,8 @@ class UserService:
         db: AsyncSession,
         email: str,
         password: str,
-        name: Optional[str] = None,
-        age: Optional[int] = None,
+        name: str | None = None,
+        age: int | None = None,
     ) -> User:
         """注册新用户"""
         # 检查邮箱已存在
@@ -56,7 +55,7 @@ class UserService:
         return user
 
     @staticmethod
-    async def authenticate(db: AsyncSession, email: str, password: str) -> Optional[User]:
+    async def authenticate(db: AsyncSession, email: str, password: str) -> User | None:
         """验证邮箱+密码,成功返回 User,失败 None"""
         user = await UserService.get_by_email(db, email)
         if not user:

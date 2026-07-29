@@ -1,15 +1,13 @@
 import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
-import Google from 'next-auth/providers/google';
-import Apple from 'next-auth/providers/apple';
 import { authConfig } from './auth.config';
+import { apiBaseUrl } from './lib/urls';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://api.yefzyj.top';
+const API_BASE_URL = apiBaseUrl();
 
 /**
- * NextAuth 主入口 — 包含 Credentials + OAuth2 providers
- * Credentials: 调后端 /api/v1/auth/login 拿 JWT
- * Apple/Google: 调后端 /api/v1/oauth/{apple|google}/callback 验证
+ * NextAuth 主入口 — 目前只支持邮箱 + 密码登录
+ * OAuth (Google/Apple) 暂未启用,等配置好 client_id/secret + 后端用户打通后再加
  */
 export const { handlers, signIn, signOut, auth } = NextAuth({
   ...authConfig,
@@ -59,30 +57,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           return null;
         }
       },
-    }),
-
-    /**
-     * Google OAuth2
-     * ID token 由后端验证,我们传 access_token 给前端
-     */
-    Google({
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      authorization: {
-        params: {
-          prompt: 'consent',
-          access_type: 'offline',
-          response_type: 'code',
-        },
-      },
-    }),
-
-    /**
-     * Apple Sign In
-     */
-    Apple({
-      clientId: process.env.APPLE_CLIENT_ID!,
-      clientSecret: process.env.APPLE_CLIENT_SECRET!,
     }),
   ],
 });

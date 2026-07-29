@@ -6,6 +6,7 @@ import { SubscriptionCard } from '@/components/settings/subscription-card';
 import { ChangePasswordForm } from '@/components/settings/change-password-form';
 import { Card, CardContent } from '@/components/ui/card';
 import { formatDate } from '@/lib/utils';
+import { contactEmail, contactMailto } from '@/lib/urls';
 import type { UserProfile } from '@/lib/settings-types';
 
 export const metadata = { title: '设置' };
@@ -56,8 +57,8 @@ export default async function SettingsPage() {
 
       <div className="text-center text-xs text-muted-foreground pt-4">
         需要帮助?联系{' '}
-        <a href="mailto:hi@yefzyj.top" className="underline">
-          hi@yefzyj.top
+        <a href={contactMailto()} className="underline">
+          {contactEmail()}
         </a>
       </div>
     </div>

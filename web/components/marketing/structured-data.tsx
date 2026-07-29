@@ -1,24 +1,31 @@
 /**
  * JSON-LD 结构化数据 — 提升 SEO
  * Google Rich Results / 百度结构化数据 / 学术论文 schema.org/ScholarlyArticle
+ *
+ * URL/email 全部域无关:host 从 request headers 拿,email 从 env 拿
  */
 
-const BASE_URL = process.env.NEXT_PUBLIC_MARKETING_URL ?? 'https://yefzyj.top';
+import { headers } from 'next/headers';
+import { siteUrl, hostFromHeaders, contactEmail } from '@/lib/urls';
 
 export function StructuredData() {
+  const { host, proto } = hostFromHeaders((k) => headers().get(k));
+  const base = siteUrl(host, proto);
+  const email = contactEmail();
+
   const organization = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'CoPiano',
-    url: BASE_URL,
-    logo: `${BASE_URL}/icon.png`,
+    url: base,
+    logo: `${base}/icon.png`,
     description: 'AI 古典钢琴教练,5 维评估 + RCT 验证 (d=1.34)',
     sameAs: [
       'https://github.com/copiano/copiano',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      email: 'hi@yefzyj.top',
+      email,
       contactType: 'customer support',
       availableLanguage: ['zh-Hans', 'en'],
     },

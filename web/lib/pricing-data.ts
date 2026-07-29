@@ -1,7 +1,11 @@
 /**
  * CoPiano 订阅档位数据 — 单一来源,UI 与 API 都从这里读
  * 价格单位:分(避免浮点数)
+ *
+ * CTA 链接全部走相对路径,域无关 — 见 lib/urls.ts
  */
+
+import { contactMailto } from './urls';
 
 export type BillingCycle = 'monthly' | 'yearly';
 
@@ -31,7 +35,7 @@ export const PRICING_TIERS: PricingTier[] = [
     monthlyCents: 0,
     yearlyCents: 0,
     cta: '免费开始',
-    ctaHref: 'https://app.yefzyj.top/signup',
+    ctaHref: '/signup',
     features: [
       '5 维 AI 评估(全部维度)',
       '每天 3 次录音评估',
@@ -50,7 +54,7 @@ export const PRICING_TIERS: PricingTier[] = [
     monthlyCents: 2900, // ¥29
     yearlyCents: 29000, // ¥290/年 (≈ ¥24/月)
     cta: '升级 Pro',
-    ctaHref: 'https://app.yefzyj.top/signup?plan=pro',
+    ctaHref: '/signup?plan=pro',
     highlighted: true,
     badge: '最受欢迎',
     features: [
@@ -69,7 +73,7 @@ export const PRICING_TIERS: PricingTier[] = [
     monthlyCents: 0,
     yearlyCents: 0,
     cta: '免费申请',
-    ctaHref: 'https://app.yefzyj.top/signup?plan=senior',
+    ctaHref: '/signup?plan=senior',
     features: [
       'Pro 全部功能',
       '简化 UI(大字体 + 高对比)',
@@ -87,7 +91,7 @@ export const PRICING_TIERS: PricingTier[] = [
     monthlyCents: 9900, // ¥99
     yearlyCents: 99000, // ¥990/年
     cta: '升级 Teacher',
-    ctaHref: 'https://app.yefzyj.top/signup?plan=teacher',
+    ctaHref: '/signup?plan=teacher',
     features: [
       'Pro 全部功能',
       '管理 30 个学生账号',
@@ -104,7 +108,7 @@ export const PRICING_TIERS: PricingTier[] = [
     monthlyCents: 99900, // ¥999
     yearlyCents: 999000, // ¥9,990/年
     cta: '联系销售',
-    ctaHref: 'mailto:hi@yefzyj.top?subject=School%20Plan',
+    ctaHref: contactMailto('School Plan'),
     features: [
       'Teacher 全部功能',
       '不限学生数',

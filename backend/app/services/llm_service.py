@@ -16,13 +16,10 @@ LLM Proxy — Qwen 本地 + OpenAI 兜底
 """
 from __future__ import annotations
 
-import asyncio
-import json
 import logging
-import os
 import time
-from dataclasses import asdict, dataclass, field
-from typing import Any, AsyncIterator, Optional
+from collections.abc import AsyncIterator
+from dataclasses import asdict, dataclass
 
 import httpx
 
@@ -58,7 +55,7 @@ class LLMService:
     async def _call_qwen(
         self,
         prompt: str,
-        system: Optional[str] = None,
+        system: str | None = None,
         max_tokens: int = 512,
         temperature: float = 0.7,
     ) -> LLMResponse:
@@ -104,7 +101,7 @@ class LLMService:
     async def _call_openai(
         self,
         prompt: str,
-        system: Optional[str] = None,
+        system: str | None = None,
         max_tokens: int = 512,
         temperature: float = 0.7,
     ) -> LLMResponse:
@@ -160,7 +157,7 @@ class LLMService:
     async def generate(
         self,
         prompt: str,
-        system: Optional[str] = None,
+        system: str | None = None,
         max_tokens: int = 512,
         temperature: float = 0.7,
         prefer: str = "qwen",
@@ -183,7 +180,7 @@ class LLMService:
     async def stream(
         self,
         prompt: str,
-        system: Optional[str] = None,
+        system: str | None = None,
         max_tokens: int = 512,
         temperature: float = 0.7,
         prefer: str = "qwen",
@@ -201,7 +198,7 @@ class LLMService:
     async def generate_feedback(
         self,
         evaluation: dict,
-        user_age: Optional[int] = None,
+        user_age: int | None = None,
     ) -> LLMResponse:
         """根据 5 维评估分数 + 弱点生成教学反馈
 

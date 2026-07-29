@@ -13,7 +13,6 @@ SQLAlchemy 2.0 风格 (Mapped / mapped_column)
 """
 import os
 from collections.abc import Generator
-from typing import Optional
 
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
@@ -43,16 +42,15 @@ DATABASE_URL_SYNC = os.getenv(
 # ──────────────────────────────────────────────
 class Base(DeclarativeBase):
     """所有 ORM 模型的基类"""
-    pass
 
 
 # ──────────────────────────────────────────────
 # Engine 工厂 (懒加载)
 # ──────────────────────────────────────────────
-_async_engine: Optional[AsyncEngine] = None
-_sync_engine: Optional[Engine] = None
-_async_session_factory: Optional[async_sessionmaker[AsyncSession]] = None
-_sync_session_factory: Optional[sessionmaker[Session]] = None
+_async_engine: AsyncEngine | None = None
+_sync_engine: Engine | None = None
+_async_session_factory: async_sessionmaker[AsyncSession] | None = None
+_sync_session_factory: sessionmaker[Session] | None = None
 
 
 def get_async_engine() -> AsyncEngine:

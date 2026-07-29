@@ -8,8 +8,6 @@ from pathlib import Path
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BACKEND_DIR))
 
-import pytest
-import pytest_asyncio
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 from slowapi import Limiter
@@ -183,7 +181,7 @@ def test_rate_limit_exceeded_returns_429():
 # ──────────────────────────────────────────────
 def test_setup_logging_runs_without_error():
     """setup_logging 可重复调用不崩"""
-    from app.core.logging import setup_logging, get_logger
+    from app.core.logging import get_logger, setup_logging
     setup_logging()  # 第一次
     setup_logging()  # 第二次
     log = get_logger("test")

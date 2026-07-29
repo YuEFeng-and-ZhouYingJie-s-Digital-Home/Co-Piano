@@ -21,18 +21,20 @@ WebSocket 端点 — LLM 流式响应
 """
 from __future__ import annotations
 
-import json
 import logging
 import uuid
-from typing import Optional
 
 import jwt
-from fastapi import APIRouter, Depends, HTTPException, Query, WebSocket, WebSocketDisconnect, status
+from fastapi import (
+    APIRouter,
+    Query,
+    WebSocket,
+    WebSocketDisconnect,
+    status,
+)
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.config import settings
 from app.core.security import decode_token
-from app.db.base import get_async_db
 from app.models.evaluation import Evaluation
 from app.models.user import User
 from app.services.llm_service import llm_service
@@ -42,7 +44,7 @@ logger = logging.getLogger("copiano.ws")
 router = APIRouter()
 
 
-async def _authenticate_ws(token: str, db: AsyncSession) -> Optional[User]:
+async def _authenticate_ws(token: str, db: AsyncSession) -> User | None:
     """WebSocket 鉴权(从 query param 拿 JWT)"""
     try:
         payload = decode_token(token, expected_type="access")
@@ -66,7 +68,7 @@ async def _authenticate_ws(token: str, db: AsyncSession) -> Optional[User]:
 
 async def _verify_evaluation(
     db: AsyncSession, evaluation_id: str, user: User
-) -> Optional[Evaluation]:
+) -> Evaluation | None:
     """验证评估存在 + 归属"""
     try:
         eid = uuid.UUID(evaluation_id)

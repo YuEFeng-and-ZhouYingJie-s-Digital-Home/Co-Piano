@@ -1,6 +1,5 @@
-from logging.config import fileConfig
-import os
 import sys
+from logging.config import fileConfig
 from pathlib import Path
 
 from sqlalchemy import engine_from_config, pool
@@ -13,10 +12,10 @@ from alembic import context
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BACKEND_DIR))
 
-from app.core.config import settings  # noqa: E402
-from app.db.base import Base  # noqa: E402
 # 导入所有模型,让 Base.metadata 注册
-import app.models  # noqa: F401, E402
+import app.models  # noqa: F401
+from app.core.config import settings
+from app.db.base import Base
 
 # this is the Alembic Config object
 config = context.config

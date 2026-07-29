@@ -18,16 +18,14 @@ User 模型
 import enum
 import uuid
 from datetime import datetime
-from typing import TYPE_CHECKING, Optional
+from typing import TYPE_CHECKING
 
 from sqlalchemy import (
     Boolean,
     DateTime,
     Enum,
-    ForeignKey,
     Integer,
     String,
-    func,
 )
 from sqlalchemy.dialects.postgresql import UUID as PG_UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -36,8 +34,8 @@ from app.db.base import Base
 from app.models.base import TimestampMixin
 
 if TYPE_CHECKING:
-    from app.models.evaluation import Evaluation
     from app.models.curriculum import CurriculumProgress
+    from app.models.evaluation import Evaluation
     from app.models.sight_reading import SightReadingSession
 
 
@@ -75,14 +73,14 @@ class User(Base, TimestampMixin):
         nullable=False,
         index=True,
     )
-    password_hash: Mapped[Optional[str]] = mapped_column(
+    password_hash: Mapped[str | None] = mapped_column(
         String(255),
         nullable=True,  # OAuth 用户可无密码
     )
 
     # 资料
-    name: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
-    age: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    name: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    age: Mapped[int | None] = mapped_column(Integer, nullable=True)
     preferred_language: Mapped[str] = mapped_column(
         String(10),
         default="zh-CN",
@@ -106,12 +104,12 @@ class User(Base, TimestampMixin):
         default=OAuthProvider.LOCAL,
         nullable=False,
     )
-    oauth_id: Mapped[Optional[str]] = mapped_column(String(255), nullable=True, index=True)
+    oauth_id: Mapped[str | None] = mapped_column(String(255), nullable=True, index=True)
 
     # 状态
     is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
     is_verified: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
-    last_login_at: Mapped[Optional[datetime]] = mapped_column(
+    last_login_at: Mapped[datetime | None] = mapped_column(
         DateTime(timezone=True), nullable=True
     )
 

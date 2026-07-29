@@ -1,22 +1,23 @@
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
+import { docsUrl, contactMailto } from '@/lib/urls';
 
 const FOOTER_LINKS = {
   产品: [
     { label: '5 维评估', href: '#five-dimensions' },
-    { label: '课程系统', href: 'https://app.yefzyj.top/curriculum' },
-    { label: '视奏训练', href: 'https://app.yefzyj.top/sight-reading' },
+    { label: '课程系统', href: '/curriculum' },
+    { label: '视奏训练', href: '/sight-reading' },
     { label: '银发模式', href: '#senior' },
   ],
   资源: [
     { label: '价格', href: '/pricing' },
     { label: '论文 (arXiv)', href: '/about#paper' },
-    { label: '文档', href: 'https://docs.yefzyj.top' },
-    { label: 'API', href: 'https://docs.yefzyj.top/api' },
+    { label: '文档', href: docsUrl() },
+    { label: 'API', href: docsUrl('/api') },
   ],
   公司: [
     { label: '关于团队', href: '/about' },
-    { label: '联系我们', href: 'mailto:hi@yefzyj.top' },
+    { label: '联系我们', href: contactMailto() },
     { label: '隐私政策', href: '/privacy' },
     { label: '服务条款', href: '/terms' },
   ],

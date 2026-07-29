@@ -6,7 +6,7 @@ from __future__ import annotations
 
 import uuid
 from datetime import datetime
-from typing import Any, Optional
+from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
@@ -77,7 +77,7 @@ class EvaluationCreateResponse(BaseModel):
     evaluation: EvaluationResponse
     tips: list[str] = []
     # 详细数据(可选,前端展示用)
-    pitch_detail: Optional[dict[str, Any]] = None
-    expressiveness_detail: Optional[dict[str, Any]] = None
-    hand_pose_detail: Optional[dict[str, Any]] = None
+    pitch_detail: dict[str, Any] | None = None
+    expressiveness_detail: dict[str, Any] | None = None
+    hand_pose_detail: dict[str, Any] | None = None
     duration_ms: int = 0

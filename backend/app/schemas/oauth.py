@@ -4,12 +4,9 @@ OAuth Schemas — Apple / Google / WeChat
 """
 from __future__ import annotations
 
-from typing import Optional
-
 from pydantic import BaseModel, Field
 
 from app.models.user import OAuthProvider
-from app.schemas.auth import TokenResponse
 
 
 # ──────────────────────────────────────────────
@@ -24,9 +21,9 @@ class AppleCallbackRequest(BaseModel):
     """
     id_token: str = Field(..., description="Apple identity token (JWT)")
     user_identifier: str = Field(..., description="Apple user ID (sub)")
-    email: Optional[str] = None  # Apple 只在首次登录时返回
-    full_name: Optional[str] = None  # 同上
-    nonce: Optional[str] = None  # 用于防重放
+    email: str | None = None  # Apple 只在首次登录时返回
+    full_name: str | None = None  # 同上
+    nonce: str | None = None  # 用于防重放
 
 
 # ──────────────────────────────────────────────
@@ -40,7 +37,7 @@ class GoogleCallbackRequest(BaseModel):
     - iOS: GIDSignIn → idToken → POST 给后端
     """
     id_token: str = Field(..., description="Google ID token (JWT)")
-    access_token: Optional[str] = None  # 用于后续 refresh / revoke
+    access_token: str | None = None  # 用于后续 refresh / revoke
     # 实际从 JWT 解析得到:
     # - sub (Google user ID)
     # - email
@@ -62,7 +59,7 @@ class WeChatCallbackRequest(BaseModel):
     4. 用 access_token + openid 拉用户信息
     """
     code: str = Field(..., description="微信 OAuth code")
-    state: Optional[str] = None  # 防 CSRF
+    state: str | None = None  # 防 CSRF
 
 
 # ──────────────────────────────────────────────
@@ -73,13 +70,13 @@ class OAuthLinkRequest(BaseModel):
     provider: OAuthProvider
     id_token: str  # Apple / Google
     # WeChat 特殊
-    code: Optional[str] = None
+    code: str | None = None
 
 
 class OAuthAccountInfo(BaseModel):
     """OAuth 用户信息(从 provider 拿到的)"""
     provider: OAuthProvider
     provider_user_id: str
-    email: Optional[str] = None
-    name: Optional[str] = None
-    avatar_url: Optional[str] = None
+    email: str | None = None
+    name: str | None = None
+    avatar_url: str | None = None

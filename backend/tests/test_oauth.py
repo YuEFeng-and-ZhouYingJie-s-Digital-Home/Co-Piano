@@ -15,7 +15,6 @@ Mock 策略:
 - 直接构造假 token,patch verify_apple_id_token / verify_google_id_token / wechat_exchange_code
 """
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent

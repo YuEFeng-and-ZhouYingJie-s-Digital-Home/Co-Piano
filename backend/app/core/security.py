@@ -5,7 +5,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
-from typing import Any, Optional, Union
+from typing import Any
 
 import jwt
 from passlib.context import CryptContext
@@ -40,8 +40,8 @@ def verify_password(plain: str, hashed: str) -> bool:
 # ──────────────────────────────────────────────
 def create_access_token(
     subject: str | int,
-    extra_claims: Optional[dict[str, Any]] = None,
-    expires_minutes: Optional[int] = None,
+    extra_claims: dict[str, Any] | None = None,
+    expires_minutes: int | None = None,
 ) -> str:
     """创建 access token (短命,默认 30min)"""
     expire = datetime.now(timezone.utc) + timedelta(
@@ -61,8 +61,8 @@ def create_access_token(
 
 def create_refresh_token(
     subject: str | int,
-    extra_claims: Optional[dict[str, Any]] = None,
-    expires_days: Optional[int] = None,
+    extra_claims: dict[str, Any] | None = None,
+    expires_days: int | None = None,
 ) -> str:
     """创建 refresh token (长命,默认 7d)"""
     expire = datetime.now(timezone.utc) + timedelta(
@@ -80,7 +80,7 @@ def create_refresh_token(
     return jwt.encode(payload, settings.jwt_secret, algorithm=settings.jwt_algorithm)
 
 
-def decode_token(token: str, expected_type: Optional[str] = None) -> dict[str, Any]:
+def decode_token(token: str, expected_type: str | None = None) -> dict[str, Any]:
     """
     解码 JWT,返回 payload dict
     - 验证签名 + 过期时间
@@ -100,7 +100,7 @@ def decode_token(token: str, expected_type: Optional[str] = None) -> dict[str, A
     return payload
 
 
-def create_token_pair(subject: str | int, extra_claims: Optional[dict] = None) -> dict[str, str]:
+def create_token_pair(subject: str | int, extra_claims: dict | None = None) -> dict[str, str]:
     """生成 access + refresh token 对"""
     return {
         "access_token": create_access_token(subject, extra_claims),

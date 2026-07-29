@@ -17,14 +17,12 @@ from __future__ import annotations
 
 import logging
 from datetime import datetime
-from typing import List
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import desc, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.api.deps import get_current_active_user
-from app.core.rate_limit import RATE_LIMIT_FEEDBACK
 from app.db.base import get_async_db
 from app.models.evaluation import Evaluation
 from app.models.user import User

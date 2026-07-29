@@ -13,12 +13,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
-from dataclasses import dataclass, asdict
-from pathlib import Path
+from dataclasses import dataclass
 
-import numpy as np
 import mido
+import numpy as np
 
 
 @dataclass

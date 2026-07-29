@@ -14,7 +14,6 @@ SightReadingSession 模型 — 视奏训练记录
 import enum
 import uuid
 from datetime import datetime
-from typing import Optional
 
 from sqlalchemy import (
     DateTime,
@@ -22,8 +21,6 @@ from sqlalchemy import (
     Float,
     ForeignKey,
     Integer,
-    String,
-    func,
 )
 from sqlalchemy.dialects.postgresql import UUID as PG_UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -99,7 +96,7 @@ class SightReadingSession(Base, TimestampMixin):
     started_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), nullable=False, index=True
     )
-    ended_at: Mapped[Optional[datetime]] = mapped_column(
+    ended_at: Mapped[datetime | None] = mapped_column(
         DateTime(timezone=True), nullable=True
     )
     duration_seconds: Mapped[float] = mapped_column(Float, default=0.0, nullable=False)

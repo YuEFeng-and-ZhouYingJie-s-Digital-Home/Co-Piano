@@ -11,7 +11,6 @@ sys.path.insert(0, str(BACKEND_DIR))
 import io
 
 import mido
-import pytest
 import pytest_asyncio
 from fastapi.testclient import TestClient
 from sqlalchemy.ext.asyncio import (
@@ -21,7 +20,6 @@ from sqlalchemy.ext.asyncio import (
 )
 
 from app.db.base import Base
-from app.models.user import User
 from main import app
 
 

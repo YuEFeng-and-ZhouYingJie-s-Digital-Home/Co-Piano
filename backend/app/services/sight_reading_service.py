@@ -10,9 +10,8 @@ Sight Reading Service — 视奏训练编排
 from __future__ import annotations
 
 import logging
-import random
 import uuid
-from typing import Any, Optional
+from typing import Any
 
 from app.services.sight_reading_trainer import (
     get_difficulty,
@@ -71,7 +70,7 @@ class SightReadingService:
         self,
         difficulty: str,
         mode: str,
-        seed: Optional[int] = None,
+        seed: int | None = None,
     ) -> dict[str, Any]:
         """生成一道题"""
         diff = get_difficulty(difficulty)

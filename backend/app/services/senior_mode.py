@@ -11,11 +11,6 @@ Cycle 5 Stage 2 实现:
 """
 
 import json
-import re
-import sys
-import time
-from typing import Optional, Dict, List, Tuple
-
 
 # === 银发模式配置 ===
 
@@ -202,7 +197,7 @@ def get_senior_tts_params(config: dict = None) -> dict:
 
 # === 年龄自动判断 ===
 
-def should_auto_senior(age: Optional[int], config: dict = None) -> bool:
+def should_auto_senior(age: int | None, config: dict = None) -> bool:
     """根据年龄判断是否自动开银发模式"""
     if config is None:
         config = DEFAULT_SENIOR_CONFIG
@@ -213,7 +208,7 @@ def should_auto_senior(age: Optional[int], config: dict = None) -> bool:
 
 # === voice_dialog 集成 ===
 
-def patch_voice_dialog_with_senior_mode(dialog_module=None, config: dict = None, age: Optional[int] = None):
+def patch_voice_dialog_with_senior_mode(dialog_module=None, config: dict = None, age: int | None = None):
     """
     注入到 voice_dialog,识别银发/长辈模式意图
     用法: patch_voice_dialog_with_senior_mode(voice_dialog, age=68)
@@ -228,7 +223,7 @@ def patch_voice_dialog_with_senior_mode(dialog_module=None, config: dict = None,
     else:
         config['_active'] = False
 
-    def handle_senior_request(text: str) -> Optional[str]:
+    def handle_senior_request(text: str) -> str | None:
         text_lower = text.lower()
         # 中文/英文关键词
         on_kw = ['长辈模式', '老年模式', '银发模式', '慢一点', '慢速', 'senior mode', 'elder mode', '慢点说']

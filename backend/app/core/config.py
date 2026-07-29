@@ -6,7 +6,6 @@
 """
 import secrets
 from functools import lru_cache
-from typing import List
 
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -26,6 +25,12 @@ class Settings(BaseSettings):
     # ── CORS ──
     cors_origins: str = Field(
         default="http://localhost:3000,http://localhost:5173,https://copiano.com,https://app.copiano.com"
+    )
+    # 正则匹配 — 适合 Cloudflare Tunnel 随机 URL / 未来多子域
+    # 例: ^https://.*\\.trycloudflare\\.com$ 匹配所有 trycloudflare 域名
+    cors_origin_regex: str = Field(
+        default="",
+        description="CORS allow_origin_regex (逗号分隔,多个 pattern 任一匹配即允许)",
     )
 
     # ── JWT ──
@@ -77,8 +82,28 @@ class Settings(BaseSettings):
     )
 
     @property
-    def cors_origins_list(self) -> List[str]:
+    def cors_origins_list(self) -> list[str]:
         return [o.strip() for o in self.cors_origins.split(",") if o.strip()]
+
+    @property
+    def cors_origin_regex_list(self) -> list[str]:
+        """
+        解析 CORS_ORIGIN_REGEX 为正则 pattern 列表 (FastAPI/Starlette 接受 list)
+        例: '^https://.*\\.trycloudflare\\.com$,^http://localhost:[0-9]+$'
+        """
+        return [p.strip() for p in self.cors_origin_regex.split(",") if p.strip()]
+
+    def cors_origin_regex_combined(self) -> str | None:
+        """
+        把多个 pattern 合并成一个 (用 | 连接),如果只有一个就直接返回
+        FastAPI 的 allow_origin_regex 只接受单字符串
+        """
+        patterns = self.cors_origin_regex_list
+        if not patterns:
+            return None
+        if len(patterns) == 1:
+            return patterns[0]
+        return "|".join(f"(?:{p})" for p in patterns)
 
     @property
     def is_production(self) -> bool:

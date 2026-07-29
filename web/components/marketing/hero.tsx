@@ -37,7 +37,7 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button asChild variant="piano" size="lg" className="min-w-[180px]">
-              <Link href="https://app.yefzyj.top/signup">
+              <Link href="/signup">
                 免费开始 7 天
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

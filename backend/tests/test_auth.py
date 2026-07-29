@@ -14,7 +14,6 @@ Auth API tests — 注册 / 登录 / 刷新 / 登出 / /me
 用 aiosqlite + AsyncEngine 让 FastAPI async 端点能跑通
 """
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +22,6 @@ sys.path.insert(0, str(BACKEND_DIR))
 import pytest
 import pytest_asyncio
 from fastapi.testclient import TestClient
-from sqlalchemy import event
 from sqlalchemy.ext.asyncio import (
     AsyncSession,
     async_sessionmaker,

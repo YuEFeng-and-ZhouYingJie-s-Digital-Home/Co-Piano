@@ -17,7 +17,7 @@ import logging
 import time
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 from app.services import eval_pitch, expressiveness, hand_pose
 
@@ -146,8 +146,8 @@ class EvaluationService:
     def evaluate_hand_pose(
         self,
         landmarks: list[dict],
-        left_landmarks: Optional[list[dict]] = None,
-        right_landmarks: Optional[list[dict]] = None,
+        left_landmarks: list[dict] | None = None,
+        right_landmarks: list[dict] | None = None,
     ) -> dict[str, Any]:
         """D3 手型(9 维,从 MediaPipe 21 关键点)"""
         start = time.perf_counter()
@@ -162,10 +162,10 @@ class EvaluationService:
 
     def evaluate_full(
         self,
-        reference_midi: Optional[str | Path] = None,
-        user_midi: Optional[str | Path] = None,
-        hand_landmarks: Optional[list[dict]] = None,
-        sight_reading_score: Optional[float] = None,
+        reference_midi: str | Path | None = None,
+        user_midi: str | Path | None = None,
+        hand_landmarks: list[dict] | None = None,
+        sight_reading_score: float | None = None,
         period_hint: str = "",
     ) -> EvaluationResult:
         """完整 5 维评估(可部分维度)

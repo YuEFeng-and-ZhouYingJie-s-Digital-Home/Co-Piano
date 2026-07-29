@@ -5,6 +5,7 @@ import { PricingCards } from '@/components/marketing/pricing-cards';
 import { PricingFaq } from '@/components/marketing/pricing-faq';
 import { CtaSection } from '@/components/marketing/cta-section';
 import { PRICING_TIERS, PRICING_FAQS } from '@/lib/pricing-data';
+import { contactMailto } from '@/lib/urls';
 
 export const metadata: Metadata = {
   title: '价格 — CoPiano',
@@ -47,7 +48,7 @@ export default function PricingPage() {
               <p className="mt-3 text-muted-foreground">
                 没找到答案?
                 {' '}
-                <a href="mailto:hi@yefzyj.top" className="text-piano-500 underline">
+                <a href={contactMailto()} className="text-piano-500 underline">
                   发邮件给我们
                 </a>
               </p>

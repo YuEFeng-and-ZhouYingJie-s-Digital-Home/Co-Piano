@@ -1,11 +1,13 @@
 /**
  * CoPiano API Client — 类型安全 fetch wrapper
  * 自动注入 JWT (从 NextAuth session 拿) + 错误处理
+ *
+ * API base URL 必填,走 env NEXT_PUBLIC_API_BASE_URL
+ * (跨源,跟 Next.js 不同的 host:port)
  */
 
 import { auth } from '@/auth';
-
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? 'https://api.yefzyj.top';
+import { apiBaseUrl } from './urls';
 
 export class ApiError extends Error {
   constructor(
@@ -45,6 +47,14 @@ export async function apiFetch<T = unknown>(
     ...rest
   } = options;
 
+  const base = apiBaseUrl();
+  if (!base) {
+    throw new ApiError(
+      0,
+      'NEXT_PUBLIC_API_BASE_URL 未设置 — 请在 .env.production 配置 API 地址',
+    );
+  }
+
   // 鉴权
   const headers = new Headers(userHeaders);
   if (!skipAuth) {
@@ -71,7 +81,7 @@ export async function apiFetch<T = unknown>(
   const timer = setTimeout(() => controller.abort(), timeoutMs);
 
   try {
-    const res = await fetch(`${API_BASE_URL}${path}`, {
+    const res = await fetch(`${base}${path}`, {
       ...rest,
       headers,
       body: bodyValue,

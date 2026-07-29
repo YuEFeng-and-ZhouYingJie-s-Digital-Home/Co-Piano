@@ -16,11 +16,8 @@ Cycle 6 Stage 2 实现:
 import hashlib
 import json
 import random
-import sys
 import time
-from dataclasses import dataclass, field, asdict
-from typing import Dict, List, Optional, Tuple
-
+from dataclasses import asdict, dataclass, field
 
 # === 4 难度级别配置 ===
 
@@ -130,7 +127,7 @@ class SessionStats:
     end_time: float = 0.0
     difficulty: str = 'beginner'
     mode: str = 'random'
-    errors: List[Dict] = field(default_factory=list)  # [{'expected': 'C4', 'got': 'D4', 'pos': 3}]
+    errors: list[dict] = field(default_factory=list)  # [{'expected': 'C4', 'got': 'D4', 'pos': 3}]
 
     @property
     def accuracy(self) -> float:
@@ -234,7 +231,7 @@ def get_difficulty(level: str) -> dict:
 
 # === 教学法: 3 流派 ===
 
-def landmark_note_sequence(level: str, count: int, seed: int = None) -> List[Note]:
+def landmark_note_sequence(level: str, count: int, seed: int = None) -> list[Note]:
     """Landmark method: 围绕地标音 (C4, G4, F4, C5) 上下移动"""
     config = get_difficulty(level)
     rng = random.Random(seed) if seed is not None else random
@@ -257,7 +254,7 @@ def landmark_note_sequence(level: str, count: int, seed: int = None) -> List[Not
     return sequence
 
 
-def interval_note_sequence(level: str, count: int, seed: int = None) -> List[Note]:
+def interval_note_sequence(level: str, count: int, seed: int = None) -> list[Note]:
     """Interval method: 音程序列 (二度三度等)"""
     config = get_difficulty(level)
     rng = random.Random(seed) if seed is not None else random
@@ -283,7 +280,7 @@ def interval_note_sequence(level: str, count: int, seed: int = None) -> List[Not
     return sequence
 
 
-def pattern_note_sequence(level: str, count: int, seed: int = None) -> List[Note]:
+def pattern_note_sequence(level: str, count: int, seed: int = None) -> list[Note]:
     """Pattern method: 常见曲调模式 (Stair-step, 拱形, 重复)"""
     config = get_difficulty(level)
     rng = random.Random(seed) if seed is not None else random
@@ -315,7 +312,7 @@ def pattern_note_sequence(level: str, count: int, seed: int = None) -> List[Note
 
 # === 简化真曲片段 (8-16 小节,自生成) ===
 
-def _bach_contrapunctus_fragment() -> List[Note]:
+def _bach_contrapunctus_fragment() -> list[Note]:
     """Bach-style 对位片段 (简化 4 声部 → 单声部 melody)"""
     # G major 主题
     melody_pitches = [
@@ -326,7 +323,7 @@ def _bach_contrapunctus_fragment() -> List[Note]:
     return [Note(pitch=p, duration_beats=1.0) for p in melody_pitches]
 
 
-def _mozart_sonata_fragment() -> List[Note]:
+def _mozart_sonata_fragment() -> list[Note]:
     """Mozart K.545 主题片段 (C major)"""
     # 经典 sonata form 主部主题
     melody_pitches = [
@@ -337,7 +334,7 @@ def _mozart_sonata_fragment() -> List[Note]:
     return [Note(pitch=p, duration_beats=1.0) for p in melody_pitches]
 
 
-def _chopin_nocturne_fragment() -> List[Note]:
+def _chopin_nocturne_fragment() -> list[Note]:
     """Chopin-style 夜曲片段 (Bb major)"""
     # 简化版: 4 小节主题 + 4 小节发展
     melody_pitches = [
@@ -378,11 +375,11 @@ class SightReadingTrainer:
             mode=mode,
             start_time=time.time(),
         )
-        self.sequence: List[Note] = []
+        self.sequence: list[Note] = []
         self.current_idx: int = 0
         self._piece_name: str = ''
 
-    def generate_sequence(self, count: int = None, method: str = None) -> List[Note]:
+    def generate_sequence(self, count: int = None, method: str = None) -> list[Note]:
         """生成音符序列
 
         method: landmark / interval / pattern / None (auto)
@@ -417,7 +414,7 @@ class SightReadingTrainer:
         self.current_idx = 0
         return seq
 
-    def get_current_note(self) -> Optional[Note]:
+    def get_current_note(self) -> Note | None:
         """获取当前待弹音符"""
         if self.current_idx >= len(self.sequence):
             return None
@@ -454,8 +451,7 @@ class SightReadingTrainer:
         if correct:
             self.stats.correct += 1
             self.stats.streak += 1
-            if self.stats.streak > self.stats.best_streak:
-                self.stats.best_streak = self.stats.streak
+            self.stats.best_streak = max(self.stats.best_streak, self.stats.streak)
             self.current_idx += 1
         else:
             self.stats.streak = 0
@@ -512,7 +508,7 @@ class SightReadingTrainer:
 
         return '\n'.join(lines[:line_count])
 
-    def get_progress(self) -> Dict:
+    def get_progress(self) -> dict:
         """获取进度信息"""
         return {
             'current': self.current_idx,
@@ -532,7 +528,7 @@ class SightReadingTrainer:
             return False
         return self.stats.accuracy >= self.config['accuracy_promote']
 
-    def get_next_level(self) -> Optional[str]:
+    def get_next_level(self) -> str | None:
         """获取下一档难度名 (若已是最高返回 None)"""
         levels = list(DIFFICULTY_LEVELS.keys())
         try:
@@ -544,7 +540,7 @@ class SightReadingTrainer:
 
 # === student_db 集成 ===
 
-def save_sight_reading_session(student_db, trainer: SightReadingTrainer, piece_name: str = '') -> Dict:
+def save_sight_reading_session(student_db, trainer: SightReadingTrainer, piece_name: str = '') -> dict:
     """保存训练会话到 student_db
 
     student_db: StudentDB 实例 (or None)
@@ -624,7 +620,7 @@ def patch_voice_dialog_with_sight_reading(dialog_module=None):
         'difficulty': 'beginner',
     }
 
-    def handle_sight_reading_request(text: str) -> Optional[str]:
+    def handle_sight_reading_request(text: str) -> str | None:
         text_lower = text.lower()
         on_kw = ['识谱训练', '练视奏', '识谱', '视奏', 'sight reading', '看谱', '识谱练习', '开始练琴']
         off_kw = ['结束识谱', '退出视奏', '停止识谱', '停', 'exit reading']

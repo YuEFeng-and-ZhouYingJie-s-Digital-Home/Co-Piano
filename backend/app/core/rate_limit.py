@@ -52,12 +52,12 @@ RATE_LIMIT_UPLOAD = "20/hour"  # MIDI 上传
 
 
 __all__ = [
-    "limiter",
-    "RateLimitExceeded",
-    "get_client_ip",
-    "get_auth_key",
-    "RATE_LIMIT_DEFAULT",
     "RATE_LIMIT_AUTH",
+    "RATE_LIMIT_DEFAULT",
     "RATE_LIMIT_FEEDBACK",
     "RATE_LIMIT_UPLOAD",
+    "RateLimitExceeded",
+    "get_auth_key",
+    "get_client_ip",
+    "limiter",
 ]

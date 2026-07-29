@@ -16,10 +16,7 @@ OAuth Service — Apple / Google / WeChat 登录
 """
 from __future__ import annotations
 
-import json
 import logging
-import uuid
-from typing import Optional
 from urllib.parse import urlencode
 
 import httpx
@@ -42,7 +39,7 @@ APPLE_JWKS_URL = "https://appleid.apple.com/auth/keys"
 APPLE_ISSUER = "https://appleid.apple.com"
 
 
-async def verify_apple_id_token(id_token: str, expected_nonce: Optional[str] = None) -> OAuthAccountInfo:
+async def verify_apple_id_token(id_token: str, expected_nonce: str | None = None) -> OAuthAccountInfo:
     """验签 Apple identity token
 
     Apple 流程:
@@ -190,7 +187,7 @@ async def wechat_exchange_code(code: str) -> OAuthAccountInfo:
 
 def build_wechat_authorize_url(
     redirect_uri: str,
-    state: Optional[str] = None,
+    state: str | None = None,
     scope: str = "snsapi_login",
 ) -> str:
     """构造微信扫码登录 URL

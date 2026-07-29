@@ -14,12 +14,10 @@ S3/MinIO 存储服务
 """
 from __future__ import annotations
 
-import io
 import logging
 import uuid
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
 
 import boto3
 from botocore.client import Config
@@ -178,8 +176,7 @@ class StorageService:
 
     def _parse_uri(self, s3_uri: str) -> tuple[str, str]:
         """解析 s3://bucket/key → (bucket, key)"""
-        if s3_uri.startswith("s3://"):
-            s3_uri = s3_uri[5:]
+        s3_uri = s3_uri.removeprefix("s3://")
         parts = s3_uri.split("/", 1)
         bucket = parts[0] if parts else self.bucket
         key = parts[1] if len(parts) > 1 else ""

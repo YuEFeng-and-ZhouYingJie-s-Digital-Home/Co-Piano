@@ -6,9 +6,8 @@ from __future__ import annotations
 
 import uuid
 from datetime import datetime
-from typing import Optional
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, Field, field_validator
 
 from app.models.sight_reading import (
     SightReadingDifficulty,
@@ -56,7 +55,7 @@ class SightReadingAnswerResponse(BaseModel):
     accuracy: float
     matched: int
     total: int
-    next_question: Optional[SightReadingQuestion] = None
+    next_question: SightReadingQuestion | None = None
     session_complete: bool = False
 
 
@@ -76,7 +75,7 @@ class SightReadingSessionResponse(BaseModel):
     mode: SightReadingMode
     input_method: SightReadingInput
     started_at: datetime
-    ended_at: Optional[datetime] = None
+    ended_at: datetime | None = None
     stats: SightReadingSessionStats
 
     @field_validator("session_id", "user_id", mode="before")
