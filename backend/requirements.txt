@@ -22,7 +22,7 @@ redis==5.1.1
 celery==5.4.0
 
 # Auth — JWT + OAuth
-pyjwt==2.9.0
+pyjwt==2.13.0
 passlib[bcrypt]==1.7.4
 bcrypt==3.2.2
 python-jose[cryptography]==3.3.0
