@@ -15,6 +15,7 @@ python-multipart==0.0.12
 sqlalchemy==2.0.35
 psycopg2-binary==2.9.9
 asyncpg==0.29.0
+aiosqlite==0.20.0
 alembic==1.13.3
 
 # Cache + Queue — Redis

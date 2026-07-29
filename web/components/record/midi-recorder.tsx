@@ -83,6 +83,7 @@ export function MidiRecorder() {
     if (!input) return;
     inputRef.current = input;
     input.onmidimessage = (event: MIDIMessageEvent) => {
+      if (!event.data) return;
       const [status, pitch, velocity] = event.data;
       if (status === undefined || pitch === undefined) return;
       const cmd = status & 0xf0;
@@ -173,7 +174,7 @@ export function MidiRecorder() {
 
     try {
       const midiBytes = encodeSMF(notesRef.current);
-      const blob = new Blob([midiBytes], { type: 'audio/midi' });
+      const blob = new Blob([midiBytes as BlobPart], { type: 'audio/midi' });
       const formData = new FormData();
       formData.append('midi', blob, 'recording.mid');
       formData.append('duration_ms', String(Math.round(now)));

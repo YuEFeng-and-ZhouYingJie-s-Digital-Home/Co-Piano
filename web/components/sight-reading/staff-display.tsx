@@ -95,7 +95,7 @@ export function StaffDisplay({
       });
 
       // 4 音符一音组,自动换行(简化为单组)
-      const voice = new Voice({ numBeats: staveNotes.length, beatValue: 4 });
+      const voice = new Voice({ num_beats: staveNotes.length, beat_value: 4 });
       voice.setStrict(false);
       voice.addTickables(staveNotes);
 
