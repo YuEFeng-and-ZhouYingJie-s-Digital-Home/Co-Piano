@@ -41,7 +41,7 @@ jobs:
       JWT_SECRET: test-secret-not-for-production
       ENVIRONMENT: test
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -68,7 +68,7 @@ jobs:
       run:
         working-directory: web
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -93,7 +93,7 @@ jobs:
     name: Scripts lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
